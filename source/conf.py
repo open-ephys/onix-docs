@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 # -*- coding: utf-8 -*-
 #
 # Configuration file for the Sphinx documentation builder.
@@ -19,9 +20,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Open Ephys 2.0'
-copyright = '2020, Open Ephys'
-author = 'Open Ephys'
+project = 'ONI-X Docs'
+copyright = '2010-{}, Open Ephys & Contributors'.format(
+    datetime.now(timezone.utc).year
+)
+author = 'Open Ephys & Contributors'
 
 # The short X.Y version
 version = ''
@@ -39,8 +42,10 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx.ext.todo",
     'sphinx.ext.githubpages',
     'sphinxcontrib.wavedrom',
+    #"contributors",  # custom pandas extension
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,8 +54,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
@@ -70,24 +74,27 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
+todo_include_todos = True
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "pydata_sphinx_theme"
+html_logo = 'asset/image/oe_logo_in_line.svg'
+html_scaled_image_link = True
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    "css/onix.css",
+    "css/getting_started.css",
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -99,12 +106,10 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OpenEphys2doc'
-
+htmlhelp_basename = 'ONIX2doc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -156,7 +161,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
@@ -176,26 +180,42 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
 html_theme_options = {
-    'canonical_url': '',
-    'analytics_id': '',
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
+    'github_url': 'https://github.com/jonnew/open-ephys-pcie',
+    'twitter_url': 'https://twitter.com/openephys',
+    "external_links": [
+        {"name": "open-ephys", "url": "https://open-ephys.org"},
+    ],
+
+    #'canonical_url': '',
+    #'analytics_id': '',
+    #'logo_only': False,
+    #'display_version': True,
+    #'prev_next_buttons_location': 'bottom',
+    #'style_external_links': False,
     # Toc options
-    'collapse_navigation': False,
-    'sticky_navigation': True,
+    #'collapse_navigation': False,
+    #'sticky_navigation': True,
 #    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    #'includehidden': True,
+    #'titles_only': False
 }
 
 html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  # override wide tables in RTD theme
-        ],
-     }
+    "github_user": "open-ephys",
+    "github_repo": "onix-docs",
+    "github_version": "master",
+    "doc_path": "source",
+}
+
+#html_context = {
+#    'css_files': [
+#        '_static/theme_overrides.css',  # override wide tables in RTD theme
+#        ],
+#}
 
 #This is a temporary fix for wavedrom
 offline_skin_js_path = "_static/default.js"

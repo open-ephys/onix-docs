@@ -2,9 +2,8 @@
 Open Ephys Docs
 =========
 
-This documentation was forked from the wonderful `Spinal
-HDL <https://github.com/SpinalHDL/SpinalDoc-RTD>` project. Have a look at that!
-
+*Note*: This documentation's source template was taken from the `Spinal HDL
+<https://github.com/SpinalHDL/SpinalDoc-RTD>`_ project.
 
 How to build this documentation
 ===============================

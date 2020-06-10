@@ -1,11 +1,13 @@
-===============
+.. _about:
+
 About
 ===============
 
 .. toctree::
+    :maxdepth: 1
 
-   faq
-   support
+    support
+    faq
 
 .. role:: raw-html-m2r(raw)
    :format: html

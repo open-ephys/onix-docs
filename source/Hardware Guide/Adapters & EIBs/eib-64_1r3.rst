@@ -1,0 +1,8 @@
+.. _eib_64_1r3:
+.. |year| date:: %Y
+
+eib-64 v1.3
+#########################
+
+**eib-64 v1.3** is a 64-channel electrode interface board (EIB) with electrical and optical
+stimulation. It is designed for small animal (e.g. mouse) tetrode electrophysiology and is compatible with :ref:`headstage_64_1r4` and is designed to be used with the mouse variant of the `shuttle-drive <https://open-ephys.org/shuttledrive>`_.
