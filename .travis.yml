@@ -31,4 +31,4 @@ jobs:
         keep-history: true
         local-dir: docs/html
         on:
-          branch: master  # You can't be safe enough <insert double condom joke here>
+          branch: master
