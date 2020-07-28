@@ -10,6 +10,3 @@ pydata-sphinx-theme = "*"
 
 [dev-packages]
 "doc8" = "*"
-
-[requires]
-python_version = "3.8"
