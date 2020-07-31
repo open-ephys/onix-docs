@@ -9,12 +9,12 @@ stimulation. Designed for large animal (e.g. rat) tetrode electrophysiology and 
 
 Bill of Materials
 ****************************
-The BOM is located on `this google
-sheet <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=1934583654>`_
+The BOM is located on `this Google
+sheet <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=1934583654>`__
 
 Pinout
 ****************************
-The EIB pinout (ADC input mapping, stimulation connections, etc) is located on `this google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`_
+The EIB pinout (ADC input mapping, stimulation connections, etc) is located on `this Google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
 
 Tetrode Connectorization
 ****************************

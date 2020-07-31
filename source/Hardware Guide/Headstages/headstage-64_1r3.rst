@@ -202,11 +202,11 @@ Bill of Materials
 FPGA & Bottom Connector Pinouts
 ************************************
 
-- The FPGA pinout is located on `this google
-  sheet <https://docs.google.com/spreadsheets/d/1oJoQ89dJNL9LIiTrRnwJ_9KGiLzJ53Tju5Lfchuvsb0/edit#gid=2100166621>`_
+- The FPGA pinout is located on `this Google
+  sheet <https://docs.google.com/spreadsheets/d/1oJoQ89dJNL9LIiTrRnwJ_9KGiLzJ53Tju5Lfchuvsb0/edit#gid=2100166621>`__
 
 - The headstage connector pinout (ADC input mapping, stimulation connections,
-  etc) is located on `this google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`_
+  etc) is located on `this Google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__
 
 License
 ****************************

@@ -310,7 +310,7 @@ API Reference
 .. Obtain path specifying config data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the configuration stream path |
 .. | default value       | /dev/xillybus_oni_config_32, \\\\.\\xillybus_oni_config_32 (Windows) |
@@ -319,7 +319,7 @@ API Reference
 .. Obtain path specifying input data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the input stream path |
 .. | default value       | /dev/xillybus_oni_input_32 \\\\.\\xillybus_oni_input_32 (Windows) |
@@ -328,7 +328,7 @@ API Reference
 .. Obtain path specifying input data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the output stream path |
 .. | default value       | /dev/xillybus_oni_output_32, \\\\.\\xillybus_oni_output_32 (Windows) |
@@ -337,7 +337,7 @@ API Reference
 .. Obtain path specifying hardware signal data stream
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the signal stream path |
 .. | default value       | /dev/xillybus_oni_signal_8, \\\\.\\xillybus_oni_signal_8 (Windows) |
@@ -346,7 +346,8 @@ API Reference
 .. The device map.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. 
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_device_t *` |
 .. | option description  | Pointer to a pre-allocated array of `oni_device_t` structs |
 .. | default value       | N/A |
@@ -355,7 +356,7 @@ API Reference
 .. The number of devices in the device map.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | The number of devices supported by the firmware |
 .. | default value       | N/A |
@@ -366,7 +367,7 @@ API Reference
 .. map that generates read data.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | Maximal read frame size in bytes |
 .. | default value       | N/A |
@@ -377,7 +378,7 @@ API Reference
 .. all output devices synchronously.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | Maximal write frame size in bytes |
 .. | default value       | N/A |
@@ -387,7 +388,7 @@ API Reference
 .. running.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | Any value greater than 0 will start acquisition |
 .. | default value       | False |
@@ -397,7 +398,7 @@ API Reference
 .. are incremented at this rate.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | System clock frequency in Hz |
 .. | default value       | N/A |
@@ -407,7 +408,7 @@ API Reference
 .. Clock values within frame data are incremented at this rate.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `oni_reg_val_t` |
 .. | option description  | Acquisition clock frequency in Hz |
 .. | default value       | 42000000 |
@@ -421,7 +422,7 @@ API Reference
 .. improve processing performance for high-bandwidth data sources.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `size_t` |
 .. | option description  | Size, in bytes, of `read()` syscalls |
 .. | default value       | value of `OE_MAXREADFRAMESIZE` |
@@ -454,7 +455,7 @@ API Reference
 .. Set path specifying configuration data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the configuration stream path |
 .. | default value       | /dev/xillybus_oni_config_32, \\\\.\\xillybus_oni_config_32 (Windows) |
@@ -463,7 +464,7 @@ API Reference
 .. Set path specifying input data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the input stream path |
 .. | default value       | /dev/xillybus_oni_input_32, \\\\.\\xillybus_oni_input_32 (Windows) |
@@ -472,7 +473,7 @@ API Reference
 .. Set path specifying input data stream.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the output stream path |
 .. | default value       | /dev/xillybus_oni_output_32, \\\\.\\xillybus_oni_output_32 (Windows) |
@@ -481,7 +482,7 @@ API Reference
 .. Set path specifying hardware signal data stream
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `char *` |
 .. | option description  | A character string specifying the signal stream path |
 .. | default value       | /dev/xillybus_oni_signal_8, \\\\.\\xillybus_oni_signal_8 (Windows) |
@@ -494,7 +495,7 @@ API Reference
 .. set `OE_RUNNING` _before_ a call to OE_RESET.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type         | `oni_reg_val_t` |
 .. | option description        | Any value greater than 0 will start acquisition |
 .. | default value             | 0 |
@@ -505,7 +506,7 @@ API Reference
 .. sample counters, etc) is defaulted.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type         | `oni_reg_val_t` |
 .. | option description        | Any value greater than 0 will trigger a reset |
 .. | default value             | Untriggered |
@@ -518,7 +519,7 @@ API Reference
 .. improve processing performance for high-bandwidth data sources.
 .. 
 .. | | |
-.. |---------------------|--------------------------------------------------------------------|
+.. -|---------------------|--------------------------------------------------------------------|
 .. | option value type   | `size_t` |
 .. | option description  | Size, in bytes, of `read()` syscalls |
 .. | default value       | value of `OE_MAXREADFRAMESIZE` |
