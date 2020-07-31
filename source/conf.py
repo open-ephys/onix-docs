@@ -82,7 +82,7 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = 'asset/image/oe_logo_in_line.svg'
+html_logo = 'asset/image/oe_logo_circle.svg'
 html_scaled_image_link = True
 
 
@@ -95,6 +95,9 @@ html_css_files = [
     "css/onix.css",
     "css/getting_started.css",
 ]
+
+html_style = 'theme_overrides.css'
+
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -189,8 +192,12 @@ html_theme_options = {
     "external_links": [
         {"name": "Open Ephys", "url": "https://open-ephys.org"},
     ],
-    'search_bar_position' : "navbar",
-    'navigation_with_keys' : True
+    'navigation_with_keys' : True,
+   # 'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',  # NOQA
+    # Set the Style of Google Web Font's CSS.
+    # Defaults to "font-family: 'Text Me One', sans-serif;"
+   # 'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
+   # 'search_bar_position' : "navbar", 
     #'canonical_url': '',
     #'analytics_id': '',
     #'logo_only': False,
@@ -212,13 +219,10 @@ html_context = {
     "github_repo": "onix-docs",
     "github_version": "master",
     "doc_path": "source",
+    'css_files': [
+        '_static/theme_overrides.css',  
+        ],
 }
-
-#html_context = {
-#    'css_files': [
-#        '_static/theme_overrides.css',  # override wide tables in RTD theme
-#        ],
-#}
 
 #This is a temporary fix for wavedrom
 offline_skin_js_path = "_static/default.js"
