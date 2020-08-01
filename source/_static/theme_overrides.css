@@ -35,22 +35,30 @@
 
 /* navigation bar colors*/
 .navbar {
-  background: #5fb5dc !important;
+  background: #da714a !important;
   font-size: 1em;
 }
 
-.navbar li.active > a {
-  background-color: #f4d050 !important;
+.navbar-nav > .active > .nav-link {
+  background-color: #3c81be !important;
+  color: white !important;
+  font-weight: normal !important;
+  transition-duration: 0.4s;
+}
+
+.navbar-nav > .active > .nav-link:hover {
+  color: #f9f2d5 !important;
+  transition-duration: 0.4s;
 }
 
 .navbar a {
-  color: #f4d050 !important;
+  color: white !important;
   font-family: "Bitter", sans-serif;
   transition-duration: 0.4s;
 }
 
 .navbar a:hover {
-  color: white !important;
+  color: #f9f2d5 !important;
   transition-duration: 0.4s;
 }
 
@@ -137,7 +145,7 @@ h2 {
 
 h3 {
   margin: 2.75rem 0 1.05rem;
-  font-family: "Source Sans", sans-serif;
+  font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;
   color: #242c16;
@@ -146,7 +154,7 @@ h3 {
 
 h4 {
   margin: 2.75rem 0 1.05rem;
-  font-family: "Source Sans", sans-serif;
+  font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;
   color: #242c16;
@@ -268,11 +276,16 @@ h6 {
   color: #519141 !important;
 }
 
-/* change size of logo */
+/* logo */
 .navbar-brand {
   position: relative;
   height: 65px;
   width: auto;
+}
+
+.navbar-brand:hover {
+  transition-duration: 0.4s;
+  transform: translate(0px, -2px);
 }
 
 /* format search bar */
