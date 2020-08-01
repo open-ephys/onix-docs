@@ -283,11 +283,6 @@ h6 {
   width: auto;
 }
 
-.navbar-brand:hover {
-  transition-duration: 0.4s;
-  transform: translate(0px, -2px);
-}
-
 /* format search bar */
 .bd-search {
   position: relative;
