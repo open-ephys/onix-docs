@@ -4,8 +4,6 @@
 MIT/UCLA Miniscope v4F
 ##############################
 
-.. warning:: TODO
-
-- ONI-compliant version of UCLA miniscope
+.. todo:: ONI-compliant version of UCLA miniscope
 
 

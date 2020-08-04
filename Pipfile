@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 sphinx = "*"
 sphinxcontrib-wavedrom = "*"
+sphinxcontrib-bitfield = "*"
 pydata-sphinx-theme = "*"
 
 [dev-packages]

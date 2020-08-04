@@ -6,8 +6,8 @@ Hardware Guide
 .. toctree::
     :maxdepth: 1
 
-    hw-compatibility
     hw-repo-info
+    hw-compatibility
     Headstages/index
     Miniscopes/index
     Adapters & EIBs/index

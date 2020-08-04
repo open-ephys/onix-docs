@@ -4,4 +4,4 @@
 headstage-neuropix v1.2
 ##############################
 
-.. warning:: TODO
+.. todo:: Document.

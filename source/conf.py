@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 
 # -- Project information -----------------------------------------------------
 
-project = 'ONI-X Docs'
+project = 'ONIX Docs'
 copyright = '2010-{}, Open Ephys & Contributors'.format(
     datetime.now(timezone.utc).year
 )
@@ -44,8 +44,9 @@ release = ''
 extensions = [
     "sphinx.ext.todo",
     'sphinx.ext.githubpages',
+    'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
-    #"contributors",  # custom pandas extension
+    'sphinxcontrib.bitfield',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

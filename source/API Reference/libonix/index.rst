@@ -19,21 +19,19 @@ Scope and External Dependencies
 platform and cross-language use.It is composed of the following files:
 
 #. ``oni.h`` and ``oni.c``: core API implementation
-#. ``onidevice.h`` and ``onidevices.c``: Open Ephys supported device and
-   register definitions. This file can be ignored for projects that do not wish
-   to conform to the official device specification. the core API implementation
-   is not dependent on it.
-#. ``ondriverloader.h`` and ``onidriverloader.c``: functions for dynamically
-   loading hardware translation driver.
-#. ``onidriver.h``: hardware translation driver header that must be implemented
+#. ``onidriver.h``: hardware translation header that must be implemented
    for a particular host hardware connection and firmware.
+#. ``ondriverloader.h`` and ``onidriverloader.c``: functions for dynamically
+   loading translator.
+#. ``onidevice.h`` and ``onidevices.c``: ONIX-supported device and
+   register definitions. These files can be ignored for projects that do not
+   wish to conform to our device specification.
 
 ``libonix`` is a low level library intended for use by high-level language
-binding and/or software plugin developers. It is not meant to be used by
-neuroscientists directly. The only external dependency aside from the C
-standard library and dynamic library loading functions is is a hardware
-translation driver ("driver") that fulfills the requirements of the ONI Host
-Interconnect Specification.  This implementation contains drivers for
+binding and/or software plugin developers. The only external dependency aside
+from the C standard library and dynamic library loading functions is is a
+hardware translation driver ("driver") that fulfills the requirements of the
+ONI Host Interconnect Specification. This implementation contains drivers for
 
 #. `RIFFA <https://github.com/KastnerRG/riffa>`_ is a free and open-source,
    FPGA IP core and device driver that allows the ONI communication channels to

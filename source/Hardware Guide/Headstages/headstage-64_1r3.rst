@@ -193,7 +193,6 @@ Bill of Materials
 ****************************
 
 - The interactive BOM is `here <../../_static/headstage-64_1r3_bom.html>`_
-
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
   <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`_
