@@ -322,3 +322,7 @@ form:focus {
     overflow: visible !important;
   }
 }
+
+.card-img-top {
+  margin-top: 4em;
+}
