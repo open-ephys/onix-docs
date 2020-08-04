@@ -35,30 +35,30 @@
 
 /* navigation bar colors*/
 .navbar {
-  background: #da714a !important;
+  background: white !important;
   font-size: 1em;
 }
 
 .navbar-nav > .active > .nav-link {
-  background-color: #3c81be !important;
-  color: white !important;
+  color: #242c16 !important;
+  background-color: #5fb5dc;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
 
 .navbar-nav > .active > .nav-link:hover {
-  color: #f9f2d5 !important;
+  color: #344b39 !important;
   transition-duration: 0.4s;
 }
 
 .navbar a {
-  color: white !important;
+  color: #242c16 !important;
   font-family: "Bitter", sans-serif;
   transition-duration: 0.4s;
 }
 
 .navbar a:hover {
-  color: #f9f2d5 !important;
+  color: #344b39 !important;
   transition-duration: 0.4s;
 }
 
@@ -279,8 +279,13 @@ h6 {
 /* logo */
 .navbar-brand {
   position: relative;
-  height: 65px;
+  height: 60px;
   width: auto;
+}
+
+/* list line spacing */
+#onix-documentation > .simple {
+  line-height: 0.5;
 }
 
 /* format search bar */
@@ -323,6 +328,11 @@ form:focus {
   }
 }
 
+/* add some extra spacing inside and around the landing page cards */
 .card-img-top {
   margin-top: 4em;
+}
+
+.col-lg-6 {
+  margin-top: 2em;
 }
