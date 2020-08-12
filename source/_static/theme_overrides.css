@@ -284,8 +284,12 @@ h6 {
 }
 
 /* list line spacing */
-#onix-documentation > .simple {
-  line-height: 0.5;
+ol.simple {
+  line-height: 1em;
+}
+
+ul.simple {
+  line-height: 1em;
 }
 
 /* format search bar */
@@ -337,6 +341,7 @@ form:focus {
   margin-top: 2em;
 }
 
+/* ensure images stay within the column bounds*/
 img {
-  max-width: 100% !important;
+  max-width: 100%;
 }
