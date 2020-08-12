@@ -15,3 +15,6 @@ docs/*
 .vscode/*
 .idea
 *.iml
+
+# macOS specific
+.DS_Store

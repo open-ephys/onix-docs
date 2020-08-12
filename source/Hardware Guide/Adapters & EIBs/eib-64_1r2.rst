@@ -11,16 +11,21 @@ designed to be used with the mouse variant of the `shuttle-drive
 
 Bill of Materials
 ****************************
-The BOM is located on `this google
-sheet <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=1934583654>`__
+The BOM is located on `this Google sheet
+<https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=1934583654>`__
 
 Pinout
 ****************************
-The EIB pinout (ADC input mapping, stimulation connections, etc) is located on `this google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
+The EIB pinout (ADC input mapping, stimulation connections, etc) is located on
+`this Google sheet
+<https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
 
 Tetrode Connectorization
 ****************************
-This EIB uses Neuralynx `small" gold pins <https://neuralynx.com/hardware/small-eib-pins>`_ to attach tetrode wires. Usage instructions are provided in the `Neuralynx EIB pin Manual <https://neuralynx.com/documents/EIB%20Pins%20Manual.pdf>`_.
+This EIB uses Neuralynx `small" gold pins
+<https://neuralynx.com/hardware/small-eib-pins>`_ to attach tetrode wires.
+Usage instructions are provided in the `Neuralynx EIB pin Manual
+<https://neuralynx.com/documents/EIB%20Pins%20Manual.pdf>`_.
 
 License
 ****************************
