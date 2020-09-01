@@ -1,5 +1,5 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
+.. _faq:
+.. |year| date:: %Y
 
 FAQ
 ===

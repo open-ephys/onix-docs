@@ -22,5 +22,5 @@ You can also **ask questions** on The Open Ephys google group or Slack
 channel
 
 - `Open Ephys Google Group <https://groups.google.com/forum/#!forum/open-ephys>`_
-- `Open Ephys Slack Channel <open-ephys.slack.com>`_ (suggested for immediate feedback)
+- `Open Ephys Slack Channel <https://open-ephys.slack.com/>`_ (suggested for immediate feedback)
 

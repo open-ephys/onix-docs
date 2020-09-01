@@ -1,3 +1,11 @@
+/* /* anchor offset hack */
+/* :target::before {
+/*     content: '';
+/*     display: block;
+/*     height:      150px;
+/*     margin-top: -150px;
+/* }
+
 /* import fonts */
 @font-face {
   font-family: "Source Sans";
@@ -118,7 +126,6 @@ a.headerlink:hover {
 body {
   background-color: white;
   margin-bottom: 1.15rem;
-  font-size: 1em;
   padding-top: 100px;
   color: #242c16;
   font-family: "Source Sans", sans-serif;
@@ -128,7 +135,6 @@ h1 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   margin-top: 0;
   color: #242c16;
   font-size: 2.488em;
@@ -138,7 +144,6 @@ h2 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1.9em;
 }
@@ -147,7 +152,6 @@ h3 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1.728em;
 }
@@ -156,7 +160,6 @@ h4 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1.44em;
 }
@@ -165,7 +168,6 @@ h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1.2em;
 }
@@ -174,9 +176,19 @@ h6 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1em;
+}
+
+/* line heights */
+ul,ol,h1,h2,h3,h4,h5,h6 {
+  line-height: 1.5;
+}
+
+/* List items in main area, but not in side bars */
+body > li, p {
+  line-height: 1.5;
+  margin: 0.3em 0 ;
 }
 
 /* define admonition colors */
@@ -281,15 +293,6 @@ h6 {
   position: relative;
   height: 60px;
   width: auto;
-}
-
-/* list line spacing */
-ol.simple {
-  line-height: 1em;
-}
-
-ul.simple {
-  line-height: 1em;
 }
 
 /* format search bar */

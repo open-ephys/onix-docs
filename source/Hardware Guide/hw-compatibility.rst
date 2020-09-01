@@ -20,13 +20,9 @@ revisions are compatible:
 #. :ref:`eib_64_large_1r0`
 #. :ref:`omnetics_adapter_64_1r0`
 #. :ref:`test_board_64_1r2`
-#. :ref:`breakout_1r3`
+#. :ref:`breakout_1r4`
 #. :ref:`fmc_host_1r3`
-
-Limited Public Release
-*****************************
-TODO
 
 Public Release
 *****************************
-TODO
+.. todo:: Document

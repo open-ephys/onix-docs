@@ -27,14 +27,12 @@ flexible. We generally use cables that are 0.2-0.38 mm in diameter.
 .. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
     headstage tethers
 
-ONIX headstages use an FPGA to control peripheral devices
-and combine their data streams prior to serialization. For instance,
-:ref:`headstage_64_1r3` and :ref:`headstage_neuropix_1r2` use an `Intel MAX10
-FPGA
+ONIX headstages use an FPGA to control peripheral devices and combine their
+data streams prior to serialization. For instance, :ref:`headstage_64_1r3` and
+:ref:`headstage_neuropix_1r2` use an `Intel MAX10 FPGA
 <https://www.intel.com/content/www/us/en/products/programmable/fpga/max-10.html>`_.
-The exact FPGA is not important because every ONI-compliant headstage is
-uses very similar gateware (FPGA-based firmware) that performs three major
-functions
+The exact FPGA is not important because every ONI-compliant headstage is uses
+very similar gateware (FPGA-based firmware) that performs three major functions
 
 1. **Local Hardware Control** Provides hardware controllers (SPI, I2C, etc),
    timing, and control logic for each of the sensors and actuators on the
@@ -166,49 +164,48 @@ This bus need to be transmitted over the DS90UB933/4 I2C backchannel to be used
 to configure headstage devices. The following protocol describes how this is
 accomplished.  
 
-
-A bitfield?
-------------------------------
-Status
-
-.. wavedrom::
-
-        {
-        reg: [
-            {                       "bits": 1 },
-            { "name": "WBUSY",      "bits": 1 },
-            { "name": "WCOMPLETE",  "bits": 1 },
-            { "name": "WERROR",     "bits": 1 },
-            { "name": "RBUSY",      "bits": 1 },
-            { "name": "RCOMPLETE",  "bits": 1 },
-            { "name": "RERROR",     "bits": 1 },
-            { "name": "SEQERROR",   "bits": 1 }
-        ], 
-        config: {bits: 8, vflip: true, hflip: false},
-        }
-
-
-A state machine?
---------------------------------
-.. graphviz::
-
-   digraph {
-
-      "IDLE" -> "WRITE ENABLE";
-      "IDLE" -> "READ REQUEST";
-
-      "WRITE ENABLE" -> "WRITE ADDR";
-
-      "READ REQUEST" -> "WRITE ADDR";
-   }
-
+.. A bitfield?
+.. ------------------------------
+.. Status
+.. 
+.. .. wavedrom::
+.. 
+..         {
+..         reg: [
+..             {                       "bits": 1 },
+..             { "name": "WBUSY",      "bits": 1 },
+..             { "name": "WCOMPLETE",  "bits": 1 },
+..             { "name": "WERROR",     "bits": 1 },
+..             { "name": "RBUSY",      "bits": 1 },
+..             { "name": "RCOMPLETE",  "bits": 1 },
+..             { "name": "RERROR",     "bits": 1 },
+..             { "name": "SEQERROR",   "bits": 1 }
+..         ], 
+..         config: {bits: 8, vflip: true, hflip: false},
+..         }
+.. 
+.. 
+.. A state machine?
+.. --------------------------------
+.. .. graphviz::
+.. 
+..    digraph {
+.. 
+..       "IDLE" -> "WRITE ENABLE";
+..       "IDLE" -> "READ REQUEST";
+.. 
+..       "WRITE ENABLE" -> "WRITE ADDR";
+.. 
+..       "READ REQUEST" -> "WRITE ADDR";
+..    }
+.. 
 .. "WRITE ADDR " -> "WRITE VAL0";
 .. "IDLE" -> "WRITE VAL1";
 .. "IDLE" -> "STATUS START";
 .. "IDLE" -> "STATUS REPORT";
 
-Protocol transations defintions:
---------------------------------
+Protocol Transactions Definitions:
+--------------------------------------
 
  - [ : I2C start
  - ] : I2C stop
@@ -220,18 +217,19 @@ Protocol transations defintions:
     - seq_error always reset after successful "atomic" sequence
     
  - Command words:
-    1. 0x00 WRITE_ENABLE
-    2. 0x01 READ_REQUEST
-    3. 0x02 READ_ENABLE_0
-    4. 0x03 READ_ENABLE_1
-    5. 0x04 READ_ENABLE_2
-    6. 0x05 READ_ENABLE_3
-    7. 0x06 READ_ENABLE_4
-    8. 0x07 STATUS_0
-    9. 0x08 STATUS_1
-   10. 0xFF INVALID
 
-course-grained states machine
+    #. 0x00 WRITE_ENABLE
+    #. 0x01 READ_REQUEST
+    #. 0x02 READ_ENABLE_0
+    #. 0x03 READ_ENABLE_1
+    #. 0x04 READ_ENABLE_2
+    #. 0x05 READ_ENABLE_3
+    #. 0x06 READ_ENABLE_4
+    #. 0x07 STATUS_0
+    #. 0x08 STATUS_1
+    #. 0xFF INVALID
+
+Course-grained States Machine
 -----------------------------
 
     IDLE:

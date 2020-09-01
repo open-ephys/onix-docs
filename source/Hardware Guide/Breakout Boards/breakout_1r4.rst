@@ -1,15 +1,16 @@
-.. _breakout_1r3:
+.. _breakout_1r4:
 .. |year| date:: %Y
 
-breakout v1.3
+breakout v1.4
 #########################
-**breakout v1.3** allows bench access to the IO provided by the
+**breakout v1.4** allows bench access to the IO provided by the
 following host boards
 
 - :ref:`fmc_host_1r3`
+
 .. - :ref:`fmc_host_1r4`
 
-.. todo:: Image of breakout v1.3 with callouts
+.. todo:: Image of breakout v1.4 with callouts
 
 .. note:: There may be more IO present on the breakout board than is available
     on a particular host board. For instance, :ref:`fmc_host_1r3` has two coaxial
@@ -18,7 +19,7 @@ following host boards
 
 Features
 ****************
-breakout v1.3 provides access to the following IO:
+breakout v1.4 provides access to the following IO:
 
 - 4x headstage port feed-throughs, each with a power switch
 - 3x, passive, high-speed clock feed-throughs
@@ -28,7 +29,7 @@ breakout v1.3 provides access to the following IO:
   inputs. These are 5V compliant.
 - `HARP bus <https://www.cf-hw.org/harp>`__ controller
 
-Additionally, breakout v1.3 has the following features:
+Additionally, breakout v1.4 has the following features:
 
 - Lots of indication LEDs
 - 6 buttons for marking experimental events for communication and programming.
@@ -52,16 +53,3 @@ Bill of Materials
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
   <https://docs.google.com/spreadsheets/d/18WfmbLGt8bGUUdksKp6AKA_wMX2SJ3Tndin-nnEgUCs/edit?usp=sharing>`_
-
-License
-****************************
-Copyright Jonathan P. Newman |year|
-
-This documentation describes Open Hardware and is licensed under the
-CERN OHL v.1.2.
-
-You may redistribute and modify this documentation under the terms of the CERN
-OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed WITHOUT
-ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY
-QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for
-applicable conditions

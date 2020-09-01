@@ -1,13 +1,10 @@
-.. _breakouts:
-
-Breakout Boards
+Device Datasheets
 ==========================================
 
 .. toctree::
     :maxdepth: 1
-
-    breakout_1r4
-    test-board-64_1r2
+    
+    BNO055
 
 .. role:: raw-html-m2r(raw)
-    :format: html
+   :format: html

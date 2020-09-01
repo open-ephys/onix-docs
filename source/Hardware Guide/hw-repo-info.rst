@@ -1,7 +1,7 @@
 .. _hardware_repo_info:
 .. |year| date:: %Y
 
-Repository Guide
+Repository Information
 ##################################
 ONIX hardware design repositories follow some conventions that are described
 below.

@@ -24,7 +24,7 @@ headstage-64 v1.3 is compatible with the following ONIX hardware
 #. :ref:`eib_64_large_1r0`
 #. :ref:`omnetics_adapter_64_1r0`
 #. :ref:`test_board_64_1r2`
-#. :ref:`breakout_1r3`
+#. :ref:`breakout_1r4`
 #. :ref:`fmc_host_1r3`
 
 Coaxial Link
@@ -192,10 +192,10 @@ Gerber Files
 Bill of Materials
 ****************************
 
-- The interactive BOM is `here <../../_static/headstage-64_1r3_bom.html>`_
+- The interactive BOM is `here <../../_static/headstage-64_1r3_bom.html>`__
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
-  <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`_
+  <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
 
 
 FPGA & Bottom Connector Pinouts

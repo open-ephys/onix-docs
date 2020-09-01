@@ -13,6 +13,4 @@ Hardware Guide
     Adapters & EIBs/index
     Breakout Boards/index
     Hosts/index
-
-.. role:: raw-html-m2r(raw)
-   :format: html
+    Datasheets/index

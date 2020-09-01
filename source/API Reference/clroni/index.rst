@@ -1,7 +1,7 @@
-.. _clronix:
+.. _clroni:
 .. |year| date:: %Y
 
-``clronix``
+``clroni``
 ########################
 
 .. todo:: Document.

@@ -1,7 +1,8 @@
-.. _cpponix:
+.. _cpponi:
+
 .. |year| date:: %Y
 
-``cpponix``
+``cpponi``
 ########################
 
 .. todo:: Document.

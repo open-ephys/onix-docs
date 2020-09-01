@@ -95,9 +95,6 @@ html_css_files = [
     "css/getting_started.css",
 ]
 
-html_style = "theme_overrides.css"
-
-
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
