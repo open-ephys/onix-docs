@@ -1,6 +1,6 @@
 :notoc:
 
-ONIX Documentation
+ONIX: Open Neuro Interface X
 =================================================
 
 **Date**: |today|
@@ -9,11 +9,14 @@ ONIX Documentation
 
 **Useful Links**: `Open Ephys <https://open-ephys.org/>`__ | `Slack Channel <https://open-ephys.slack.com/>`__ | `Mailing List <https://groups.google.com/g/open-ephys>`__ | :ref:`FAQ <FAQ>`
 
+.. image:: /_static/images/onix-hw-summary.jpg
+    :class: img-fluid
+
 This site provides documentation for ONIX (Open Neuro Interface X), the
 second-generation `Open Ephys <https://open-ephys.org/>`_ acquisition system.
-ONIX is a collection of next-generation, `Open Neuro Interface
+ONIX is a collection of `Open Neuro Interface
 <https://github.com/open-ephys/ONI>`_-compliant tools for performing
-neuroscience experiments with freely moving animals. ONIX is the sucessor to
+neuroscience experiments with freely moving animals. ONIX is the successor to
 original Open Ephys `Acqusiton System <https://open-ephys.org/acq-board>`_ and
 significantly expands on its scope, performance, and compatibility with other
 open-source tools. Here you can find
@@ -34,13 +37,10 @@ Ephys Wiki
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-center intro-card shadow">
-                <img src="_static/about_icon.svg" class="card-img-top" alt="about ONIX action icon" height="52">
+                <img src="_static/onix_logo.svg" class="card-img-top" alt="about ONIX action icon" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">About</h5>
-                    <p class="card-text">New to ONIX? Check out the
-                    about pages. They provide an introduction to the project,
-                    describe its rational, and  provide and links to additional
-                    documentation and tutorials.</p>
+                    <p class="card-text">New to ONIX? Start here for basic information, FAQs, etc.</p>
 
 .. container:: custom-button
 
@@ -53,10 +53,10 @@ Ephys Wiki
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-center intro-card shadow">
-                <img src="_static/hardware_icon.svg" class="card-img-top" alt="hardware user guide action icon" height="52">
+                <img src="_static/noun_pcb.svg" class="card-img-top" alt="hardware user guide action icon" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">Hardware Guide</h5>
-                    <p class="card-text">The hardware guide provides in-depth information on the hardware components that make up the ONIX ecosystem.</p>
+                    <p class="card-text">In-depth information about ONIX hardware components.</p>
 
 .. container:: custom-button
 
@@ -69,11 +69,10 @@ Ephys Wiki
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-center intro-card shadow">
-                <img src="_static/api_reference_icon.svg" class="card-img-top" alt="onix api references" height="52">
+                <img src="_static/noun_books.svg" class="card-img-top" alt="onix api references" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">API Reference</h5>
-                    <p class="card-text">The API reference contains detailed descriptions of how ONIX libraries can
-                    be used to create your own software or integrate ONIX hardware into an existing project.</p>
+                    <p class="card-text">Learn how to use the API to create your own software.</p>
 
 .. container:: custom-button
 
@@ -86,10 +85,10 @@ Ephys Wiki
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-center intro-card shadow">
-                <img src="_static/software_icon.svg" class="card-img-top" alt="onix software guides" height="52">
+                <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guides" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">Software Guide</h5>
-                    <p class="card-text">Learn how to use officially supported software to acquire from ONIX hardware.</p>
+                    <p class="card-text">Learn about existing software for Acquiring from ONIX hardware.</p>
 
 .. container:: custom-button
 

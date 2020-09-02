@@ -52,7 +52,7 @@ This "T-network" provides a low impedance path for the DC portion of the signal
 (power) and rejects the RF components so that they are preserved for
 communication between the SERDES pair.
 
-.. figure:: /asset/image/rf-t.png
+.. figure:: /_static/images/rf-t.png
     :align: center
 
     LC-network for combining power and data on the coaxial cable.

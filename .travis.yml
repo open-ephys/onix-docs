@@ -18,8 +18,8 @@ install:
 
 jobs:
   include:
-    - stage: test-links
-      script: pipenv run make linkcheck
+      # - stage: test-links
+      #   script: pipenv run make linkcheck
     - stage: build
       script: pipenv run make html
     - stage: deploy

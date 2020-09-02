@@ -12,7 +12,7 @@ device. This adapter is compatible with:
 - :ref:`eib_64_large_1r0`
 - :ref:`omnetics_adapter_64_1r0`
 
-.. figure:: /asset/image/nanoz-adapter-64_1r0.png
+.. figure:: /_static/images/nanoz-adapter-64_1r0.png
     :align: center
 
     nano-z-adapter-64 v1.0.

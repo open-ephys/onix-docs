@@ -11,7 +11,7 @@ probes (e.g. silicon arrays, flexible eeg arrays, etc) using
 
 .. todo:: This is a picture of revision 1.1!
 
-.. image:: /asset/image/headstage-64.png
+.. image:: /_static/images/headstage-64.png
    :align: center
 
 .. note:: Make sure to double check your headstage revision by looking at the
@@ -181,12 +181,12 @@ rails and can supply up to +/- 2.5 mA. The output current is defined as:
 
 Schematic
 ****************************
-.. image:: /asset/image/headstage-64_schematic.png
+.. image:: /_static/images/headstage-64_schematic.png
    :align: center
 
 Gerber Files
 ****************************
-.. image:: /asset/image/headstage-64_gerbers.png
+.. image:: /_static/images/headstage-64_gerbers.png
     :class: img-fluid
 
 Bill of Materials
