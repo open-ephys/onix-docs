@@ -17,7 +17,7 @@ second-generation `Open Ephys <https://open-ephys.org/>`_ acquisition system.
 ONIX is a collection of `Open Neuro Interface
 <https://github.com/open-ephys/ONI>`_-compliant tools for performing
 neuroscience experiments with freely moving animals. ONIX is the successor to
-original Open Ephys `Acqusiton System <https://open-ephys.org/acq-board>`_ and
+original Open Ephys `Acquisition System <https://open-ephys.org/acq-board>`_ and
 significantly expands on its scope, performance, and compatibility with other
 open-source tools. Here you can find
 

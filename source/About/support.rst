@@ -2,7 +2,7 @@
 .. role:: raw-html-m2r(raw)
    :format: html
 
-Support
+Contact
 =====================
 
 For **purchasing questions, warranty queries, hardware repair, etc**, 

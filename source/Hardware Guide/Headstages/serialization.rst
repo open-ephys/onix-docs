@@ -160,9 +160,9 @@ purposes in ONIX hardware.
 
 The `ONI Specification <https://github.com/open-ephys/ONI>`__ describes a
 register programming protocol that is very similar to a simple wishbone bus.
-This bus need to be transmitted over the DS90UB933/4 I2C backchannel to be used
-to configure headstage devices. The following protocol describes how this is
-accomplished.  
+This bus needs to be transmitted over the DS90UB933/4 I2C backchannel to be used
+to configure headstage devices. We have developed a simple Wishbone over I2C
+module to accomplish this .  
 
 .. A bitfield?
 .. ------------------------------
@@ -204,88 +204,88 @@ accomplished.
 .. "IDLE" -> "STATUS START";
 .. "IDLE" -> "STATUS REPORT";
 
-Protocol Transactions Definitions:
---------------------------------------
-
- - [ : I2C start
- - ] : I2C stop
- - W : slave device address + I2C write bit
- - R : slave device address + I2C read bit
- 
- - Status_result:
-    - [X, w_busy, w_complete, w_error, r_busy, r_complete, r_error, seq_error]
-    - seq_error always reset after successful "atomic" sequence
-    
- - Command words:
-
-    #. 0x00 WRITE_ENABLE
-    #. 0x01 READ_REQUEST
-    #. 0x02 READ_ENABLE_0
-    #. 0x03 READ_ENABLE_1
-    #. 0x04 READ_ENABLE_2
-    #. 0x05 READ_ENABLE_3
-    #. 0x06 READ_ENABLE_4
-    #. 0x07 STATUS_0
-    #. 0x08 STATUS_1
-    #. 0xFF INVALID
-
-Course-grained States Machine
------------------------------
-
-    IDLE:
-        
-        - if reg_tx.cyc = '1' and reg_tx.we = '1' then
-            goto WRITE_REGISTER
-          else if reg_tx.cyc = '1' and reg_tx.we = '0' then
-            goto READ_REGISTER
-
-    WRITE_REGISTER:
-
-        1. [W, WRITE_ENABLE, dev_idx]
-        2. [W, reg_tx.addr(15:8), reg_tx.addr(7:0)]
-        3. [W, reg_tx.val(31:24), reg_tx.val(23:16)]
-        4. [W, reg_tx.val(15:08), reg_tx.val(07:00)]
-        
-        5. [W, STATUS_0, reg_tx.idx] 
-        6. [W, STATUS_1, [R, status_result]
-        
-        - Repeat 5 & 6 repeat until status_result(5) = 1
-        - reg_rx.err <= status_result(4) or status_result(0)
-        - reg_rx.ack <= '1'
-        - goto CYC_WAIT
-
-    READ_REGISTER:
-
-        1. [W, READ_REQUEST, reg_tx.idx]
-        2. [W, reg_tx.addr(15:8), reg_tx.addr(7:0)]
-        
-        3. [W, STATUS_0, reg_tx.idx] 
-        4. [W, STATUS_1, [R, status_result]
-
-        - Repeat 3 & 4 until status_result(5) = 1
-        - if status_result(0) or status_result(4)
-            reg_rx.ack <= '1'
-            reg_rx.err <= '1'
-            goto CYC_WAIT
-          else
-            continue
-
-        5. [W, READ_ENABLE_0, reg_tx.idx] 
-        6. [W, READ_ENABLE_1, [R, reg_rx.val(31:24)]
-        7. [W, READ_ENABLE_2, [R, reg_rx.val(23:16)]
-        8. [W, READ_ENABLE_3, [R, reg_rx.val(15:08)] 
-        9. [W, READ_ENABLE_4, [R, reg_rx.val(07:00)]
-        
-       10. [W, STATUS_0, reg_tx.idx] 
-       11. [W, STATUS_1, [R, status_result]
-        
-        -  reg_rx.err <= status_result(0) or status_result(1)
-        -  reg_rx.ack <= '1'
-        -  goto CYC_WAIT
-            
-     CYC_WAIT:
-        
-        - reg_rx_o.ack <= '0';
-        - reg_rx_o.err <= '0';
-        - if reg_tx.cyc = 0
-            goto IDLE
+.. Protocol Transactions Definitions:
+.. --------------------------------------
+.. 
+..  - [ : I2C start
+..  - ] : I2C stop
+..  - W : child device address + I2C write bit
+..  - R : child device address + I2C read bit
+..  
+..  - Status_result:
+..     - [X, w_busy, w_complete, w_error, r_busy, r_complete, r_error, seq_error]
+..     - seq_error always reset after successful "atomic" sequence
+..     
+..  - Command words:
+.. 
+..     #. 0x00 WRITE_ENABLE
+..     #. 0x01 READ_REQUEST
+..     #. 0x02 READ_ENABLE_0
+..     #. 0x03 READ_ENABLE_1
+..     #. 0x04 READ_ENABLE_2
+..     #. 0x05 READ_ENABLE_3
+..     #. 0x06 READ_ENABLE_4
+..     #. 0x07 STATUS_0
+..     #. 0x08 STATUS_1
+..     #. 0xFF INVALID
+.. 
+.. Course-grained States Machine
+.. -----------------------------
+.. 
+..     IDLE:
+..         
+..         - if reg_tx.cyc = '1' and reg_tx.we = '1' then
+..             goto WRITE_REGISTER
+..           else if reg_tx.cyc = '1' and reg_tx.we = '0' then
+..             goto READ_REGISTER
+.. 
+..     WRITE_REGISTER:
+.. 
+..         1. [W, WRITE_ENABLE, dev_idx]
+..         2. [W, reg_tx.addr(15:8), reg_tx.addr(7:0)]
+..         3. [W, reg_tx.val(31:24), reg_tx.val(23:16)]
+..         4. [W, reg_tx.val(15:08), reg_tx.val(07:00)]
+..         
+..         5. [W, STATUS_0, reg_tx.idx] 
+..         6. [W, STATUS_1, [R, status_result]
+..         
+..         - Repeat 5 & 6 repeat until status_result(5) = 1
+..         - reg_rx.err <= status_result(4) or status_result(0)
+..         - reg_rx.ack <= '1'
+..         - goto CYC_WAIT
+.. 
+..     READ_REGISTER:
+.. 
+..         1. [W, READ_REQUEST, reg_tx.idx]
+..         2. [W, reg_tx.addr(15:8), reg_tx.addr(7:0)]
+..         
+..         3. [W, STATUS_0, reg_tx.idx] 
+..         4. [W, STATUS_1, [R, status_result]
+.. 
+..         - Repeat 3 & 4 until status_result(5) = 1
+..         - if status_result(0) or status_result(4)
+..             reg_rx.ack <= '1'
+..             reg_rx.err <= '1'
+..             goto CYC_WAIT
+..           else
+..             continue
+.. 
+..         5. [W, READ_ENABLE_0, reg_tx.idx] 
+..         6. [W, READ_ENABLE_1, [R, reg_rx.val(31:24)]
+..         7. [W, READ_ENABLE_2, [R, reg_rx.val(23:16)]
+..         8. [W, READ_ENABLE_3, [R, reg_rx.val(15:08)] 
+..         9. [W, READ_ENABLE_4, [R, reg_rx.val(07:00)]
+..         
+..        10. [W, STATUS_0, reg_tx.idx] 
+..        11. [W, STATUS_1, [R, status_result]
+..         
+..         -  reg_rx.err <= status_result(0) or status_result(1)
+..         -  reg_rx.ack <= '1'
+..         -  goto CYC_WAIT
+..             
+..      CYC_WAIT:
+..         
+..         - reg_rx_o.ack <= '0';
+..         - reg_rx_o.err <= '0';
+..         - if reg_tx.cyc = 0
+..             goto IDLE

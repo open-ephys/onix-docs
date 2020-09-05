@@ -26,18 +26,8 @@ Electrode Mapping
 *******************************
 The nano-z internal channel number mapping for various EIBS are
 
-- :ref:`eib_64_1r2` - `this google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
-- :ref:`omnetics_adapter_64_1r0` - `this google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=1490495645>`__
+- :ref:`eib_64_1r2` - `this google sheet
+  <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
+- :ref:`omnetics_adapter_64_1r0` - `this google sheet
+  <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=1490495645>`__
 
-License
-*******************************
-Copyright Jonathan P. Newman |year|
-
-This documentation describes Open Hardware and is licensed under the
-CERN OHL v.1.2.
-
-You may redistribute and modify this documentation under the terms of the CERN
-OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed WITHOUT
-ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY
-QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for
-applicable conditions

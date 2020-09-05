@@ -49,7 +49,7 @@ signal lines are acquired.
 
 Bill of Materials
 ****************************
-- The interactive BOM is `here <../../_static/breakout-1r3_bom.html>`_
+- The interactive BOM is `here <../../_static/boms/breakout_1r4_bom.html>`_
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
   <https://docs.google.com/spreadsheets/d/18WfmbLGt8bGUUdksKp6AKA_wMX2SJ3Tndin-nnEgUCs/edit?usp=sharing>`_

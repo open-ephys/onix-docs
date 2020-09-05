@@ -1,3 +1,11 @@
+/* /* anchor offset hack */
+/* :target::before {
+/*     content: '';
+/*     display: block;
+/*     height:      150px;
+/*     margin-top: -150px;
+/* }
+
 /* import fonts */
 @font-face {
   font-family: "Source Sans";
@@ -35,32 +43,30 @@
 
 /* navigation bar colors*/
 .navbar {
-  background: #E3E8DC !important; /* #5fb5dc !important; */
+  background: white !important;
   font-size: 1em;
 }
 
 .navbar-nav > .active > .nav-link {
-  background-color: #f4d050 !important;
-  color: #1F2D22 !important;
+  color: #242c16 !important;
+  background-color: #5fb5dc;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
 
 .navbar-nav > .active > .nav-link:hover {
-  color: #519141 !important;
+  color: #344b39 !important;
   transition-duration: 0.4s;
 }
 
 .navbar a {
-  color: #1F2D22 !important;
+  color: #242c16 !important;
   font-family: "Bitter", sans-serif;
   transition-duration: 0.4s;
-  margin-right: 10px;
 }
 
 .navbar a:hover {
-  /* color: #f9f2d5 !important; */
-  color: #1F2D22 !important;
+  color: #344b39 !important;
   transition-duration: 0.4s;
 }
 
@@ -79,7 +85,7 @@
 /* right side links */
 .toc-entry > .nav-link.active {
   font-weight: 600;
-  color: #1F2D22;
+  color: #344b39;
   background-color: transparent;
   border-left: 2px solid #da714a;
 }
@@ -120,7 +126,6 @@ a.headerlink:hover {
 body {
   background-color: white;
   margin-bottom: 1.15rem;
-  font-size: 1em;
   padding-top: 100px;
   color: #242c16;
   font-family: "Source Sans", sans-serif;
@@ -130,55 +135,60 @@ h1 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   margin-top: 0;
   color: #242c16;
-  font-size: 2.2em;
+  font-size: 2.488em;
 }
 
 h2 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
 
 h3 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
-  font-size: 1.3em;
+  font-size: 1.728em;
 }
 
 h4 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
-  font-size: 1.1em;
+  font-size: 1.44em;
 }
 
 h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 h6 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.15;
   color: #242c16;
   font-size: 1em;
+}
+
+/* line heights */
+ul,ol,h1,h2,h3,h4,h5,h6 {
+  line-height: 1.5;
+}
+
+/* List items in main area, but not in side bars */
+body > li, p {
+  line-height: 1.5;
+  margin: 0.3em 0 ;
 }
 
 /* define admonition colors */
@@ -325,6 +335,7 @@ form:focus {
   }
 }
 
+/* add some extra spacing inside and around the landing page cards */
 .card-img-top {
   margin-top: 4em;
 }
@@ -333,41 +344,7 @@ form:focus {
   margin-top: 2em;
 }
 
-/* list line spacing */
-/* ol.simple {
-  margin-bottom: 1em; 
-}
-
-
-
-ul.simple {
-  margin-bottom: 1em; 
-} 
-*/
-ul,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-}
-
-/* List items in main area, but not in side bars */
-body > li,
-p {
-  line-height: 1.5;
-  margin: 0.3em 0;
-}
-
 /* ensure images stay within the column bounds*/
 img {
   max-width: 100%;
-}
-
-/* change color of Twitter logo */
-i.fa-twitter-square:before {
-  color: #333;
 }
