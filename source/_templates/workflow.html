@@ -1,0 +1,17 @@
+<table>
+    <thead>
+      <tr>
+        <th>{{ name }}</th>
+        <th style="text-align: center">
+            <img class="copy_img" src="{{ static_path }}/copy.svg" onclick="copyUrlToClipboard('{{ static_path }}/workflows/{{ name }}.bonsai')" width=20px />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+            <img src="{{ static_path }}/workflows/{{ name }}.svg" alt="{{ name}}" />
+        </td>
+      </tr>
+    </tbody>
+  </table>

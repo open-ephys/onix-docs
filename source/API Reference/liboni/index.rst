@@ -33,9 +33,9 @@ platform and cross-language use. It is composed of the following files:
 #. :ref:`onidriver.h`: device driver translation layer that must be
    implemented for a particular host hardware connection and
    firmware.
-#. ``ondriverloader.h``: functions used for dynamically loading the hardware
-   driver. This is used internally by the :ref:`oni.h` and can be ignored
-   during both software and driver development.
+#. ``ondriverloader.h``: private functions used for dynamically loading the
+   hardware driver. This is used internally by the :ref:`oni.h` and can be
+   ignored during both software and driver development.
 #. :ref:`onix.h`: ONIX-specific, out of ONI API specification
    scope, definitions and functions. Can be ignored for projects that
    do not interact with ONIX hardware.

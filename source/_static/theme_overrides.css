@@ -333,28 +333,6 @@ form:focus {
   margin-top: 2em;
 }
 
-/* list line spacing */
-/* ol.simple {
-  margin-bottom: 1em; 
-}
-
-
-
-ul.simple {
-  margin-bottom: 1em; 
-} 
-*/
-ul,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-}
-
 /* List items in main area, but not in side bars */
 body > li,
 p {
@@ -370,4 +348,9 @@ img {
 /* change color of Twitter logo */
 i.fa-twitter-square:before {
   color: #333;
+}
+
+/* Copy button on hover */ 
+.copy_img:active {
+    filter: invert(75%);
 }

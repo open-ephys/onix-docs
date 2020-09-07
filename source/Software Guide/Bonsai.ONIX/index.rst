@@ -1,7 +1,9 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
-
 Bonsai.ONIX
 ===================
+
+.. toctree::
+    :maxdepth: 1
+    
+    test
 
 .. todo:: Document.

@@ -12,10 +12,10 @@ API Reference
     clroni/index
     drivers/index
 
-The ONIX APIs are high-performance software interface for host computer
-interaction with ONIX hardware. API implementations are compliant with the
+ONIX APIs are high-performance software interfaces for host computer
+interaction with ONIX hardware. ONIX API implementations are compliant with the
 `Open Neuro Interface Specification <https://github.com/open-ephys/ONI>`_.
-These APIs are simple and has minimal external dependencies. Therefore, they
+These APIs are simple and have minimal external dependencies. Therefore, they
 are aimed at the creation of higher level language bindings and/or integration
 into existing acqusition software.
 
