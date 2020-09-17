@@ -32,3 +32,5 @@ FAQ
         headstages. Have a look at :ref:`serialization` for more
         information on why.
  
+    6. Why is there no Open Ephys GUI plugin for ONIX hardware?
+        Have a look at the :ref:`open_ephys_gui` page.

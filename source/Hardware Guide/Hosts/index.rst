@@ -5,6 +5,7 @@ Hosts
 
 .. toctree::
 
+    host-firmware
     fmc-host_1r3
     pcie-host-nereid
 

@@ -53,8 +53,8 @@ hardware clock and acquisition trigger (see :ref:`sync_ctx` for an example).
 This is not always possible. For instance, multiple USB hosts cannot be
 synchronized.
 
-.. attention:: :func:`oni_init_ctx` cannot be called a previously initialized context.
-    Doing so will return an error.
+.. attention:: :func:`oni_init_ctx` cannot be called on a previously
+    initialized context.  Doing so will return an error.
 
 If the device configuration is changed following context initialization (e.g. a
 headstage is plugged in or turned on), a context reset must be issued which to
@@ -336,7 +336,7 @@ size, then ``oni_create_frame`` will return an error.
     the hardware and device driver permit.
 
 .. warning:: Attempting to write multi-packet frames that are larger than
-    :macro:ONI_OPT_BLOCKWRITESIZE will result in a error.
+    :macro:`ONI_OPT_BLOCKWRITESIZE` will result in a error.
 
 After a frame has been created, it can then be written to to hardware using
 ``oni_write_frame``. Just like frames produced by ``oni_read_frame``, frames

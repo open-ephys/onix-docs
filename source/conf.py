@@ -53,7 +53,7 @@ templates_path = ["_templates"]
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = [".rst", ".md"]
+source_suffix = [".rst"]
 
 # The master toctree document.
 main_doc = "index"
@@ -176,16 +176,16 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ["search.html"]
 
-
 # -- Extension configuration -------------------------------------------------
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "github_url": "https://github.com/open-ephys/ONI",
+    "github_url": "https://github.com/open-ephys/onix-docs",
     "twitter_url": "https://twitter.com/openephys",
     "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
     "navigation_with_keys": True,
+    "use_edit_page_button": True,
     # 'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',  # NOQA
     # Set the Style of Google Web Font's CSS.
     # Defaults to "font-family: 'Text Me One', sans-serif;"

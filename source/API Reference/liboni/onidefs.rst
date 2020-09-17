@@ -57,7 +57,7 @@ corresponding context option type used during calls to these functions.
         Device table.
 
         =================== ==================================================
-        Option value type   :type:oni_device_t *
+        Option value type   :type:`oni_device_t` *
         Option description  Pointer to a pre-allocated array of :type:oni_device_t structs
         Default value       N/A
         Access              Read
@@ -70,7 +70,7 @@ corresponding context option type used during calls to these functions.
         Number of devices in the device table.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  The number of devices supported by the firmware
         Default value       N/A
         Access              Read
@@ -88,7 +88,7 @@ corresponding context option type used during calls to these functions.
         start acqusition sychronously with a clock reset.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Any value greater than 0 will start acquisition
         Default value       0
         Access              Write and Read
@@ -103,7 +103,7 @@ corresponding context option type used during calls to these functions.
         to all devices in the device table. Following a
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Any value greater than 0 will trigger a reset
         Default value       0 (Untriggered)
         Access              Write
@@ -117,7 +117,7 @@ corresponding context option type used during calls to these functions.
         clock governing the host hardware.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Host main clock frequency in Hz
         Default value       N/A
         Access              Read
@@ -132,7 +132,7 @@ corresponding context option type used during calls to these functions.
         to drive the acqusition counter which is used timestamp data frames.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Host acqusition clock frequency in Hz
         Default value       N/A
         Access              Read
@@ -148,7 +148,7 @@ corresponding context option type used during calls to these functions.
         to 1.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  1: reset clock counter, 2: reset clock counter and set :macro:ONI_OPT_RUNNING to 1
         Default value       0 (Untriggered)
         Access              Write
@@ -162,7 +162,7 @@ corresponding context option type used during calls to these functions.
         the sychronization role of the hardware in multi-host systems.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  TODO
         Default value       0
         Access              Read and Write
@@ -177,7 +177,7 @@ corresponding context option type used during calls to these functions.
         every device within the device table that generates read data.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Maximal read :type:`oni_frame_t` size in bytes
         Default value       N/A
         Access              Read
@@ -193,7 +193,7 @@ corresponding context option type used during calls to these functions.
         that accepts write data.
 
         =================== ==================================================
-        Option value type   ``oni_reg_val_t``
+        Option value type   :type:`oni_reg_val_t`
         Option description  Maximal (single packet) write :type:`oni_frame_t` size in bytes
         Default value       N/A
         Access              Read

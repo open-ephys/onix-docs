@@ -32,13 +32,13 @@ See https://semver.org/ for a complete explanation of these macro definitions.
 
 .. macro:: ONI_VERSION
 
-    Defined as
+    Compile-time API version. Defined as
 
     .. code-block:: c
 
         ONI_MAKE_VERSION(ONI_VERSION_MAJOR ONI_VERSION_MINOR, ONI_VERSION_PATCH).
 
-    Compile-time API version.
+.. _oni_h_acquisition_context:
 
 Acquisition Context
 ---------------------------------------
@@ -82,11 +82,15 @@ Device
 
     .. member:: oni_size_t idx
 
-        Complete rsv.rsv.hub.idx device table index
+        Fully qualified **RSV.RSV.HUB.IDX** device table index.
+
+        :RSV: 8-bit unsigned integer (reserved)
+        :HUB: 8-bit unsigned integer indicating the hub index
+        :IDX: 8-bit unsigned integer indicating the device index
 
     .. member:: oni_dev_id_t id
 
-        Device ID number (see :ref:onix.h for ONIX-specific definitions)
+        Device ID number (see :ref:`onix.h` for ONIX-specific definitions)
 
     .. member:: oni_size_t read_size
 
@@ -120,6 +124,10 @@ Frame
 ---------------------------------------
 .. struct:: oni_frame_t
 
+    .. member:: const oni_fifo_time_t time
+
+        Frame time (:macro:`ONI_OPT_ACQCLKHZ` host clock counter)
+
     .. member:: const oni_fifo_dat_t dev_idx
 
         Device index that produced or accepts the frame
@@ -127,10 +135,6 @@ Frame
     .. member:: const oni_fifo_dat_t data_sz
 
         Size of data in bytes
-
-    .. member:: const oni_fifo_time_t time
-
-        Frame time (:macro:`ONI_OPT_ACQCLKHZ` host clock counter)
 
     .. member:: uint8_t *data
 
@@ -235,7 +239,7 @@ needed during the development of user-facing software.
     operations will return immediately. Attached resources (device drivers,
     data buffers, etc.) are closed and their resources freed.
 
-    :param ctx: The acquisition context to closed
+    :param ctx: The acquisition context to close.
     :return: 0 on success otherwise see :ref:`onidef_error_codes`.
     :example: See :ref:`liboni_example_ctx_destruction`
 
@@ -260,7 +264,12 @@ needed during the development of user-facing software.
     :param size: Pointer to the size of ``value`` buffer (including terminating
         null character, if applicable) in bytes.
     :return: 0 on success otherwise see :ref:`onidef_error_codes`.
-    :example: See :ref:`liboni_example_device_table` and :ref:`liboni_example_set_buffers`
+    :example: See :ref:`liboni_example_device_table` and
+        :ref:`liboni_example_set_buffers`
+
+    .. seealso::
+        :ref:`onidef_context_options`
+            Valid context options with access and type specifications.
 
 .. function:: int oni_set_opt(oni_ctx ctx, int option, const void *value, size_t size)
 
@@ -283,6 +292,10 @@ needed during the development of user-facing software.
         character, if applicable) in bytes.
     :return: 0 on success otherwise see :ref:`onidef_error_codes`
     :example: See :ref:`liboni_example_device_table` and :ref:`liboni_example_set_buffers`
+
+    .. seealso::
+        :ref:`onidef_context_options`
+            Valid context options with access and type specifications.
 
 .. function:: int oni_get_driver_opt(const oni_ctx ctx, int drv_opt, void* value, size_t *size)
 
@@ -339,7 +352,7 @@ needed during the development of user-facing software.
     :ref:`liboni_example_set_buffers`). :struct:`oni_frame_t`'s created during
     calls to :func:`oni_read_frame` are zero-copy views into this buffer.
 
-    .. note:: It is the user's responsibility to free the resources allocated by
+    .. attention:: It is the user's responsibility to free the resources allocated by
         this call by passing the resulting frame pointer to
         :func:`oni_destroy_frame`
 
@@ -353,7 +366,7 @@ needed during the development of user-facing software.
 
     Create an :oni_frame_t` for consumption by :func:`oni_write_frame`.
 
-    .. note:: It is the user's responsibility to free the resources allocated by
+    .. attention:: It is the user's responsibility to free the resources allocated by
         this call by passing the resulting frame pointer to
         :func:`oni_destroy_frame`
 
@@ -367,7 +380,7 @@ needed during the development of user-facing software.
     :return: 0 on success otherwise see :ref:`onidef_error_codes`
     :example: See :ref:`liboni_example_write_frame`
 
-    .. note:: ``data_sz`` Must be
+    .. attention:: ``data_sz`` Must be
 
         #. An integer multiple of the selected ``dev_idx``'s write size as
            indicated within the device table

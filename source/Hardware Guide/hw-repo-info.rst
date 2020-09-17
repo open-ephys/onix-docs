@@ -48,7 +48,7 @@ folder. Files within this folder are defined as follows:
 - \*.CST = top-side stencil
 - \*.SST = bottom-side stencil
 
-For example, `here <https://github.com/jonnew/open-ephys-pcie/tree/master/eib-64/revisions/rev-1.2/gerber>`_ 
+For example, `here <https://github.com/jonnew/ONIX/tree/main/eib-64/revisions/rev-1.2/gerber>`_ 
 are the gerber files needed to create :ref:`eib_64_1r2`. In some cases, panelized versions of
 the PCB will be available in the ``gerber-panel`` and ``stencil-panel`` folders.
 

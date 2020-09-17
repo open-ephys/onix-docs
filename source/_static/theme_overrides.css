@@ -350,7 +350,17 @@ i.fa-twitter-square:before {
   color: #333;
 }
 
-/* Copy button on hover */ 
+/* Copy button on for bonsai workflows */ 
 .copy_img:active {
     filter: invert(75%);
+    cursor: pointer;
+}
+
+.copy_img:hover {
+    cursor: pointer;
+}
+
+/* Prevent link targets from being covered by navbar */
+html {
+  scroll-padding-top: 80px; 
 }

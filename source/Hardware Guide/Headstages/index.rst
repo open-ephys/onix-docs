@@ -7,6 +7,7 @@ Headstages
     
     serialization
     tethers
+    headstage-firmware
     commutators
     headstage-64_1r3
     headstage-neuropix_1r2
