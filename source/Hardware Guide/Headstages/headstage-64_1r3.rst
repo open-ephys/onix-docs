@@ -1,5 +1,4 @@
 .. _headstage_64_1r3:
-.. |year| date:: %Y
 
 headstage-64 v1.3
 ##############################

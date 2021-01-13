@@ -1,5 +1,4 @@
 .. _breakout_1r4:
-.. |year| date:: %Y
 
 breakout v1.4
 #########################

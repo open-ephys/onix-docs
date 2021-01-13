@@ -1,5 +1,4 @@
 .. _hardware_repo_info:
-.. |year| date:: %Y
 
 Hardware Repository Information
 ##################################
@@ -63,7 +62,7 @@ Aside from a spreadsheet of electronic components, some boards may include the
 following other materials information
 
 - An interactive electronics BOM (e.g. like `this one
-  <../_static/headstage-64_1r3_bom.html>`__ for :ref:`headstage_64_1r3`)
+  <../_static/boms/headstage-64_1r3_bom.html>`__ for :ref:`headstage_64_1r3`)
 - Lists of mechanical components that need to be machined, 3D-printed, and/or
   assembled (e.g. for breakout boards)
 

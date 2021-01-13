@@ -8,6 +8,11 @@ sphinx = "*"
 sphinxcontrib-wavedrom = "*"
 sphinxcontrib-bitfield = "*"
 pydata-sphinx-theme = "*"
+breathe = "*"
 
 [dev-packages]
 "doc8" = "*"
+
+[packages.sphinx-csharp]
+git = "https://github.com/rogerbarton/sphinx-csharp.git"
+ref = "master"

@@ -5,7 +5,7 @@ ONIX: Open Neuro Interface X
 
 **Date**: |today|
 
-.. **Download documentation**: `PDF <onix.pdf>`__ 
+.. **Download documentation**: `PDF <onix.pdf>`__
 
 **Useful Links**: `Open Ephys <https://open-ephys.org/>`__ | `Slack Channel <https://open-ephys.slack.com/>`__ | `Mailing List <https://groups.google.com/g/open-ephys>`__ | :ref:`FAQ <FAQ>`
 
@@ -17,9 +17,9 @@ second-generation `Open Ephys <https://open-ephys.org/>`_ acquisition system.
 ONIX is a collection of `Open Neuro Interface
 <https://github.com/open-ephys/ONI>`_-compliant tools for performing
 neuroscience experiments with freely moving animals. ONIX is the successor to
-original Open Ephys `Acquisition System <https://open-ephys.org/acq-board>`_ and
-significantly expands on its scope, performance, and compatibility with other
-open-source tools. Here you can find
+original Open Ephys `Acquisition System <https://open-ephys.org/acq-board>`_
+and significantly expands on its scope, performance, and compatibility with
+other open-source tools. Here you can find
 
 - Technical information on ONIX hardware, programming interfaces, and software
   integration
@@ -27,9 +27,8 @@ open-source tools. Here you can find
 - Tutorials
 - ONIX-specific knowledge and hacks
 
-For general information on Ephys techniques, have a look at the `Open
-Ephys Wiki
-<https://open-ephys.atlassian.net/wiki/spaces/OEW/overview?mode=global>`_
+For general information on Ephys techniques, have a look at the `Open Ephys
+Wiki <https://open-ephys.atlassian.net/wiki/spaces/OEW/overview?mode=global>`_
 
 .. raw:: html
 
@@ -44,7 +43,7 @@ Ephys Wiki
 
 .. container:: custom-button
 
-    :ref:`Go to the about pages<about>`
+    :ref:`Go to the about pages<support>`
 
 .. raw:: html
 
@@ -85,7 +84,7 @@ Ephys Wiki
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
                 <div class="card text-center intro-card shadow">
-                <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guides" height="120">
+                <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">Software Guide</h5>
                     <p class="card-text">Learn about existing software for Acquiring from ONIX hardware.</p>

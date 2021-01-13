@@ -1,5 +1,4 @@
 .. _ucla_miniscope:
-.. |year| date:: %Y
 
 UCLA Miniscope
 ##############################

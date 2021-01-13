@@ -2,7 +2,9 @@
 
 About
 ===============
-General contact information, FAQs, etc.
+
+
+Have a look at the following links for contact information, FAQs, etc.
 
 .. toctree::
     :maxdepth: 1

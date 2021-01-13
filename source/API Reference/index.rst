@@ -1,6 +1,9 @@
+.. |api_image| image:: ../_static/noun_books.svg
+  :height: 60
+
 .. _api_ref:
 
-API Reference
+|api_image| API Reference
 ==========================================
 
 .. toctree::

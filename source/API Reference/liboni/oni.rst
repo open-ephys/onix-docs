@@ -276,13 +276,12 @@ needed during the development of user-facing software.
     Sets the option specified by the ``option`` argument within the acquisition
     context ``ctx`` to the contents of the  ``value`` buffer. The ``size``
     indicates the size of the ``value`` buffer, in bytes.  Upon successful
-    completion, :func:`oni_set_opt` modifies the value pointed to by
-    ``size`` to indicate the actual size of the option value stored in the
-    functions will error. Additionally, some context options are read-only and
-    others can only be written in certain acquisition states. If these
-    constraints are disobeyed, the function will error. See
-    :ref:`onidef_context_options` for description of each possible ``option``,
-    including access constraints.
+    completion, :func:`oni_set_opt` modifies the value pointed to by ``size``
+    to indicate the actual size of the option value stored in the functions
+    will error. Additionally, some context options are read-only and others can
+    only be written in certain acquisition states. If these constraints are
+    disobeyed, the function will error. See :ref:`onidef_context_options` for
+    description of each possible ``option``, including access constraints.
 
     :param ctx: :type:`oni_ctx` context to read an option from
     :param option: Selected option to set. See :ref:`onidef_context_options`

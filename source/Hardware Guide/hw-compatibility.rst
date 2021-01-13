@@ -1,5 +1,4 @@
 .. _compatibility:
-.. |year| date:: %Y
 
 Version Compatibility 
 ##############################
@@ -11,8 +10,8 @@ Version Compatibility
 
 Beta Test
 *************************
-The following hardware components comprise our beta-test system. These hardware
-revisions are compatible:
+The following hardware components comprise our beta-test system.
+These hardware revisions are compatible:
 
 #. :ref:`headstage_neuropix_1r2`
 #. :ref:`headstage_64_1r3`

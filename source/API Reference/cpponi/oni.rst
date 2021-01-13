@@ -61,7 +61,7 @@ Errors
         :class:`oni::error_t` is constructed and thrown from within cpponi and
         only need to be handled by the host application.
 
-        :param: liboni error code integer, generally resulting from a non-zero
+        :param errnum: liboni error code integer, generally resulting from a non-zero
             return value of an Underlying liboni function.
 
     .. function:: const char *what() const noexcept override
@@ -274,8 +274,8 @@ Context
         .. note:: ``data.size()`` must be
 
             #. An integer multiple of the selected ``dev_idx``'s write size as
-                indicated within the device table
-            #. Smaller than the internal write block memory size (see
+               indicated within the device table
+            #. Smaller than the internal write block memory size (see 
                :c:macro:`ONI_OPT_BLOCKWRITESIZE` and :ref:`liboni_example_set_buffers`)
 
         .. note:: `std::span

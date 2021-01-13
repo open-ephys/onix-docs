@@ -1,7 +1,6 @@
-.. _liboni_example:
-.. |year| date:: %Y
-
 .. default-domain:: c
+
+.. _liboni_example:
 
 Examples
 ##########################################
@@ -182,8 +181,8 @@ across devices int the table aligned to the bus width of hardware communication
 link). This provides the lowest latency, but is optimal only for very low
 bandwidth acquisition and deterministic and low-latency threads (e.g. those
 found on real-time operating system). On a normal computer, these buffers can
-be set manually to optimize the bandwidth/latency trade off. For example, to set
-the buffer read and write sizes to 1024 and 8192 bytes respectively, use
+be set manually to optimize the bandwidth/latency trade off. For example, to
+set the buffer read and write sizes to 1024 and 8192 bytes respectively, use
 ``oni_set_opt``:
 
 .. code-block:: c
@@ -215,8 +214,9 @@ sizes, use ``oni_get_opt`` as follows
 
 Starting Acquisition
 ********************************************
-Prior to reading and writing to/from the high bandwidth data streams, acquisition
-must be started. To do this, write 1 to the ``ONI_OPT_RUNNING`` context option:
+Prior to reading and writing to/from the high bandwidth data streams,
+acquisition must be started. To do this, write 1 to the ``ONI_OPT_RUNNING``
+context option:
 
 .. code-block:: c
 
@@ -286,9 +286,10 @@ calls to ``oni_read_frame`` as follows:
 
 In the preceding example, ``frame`` is initialized to ``NULL`` because a call
 to ``oni_read_frame`` will assign its contents to an existing, pre-allocated
-memory block (see :ref:`liboni_example_set_buffers`). ``oni_read_frame`` will return an error
-if the acquisition context is in an inappropriate state (e.g. not started). If
-the hardware is not producing frames, it will wait indefinitely.
+memory block (see :ref:`liboni_example_set_buffers`). ``oni_read_frame`` will
+return an error if the acquisition context is in an inappropriate state (e.g.
+not started). If the hardware is not producing frames, it will wait
+indefinitely.
 
 .. attention:: After acquisition is started, ``oni_read_frame`` must be called
     frequently enough such that hardware buffers do not overflow.
@@ -379,9 +380,10 @@ Synchronizing Contexts
 ********************************************
 .. todo:: Document.
 
-.. ## Test Programs (Linux Only)
-.. The [libonix-test](libonix-test) directory contains minimal working programs that use this library.
 ..
-.. 1. `firmware` : Emulate hardware. Stream fake data over UNIX pipes (Linux only)
-.. 1. `host` : Basic data acquisition loop. Communicate with `firmware` or actual
-..    hardware (Linux and Windows).
+    ## Test Programs (Linux Only)
+    The [libonix-test](libonix-test) directory contains minimal working programs that use this library.
+
+    1. `firmware` : Emulate hardware. Stream fake data over UNIX pipes (Linux only)
+    1. `host` : Basic data acquisition loop. Communicate with `firmware` or actual
+       hardware (Linux and Windows).

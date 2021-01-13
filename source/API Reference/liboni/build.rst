@@ -1,5 +1,4 @@
 .. _liboni-build:
-.. |year| date:: %Y
 
 Building liboni
 ##########################################

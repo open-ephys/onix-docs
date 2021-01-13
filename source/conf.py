@@ -29,7 +29,6 @@ version = "0.0"
 # The full version, including alpha/beta/rc tags
 release = "0.0.0"
 
-
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -45,6 +44,8 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
     'sphinxcontrib.bitfield',
+    'breathe',
+    'sphinx_csharp',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -73,7 +74,14 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
+# -- Extension configuration -------------------------------------------------
+
+# todo configuration
 todo_include_todos = True
+
+# Breathe Configuration
+breathe_default_project = "clroni"
+breathe_projects = { "clroni": "./API Reference/clroni/doxygen-xml" }
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -83,7 +91,6 @@ todo_include_todos = True
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/onix_open_ephys_logo.svg"
 html_scaled_image_link = True
-
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -134,13 +141,11 @@ latex_documents = [
     (main_doc, "onix-docs.tex", "ONIX Documentation", "Open Ephys", "manual"),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [(main_doc, "onix-docs", "ONIX Documentation", [author], 1)]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 

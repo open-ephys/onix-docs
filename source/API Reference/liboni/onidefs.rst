@@ -382,7 +382,8 @@ Return codes for functions in the API.
 
 Hardware Registers
 ---------------------------------------
-These constants are used by :ref:drivers to implement the ONI-specified register programming interface.
+These constants are used by :ref:`drivers` to implement the ONI-specified
+register programming interface.
 
 .. todo:: Document
 

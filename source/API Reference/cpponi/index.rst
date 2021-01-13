@@ -1,5 +1,4 @@
 .. _cpponi:
-.. |year| date:: %Y
 
 cpponi
 ########################
@@ -16,7 +15,6 @@ is not available, :cpp:class:`oni::frame_t` uses `std::vectors
 
 .. toctree::
     :maxdepth: 1
-    :hidden:
 
     oni
     onix

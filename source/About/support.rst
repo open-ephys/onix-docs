@@ -2,6 +2,11 @@
 
 Contact
 =====================
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    faq
 
 For **purchasing questions, warranty queries, hardware repair, etc**
 
@@ -13,7 +18,7 @@ the appropriate repo
 
 - `Open Neuro Interface Specification <https://github.com/open-ephys/ONI>`_
 - `ONIX Hardware Repo <https://github.com/jonnew/ONIX>`_
-- `ONIX API Repo <https://github.com/jonnew/liboni>`_
+- `ONIX API Repo <https://github.com/jonnew/ONIX>`_
 - `ONIX Bonsai Package Repo <https://github.com/jonnew/Bonsai.ONI>`_
 
 You can also **ask questions** on The Open Ephys google group or Slack channel

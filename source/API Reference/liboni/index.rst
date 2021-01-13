@@ -1,5 +1,4 @@
 .. _liboni:
-.. |year| date:: %Y
 
 liboni
 ##########################################
@@ -8,7 +7,6 @@ C implementation of the `Open Neuro Interface API Specification
 
 .. toctree::
     :maxdepth: 1
-    :hidden:
 
     onidefs
     oni
@@ -49,7 +47,7 @@ implementation contains drivers for
 
 #. `RIFFA <https://github.com/KastnerRG/riffa>`_ is a free and open-source,
    FPGA IP core and device driver that allows the ONI communication channels to
-   be implemented using the PCIe bus. **Open Ephys hardware uses RIFFA.**
+   be implemented using the PCIe bus. **ONIX PCIe-based hardware uses RIFFA.**
 #. `Xillybus <http://xillybus.com/>`_ is a proprietary FPGA IP cores and free
    and open source device drivers to allow the communication channels to be
    implemented using the PCIe bus. The licensing terms for the FPGA core are

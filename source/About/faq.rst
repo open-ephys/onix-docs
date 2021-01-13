@@ -1,5 +1,4 @@
 .. _faq:
-.. |year| date:: %Y
 
 FAQ
 ===
@@ -34,3 +33,12 @@ FAQ
  
     6. Why is there no Open Ephys GUI plugin for ONIX hardware?
         Have a look at the :ref:`open_ephys_gui` page.
+
+    7. I have existing acqusition hardware. Can I can use your API and software
+       to acquire data from it?
+        Our API design explicity decouples hardware details from API
+        functionality. Have a look at the :ref:`drivers` page for more
+        information on integrating your hardware into the ONIX software stack.
+        Depending on how your device communicates with the computer, you may be
+        10's of lines of C away from having this "just work". 
+

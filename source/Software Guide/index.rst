@@ -1,7 +1,10 @@
+.. |software_logo| image:: ../_static/noun_macbook.svg
+  :height: 60
+
 .. _software:
 
-Software Guides
-=================
+|software_logo| Software Guide
+===================================
 
 .. toctree::
 
