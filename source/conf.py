@@ -43,7 +43,6 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
-    'sphinxcontrib.bitfield',
     'breathe',
     'sphinx_csharp',
 ]
