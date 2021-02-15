@@ -222,6 +222,10 @@ html_context = {
 # Use wavedrom python bindings to get html and PDF
 # render_using_wavedrompy = False
 
+# This is a temporary fix for wavedrom
+offline_skin_js_path = "_static/default.js"
+offline_wavedrom_js_path = "_static/wavedrom.min.js"
+
 # Option for linkcheck
 linkcheck_anchors = False
 
