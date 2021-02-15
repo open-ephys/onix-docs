@@ -220,7 +220,7 @@ html_context = {
 }
 
 # Use wavedrom python bindings to get html and PDF
-render_using_wavedrompy = True
+# render_using_wavedrompy = False
 
 # Option for linkcheck
 linkcheck_anchors = False

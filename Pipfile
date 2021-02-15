@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 sphinx = "*"
-wavedrom = "*" # python wavedrom bindings
 sphinxcontrib-wavedrom = "*"
 pydata-sphinx-theme = "*"
 breathe = "*"
