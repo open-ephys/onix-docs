@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="20" column="35" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="20" bodyend="-1"/>
+        <location file="clroni/Frame.cs" line="20" column="35" bodyfile="clroni/Frame.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structoni_1_1_frame_1_1frame__t_1a212adc91de521468ad51e162c0346f4a" prot="public" static="no" mutable="no">
         <type>readonly uint</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="21" column="34" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="21" bodyend="-1"/>
+        <location file="clroni/Frame.cs" line="21" column="34" bodyfile="clroni/Frame.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structoni_1_1_frame_1_1frame__t_1a0d7ab58456f345f4871bb13b8e24741c" prot="public" static="no" mutable="no">
         <type>readonly uint</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="22" column="34" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="22" bodyend="-1"/>
+        <location file="clroni/Frame.cs" line="22" column="34" bodyfile="clroni/Frame.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structoni_1_1_frame_1_1frame__t_1a74a4d47fdc452fc55e48b11125212c5f" prot="public" static="no" mutable="no">
         <type>readonly byte *</type>
@@ -53,14 +53,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="23" column="34" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="23" bodyend="-1"/>
+        <location file="clroni/Frame.cs" line="23" column="34" bodyfile="clroni/Frame.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="18" column="15" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="19" bodyend="24"/>
+    <location file="clroni/Frame.cs" line="18" column="15" bodyfile="clroni/Frame.cs" bodystart="19" bodyend="24"/>
     <listofallmembers>
       <member refid="structoni_1_1_frame_1_1frame__t_1a74a4d47fdc452fc55e48b11125212c5f" prot="public" virt="non-virtual"><scope>oni::Frame::frame_t</scope><name>data</name></member>
       <member refid="structoni_1_1_frame_1_1frame__t_1a0d7ab58456f345f4871bb13b8e24741c" prot="public" virt="non-virtual"><scope>oni::Frame::frame_t</scope><name>data_sz</name></member>

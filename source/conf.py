@@ -220,9 +220,8 @@ html_context = {
     "css_files": ["_static/theme_overrides.css",],
 }
 
-# This is a temporary fix for wavedrom
-offline_skin_js_path = "_static/default.js"
-offline_wavedrom_js_path = "_static/wavedrom.min.js"
+# Use wavedrom python bindings to get html and PDF
+render_using_wavedrompy = True
 
 # Option for linkcheck
 linkcheck_anchors = False

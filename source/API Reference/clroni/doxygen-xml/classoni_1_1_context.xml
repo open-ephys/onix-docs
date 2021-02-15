@@ -3,6 +3,7 @@
   <compounddef id="classoni_1_1_context" kind="class" language="C#" prot="public">
     <compoundname>oni::Context</compoundname>
     <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
       <sectiondef kind="private-type">
       <memberdef kind="enum" id="classoni_1_1_context_1a513e430aeacbdd22315b8d9f95a9fad0" prot="private" static="no" strong="yes">
         <type>int</type>
@@ -105,23 +106,50 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="15" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="16" bodyend="30"/>
+        <location file="clroni/Context.cs" line="16" column="16" bodyfile="clroni/Context.cs" bodystart="17" bodyend="31"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="classoni_1_1_context_1a71ce6118acfc61ac68d6c72efed2ac59" prot="private" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int oni.Context.HUB_MGR_ADDRESS</definition>
-        <argsstring></argsstring>
-        <name>HUB_MGR_ADDRESS</name>
-        <initializer>= 254</initializer>
+      <memberdef kind="enum" id="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262" prot="private" static="no" strong="yes">
+        <type>uint</type>
+        <name>HubRegister</name>
+        <enumvalue id="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a91d5a20de180a33ca8d66eda86a8d2bf" prot="private">
+          <name>HARDWAREID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a5cbf2969efe90fc52f6628c9c3424ae9" prot="private">
+          <name>FIRMWAREVER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a3d30d2fc94fdea62973b497617d91c13" prot="private">
+          <name>CLKRATEHZ</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262ad0c061e213ff64db473220cd43e030f8" prot="private">
+          <name>DELAYNS</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="33" column="27" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="33" bodyend="-1"/>
+        <location file="clroni/onix.cs" line="70" column="16" bodyfile="clroni/onix.cs" bodystart="71" bodyend="76"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -136,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="36" column="40" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="36" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="34" column="40" bodyfile="clroni/Context.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -152,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="43" column="30" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="43" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="41" column="30" bodyfile="clroni/Context.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classoni_1_1_context_1a163ec1e876f6981496f53b63e6192854" prot="public" static="no" mutable="no">
         <type>readonly uint</type>
@@ -166,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="50" column="30" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="50" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="48" column="30" bodyfile="clroni/Context.cs" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classoni_1_1_context_1a30319fa039a6ef86aa120d9dc623f2c2" prot="public" static="no" mutable="no">
         <type>readonly uint</type>
@@ -180,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="57" column="30" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="57" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="55" column="30" bodyfile="clroni/Context.cs" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classoni_1_1_context_1a972bab2364c5cf1cc8493ed452375887" prot="public" static="no" mutable="no">
         <type>readonly uint</type>
@@ -194,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="64" column="30" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="64" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="62" column="30" bodyfile="clroni/Context.cs" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classoni_1_1_context_1ad61ee2c0ecba30708117ef70844ed785" prot="public" static="no" mutable="no">
         <type>readonly Dictionary&lt; uint, <ref refid="structoni_1_1_device" kindref="compound">Device</ref> &gt;</type>
@@ -202,13 +230,13 @@
         <argsstring></argsstring>
         <name>DeviceTable</name>
         <briefdescription>
-<para>ONI specified device table containing the full device hierarchy governed by this acquisition context. </para>
+<para>ONI specified device table containing the full device hierarchy governed by this acquisition context. This IDictionary maps a fully-qualified <ref refid="structoni_1_1_device_1a66ecf6d5fbbcd857605dde6a16e8c120" kindref="member">Device.Address</ref> to a <ref refid="structoni_1_1_device" kindref="compound">Device</ref> instance. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="70" column="36" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="70" bodyend="-1"/>
+        <location file="clroni/Context.cs" line="70" column="36" bodyfile="clroni/Context.cs" bodystart="70" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="property">
@@ -224,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="292" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="293" bodyend="298"/>
+        <location file="clroni/Context.cs" line="292" column="21" bodyfile="clroni/Context.cs" bodystart="293" bodyend="298"/>
       </memberdef>
       <memberdef kind="property" id="classoni_1_1_context_1a428dbe9704ed59092e638ed1a7ffbfc2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -238,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="305" column="20" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="306" bodyend="315"/>
+        <location file="clroni/Context.cs" line="305" column="20" bodyfile="clroni/Context.cs" bodystart="306" bodyend="315"/>
       </memberdef>
       <memberdef kind="property" id="classoni_1_1_context_1aa2e1fe9220a2865f144731a4a3fcaa0c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -252,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="327" column="20" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="328" bodyend="337"/>
+        <location file="clroni/Context.cs" line="327" column="20" bodyfile="clroni/Context.cs" bodystart="328" bodyend="337"/>
       </memberdef>
       <memberdef kind="property" id="classoni_1_1_context_1ad225a8ed2c9ec9c9e696cfa54515b5b5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -266,7 +294,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="347" column="20" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="348" bodyend="357"/>
+        <location file="clroni/Context.cs" line="347" column="20" bodyfile="clroni/Context.cs" bodystart="348" bodyend="357"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classoni_1_1_context_1adcb3ae0dabb67f8dceb36251761ac926" prot="private" static="yes" mutable="no">
+        <type>const uint</type>
+        <definition>const uint oni.Context.HUB_MGR_ADDRESS</definition>
+        <argsstring></argsstring>
+        <name>HUB_MGR_ADDRESS</name>
+        <initializer>= 254</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clroni/onix.cs" line="68" column="28" bodyfile="clroni/onix.cs" bodystart="68" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -292,7 +336,10 @@
 <parametername>driver</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A string specifying the device driver used by the context to control hardware. This string corresponds a compiled implementation of onidriver.h that has the name onidriver_&lt;drv_name&gt;.&lt;so/dll&gt;. <parameterlist kind="param"><parameteritem>
+<para>A string specifying the device driver used by the context to control hardware. This string corresponds a compiled implementation of onidriver.h that has the name onidriver_&lt;drv_name&gt;.so/dll.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
@@ -319,14 +366,10 @@
 </parameteritem>
 </parameterlist>
 </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="86" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="86" bodyend="120"/>
+        <location file="clroni/Context.cs" line="86" column="16" bodyfile="clroni/Context.cs" bodystart="86" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1ad1c43916c7883426b7bcb6c6e148d7b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -366,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="236" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="236" bodyend="239"/>
+        <location file="clroni/Context.cs" line="236" column="21" bodyfile="clroni/Context.cs" bodystart="236" bodyend="239"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a7549c1eee95d06f887b6dbc3f987b370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -405,7 +448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="247" column="20" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="247" bodyend="250"/>
+        <location file="clroni/Context.cs" line="247" column="20" bodyfile="clroni/Context.cs" bodystart="247" bodyend="250"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a2385c7779042ea4ccf5a507c9d41132d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -434,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="260" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="260" bodyend="270"/>
+        <location file="clroni/Context.cs" line="260" column="21" bodyfile="clroni/Context.cs" bodystart="260" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a6cc69f1d6399bc8a3b499bc69e2b7044" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -448,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="275" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="275" bodyend="278"/>
+        <location file="clroni/Context.cs" line="275" column="21" bodyfile="clroni/Context.cs" bodystart="275" bodyend="278"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1ad5a5c9afef192fb9c9ded5d2adf951c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -462,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="284" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="284" bodyend="287"/>
+        <location file="clroni/Context.cs" line="284" column="21" bodyfile="clroni/Context.cs" bodystart="284" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a2e76f912ee86a01557366ab6f44979dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint</type>
@@ -513,7 +556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="373" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="373" bodyend="379"/>
+        <location file="clroni/Context.cs" line="373" column="21" bodyfile="clroni/Context.cs" bodystart="373" bodyend="379"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a77644e7ac3ebec4fc31b62c7d0a8053c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -574,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="394" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="394" bodyend="398"/>
+        <location file="clroni/Context.cs" line="394" column="21" bodyfile="clroni/Context.cs" bodystart="394" bodyend="398"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a2774341ba95650f63722dfbcbc2ddd77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classoni_1_1_frame" kindref="compound">Frame</ref></type>
@@ -592,7 +635,7 @@
 <parametername><ref refid="classoni_1_1_o_n_i_exception" kindref="compound">ONIException</ref></parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Thrown if their is an error reading a frame.</para>
+<para>Thrown if there is an error reading a frame.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -600,7 +643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="409" column="22" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="409" bodyend="414"/>
+        <location file="clroni/Context.cs" line="409" column="22" bodyfile="clroni/Context.cs" bodystart="409" bodyend="414"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1ac056a266ec61c27a6497c943486d399c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -658,7 +701,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="428" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="428" bodyend="431"/>
+        <location file="clroni/Context.cs" line="428" column="16" bodyfile="clroni/Context.cs" bodystart="428" bodyend="431"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1ab094107504bf176e6682e59303d9f5bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -716,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="446" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="446" bodyend="461"/>
+        <location file="clroni/Context.cs" line="446" column="16" bodyfile="clroni/Context.cs" bodystart="446" bodyend="461"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1ad67376eff7e78f3f7768df805cb76818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -760,7 +803,7 @@
 <parametername>data_size</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Size of data pointed to by data in bytes.</para>
+<para>Size of data pointed to by <emphasis>data</emphasis>  in bytes.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -769,7 +812,7 @@
 <parametername><ref refid="classoni_1_1_o_n_i_exception" kindref="compound">ONIException</ref></parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Throw if data_size is an invalid size or the selected device does not accept write data.</para>
+<para>Throw if <emphasis>data_size</emphasis>  is an invalid size or the selected device does not accept write data.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -777,37 +820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="507" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="507" bodyend="514"/>
-      </memberdef>
-      <memberdef kind="function" id="classoni_1_1_context_1aabb6e3bc160a36625a2d54e3e21f4843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>uint</type>
-        <definition>uint oni.Context.HubDataClock</definition>
-        <argsstring>(uint hub_index)</argsstring>
-        <name>HubDataClock</name>
-        <param>
-          <type>uint</type>
-          <declname>hub_index</declname>
-        </param>
-        <briefdescription>
-<para>Retrieve the local clock rate for a particular hub in the acquisition hierarchy. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>hub_index</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The index specifying the hub to retrieve the clock rate for.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The clock rate of the hub at hub_index in Hz. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="524" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="524" bodyend="527"/>
+        <location file="clroni/Context.cs" line="508" column="21" bodyfile="clroni/Context.cs" bodystart="508" bodyend="515"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a45ad882d26de9399b8e738e5feeabcba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -815,12 +828,43 @@
         <argsstring>()</argsstring>
         <name>Dispose</name>
         <briefdescription>
+<para>Dispose this <ref refid="classoni_1_1_context" kindref="compound">Context</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="529" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="529" bodyend="533"/>
+        <location file="clroni/Context.cs" line="520" column="21" bodyfile="clroni/Context.cs" bodystart="520" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classoni_1_1_context_1a2643f7175d845603a43db8a2c9c4dc56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classoni_1_1_hub" kindref="compound">Hub</ref></type>
+        <definition>Hub oni.Context.GetHub</definition>
+        <argsstring>(uint device_address)</argsstring>
+        <name>GetHub</name>
+        <param>
+          <type>uint</type>
+          <declname>device_address</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the hub that a given <ref refid="structoni_1_1_device" kindref="compound">Device</ref> resides in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fully specified <ref refid="structoni_1_1_device_1a66ecf6d5fbbcd857605dde6a16e8c120" kindref="member">Device.Address</ref> to retrieve the hub for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classoni_1_1_hub" kindref="compound">Hub</ref>containing hub metadata.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clroni/onix.cs" line="84" column="20" bodyfile="clroni/onix.cs" bodystart="84" bodyend="95"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -848,7 +892,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="123" column="24" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="123" bodyend="151"/>
+        <location file="clroni/Context.cs" line="123" column="24" bodyfile="clroni/Context.cs" bodystart="123" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a021013c58fb81c1072cf82eb065243f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -870,7 +914,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="154" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="154" bodyend="158"/>
+        <location file="clroni/Context.cs" line="154" column="21" bodyfile="clroni/Context.cs" bodystart="154" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a9302ecc2aa799b6add5017e3f1e3248d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -892,7 +936,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="161" column="24" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="161" bodyend="187"/>
+        <location file="clroni/Context.cs" line="161" column="24" bodyfile="clroni/Context.cs" bodystart="161" bodyend="187"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1a1c23ebe84a9b5477635334bff0d4216b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -918,7 +962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="190" column="22" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="190" bodyend="213"/>
+        <location file="clroni/Context.cs" line="190" column="22" bodyfile="clroni/Context.cs" bodystart="190" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_context_1afe00c45c44a639260b5c9c9646227d77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -943,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="216" column="22" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="216" bodyend="229"/>
+        <location file="clroni/Context.cs" line="216" column="22" bodyfile="clroni/Context.cs" bodystart="216" bodyend="229"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -957,12 +1001,22 @@
           <declname>disposing</declname>
         </param>
         <briefdescription>
+<para>Dispose this <ref refid="classoni_1_1_context" kindref="compound">Context</ref>. This override is required by IDisposable. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="536" column="32" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="536" bodyend="543"/>
+        <location file="clroni/Context.cs" line="532" column="32" bodyfile="clroni/Context.cs" bodystart="532" bodyend="539"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -976,6 +1030,8 @@
         <link refid="classoni_1_1_context"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="2">
         <label>IDisposable</label>
@@ -987,12 +1043,14 @@
         <link refid="classoni_1_1_context"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
       </node>
       <node id="2">
         <label>IDisposable</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" line="12" column="18" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Context.cs" bodystart="13" bodyend="544"/>
+    <location file="clroni/Context.cs" line="13" column="26" bodyfile="clroni/Context.cs" bodystart="14" bodyend="540"/>
     <listofallmembers>
       <member refid="classoni_1_1_context_1a163ec1e876f6981496f53b63e6192854" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>AcquisitionClockHz</name></member>
       <member refid="classoni_1_1_context_1aa2e1fe9220a2865f144731a4a3fcaa0c" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>BlockReadSize</name></member>
@@ -1003,12 +1061,13 @@
       <member refid="classoni_1_1_context_1a45ad882d26de9399b8e738e5feeabcba" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>Dispose</name></member>
       <member refid="classoni_1_1_context_1ae7e03cde0dd6470f4efa7dc9a4355b1a" prot="protected" virt="virtual"><scope>oni::Context</scope><name>Dispose</name></member>
       <member refid="classoni_1_1_context_1a7549c1eee95d06f887b6dbc3f987b370" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>GetCustomOption</name></member>
+      <member refid="classoni_1_1_context_1a2643f7175d845603a43db8a2c9c4dc56" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>GetHub</name></member>
       <member refid="classoni_1_1_context_1a021013c58fb81c1072cf82eb065243f7" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>GetIntOption</name></member>
       <member refid="classoni_1_1_context_1aad08f55432294a00f273ee3d83c82559" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>GetOption</name></member>
       <member refid="classoni_1_1_context_1a9302ecc2aa799b6add5017e3f1e3248d" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>GetStringOption</name></member>
       <member refid="classoni_1_1_context_1a428dbe9704ed59092e638ed1a7ffbfc2" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>HardwareAddress</name></member>
-      <member refid="classoni_1_1_context_1a71ce6118acfc61ac68d6c72efed2ac59" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>HUB_MGR_ADDRESS</name></member>
-      <member refid="classoni_1_1_context_1aabb6e3bc160a36625a2d54e3e21f4843" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>HubDataClock</name></member>
+      <member refid="classoni_1_1_context_1adcb3ae0dabb67f8dceb36251761ac926" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>HUB_MGR_ADDRESS</name></member>
+      <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>HubRegister</name></member>
       <member refid="classoni_1_1_context_1a30319fa039a6ef86aa120d9dc623f2c2" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>MaxReadFrameSize</name></member>
       <member refid="classoni_1_1_context_1a972bab2364c5cf1cc8493ed452375887" prot="public" virt="non-virtual"><scope>oni::Context</scope><name>MaxWriteFrameSize</name></member>
       <member refid="classoni_1_1_context_1a513e430aeacbdd22315b8d9f95a9fad0" prot="private" virt="non-virtual"><scope>oni::Context</scope><name>Option</name></member>

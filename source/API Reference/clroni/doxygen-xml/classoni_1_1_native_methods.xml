@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
-  <compounddef id="classoni_1_1_native_methods" kind="class" language="C#" prot="package">
+  <compounddef id="classoni_1_1_native_methods" kind="class" language="C#" prot="public">
     <compoundname>oni::NativeMethods</compoundname>
       <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classoni_1_1_native_methods_1a2893f65d42846d2efcc098a25bc3a7b3" prot="public" static="yes" mutable="no">
@@ -9,12 +9,14 @@
         <argsstring></argsstring>
         <name>LibraryVersion</name>
         <briefdescription>
+<para>Semantic version</para>
+<para>of this library. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="47" column="40" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="47" bodyend="-1"/>
+        <location file="clroni/oni.cs" line="21" column="40" bodyfile="clroni/oni.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -30,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="49" column="41" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="49" bodyend="-1"/>
+        <location file="clroni/oni.cs" line="23" column="41" bodyfile="clroni/oni.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classoni_1_1_native_methods_1ae0e5897a33ff0feecd43febad20b0dc8" prot="private" static="yes" mutable="no">
         <type>const string</type>
@@ -44,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="51" column="30" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="51" bodyend="-1"/>
+        <location file="clroni/oni.cs" line="25" column="30" bodyfile="clroni/oni.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -59,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="54" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="54" bodyend="65"/>
+        <location file="clroni/oni.cs" line="28" column="16" bodyfile="clroni/oni.cs" bodystart="28" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a571fd71a4a9cba7534ef37c8a96ccaeb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>NotSupportedException</type>
@@ -80,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="67" column="46" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="67" bodyend="74"/>
+        <location file="clroni/oni.cs" line="41" column="46" bodyfile="clroni/oni.cs" bodystart="41" bodyend="48"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -107,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="77" column="37"/>
+        <location file="clroni/oni.cs" line="51" column="37"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1aa2ec5b34d510694f8f835493d6023bea" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ContextHandle</type>
@@ -124,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="80" column="46"/>
+        <location file="clroni/oni.cs" line="54" column="46"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a19a94edc7f0a31477316230657973329" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -145,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="83" column="36"/>
+        <location file="clroni/oni.cs" line="57" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a6926d297321cd58adf1ca7e144009c4f" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -162,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="87" column="36"/>
+        <location file="clroni/oni.cs" line="61" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a54e7202238f0e001394f16b81e871903" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -191,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="90" column="36"/>
+        <location file="clroni/oni.cs" line="64" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a2d8e7f4501a61bddf26d0c067c11be4b" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -220,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="93" column="36"/>
+        <location file="clroni/oni.cs" line="67" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1af6f5a4ce842d52f84484ee279dbbda3a" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -249,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="96" column="36"/>
+        <location file="clroni/oni.cs" line="70" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a0d6e8a0478c5f3162d4808ce5c336855" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -278,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="99" column="36"/>
+        <location file="clroni/oni.cs" line="73" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1aa055b6eeeede5714a65bfa9029523c51" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -307,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="102" column="36"/>
+        <location file="clroni/oni.cs" line="76" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a09126806eeadfc8e12884a3a0494d015" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -336,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="105" column="36"/>
+        <location file="clroni/oni.cs" line="79" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a5d1166b53e2664f16b85b4b33137f1fd" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -365,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="108" column="36"/>
+        <location file="clroni/oni.cs" line="82" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1abefa269bf09057715dfa60356629891a" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -394,7 +396,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="111" column="36"/>
+        <location file="clroni/oni.cs" line="85" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1afab89f51b2b1a89efe39ead786e0ada1" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -423,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="114" column="36"/>
+        <location file="clroni/oni.cs" line="88" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a1ddcf5d338ff0ba6c9e7bff0357351fc" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -452,7 +454,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="117" column="36"/>
+        <location file="clroni/oni.cs" line="91" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a4ccca2b46a3240e8cb36af7d73db0b52" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -473,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="120" column="36"/>
+        <location file="clroni/oni.cs" line="94" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a1f1735710e51a873f8cdadfe5ea90e5f" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -506,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="123" column="36"/>
+        <location file="clroni/oni.cs" line="97" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1abccd2c3acc202979052756cd01845233" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -527,7 +529,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="126" column="36"/>
+        <location file="clroni/oni.cs" line="100" column="36"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1a43fd2319562d9414f7ffb411170ce349" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -544,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="130" column="37"/>
+        <location file="clroni/oni.cs" line="104" column="37"/>
       </memberdef>
       <memberdef kind="function" id="classoni_1_1_native_methods_1ace08c38da153a4cd46970ff3fcbeecef" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>IntPtr</type>
@@ -561,11 +563,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="133" column="39"/>
+        <location file="clroni/oni.cs" line="107" column="39"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="classoni_1_1_native_methods_1a79538021b93f0ee33afd046ddcd9e46e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classoni_1_1_native_methods_1a79538021b93f0ee33afd046ddcd9e46e" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>IntPtr</type>
         <definition>static IntPtr oni.NativeMethods.onix_device_str</definition>
         <argsstring>(int id)</argsstring>
@@ -580,14 +580,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/onix.cs" line="35" column="37"/>
+        <location file="clroni/onix.cs" line="109" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classoni_1_1_native_methods_1a69e8a57f4181fce33ae80fd715f514f7" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPtr</type>
+        <definition>static IntPtr oni.NativeMethods.onix_hub_str</definition>
+        <argsstring>(int id)</argsstring>
+        <name>onix_hub_str</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="clroni/onix.cs" line="112" column="39"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Common language runtime bindings to liboni C library. The functionality these bindings is exposed through higher-order types: <simplesect kind="see"><para><ref refid="classoni_1_1_context" kindref="compound">Context</ref>, <ref refid="classoni_1_1_hub" kindref="compound">Hub</ref>, <ref refid="structoni_1_1_device" kindref="compound">Device</ref>, <ref refid="classoni_1_1_frame" kindref="compound">Frame</ref>, <ref refid="classoni_1_1_o_n_i_exception" kindref="compound">ONIException</ref></para>
+</simplesect>
+, , , , and . </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" line="45" column="35" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/oni.cs" bodystart="46" bodyend="134"/>
+    <location file="clroni/oni.cs" line="16" column="33" bodyfile="clroni/oni.cs" bodystart="17" bodyend="108"/>
     <listofallmembers>
       <member refid="classoni_1_1_native_methods_1a57dcaf12d7d284b9d1b2b9595cc09f39" prot="private" virt="non-virtual"><scope>oni::NativeMethods</scope><name>CCCdecl</name></member>
       <member refid="classoni_1_1_native_methods_1ae0e5897a33ff0feecd43febad20b0dc8" prot="private" virt="non-virtual"><scope>oni::NativeMethods</scope><name>LibraryName</name></member>
@@ -612,7 +632,8 @@
       <member refid="classoni_1_1_native_methods_1afee9e295e92ca8af8a26a2e03378e4fa" prot="package" virt="non-virtual"><scope>oni::NativeMethods</scope><name>oni_version</name></member>
       <member refid="classoni_1_1_native_methods_1abccd2c3acc202979052756cd01845233" prot="package" virt="non-virtual"><scope>oni::NativeMethods</scope><name>oni_write_frame</name></member>
       <member refid="classoni_1_1_native_methods_1a1ddcf5d338ff0ba6c9e7bff0357351fc" prot="package" virt="non-virtual"><scope>oni::NativeMethods</scope><name>oni_write_reg</name></member>
-      <member refid="classoni_1_1_native_methods_1a79538021b93f0ee33afd046ddcd9e46e" prot="public" virt="non-virtual"><scope>oni::NativeMethods</scope><name>onix_device_str</name></member>
+      <member refid="classoni_1_1_native_methods_1a79538021b93f0ee33afd046ddcd9e46e" prot="package" virt="non-virtual"><scope>oni::NativeMethods</scope><name>onix_device_str</name></member>
+      <member refid="classoni_1_1_native_methods_1a69e8a57f4181fce33ae80fd715f514f7" prot="package" virt="non-virtual"><scope>oni::NativeMethods</scope><name>onix_hub_str</name></member>
       <member refid="classoni_1_1_native_methods_1a571fd71a4a9cba7534ef37c8a96ccaeb" prot="private" virt="non-virtual"><scope>oni::NativeMethods</scope><name>VersionNotSupported</name></member>
     </listofallmembers>
   </compounddef>

@@ -1,0 +1,106 @@
+.. _onidatasheet_bno055:
+
+BNO055
+###########################################
+:Authors: Jonathan P. Newman
+:IO: Frame Source
+:ONIX ID: 9
+:ONIX Hubs: :ref:`headstage_64_1r3`, :ref:`headstage_neuropix_1r2`
+
+Description
+*******************************************
+The **BNO055** ONIX device is a 9-axis intertial measurement unit (IMU) that provides
+orientation and acceleration information. At is core, this device corresponds
+to a single chip:
+
+- `BNO055 <https://www.bosch-sensortec.com/products/smart-sensors/bno055.html>`__ 9-Axis IMU
+
+This device implemtation has hardcoded all of the configuration required to
+operate the BNO055 with the following properties:
+
+- 100 Hz update rate
+- Full on-chip sensor fusion ("NDOF" mode)
+- Hardcoded axis map (orientation depends on the headstage)
+
+Register Programming
+*******************************************
+This device does not permit register access. All requests will NAK.
+
+Device To Host Data Frames
+******************************************
+Each frame transmitted to the host is structured as follows:
+
+.. wavedrom::
+
+    {
+        reg: [
+          {bits: 64, name: "Acquisition Clock Counter", type: 0},
+          {bits: 32, name: "Device Address", type: 0},
+          {bits: 32, name: "Data Size", type: 0, attr: 36},
+
+          {bits: 64, name: "Hub Clock Counter", type: 3},
+
+          {bits: 16, name: "Euler Angle Yaw", type: 4},
+          {bits: 16, name: "Euler Angle Roll", type: 4},
+          {bits: 16, name: "Euler Angle Pitch", type: 4},
+
+          {bits: 16, name: "Quaternion X", type: 5},
+          {bits: 16, name: "Quaternion Y", type: 5},
+          {bits: 16, name: "Quaternion Z", type: 5},
+          {bits: 16, name: "Quaternion W", type: 5},
+
+          {bits: 16, name: "Linear Acceleration X", type: 6},
+          {bits: 16, name: "Linear Acceleration Y", type: 6},
+          {bits: 16, name: "Linear Acceleration Z", type: 6},
+
+          {bits: 16, name: "Gravity Vector X", type: 7},
+          {bits: 16, name: "Gravity Vector Y", type: 7},
+          {bits: 16, name: "Gravity Vector Z", type: 7},
+
+          {bits: 8, name: "Temperature", type: 2},
+
+          {bits: 2, name: "Sys. Cal.", type: 2},
+          {bits: 2, name: "Gyro. Cal.", type: 2},
+          {bits: 2, name: "Accel. Cal.", type: 2},
+          {bits: 2, name: "Mag. Cal.", type: 2},
+        ],
+        config: {bits: 416, lanes: 13, vflip: true, hflip: true, fontsize: 11}
+    }
+
+All IMU data is signed with the exception of the calibration status bits (last
+byte in the frame). The unit conversions for each of these measurements are as
+follows:
+
+- Euler angle (Tait-Bryan formalism)
+
+  - Yaw: 0 to 360 degrees
+  - Roll: -180 to 180 degrees
+  - Pitch: -90 to 90 degrees
+.. math::
+
+    1^{\circ} = 16\ LSB
+
+- Quaternion
+.. math::
+
+    1 = 2^{14}\  LSB
+
+- Acceleration & Gravity Vector
+.. math::
+
+    1\ m/s^2 = 100\ LSB
+
+- Temperature
+.. math::
+
+    1^{\circ}C = 1\ LSB
+
+- Calibration Status
+
+  - 0: not calibrated
+  - 3: fully calibrated
+
+Host To Device Data Frames
+******************************************
+This device does not accept input frames. All write attempts will fail with an
+error.

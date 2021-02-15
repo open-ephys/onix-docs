@@ -1,6 +1,8 @@
 .. |hw_logo| image:: ../_static/noun_pcb.svg
   :height: 60
 
+.. _hardware_guide:
+
 |hw_logo| Hardware Guide
 ==========================================
 Here you will find general information on the hardware repositories, hardware

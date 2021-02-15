@@ -4,7 +4,9 @@ ONI Device Datasheets
 .. toctree::
     :maxdepth: 1
 
-    BNO055
+    onix-fmc-analog-io
+    bno055
+    rhd2164
 
 The `ONI spec <https://github.com/open-ephys/ONI>`__ requires a simple
 datasheet for each leaf device that provides basic information on configuration

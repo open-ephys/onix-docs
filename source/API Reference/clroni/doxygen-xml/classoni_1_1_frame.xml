@@ -17,25 +17,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="66" column="22" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="67" bodyend="72"/>
+        <location file="clroni/Frame.cs" line="71" column="22" bodyfile="clroni/Frame.cs" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="property" id="classoni_1_1_frame_1af37bfa9421e30d931d9df3df29190d39" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+      <memberdef kind="property" id="classoni_1_1_frame_1a1779272d47dd6013cc8ba980c6e9bf86" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>uint</type>
-        <definition>uint oni.Frame.DeviceIndex</definition>
+        <definition>uint oni.Frame.DeviceAddress</definition>
         <argsstring></argsstring>
-        <name>DeviceIndex</name>
+        <name>DeviceAddress</name>
         <briefdescription>
-<para>The fully qualified <ref refid="structoni_1_1_device_1a077fa8ba410b23787bdaf3b73ca3739b" kindref="member">Device.Index</ref> of the device within the current <ref refid="classoni_1_1_context_1ad61ee2c0ecba30708117ef70844ed785" kindref="member">Context.DeviceTable</ref> that produced this frame. </para>
+<para>The fully qualified <ref refid="structoni_1_1_device_1a66ecf6d5fbbcd857605dde6a16e8c120" kindref="member">Device.Address</ref> of the device within the current <ref refid="classoni_1_1_context_1ad61ee2c0ecba30708117ef70844ed785" kindref="member">Context.DeviceTable</ref> that produced this frame. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="78" column="21" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="79" bodyend="84"/>
+        <location file="clroni/Frame.cs" line="77" column="21" bodyfile="clroni/Frame.cs" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classoni_1_1_frame_1a3b1c1db0799b333746876a401c429578" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classoni_1_1_frame_1a3b1c1db0799b333746876a401c429578" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>oni.Frame.Frame</definition>
         <argsstring>()</argsstring>
@@ -46,20 +46,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="26" column="19" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="26" bodyend="29"/>
+        <location file="clroni/Frame.cs" line="26" column="18" bodyfile="clroni/Frame.cs" bodystart="26" bodyend="29"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
       <memberdef kind="function" id="classoni_1_1_frame_1ae6479962a8cefcf83a86c9caf5420ce4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override bool</type>
         <definition>override bool oni.Frame.ReleaseHandle</definition>
         <argsstring>()</argsstring>
         <name>ReleaseHandle</name>
         <briefdescription>
+<para>Executes the code required to free native resources held by the <ref refid="classoni_1_1_frame" kindref="compound">Frame</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>True if the handle is released successfully (always the case in this implementation)</para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="32" column="33" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="32" bodyend="36"/>
+        <location file="clroni/Frame.cs" line="37" column="33" bodyfile="clroni/Frame.cs" bodystart="37" bodyend="41"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -78,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="42" column="16" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="42" bodyend="59"/>
+        <location file="clroni/Frame.cs" line="47" column="16" bodyfile="clroni/Frame.cs" bodystart="47" bodyend="64"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,12 +114,12 @@
         <label>SafeHandleZeroOrMinusOneIsInvalid</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" line="14" column="18" bodyfile="C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni/Frame.cs" bodystart="15" bodyend="85"/>
+    <location file="clroni/Frame.cs" line="14" column="18" bodyfile="clroni/Frame.cs" bodystart="15" bodyend="78"/>
     <listofallmembers>
       <member refid="classoni_1_1_frame_1a0aff172fa3f011329b5f732343456552" prot="public" virt="non-virtual"><scope>oni::Frame</scope><name>Clock</name></member>
       <member refid="classoni_1_1_frame_1a510ff01fdc78605acf16ac9f3bce5ef9" prot="public" virt="non-virtual"><scope>oni::Frame</scope><name>Data&lt; T &gt;</name></member>
-      <member refid="classoni_1_1_frame_1af37bfa9421e30d931d9df3df29190d39" prot="public" virt="non-virtual"><scope>oni::Frame</scope><name>DeviceIndex</name></member>
-      <member refid="classoni_1_1_frame_1a3b1c1db0799b333746876a401c429578" prot="protected" virt="non-virtual"><scope>oni::Frame</scope><name>Frame</name></member>
+      <member refid="classoni_1_1_frame_1a1779272d47dd6013cc8ba980c6e9bf86" prot="public" virt="non-virtual"><scope>oni::Frame</scope><name>DeviceAddress</name></member>
+      <member refid="classoni_1_1_frame_1a3b1c1db0799b333746876a401c429578" prot="package" virt="non-virtual"><scope>oni::Frame</scope><name>Frame</name></member>
       <member refid="classoni_1_1_frame_1ae6479962a8cefcf83a86c9caf5420ce4" prot="protected" virt="non-virtual"><scope>oni::Frame</scope><name>ReleaseHandle</name></member>
     </listofallmembers>
   </compounddef>

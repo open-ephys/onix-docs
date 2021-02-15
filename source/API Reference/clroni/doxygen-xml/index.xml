@@ -15,7 +15,11 @@
     <member refid="classoni_1_1_context_1a513e430aeacbdd22315b8d9f95a9fad0af2eb56ef302653b3f5aae2dbec188def" kind="enumvalue"><name>BLOCKREADSIZE</name></member>
     <member refid="classoni_1_1_context_1a513e430aeacbdd22315b8d9f95a9fad0a615f56c76d2a4ceeacf83c6e59bd259d" kind="enumvalue"><name>BLOCKWRITESIZE</name></member>
     <member refid="classoni_1_1_context_1a513e430aeacbdd22315b8d9f95a9fad0addfe4ae0e8fba62742a15c9c9b634996" kind="enumvalue"><name>CUSTOMBEGIN</name></member>
-    <member refid="classoni_1_1_context_1a71ce6118acfc61ac68d6c72efed2ac59" kind="variable"><name>HUB_MGR_ADDRESS</name></member>
+    <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262" kind="enum"><name>HubRegister</name></member>
+    <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a91d5a20de180a33ca8d66eda86a8d2bf" kind="enumvalue"><name>HARDWAREID</name></member>
+    <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a5cbf2969efe90fc52f6628c9c3424ae9" kind="enumvalue"><name>FIRMWAREVER</name></member>
+    <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262a3d30d2fc94fdea62973b497617d91c13" kind="enumvalue"><name>CLKRATEHZ</name></member>
+    <member refid="classoni_1_1_context_1ae57201ed963808c30851a33ef8557262ad0c061e213ff64db473220cd43e030f8" kind="enumvalue"><name>DELAYNS</name></member>
     <member refid="classoni_1_1_context_1a5dbc6f911f1f3c2b60de9f5bc21f22c5" kind="variable"><name>ctx</name></member>
     <member refid="classoni_1_1_context_1a119cccc458153acf6800084b6718a8a6" kind="variable"><name>SystemClockHz</name></member>
     <member refid="classoni_1_1_context_1a163ec1e876f6981496f53b63e6192854" kind="variable"><name>AcquisitionClockHz</name></member>
@@ -26,6 +30,7 @@
     <member refid="classoni_1_1_context_1a428dbe9704ed59092e638ed1a7ffbfc2" kind="property"><name>HardwareAddress</name></member>
     <member refid="classoni_1_1_context_1aa2e1fe9220a2865f144731a4a3fcaa0c" kind="property"><name>BlockReadSize</name></member>
     <member refid="classoni_1_1_context_1ad225a8ed2c9ec9c9e696cfa54515b5b5" kind="property"><name>BlockWriteSize</name></member>
+    <member refid="classoni_1_1_context_1adcb3ae0dabb67f8dceb36251761ac926" kind="variable"><name>HUB_MGR_ADDRESS</name></member>
     <member refid="classoni_1_1_context_1a058a82f190e4d4b6f1f14916362a645e" kind="function"><name>Context</name></member>
     <member refid="classoni_1_1_context_1ad1c43916c7883426b7bcb6c6e148d7b7" kind="function"><name>SetCustomOption</name></member>
     <member refid="classoni_1_1_context_1a7549c1eee95d06f887b6dbc3f987b370" kind="function"><name>GetCustomOption</name></member>
@@ -38,8 +43,8 @@
     <member refid="classoni_1_1_context_1ac056a266ec61c27a6497c943486d399c" kind="function"><name>Write&lt; T &gt;</name></member>
     <member refid="classoni_1_1_context_1ab094107504bf176e6682e59303d9f5bb" kind="function"><name>Write&lt; T &gt;</name></member>
     <member refid="classoni_1_1_context_1ad67376eff7e78f3f7768df805cb76818" kind="function"><name>Write</name></member>
-    <member refid="classoni_1_1_context_1aabb6e3bc160a36625a2d54e3e21f4843" kind="function"><name>HubDataClock</name></member>
     <member refid="classoni_1_1_context_1a45ad882d26de9399b8e738e5feeabcba" kind="function"><name>Dispose</name></member>
+    <member refid="classoni_1_1_context_1a2643f7175d845603a43db8a2c9c4dc56" kind="function"><name>GetHub</name></member>
     <member refid="classoni_1_1_context_1aad08f55432294a00f273ee3d83c82559" kind="function"><name>GetOption</name></member>
     <member refid="classoni_1_1_context_1a021013c58fb81c1072cf82eb065243f7" kind="function"><name>GetIntOption</name></member>
     <member refid="classoni_1_1_context_1a9302ecc2aa799b6add5017e3f1e3248d" kind="function"><name>GetStringOption</name></member>
@@ -52,17 +57,16 @@
     <member refid="classoni_1_1_context_handle_1a643161810f9acc1b5ccfc172d2db0cea" kind="function"><name>ReleaseHandle</name></member>
   </compound>
   <compound refid="structoni_1_1_device" kind="struct"><name>oni::Device</name>
-    <member refid="structoni_1_1_device_1a077fa8ba410b23787bdaf3b73ca3739b" kind="variable"><name>Index</name></member>
+    <member refid="structoni_1_1_device_1a66ecf6d5fbbcd857605dde6a16e8c120" kind="variable"><name>Address</name></member>
     <member refid="structoni_1_1_device_1a1bb38ab58eeb2110ba7f6c3a3896d690" kind="variable"><name>ID</name></member>
     <member refid="structoni_1_1_device_1a383a45d17c98b5dc774c5c4e1560227f" kind="variable"><name>Version</name></member>
     <member refid="structoni_1_1_device_1ad106399633977d21d05a2d9f91706826" kind="variable"><name>ReadSize</name></member>
     <member refid="structoni_1_1_device_1a94a09f74de8de3da1ee4c4c0e512fc81" kind="variable"><name>WriteSize</name></member>
-    <member refid="structoni_1_1_device_1a81e9433e91cd7df035a08b2b14d2b165" kind="function"><name>ToString</name></member>
-    <member refid="structoni_1_1_device_1ab0e428bd6d756546d3c7a534823757b5" kind="function"><name>Description</name></member>
+    <member refid="structoni_1_1_device_1a3cdad05e0e2ed0be20578d049ad8458a" kind="property"><name>Description</name></member>
   </compound>
   <compound refid="classoni_1_1_frame" kind="class"><name>oni::Frame</name>
     <member refid="classoni_1_1_frame_1a0aff172fa3f011329b5f732343456552" kind="property"><name>Clock</name></member>
-    <member refid="classoni_1_1_frame_1af37bfa9421e30d931d9df3df29190d39" kind="property"><name>DeviceIndex</name></member>
+    <member refid="classoni_1_1_frame_1a1779272d47dd6013cc8ba980c6e9bf86" kind="property"><name>DeviceAddress</name></member>
     <member refid="classoni_1_1_frame_1a3b1c1db0799b333746876a401c429578" kind="function"><name>Frame</name></member>
     <member refid="classoni_1_1_frame_1ae6479962a8cefcf83a86c9caf5420ce4" kind="function"><name>ReleaseHandle</name></member>
     <member refid="classoni_1_1_frame_1a510ff01fdc78605acf16ac9f3bce5ef9" kind="function"><name>Data&lt; T &gt;</name></member>
@@ -72,6 +76,14 @@
     <member refid="structoni_1_1_frame_1_1frame__t_1a212adc91de521468ad51e162c0346f4a" kind="variable"><name>dev_idx</name></member>
     <member refid="structoni_1_1_frame_1_1frame__t_1a0d7ab58456f345f4871bb13b8e24741c" kind="variable"><name>data_sz</name></member>
     <member refid="structoni_1_1_frame_1_1frame__t_1a74a4d47fdc452fc55e48b11125212c5f" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="classoni_1_1_hub" kind="class"><name>oni::Hub</name>
+    <member refid="classoni_1_1_hub_1ad0f728a2a63ffa40536204ef38b55e77" kind="property"><name>Address</name></member>
+    <member refid="classoni_1_1_hub_1a82b4799171de1d16b3dc5940f68af896" kind="property"><name>HardwareID</name></member>
+    <member refid="classoni_1_1_hub_1aa0599cf931e9f5f87a754f4c2fa87fec" kind="property"><name>FirmwareVersion</name></member>
+    <member refid="classoni_1_1_hub_1abb41827e23e4854c7dba5ebbe2b05a5c" kind="property"><name>ClockHz</name></member>
+    <member refid="classoni_1_1_hub_1a61262f743107c31dcc754bba20cadce3" kind="property"><name>DelayNanoSeconds</name></member>
+    <member refid="classoni_1_1_hub_1a41bb475c85ccf9c5c9b4fb9e32a99d15" kind="property"><name>Description</name></member>
   </compound>
   <compound refid="classoni_1_1_native_methods" kind="class"><name>oni::NativeMethods</name>
     <member refid="classoni_1_1_native_methods_1a2893f65d42846d2efcc098a25bc3a7b3" kind="variable"><name>LibraryVersion</name></member>
@@ -99,6 +111,7 @@
     <member refid="classoni_1_1_native_methods_1a43fd2319562d9414f7ffb411170ce349" kind="function"><name>oni_destroy_frame</name></member>
     <member refid="classoni_1_1_native_methods_1ace08c38da153a4cd46970ff3fcbeecef" kind="function"><name>oni_error_str</name></member>
     <member refid="classoni_1_1_native_methods_1a79538021b93f0ee33afd046ddcd9e46e" kind="function"><name>onix_device_str</name></member>
+    <member refid="classoni_1_1_native_methods_1a69e8a57f4181fce33ae80fd715f514f7" kind="function"><name>onix_hub_str</name></member>
   </compound>
   <compound refid="classoni_1_1_o_n_i_exception" kind="class"><name>oni::ONIException</name>
     <member refid="classoni_1_1_o_n_i_exception_1a523bc80f20d869ba007bb97b4c00e1af" kind="variable"><name>Number</name></member>
@@ -115,7 +128,11 @@
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
   <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
   </compound>
   <compound refid="namespace_system_1_1_runtime_1_1_constrained_execution" kind="namespace"><name>System::Runtime::ConstrainedExecution</name>
   </compound>
@@ -133,7 +150,11 @@
   </compound>
   <compound refid="_context_handle_8cs" kind="file"><name>ContextHandle.cs</name>
   </compound>
+  <compound refid="_device_8cs" kind="file"><name>Device.cs</name>
+  </compound>
   <compound refid="_frame_8cs" kind="file"><name>Frame.cs</name>
+  </compound>
+  <compound refid="_hub_8cs" kind="file"><name>Hub.cs</name>
   </compound>
   <compound refid="oni_8cs" kind="file"><name>oni.cs</name>
   </compound>
@@ -141,6 +162,6 @@
   </compound>
   <compound refid="onix_8cs" kind="file"><name>onix.cs</name>
   </compound>
-  <compound refid="dir_45a1d62ef75b2059a99e2543d07c18db" kind="dir"><name>C:/Users/open-ephys/Desktop/public/liboni/api/clroni/clroni</name>
+  <compound refid="dir_45a1d62ef75b2059a99e2543d07c18db" kind="dir"><name>clroni</name>
   </compound>
 </doxygenindex>

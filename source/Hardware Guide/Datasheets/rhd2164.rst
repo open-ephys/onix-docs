@@ -1,0 +1,312 @@
+.. _onidatasheet_rhd2164:
+
+RHD2164
+###########################################
+:Authors: Jie (Jack) Zhang, Jonathan P. Newman
+:IO: Frame Source, Register Access
+:ONIX ID: 3
+:ONIX Hubs: :ref:`headstage_64_1r3`
+
+Description
+*******************************************
+The **RHD2164** ONIX device acquires data from an Intan `RHD2164 bioamplifier
+chip <https://intantech.com/files/Intan_RHD2164_datasheet.pdf>`__.
+
+Register Programming
+*******************************************
+Direct read and write access is provided to the registers detailed in the
+`RHD2000 series datasheet
+<https://intantech.com/files/Intan_RHD2000_series_datasheet.pdf>`__. They are
+reproduced here for clarity, but the datasheet should be consulted for their
+exact function.
+
+.. warning::
+
+    All registers are accessible, but some of them are dependent on the sample
+    rate.
+
+.. list-table::
+    :widths: auto
+    :header-rows: 1
+
+    * - Address
+      - Name
+      - Access
+      - Time of Effect
+      - POR Value
+      - Reset Action
+      - Description
+
+    * - 0x00
+      - ADCCONF
+      - RW
+      - On Reset
+      - "11011110"
+      - None
+      - ADC Configuration and Amplifier Fast Settle
+
+    * - 0x01
+      - ADCBUFF
+      - RW
+      - On Reset
+      - "00000010"
+      - None
+      - Supply Sensor and ADC Buffer Bias Current
+
+    * - 0x02
+      - MUXBIAS
+      - RW
+      - On Reset
+      - "00000100"
+      - None
+      - MUX Bias Current
+
+    * - 0x03
+      - MUXLOAD
+      - RW
+      - On Reset
+      - "00000010"
+      - None
+      - MUX Load, Temperature Sensor, and Auxiliary Digital Output
+
+    * - 0x04
+      - FORMAT
+      - RW
+      - On Reset
+      - "00011111"
+      - None
+      - ADC Output Format and DSP Offset Removal
+
+    * - 0x05
+      - ZCHECK
+      - RW
+      - On Reset
+      - "00000000"
+      - None
+      - Impedance Check Control
+
+    * - 0x06
+      - DAC
+      - RW
+      - On Reset
+      - "00000000"
+      - None
+      - Impedance Check DAC
+
+    * - 0x07
+      - ZSELECT
+      - RW
+      - On Reset
+      - "00000000"
+      - None
+      - Impedance Check Amplifier Select
+
+    * - 0x08
+      - BW0
+      - RW
+      - On Reset
+      - "00010001"
+      - None
+      - On-Chip Amplifier Bandwidth Select 0
+
+    * - 0x09
+      - BW1
+      - RW
+      - On Reset
+      - "10000000"
+      - None
+      - On-Chip Amplifier Bandwidth Select 1
+
+    * - 0x0a
+      - BW2
+      - RW
+      - On Reset
+      - "00010000"
+      - None
+      - On-Chip Amplifier Bandwidth Select 2
+
+    * - 0x0b
+      - BW3
+      - RW
+      - On Reset
+      - "10000000"
+      - None
+      - On-Chip Amplifier Bandwidth Select 3
+
+    * - 0x0c
+      - BW4
+      - RW
+      - On Reset
+      - "00010000"
+      - None
+      - On-Chip Amplifier Bandwidth Select 4
+
+    * - 0x0e
+      - BW5
+      - RW
+      - On Reset
+      - "11011100"
+      - None
+      - On-Chip Amplifier Bandwidth Select 5
+
+    * - 0x0f
+      - PWR0
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 0
+
+    * - 0x10
+      - PWR1
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 1
+
+    * - 0x11
+      - PWR2
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 2
+
+    * - 0x12
+      - PWR3
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 3
+
+    * - 0x13
+      - PWR4
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 4
+
+    * - 0x14
+      - PWR5
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 5
+
+    * - 0x15
+      - PWR6
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 6
+
+    * - 0x16
+      - PWR7
+      - RW
+      - On Reset
+      - "11111111"
+      - None
+      - Individual Amplifier Power 7
+
+Device To Host Data Frames
+******************************************
+Each frame transmitted to the host consists of a 64 ephys + 3 auxiliary channel
+round robbin sample:
+
+.. wavedrom::
+
+    {
+        reg: [
+          {bits: 64, name: "Acquisition Clock Counter", type: 0},
+          {bits: 32, name: "Device Address", type: 0},
+          {bits: 32, name: "Data Size", type: 0, attr: 142},
+
+          {bits: 64, name: "Hub Clock Counter", type: 3},
+
+          {bits: 16, name: "Channel 15 Voltage", type: 4},
+          {bits: 16, name: "Channel 11 Voltage", type: 4},
+          {bits: 16, name: "Channel  7 Voltage", type: 4},
+          {bits: 16, name: "Channel  3 Voltage", type: 4},
+          {bits: 16, name: "Channel 31 Voltage", type: 4},
+          {bits: 16, name: "Channel 27 Voltage", type: 4},
+          {bits: 16, name: "Channel 23 Voltage", type: 4},
+          {bits: 16, name: "Channel 19 Voltage", type: 4},
+          {bits: 16, name: "Channel 47 Voltage", type: 4},
+          {bits: 16, name: "Channel 43 Voltage", type: 4},
+          {bits: 16, name: "Channel 39 Voltage", type: 4},
+          {bits: 16, name: "Channel 35 Voltage", type: 4},
+          {bits: 16, name: "Channel 63 Voltage", type: 4},
+          {bits: 16, name: "Channel 59 Voltage", type: 4},
+          {bits: 16, name: "Channel 55 Voltage", type: 4},
+          {bits: 16, name: "Channel 51 Voltage", type: 4},
+          {bits: 16, name: "Channel 49 Voltage", type: 4},
+          {bits: 16, name: "Channel 53 Voltage", type: 4},
+          {bits: 16, name: "Channel 57 Voltage", type: 4},
+          {bits: 16, name: "Channel 61 Voltage", type: 4},
+          {bits: 16, name: "Channel 33 Voltage", type: 4},
+          {bits: 16, name: "Channel 37 Voltage", type: 4},
+          {bits: 16, name: "Channel 41 Voltage", type: 4},
+          {bits: 16, name: "Channel 45 Voltage", type: 4},
+          {bits: 16, name: "Channel 17 Voltage", type: 4},
+          {bits: 16, name: "Channel 21 Voltage", type: 4},
+          {bits: 16, name: "Channel 25 Voltage", type: 4},
+          {bits: 16, name: "Channel 29 Voltage", type: 4},
+          {bits: 16, name: "Channel  1 Voltage", type: 4},
+          {bits: 16, name: "Channel  5 Voltage", type: 4},
+          {bits: 16, name: "Channel  9 Voltage", type: 4},
+          {bits: 16, name: "Channel 13 Voltage", type: 4},
+          {bits: 16, name: "Channel 48 Voltage", type: 4},
+          {bits: 16, name: "Channel 52 Voltage", type: 4},
+          {bits: 16, name: "Channel 56 Voltage", type: 4},
+          {bits: 16, name: "Channel 60 Voltage", type: 4},
+          {bits: 16, name: "Channel 32 Voltage", type: 4},
+          {bits: 16, name: "Channel 36 Voltage", type: 4},
+          {bits: 16, name: "Channel 40 Voltage", type: 4},
+          {bits: 16, name: "Channel 44 Voltage", type: 4},
+          {bits: 16, name: "Channel 16 Voltage", type: 4},
+          {bits: 16, name: "Channel 20 Voltage", type: 4},
+          {bits: 16, name: "Channel 24 Voltage", type: 4},
+          {bits: 16, name: "Channel 28 Voltage", type: 4},
+          {bits: 16, name: "Channel  0 Voltage", type: 4},
+          {bits: 16, name: "Channel  4 Voltage", type: 4},
+          {bits: 16, name: "Channel  8 Voltage", type: 4},
+          {bits: 16, name: "Channel 12 Voltage", type: 4},
+          {bits: 16, name: "Channel 14 Voltage", type: 4},
+          {bits: 16, name: "Channel 10 Voltage", type: 4},
+          {bits: 16, name: "Channel  6 Voltage", type: 4},
+          {bits: 16, name: "Channel  2 Voltage", type: 4},
+          {bits: 16, name: "Channel 30 Voltage", type: 4},
+          {bits: 16, name: "Channel 26 Voltage", type: 4},
+          {bits: 16, name: "Channel 22 Voltage", type: 4},
+          {bits: 16, name: "Channel 18 Voltage", type: 4},
+          {bits: 16, name: "Channel 46 Voltage", type: 4},
+          {bits: 16, name: "Channel 42 Voltage", type: 4},
+          {bits: 16, name: "Channel 38 Voltage", type: 4},
+          {bits: 16, name: "Channel 34 Voltage", type: 4},
+          {bits: 16, name: "Channel 62 Voltage", type: 4},
+          {bits: 16, name: "Channel 58 Voltage", type: 4},
+          {bits: 16, name: "Channel 54 Voltage", type: 4},
+          {bits: 16, name: "Channel 50 Voltage", type: 4},
+
+          {bits: 16, name: "Aux Channel 0 Voltage", type: 6},
+          {bits: 16, name: "Aux Channel 1 Voltage", type: 6},
+          {bits: 16, name: "Aux Channel 2 Voltage", type: 6},
+
+          {bits: 16},
+
+        ],
+        config: {bits: 1280, lanes: 40, vflip: true, hflip: true, fontsize: 11}
+    }
+
+All voltages are usigned, 16-bit integers.
+
+
+Host To Device Data Frames
+******************************************
+This device does not accept input frames. All write attempts will fail with an
+error.

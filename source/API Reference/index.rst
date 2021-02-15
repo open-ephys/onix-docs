@@ -20,12 +20,13 @@ interaction with ONIX hardware. ONIX API implementations are compliant with the
 `Open Neuro Interface Specification <https://github.com/open-ephys/ONI>`_.
 These APIs are simple and have minimal external dependencies. Therefore, they
 are aimed at the creation of higher level language bindings and/or integration
-into existing acqusition software.
+into existing acquisition software.
 
 - :ref:`liboni` is an ANSI-C implementation of the `ONI API Specificaiton
   <https://github.com/jonnew/ONI>`_ It contains functions for configuring
   hardware, streaming data to and from hardware, and controlling hardware
   during operation.
-- :ref:`cpponi` are C++14 bindings for :ref:`liboni`.
+- :ref:`cpponi` are C++ bindings for :ref:`liboni`.
 - :ref:`clroni` are CLR/.NET bindings for :ref:`liboni`.
-- :ref:`drivers` are ONIX device driver implementations
+- :ref:`drivers` are device drivers that can be used with ONIX APIs to control
+  hardware.
