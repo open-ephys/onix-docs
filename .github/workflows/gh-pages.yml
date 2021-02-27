@@ -35,8 +35,8 @@ jobs:
           pip install pipenv
           pipenv install
         
-      - name: Run link tests 🧪
-        run: pipenv run make linktest
+      - name: Test links 🧪
+        run: pipenv run make linkcheck
         
       - name: Build docs 🔧
         run: pipenv run make html
