@@ -67,8 +67,7 @@ Each frame transmitted to the host is structured as follows:
           {bits: 32, name: "Device Address", type: 0},
           {bits: 32, name: "Data Size", type: 0, attr: 36},
 
-          {bits: 64, name: "Hub Clock Counter", type: 3},
-
+          {bits: 64, name: "Hub Clock Counter", type: 3}
         ],
         config: {bits: 192, lanes: 6, vflip: true, hflip: true, fontsize: 11}
     }

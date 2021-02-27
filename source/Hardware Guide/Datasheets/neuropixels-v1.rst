@@ -242,7 +242,7 @@ Each Frame is organized as follows:
           {bits: 32, name: "AP Frame 8", type: 6},
           {bits: 32, name: "AP Frame 9", type: 6},
           {bits: 32, name: "AP Frame 10", type: 6},
-          {bits: 32, name: "AP Frame 11", type: 6},
+          {bits: 32, name: "AP Frame 11", type: 6}
         ],
         config: {bits: 608, lanes: 19, vflip: true, hflip: true, fontsize: 11}
     }
@@ -296,7 +296,7 @@ sample blocks. Each one of these blocks is organized as follows:
           {bits: 16, name: "ADC 19 Voltage", type: 6},
           {bits: 16, name: "ADC 24 Voltage", type: 6},
           {bits: 16, name: "ADC 29 Voltage", type: 6},
-          {bits: 16, name: "Frame Counter LSB", type: 7},
+          {bits: 16, name: "Frame Counter LSB", type: 7}
 
         ],
         config: {bits: 576, lanes: 18, vflip: true, hflip: true, fontsize: 11}

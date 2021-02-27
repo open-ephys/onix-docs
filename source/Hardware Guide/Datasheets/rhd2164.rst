@@ -327,14 +327,13 @@ round robbin sample:
           {bits: 16, name: "Aux Channel 1 Voltage", type: 6},
           {bits: 16, name: "Aux Channel 2 Voltage", type: 6},
 
-          {bits: 16},
+          {bits: 16}
 
         ],
         config: {bits: 1280, lanes: 40, vflip: true, hflip: true, fontsize: 11}
     }
 
 All voltages are usigned, 16-bit integers.
-
 
 Host To Device Data Frames
 ******************************************

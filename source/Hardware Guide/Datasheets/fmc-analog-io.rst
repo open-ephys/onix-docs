@@ -255,8 +255,7 @@ sample:
           {bits: 16, name: "Channel 8 Voltage", type: 6, attr: "ADC 1"},
           {bits: 16, name: "Channel 9 Voltage", type: 6, attr: "ADC 1"},
           {bits: 16, name: "Channel 10 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 11 Voltage", type: 6, attr: "ADC 1"},
-
+          {bits: 16, name: "Channel 11 Voltage", type: 6, attr: "ADC 1"}
         ],
         config: {bits: 384, lanes: 12, vflip: true, hflip: true, fontsize: 11}
     }
@@ -297,8 +296,7 @@ DAC:
           {bits: 16, name: "Channel 8 Voltage", type: 4},
           {bits: 16, name: "Channel 9 Voltage", type: 4},
           {bits: 16, name: "Channel 10 Voltage", type: 4},
-          {bits: 16, name: "Channel 11 Voltage", type: 4},
-
+          {bits: 16, name: "Channel 11 Voltage", type: 4}
         ],
         config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}
     }

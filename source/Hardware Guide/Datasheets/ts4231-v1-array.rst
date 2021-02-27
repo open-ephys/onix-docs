@@ -64,8 +64,8 @@ Each frame transmitted to the host is structured as follows:
 
           {bits: 32, name: "Envelope Width (Hub Clock Cycles)", type: 5},
 
-          {bits: 16, name: "Classified Envelope Code", type: 6},
-        
+          {bits: 16, name: "Classified Envelope Code", type: 6}
+
         ],
         config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}
     }

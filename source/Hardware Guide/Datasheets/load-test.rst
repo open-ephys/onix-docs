@@ -63,7 +63,7 @@ Register Programming
       - Number of repetitions of 16-bit unsigned integer 42 sent with each
         frame.
 
-.. note:: 
+.. note::
     The maximum value of ``FRAME_WORDS`` depends of ``CLK_HZ`` and ``CLK_DIV``. There needs
     to be enough clock cycles to satisfy:
 
@@ -92,7 +92,7 @@ follows:
           {bits: 16, name: "Frame Word 0", type: 6, atter:42},
           {bits: 16, name: "Frame Word 1", type: 6, atter:42},
           {bits: 16, name: "Frame Word 2", type: 6, atter:42},
-          {bits: 16, name: "Frame Word 3", type: 6, atter:42},
+          {bits: 16, name: "Frame Word 3", type: 6, atter:42}
 
         ],
         config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}

@@ -1,4 +1,4 @@
-.. _onidatasheet_fmc_analog_io:
+.. _onidatasheet_fmc_clock_out:
 
 FMC Host Clock Output Device
 ###########################################

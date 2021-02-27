@@ -84,7 +84,7 @@ Each frame transmitted to the host is structured as follows:
           {bits: 2, name: "Sys. Cal.", type: 2},
           {bits: 2, name: "Gyro. Cal.", type: 2},
           {bits: 2, name: "Accel. Cal.", type: 2},
-          {bits: 2, name: "Mag. Cal.", type: 2},
+          {bits: 2, name: "Mag. Cal.", type: 2}
         ],
         config: {bits: 416, lanes: 13, vflip: true, hflip: true, fontsize: 11}
     }
