@@ -7,7 +7,7 @@ dist: xenial
 sudo: true
 
 stages:
-    #  - test-links
+  - test-links
   - build
   - name: deploy
     if: branch = master  # Deploy only on master commits
@@ -18,8 +18,8 @@ install:
 
 jobs:
   include:
-      # - stage: test-links
-      #   script: pipenv run make linkcheck
+    - stage: test-links
+      script: pipenv run make linkcheck
     - stage: build
       script: pipenv run make html
     - stage: deploy

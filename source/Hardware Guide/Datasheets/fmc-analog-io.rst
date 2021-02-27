@@ -9,8 +9,8 @@ FMC Host Analog IO Device
 
 Description
 *******************************************
-The **FMC Host Analog IO** ONIX device sends and receives data to/from 12
-analog IOs. It is based on three chips:
+The **FMC Host Analog IO** device sends and receives data to/from 12 analog
+IOs. It is based on three chips:
 
 - `AD7617 <https://www.analog.com/en/products/ad7617.html>`__ 14-bit ADC/DAS
 - `AD7617 <https://www.analog.com/en/products/ad5766.html>`__ 16-bit DAC
@@ -51,9 +51,9 @@ Register Programming
       - ENABLE
       - R/W
       - On Reset
-      - 0x0000
+      - Implementation dependent, see hub documentation
       - None
-      - The LSB is used to enable or disable the ADC data stream:
+      - The LSB is used to enable or disable the device data stream:
 
             * 0x0: data output disabled
             * 0x1: data output enabled

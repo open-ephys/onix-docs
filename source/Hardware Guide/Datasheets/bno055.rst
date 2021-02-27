@@ -3,19 +3,19 @@
 BNO055
 ###########################################
 :Authors: Jonathan P. Newman
-:IO: Frame Source
+:IO: Frame Source, Register Access
 :ONIX ID: 9
 :ONIX Hubs: :ref:`headstage_64_1r3`, :ref:`headstage_neuropix_1r2`
 
 Description
 *******************************************
-The **BNO055** ONIX device is a 9-axis intertial measurement unit (IMU) that provides
-orientation and acceleration information. At is core, this device corresponds
-to a single chip:
+The **BNO055** is a 9-axis inertial measurement unit (IMU) that
+provides orientation and acceleration information. At is core, this device
+corresponds to a single chip:
 
 - `BNO055 <https://www.bosch-sensortec.com/products/smart-sensors/bno055.html>`__ 9-Axis IMU
 
-This device implemtation has hardcoded all of the configuration required to
+This device implementation has hard-coded all of the configuration required to
 operate the BNO055 with the following properties:
 
 - 100 Hz update rate
@@ -24,7 +24,29 @@ operate the BNO055 with the following properties:
 
 Register Programming
 *******************************************
-This device does not permit register access. All requests will NAK.
+
+.. list-table::
+    :widths: auto
+    :header-rows: 1
+
+    * - Address
+      - Name
+      - Access
+      - Time of Effect
+      - POR Value
+      - Reset Action
+      - Description
+
+    * - 0x00
+      - ENABLE
+      - R/W
+      - On Reset
+      - Implementation dependent, see hub documentation
+      - None
+      - The LSB is used to enable or disable the device data stream:
+
+            * 0x0: data output disabled
+            * 0x1: data output enabled
 
 Device To Host Data Frames
 ******************************************
@@ -76,21 +98,25 @@ follows:
   - Yaw: 0 to 360 degrees
   - Roll: -180 to 180 degrees
   - Pitch: -90 to 90 degrees
+
 .. math::
 
     1^{\circ} = 16\ LSB
 
 - Quaternion
+
 .. math::
 
     1 = 2^{14}\  LSB
 
 - Acceleration & Gravity Vector
+
 .. math::
 
     1\ m/s^2 = 100\ LSB
 
 - Temperature
+
 .. math::
 
     1^{\circ}C = 1\ LSB

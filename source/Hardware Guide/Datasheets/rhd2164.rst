@@ -14,8 +14,38 @@ chip <https://intantech.com/files/Intan_RHD2164_datasheet.pdf>`__.
 
 Register Programming
 *******************************************
-Direct read and write access is provided to the registers detailed in the
-`RHD2000 series datasheet
+
+Managed Registers
+------------------------------------------
+Managed register access is provided at offset 0x10000.
+
+.. list-table:: Managed Registers
+    :widths: auto
+    :header-rows: 1
+
+    * - Address
+      - Name
+      - Access
+      - Time of Effect
+      - POR Value
+      - Reset Action
+      - Description
+
+    * - 0x10000
+      - ENABLE
+      - R/W
+      - On Reset
+      - Implementation dependent, see hub documentation
+      - None
+      - The LSB is used to enable or disable the device data stream:
+
+            * 0x0: data output disabled
+            * 0x1: data output enabled
+
+Unmanaged Registers
+------------------------------------------
+Direct, unmanaged read and write access is provided to the registers detailed
+in the `RHD2000 series datasheet
 <https://intantech.com/files/Intan_RHD2000_series_datasheet.pdf>`__. They are
 reproduced here for clarity, but the datasheet should be consulted for their
 exact function.
@@ -23,9 +53,9 @@ exact function.
 .. warning::
 
     All registers are accessible, but some of them are dependent on the sample
-    rate.
+    rate which may be hard-coded. See hub documentation for details.
 
-.. list-table::
+.. list-table:: Unmanaged Registers
     :widths: auto
     :header-rows: 1
 
@@ -39,7 +69,7 @@ exact function.
 
     * - 0x00
       - ADCCONF
-      - RW
+      - R/W
       - On Reset
       - "11011110"
       - None
@@ -47,7 +77,7 @@ exact function.
 
     * - 0x01
       - ADCBUFF
-      - RW
+      - R/W
       - On Reset
       - "00000010"
       - None
@@ -55,7 +85,7 @@ exact function.
 
     * - 0x02
       - MUXBIAS
-      - RW
+      - R/W
       - On Reset
       - "00000100"
       - None
@@ -63,7 +93,7 @@ exact function.
 
     * - 0x03
       - MUXLOAD
-      - RW
+      - R/W
       - On Reset
       - "00000010"
       - None
@@ -71,7 +101,7 @@ exact function.
 
     * - 0x04
       - FORMAT
-      - RW
+      - R/W
       - On Reset
       - "00011111"
       - None
@@ -79,7 +109,7 @@ exact function.
 
     * - 0x05
       - ZCHECK
-      - RW
+      - R/W
       - On Reset
       - "00000000"
       - None
@@ -87,7 +117,7 @@ exact function.
 
     * - 0x06
       - DAC
-      - RW
+      - R/W
       - On Reset
       - "00000000"
       - None
@@ -95,7 +125,7 @@ exact function.
 
     * - 0x07
       - ZSELECT
-      - RW
+      - R/W
       - On Reset
       - "00000000"
       - None
@@ -103,7 +133,7 @@ exact function.
 
     * - 0x08
       - BW0
-      - RW
+      - R/W
       - On Reset
       - "00010001"
       - None
@@ -111,7 +141,7 @@ exact function.
 
     * - 0x09
       - BW1
-      - RW
+      - R/W
       - On Reset
       - "10000000"
       - None
@@ -119,7 +149,7 @@ exact function.
 
     * - 0x0a
       - BW2
-      - RW
+      - R/W
       - On Reset
       - "00010000"
       - None
@@ -127,7 +157,7 @@ exact function.
 
     * - 0x0b
       - BW3
-      - RW
+      - R/W
       - On Reset
       - "10000000"
       - None
@@ -135,7 +165,7 @@ exact function.
 
     * - 0x0c
       - BW4
-      - RW
+      - R/W
       - On Reset
       - "00010000"
       - None
@@ -143,7 +173,7 @@ exact function.
 
     * - 0x0e
       - BW5
-      - RW
+      - R/W
       - On Reset
       - "11011100"
       - None
@@ -151,7 +181,7 @@ exact function.
 
     * - 0x0f
       - PWR0
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -159,7 +189,7 @@ exact function.
 
     * - 0x10
       - PWR1
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -167,7 +197,7 @@ exact function.
 
     * - 0x11
       - PWR2
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -175,7 +205,7 @@ exact function.
 
     * - 0x12
       - PWR3
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -183,7 +213,7 @@ exact function.
 
     * - 0x13
       - PWR4
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -191,7 +221,7 @@ exact function.
 
     * - 0x14
       - PWR5
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -199,7 +229,7 @@ exact function.
 
     * - 0x15
       - PWR6
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
@@ -207,7 +237,7 @@ exact function.
 
     * - 0x16
       - PWR7
-      - RW
+      - R/W
       - On Reset
       - "11111111"
       - None
