@@ -73,7 +73,7 @@ available only through IMEC.
       - REC_MOD
       - R/W
       - See IMEC docs
-      - "00000000"
+      - "11000000"
       - None
       - Recording flags register.
 
@@ -92,7 +92,6 @@ available only through IMEC.
       - "00000000"
       - None
       - Test configuration register 1.
-
 
     * - 0x04
       - TEST_CONFIG2
@@ -188,8 +187,7 @@ available only through IMEC.
       - See IMEC docs
       - "00000000"
       - None
-      - Shift register read length 2. 16-bit integer formed with SR_LENGTH1
-        indicates number of bytes to read into shift register.
+      - Shift register byte read length 2.
 
     * - 0x10
       - SR_LENGTH1
@@ -197,8 +195,7 @@ available only through IMEC.
       - See IMEC docs
       - "00000000"
       - None
-      - Shift register read length 1. 16-bit integer formed with SR_LENGTH2
-        indicates number of bytes to read into shift register.
+      - Shift register byte read length 1.
 
     * - 0x11
       - SOFT_RESET
@@ -211,13 +208,13 @@ available only through IMEC.
 
 Device To Host Data Frames
 ******************************************
-Each frame transmitted to the host consists of a single "super frame"
-containing all 384 AP channels and a single set of 32 LFP channels. Twelve of
-these "super frames" are required to construct a single "ultra frame" which
+Each frame transmitted to the host consists of a single Neuropixels V1 "Super
+Frame" containing all 384 AP channels and a single set of 32 LFP channels.
+Twelve of Super Frames are required to construct a single "Ultra Frame" which
 contains 12 samples from each the 384 AP channels and a single sample from each
 of the 384 LFP channels.
 
-Each Frame is organized as follows:
+Each ONIX frame is organized as follows:
 
 .. wavedrom::
 
