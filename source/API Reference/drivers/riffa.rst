@@ -34,4 +34,3 @@ of this repo. We have modified this slightly compared to the original driver so
 you should use this. You can compile it from source, but we have also included
 pre-compiled binaries that can be installed in Windows or Linux. This driver
 must be installed before using the RIFFA backend.
-

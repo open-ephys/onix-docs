@@ -69,14 +69,3 @@ After installing the requirements you can run
    make latex    # for latex
    make latexpdf # for latex (will require latexpdf installed)
    make          # list all the available output format
-
-Continuous Integration(CI)
-==========================
-
-This repo uses Travis for its CI needs.
-If you want have a gh-pages preview on your fork, you need to activate your repo on Travis admin page.
-After that you only need add ``GITHUB_TOKEN`` as Environment Variable with your Github personal token (you only need grant repo/public_repo access)
-More details here:
-
-* `Defining variables <https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings>`_
-* `Deploy to gh-pages <https://docs.travis-ci.com/user/deployment/pages/>`_
