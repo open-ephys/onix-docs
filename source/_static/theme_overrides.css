@@ -350,17 +350,62 @@ i.fa-twitter-square:before {
   color: #333;
 }
 
-/* Copy button on for bonsai workflows */ 
-.copy_img:active {
-    filter: invert(75%);
-    cursor: pointer;
+
+/* Bonsai workflows & copy button*/ 
+.copy-img
+{
+  text-align: right;
 }
 
-.copy_img:hover {
-    cursor: pointer;
+.copy-img:active {
+  filter: invert(75%);
+  cursor: pointer;
+}
+
+.copy-img:hover {
+  cursor: pointer;
+}
+
+.bonsai-workflow-container {
+  display: grid;
+  grid-template-columns: 1fr min-content max-content;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filler workflow-name copy-button"
+    "bonsai-workflow bonsai-workflow bonsai-workflow";
+}
+
+.filler { 
+    grid-area: filler; 
+    border-style: hidden hidden solid hidden;
+    border-width: 1px;
+}
+.copy-button { 
+    grid-area: copy-button; 
+    border-style: solid solid hidden hidden;
+    border-width: 1px;
+}
+
+.bonsai-workflow { 
+    grid-area: bonsai-workflow; 
+    border-style: hidden solid solid solid;
+    border-width: 1px;
+}
+
+.workflow-name { 
+    border-style: solid hidden hidden solid;
+    grid-area: workflow-name; 
+    border-width: 1px;
 }
 
 /* Prevent link targets from being covered by navbar */
 html {
   scroll-padding-top: 80px; 
 }
+
+/* Tables holding bonsai workflows */
+.bonsai-table td:last-child {
+    width: 100%;
+
+

@@ -30,10 +30,10 @@ Using the Open Ephys GUI for ONIX Data Visualization
 --------------------------------------------------------------
 There are currently some areas where the Bonsai Editor **doesn't shine**. One
 of the most glaring is its primitive ephys visualization capabilities. Bonsai
-provides extremely advanced access to GPU visualization capabilities, but this
-has to be manually configured and can be a hurdle for those that just want to
-see if they have their probe in the right spot. In the future, we aim to change
-this situation, and eventually provide first-class native ephys visualization
+provides advanced access to GPU visualization capabilities, but this has to be
+manually configured and can be a hurdle for those that just want to see if they
+have their probe in the right spot. In the future, we aim to change this
+situation, and eventually provide first-class native ephys visualization
 capabilities right in the Bonsai Editor.
 
 .. note:: If you want to help improve Bonsai's Ephys visualization capabilites,

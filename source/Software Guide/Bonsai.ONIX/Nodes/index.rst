@@ -4,7 +4,8 @@ Bonsai.ONIX Reference
 .. toctree::
     :maxdepth: 1
     
-    ONIXController
+    ONIContext
+    Heartbeat
 ..     FMCAnalogDevice
 ..     FMCDigitalDevice
 ..     FMCClockOutput

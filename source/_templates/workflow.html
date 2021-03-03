@@ -1,17 +1,6 @@
-<table>
-    <thead>
-      <tr>
-        <th>{{ name }}</th>
-        <th style="text-align: center">
-            <img class="copy_img" src="{{ static_path }}/copy.svg" onclick="copyUrlToClipboard('{{ static_path }}/workflows/{{ name }}.bonsai')" width=20px />
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td colspan="2">
-            <img src="{{ static_path }}/workflows/{{ name }}.svg" alt="{{ name}}" />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="bonsai-workflow-container">
+        <div class="filler"></div>
+        <div class="workflow-name"><b>&nbsp&nbsp{{ name }}.bonsai&nbsp&nbsp </b></div>
+        <div class="copy-button"><img class="copy-img" src="{{ static_path }}/copy.svg" onclick="copyUrlToClipboard('{{ static_path }}/workflows/{{ name }}.bonsai')" width=20px /></div>
+        <div class="bonsai-workflow"><img src="{{ static_path }}/workflows/{{ name }}.svg" alt="{{ name}}" /></div>
+    </div>
