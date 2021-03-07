@@ -1,4 +1,4 @@
-.. |api_image| image:: ../_static/noun_books.svg
+.. |api_image| image:: /_static/noun_books.svg
   :height: 60
 
 .. _api_ref:
@@ -30,3 +30,7 @@ into existing acquisition software.
 - :ref:`clroni` are CLR/.NET bindings for :ref:`liboni`.
 - :ref:`drivers` are device drivers that can be used with ONIX APIs to control
   hardware.
+
+Source Code
+---------------------
+The API source code is available here: https://github.com/jonnew/liboni.

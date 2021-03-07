@@ -350,7 +350,6 @@ i.fa-twitter-square:before {
   color: #333;
 }
 
-
 /* Bonsai workflows & copy button*/ 
 .copy-img
 {
@@ -368,44 +367,70 @@ i.fa-twitter-square:before {
 
 .bonsai-workflow-container {
   display: grid;
-  grid-template-columns: 1fr min-content max-content;
+  grid-template-columns: 1fr max-content max-content min-content;
   grid-template-rows: min-content min-content;
   gap: 0px 0px;
   grid-template-areas:
-    "filler workflow-name copy-button"
-    "bonsai-workflow bonsai-workflow bonsai-workflow";
+    "workflow-filler workflow-download workflow-copy workflow-name"
+    "workflow-image workflow-image workflow-image workflow-image";
 }
 
-.filler { 
-    grid-area: filler; 
-    border-style: hidden hidden solid hidden;
-    border-width: 1px;
-}
-.copy-button { 
-    grid-area: copy-button; 
-    border-style: solid solid hidden hidden;
-    border-width: 1px;
+.workflow-filler { 
+    grid-area: workflow-filler; 
+    margin-top: 10px;
 }
 
-.bonsai-workflow { 
-    grid-area: bonsai-workflow; 
-    border-style: hidden solid solid solid;
+.workflow-download { 
+    grid-area: workflow-download; 
+    border-style: solid hidden hidden solid;
     border-width: 1px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px 0px 0px 0px;
+}
+
+.workflow-copy { 
+    grid-area: workflow-copy; 
+    border-style: solid hidden hidden hidden;
+    border-width: 1px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
 }
 
 .workflow-name { 
-    border-style: solid hidden hidden solid;
     grid-area: workflow-name; 
+    border-style: solid solid hidden hidden;
     border-width: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom:2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 0px 4px 0px 0px;
+}
+
+.workflow-image { 
+    grid-area: workflow-image; 
+    border-style: solid solid solid solid;
+    border-width: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 4px 0px 4px 4px;
 }
 
 /* Prevent link targets from being covered by navbar */
 html {
   scroll-padding-top: 80px; 
 }
-
-/* Tables holding bonsai workflows */
-.bonsai-table td:last-child {
-    width: 100%;
-
 

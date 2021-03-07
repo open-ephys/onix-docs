@@ -1,12 +1,12 @@
-.. _bonsai_heartbeat:
+.. _bonsai_heartbeatdev:
 
-Heartbeat
+HeartbeatDevice
 ===============================
 A Bonsai Source that wraps a :ref:`onidatasheet_heartbeat` device.
 
 .. raw:: html
 
-    {% with static_path = '../../../_static', name = 'Heartbeat' %}
+    {% with static_path = '../../_static', name = 'Heartbeat' %}
         {% include 'workflow.html' %}
     {% endwith %}
 

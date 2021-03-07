@@ -23,15 +23,28 @@ function copyTextToClipboard(text) {
     navigator.clipboard.writeText(text);
 }
 
-function copyUrlToClipboard(url) {
+function downloadText(name, text) {
+    var bb = new Blob([text], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.download = name;
+    a.href = window.URL.createObjectURL(bb);
+    a.click();
+}
+
+function getTextFromURL(url, download = false) {
     http = new XMLHttpRequest();
     http.open("GET", url, true);
     http.onreadystatechange = function () {
-        console.log("state changed!");
+        // console.log("state changed!");
         if (http.readyState === XMLHttpRequest.DONE) {
             var status = http.status;
             if (status === 0 || (status >= 200 && status < 400)) {
-                copyTextToClipboard(http.responseText);
+                if (!download) {
+                    copyTextToClipboard(http.responseText);
+                } else { 
+                    var name = url.substring(url.lastIndexOf('/')+1) 
+                    downloadText(name, http.responseText);
+                }
             }
         }
     }

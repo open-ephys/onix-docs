@@ -21,7 +21,7 @@ distinct signal streams. Any high-quality 50-Ohm characteristic impedance cable
 with low loss in the GHz frequency range can be used to make this connection
 (e.g. SMA cables). However, the connection to the headstage is usually
 accomplished using specialized micro-coax cable that is extremely thin and
-flexible. We generally use cables that are 0.2-0.38 mm in diameter.
+flexible. We generally use cables that are 150-300 μm in diameter.
 
 .. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
     headstage tethers
@@ -90,7 +90,7 @@ Data Serialization
 --------------------------------------------------------
 The `DS90UB933 <https://www.ti.com/product/DS90UB933-Q1>`_ is a 100 MHz
 parallel to coaxial serializer that is typically used for streaming camera
-data. ONIX headsrages use an intermediate FPGA to translate data from any
+data. ONIX headstages use an intermediate FPGA to translate data from any
 number of heterogeneous data sources to the serializer input using the
 following simple protocol
 
@@ -114,12 +114,12 @@ following simple protocol
 
 where the signal lines are defined as follows:
 
-:``plck``: The serializers pixel clock, repurposed for generic data
+:``plck``: The serializer's pixel clock, repurposed for generic data
            transmission for ONIX headstages.
-:``hsync``: The horizontal synchronization signal, repurposed on ONIX
+:``hsync``: The horizontal synchronization signal, re-purposed on ONIX
             headstages to indicate the ``data`` bus contains a device ID on
             ONIX headstages
-:``vsync``: The vertical synchronization signal, repurposed to indicate the
+:``vsync``: The vertical synchronization signal, re-purposed to indicate the
             ``data`` bus a CRC value for the preceeding packet on ONIX
             headstages
 :``data``: The 12-bit data bus containing device ID, CRC value, or device data

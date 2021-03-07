@@ -1,3 +1,5 @@
+.. _onidatasheets:
+
 ONIX Device Datasheets
 ==========================================
 

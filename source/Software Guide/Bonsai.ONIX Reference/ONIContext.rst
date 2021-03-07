@@ -1,4 +1,4 @@
-.. _bonsai_onicontex:
+.. _bonsai_onicontext:
 
 ONIContext
 ===============================
@@ -8,7 +8,7 @@ workflow that uses ONIX hardware.
 
 .. raw:: html
 
-    {% with static_path = '../../../_static', name = 'ONIContext' %}
+    {% with static_path = '../../_static', name = 'ONIContext' %}
         {% include 'workflow.html' %}
     {% endwith %}
 

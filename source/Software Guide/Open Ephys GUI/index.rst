@@ -24,7 +24,7 @@ of when they will arrive or in what order. This necessitates the use of
 event-driven acquisition software that only propagates data when its received,
 and this is where `Bonsai <https://bonsai-rx.org/>`__ really shines. For this
 reason, we have dedicated the majority of our development effort toward the
-:ref:`bonsai_onix` library.
+:ref:`Bonsai.ONIX <bonsai_onixref>` library.
 
 Using the Open Ephys GUI for ONIX Data Visualization
 --------------------------------------------------------------
@@ -40,9 +40,8 @@ capabilities right in the Bonsai Editor.
     :ref:`get in touch <support>`.
 
 In the meantime, for the practicing electrophysiologist, the Open Ephys GUI
-provides superior ephys visualization and audio streaming capabilities than
-Bonsai. We can take advantage of these capabilities by using interprocess
-communication plugins to send ephys data from Bonsai to the Open Ephys GUI.
-
-.. todo:: Example Bonsai workflow and GUI receiver singal chain, along with
-    gif.
+provides superior plug-and-play ephys visualization and audio streaming
+capabilities than Bonsai. We can take advantage of these capabilities by using
+the Open Ephys GUI's `Ephys Socket Plugin
+<https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Ephys-Socket.html>`__
+to receive data from Bonsai

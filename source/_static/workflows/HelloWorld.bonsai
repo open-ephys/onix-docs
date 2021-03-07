@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WorkflowBuilder Version="2.5.0"
+<WorkflowBuilder Version="2.6.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns="https://bonsai-rx.org/2018/workflow">
@@ -8,12 +8,12 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Timer">
           <rx:DueTime>PT0S</rx:DueTime>
-          <rx:Period>PT0S</rx:Period>
+          <rx:Period>PT1S</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="IntProperty">
-          <Value>0</Value>
+        <Combinator xsi:type="StringProperty">
+          <Value>Hello World!</Value>
         </Combinator>
       </Expression>
     </Nodes>

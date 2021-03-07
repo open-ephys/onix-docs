@@ -1,4 +1,4 @@
-.. |hw_logo| image:: ../_static/noun_pcb.svg
+.. |hw_logo| image:: /_static/noun_pcb.svg
   :height: 60
 
 .. _hardware_guide:

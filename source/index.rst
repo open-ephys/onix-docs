@@ -87,7 +87,7 @@ Wiki <https://open-ephys.atlassian.net/wiki/spaces/OEW/overview?mode=global>`_
                 <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="120">
                 <div class="card-body flex-fill">
                     <h5 class="card-title">Software Guide</h5>
-                    <p class="card-text">Learn about existing software for Acquiring from ONIX hardware.</p>
+                    <p class="card-text">Learn about software for acquiring  data from ONIX hardware.</p>
 
 .. container:: custom-button
 

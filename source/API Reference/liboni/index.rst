@@ -18,7 +18,8 @@ C implementation of the `Open Neuro Interface API Specification
 
 Source Code
 ********************************************
-Source code is available in the `liboni git repository <https://github.com/jonnew/liboni/tree/main/api/liboni>`_.
+Source code is available in the `liboni git repository
+<https://github.com/jonnew/liboni/tree/main/api/liboni>`_.
 
 Scope and External Dependencies
 ********************************************
