@@ -5,14 +5,14 @@ breakout v1.4
 **breakout v1.4** allows bench access to the IO provided by the
 following host boards
 
-- :ref:`fmc_host_1r3`
+- :ref:`pcie_host`
 
 .. - :ref:`fmc_host_1r4`
 
 .. todo:: Image of breakout v1.4 with callouts
 
 .. note:: There may be more IO present on the breakout board than is available
-    on a particular host board. For instance, :ref:`fmc_host_1r3` has two coaxial
+    on a particular host board. For instance, :ref:`pcie_host` has two coaxial
     links, but the breakout board provides four. This is is by design. The breakout
     is compatible with all host configurations.
 
@@ -35,6 +35,9 @@ Additionally, breakout v1.4 has the following features:
 - Rugged M6 and 1/4-20 mounting holes for both metric and imperial optical
   tables
 - 19" rack compatibility
+- Fully open-source gateware and made using an open-source FPGA toolchain
+  (`yosys <http://www.clifford.at/yosys/>`__ & `nextpnr
+  <https://github.com/YosysHQ/nextpnr>`__)
 
 This board is essentially passive. It works in coordination with a host board
 which determines its detailed functionality via its connectivity with the

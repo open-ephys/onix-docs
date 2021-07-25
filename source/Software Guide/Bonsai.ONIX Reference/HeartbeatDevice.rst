@@ -2,7 +2,7 @@
 
 HeartbeatDevice
 ===============================
-A Bonsai Source that wraps a :ref:`onidatasheet_heartbeat` device.
+A Bonsai *Source* that wraps a :ref:`onidatasheet_heartbeat` device.
 
 .. raw:: html
 
@@ -16,11 +16,27 @@ None
 
 Outputs
 --------------------------
-A single ``HearbeatFrame`` every time one is produced by hardware. This type is
-a direct wrapper around the Device To Host Data Frame specified on the
+A single ``HearbeatDataFrame`` that is produced periodically by hardware. This
+type is a wrapper around the *Device To Host Data Frame* specified on the
 :ref:`onidatasheet_heartbeat` device datasheet.
 
 Configuration
 --------------------------
-Configuration of ``Heartbeat`` is performed using its property pane. Parameter
-explanations are provided there.
+Configuration of ``HeartbeatDevice`` is performed using its property pane which
+contains the followin options.
+
+.. list-table::
+    :widths: auto
+    :header-rows: 1
+
+    * - Name
+      - Type
+      - Description
+
+    * - EnableStream
+      - boolean
+      - Enable the device data stream
+
+    * - BeatHz
+      - uint
+      - Rate at which beats are produced

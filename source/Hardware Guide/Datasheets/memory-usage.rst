@@ -5,7 +5,7 @@ Memory Usage Monitor
 :Authors: Aarón Cuevas López
 :IO: Frame Source, Register Access
 :ONIX ID: 28
-:ONIX Hubs: :ref:`fmc_host_1r3`
+:ONIX Hubs: :ref:`pcie_host`
 
 Description
 *******************************************

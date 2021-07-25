@@ -5,7 +5,7 @@ FMC Host Analog IO Device
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 22
-:ONIX Hubs: :ref:`fmc_host_1r3`
+:ONIX Hubs: :ref:`pcie_host`
 
 Description
 *******************************************
@@ -14,7 +14,7 @@ IOs. It is based on three chips:
 
 - `AD7617 <https://www.analog.com/en/products/ad7617.html>`__ 14-bit ADC/DAS
 - `AD7617 <https://www.analog.com/en/products/ad5766.html>`__ 16-bit DAC
-- `DG1412E <https://www.vishay.com/docs/75104/dg1411e.pdf>`__ Precision analaog switch
+- `DG1412E <https://www.vishay.com/docs/75104/dg1411e.pdf>`__ Precision analog switch
 
 The direction of each of channel is selectable during acquisition via
 configuration registers. Analog inputs are always active regardless of the

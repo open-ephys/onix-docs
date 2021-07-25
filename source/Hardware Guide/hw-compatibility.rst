@@ -20,7 +20,7 @@ These hardware revisions are compatible:
 #. :ref:`omnetics_adapter_64_1r0`
 #. :ref:`test_board_64_1r2`
 #. :ref:`breakout_1r4`
-#. :ref:`fmc_host_1r3`
+#. :ref:`pcie_host`
 
 Public Release
 *****************************

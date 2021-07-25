@@ -2,8 +2,8 @@
 
 ONIContext
 ===============================
-A Bonsai Source that manages the acquisition context and allows basic
-acquisition parameterization.  There must be at least one of these in every
+A Bonsai *Source* that manages the acquisition context and allows basic
+acquisition parameterization. There must be at least one of these in every
 workflow that uses ONIX hardware.
 
 .. raw:: html

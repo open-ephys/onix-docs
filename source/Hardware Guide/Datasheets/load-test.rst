@@ -99,7 +99,7 @@ follows:
     }
 
 
-When `FRAME_WORDS` is set to a different value, the Data Size field along with
+When ``FRAME_WORDS`` is set to a different value, the Data Size field along with
 the number of words at the end of the frame will change.
 
 Host To Device Data Frames

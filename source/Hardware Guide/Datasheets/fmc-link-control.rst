@@ -5,7 +5,7 @@ FMC Link Controller
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 23
-:ONIX Hubs: :ref:`fmc_host_1r3`
+:ONIX Hubs: :ref:`pcie_host`
 
 Description
 *******************************************
@@ -137,7 +137,7 @@ bits. These are defined as follows:
       hub-dependent. See hub documentation for definitions.
 
     PP
-      Parity Check Pass. This bit reflects the state of the PASS pin on the
+      Parity check pass. This bit reflects the state of the PASS pin on the
       DS90UB9x4 deserializer.
 
         - 0b0: One or more errors were detected in the received payload.
@@ -146,7 +146,7 @@ bits. These are defined as follows:
       A frame is produced whenever this bit changes state.
 
     SL
-      SERDES Lock. This bit reflects the state of the LOCK pin on the DS90UB9x4
+      SERDES lock. This bit reflects the state of the LOCK pin on the DS90UB9x4
       deserializer, which monitors the lock status of FPD-Link III channel.
 
         - 0b0: PLL is unlocked link is down.

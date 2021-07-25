@@ -5,7 +5,7 @@ FMC Host Clock Output Device
 :Authors: Jonathan P. Newman
 :IO: Register Access
 :ONIX ID: 22
-:ONIX Hubs: :ref:`fmc_host_1r3`
+:ONIX Hubs: :ref:`pcie_host`
 
 Description
 *******************************************
@@ -96,99 +96,9 @@ Register Programming
 
 Device To Host Data Frames
 ******************************************
-Each frame transmitted to the host consists of a single 12-channel round robbin
-sample:
-
-.. wavedrom::
-
-    {
-        reg: [
-          {bits: 64, name: "Acquisition Clock Counter", type: 0},
-          {bits: 32, name: "Device Address", type: 0},
-          {bits: 32, name: "Data Size", type: 0, attr: 32},
-
-          {bits: 64, name: "Hub Clock Counter", type: 3},
-
-          {bits: 16, name: "Channel 0 Voltage", type: 4, attr: "ADC 0"},
-          {bits: 16, name: "Channel 1 Voltage", type: 4, attr: "ADC 0"},
-          {bits: 16, name: "Channel 2 Voltage", type: 4, attr: "ADC 0"},
-          {bits: 16, name: "Channel 3 Voltage", type: 4, attr: "ADC 0"},
-          {bits: 16, name: "Channel 4 Voltage", type: 4, attr: "ADC 0"},
-          {bits: 16, name: "Channel 5 Voltage", type: 4, attr: "ADC 0"},
-
-          {bits: 16, name: "Channel 6 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 7 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 8 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 9 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 10 Voltage", type: 6, attr: "ADC 1"},
-          {bits: 16, name: "Channel 11 Voltage", type: 6, attr: "ADC 1"},
-
-        ],
-        config: {bits: 384, lanes: 12, vflip: true, hflip: true, fontsize: 11}
-    }
-
-All voltages are signed, twos-complement, 16-bit integers. The two
-least-significant bits are always 0 since ADCs are 14-bit.  Under the hood,
-there are actually two, simultaneously sampling ADCs each of which produces 6
-samples in each data frame (different colors in the diagram). The following
-pairs of channels are simultaneously sampled:
-
-- 0 and 6
-- 1 and 7
-- 2 and 8
-- 3 and 9
-- 4 and 10
-- 5 and 11
+No frames are transmitted to the host.
 
 Host To Device Data Frames
 ******************************************
-Each frame sent to the device contains 12 16-bit voltages used to update the
-DAC:
-
-.. wavedrom::
-
-    {
-        reg: [
-          {bits: 32, name: "Device Address", type: 0},
-          {bits: 32, name: "Data Size", type: 0, attr: 24},
-
-          {bits: 16, name: "Channel 0 Voltage", type: 4},
-          {bits: 16, name: "Channel 1 Voltage", type: 4},
-          {bits: 16, name: "Channel 2 Voltage", type: 4},
-          {bits: 16, name: "Channel 3 Voltage", type: 4},
-          {bits: 16, name: "Channel 4 Voltage", type: 4},
-          {bits: 16, name: "Channel 5 Voltage", type: 4},
-          {bits: 16, name: "Channel 6 Voltage", type: 4},
-          {bits: 16, name: "Channel 7 Voltage", type: 4},
-          {bits: 16, name: "Channel 8 Voltage", type: 4},
-          {bits: 16, name: "Channel 9 Voltage", type: 4},
-          {bits: 16, name: "Channel 10 Voltage", type: 4},
-          {bits: 16, name: "Channel 11 Voltage", type: 4},
-
-        ],
-        config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}
-    }
-
-Voltage values are unsigned 16-bit integers. The output voltage transformation
-is as follows:
-
-.. math::
-
-    V_{out} = 20 * (Code / (2^{16} - 1)) - 10
-
-Some example codes are:
-
-.. math::
-
-    Code &= 0 \Rightarrow V_{out} = -10V
-
-    Code &= 2^{15} - 1  \Rightarrow V_{out} = -0.000153V
-
-    Code &= 2^{15} \Rightarrow V_{out} = 0.000153V
-
-    Code &= 2^{16} - 1 \Rightarrow V_{out} = 10V
-
-In order for the output voltage to appear at the channel itself, the channel
-direction must be set to output (see `Register Programming`_). Outputs are
-updated on a ~100 kHz internal clock. All channel voltages are updated
-simultaneously.
+This device does not accept input frames. All write attempts will fail with an
+error.

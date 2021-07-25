@@ -5,7 +5,7 @@ Heartbeat
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 12
-:ONIX Hubs: :ref:`fmc_host_1r3`
+:ONIX Hubs: :ref:`pcie_host`
 
 Description
 *******************************************

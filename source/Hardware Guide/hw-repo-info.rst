@@ -1,6 +1,6 @@
 .. _hardware_repo_info:
 
-Hardware Repository Information
+Repository Information
 ##################################
 ONIX hardware design repositories follow some conventions that are described
 below.
@@ -47,7 +47,7 @@ folder. Files within this folder are defined as follows:
 - \*.CST = top-side stencil
 - \*.SST = bottom-side stencil
 
-For example, `here <https://github.com/jonnew/ONIX/tree/main/eib-64/revisions/rev-1.2/gerber>`_ 
+For example, `here <https://github.com/jonnew/ONIX/tree/main/eib-64/revisions/rev-1.2/gerber>`_
 are the gerber files needed to create :ref:`eib_64_1r2`. In some cases, panelized versions of
 the PCB will be available in the ``gerber-panel`` and ``stencil-panel`` folders.
 
@@ -58,8 +58,8 @@ sheet, which includes schematic-linked designators, quantities, manufacturer
 part numbers, vendor part numbers. For instance, here is the `BOM for
 headstage-64 v1.3 <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
 
-Aside from a spreadsheet of electronic components, some boards may include the
-following other materials information
+Aside from a spreadsheet of electronic components, boards will include the
+following other materials information:
 
 - An interactive electronics BOM (e.g. like `this one
   <../_static/boms/headstage-64_1r3_bom.html>`__ for :ref:`headstage_64_1r3`)
@@ -70,7 +70,3 @@ following other materials information
     may lack manufacturer and vendor part numbers. This is because the distribution
     turnover of these kinds of parts is so high that maintaining part numbers is a
     fools errand.
-
-PCB Assembly Files
-****************************
-.. todo:: Document

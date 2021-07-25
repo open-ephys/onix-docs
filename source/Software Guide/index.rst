@@ -13,8 +13,8 @@
     Bonsai.ONIX Examples/index
     Open Ephys GUI/index
 
-Currently, the ONIX project is targeting `Bonsai <https://bonsai-rx.org/>`__
-for its software needs. Bonsai is extremely good at dealing with the
+ONIX uses `Bonsai <https://bonsai-rx.org/>`__
+for data acquisition. Bonsai is extremely good at dealing with the
 asynchronous and heterogeneous data that ONIX hardware produces. Have a look at
 the :ref:`bonsai_onixref` for detailed information on each of the elements of
 ``Bonsai.ONIX`` library. See :ref:`bonsai_examples` for example

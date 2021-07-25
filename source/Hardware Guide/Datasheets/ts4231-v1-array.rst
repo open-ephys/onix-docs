@@ -81,15 +81,15 @@ photodiode
 
 Envelope codes are defined based on their width as follows:
 
-- SWEEP <= 50.0 μS
-- J0 <= 62.5 μS
-- K0 <= 72.9 μS
-- J1 <= 83.3 μS
-- K1 <= 93.8 μS
-- J2 <= 104.0 μS
-- K2 <= 115.0 μS
+:Sweep: Width <= 50.0 μS
+:J0:    Width <= 62.5 μS
+:K0:    Width <= 72.9 μS
+:J1:    Width <= 83.3 μS
+:K1:    Width <= 93.8 μS
+:J2:    Width <= 104.0 μS
+:K2:    Width <= 115.0 μS
 
-Where SWEEP is a light-sheet sweep and Jx/Kx are synchronization flashes. See
+Where Sweep is a light-sheet pass and Jx/Kx are synchronization flashes. See
 the `Lighthouse Redox Project
 <https://github.com/nairol/LighthouseRedox/blob/master/docs/Light%20Emissions.md>`__
 for more information.

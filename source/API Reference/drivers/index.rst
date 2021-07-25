@@ -1,35 +1,27 @@
 .. _drivers:
 
-Hardware Translation Layers
+Hardware Driver Translators
 #######################################
 There are a many existing `device drivers
-<https://en.wikipedia.org/wiki/Device_driver>`_ that are designed to support
-hardware for data acquisition. Some of these are appropriate to be used as a
-hardware backend for ONI-compliant APIs. Specifically, this is true if they
-provide some means to support the required hardware communication channels:
+<https://en.wikipedia.org/wiki/Device_driver>`_ that support hardware for data
+acquisition. Some of these drivers can be used as a backend for ONI-compliant
+APIs if they provide some means to support the required ONI communication
+channels. Have a look at the `ONI Spec <https://github.com/open-ephys/ONI>`_
+for specifications of these channels.
 
-- High-speed data in
-- High-speed data out
-- Low speed signal In
-- Register Programming
-
-Have a look at the `ONI Spec <https://github.com/open-ephys/ONI>`_ for more
-exact specifications of these communication channels.  
-
-An ONI translation layers implement `onidriver.h
+An ONI hardware driver translator implements `onidriver.h
 <https://github.com/jonnew/liboni/blob/main/api/liboni/onidriver.h>`_ to
 convert routines in existing, potentially proprietary, device drivers (and
 corresponding hardware) into a user space library that can be consumed by
-ONI-compliant APIs. These are loaded by the API dynamically at runtime and
+ONI-compliant APIs. These are loaded by the ONI-compliant API at runtime and
 therefore are separate form the API both in terms of development and licensing
-requirements. The APIs agnosticism to hardware its most powerful features
-because it means it can be use for third party hardware without reinventing the
-wheel.
+requirements. The API's agnosticism to hardware means it can be use for both
+open and proprietary third party hardware.
 
-ONIX hardware translation layer implementations are documented here. Have a
+ONIX hardware driver translator implementations are documented here. Have a
 look at the following links for more information on each. :ref:`Get in touch
-<support>` if you want to write a driver to give your hardware automatic access
-to our API and software.
+<support>` if you want to write a driver translator to give your hardware
+automatic access to our API and software.
 
 .. toctree::
     :maxdepth: 1

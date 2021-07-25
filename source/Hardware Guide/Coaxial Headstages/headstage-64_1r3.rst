@@ -2,10 +2,11 @@
 
 headstage-64 v1.3
 ##############################
-**headstage-64 v1.3** is an ONI-compatible, serialized, multifunction headstage for
-small animals. This headstage is designed to function with :ref:`eib_64_1r3` for
-`tetrode microdrives <https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with other passive
-probes (e.g. silicon arrays, flexible eeg arrays, etc) using
+**headstage-64 v1.3** is an ONI-compatible, serialized, multifunction headstage
+for small animals. This headstage is designed to function with
+:ref:`eib_64_1r3` for `tetrode microdrives
+<https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with
+other passive probes (e.g. silicon arrays, flexible eeg arrays, etc) using
 :ref:`omnetics_adapter_64_1r0` or similar.
 
 .. todo:: This is a picture of revision 1.1!
@@ -24,7 +25,7 @@ headstage-64 v1.3 is compatible with the following ONIX hardware
 #. :ref:`omnetics_adapter_64_1r0`
 #. :ref:`test_board_64_1r2`
 #. :ref:`breakout_1r4`
-#. :ref:`fmc_host_1r3`
+#. :ref:`pcie_host`
 
 Coaxial Link
 ***********************************
@@ -44,12 +45,12 @@ the following coaxial link properties:
     +------------------------+--------------------+----------+----------+
     | Serializer             | TI DS90UB933       |          |          |
     +------------------------+--------------------+----------+----------+
-    | Coax Voltage           | 5.0                | 6.0*     | Volts    |
+    | Coax Voltage           | 5.0                | 6.3*     | Volts    |
     +------------------------+--------------------+----------+----------+
     | PCLK Frequency         | 42                 |          | MHz      |
     +------------------------+--------------------+----------+----------+
 
-.. warning:: \*Do not exceed 6VDC at the coaxial input to the headstage. Make
+.. warning:: \*Do not exceed 6.3 VDC at the coaxial input to the headstage. Make
     sure you make this measurement at the headstage to account for a potential
     voltage drop in the tether. Exceeding this voltage can permanently damage the
     headstage.
@@ -63,7 +64,8 @@ The following devices are accessible over the coaxial link:
 #. Real-time, mm-precision 3D-position tracking using Steam VR basestations (60
    Hz)
 #. 9DOF absolute head orientation tracking (100 Hz)
-#. An electrical stimulator (current controlled, +/-15V, electrode discharge)
+#. An electrical stimulator (current controlled, +/-15V compliance, automatic electrode
+   discharge)
 #. 2x optical stimulators (800 mA per channel)
 
 Electrophysiology
@@ -154,7 +156,10 @@ channel.
 
     :Q: Can I parallel the Cathode connections to increase max current?
 
-    :A: Yes. The maximum peak current in 1.6 Amps. However, if you deliver this current for a significant amount of time, the headstage will shutdown due to an over-temperture condition. The optical stimulator is only appropriate for low duty-cycle pulse type stimulation.
+    :A: Yes. The maximum peak current in 1.6 Amps. However, if you deliver this
+        current for a significant amount of time, the headstage will shutdown due
+        to an over-temperture condition. The optical stimulator is only appropriate
+        for low duty-cycle pulse-type stimulation.
 
 Electical Stimulation
 ~~~~~~~~~~~~~~~~~~~~~~

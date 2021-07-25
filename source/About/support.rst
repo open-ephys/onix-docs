@@ -2,11 +2,8 @@
 
 Contact
 =====================
-.. toctree::
-    :maxdepth: 1
-    :hidden:
 
-    faq
+Contact **Open Ephys** here: https://open-ephys.org/contact
 
 For **purchasing questions, warranty queries, hardware repair, etc**
 

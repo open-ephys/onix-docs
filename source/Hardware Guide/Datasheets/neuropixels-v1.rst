@@ -17,7 +17,7 @@ Register Programming
 
 Managed Registers
 ------------------------------------------
-Managed register access is provided at offset 0x10000.
+Managed register access is provided at offset 0x8000.
 
 .. list-table:: Managed Registers
     :widths: auto
@@ -31,7 +31,7 @@ Managed register access is provided at offset 0x10000.
       - Reset Action
       - Description
 
-    * - 0x10000
+    * - 0x8000
       - ENABLE
       - R/W
       - On Reset
@@ -47,7 +47,7 @@ Unmanaged Registers
 Direct, unmanaged read and write access is provided to the Neuropixels V1
 registers, which are reproduced here for clarity. The time of effect of changes
 to these registers are defined by the probe. Complete documentation is
-available only through IMEC.
+available through IMEC.
 
 .. list-table:: Unmanaged Registers
     :widths: auto

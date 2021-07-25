@@ -2,8 +2,6 @@
 
 About
 ===============
-
-
 Have a look at the following links for contact information, FAQs, etc.
 
 .. toctree::
