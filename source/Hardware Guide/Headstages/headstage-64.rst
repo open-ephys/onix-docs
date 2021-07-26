@@ -1,31 +1,23 @@
-.. _headstage_64_1r3:
+.. _headstage_64:
 
-headstage-64 v1.3
+Headstage-64
 ##############################
-**headstage-64 v1.3** is an ONI-compatible, serialized, multifunction headstage
+**Headstage-64** is a serialized, multifunction headstage
 for small animals. This headstage is designed to function with
 :ref:`eib_64_1r3` for `tetrode microdrives
 <https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with
-other passive probes (e.g. silicon arrays, flexible eeg arrays, etc) using
+other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using
 :ref:`omnetics_adapter_64_1r0` or similar.
 
-.. todo:: This is a picture of revision 1.1!
+.. figure:: /_static/images/headstage-64.png
+    :align: center
 
-.. image:: /_static/images/headstage-64.png
-   :align: center
+    ONIX Headstage-64 v1.1.
 
-.. note:: Make sure to double check your headstage revision by looking at the
-    silkscreen on the bottom of the headstage. You should see ``Rev1.3``. If not,
-    refer the appropriate revision's documentation.
-
-headstage-64 v1.3 is compatible with the following ONIX hardware
-
-#. :ref:`eib_64_1r2`
-#. :ref:`eib_64_large_1r0`
-#. :ref:`omnetics_adapter_64_1r0`
-#. :ref:`test_board_64_1r2`
-#. :ref:`breakout_1r4`
-#. :ref:`pcie_host`
+.. warning:: There are multiple headstage hardware revisions. The revision number is printed
+        on the PCB. You can use the `compatibility matrix
+        <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__
+        to find host hardware for your headstage.
 
 Coaxial Link
 ***********************************
@@ -137,16 +129,14 @@ Hz.
 
 Neural Stimulation
 ****************************
-headstage-64 v1.3 provides onboard electrical and optical stimulation. Stimulus
-trains can be parameterized in a similar way to the master-8 or pulse pal.
-Electrical and optical stimulus trains cannot be delivered simultaneously.
-If there is a conflict, electrical stimuluation will take priority and optical
-stimulus triggers will be ignored.
+headstage-64 provides onboard electrical and optical stimulatus generators.
+Stimulus trains can be parameterized in a similar way to the master-8 or pulse
+pal.  
 
-To achieve the shortest latency, electrical and optical stimulation can be triggered
-using the GPIO1 serializer output. Because both stimulators share this trigger line,
-it is important to only enable one of the devices (using its ENABLE register) prior
-to toggling this pin.
+.. note:: To achieve the shortest latency, electrical or optical stimulation can be triggered
+    using the GPIO1 serializer output. Because both stimulators share this trigger line,
+    it is important to only enable one of the devices (using its ENABLE register) prior
+    to toggling this pin.
 
 Optical Stimulation
 ~~~~~~~~~~~~~~~~~~~~

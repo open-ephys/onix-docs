@@ -5,7 +5,7 @@ TS4231 Array for V1 Base Stations
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 25
-:ONIX Hubs: :ref:`headstage_64_1r3`, :ref:`headstage_neuropix_1r2`
+:ONIX Hubs: :ref:`headstage_64`, :ref:`headstage_neuropix1`
 
 Description
 *******************************************

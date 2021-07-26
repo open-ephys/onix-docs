@@ -25,8 +25,8 @@ flexible. We generally use cables that are 150-300 μm in diameter.
     headstage tethers
 
 ONIX headstages use an FPGA to control peripheral devices and combine their
-data streams prior to serialization. For instance, :ref:`headstage_64_1r3` and
-:ref:`headstage_neuropix_1r2` use an `Intel MAX10 FPGA
+data streams prior to serialization. For instance, :ref:`headstage_64` and
+:ref:`headstage_neuropix1` use an `Intel MAX10 FPGA
 <https://www.intel.com/content/www/us/en/products/programmable/fpga/max-10.html>`_.
 The exact FPGA is not important because every ONI-compliant headstage is uses
 very similar gateware (FPGA-based firmware) that performs three major functions
@@ -61,7 +61,7 @@ headstage. Care must be taken to make sure this voltage is appropriate.
 .. warning:: Do not exceed the maximaum voltage at the coaxial input to the
     headstage. Make sure you make this measurement at the headstage to account for
     a potential voltage drop in the tether. Exceeding this voltage can permanently
-    damage some headstages (:ref:`headstage_64_1r3` in particular because it
+    damage some headstages (:ref:`headstage_64` in particular because it
     lacks an overvoltage lockout circuit)
 
 Further, if a long and thin coaxial tether is used, the DC resistivity of the
@@ -78,8 +78,8 @@ The `DS90UB933 <https://www.ti.com/product/DS90UB933-Q1>`_/`DS90UB934
 <https://www.ti.com/product/DS90UB934-Q1>`_ are a coaxial SERDES pair used on
 several ONIX headstages and host modules:
 
-- :ref:`headstage_64_1r3` (DS90UB933 Serilizer)
-- :ref:`headstage_neuropix_1r2` (DS90UB933 Serilizer)
+- :ref:`headstage_64` (DS90UB933 Serilizer)
+- :ref:`headstage_neuropix1` (DS90UB933 Serilizer)
 - :ref:`pcie_host` (DS90UB934 Deserilizer)
 
 along with the UCLA Miniscope and its derivatives. This section describes how this

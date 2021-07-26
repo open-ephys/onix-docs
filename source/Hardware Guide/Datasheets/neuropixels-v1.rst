@@ -5,7 +5,7 @@ Neuropixels V1
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 11
-:ONIX Hubs: :ref:`headstage_neuropix_1r2`
+:ONIX Hubs: :ref:`headstage_neuropix1`
 
 Description
 *******************************************

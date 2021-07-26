@@ -2,9 +2,11 @@
 
 Overview
 #########################
-The PCIe host board combines the `ONIX FMC Host Module
-<https://github.com/open-ephys/onix-fmc-host>`__ with the PCIe-connectivity and
-bulk-FPGA power provided by the `Numato Nereid
+The **ONIX PCIe Host** combines the `ONIX FMC Host
+Module
+<https://github.com/open-ephys/onix-fmc-host>`__
+with the PCIe-connectivity and bulk-FPGA power
+provided by the `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 carrier board.
 
@@ -22,7 +24,6 @@ carrier board.
   and IO
 - Low-latency closed-loop capabilities (headstage dependent;
   typically < 100 µs)
-
 
 Host Module
 -------------------------

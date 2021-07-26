@@ -10,7 +10,7 @@ FMC Host Digital IO Device
 Description
 *******************************************
 The **FMC Host Digital IO** device sends and receives digital data to and from
-:ref:`breakout_1r4` and allows control over its display state. This includes:
+:ref:`breakout` and allows control over its display state. This includes:
 
 - 8x 5-volt tolerate digital inputs sampled at 10 MHz
 - 8x digital outputs sampled at 10 MHz
@@ -18,7 +18,7 @@ The **FMC Host Digital IO** device sends and receives digital data to and from
 - 6x user buttons
 - LED brightness and on/off state
 
-Digital communication with the :ref:`breakout_1r4` occurs using a simple
+Digital communication with the :ref:`breakout` occurs using a simple
 serialization protocol.
 
 Breakout to Host Serialization
@@ -106,7 +106,7 @@ The host to breakout serialization protocol is as follows:
       Two-bit "slow-word" part. These bits are accumulated over time in order
       to control the display state and non-timing critical apsects of the
       breakout board. For instance, LED colors and brightness, headstage lock
-      state, etc. As of this writing, for :ref:`breakout_1r4`, a complete
+      state, etc. As of this writing, for :ref:`breakout`, a complete
       slow-word is as follows.
 
       .. wavedrom::

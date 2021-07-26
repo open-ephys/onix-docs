@@ -1,6 +1,6 @@
-.. _headstage_neuropix_1r2:
+.. _headstage_neuropix1:
 
-headstage-neuropix v1.2
+headstage-neuropix1
 ##############################
 
 .. todo:: Document.

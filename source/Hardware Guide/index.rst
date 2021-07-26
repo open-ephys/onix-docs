@@ -5,17 +5,18 @@
 
 |hw_logo| Hardware Guide
 ==========================================
-Here you will find design, compatibility, usage, and technical documentation on
-each piece of ONIX hardware.
+Here you will find information on ONIX hardware's design and use.
 
 .. toctree::
     :maxdepth: 1
 
-    hw-repo-info
-    hw-compatibility
     Datasheets/index
-    Coaxial Headstages/index
+    PCIe Host/index
+    Breakout Board/index
+    Headstages/index
     Miniscopes/index
     Adapters & EIBs/index
-    Breakout Boards/index
-    PCIe Host/index
+
+.. attention:: ONIX hardware version compatibility
+    is documented on `this google sheet
+    <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`_.

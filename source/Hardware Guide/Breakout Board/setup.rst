@@ -1,6 +1,7 @@
-.. _test_board_64_1r2:
+.. _breakout_setup:
 
-test-board-64 v1.2
+Setup
 #########################
 
 .. todo:: Document.
+

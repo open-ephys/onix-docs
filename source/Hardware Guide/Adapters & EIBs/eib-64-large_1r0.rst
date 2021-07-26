@@ -4,7 +4,7 @@ eib-64-large v1.0
 #########################
 **eib-64-large v1.0** is a 64-channel electrode interface board (EIB) with
 electrical and optical stimulation. Designed for large animal (e.g. rat)
-tetrode electrophysiology and is compatible with :ref:`headstage_64_1r3` and is
+tetrode electrophysiology and is compatible with :ref:`headstage_64` and is
 designed to be used with the rat variant of the `shuttle-drive
 <https://open-ephys.org/shuttledrive>`_.
 

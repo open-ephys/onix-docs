@@ -214,7 +214,7 @@ html_favicon = "_static/favicon.png"
 html_context = {
     "github_user": "open-ephys",
     "github_repo": "onix-docs",
-    "github_version": "master",
+    "github_version": "main",
     "doc_path": "source",
     "css_files": ["_static/theme_overrides.css",],
 }

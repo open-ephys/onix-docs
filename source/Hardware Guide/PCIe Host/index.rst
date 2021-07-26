@@ -7,10 +7,11 @@ This device provides `PCIe
 with a single `ONIX FMC Host Module
 <https://github.com/open-ephys/onix-fmc-host>`__ and allows
 sub-millisecond closed-loop IO with the brain and auxiliary lab
-equipment. 
+equipment.
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     overview
     setup-windows
@@ -18,7 +19,8 @@ equipment.
     multi-board-sync
 
 :Design Repository: https://github.com/open-ephys/onix-fmc-host
-:Compatibility: :ref:`headstage_64_1r3`, :ref:`headstage_neuropix_1r2`, :ref:`miniscopes`
+:Compatibility: :ref:`headstage_64`,
+                :ref:`headstage_neuropix1`, :ref:`miniscopes`
 
-.. image:: /_static/images/pcie-host/pcie-host_nereid_fmc-host-1r4.jpg
-   :align: center
+.. figure:: /_static/images/pcie-host/pcie-host_nereid_fmc-host-1r4.jpg
+    :align: center

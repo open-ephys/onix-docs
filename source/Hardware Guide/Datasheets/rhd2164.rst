@@ -5,7 +5,7 @@ RHD2164
 :Authors: Jie (Jack) Zhang, Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 3
-:ONIX Hubs: :ref:`headstage_64_1r3`
+:ONIX Hubs: :ref:`headstage_64`
 
 Description
 *******************************************

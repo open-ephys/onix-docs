@@ -13,16 +13,16 @@
     Bonsai.ONIX Examples/index
     Open Ephys GUI/index
 
-ONIX uses `Bonsai <https://bonsai-rx.org/>`__
-for data acquisition. Bonsai is extremely good at dealing with the
-asynchronous and heterogeneous data that ONIX hardware produces. Have a look at
-the :ref:`bonsai_onixref` for detailed information on each of the elements of
-``Bonsai.ONIX`` library. See :ref:`bonsai_examples` for example
-workflows that work out of the box with ONIX hardware. For those interested in
-using the `Open Ephys GUI <https://open-ephys.org/gui>`__ for acquisition, have
-a look at the :ref:`open_ephys_gui` page.
+ONIX uses `Bonsai <https://bonsai-rx.org/>`__ for data acquisition. Bonsai is
+extremely good at dealing with the asynchronous and heterogeneous data that
+ONIX hardware produces.
 
-.. note:: The :ref:`API <api_ref>` is meant to be
-    used! If you want to incorporate ONIX hardware functionality into your
+    - The :ref:`bonsai_onixref` provides detailed information about the Bonsai
+      library. 
+    - See :ref:`bonsai_examples` for example Bonsai workflows. 
+    - The :ref:`open_ephys_gui` page provides information on using the `Open
+      Ephys GUI <https://open-ephys.org/gui>`__ with ONIX hardware.
+
+.. note:: If you want to incorporate ONIX hardware functionality into your
     acquisition software, please :ref:`get in touch <support>`. It's not as
     hard as you might think :).
