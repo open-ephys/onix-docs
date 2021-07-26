@@ -61,7 +61,7 @@ Put Windows In Testing Mode
     .. figure:: /_static/pcie-host-windows/windows-test-mode-command.png
        :align: left
 
-#. Restart the computer (a complete power cycle is not required).
+#. Restart the computer (A regular reboot is required. A complete power cycle might not set the option).
 #. You should see now some text at the bottom right of the Desktop indicating that
    Windows is operating in testing mode:
 
