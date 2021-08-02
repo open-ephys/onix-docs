@@ -1,3 +1,11 @@
+/* Variable overrides */
+:root {
+  --pst-color-link: #a30008;
+  --pst-color-link-hover: #da714a;
+  --onix-bar-color: rgba(27, 27, 27, 0.2);
+  --onix-txt-color: #1b1b1b;
+}
+
 /* import fonts */
 @font-face {
   font-family: "Source Sans";
@@ -33,96 +41,132 @@
   font-weight: bold;
 }
 
-/* navigation bar colors*/
+/* Edit this page */
+.editthispage a {
+    color: var(--onix-text-color)
+}
+
+/* Navigation bar colors*/
+.navbar-light {
+  border-bottom: 1px solid var(--onix-bar-color) !important;
+  box-shadow: none !important;
+}
+
 .navbar {
-  background: #E3E8DC !important; /* #5fb5dc !important; */
-  font-size: 1em;
+  background: #FFFFFF !important; 
+  font-size: 1.1em;
 }
 
 .navbar-nav > .active > .nav-link {
-  background-color: #f4d050 !important;
-  color: #1F2D22 !important;
+  background-color: var(--onix-txt-color) !important;
+  color: #FFFFFF !important;
   font-weight: normal !important;
-  transition-duration: 0.4s;
-}
-
-.navbar-nav > .active > .nav-link:hover {
-  color: #519141 !important;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
+  text-decoration: none !important;
 }
 
 .navbar a {
-  color: #1F2D22 !important;
+  color: var(--onix-txt-color) !important;
   font-family: "Bitter", sans-serif;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   margin-right: 10px;
 }
 
 .navbar a:hover {
-  /* color: #f9f2d5 !important; */
-  color: #1F2D22 !important;
-  transition-duration: 0.4s;
+  text-decoration: underline !important;
+  transition-duration: 0.3s !important;
 }
 
 /* left side links */
 .bd-links > .active a {
-  color: #3c81be !important;
-  transition-duration: 0.4s;
+  color: #005282 !important; /*#3c81be */
+  transition-duration: 0.3s;
 }
 
 .bd-links > .active a:hover {
   color: #5fb5dc !important;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   transform: translate(2px, 0px);
+}
+
+.bd-sidebar {
+  border-right: 1px solid var(--onix-bar-color) !important;
 }
 
 /* right side links */
 .toc-entry > .nav-link.active {
   font-weight: 600;
-  color: #1F2D22;
+  color: var(--onix-txt-color);
   background-color: transparent;
   border-left: 2px solid #da714a;
 }
 
-/* body links (external) */
-a.reference.external {
-  color: #9a5035;
+.section-nav {
+  border-left: 1px solid var(--onix-bar-color) !important;
 }
 
-a.reference.external:hover {
-  color: #da714a;
-  text-decoration: none;
+.tocsection {
+   border-left: 1px solid var(--onix-bar-color) !important;
 }
 
-/* body links (internal) */
+/* Main text links (internal & external) */
 a.reference.internal {
-  color: #3c81be;
+  color: #005282;
 }
 
 a.reference.internal:hover {
-  color: #5fb5dc;
-  text-decoration: none;
+  color: #005282;
 }
 
-/* header links */
+main a.reference.internal, a.reference.external {
+  color: #005282;
+  text-decoration: underline !important;
+}
+
+main a.reference.internal:hover, a.reference.external:hover {
+  color: #005282;
+  text-decoration: none !important;
+}
+
+
+/* Main text links (external) */
+main a.reference.external:after {
+    background: transparent url(external.svg) 0 0 no-repeat !important;
+    background-size: 14px;
+    content: "";
+    height: 14px;
+    margin-left: 2px;
+    width: 14px;
+}
+
+main a.external:after {
+    display: inline-block;
+}
+
+/* Header links */
 a.headerlink {
   color: white;
-  transition-duration: 0.2s;
+  transition-duration:0.3s
 }
 
 a.headerlink:hover {
   color: #ceacca;
   background-color: white;
-  transition-duration: 0.2s;
+  transition-duration:0.3s
 }
 
 /* text fonts and colors */
+
+main a {
+    color: red;
+}
+
 body {
   background-color: white;
   margin-bottom: 1.15rem;
   font-size: 1em;
   padding-top: 100px;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-family: "Source Sans", sans-serif;
 }
 
@@ -132,7 +176,7 @@ h1 {
   font-weight: 400;
   line-height: 1.15;
   margin-top: 0;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 2.2em;
 }
 
@@ -141,7 +185,7 @@ h2 {
   font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 1.5em;
 }
 
@@ -150,7 +194,7 @@ h3 {
   font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 1.3em;
 }
 
@@ -159,7 +203,7 @@ h4 {
   font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 1.1em;
 }
 
@@ -168,7 +212,7 @@ h5 {
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 1.1em;
 }
 
@@ -177,7 +221,7 @@ h6 {
   font-family: "Source Sans", sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  color: #242c16;
+  color: var(--onix-txt-color);
   font-size: 1em;
 }
 
@@ -279,6 +323,12 @@ h6 {
 }
 
 /* logo */
+.title-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .navbar-brand {
   position: relative;
   height: 60px;
@@ -291,7 +341,6 @@ h6 {
   padding: 1rem 15px;
   margin-right: -15px;
   margin-left: -15px;
-  outline: none;
 }
 
 .form-control {
@@ -325,8 +374,26 @@ form:focus {
   }
 }
 
+/* Landing page cards */
+.card-title {
+  margin: 1rem;
+}
+
 .card-img-top {
-  margin-top: 4em;
+  margin-top: 2em;
+}
+
+.card {
+  border: 0;
+}
+
+.intro-card {
+  transition: transform 0.2s ease;
+  border: 0;
+}
+
+.intro-card:hover {
+  transform: scale(1.05);
 }
 
 .col-lg-6 {
