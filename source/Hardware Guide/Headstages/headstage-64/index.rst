@@ -7,40 +7,60 @@ for small animals. This headstage is designed to function with
 :ref:`eib_64_1r3` for `tetrode microdrives
 <https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with
 other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using
-:ref:`omnetics_adapter_64_1r0` or similar.
+:ref:`omnetics_adapter_64_1r0` or similar. 
 
-.. figure:: /_static/images/headstage-64.png
+.. image:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
     :align: center
-
-    ONIX Headstage-64 v1.1.
+    :height: 200px
+    :alt: ONIX Headstage-64 v1.3
 
 .. warning:: There are multiple headstage hardware revisions. The revision number is printed
         on the PCB. You can use the `compatibility matrix
         <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__
         to find host hardware for your headstage.
 
-Coaxial Link
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    test-board-64   
+
+Features
 ***********************************
-For details on ONI-compiant data serialiation and headstage gateware, have a
-look at the :ref:`serialization` page, which describes how ONI-compliant
-headstages operatate in general terms. Within this context, headstage-64 v1.3 has
-the following coaxial link properties:
+- 64 analog ephys channels and 3 auxiliary channels sampled at 30 kHz per channel
+- A BNO055 9-axis IMU for real-time, 3D orientation tracking
+- Four TS4231 light to digital converters for real-time, 3D position tracking
+  with HTC Vive base stations
+- An electrical stimulator (current controlled, +/-15V compliance, automatic electrode
+- discharge)
+- Two optical stimulators (800 mA per channel)
+- An Intel MAX10 FPGA for real-time data arbitration
+
+.. image:: /_static/images/headstage-64.png
+    :align: center
+    :alt: ONIX Headstage-64 v1.1.
+
+Data Link Serializaiton
+
+For details on data serialiation and headstage gateware, have a look at the
+:ref:`serialization` page, which describes how coax headstages operatate in
+general terms. Headstage-64 has the following coaxial link properties:
 
 .. table::
-    :widths: 50 80 50 50
+    :widths: 50 80 50 50 50
 
-    +------------------------+--------------------+----------+----------+
-    | Parameter              | Value              | Max      | Unit     |
-    |                        |                    |          |          |
-    +========================+====================+==========+==========+
-    | FPGA                   | Intel 10M08DFV81   |          |          |
-    +------------------------+--------------------+----------+----------+
-    | Serializer             | TI DS90UB933       |          |          |
-    +------------------------+--------------------+----------+----------+
-    | Coax Voltage           | 5.0                | 6.3*     | Volts    |
-    +------------------------+--------------------+----------+----------+
-    | PCLK Frequency         | 42                 |          | MHz      |
-    +------------------------+--------------------+----------+----------+
+    +------------------------+--------------------+----------+----------+----------+
+    | Parameter              | Value              | Min      | Max      | Unit/    |
+    |                        |                    |          |          | Type     |
+    +========================+====================+==========+==========+==========+
+    | FPGA                   | Intel 10M08DFV81   |          |          |          |
+    +------------------------+--------------------+----------+----------+----------+
+    | Serializer             | TI DS90UB933       |          |          | Coaxial  |
+    +------------------------+--------------------+----------+----------+----------+
+    | Supply Voltage         | 5.0                | 5.0      | 6.3*     | Volts    |
+    +------------------------+--------------------+----------+----------+----------+
+    | Hub Clock Frequency    | 42                 |          |          | MHz      |
+    +------------------------+--------------------+----------+----------+----------+
 
 .. warning:: \*Do not exceed 6.3 VDC at the coaxial input to the headstage. Make
     sure you make this measurement at the headstage to account for a potential
@@ -49,16 +69,6 @@ the following coaxial link properties:
 
 .. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
     headstage tethers
-
-The following devices are accessible over the coaxial link:
-
-#. 64 ephys channels and 3 auxiliary channels sampled at 30 kHz per channel
-#. Real-time, mm-precision 3D-position tracking using Steam VR basestations (60
-   Hz)
-#. 9DOF absolute head orientation tracking (100 Hz)
-#. An electrical stimulator (current controlled, +/-15V compliance, automatic electrode
-   discharge)
-#. 2x optical stimulators (800 mA per channel)
 
 Electrophysiology
 *******************
@@ -186,7 +196,7 @@ Gerber Files
 Bill of Materials
 ****************************
 
-- The interactive BOM is `here <../../_static/boms/headstage-64_1r3_bom.html>`__
+- The interactive BOM is `here <../../../_static/boms/headstage-64_1r3_bom.html>`__
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
   <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
@@ -199,4 +209,5 @@ FPGA & Bottom Connector Pinouts
 
 - The headstage connector pinout (ADC input mapping, stimulation connections,
   etc) is located on `this Google sheet
-  <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__
+  <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__ the :ref:`support` page.
+

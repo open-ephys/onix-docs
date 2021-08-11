@@ -96,9 +96,9 @@ html_scaled_image_link = True
 # so a file named 'default.css' will overwrite the builtin 'default.css'.
 html_static_path = ['_static']
 
-html_css_files = [
-    'css/custom.css',
-]
+# html_css_files = [
+#     'css/custom.css',
+# ]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -213,13 +213,6 @@ html_context = {
     'doc_path': 'source',
     'css_files': ['_static/theme_overrides.css'],
 }
-
-# Use wavedrom python bindings to get html and PDF
-# render_using_wavedrompy = False
-
-# This is a temporary fix for wavedrom
-#offline_skin_js_path = '_static/default.js'
-#offline_wavedrom_js_path = '_static/wavedrom.min.js'
 
 # Option for linkcheck
 linkcheck_anchors = False

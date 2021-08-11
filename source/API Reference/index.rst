@@ -15,22 +15,23 @@
     clroni/index
     drivers/index
 
-ONIX APIs are high-performance software interfaces for host computer
-interaction with ONIX hardware. ONIX API implementations are compliant with the
-`Open Neuro Interface Specification <https://github.com/open-ephys/ONI>`_.
-These APIs are simple and have minimal external dependencies. Therefore, they
-are aimed at the creation of higher level language bindings and/or integration
+The ONIX API, :ref:`liboni`, is a high-performance software interface for
+interaction with ONIX, and other ONI-compliant, hardware. The API is compliant
+with the `Open Neuro Interface Specification
+<https://github.com/open-ephys/ONI>`_. It has minimal external dependencies and
+is aimed at the creation of higher level language bindings and/or integration
 into existing acquisition software.
 
 - :ref:`liboni` is an ANSI-C implementation of the `ONI API Specificaiton
-  <https://github.com/jonnew/ONI>`_ It contains functions for configuring
+  <https://github.com/jonnew/ONI>`_. It contains functions for configuring
   hardware, streaming data to and from hardware, and controlling hardware
   during operation.
-- :ref:`cpponi` are C++ bindings for :ref:`liboni`.
-- :ref:`clroni` are CLR/.NET bindings for :ref:`liboni`.
-- :ref:`drivers` are device drivers that can be used with ONIX APIs to control
-  hardware.
+- :ref:`cpponi` is C++ bindings for :ref:`liboni`.
+- :ref:`clroni` is CLR/.NET bindings for :ref:`liboni`.
+- :ref:`drivers` describes device drivers that can be used with ONIX APIs to
+  control hardware.
 
 Source Code
 ---------------------
-The API source code is available here: https://github.com/jonnew/liboni.
+The API (and bindings) source code is available here:
+https://github.com/jonnew/liboni.

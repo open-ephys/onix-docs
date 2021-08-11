@@ -32,7 +32,7 @@ Put Windows In Testing Mode
     will not be required.
 
 #. Download the :download:`OpenEphysTestDriver.cer
-   <../_static/drivers/OpenEphysTestDriver.cer>` testing certificate and double
+   <../../_static/downloads/OpenEphysTestDriver.cer>` testing certificate and double
    click it.
 #. On the dialog, select **Install Certificate**.
 
@@ -78,7 +78,8 @@ Install Device Driver
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
     need to be compiled from source.
 
-#. Download the :download:`riffa driver <../_static/drivers/riffa.zip>` and unzip the archive.
+#. Download :download:`riffa driver
+   <../../_static/downloads/riffa-driver.zip>` and unzip the archive.
 #. Open the folder and right right click the **riffa.inf** file.
    Select **install** from the context menu.
 #. Open the start menu and type **device manager** and click to open. You shoul

@@ -1,14 +1,12 @@
 :notoc:
 
 .. |onix_image| image:: /_static/onix_logo.svg
-  :height: 19
+    :height: 19
 
-.. raw:: html
-
-    <img src="_static/onix_logo.svg" 
-        width="280px" 
-        alt="Paris" 
-        class="title-logo">
+.. image:: /_static/onix_logo.svg
+    :width: 280px
+    :alt: ONIX Logo
+    :align: center
 
 .. figure:: /_static/images/onix-hw-summary.jpg
     :class: with-border

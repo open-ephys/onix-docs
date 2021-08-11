@@ -10,6 +10,7 @@ Here you will find information on ONIX hardware's design and use.
 .. toctree::
     :maxdepth: 1
 
+    Concepts/index
     Datasheets/index
     PCIe Host/index
     Breakout Board/index

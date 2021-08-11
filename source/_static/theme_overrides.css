@@ -43,7 +43,7 @@
 
 /* Edit this page */
 .editthispage a {
-    color: var(--onix-text-color)
+  color: var(--onix-text-color)
 }
 
 /* Navigation bar colors*/
@@ -361,6 +361,11 @@ form:focus {
   border: 1px !important;
 }
 
+/* Quick links */
+.quicklinks {
+  color: var(--onix-txt-color) !important;
+}
+
 /* override table width restrictions */
 @media screen and (min-width: 767px) {
   .wy-table-responsive table td {
@@ -377,6 +382,11 @@ form:focus {
 /* Landing page cards */
 .card-title {
   margin: 1rem;
+}
+
+.intro-card .card-text {
+  margin:20px 0px;
+  color: var(--onix-txt-color) !important;
 }
 
 .card-img-top {
@@ -400,11 +410,25 @@ form:focus {
   margin-top: 2em;
 }
 
+/* list line spacing */
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
 /* List items in main area, but not in side bars */
 body > li,
 p {
   line-height: 1.5;
   margin: 0.3em 0;
+  margin-bottom: 1em;
 }
 
 /* ensure images stay within the column bounds*/

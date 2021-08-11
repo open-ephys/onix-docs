@@ -8,12 +8,8 @@ Here you will find information on ONIX headstages.
     serialization
     tethers
     commutators
-    headstage-64
+    headstage-64/index
     headstage-neuropix
-
-.. figure:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
-    :align: center
-    :height: 200px
 
 .. note:: We hope that there will be community additions to this list. Implementing your
     own headstage that incorporates other sensors (e.g cameras, temperature,
