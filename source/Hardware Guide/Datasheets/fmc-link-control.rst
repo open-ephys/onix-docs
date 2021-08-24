@@ -22,10 +22,12 @@ CRC error, and other information.
 
 .. warning::
 
-    The maximum DC voltage that can be produced by this device far exceeds the
-    absolute maximum ratings for most headstages. Although they typically will
+    The maximum DC voltage that can be produced by this device may exceed the
+    absolute maximum ratings for some headstages. Although they typically will
     have some form input overvoltage protection, the user should be careful to
     keep the voltage within a functional range.
+
+.. _onidatasheet_fmc_link_control_reg:
 
 Register Programming
 *******************************************
@@ -65,9 +67,10 @@ Register Programming
       - DESPWR
       - R/W
       - Immediate
-      - 0
+      - 1
       - None
-      - Set link deserializer PDB state, 0 = deserializer power off else on.  Does not affect port voltage!
+      - Set link deserializer PDB state, 0 = deserializer power off else on.
+        Does not affect port voltage.
 
     * - 0x03
       - PORTVOLTAGE
@@ -99,6 +102,8 @@ Register Programming
       - None
       - Save link voltage to non-volatile EEPROM if greater than 0. This
         voltage will be applied after POR.
+
+.. _onidatasheet_fmc_link_control_d2h:
 
 Device To Host Data Frames
 ******************************************

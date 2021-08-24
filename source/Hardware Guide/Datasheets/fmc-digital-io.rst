@@ -157,6 +157,8 @@ The host to breakout serialization protocol is as follows:
 A clock recovery circuit is required at the receiver to generate ``clk`` from
 ``sclk`` in order to sample the ``dat`` line.
 
+.. _onidatasheet_fmc_digital_io_reg:
+
 Register Programming
 *******************************************
 
@@ -221,6 +223,8 @@ Register Programming
       - None
       - GPIO configuraiton. Reserved for future use.
 
+.. _onidatasheet_fmc_digital_io_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host consists of a single data specifying the
@@ -259,6 +263,8 @@ current digital input and user input state.
 
     Button State
       Press state of each button.
+
+.. _onidatasheet_fmc_digital_io_h2d:
 
 Host To Device Data Frames
 ******************************************

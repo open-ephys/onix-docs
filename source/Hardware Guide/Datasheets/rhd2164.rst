@@ -12,6 +12,8 @@ Description
 The **RHD2164** ONIX device acquires data from an Intan `RHD2164 bioamplifier
 chip <https://intantech.com/files/Intan_RHD2164_datasheet.pdf>`__.
 
+.. _onidatasheet_rhd2164_reg:
+
 Register Programming
 *******************************************
 
@@ -243,6 +245,8 @@ exact function.
       - None
       - Individual Amplifier Power 7
 
+.. _onidatasheet_rhd2164_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host consists of a 64 ephys + 3 auxiliary channel
@@ -333,7 +337,9 @@ round robbin sample:
         config: {bits: 1280, lanes: 40, vflip: true, hflip: true, fontsize: 11}
     }
 
-All voltages are usigned, 16-bit integers.
+All voltages are unsigned, 16-bit integers.
+
+.. _onidatasheet_rhd2164_h2d:
 
 Host To Device Data Frames
 ******************************************

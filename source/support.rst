@@ -14,7 +14,7 @@ For **bug reports and feature requests**, do not hesitate to create an issue on
 the appropriate repository:
 
 - `Open Neuro Interface Specification <https://github.com/open-ephys/ONI>`__
-- `ONIX API Repo <https://github.com/open-ephys/liboni>__
+- `ONIX API Repo <https://github.com/open-ephys/liboni>`__
 - `ONIX Bonsai Package Repo <https://github.com/jonnew/Bonsai.ONI>`__
 - ONIX Hardware Repositories 
     - `Headstage-64 <https://github.com/open-ephys/onix-headstage-64>`__

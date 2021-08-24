@@ -7,27 +7,27 @@ Insert the PCIe Host Module
 ---------------------------------------
 #. Power off the computer.
 
-#. Plug the PCIe host board into an available PCIe slot 
+#. Plug the PCIe host board into an available PCIe slot
 
     .. note:: You do not need to plug the ATX power supply into connector on
         the board (although doing so won't hurt). The PCIe slot itself provides
         adequate power to operate the host board.
 
-#. Boot the computer. 
+#. Boot the computer.
 
-#. The RGB LED in the center of the module should be blue. 
+#. The RGB LED in the center of the module should be blue.
 
     .. note:: The RGB LED has three color states.
-    
-    - Blue: Ready to go.
-    - Yellow: Acquisition stopped.
-    - Pink: Acquisition running.
+
+        - Blue: Ready to go.
+        - Yellow: Acquisition stopped.
+        - Pink: Acquisition running.
 
 Put Windows In Testing Mode
 ---------------------------------------
 
 .. note:: As of this writing, the ONIX driver is not digitally signed by
-    Microsoft, but in a developer testing phase. Following the conclusion of the 
+    Microsoft, but in a developer testing phase. Following the conclusion of the
     beta-test period, we will complete this process and the following steps
     will not be required.
 
@@ -44,7 +44,7 @@ Put Windows In Testing Mode
     .. figure:: /_static/pcie-host-windows/certificate-import-current-user.png
        :align: left
 
-#. For ease of management, it is recommended to manually select a certificate 
+#. For ease of management, it is recommended to manually select a certificate
    storage and chose **Personal**.
 
     .. figure:: /_static/pcie-host-windows/certificate-import-personal-storage.png
@@ -72,7 +72,13 @@ Put Windows In Testing Mode
         testsigning off`` in an administrator command prompt again and reboot the
         computer
 
-Install Device Driver 
+Install C++ Runtime
+---------------------------------------
+Windows does not ship with a C++ runtime. Before using ONIX on windows, you
+will need to install `Microsoft Visual C++ Redistributable for Visual Studio
+2015, 2017 and 2019 <https://aka.ms/vs/16/release/vc_redist.x64.exe>`__.
+
+Install Device Driver
 ---------------------------------------
 
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
@@ -98,9 +104,10 @@ Install ONIX Bonsai Library
        :align: left
 
 #. Select **Community Packages** as the package source.
-#. Search for **Bonsai.ONIX**. 
+#. Search for **Bonsai.ONIX**.
 #. Install **Bonsai.ONIX.Design**. This packages will install both the core
    library and visualization tools.
 #. Have a look at the :ref:`bonsai_onixref` for usage instructions
    and example scripts.
+
 

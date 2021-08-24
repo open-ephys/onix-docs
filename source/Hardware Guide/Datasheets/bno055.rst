@@ -22,6 +22,8 @@ operate the BNO055 with the following properties:
 - Full on-chip sensor fusion ("NDOF" mode)
 - Hardcoded axis map (orientation depends on the headstage)
 
+.. _onidatasheet_bno055_reg:
+
 Register Programming
 *******************************************
 
@@ -47,6 +49,8 @@ Register Programming
 
             * 0x0: data output disabled
             * 0x1: data output enabled
+
+.. _onidatasheet_bno055_d2h:
 
 Device To Host Data Frames
 ******************************************

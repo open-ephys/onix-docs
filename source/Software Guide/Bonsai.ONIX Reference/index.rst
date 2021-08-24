@@ -10,16 +10,17 @@ Bonsai.ONIX Reference
 .. toctree::
     :maxdepth: 2
     :hidden:
-    
+
+    Installation
     ONIContext
     HeartbeatDevice
+    AnalogIODevice
+    DigitalIODevice
+    ClockOutput
+    HeadstagePortControlDevice
     BNO055Device
-..    FMCAnalogIODevice
-..    FMCDigitalIODevice
-..     FMCClockOutput
-..     FMCClockInput
-..     Neuropixels1R0
-..     RHD2162
+    RHD2164Device
+    NeuropixelsV1
 ..     LightHouseV2Array
 ..     OptoStimulator
 ..     ElectricalStimulator

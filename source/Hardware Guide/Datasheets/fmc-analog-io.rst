@@ -32,6 +32,8 @@ analog input range, DAC outputs will not damage the ADC.
     The maximal usable range of the analog inputs is ±10V. Inputs exceeding
     ±20V may cause perminent damage.
 
+.. _onidatasheet_fmc_analog_io_reg:
+
 Register Programming
 *******************************************
 
@@ -228,6 +230,8 @@ Register Programming
             * 0xXXX2: ±5V
             * 0xXXX3: ±10V
 
+.. _onidatasheet_fmc_analog_io_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host consists of a single 12-channel round robbin
@@ -272,6 +276,8 @@ pairs of channels are simultaneously sampled:
 - 3 and 9
 - 4 and 10
 - 5 and 11
+
+.. _onidatasheet_fmc_analog_io_h2d:
 
 Host To Device Data Frames
 ******************************************

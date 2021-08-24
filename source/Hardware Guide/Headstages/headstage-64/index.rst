@@ -75,10 +75,10 @@ Electrophysiology
 headstage-64 v1.3 uses a 64-channel, BGA-packaged `Intan RHD2164
 <http://intantech.com/>`_ bioamplifier chip. This chip provides:
 
-- 64 high-bandwidth electrode channels which are exposed via a mezzanine connector on the
-  bottom of the headstage and can be used to record from most types of passive
-  probes (e.g. tetrodes, silicon probe arrays, tungsten microwires, steel EEG
-  wires, etc)
+- 64 high-bandwidth electrode channels which are exposed via a mezzanine
+  connector on the bottom of the headstage and can be used to record from most
+  types of passive probes (e.g. tetrodes, silicon probe arrays, tungsten
+  microwires, steel EEG wires, etc)
 - 3 auxiliary channels
 
   - AUX 1 and 2 are pinned out on the bottom of the headstage to an unpopulated

@@ -19,10 +19,10 @@ available in the ONIX system.
     fmc-link-control
     bno055
     rhd2164
-    neuropixels-v1
     estim-hs64
     ostim-hs64
     ts4231-v1-array
+    neuropixels-v1
     ds90ub9x-raw
 ..
     TODO:
@@ -30,4 +30,4 @@ available in the ONIX system.
     dinput32           = 7    // 32-bit digital input port
     doutput32          = 8    // 32-bit digital output port
     breakdig1r3        = 18   // Open Ephys Breakout Board rev. 1.4 digital and user IO
-    ds90ub9raw         = 24   // Raw DS90UB9x deserializer
+    ds90ub9raw     s    = 24   // Raw DS90UB9x deserializer

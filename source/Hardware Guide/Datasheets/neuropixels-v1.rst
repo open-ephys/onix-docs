@@ -12,6 +12,8 @@ Description
 The **Neuropixels V1 Device** acquires data from `Neuropixels V1 probes
 <https://www.neuropixels.org/>`__.
 
+.. _onidatasheet_neuropixels_v1_reg:
+
 Register Programming
 *******************************************
 
@@ -205,6 +207,8 @@ available through IMEC.
       - None
       - Software issued synchronous reset.
 
+
+.. _onidatasheet_neuropixels_v1_d2h:
 
 Device To Host Data Frames
 ******************************************

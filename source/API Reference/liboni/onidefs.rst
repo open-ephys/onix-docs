@@ -158,8 +158,9 @@ corresponding context option type used during calls to these functions.
     .. macro:: ONI_OPT_HWADDRESS
 
         (``7``)
-        The address of the host hardware within the acqusition computer. Determines
-        the sychronization role of the hardware in multi-host systems.
+        The address of the host hardware within the acqusition computer.
+        Determines the sychronization role of the hardware in multi-host
+        systems.
 
         =================== ==================================================
         Option value type   :type:`oni_reg_val_t`
@@ -188,9 +189,9 @@ corresponding context option type used during calls to these functions.
 
         (``9``)
         The maximal size of a (single-packet) :type:`oni_frame_t` comsumed by a
-        call to :func:`oni_write_frame` in bytes.  This number is the maximum sized
-        frame that can be consumed across every device within the device table
-        that accepts write data.
+        call to :func:`oni_write_frame` in bytes.  This number is the maximum
+        sized frame that can be consumed across every device within the device
+        table that accepts write data.
 
         =================== ==================================================
         Option value type   :type:`oni_reg_val_t`

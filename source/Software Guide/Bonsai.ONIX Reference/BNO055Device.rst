@@ -2,7 +2,14 @@
 
 BNO055Device
 ===============================
-A Bonsai *Source* that wraps a :ref:`onidatasheet_bno055` device.
+A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
+:ref:`onidatasheet_bno055` device.
+
+:Inputs:    None 
+:Outputs:   A single ``BNO055DataFrame`` that is produced periodically by
+            hardware. This type is a wrapper around the :ref:`Device To Host
+            Data Frame <onidatasheet_bno055_d2h>` specified on the
+            :ref:`onidatasheet_bno055` device datasheet.
 
 .. raw:: html
 
@@ -10,19 +17,11 @@ A Bonsai *Source* that wraps a :ref:`onidatasheet_bno055` device.
         {% include 'workflow.html' %}
     {% endwith %}
 
-Inputs
---------------------------
-None
-
-Outputs
---------------------------
-A single ``BNO055DataFrame`` that is produced periodically by hardware. This
-type is a wrapper around the *Device To Host Data Frame* specified on the
-:ref:`onidatasheet_bno055` device datasheet.
-
 Configuration
 --------------------------
-This device hard-codes all of the configuration required to operate with the following properties:
+Configuration is performed using the property pane which contains the following
+options. This device hard-codes all of the configuration required to operate
+with the following properties:
 
 - 100 Hz update rate
 - Full on-chip sensor fusion ("NDOF" mode)

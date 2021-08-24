@@ -13,6 +13,8 @@ The **Heartbeat** device produces periodic samples containing the hub clock
 count. It is useful for generating keep-alive signal for various communication
 channels.
 
+.. _onidatasheet_heartbeat_reg:
+
 Register Programming
 *******************************************
 
@@ -55,6 +57,8 @@ Register Programming
       - None
       - The frequency parameter, CLK_HZ, used in the calculation of CLK_DIV.
 
+.. _onidatasheet_heartbeat_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host is structured as follows:
@@ -71,6 +75,8 @@ Each frame transmitted to the host is structured as follows:
         ],
         config: {bits: 192, lanes: 6, vflip: true, hflip: true, fontsize: 11}
     }
+
+.. _onidatasheet_heartbeat_h2d:
 
 Host To Device Data Frames
 ******************************************

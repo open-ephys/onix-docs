@@ -10,11 +10,11 @@ FAQ
         Neuro Interface specification <https://github.com/open-ephys/ONI>`__.
 
     What is Open Ephys?
-        Open Ephys is a collection of neuroscientists, engineers, and
-        hackers who believe that neuroscience benefits greatly from
-        advanced, well-documented, open-source hardware and software.
-        Have a look at the `Open Ephys Website <https://open-ephys.org/about-us-overview>`_
-        for a comprehensive overview of our mission and projects.
+        Open Ephys is a company and team of neuroscientists, engineers, and
+        hackers who believe that neuroscience benefits greatly from advanced,
+        well-documented, open-source hardware and software.  Have a look at the
+        `Open Ephys Website <https://open-ephys.org/about-us-overview>`_ for a
+        comprehensive overview of our mission and projects.
 
     Is ONIX hardware available for purchase?
         The system is currently in a beta test phase and will be made available on
@@ -23,14 +23,14 @@ FAQ
     Where do I get help when using the system?
         Have a look at the :ref:`support` page.
 
-    Can I use headstage-64 with a silicon probe instead of tetrodes?
+    Can I use :ref:`headstage_64` with a silicon probe instead of tetrodes?
         Yes. Have a look at :ref:`adapters_eibs` to see if an option exists for
-        your probe. If not, :ref:`get in touch <support>` because making an
-        adapter is quite simple.
+        your probe. If not, :ref:`get in touch <support>` because making an adapter
+        is quite simple.
 
-    Can I use my older, SPI-based Intan headstages with the system?
+    Can I use my older Intan headstages with the system?
         No. ONIX headstages use serialization hardware to allow arbitrary
-        mixtures of devices to exist on the headstage.  This is fundamentally
+        mixtures of devices to exist on the headstage. This is fundamentally
         incompatible with older, SPI-based headstages. Have a look at
         :ref:`serialization` for more information on why.
 
@@ -38,19 +38,21 @@ FAQ
         Have a look at the :ref:`open_ephys_gui` page.
 
     I have existing acquisition hardware. Can I can use your API and software to acquire data from it?
-        Yes, please do. Our API is explicity designed to decouple hardware details from
-        software. Have a look at the :ref:`drivers` page for more information
-        on integrating your hardware into the ONIX software stack. Depending
-        on how your device communicates with the computer, you may be 10's of
-        lines of C away from having it "just work".
+        Yes, please do. Our API is explicity designed to decouple hardware
+        details from software. Have a look at the :ref:`drivers` page for more
+        information on integrating your hardware into the ONIX software stack.
+        Depending on how your device communicates with the computer it may only
+        take 10's of lines of C.
 
     I have existing acquisition software. Can I integrate support for ONIX hardware using your API?
         Yes, please do. Have a look at the :ref:`api_ref` to get started. Also
         let us know if you want help.
 
+..        
+
     Where is the firmware/gateware source code located?
-        Headstage and Host gateware is available upon request, but not publicly
-        hosted. Get in touch :ref:`here <support>`.
+        Headstage and Host gateware is available upon request. Get in touch
+        :ref:`here <support>`.
 
         .. note:: Before you fire off that tweet, yes, we have read and understand the `reasons
             <http://www.ladyada.net/library/openhardware/license.html>`__ why
