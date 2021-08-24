@@ -2,7 +2,8 @@
 
 RHD2164Device
 ===============================
-A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a :ref:`onidatasheet_rhd2164` device.
+A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
+:ref:`onidatasheet_rhd2164` device.
 
 :Inputs:    None
 :Outputs:   A ``RHD2164DataFrame`` that contains one or more samples from all

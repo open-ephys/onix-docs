@@ -20,7 +20,6 @@ A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
             The number of Ultraframes in each output is determined by the
             ``BlockSize`` parameter
 
-
 .. raw:: html
 
     {% with static_path = '../../_static', name = 'NeuropixelsV1' %}
