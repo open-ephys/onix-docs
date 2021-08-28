@@ -49,16 +49,16 @@ FAQ
         let us know if you want help.
 
 ..        
-
-    Where is the firmware/gateware source code located?
-        Headstage and Host gateware is available upon request. Get in touch
-        :ref:`here <support>`.
-
-        .. note:: Before you fire off that tweet, yes, we have read and understand the `reasons
-            <http://www.ladyada.net/library/openhardware/license.html>`__ why
-            this is "bad".  The problem is that, *in practice*, we have had to
-            endure the results of making our hardware so easy to distribute
-            that people with no understanding of how it operates have sold and
-            profited from it, and *left us to deal with the destruction of
-            reputation, repairs, etc* from sub-par manufacturing and quality
-            control. If you want the gateware source, please just get in touch.
+..
+..    Where is the firmware/gateware source code located?
+..        Headstage and Host gateware is available upon request. Get in touch
+..        :ref:`here <support>`.
+..
+..        .. note:: Before you fire off that tweet, yes, we have read and understand the `reasons
+..            <http://www.ladyada.net/library/openhardware/license.html>`__ why
+..            this is "bad".  The problem is that, *in practice*, we have had to
+..            endure the results of making our hardware so easy to distribute
+..            that people with no understanding of how it operates have sold and
+..            profited from it, and *left us to deal with the destruction of
+..            reputation, repairs, etc* from sub-par manufacturing and quality
+..            control. If you want the gateware source, please just get in touch.

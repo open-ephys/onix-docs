@@ -2,11 +2,13 @@
 
 liboni
 ##########################################
-C implementation of the `Open Neuro Interface API Specification
-<https://github.com/open-ephys/ONI>`_
+
+:Source Code:   `github.com/open-ephys/liboni <https://github.com/open-ephys/liboni/tree/main/api/liboni>`_
+:License:       `MIT <https://en.wikipedia.org/wiki/MIT_License>`__
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     onidefs
     oni
@@ -16,13 +18,7 @@ C implementation of the `Open Neuro Interface API Specification
     liboni-example
     making-drivers
 
-Source Code
-********************************************
-Source code is available in the `liboni git repository
-<https://github.com/jonnew/liboni/tree/main/api/liboni>`_.
 
-Scope and External Dependencies
-********************************************
 ``liboni`` is a C library that implements the `ONI API Specification
 <https://github.com/open-ephys/ONI>`_. It is written in C to facilitate cross
 platform and cross-language use. It is composed of the following files:
@@ -46,7 +42,7 @@ device driver translation layer (:ref:`onidriver.h`, "driver" for short) that
 fulfills the requirements of the ONI Host Interconnect Specification. Our API
 implementation contains drivers for
 
-#. `RIFFA <https://github.com/KastnerRG/riffa>`_ is a free and open-source,
+#. `RIFFA <https://github.com/KastnerRG/riffa>`_ is a free and open-source
    FPGA IP core and device driver that allows the ONI communication channels to
    be implemented using the PCIe bus. **ONIX PCIe-based hardware uses RIFFA.**
 #. `Xillybus <http://xillybus.com/>`_ is a proprietary FPGA IP cores and free
@@ -54,7 +50,6 @@ implementation contains drivers for
    implemented using the PCIe bus. The licensing terms for the FPGA core are
    extremely unclear, although "trial" use is allowed. Use at your own risk.
 #. FTDI USB3.0: Planned
-#. Opal-Kelly USB3.0: Planned
 
 From the API's perspective, hardware communication abstracted to IO system
 calls (``open``, ``read``, ``write``, etc.) on file descriptors. File
@@ -65,6 +60,3 @@ and logic required to use the hardware communication backend is implicit to
 ``liboni`` API function calls. Orchestration of the communication backend is
 not directly managed by the library user.
 
-License
-********************************************
-`MIT <https://en.wikipedia.org/wiki/MIT_License>`_
