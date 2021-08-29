@@ -4,10 +4,10 @@ Headstage-64
 ##############################
 **Headstage-64** is a serialized, multifunction headstage
 for small animals. This headstage is designed to function with
-:ref:`eib_64_1r3` for `tetrode microdrives
+:ref:`eib_64` for `tetrode microdrives
 <https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with
 other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using
-:ref:`omnetics_adapter_64_1r0` or similar. 
+:ref:`omnetics_adapter_64` or similar. 
 
 .. image:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
     :align: center

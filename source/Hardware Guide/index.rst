@@ -10,13 +10,13 @@ Here you will find information on ONIX hardware's design and use.
 .. toctree::
     :maxdepth: 1
 
-    Concepts/index
-    Datasheets/index
+    Setup/index
     PCIe Host/index
     Breakout Board/index
     Headstages/index
     Miniscopes/index
     Adapters & EIBs/index
+    Datasheets/index
 
 .. attention:: ONIX hardware version compatibility
     is documented on `this google sheet

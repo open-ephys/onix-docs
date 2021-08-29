@@ -9,6 +9,12 @@ FAQ
         Open Neuro Interface X, the Open Ephys implementation of the `Open
         Neuro Interface specification <https://github.com/open-ephys/ONI>`__.
 
+    How is ONI different than ONIX?
+        `Open Neuro Interface <https://github.com/open-ephys/ONI>`__ is a hardware and
+        API specification designed to meet the needs of experimental neuroscientists.
+        ONIX hardware and `liboni <https://github.com/open-ephys/liboni>`__ are
+        implementations of the ONI specification. 
+
     What is Open Ephys?
         Open Ephys is a company and team of neuroscientists, engineers, and
         hackers who believe that neuroscience benefits greatly from advanced,

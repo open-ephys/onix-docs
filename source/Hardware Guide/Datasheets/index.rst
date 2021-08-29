@@ -1,6 +1,6 @@
 .. _onidatasheets:
 
-Device Datasheets
+ONI Datasheets
 ==========================================
 The `ONI spec <https://github.com/open-ephys/ONI>`__ requires a simple
 datasheet for each leaf device that provides information on register

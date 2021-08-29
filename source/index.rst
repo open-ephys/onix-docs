@@ -1,5 +1,7 @@
 :notoc:
 
+.. title:: ONIX
+
 .. |onix_image| image:: /_static/onix_logo.svg
     :height: 19
 

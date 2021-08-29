@@ -1,20 +1,16 @@
-.. _nano_z_adapter_64_1r0:
+.. _nano_z_adapter_64:
 
-nano-z-adapter-64 v1.0
+64-Channel Nano-Z Adapter
 #########################
-**nano-z-adapter-64 v1.0** is an adapter board that allows ONIX electrode
-interface and adapter boards to be used with the  `nanoZ
-<http://www.white-matter.com/nanoz/>`__ electrode impedance tester and plating
-device. This adapter is compatible with:
-
-- :ref:`eib_64_1r2`
-- :ref:`eib_64_large_1r0`
-- :ref:`omnetics_adapter_64_1r0`
+**64-Channel Nano Z Adapter** is an adapter board that allows :ref:`eib_64`,
+:ref:`eib_64_large`, and :ref:`omnetics_adapter_64` to be used with the
+`Nano-Z <http://www.white-matter.com/nanoz/>`__ electrode impedance tester and
+plating device. 
 
 .. figure:: /_static/images/nanoz-adapter-64_1r0.png
     :align: center
 
-    nano-z-adapter-64 v1.0.
+    64-Chanbnel Nano-Z Adapter v1.0.
 
 Bill of Materials
 *******************************
@@ -23,10 +19,10 @@ The BOM is located on `this google sheet
 
 Electrode Mapping
 *******************************
-The nano-z internal channel number mapping for various EIBS are
+The Nano-Z internal channel number mapping for various EIBS are:
 
-- :ref:`eib_64_1r2` - `this google sheet
+- :ref:`eib_64` - `this google sheet
   <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=0>`__
-- :ref:`omnetics_adapter_64_1r0` - `this google sheet
+- :ref:`omnetics_adapter_64` - `this google sheet
   <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=1490495645>`__
 

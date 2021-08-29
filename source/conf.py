@@ -18,16 +18,15 @@ from datetime import datetime, timezone
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
-project = 'ONIX Docs'
+project = 'Open Ephys ONIX'
 copyright = '2010-{}, Open Ephys & Contributors'.format(datetime.now(timezone.utc).year)
 author = 'Open Ephys & Contributors'
 
 # The short X.Y version
-version = '0.0'
-# The full version, including alpha/beta/rc tags
-release = '0.0.0'
+#version = '1.0'
+## The full version, including alpha/beta/rc tags
+#release = '1.0.0-beta'
 
 # -- General configuration ---------------------------------------------------
 
