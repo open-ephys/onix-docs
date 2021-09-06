@@ -16,5 +16,5 @@ data IO.
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`
 
-.. figure:: /_static/images/breakout/breakout_1r5.jpg
+.. image:: /_static/images/breakout/breakout_1r5.jpg
     :align: center

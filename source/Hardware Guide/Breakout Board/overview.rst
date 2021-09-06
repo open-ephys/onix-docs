@@ -8,7 +8,7 @@ The **ONIX Breakout Board** allows bench access to the IO provided by the
 .. figure:: /_static/images/breakout/breakout_1r5_callouts.jpg
     :align: center
 
-    ONIX Breakout Board revision 1.5.
+    ONIX Breakout Board v1.5.
 
 Features
 -------------------------
@@ -53,8 +53,8 @@ Gateware
 The breakout board contains a `TinyFPGA BX
 <https://tinyfpga.com/bx/guide.html>`__ (Lattice ICE40 breakout board) for
 digital input serialization, digital output deserialization, interpreting user
-input, and driving indication LEDs. The gateware can be found `here
-<https://github.com/open-ephys/onix-breakout/tree/main/gateware>`__ and is
+input, and driving indication LEDs. The `breakout board gateware
+<https://github.com/open-ephys/onix-breakout/tree/main/gateware>`__ is
 impelemented using an open-source toolchain (`Yosys
 <http://www.clifford.at/yosys/>`__ and `NextPnR
 <https://github.com/YosysHQ/nextpnr>`__).

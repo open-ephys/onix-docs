@@ -54,8 +54,9 @@ Numato Nereid
 The `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 is a VITA-57 compliant high-density FMC carrier module, which is compatible
-with the ONIX FMC Host Board. It has a Kintex-7 FPGA, PCIe (Gen3 4x) bus, and 4
-GB of RAM for PC-independent data buffering.
+with the ONIX FMC Host Board. It has a Kintex-7 FPGA, PCIe bus (Gen2 4x), and 4
+GB of RAM for PC-independent data buffering. Our gateware bypasses this RAM
+when its not needed for maximum close-loop performance.
 
 .. figure:: /_static/images/pcie-host/nereid-callouts.png
     :align: center

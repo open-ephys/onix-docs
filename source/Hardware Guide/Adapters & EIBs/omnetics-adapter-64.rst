@@ -1,7 +1,7 @@
 .. _omnetics_adapter_64:
 
 64-Channel Omnetics Adpater
-#########################
+############################
 Adapter board for using omnetics-based EIBs and silicon probes with
 :ref:`headstage_64` and :ref:`nano_z_adapter_64`.
 

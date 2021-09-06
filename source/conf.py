@@ -88,7 +88,7 @@ breathe_projects = { 'clroni': './API Reference/clroni/doxygen-xml' }
 #
 html_theme = 'pydata_sphinx_theme'
 html_logo = '_static/onix_open_ephys_logo.svg'
-html_scaled_image_link = True
+html_scaled_image_link = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

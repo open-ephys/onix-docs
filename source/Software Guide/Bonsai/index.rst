@@ -5,22 +5,27 @@
 
 .. _bonsai_onixref:
 
-Bonsai.ONIX Reference
+Bonsai
 ===================================
+.. 
+    NB: The names of pages for nodes must match their Bonsai.ONIX class names
+    so that documentation can be openned from the Bonsai Editor!
+
 .. toctree::
     :maxdepth: 2
     :hidden:
 
     Installation
+    GettingStarted
     ONIContext
     HeartbeatDevice
     AnalogIODevice
     DigitalIODevice
-    ClockOutput
+    ClockOutputDevice
     HeadstagePortControlDevice
     BNO055Device
     RHD2164Device
-    NeuropixelsV1
+    NeuropixelsV1Device
 ..     LightHouseV2Array
 ..     OptoStimulator
 ..     ElectricalStimulator
