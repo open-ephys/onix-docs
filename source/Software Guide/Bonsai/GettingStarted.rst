@@ -27,9 +27,11 @@ Bonsai Learning Resources
       - Videos and links for understanding how Bonsai can be used to process
         data streams ranging from beginer to advanced use.
 
-    * - `Bonsai's docs page <https://bonsai-rx.org/observables/>`__
-      - Simple overview of the architecture at the core of Bonsai, and why it's
-        useful and powerful.
+    * - `Bonsai's docs page <https://bonsai-rx.org/docs/installation/>`__
+      - Installation, package managment, use guide. These pages also contain an
+        overview of the reactive architecture at the core of Bonsai, and why
+        it's useful and powerful. It concludes with a guide on how to use the
+        editor to create Bonsai workflows.
 
     * - `Bonsai user group <https://groups.google.com/g/bonsai-users>`__
       - Bonsai's Q/A forum with **lots** of useful examples and solutions for

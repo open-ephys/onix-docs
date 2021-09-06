@@ -73,7 +73,7 @@ general terms. Headstage-64 has the following coaxial link properties:
 Electrophysiology
 *******************
 headstage-64 v1.3 uses a 64-channel, BGA-packaged `Intan RHD2164
-<http://intantech.com/>`_ bioamplifier chip. This chip provides:
+<https://intantech.com/>`_ bioamplifier chip. This chip provides:
 
 - 64 high-bandwidth electrode channels which are exposed via a mezzanine
   connector on the bottom of the headstage and can be used to record from most

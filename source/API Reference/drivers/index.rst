@@ -10,7 +10,7 @@ channels. Have a look at the `ONI Spec <https://github.com/open-ephys/ONI>`_
 for specifications of these channels.
 
 An ONI hardware driver translator implements `onidriver.h
-<https://github.com/jonnew/liboni/blob/main/api/liboni/onidriver.h>`_ to
+<https://github.com/open-ephys/liboni/blob/main/api/liboni/onidriver.h>`_ to
 convert routines in existing, potentially proprietary, device drivers (and
 corresponding hardware) into a user space library that can be consumed by
 ONI-compliant APIs. These are loaded by the ONI-compliant API at runtime and

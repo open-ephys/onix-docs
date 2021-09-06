@@ -16,7 +16,7 @@ ONIX uses `Bonsai <https://bonsai-rx.org/>`__ for data acquisition. Bonsai is
 very good at dealing with the asynchronous and heterogeneous data that ONIX
 hardware produces.
 
-    - The :ref:`bonsai_onixref` page provides detailed information about the
+    - The :ref:`bonsai_onixref` pages provide detailed information about the
       ONIX Bonsai library. 
     - The :ref:`open_ephys_gui` page provides information on using the `Open
       Ephys GUI <https://open-ephys.org/gui>`__ with ONIX hardware.

@@ -44,4 +44,4 @@ provides superior plug-and-play ephys visualization and audio streaming
 capabilities than Bonsai. We can take advantage of these capabilities by using
 the Open Ephys GUI's `Ephys Socket Plugin
 <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Ephys-Socket.html>`__
-to receive data from Bonsai
+to receive data from Bonsai.

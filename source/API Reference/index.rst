@@ -23,7 +23,7 @@ is aimed at the creation of higher level language bindings and/or integration
 into existing acquisition software.
 
 - :ref:`liboni` is an ANSI-C implementation of the `ONI API Specificaiton
-  <https://github.com/jonnew/ONI>`_. It contains functions for configuring
+  <https://github.com/open-ephys/ONI>`_. It contains functions for configuring
   hardware, streaming data to and from hardware, and controlling hardware
   during operation.
 - :ref:`cpponi` is C++ bindings for :ref:`liboni`.
@@ -34,4 +34,4 @@ into existing acquisition software.
 Source Code
 ---------------------
 The API (and bindings) source code is available here:
-https://github.com/jonnew/liboni.
+https://github.com/open-ephys/liboni.

@@ -4,7 +4,7 @@
 #########################
 **64-Channel Nano Z Adapter** is an adapter board that allows :ref:`eib_64`,
 :ref:`eib_64_large`, and :ref:`omnetics_adapter_64` to be used with the
-`Nano-Z <http://www.white-matter.com/nanoz/>`__ electrode impedance tester and
+`Nano-Z <http://www.white-matter.com/products/nanoz/>`__ electrode impedance tester and
 plating device. 
 
 .. figure:: /_static/images/nanoz-adapter-64_1r0.png
