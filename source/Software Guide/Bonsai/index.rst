@@ -8,8 +8,8 @@
 Bonsai
 ===================================
 .. 
-    NB: The names of pages for nodes must match their Bonsai.ONIX class names
-    so that documentation can be openned from the Bonsai Editor!
+    Important: The names of pages for nodes must match their Bonsai.ONIX class
+    names so that documentation can be opened from the Bonsai Editor!
 
 .. toctree::
     :maxdepth: 2
@@ -25,10 +25,11 @@ Bonsai
     HeadstagePortControlDevice
     BNO055Device
     RHD2164Device
+    ElectricalStimulationDevice
+    OpticalStimulationDevice
     NeuropixelsV1Device
 ..     LightHouseV2Array
 ..     OptoStimulator
-..     ElectricalStimulator
 ..     MiniscopeV3
 
 ``Bonsai.ONIX`` is a `Bonsai <https://bonsai-rx.org/>`__ library for ONIX

@@ -5,7 +5,7 @@ ClockOutputDevice
 A `Bonsai sink <https://bonsai-rx.org/docs/editor/#toolbox>`__ that wraps a
 :ref:`onidatasheet_fmc_clock_out` device.
 
-:Inputs:    A ``bool`` that is connected to the ``Enable`` setting and can be
+:Inputs:    A ``boolean`` that is connected to the ``Enable`` setting and can be
             use to gate the clock output, but is not required.
 
 :Outputs:   None

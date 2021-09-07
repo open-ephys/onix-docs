@@ -2,9 +2,8 @@
 
 Installation
 ===============================
-
-``Bonsai.ONIX`` is a `Bonsai <https://bonsai-rx.org/>`__ library for
-ONIX hardware. 
+**Bonsai.ONIX** is a `Bonsai <https://bonsai-rx.org/>`__ library for ONIX
+hardware and can be installed using its package manager.
 
 #. First you will need to `install Bonsai <https://bonsai-rx.org/docs/installation/>`__
 
@@ -18,13 +17,14 @@ ONIX hardware.
 #. Set the package source to "Bonsai Community".
 
     .. image:: /_static/bonsai/package-manager-community-packages.png
-        :alt: Bonsai package manager with community packages selected as package source
+        :alt: Bonsai package manager with community packages selected as
+              package source
         :align: left
 
 #. Search for "ONIX" and install.
 
-    .. tip:: It is recommended to also install Bonsai.ONIX.Design because it
-        provides a substantial set of data visualation and graphical hardare
+    .. tip:: It is recommended to also install **Bonsai.ONIX.Design** because
+        it provides a substantial set of data visualation and graphical hardare
         configuration elements.
 
     .. image:: /_static/bonsai/package-manager-search-onix.png

@@ -43,7 +43,11 @@ Bonsai Learning Resources
 
 Accessing Bonsai.ONIX Documentation
 ----------------------------------------
-#. If a node has a configuration GUI (e.g.
+#. If an ONIX node does not have a configuration GUI (e.g. like
+   :ref:`bonsai_heartbeatdev`), then **double clicking** the node will bring
+   open its documentation page in your default browser.
+
+#. If an ONIX node has a configuration GUI (e.g.
    :ref:`bonsai_neuropixelsv1dev`),then there will be a **Documentation** link
    on that will open the node's reference page in your default browser.
 
@@ -51,10 +55,6 @@ Accessing Bonsai.ONIX Documentation
         :alt: ONIContext configuration GUI showing documentation link.
         :align: center
         :scale: 60%
-
-#. If a node does not have a configuration GUI (e.g. like
-   :ref:`bonsai_heartbeatdev`), then **double clicking** the node will bring
-   open its documentation page in your default browser.
 
 Bonsai.ONIX Tutorial
 --------------------------------

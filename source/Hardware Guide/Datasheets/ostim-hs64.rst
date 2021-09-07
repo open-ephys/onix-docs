@@ -1,4 +1,4 @@
-.. _ostim_hs64:
+.. _onidatasheet_ostim_hs64:
 
 HS64 Optical Stimulator
 ###########################################

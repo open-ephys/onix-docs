@@ -1,4 +1,4 @@
-.. _estim_hs64:
+.. _onidatasheet_estim_hs64:
 
 HS64 Electrical Stimulator
 ###########################################
@@ -203,6 +203,7 @@ Register IO is detailed in the table below.
 A graphical register definitions are provided in the following diagrams:
 
 .. figure:: /_static/images/device_hs64-estim/estim-hs64_parameters.png
+    :alt: Headstage-64 electrical stimulator register definitions
     :align: center
     :scale: 50%
 
