@@ -20,6 +20,8 @@ This device transmits data every time one of the sensors in the array receives
 and optical signal. The host computer must perform the mathematics in order to
 calculate positional information using these data.
 
+.. _onidatasheet_ts4231_v1_array_reg:
+
 Register Programming
 *******************************************
 
@@ -46,6 +48,8 @@ Register Programming
             * 0x0: data output disabled
             * 0x1: data output enabled
 
+.. _onidatasheet_ts4231_v1_array_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host is structured as follows:
@@ -64,7 +68,7 @@ Each frame transmitted to the host is structured as follows:
 
           {bits: 32, name: "Envelope Width (Hub Clock Cycles)", type: 5},
 
-          {bits: 16, name: "Classified Envelope Code", type: 6}
+          {bits: 16, name: "Envelope Code", type: 6}
 
         ],
         config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}

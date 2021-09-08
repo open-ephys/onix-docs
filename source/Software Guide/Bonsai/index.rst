@@ -24,6 +24,7 @@ Bonsai
     ClockOutputDevice
     HeadstagePortControlDevice
     BNO055Device
+    TS4231V1Device
     RHD2164Device
     ElectricalStimulationDevice
     OpticalStimulationDevice
