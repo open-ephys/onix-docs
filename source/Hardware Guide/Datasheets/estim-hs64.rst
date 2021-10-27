@@ -12,7 +12,7 @@ Description
 The **HS64 Electrical Stimulator** is a combined precision bipolar current
 source and sequencer for generating electrical stimuli. The circuit consists of
 an enhanced Howland current pump driven by a DAC. A bipolar 15 volt supply is
-provided by a dual boost/boost-inverting switching regulator. This regulator
+provided switching regulator. This regulator
 is only enabled during stimulation epochs in order to minimize switching noise
 on analog traces. A dual-channel bipolar analog switch sits between the
 stimulator output and stimulation electrode. Outside of stimulus pulses, it

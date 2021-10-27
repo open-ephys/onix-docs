@@ -11,7 +11,7 @@ Description
 *******************************************
 The **DS90UB9X Raw Device** can be used to receive raw data from and control
 `DS90UB9x <https://www.ti.com/product/DS90UB934-Q1>`__ SERDES pairs. This
-device is useful for acquiring data from headstages that use `DS90UB9x3
+device is useful for acquiring data from instruments that use `DS90UB9x3
 <https://www.ti.com/product/DS90UB933-Q1>`__ serializers, which are physically
 compatible with ONIX host hardware, but do not implement :ref:`ONIX Serization
 protocol <serialization>`. For example, third party devices such as `UCLA
@@ -94,13 +94,30 @@ Managed register access is provided at offset 0x8000.
       - On Reset
       - 0
       - None
-      - The LSB determines if HSYNC and VSYNC are included in the data word
-        along with parallel port state
+      - The LSB determines if HSYNC and VSYNC bits are included in the data
+        word along with parallel port state. If included, bit 13 is HSYNC and
+        bit 14 is VSYNC.
 
           * 0x0: not included
           * 0x1: included
 
     * - 0x8006
+      - SYNCBITS
+      - R/W
+      - On Reset
+      - 0
+      - None
+      - If enabled, mark bit 15 of all data words in a frame after a choosen
+        sync edge. Note that words in a frame still respect TRIGGER and GATE
+        properties. Therefore this property provides a means to mark the first
+        frame in a multi-frame sample (e.g. the first row in a camera image).
+
+          * Bit 0: not included
+          * Bit 1: '0' = HSYNC, '1' = VSYNC
+          * Bit 2: '0' = Rising edge, '1' = Falling edge
+
+
+    * - 0x8007
       - GPIO_DIR
       - R/W
       - On Reset
@@ -111,7 +128,7 @@ Managed register access is provided at offset 0x8000.
           * 0b0: Output
           * 0b1: Input
 
-    * - 0x8007
+    * - 0x8008
       - GPIO_VAL
       - R/W
       - On Reset
@@ -121,6 +138,18 @@ Managed register access is provided at offset 0x8000.
 
           * 0b0: Low
           * 0b1: High
+
+    * - 0x8009
+      - GPIO_VAL
+      - R
+      - On DS90UBX LOCK or PASS pin state change
+      - N/A
+      - None
+      - Access the DS90UBX LOCK and PASS pin state to determine if the SERDES
+        is operating normally.
+
+          * Bit 0: DS90UBX LOCK pin state
+          * Bit 1: DS90UBX PASS pin state
 
 
 Unmanaged Registers
