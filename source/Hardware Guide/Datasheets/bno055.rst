@@ -71,10 +71,10 @@ Each frame transmitted to the host is structured as follows:
           {bits: 16, name: "Euler Angle Roll", type: 4},
           {bits: 16, name: "Euler Angle Pitch", type: 4},
 
+          {bits: 16, name: "Quaternion W", type: 5},
           {bits: 16, name: "Quaternion X", type: 5},
           {bits: 16, name: "Quaternion Y", type: 5},
           {bits: 16, name: "Quaternion Z", type: 5},
-          {bits: 16, name: "Quaternion W", type: 5},
 
           {bits: 16, name: "Linear Acceleration X", type: 6},
           {bits: 16, name: "Linear Acceleration Y", type: 6},
