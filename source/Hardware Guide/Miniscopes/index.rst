@@ -7,4 +7,5 @@ Miniscopes
     :maxdepth: 1
 
     ucla-miniscope
+..
     miniscope-v4f

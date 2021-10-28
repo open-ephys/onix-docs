@@ -3,7 +3,7 @@
 TS4231V1Device
 ===============================
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
-:ref:`onidatasheet_ts4231_v1_array` device. Typically, this node is followed by
+:ref:`onidatasheet_ts4231_v1_array`. Typically, this node is followed by
 at least one **TS4231V1FrameToPosition** transform node, which converts the raw
 output from a single photodiode in the sensor array to a 3D position.
 
