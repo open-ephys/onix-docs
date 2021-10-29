@@ -9,7 +9,7 @@ Insert the PCIe Host Module
 
 #. Plug the PCIe host board into an available PCIe slot
 
-    .. note:: You do not need to plug the ATX power supply into connector on
+   .. note:: You do not need to plug the ATX power supply into connector on
         the board (although doing so won't hurt). The PCIe slot itself provides
         adequate power to operate the host board.
 
@@ -17,7 +17,7 @@ Insert the PCIe Host Module
 
 #. The RGB LED in the center of the module should be blue.
 
-    .. note:: The RGB LED has three color states.
+   .. note:: The RGB LED has three color states.
 
         - Blue: Ready to go.
         - Yellow: Acquisition stopped.
@@ -36,39 +36,43 @@ Put Windows In Testing Mode
    click it.
 #. On the dialog, select **Install Certificate**.
 
-    .. figure:: /_static/pcie-host-windows/install-certificate.png
-       :align: left
+   .. figure:: /_static/pcie-host-windows/install-certificate.png
+        :align: left
 
 #. It is recommended to select **Current User** certificate storage option.
 
-    .. figure:: /_static/pcie-host-windows/certificate-import-current-user.png
-       :align: left
+   .. figure:: /_static/pcie-host-windows/certificate-import-current-user.png
+        :align: left
 
 #. For ease of management, it is recommended to manually select a certificate
    storage and chose **Personal**.
 
-    .. figure:: /_static/pcie-host-windows/certificate-import-personal-storage.png
-       :align: left
+   .. figure:: /_static/pcie-host-windows/certificate-import-personal-storage.png
+        :align: left
 
 #. Open the Windows Start Menu and type **cmd** to find the command prompt
    application. Right click it and chose **Run as Administrator**.
 
-    .. figure:: /_static/pcie-host-windows/cmd-run-as-admin.png
-       :align: left
+   .. figure:: /_static/pcie-host-windows/cmd-run-as-admin.png
+        :align: left
 
 #. Execute the following command: ``bcdedit /set testsigning on``
 
-    .. figure:: /_static/pcie-host-windows/windows-test-mode-command.png
-       :align: left
+   .. figure:: /_static/pcie-host-windows/windows-test-mode-command.png
+        :align: left
 
-#. Restart the computer (A regular reboot is required. A complete power cycle might not set the option).
-#. You should see now some text at the bottom right of the Desktop indicating that
-   Windows is operating in testing mode:
+#. Restart the computer.
 
-    .. figure:: /_static/pcie-host-windows/windows-test-mode-text.png
-       :align: left
+   .. note:: A regular reboot is required. A complete power cycle might not set
+        the option.
 
-    .. note:: The computer will keep the test state until you run ``bcdedit /set
+#. You should see now some text at the bottom right of the Desktop indicating
+   that Windows is operating in testing mode:
+
+   .. figure:: /_static/pcie-host-windows/windows-test-mode-text.png
+        :align: left
+
+   .. note:: The computer will keep the test state until you run ``bcdedit /set
         testsigning off`` in an administrator command prompt again and reboot the
         computer
 
@@ -91,7 +95,7 @@ Install Device Driver
 #. Open the start menu and type **device manager** and click to open. You shoul
    see **RIFFA** in the device tree.
 
-    .. figure:: /_static/pcie-host-windows/package-manager-riffa.png
+   .. figure:: /_static/pcie-host-windows/package-manager-riffa.png
        :align: left
 
 Install ONIX Bonsai Library
@@ -100,7 +104,7 @@ Install ONIX Bonsai Library
    install the latest release.
 #. Open Bonsai. At the start menu, select **Manage Packages**.
 
-    .. figure:: /_static/pcie-host-windows/bonsai-start-menu.png
+   .. figure:: /_static/pcie-host-windows/bonsai-start-menu.png
        :align: left
 
 #. Select **Community Packages** as the package source.
@@ -109,5 +113,3 @@ Install ONIX Bonsai Library
    library and visualization tools.
 #. Have a look at the :ref:`bonsai_onixref` for usage instructions
    and example scripts.
-
-

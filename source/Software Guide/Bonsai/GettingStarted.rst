@@ -48,7 +48,7 @@ Accessing Bonsai.ONIX Documentation
    open its documentation page in your default browser.
 
 #. If an ONIX node has a configuration GUI (e.g.
-   :ref:`bonsai_neuropixelsv1dev`),then there will be a **Documentation** link
+   :ref:`bonsai_neuropixelsv1dev`), then there will be a **Documentation** link
    on that will open the node's reference page in your default browser.
 
     .. image:: /_static/bonsai/documentation-in-gui.png 

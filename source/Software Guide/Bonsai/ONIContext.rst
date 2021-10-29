@@ -3,9 +3,8 @@
 ONIContext
 ===============================
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages a
-:ref:`oni_h_acquisition_context` context and allows basic
-acquisition parameterization. There must be at least one of these in every
-workflow that uses ONIX hardware.
+:ref:`oni_h_acquisition_context` and allows basic acquisition parameterization.
+There must be at least one of these in every workflow that uses ONIX hardware.
 
 :Inputs:  None
 :Outputs: A single ``ONIContextTask`` followed by `Never
@@ -56,7 +55,7 @@ to use it.
     :ref:`bonsai_onicontext` which manages a single device table. If multiple
     pieces of host acquisition hardware (e.g. multiple :ref:`pcie_host`) are
     present in a single computer, then each will need its own
-    :ref:`bonsai_onicontext` to manage it. 
+    :ref:`bonsai_onicontext` to manage it.
 
 Configuration GUI
 --------------------------
@@ -94,7 +93,8 @@ configuration options:
     .. image:: /_static/bonsai/onicontext/ONIContext_hub-configuration.png
        :align: center
 
-- **Settings ➞  Host Sync...** Multi-host hardware sychronization configuration.
+- **Settings ➞  Host Sync...** Multi-host hardware synchronization
+  configuration.
 
     .. image:: /_static/bonsai/onicontext/ONIContext_host-sync.png
        :align: center
