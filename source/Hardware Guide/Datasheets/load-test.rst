@@ -1,16 +1,18 @@
-.. _onidatasheet_load-test:
+.. _onidatasheet_loadtest:
 
 Load Test Device
 ###########################################
 :Authors: Jonathan P. Newman
 :IO: Frame Source, Register Access
 :ONIX ID: 27
-:ONIX Hubs: This device is used for testing purposes during developments.
+:ONIX Hubs: This device is used for real-world bandwidth and latency testing.
 
 Description
 *******************************************
-The **Load Test** device produces data at user-settable size and rate to stress
-test various communication links.
+The **Load Test** device that produces data at user-settable size and rate to
+stress test various communication links and test closed-loop response latency.
+
+.. _onidatasheet_loadtest_reg:
 
 Register Programming
 *******************************************
@@ -55,28 +57,42 @@ Register Programming
       - The frequency parameter, CLK_HZ, used in the calculation of CLK_DIV.
 
     * - 0x03
-      - FRAME_WORDS
+      - DT0H16_WORDS
       - R/W
       - On Reset
-      - 1
+      - 0
       - None
-      - Number of repetitions of 16-bit unsigned integer 42 sent with each
-        frame.
+      - The number of incrementing 16-bit integers sent in each frame. 
 
-.. note::
-    The maximum value of ``FRAME_WORDS`` depends of ``CLK_HZ`` and ``CLK_DIV``. There needs
-    to be enough clock cycles to satisfy:
+        .. note:: 
+            The maximum value of DT0H16_WORDS depends of CLK_HZ and
+            CLK_DIV. There needs to be enough clock cycles to satisfy
 
-    .. math::
+            .. math::
 
-        CLK\_HZ / CLK\_DIV >= FRAME\_WORDS + 5
+                DT0H16\_WORDS <= CLK\_HZ / CLK\_DIV - 9 
 
-    Exceeding this value will result in *decreased* load bandwidth as samples
-    will be skipped.
+            Setting DTOH16_WORDS above this value will result in a *decreased*
+            device to host load as samples will be skipped.
+
+    * - 0x04
+      - HTOD32_WORDS
+      - R/W
+      - On Reset
+      - 0
+      - None
+      - The number of 32-bit word dummy data in in each Host To Device frame.
+        Write frames always start with a single 64-bit unsisigned integer,
+        which is looped subtracted from the Hub Clock Counter when it is
+        received to produce a Hub Clock Delta that is looped back into the
+        device to host data frame for testing loop latency. All other data is
+        ingored.
+
+.. _onidatasheet_loadtest_d2h:
 
 Device To Host Data Frames
 ******************************************
-With ``FRAME_WORDS`` = 4, each frame transmitted to the host is structured as
+With DT0H16_WORDS = 4, each frame transmitted to the host is structured as
 follows:
 
 .. wavedrom::
@@ -85,24 +101,63 @@ follows:
         reg: [
           {bits: 64, name: "Acquisition Clock Counter", type: 0},
           {bits: 32, name: "Device Address", type: 0},
-          {bits: 32, name: "Data Size", type: 0, attr: 16},
+          {bits: 32, name: "Data Size", type: 0, attr: 24},
 
           {bits: 64, name: "Hub Clock Counter", type: 3},
 
+          {bits: 64, name: "Hub Clock Delta", type: 5},
+
           {bits: 16, name: "Frame Word 0", type: 6, atter:42},
-          {bits: 16, name: "Frame Word 1", type: 6, atter:42},
-          {bits: 16, name: "Frame Word 2", type: 6, atter:42},
-          {bits: 16, name: "Frame Word 3", type: 6, atter:42}
+          {bits: 16, name: "Frame Word 1", type: 6, atter:43},
+          {bits: 16, name: "Frame Word 2", type: 6, atter:44},
+          {bits: 16, name: "Frame Word 3", type: 6, atter:45}
 
         ],
-        config: {bits: 256, lanes: 8, vflip: true, hflip: true, fontsize: 11}
+        config: {bits: 320, lanes: 10, vflip: true, hflip: true, fontsize: 11}
     }
 
+|
 
-When ``FRAME_WORDS`` is set to a different value, the Data Size field along with
-the number of words at the end of the frame will change.
+    Hub Clock Counter Delta
+      64-bit unsigned integer that the result of subtracting the Hub Clock
+      Counter value from the Hub Clock Counter Loop back value in
+      :ref:`onidatasheet_loadtest_h2d`. This provides a real-world, hardware
+      timed measurement of closed-loop latency.
+
+    Frame Word N
+      Ignored data that can be used for host to device load testing.  When
+      DT0H16_WORDS is set to a different value, the Data Size field along with
+      the number of words at the end of the frame will change.
+
+.. _onidatasheet_loadtest_h2d:
 
 Host To Device Data Frames
 ******************************************
-This device does not accept input frames. All write attempts will fail with an
-error.
+With HTOD32_WORDS = 2, each frame transmitted to the host is structured as
+follows:
+
+.. wavedrom::
+
+    {
+        reg: [
+          {bits: 32, name: "Device Address", type: 0},
+          {bits: 32, name: "Data Size", type: 0, attr: 16},
+
+          {bits: 64, name: "Hub Clock Counter Loopback", type: 3},
+
+          {bits: 32, name: "Frame Word 0", type: 6, atter:42},
+          {bits: 32, name: "Frame Word 1", type: 6, atter:43},
+
+        ],
+        config: {bits: 192, lanes: 6, vflip: true, hflip: true, fontsize: 11}
+    }
+
+|
+
+    Hub Clock Counter Loopback
+      64-bit unsigned integer that is subtracted from the current Hub Clock
+      Counter value to produce the Hub Clock Counter Delta field in
+      :ref:`onidatasheet_bno055_d2h`.
+
+    Frame Word N
+      Ignored data that can be used for host to device load testing.
