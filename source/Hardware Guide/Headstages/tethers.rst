@@ -16,8 +16,8 @@ instructions use Axon Cable PCX40K10AK. The cable should be light, flexible
 (silicone or thin FEP insulation), thin (less than 1 mm in diameter), and made
 by a reputable supplier that can supply information on the cable's electrical
 characteristics. Most important are its `DC Resistance
-<https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity>`__and
-`RF Loss** in the 1 GHz regime.
+<https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity>`__ and
+RF Loss in the 1 GHz regime.
 
 .. note:: Although the actual quantities matter, and **smaller values are
     better**, the major hurdle is simply finding a supplier that will clearly
@@ -26,11 +26,12 @@ characteristics. Most important are its `DC Resistance
     with good results.
 
 :DC Resistance: For DC signals, resistance is proportional to the inner
-    conductor's resistivity and cross-sectional and inversely proportional
-    to its length. Larger DC resistance will cause a higher voltage drop in
-    the cable and require increase compensation at the voltage source. DC
-    resistance is a strict function of the cable's size and smaller cables
-    will have higher resistance.
+    conductor's resistivity and length and inversely proportional to its
+    cross-sectional area. The larger the DC resistance of the cable, the larger
+    the voltage drop across the cable, which requires increased compensation at
+    the voltage source.  DC resistance is a strict function of the cable's size
+    and thinner, longer cables will have a higher resistance than thicker,
+    shorter cables.
 
     .. figure:: /_static/images/tether/resistivity_geometry.png
         :alt: A piece of resistive material with electrical contacts on both
@@ -42,15 +43,14 @@ characteristics. Most important are its `DC Resistance
         A piece of resistive material with electrical contacts on both
         ends. https://commons.wikimedia.org/w/index.php?curid=1699802
 
-:RF Loss: For radio-frequency signals, frequency-dependent resistance
+:RF Loss: For radio-frequency signals transmitted in coaxial cables, frequency-dependent resistance
     ("loss") is determined by the `skin effect
-    <https://en.wikipedia.org/wiki/Skin_effect>`__ rather than conductor
-    cross sectional area. Higher loss at a particular frequency will limit
-    the length of cable over which signals can be reliably sent and
-    received. RF loss is a complicated function of the cable's design.
-    Minimizing RF loss while maintaing uniform characteristic impedance
-    characteristics is and engineering challenge and requires precision
-    manufacturing.
+    <https://en.wikipedia.org/wiki/Skin_effect>`__ rather than conductor cross
+    sectional area. Higher loss at a particular frequency will limit the length
+    of cable over which signals using that frequency band can be reliably sent
+    and received. Minimizing RF loss while maintaing uniform characteristic
+    impedance characteristics is and engineering challenge and requires
+    precision manufacturing.
 
     .. figure:: /_static/images/tether/skin_depth.svg
         :alt: For alternating current, the current density decreases
@@ -70,8 +70,8 @@ __________________________
 
 Required Tools and Materials
     - Solder jig: A copper-clad board with X.FL connectors soldered to it
-      to that holds the X.FL socket(s) in place during soldering.
-    - 5-minute epoxy (Bob Smith Industries brand works well)
+      to that hold X.FL sockets in place during soldering.
+    - 5-minute epoxy
     - Small and sharp wire cutters
     - Fine forceps (e.g. Dumont #5) for stripping the cable
     - Soldering iron with a fine tip (0.2 mm diameter or smaller) and accurate temperature control
@@ -85,26 +85,26 @@ Cable Components
     - Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket
     - 2 mm segment of 1.5 mm OD, 0.5 mm ID silicone tubing for strain relief. The
       easiest and cheapest way to get this is by striping the silicon jacket
-      from a  24 AWG flexible hookup wire.
+      from a 24 AWG flexible hookup wire.
 
-#. Press the X.FL sockets onto the base board. We've found that this is the
-   most convenient method for holding these tiny pieces in place during
-   soldering and gluing.
+#. Press X.FL sockets onto the X.FL connectors on the solder jig. We've found
+   that this is the most convenient method for holding these tiny pieces in
+   place during soldering and gluing.
 
    .. image:: /_static/images/tether/xfl-jig.jpg
         :alt: X.FL connector soldering jig.
         :align: center
         :width: 60%
-_
    .. image:: /_static/images/tether/hs-end_1.jpg
         :alt: X.FL socket pressed onto mating connector on the jig.
         :align: center
         :width: 50%
 
 #. Set the soldering iron to ~260 C. Using a fine soldering iron tip
-   (~0.2mm or smaller), melt the plastic on the back side of the X.FL sockets
+   (~0.2 mm or smaller), melt the plastic on the back side of the X.FL sockets
    to cover the holes in the plastic. This is required to prevent epoxy
-   applied in later steps from getting into the connector.
+   applied in later steps from getting into the mating surfaces of the
+   connectors.
 
    .. image:: /_static/images/tether/hs-end_2.jpg
         :alt: X.FL with back holes melted closed.
@@ -115,7 +115,7 @@ _
    contacts on the X.FL socket. Tin the two outer ground contacts on the socket
    along with the center pin connector.
 
-#. Slide the 2mm silicone tube over the end of the cable segment and push away
+#. Slide the 2 mm silicone tube over the end of the cable segment and push away
    from the tip for later use.
 
    .. image:: /_static/images/tether/hs-end_3.jpg
@@ -183,7 +183,11 @@ _
         :align: center
         :width: 50%
 
-#. Allow the epoxy to cure and then remove the X.FL socket from the jig.
+#. Allow the epoxy to cure and then remove the completed assembly from the jig.
+
+.. warning:: If expoxy has leaked between the X.FL contacts and bonded them
+    together, then the socket's back was not properly melted in step 2, and
+    cable probably will not work.
 
 .. tip:: Typically, the jig will have multiple X.FL connectors so that several tethers to be made in parallel.
 
@@ -217,7 +221,7 @@ Cable Components
     - 12 mm segment of 6.35 mm OD, 3:1 shrink ratio, adhesive lined heat-shrink
       tubing for strain relief. We have found that NTE 47-23248-BK works well.
 
-   .. image:: /_static/images/tether/host-end_1.jpg
+    .. image:: /_static/images/tether/host-end_1.jpg
         :alt: SMA adapter.
         :align: center
         :width: 50%
@@ -297,10 +301,10 @@ Cable Components
         :align: center
         :width: 50%
 
-#. Using the hot air gun (set to ~250 C), activate the heat shrink tubing
-   starting at the base of the connector and working up toward the top. The
-   seal is complete when the adhesive lining begins to come out of the top of
-   the heatshrink tubing.
+#. Set the the hot air gung to ~250 C and use it to activate the heat shrink
+   tubing starting at the base of the connector and working up toward the top.
+   The seal is complete when the adhesive lining begins to come out of the top
+   of the heatshrink tubing.
 
    .. image:: /_static/images/tether/host-end_9.jpg
         :alt: Completed host-side of coaxial cable.
