@@ -44,6 +44,7 @@ jobs:
       # scripts in _static are not avaialble.
       - name: Test links 🧪
         run: pipenv run make linkcheck
+        continue-on-error: true
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
