@@ -17,9 +17,10 @@ carrier board.
 - Acquire from two headstages (or miniscopes)
 - Breakout board connectivity
 
-    - 8x digital inputs
-    - 8x digital outputs
-    - 12x analog outputs or inputs (±10V)
+  - 8x digital inputs
+  - 8x digital outputs
+  - 12x analog outputs or inputs (±10V)
+
 - Multi-board synchronization and triggering to increase number of headstages
   and IO
 - Low-latency closed-loop capabilities (headstage dependent;

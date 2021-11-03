@@ -2,7 +2,7 @@
 
 Breakout Board
 ==========================================
-This device provides user-facing access for headstage and auxiliary
+This device provides user-facing access for headstage, miniscope, and auxiliary
 data IO.
 
 .. toctree::
