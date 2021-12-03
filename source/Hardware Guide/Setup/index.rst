@@ -25,7 +25,7 @@ Additional devices:
 
 Cables & connections:
 
-.. image:: ../_static/images/connections/connections.png
+.. image:: ../../_static/images/connections/connections.png
   :align: center
 
 Commutator

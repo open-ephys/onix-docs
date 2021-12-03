@@ -34,6 +34,10 @@ ONIX consists of several hardware devices:
 
   Several adapters and EIBs exist to interface between ONIX and microwire or silicon probes, as well as an adapter for Omnetics-based EIBs and the Nano-Z.
 
+
+
+
+
 .. toctree::
     :maxdepth: 1
 
