@@ -14,7 +14,7 @@ Here you will find information on **ONIX headstages**.
 .. important:: ONIX expands the concept of a headstage compared to what you
     might be used to. ONIX headstages are head-borne systems of sensors and
     actuators that incorporate features like 3D tracking, stimulation
-    sequencers, etc rather than just electrode amplification or calcium
+    sequencers, etc. rather than just electrode amplification or calcium
     imaging.
 
 .. note:: We hope that there will be community additions to this list.
