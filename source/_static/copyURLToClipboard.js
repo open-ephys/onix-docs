@@ -31,7 +31,15 @@ function downloadText(name, text) {
     a.click();
 }
 
-function getTextFromURL(url, download = false) {
+function downloadZip(name, text) {
+    var bb = new Blob([text], { type: 'application/zip' });
+    var a = document.createElement('a');
+    a.download = name;
+    a.href = window.URL.createObjectURL(bb);
+    a.click();
+}
+
+function getTextFromURL(url, download = false, zip = false) {
     http = new XMLHttpRequest();
     http.open("GET", url, true);
     http.onreadystatechange = function () {
@@ -43,7 +51,11 @@ function getTextFromURL(url, download = false) {
                     copyTextToClipboard(http.responseText);
                 } else { 
                     var name = url.substring(url.lastIndexOf('/')+1) 
-                    downloadText(name, http.responseText);
+                    if (!zip) {
+                        downloadText(name, http.responseText);
+                    } else {
+                        downloadZip(name, http.responseText);
+                    }
                 }
             }
         }

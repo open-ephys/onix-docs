@@ -466,6 +466,16 @@ i.fa-twitter-square:before {
     "workflow-image workflow-image workflow-image workflow-image";
 }
 
+.bonsai-workflow-zip-container {
+  display: grid;
+  grid-template-columns: 1fr max-content max-content min-content;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "workflow-filler workflow-download workflow-name"
+    "workflow-image workflow-image workflow-image";
+}
+
 .workflow-filler { 
     grid-area: workflow-filler; 
     margin-top: 10px;

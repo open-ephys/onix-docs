@@ -5,7 +5,7 @@
 
 .. _bonsai_onixref:
 
-Bonsai
+Bonsai.ONIX
 ===================================
 ..
     Important: The names of pages for nodes must match their Bonsai.ONIX class

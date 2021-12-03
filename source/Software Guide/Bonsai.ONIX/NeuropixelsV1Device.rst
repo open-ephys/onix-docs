@@ -23,7 +23,7 @@ A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 .. raw:: html
 
     {% with static_path = '../../_static', name = 'NeuropixelsV1' %}
-        {% include 'workflow.html' %}
+        {% include 'workflow-zip.html' %}
     {% endwith %}
 
 Configuration
