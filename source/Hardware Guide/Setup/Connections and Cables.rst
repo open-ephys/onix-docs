@@ -1,11 +1,11 @@
 .. _connection_overview:
 
-Connections and Cables 
+Connections and Cables
 ==========================================
 
 This page is meant to help you understand the various connectors and data links in the ONIX hardware.
 
-.. image:: ../../../_static/images/connections/connections.svg
+.. image:: ../../_static/images/connections/connections.svg
   :align: center
 
 (not shown: USB cable connecting computer to commutator)

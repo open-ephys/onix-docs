@@ -6,7 +6,7 @@ Hardware System Setup
 .. toctree::
     :maxdepth: 2
 
-    Connections and Cables 
+    Connections and Cables
 
 
 PCIe and computer
