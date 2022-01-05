@@ -6,8 +6,8 @@ FAQ
 .. glossary::
 
     What is ONIX?
-        Click :ref:`what_is_onix<here>` for a high-level introduction to this hardware and how it differs from classic neuroscience acquisition systems.
-        
+        Read :ref:`this page <what_is_onix>` for a high-level introduction to this hardware and how it differs from classic neuroscience acquisition systems.
+
     What does ONIX stand for?
         Open Neuro Interface X, the Open Ephys implementation of the `Open
         Neuro Interface specification <https://github.com/open-ephys/ONI>`__.
