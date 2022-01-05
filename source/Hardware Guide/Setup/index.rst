@@ -1,4 +1,4 @@
-.. _system_setup: 
+.. _system_setup:
 
 System Setup
 ==========================================
@@ -7,12 +7,12 @@ System Setup
     :maxdepth: 2
 
 
-1) Hardware list
+Hardware list
 ############################################
 
 Minimum:
 
-- An acquisition computer
+- Acquisition computer
 - PCIe Host
 - ONI-compliant device (e.g. Headstage/ Miniscope V4)
 
@@ -23,41 +23,52 @@ Additional devices:
 - Lighthouses
 - Adapters and EIBs
 
-2) Connections
+Cables and Connections
 ############################################
-
-Cables & connections:
 
 .. image:: ../../_static/images/connections/connections.png
   :align: center
 
-Commutator
+Commutator link
 ************************
 
-* USB (computer) to micro-USB (commutator) cable, to power the commutator.
+* Computer (USB) to commutator (micro-USB) cable, to power the commutator & provide it with 3D tracking data.
 
-Digital and analog I/O
+Digital and Analog I/O
 ************************
 
-* `High speed digital cable <https://multimedia.3m.com/mws/media/585365O/3mtm-shrunk-delta-ribbon-sdr-cable-assembly-ts2287.pdf?`_ to connect Host and Breakout Board
+* :ref:`High speed digital cable <https://multimedia.3m.com/mws/media/585365O/3mtm-shrunk-delta-ribbon-sdr-cable-assembly-ts2287.pdf`_ to connect Host and Breakout Board.
 
-Headstages
+Headstage Link
 ************************
+The headstage link can be formed directly with the host PCIe board, or via a commutator and/or breakout board.
 
-- MMCX (Host) to MMCX (Breakout Board) - one cable for each headstage or clock in/output.
-- SMA (Breakout Board) to SMA (Commutator)
-- Tether: SMA (Commutator) to Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket (Headstage).
-:ref: 'Making Coaxial Tethers'
+Connectors used for headstage link:
 
-If not using the Breakout Board, you can directly connect a headstage to the Host with a tether and an SMA to MMCX adapter.
+* 64-channel headstage, npix headstage and miniscope: Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket connector.
+* PCIe host board: MMCX connectors
+* Breakout board: MMCX connectors (to link to PCIe host) & SMA connectors (to link to commutator or headstage).
+* Commutator: SMA connectors to link to both breakout board and headstage.
+
+Example configurations and required cables:
+
+- Directly from headstage (*Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket*) to PCIe host board (*MMCX*), using a coaxial tether (:ref:'Making Coaxial Tethers') and an SMA to MMCX adapter.
+
+- From headstage (*Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket*) to breakout board (*SMA*), then from breakout board (*MMCX*) to PCIe host board (*MMCX*).
+
+- From headstage (*Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket*) to commutator (*SMA*), from commutator (*SMA*) to breakout board (*SMA*), then from breakout board (*MMCX*) to PCIe host board (*MMCX*).
+
+- From headstage (*Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket*) to commutator (*SMA*), from commutator (*SMA*) to PCIe host board (*MMCX*).
+
+- Tether: SMA (Commutator) to Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket (Headstage). :ref: 'Making Coaxial Tethers'
 
 Lighthouses
 ************************
 
-- Audio (Lighthouse A) to Audio (Lighthouse B) - to synchronise lighthouses (only necessary for V1)
-- Power cables for lighthouses (x2)
+- Audio (Lighthouse A) to Audio (Lighthouse B) - to synchronise lighthouses (only necessary for V1 Basestations)
+- Power cables for lighthouses (x2, provided with lighthouses)
 
-3) Installing and Testing
+Installing and Testing
 ############################################
 
 - Install the PCIe board in the PC (ref to guide here)
