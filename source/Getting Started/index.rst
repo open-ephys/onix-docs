@@ -7,9 +7,23 @@
 ==========================================
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-This page provides a high-level introduction to ONIX. In addition, read the hardware overview!!!!!!!!!! page to understand each individual hardware component of the system, and the software overview!!!!!!!!!!! page to get started with Bonsai.
+This page provides a high-level introduction to ONIX. In addition, read the :ref:`hardware_guide` to understand each individual hardware component of the system, and :ref:`bonsai_gettingstarted` to get started with Bonsai.
+
+What will you need to use ONIX?
+**********************************************
+
+Hardware
+################################################
+
+See the :ref:`hardware_guide` for a description of each of these components and how they connect to each other. See :ref:`system_setup` for how to get started once you have the hardware.
+
+Software
+################################################
+
+ONIX uses Bonsai for data acquisition.
+See :ref:`bonsai_gettingstarted` for how to install Bonsai and use it to acquire from ONIX.
 
 What is ONIX?
 ******************************************
@@ -37,31 +51,3 @@ The tether must also be able to rotate as the animal does to prevent it from bec
 In closed-loop experiments, data is not only acquired, but also processed and acted upon. For instance, one can provide optogenetic stimulation to a brain area every time a certain type of event is detected by an extracellular probe. The closed-loop latency of the acquisition system describes how much time passes between the initial event and the response of the system. In classic acquisition systems, this time is primarily spent on transmitting and processing acquired data, which becomes more and more challenging as the number of channels on a probe increases. A short latency allows the user to respond on the timescale of the biological event; for instance, within the integration window of a neuron.
 
 Many classic acquisition systems rely on a USB connection between the acquisition board and PC. The slower transfer characteristics of USB means that a typical closed-loop latency would be in the range of several to tens of milliseconds. This is a considerable duration for the brain, as it is notably longer than the average action potential duration of around 1 ms. ONIX has much shorter latencies, of around 150 microseconds, because the host board of ONIX is directly connected to the acquisition PC, in a PCIe slot. This means that the system can respond quickly to detected events. It also means that time is freed up for this detection itself; by reducing the overhead time, more complex analysis can be run to extract the phenomenon you are interested in.
-
-
-What will you need to use ONIX?
-**********************************************
-
-Hardware
-################################################
-
-See :ref:`hardware_guide` for a description of each of these components. See :ref:`System Setup` for how to get started once you have the hardware. 
-
-At minimum you will need:
-- Host Board
-- Acquisition computer
-- ONI-compliant device (e.g. Headstage, Miniscope V4)
-- Tether (coaxial cable from host board to headstage)
-
-Other devices:
-- Breakout Board
-- Commutator
-- Lighthouses
-- Adapters and EIBs
-
-
-Software
-################################################
-
-ONIX uses Bonsai for data acquisition.
-See :ref: bonsai_gettingstarted: on how to install Bonsai and use it to acquire from ONIX.

@@ -22,7 +22,7 @@ animals. It is the successor to the original `Open Ephys
 <https://open-ephys.org/acq-board>`_ and significantly expands on its scope,
 performance, and compatibility with other tools.
 
-New to ONIX? Visit our `Getting Started` page for a high-level overview of the system and our FAQs. 
+New to ONIX? Visit our :ref:`Getting Started` page for a high-level overview of the system and our FAQs.
 
 .. raw:: html
 
