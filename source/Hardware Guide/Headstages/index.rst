@@ -10,6 +10,7 @@ Here you will find information on **ONIX headstages**.
     commutators
     headstage-64/index
     headstage-neuropix
+    tether-voltage
 
 .. important:: ONIX expands the concept of a headstage compared to what you
     might be used to. ONIX headstages are head-borne systems of sensors and
