@@ -7,7 +7,7 @@ for small animals. This headstage is designed to function with
 :ref:`eib_64` for `tetrode microdrives
 <https://open-ephys.org/shuttledrive>`_. Alternatively it can be used with
 other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using
-:ref:`omnetics_adapter_64` or similar. 
+:ref:`omnetics_adapter_64` or similar.
 
 .. image:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
     :align: center
@@ -23,7 +23,7 @@ other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using
     :maxdepth: 1
     :hidden:
 
-    test-board-64   
+    test-board-64
 
 Features
 ***********************************
@@ -63,8 +63,9 @@ general terms. Headstage-64 has the following coaxial link properties:
     +------------------------+--------------------+----------+----------+----------+
 
 .. warning:: \*Do not exceed 6.3 VDC at the coaxial input to the headstage. Make
-    sure you make this measurement at the headstage to account for a potential
-    voltage drop in the tether. Exceeding this voltage can permanently damage the
+    sure you :ref:`make this measurement at the headstage <measure_voltage>`to
+    account for a potential voltage drop in the tether. Exceeding this voltage can
+    permanently damage the
     headstage.
 
 .. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
@@ -141,7 +142,7 @@ Neural Stimulation
 ****************************
 headstage-64 provides onboard electrical and optical stimulatus generators.
 Stimulus trains can be parameterized in a similar way to the master-8 or pulse
-pal.  
+pal.
 
 .. note:: To achieve the shortest latency, electrical or optical stimulation can be triggered
     using the GPIO1 serializer output. Because both stimulators share this trigger line,
@@ -210,4 +211,3 @@ FPGA & Bottom Connector Pinouts
 - The headstage connector pinout (ADC input mapping, stimulation connections,
   etc) is located on `this Google sheet
   <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__ the :ref:`support` page.
-
