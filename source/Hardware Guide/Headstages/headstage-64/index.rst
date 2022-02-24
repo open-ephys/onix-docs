@@ -63,7 +63,7 @@ general terms. Headstage-64 has the following coaxial link properties:
     +------------------------+--------------------+----------+----------+----------+
 
 .. warning:: \*Do not exceed 6.3 VDC at the coaxial input to the headstage. Make
-    sure you :ref:`make this measurement at the headstage <measure_voltage>`to
+    sure you make this measurement at the headstage (see: :ref: `Measuring headstage voltage`) to
     account for a potential voltage drop in the tether. Exceeding this voltage can
     permanently damage the
     headstage.

@@ -15,15 +15,15 @@ The voltage output at the FMC-host can be set in Bonsai:
 
    Default headstage voltage is 4.9 V
 
-.. image:: ../../_static/images/tether-voltage/setting_hs_voltage_default.png
+.. figure:: ../../_static/images/tether-voltage/setting_hs_voltage_default.png
 
    Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.
 
 The voltage set in Bonsai is not identical to the voltage supplied to the headstage, as some voltage drop will occur over the coaxial cable tether that connects them. The amount of voltage drop will depend on the cable properties (e.g. thickness) and even the temperature of the cable. These very thin tethers can cause large voltage drops, so that even when the voltage setting in Bonsai seems high, the headstage is only seeing 3 or 4 Volts and becomes unreliable. Voltage should therefore always be measured on the headstage itself. The voltage setting is persistent until computer power off. It gets stored in the hardware, so even after a reboot, it will be set to the latest value.
 
 .. _measure_voltage:
-Measuring the voltage
---------------------------
+Measuring headstage voltage
+----------------------------
 Use a multimeter to probe the headstage at the two points marked below: the ground pin and either terminal of the large inductor on the headstage-64.
 
 .. image:: ../../_static/images/tether-voltage/measure-voltage-64.png
