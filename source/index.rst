@@ -59,6 +59,7 @@ New to ONIX? Visit our :ref:`getting_started` page for a high-level overview of 
     :maxdepth: 2
     :titlesonly:
 
+    Getting Started/index
     Hardware Guide/index
     API Reference/index
     Software Guide/index

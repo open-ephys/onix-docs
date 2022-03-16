@@ -1,3 +1,5 @@
+.. _headstages:
+
 Headstages
 ==========================================
 Here you will find information on **ONIX headstages**.
@@ -7,7 +9,6 @@ Here you will find information on **ONIX headstages**.
 
     serialization
     tethers
-    commutators
     headstage-64/index
     headstage-neuropix
     tether-voltage

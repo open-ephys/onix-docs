@@ -1,6 +1,7 @@
-.. _commutators:
+.. _lighthouses:
 
-Coaxial Headstage Commutators
+3D-Tracking Lighthouses
 ###################################
 
 .. todo:: Document
+
