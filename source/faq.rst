@@ -4,7 +4,10 @@ FAQ
 ===
 
 .. glossary::
-    
+
+    What is ONIX?
+        Read :ref:`this page <what_is_onix>` for a high-level introduction to this hardware and how it differs from classic neuroscience acquisition systems.
+
     What does ONIX stand for?
         Open Neuro Interface X, the Open Ephys implementation of the `Open
         Neuro Interface specification <https://github.com/open-ephys/ONI>`__.
@@ -13,7 +16,7 @@ FAQ
         `Open Neuro Interface <https://github.com/open-ephys/ONI>`__ is a hardware and
         API specification designed to meet the needs of experimental neuroscientists.
         ONIX hardware and `liboni <https://github.com/open-ephys/liboni>`__ are
-        implementations of the ONI specification. 
+        implementations of the ONI specification.
 
     What is Open Ephys?
         Open Ephys is a company and team of neuroscientists, engineers, and
@@ -54,7 +57,7 @@ FAQ
         Yes, please do. Have a look at the :ref:`api_ref` to get started. Also
         let us know if you want help.
 
-..        
+..
 ..
 ..    Where is the firmware/gateware source code located?
 ..        Headstage and Host gateware is available upon request. Get in touch

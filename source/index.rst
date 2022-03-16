@@ -22,6 +22,8 @@ animals. It is the successor to the original `Open Ephys
 <https://open-ephys.org/acq-board>`_ and significantly expands on its scope,
 performance, and compatibility with other tools.
 
+New to ONIX? Visit our :ref:`getting_started` page for a high-level overview of the system.
+
 .. raw:: html
 
     <br>
@@ -57,6 +59,7 @@ performance, and compatibility with other tools.
     :maxdepth: 2
     :titlesonly:
 
+    Getting Started/index
     Hardware Guide/index
     API Reference/index
     Software Guide/index
