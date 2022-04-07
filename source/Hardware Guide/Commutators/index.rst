@@ -3,4 +3,8 @@
 Coaxial Commutators
 ###################################
 
-.. todo:: Document
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    setup

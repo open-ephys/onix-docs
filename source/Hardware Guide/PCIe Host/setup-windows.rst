@@ -63,7 +63,7 @@ Put Windows In Testing Mode
 
 #. Restart the computer.
 
-   .. note:: A regular reboot is required. A complete power cycle might not set
+   .. note:: A regular reboot ('restart') is required. A complete power cycle (turning the PC off completely) may not set
         the option.
 
 #. You should see now some text at the bottom right of the Desktop indicating

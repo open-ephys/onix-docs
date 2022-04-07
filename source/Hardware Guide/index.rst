@@ -28,6 +28,9 @@ ONIX consists of several hardware devices:
 
 :ref:`pcie_host`
 -----------------------------------------
+
+.. image:: ../../_static/images/pcie-host/pcie-host_nereid_fmc-host-1r4.jpg
+
 The ONIX PCIe/FMC host device is the heart of ONIX. It provides the interface
 between the acquisition computer and any attached headstages, as well as
 digital and analog in/outputs. Most acquisition systems communicate via USB,

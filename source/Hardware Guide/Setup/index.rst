@@ -3,35 +3,28 @@
 Hardware System Setup
 ==========================================
 
+How to initially connect and install ONIX hardware.
+
 .. toctree::
-    :maxdepth: 2
+    :hidden:
 
     Connections and Cables
+
+
+.. contents::
+  :depth: 2
+  :local:
+  :backlinks: none
 
 
 PCIe and computer
 --------------------------------
 
-* Install the PCIe board in the PC, along with relevant software, by following the :ref:`pcie_host_setup_windows`.
+The PCIe board is installed in a PCIe slot inside the acquisition PC. For Windows to recognise the device, please follow the :ref:`pcie_host_setup_windows`.
 
-
-Lighthouse Base Stations
---------------------------------
-
-* Mount 2 Vive Base Station Lighthouses over the setup.
-   - Connect one power adaptor to each base station.
-   - Set one base station to 'A' and one to 'b' using the channel button (see the `Vive manual <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
-   - Connect the basestations to each other, using an audio to audio cable (this is to synchronise them, see `image here <https://www.vive.com/media/filer_public/support_zip_img/eu/www/vive/guid-cba33494-fc82-4b81-84ae-735fcd6a5876-web.png>`_)
-
-Commutator
---------------------------------
-
-Mount the active commutator above the setup (you can use the same frame as the base stations).
-
-- Connect the commutator to the computer using a USB to micro-USB cable
-
-.. note::
-  Add how to test commutator in Bonsai?
+.. image:: ../../_static/images/pcie-host/host_in_pc.jpg
+  :align: center
+  :width: 70%
 
 Breakout Board
 --------------------------------
@@ -43,7 +36,7 @@ Connect the breakout board to the PCIe host board using the high-speed digital c
 .. note::
   - Test Digital IO
   - Test Buttons
-  -  Test Analog IO
+  - Test Analog IO
 
 Headstages/other devices
 --------------------------------
