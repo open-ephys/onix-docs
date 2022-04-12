@@ -14,7 +14,6 @@
     :maxdepth: 1
     :hidden:
 
-    Setup/index
     PCIe Host/index
     Breakout Board/index
     Headstages/index

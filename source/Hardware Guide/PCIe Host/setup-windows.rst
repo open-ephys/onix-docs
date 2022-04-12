@@ -9,6 +9,10 @@ Insert the PCIe Host Module
 
 #. Plug the PCIe host board into an available PCIe slot
 
+    .. image:: ../../_static/images/pcie-host/PCIE_PC_side.jpg
+       :align: center
+       :width: 60%
+
    .. note:: You do not need to plug the ATX power supply into connector on
         the board (although doing so won't hurt). The PCIe slot itself provides
         adequate power to operate the host board.

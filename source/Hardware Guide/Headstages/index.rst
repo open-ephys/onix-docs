@@ -7,6 +7,7 @@ Here you will find information on **ONIX headstages**.
 .. toctree::
     :maxdepth: 1
 
+    setup
     serialization
     tethers
     headstage-64/index

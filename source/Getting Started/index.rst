@@ -23,7 +23,7 @@ Understanding the system
 Setting up ONIX
 --------------------------------
 
-1. Check that you have all the necessary hardware.
+#. Check that you have all the necessary hardware.
 
     A full ONIX setup consists of:
 
@@ -39,7 +39,7 @@ Setting up ONIX
 
     **Cables**
 
-    :ref:`(All cables are listed here)<connection_overview>`.
+    :ref:`(All cables are listed here)<cable_list>`.
 
     - PCIe host board to Breakout board (headstage link) cable (MMCX to MMCX)
     - PCIe host board to Breakout board (Digital and Analog I/O link) cable (SDR to SDR 26 POS)
@@ -55,11 +55,28 @@ Setting up ONIX
     - ONI-compliant device (such as a headstage or Miniscope V4).
     - A coaxial tether (to connect the PCIe host board and headstage)
 
-2. Install the PCIe host board and configure the acquisition computer by following the :ref:`pcie_host_setup_windows`.
+#. Install the PCIe host board and configure the acquisition computer by following the :ref:`pcie_host_setup_windows`.
 
-3. Connect the remaining hardware using :ref:`system_setup`.
+#. Mount and connect the 3D-Tracking Lighthouses above the setup.
 
-4. Test the installation. 
+    :ref:`Lighthouse Setup<lighthouse_setup>`
+
+#. Mount and connect the Active Commutator
+
+    :ref:`Commutator Setup<commutator_setup>`
+
+#. Connect the Breakout Board to the PCIe host board
+
+    :ref:`Breakout Board Setup.<breakout_setup>`.
+
+#. Connect a headstage, Miniscope V4 or other ONI compliant recording device.
+
+    :ref:`Follow these steps<headstage_setup>`. Be sure to read :ref:`this page on the voltage supplied to the headstage <tether_voltage page>` to prevent damaging your headstage.
+
+#. Test the installation.
+
+    .. todo:: Bonsai workflows for testing each component 
+
 
 Using ONIX
 --------------------------------
