@@ -10,22 +10,24 @@ inadequate headstage voltage supply.
 
 Setting headstage voltage
 --------------------------
-Each headstage has a minimum and maximum voltage requirement (e.g. 5.3to  5.7
-Voltsfor :ref:`headstage_64`) circuits on the board to function properly. If
+Each headstage has a minimum and maximum voltage requirement (e.g. 5.3 to  5.7
+Volts for :ref:`headstage_64`) circuits on the board to function properly. If
 the voltage is far too low, the green LED on the headstage will be dim and
 Bonsai will not detect the headstage. Even if the LED is bright, a borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
 beneath the power it needs to function properly.
 
-The voltage output at the FMC-host can be set in Bonsai:
+.. raw:: html
 
-.. figure:: ../../_static/images/tether-voltage/setting_hs_voltage_default.png
-
-   Default headstage voltage is 4.9 V
-
-.. figure:: ../../_static/images/tether-voltage/setting_hs_voltage_default.png
-
-   Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.
+    <p>The voltage output at the FMC-host can be set in Bonsai:</p>
+    <div class="figure align-default" id="id1">
+      <a class="reference internal" href="../../_static/images/tether-voltage/setting_hs_voltage_default.png"><img alt="../../_images/setting_hs_voltage_default.png" src="../../_images/setting_hs_voltage_default.png" /></a>
+      <p class="caption"><span class="caption-text">Default headstage voltage is 4.9 V</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+    </div>
+    <div class="figure align-default" id="id2">
+      <a class="reference internal" href="../../_static/images/tether-voltage/second_headstage.png"><img alt="../../_images/second_headstage.png" src="../../_images/second_headstage.png" /></a>
+      <p class="caption"><span class="caption-text">Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+    </div>
 
 The voltage set in Bonsai is not identical to the voltage supplied to the
 headstage, as some voltage drop will occur over the coaxial cable tether that

@@ -53,7 +53,7 @@
 }
 
 .navbar {
-  background: #FFFFFF !important; 
+  background: #FFFFFF !important;
   font-size: 1.1em;
 }
 
@@ -410,6 +410,17 @@ form:focus {
   margin-top: 2em;
 }
 
+/* Gallery cards */
+
+.gallery-card .card-header {
+  height: 100%;
+  margin-top: 0rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white !important;
+  } /* example of the default height for title */
+
 /* list line spacing */
 ul,
 ol,
@@ -441,7 +452,7 @@ i.fa-twitter-square:before {
   color: #333;
 }
 
-/* Bonsai workflows & copy button*/ 
+/* Bonsai workflows & copy button*/
 .copy-img
 {
   text-align: right;
@@ -476,13 +487,13 @@ i.fa-twitter-square:before {
     "workflow-image workflow-image workflow-image";
 }
 
-.workflow-filler { 
-    grid-area: workflow-filler; 
+.workflow-filler {
+    grid-area: workflow-filler;
     margin-top: 10px;
 }
 
-.workflow-download { 
-    grid-area: workflow-download; 
+.workflow-download {
+    grid-area: workflow-download;
     border-style: solid hidden hidden solid;
     border-width: 1px;
     padding-right: 0px;
@@ -494,8 +505,8 @@ i.fa-twitter-square:before {
     border-radius: 4px 0px 0px 0px;
 }
 
-.workflow-copy { 
-    grid-area: workflow-copy; 
+.workflow-copy {
+    grid-area: workflow-copy;
     border-style: solid hidden hidden hidden;
     border-width: 1px;
     padding-right: 0px;
@@ -506,8 +517,8 @@ i.fa-twitter-square:before {
     background-color: #f0f0f0;
 }
 
-.workflow-name { 
-    grid-area: workflow-name; 
+.workflow-name {
+    grid-area: workflow-name;
     border-style: solid solid hidden hidden;
     border-width: 1px;
     padding-right: 5px;
@@ -519,8 +530,8 @@ i.fa-twitter-square:before {
     border-radius: 0px 4px 0px 0px;
 }
 
-.workflow-image { 
-    grid-area: workflow-image; 
+.workflow-image {
+    grid-area: workflow-image;
     border-style: solid solid solid solid;
     border-width: 1px;
     padding-right: 10px;
@@ -532,6 +543,5 @@ i.fa-twitter-square:before {
 
 /* Prevent link targets from being covered by navbar */
 html {
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 80px;
 }
-

@@ -2,10 +2,8 @@
 
 Connections and Cables
 ==========================================
-This page is meant to help you understand the various connectors and data links
-in the ONIX hardware.
 
-.. image:: ../../_static/images/connections/connections.svg
+.. image:: ../../_static/images/connections/connections.png
   :align: center
 
 Connection types
@@ -16,8 +14,11 @@ Headstage Link
 --------------------------------
 The headstage link allows fast data communication between an ONI compliant headstage and the PCIe host board. This connection is formed by a single coaxial cable for each attached headstage (or other ONI compliant hub, such as a UCLA Miniscope V4). This connection also provides power to the headstage from the PCIe host board.
 
-The headstage link can be formed directly between the host PCIe board and a headstage. Additionally, a headstage link can be extended by connecting an active commutator and/or breakout board between the PCIe board and headstage.
+The headstage link can be formed directly between the host PCIe board and a headstage. Alternatively, a headstage link can include an active commutator and/or breakout board between the PCIe board and headstage.
 
+.. image:: ../../_static/images/connections/headstage.png
+  :align: center
+  :width: 70%
 
 Connectors used for headstage link:
 
@@ -32,89 +33,127 @@ Connectors used for headstage link:
 
 Digital and Analog I/O
 --------------------------------
+.. image:: ../../_static/images/connections/IO.png
+  :align: center
+  :width: 70%
+
 * `High speed digital cable
   <https://multimedia.3m.com/mws/media/585365O/3mtm-shrunk-delta-ribbon-sdr-cable-assembly-ts2287.pdf>`_
   to connect Host and Breakout Board.
 
 Lighthouses
 --------------------------------
+.. image:: ../../_static/images/connections/lighthouse.png
+  :align: center
+  :width: 70%
+
 * Audio (Lighthouse A) to Audio (Lighthouse B) - to synchronise lighthouses
   (only necessary for V1 Basestations)
 * Power cables for lighthouses (x2, provided with lighthouses)
 
 Commutator link
 --------------------------------
+.. image:: ../../_static/images/connections/commutator.png
+  :align: center
+  :width: 70%
+
 * Computer (USB) to commutator (micro-USB) cable, to power the commutator &
-  provide it with 3D tracking data.
+  provide orientation data.
 
 .. _cable_list:
 
 Cable List
 ******************************************
 
-.. _mmcx_cable:
+.. raw:: html
 
-#. MMCX to MMCX
-
-    .. image:: ../../_static/images/connections/MMCX_cable.jpg
-      :align: center
-      :scale: 20%
-
-    The MMCX connectors at the end of these cables can easily break off if used incorrectly. When connecting or disconnecting, hold the connector itself instead of pulling at the cabling.
-
-    .. raw:: html
-
-      <details open><summary> View how to connect and disconnect MMCX:
-      </summary>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 d-flex">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex">
-          <img src="../../_static/images/connections/insertMMCX.gif" alt="GIF of cable inserted while holding connector" style="margin: 2em; width: 135px; height: 240px">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex">
-          <img class="card-img-top" src="../../_static/images/connections/removeMMCX.gif" alt="GIF of cable removed while holding connector" style="margin: 2em; width: 135px; height: 240px">
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 d-flex">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+      <div class="gallery-card">
+          <img src="../../_static/images/connections/breakout_IO_cable.jpg" alt="Breakout Board IO cable">
+          <div class="card-body flex-fill">
+              <h5 class="gallery-card. card-header d-flex">Digital & Analog I/O Cable</h5>
+              <p>- SDR to SDR 26 POS</p>
+              <p>- Breakout Board to PCIe Host, Digital and Analog I/O</p>
+          </div>
         </div>
       </div>
-      </details>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+        <div class="gallery-card">
+          <img src="../../_static/images/connections/audio_synch_cable.jpg" alt="Audio jack cable to synchronise lighthouses">
+          <div class="card-body flex-fill">
+              <h5 class="card-header">Lighthouse Sync Cable</h5>
+              <p>- 3.5 mm Stereo Jack Plug to Plug </p>
+              <p>- Connects two Vive Basestations</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+      <div class="gallery-card">
+          <img src="../../_static/images/connections/sma_cable.jpg" alt="SMA-SMA Cable">
+          <div class="card-body flex-fill">
+              <h5 class="card-header">Headstage Link: SMA Cable</h5>
+              <p>- SMA to SMA cable</p>
+              <p>- Breakout Board to Commutator, Headstage Link</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+        <div class="gallery-card">
+            <img src="../../_static/images/connections/adaptor_headstage.jpg" alt="Adaptor cable connecting SMA to MMCX">
+            <div class="card-body flex-fill">
+                <h5 class="card-header">Headstage Link: Adaptor</h5>
+                <p>- SMA to MMCX</p>
+                <p>- Connects headstage tether to PCIe Host board</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+        <div class="gallery-card">
+            <img src="../../_static/images/connections/mmcx_cable.jpg" alt="MMCX to MMCX cable">
+            <div class="card-body flex-fill">
+                <h5 class="card-header">Headstage Link: MMCX cable</h5>
+                <p>- MMCX to MMCX </p>
+                <p>- PCIe Host to Breakout Board</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
+        <div class="gallery-card">
+            <img src="../../_static/images/connections/tether.jpg" alt="Headstage tether">
+            <div class="card-body flex-fill">
+                <h5 class="card-header">Headstage Link: Headstage Tether</h5>
+                <p>- SMA to Hirose X.FL, Coaxial, 0.38 mm OD</p>
+                <p>- Breakout Board to Headstage, PCIe to Headstage (with adaptor)</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-#. Digital and Analog I/O link cable, SDR to SDR 26 POS
+.. _mmcx_cable:
+Connecting MMCX
+------------------------------
 
-    - Connects PCIe Host to Breakout Board
+The MMCX connectors at the end of these cables can easily break off if used incorrectly. When connecting or disconnecting, hold the connector itself instead of pulling at the cabling.
 
-    .. image:: ../../_static/images/connections/breakout_IO_cable.jpg
-      :align: center
-      :scale: 20%
+.. raw:: html
 
-#. Headstage Tethers, coaxial, 0.38 mm OD
-
-    .. image:: ../../_static/images/connections/tether.jpg
-      :align: center
-      :scale: 20%
-
-#. Headstage Tether Adapters, coaxial, MMXC to SMA
-
-    - Allows headstage tether to be connected to SMAs on Breakout Board
-    
-    .. image:: ../../_static/images/connections/adaptor_headstage.jpg
-      :align: center
-      :scale: 20%
-
-#. Commutator power & data cable, USB A to Micro B.
-
-#. SMA to SMA cable
-
-     - Breakout board to Commutator cable (headstage link)
-
-     .. image:: ../../_static/images/connections/sma_cable.jpg
-       :align: center
-       :scale: 20%
-
-#. Lighthouse synchronization cable, 3.5 mm Stereo Jack Plug to Plug
-
-    .. image:: ../../_static/images/connections/audio_synch_cable.jpg
-      :align: center
-      :scale: 20%
+  <details open><summary> View how to connect and disconnect MMCX:
+  </summary>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 d-flex">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex">
+      <img src="../../_static/images/connections/insertMMCX.gif" alt="GIF of cable inserted while holding connector" style="margin: 2em; width: 135px; height: 240px">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex">
+      <img class="card-img-top" src="../../_static/images/connections/removeMMCX.gif" alt="GIF of cable removed while holding connector" style="margin: 2em; width: 135px; height: 240px">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-0 col-xs-0 d-flex">
+    </div>
+  </div>
+  </details>

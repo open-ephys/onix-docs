@@ -22,6 +22,8 @@
     Lighthouses/index
     Adapters & EIBs/index
     Datasheets/index
+    Connections & Cables/index
+
 
 ONIX consists of several hardware devices:
 
