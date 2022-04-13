@@ -21,12 +21,12 @@ beneath the power it needs to function properly.
 
     <p>The voltage output at the FMC-host can be set in Bonsai:</p>
     <div class="figure align-default" id="id1">
-      <a class="reference internal" href="../../_static/images/tether-voltage/setting_hs_voltage_default.png"><img alt="../../_images/setting_hs_voltage_default.png" src="../../_images/setting_hs_voltage_default.png" /></a>
-      <p class="caption"><span class="caption-text">Default headstage voltage is 4.9 V</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+      <a class="reference internal" href="../../_static/images/tether-voltage/setting_hs_voltage_default.png"><img src="../../_static/images/tether-voltage/setting_hs_voltage_default.png" /></a>
+      <p class="caption"><span class="caption-text">Default headstage voltage is 4.9 V</span></p>
     </div>
     <div class="figure align-default" id="id2">
-      <a class="reference internal" href="../../_static/images/tether-voltage/second_headstage.png"><img alt="../../_images/second_headstage.png" src="../../_images/second_headstage.png" /></a>
-      <p class="caption"><span class="caption-text">Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+      <a class="reference internal" href="../../_static/images/tether-voltage/second_headstage.png"><img src="../../_static/images/tether-voltage/second_headstage.png" /></a>
+      <p class="caption"><span class="caption-text">Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.</span></p>
     </div>
 
 The voltage set in Bonsai is not identical to the voltage supplied to the
