@@ -113,7 +113,7 @@ Cable List
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
         <div class="gallery-card">
-            <img src="../../_static/images/connections/mmcx_cable.jpg" alt="MMCX to MMCX cable">
+            <img src="../../_static/images/connections/MMCX_cable.jpg" alt="MMCX to MMCX cable">
             <div class="card-body flex-fill">
                 <h5 class="card-header">Headstage Link: MMCX cable</h5>
                 <p>- MMCX to MMCX </p>
