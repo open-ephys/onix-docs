@@ -13,5 +13,12 @@ Coaxial Commutators
   :width: 80%
   :align: center
 
-The active commutator prevents twisting of the tether leading to the animal, by rotating whenever the animal turns.
-A BNO on the headstage sends orientation data to the PCIe host board. By streaming this data to Bonsai and sending it to the commutator via USB, the motor in the commutator can turn when the animal does. A rotary joint inside the commutator maintains electrical contact between the tether leading to the headstage and the SMA cable leading to the PCIe host board while turning.
+ONIX uses an active commutator to prevents tether twisting during freely moving
+recordings.  A inertial measurement unit (IMU) on the headstage or miniscope
+sends orientation data to the host computer. Because the real-time orientation
+of the animal is known, software (e.g. Bonsai) can be used to send commands to
+the commutator via its USB interface, and the motor in the commutator willturn
+when the animal does. A high-quality radio-frequency rotary joint inside the
+commutator maintains electrical connectivity for both power and high-frequency
+data signals between the tether leading to the headstage and the coaxial cable
+leading to the PCIe host board while turning.

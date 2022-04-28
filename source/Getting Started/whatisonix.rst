@@ -56,7 +56,7 @@ the acquisition system. As the animal moves through the arena, the ONIX
 commutator receives 3D tracking information from the headstage and drives  a
 motor to actively rotate the tether, preventing twisting.
 
-3) Latencies
+3. Latencies
 --------------------------------
 In closed-loop experiments, data is not only acquired, but also processed and
 acted upon. For instance, one can provide optogenetic stimulation to a brain

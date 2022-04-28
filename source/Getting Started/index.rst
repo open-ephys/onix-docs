@@ -23,62 +23,42 @@ Understanding the system
 Setting up ONIX
 --------------------------------
 
-#. Check that you have all the necessary hardware.
+#. Check that you have all the necessary hardware. A full ONIX setup consists of:
+    
+   **Devices**
+    
+   - :ref:`pcie_host`
+   - Acquisition computer
+   - :ref:`breakout`
+   - ONI-compliant device (such as a :ref:`headstage <headstages>` or
+     :ref:`miniscope <miniscope>`)
+   - :ref:`Commutator <commutators`
+   - 2x :ref:`lighthouse base stations <lighthouses>`
+    
 
-    A full ONIX setup consists of:
+   **Cables** :ref:`(All cables are listed here)<cable_list>`.
+   
+   - PCIe host board to Breakout board (headstage link) cable (MMCX to MMCX)
+   - PCIe host board to Breakout board (Digital and Analog I/O link) cable (SDR to
+     SDR 26 POS)
+   - Headstage Tethers, coaxial, 0.38 mm OD
+   - Commutator power & data cable (USB A to Micro B)
+   - Breakout board to Commutator cable (headstage link; SMA to SMA)
+   - Lighthouse synchronization cable (3.5 mm Stereo Jack Plug to Plug)
 
-    **Devices**
-
-    - PCIe host board
-    - Acquisition computer
-    - Breakout board
-    - ONI-compliant device (such as a headstage or
-      Miniscope V4)
-    - Active commutator
-    - 2 Lighthouse Base Stations
-
-    **Cables**
-
-    :ref:`(All cables are listed here)<cable_list>`.
-
-    - PCIe host board to Breakout board (headstage link) cable (MMCX to MMCX)
-    - PCIe host board to Breakout board (Digital and Analog I/O link) cable (SDR to SDR 26 POS)
-    - Headstage Tethers, coaxial, 0.38 mm OD
-    - Commutator power & data cable (USB A to Micro B)
-    - Breakout board to Commutator cable (headstage link)(SMA to SMA)
-    - Lighthouse synchronization cable (3.5 mm Stereo Jack Plug to Plug)
-
-    **A minimal setup will require:**
-
-    - PCIe host board
-    - Acquisition computer
-    - ONI-compliant device (such as a headstage or Miniscope V4).
-    - A coaxial tether (to connect the PCIe host board and headstage)
-
-#. Install the PCIe host board and configure the acquisition computer by following the :ref:`pcie_host_setup_windows`.
-
-#. Mount and connect the 3D-Tracking Lighthouses above the setup.
-
-    :ref:`Lighthouse Setup<lighthouse_setup>`
-
-#. Mount and connect the Active Commutator
-
-    :ref:`Commutator Setup<commutator_setup>`
-
-#. Connect the Breakout Board to the PCIe host board
-
-    :ref:`Breakout Board Setup.<breakout_setup>`.
-
-#. Connect a headstage, Miniscope V4 or other ONI compliant recording device.
-
-    :ref:`Follow these steps<headstage_setup>`. Be sure to read :ref:`this page on the voltage supplied to the headstage <tether_voltage page>` to prevent damaging your headstage.
-
+#. Install the PCIe host board and configure the acquisition computer by
+   following the :ref:`pcie_host_setup_windows`.
+#. :ref:`Mount and connect the 3D-Tracking Lighthouses <lighthouse_setup>`
+#. :ref:`Mount and connect the commutator <commutator_setup>`
+#. :ref:`Connect the Breakout Board to the PCIe host board <breakout_setup>`.
+#. Connect a headstage, Miniscope V4 or other ONI compliant recording device by
+   :ref:`following these steps <headstage_setup>`. Be sure to read :ref:`this
+   page on the voltage supplied to the headstage <tether_voltage>` to prevent
+   damaging your headstage.
 #. Test the installation.
-
     .. todo:: Bonsai workflows for testing each component 
-
 
 Using ONIX
 --------------------------------
-
-- ONIX uses Bonsai for data acquisition. See the :ref:`bonsai_gettingstarted` page to learn how to install Bonsai and use it to acquire from ONIX.
+ONIX uses Bonsai for data acquisition. See the :ref:`bonsai_gettingstarted`
+page to learn how to install Bonsai and use it to acquire from ONIX.
