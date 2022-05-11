@@ -7,9 +7,10 @@ acquire from headstages, tune closed-loop response latency, and combined with
 third-party tools at the software level.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Headstage64
     LatencyTest
     CameraSync
+    Commutator
 

@@ -9,7 +9,7 @@ Insert the PCIe Host Module
 
 #. Plug the PCIe host board into an available PCIe slot
 
-    .. image:: ../../_static/images/pcie-host/PCIE_PC_side.jpg
+   .. image:: ../../_static/images/pcie-host/PCIE_PC_side.jpg
        :align: center
        :width: 60%
 
@@ -38,43 +38,44 @@ Put Windows In Testing Mode
 #. Download the :download:`OpenEphysTestDriver.cer
    <../../_static/downloads/OpenEphysTestDriver.cer>` testing certificate and double
    click it.
+
 #. On the dialog, select **Install Certificate**.
 
    .. figure:: /_static/pcie-host-windows/install-certificate.png
-        :align: left
+        :align: center
 
 #. It is recommended to select **Current User** certificate storage option.
 
    .. figure:: /_static/pcie-host-windows/certificate-import-current-user.png
-        :align: left
+        :align: center
 
 #. For ease of management, it is recommended to manually select a certificate
    storage and chose **Personal**.
 
    .. figure:: /_static/pcie-host-windows/certificate-import-personal-storage.png
-        :align: left
+        :align: center
 
 #. Open the Windows Start Menu and type **cmd** to find the command prompt
    application. Right click it and chose **Run as Administrator**.
 
    .. figure:: /_static/pcie-host-windows/cmd-run-as-admin.png
-        :align: left
+        :align: center
 
 #. Execute the following command: ``bcdedit /set testsigning on``
 
    .. figure:: /_static/pcie-host-windows/windows-test-mode-command.png
-        :align: left
+        :align: center
 
 #. Restart the computer.
 
-   .. note:: A regular reboot ('restart') is required. A complete power cycle (turning the PC off completely) may not set
-        the option.
+   .. note:: A regular reboot ('restart') is required. A complete power cycle
+        (turning the PC off completely) may not set the option.
 
 #. You should see now some text at the bottom right of the Desktop indicating
    that Windows is operating in testing mode:
 
    .. figure:: /_static/pcie-host-windows/windows-test-mode-text.png
-        :align: left
+        :align: center
 
    .. note:: The computer will keep the test state until you run ``bcdedit /set
         testsigning off`` in an administrator command prompt again and reboot the
@@ -100,7 +101,7 @@ Install Device Driver
    see **RIFFA** in the device tree.
 
    .. figure:: /_static/pcie-host-windows/package-manager-riffa.png
-       :align: left
+       :align: center
 
 Install ONIX Bonsai Library
 ---------------------------------------
@@ -109,7 +110,7 @@ Install ONIX Bonsai Library
 #. Open Bonsai. At the start menu, select **Manage Packages**.
 
    .. figure:: /_static/pcie-host-windows/bonsai-start-menu.png
-       :align: left
+       :align: center
 
 #. Select **Community Packages** as the package source.
 #. Search for **Bonsai.ONIX**.

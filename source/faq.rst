@@ -38,24 +38,24 @@ FAQ
         is quite simple.
 
     Can I use my older Intan headstages with the system?
-        No. ONIX headstages use serialization hardware to allow arbitrary
-        mixtures of devices to exist on the headstage. This is fundamentally
-        incompatible with older, SPI-based headstages. Have a look at
-        :ref:`serialization` for more information on why.
+        No. ONIX headstages use serialization hardware to allow mixtures of
+        devices to exist on the headstage. This is incompatible with older,
+        SPI-based headstages. Have a look at :ref:`serialization` for more
+        information on why.
 
     Why is there no Open Ephys GUI plugin for ONIX hardware?
         Have a look at the :ref:`open_ephys_gui` page.
 
     I have existing acquisition hardware. Can I can use your API and software to acquire data from it?
-        Yes, please do. Our API is explicity designed to decouple hardware
-        details from software. Have a look at the :ref:`drivers` page for more
-        information on integrating your hardware into the ONIX software stack.
+        Yes. We tried to design our API so that it decouples hardware details
+        from software in a generic way. Have a look at the :ref:`drivers` page
+        for more information on how to using the ONIX API with your hardware.
         Depending on how your device communicates with the computer it may only
         take 10's of lines of C.
 
     I have existing acquisition software. Can I integrate support for ONIX hardware using your API?
-        Yes, please do. Have a look at the :ref:`api_ref` to get started. Also
-        let us know if you want help.
+        Yes. Have a look at the :ref:`api_ref` to get started. Also let us know
+        if you want help.
 
 ..
 ..

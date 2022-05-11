@@ -56,7 +56,8 @@ Setting up ONIX
    page on the voltage supplied to the headstage <tether_voltage>` to prevent
    damaging your headstage.
 #. Test the installation.
-    .. todo:: Bonsai workflows for testing each component 
+
+   .. todo:: Bonsai workflows for testing each component 
 
 Using ONIX
 --------------------------------

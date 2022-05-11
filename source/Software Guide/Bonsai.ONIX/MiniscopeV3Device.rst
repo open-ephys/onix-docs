@@ -2,7 +2,7 @@
 
 MiniscopeV3Device
 ===============================
-.. important:: To use Miniscopes with ONIX hardware, you must first use the :ref:`bonsai_onicontext` configuration GUI to set the headstage port to :ref:`Passthrough Mode" <bonsai_onicontext_hubsettings>`
+.. important:: To use Miniscopes with ONIX hardware, you must first use the :ref:`bonsai_onicontext` configuration GUI to set the headstage port to :ref:`"Passthrough Mode" <bonsai_onicontext_hubsettings>`
 
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 :ref:`onidatasheet_ds90ub9x_raw` device and configures it to allow control over
