@@ -57,8 +57,8 @@ Register Programming
       - None
       - The LSB is used to enable or disable the device data stream:
 
-            * 0x0: data output disabled
-            * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
     * - 0x01
       - DIR
@@ -70,8 +70,8 @@ Register Programming
         directionality of each channel. Bit 0 corresponds to channel 0 and bit
         11 corresponds to channel 11. For each bit:
 
-            * 0b0: Output
-            * 0b1: Input
+        * 0b0: Output
+        * 0b1: Input
 
     * - 0x02
       - INRANGE00
@@ -81,10 +81,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 0 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
 
     * - 0x03
@@ -95,10 +95,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 1 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x04
       - INRANGE02
@@ -108,10 +108,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 2 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x05
       - INRANGE03
@@ -121,10 +121,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 3 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x06
       - INRANGE04
@@ -134,10 +134,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 4 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x07
       - INRANGE05
@@ -147,10 +147,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 5 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x08
       - INRANGE06
@@ -160,10 +160,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 6 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x09
       - INRANGE07
@@ -173,10 +173,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 7 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x0a
       - INRANGE08
@@ -186,10 +186,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 8 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x0b
       - INRANGE09
@@ -199,10 +199,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 9 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x0c
       - INRANGE10
@@ -212,10 +212,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 10 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
     * - 0x0d
       - INRANGE11
@@ -225,10 +225,10 @@ Register Programming
       - None
       - The two LSBs indicate the channel 11 ADC input voltage range:
 
-            * 0xXXX0: ±10V
-            * 0xXXX1: ±2.5V
-            * 0xXXX2: ±5V
-            * 0xXXX3: ±10V
+        * 0xXXX0: ±10V
+        * 0xXXX1: ±2.5V
+        * 0xXXX2: ±5V
+        * 0xXXX3: ±10V
 
 .. _onidatasheet_fmc_analog_io_d2h:
 

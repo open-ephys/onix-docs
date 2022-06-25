@@ -38,8 +38,8 @@ Register Programming
       - None
       - The LSB is used to enable or disable the device data stream:
 
-            * 0x0: data output disabled
-            * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
     * - 0x01
       - CLK_DIV

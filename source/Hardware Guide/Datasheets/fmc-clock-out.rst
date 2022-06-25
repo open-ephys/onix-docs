@@ -83,8 +83,8 @@ Register Programming
       - None
       - LSB sets the gate using run status
 
-            * 0b0: Clock runs whenever FMCCLKOUT_EN(0) is 1.
-            * 0b1: Clock runs only when acquisition is in RUNNING state.
+        * 0b0: Clock runs whenever FMCCLKOUT_EN(0) is 1.
+        * 0b1: Clock runs only when acquisition is in RUNNING state.
 
     * - 0x06
       - BASEFREQ

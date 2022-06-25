@@ -52,8 +52,8 @@ Register Programming
       - None
       - The LSB is used to enable or disable the device data stream:
 
-            * 0x0: data output disabled
-            * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
     * - 0x01
       - GPOSTATE
@@ -80,19 +80,19 @@ Register Programming
       - None
       - 10 * link voltage. Valid values:
 
-            * 000         :  Turn off
-            * 001         :  3.3 volts (min)
-            * ...         :  3.3 volts (min)
-            * 032         :  3.3 volts (min)
-            * 033         :  3.3 volts (min)
-            * 034         :  3.4 volts
-            * 035         :  3.5 volts
-            * ...         :  ...
-            * 108         : 10.8 volts
-            * 109         : 10.9 volts
-            * 110         : 11.0 volts (max)
-            * 111         : 11.0 volts (max)
-            * ...         : 11.0 volts (max)
+        * 000         :  Turn off
+        * 001         :  3.3 volts (min)
+        * ...         :  3.3 volts (min)
+        * 032         :  3.3 volts (min)
+        * 033         :  3.3 volts (min)
+        * 034         :  3.4 volts
+        * 035         :  3.5 volts
+        * ...         :  ...
+        * 108         : 10.8 volts
+        * 109         : 10.9 volts
+        * 110         : 11.0 volts (max)
+        * 111         : 11.0 volts (max)
+        * ...         : 11.0 volts (max)
 
     * - 0x04
       - SAVEVOLTAGE

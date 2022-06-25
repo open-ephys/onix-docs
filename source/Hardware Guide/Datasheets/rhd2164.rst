@@ -41,8 +41,8 @@ Managed register access is provided at offset 0x10000.
       - None
       - The LSB is used to enable or disable the device data stream:
 
-            * 0x0: data output disabled
-            * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
 Unmanaged Registers
 ------------------------------------------

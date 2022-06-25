@@ -44,8 +44,8 @@ Managed register access is provided at offset 0x8000.
       - None
       - The LSB is used to enable or disable the device data stream:
 
-          * 0x0: data output disabled
-          * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
     * - 0x8001
       - READSZ
@@ -63,10 +63,10 @@ Managed register access is provided at offset 0x8000.
       - None
       - The LSBs determines the data capture start tigger
 
-          * Bit 0: Trigger mode. '0' = Continuous, '1' = Use trigger
-          * Bit 1: Trigger bit. '0' = HSYNC, '1' = VSYNC.  
-          * Bit 2: Mode. '0' = Edge, '1' = Level (High or Low)
-          * Bit 3: Polarity. '0' = Non-inverted (Rising/High), '1' = Inverted (Falling/Low).
+        * Bit 0: Trigger mode. '0' = Continuous, '1' = Use trigger
+        * Bit 1: Trigger bit. '0' = HSYNC, '1' = VSYNC.  
+        * Bit 2: Mode. '0' = Edge, '1' = Level (High or Low)
+        * Bit 3: Polarity. '0' = Non-inverted (Rising/High), '1' = Inverted (Falling/Low).
 
     * - 0x8003
       - TRIGGEROFF
@@ -84,9 +84,9 @@ Managed register access is provided at offset 0x8000.
       - None
       - The LSBs are used to determine how data is gated
 
-          * Bit 0: Gate mode. '0' = disabled, '1' = enabled. 
-          * Bit 1: Gate bit. '0' = HSYNC gate, '1' = VSYNC gate. 
-          * Bit 2: Polarity. '0' = Non-inverted (high), '1' = Inverted (low).
+        * Bit 0: Gate mode. '0' = disabled, '1' = enabled. 
+        * Bit 1: Gate bit. '0' = HSYNC gate, '1' = VSYNC gate. 
+        * Bit 2: Polarity. '0' = Non-inverted (high), '1' = Inverted (low).
 
     * - 0x8005
       - SYNCBITS
@@ -98,8 +98,8 @@ Managed register access is provided at offset 0x8000.
         word along with parallel port state. If included, bit 13 is HSYNC and
         bit 14 is VSYNC.
 
-          * 0x0: not included
-          * 0x1: included
+        * 0x0: not included
+        * 0x1: included
 
     * - 0x8006
       - SYNCBITS
@@ -112,9 +112,9 @@ Managed register access is provided at offset 0x8000.
         properties. Therefore this property provides a means to mark the first
         frame in a multi-frame sample (e.g. the first row in a camera image).
 
-          * Bit 0: not included
-          * Bit 1: '0' = HSYNC, '1' = VSYNC
-          * Bit 2: '0' = Rising edge, '1' = Falling edge
+        * Bit 0: not included
+        * Bit 1: '0' = HSYNC, '1' = VSYNC
+        * Bit 2: '0' = Rising edge, '1' = Falling edge
 
 
     * - 0x8007
@@ -125,8 +125,8 @@ Managed register access is provided at offset 0x8000.
       - None
       - Bits 0-3 determine the direction of GPIO 0-3. For each bit:
 
-          * 0b0: Output
-          * 0b1: Input
+        * 0b0: Output
+        * 0b1: Input
 
     * - 0x8008
       - GPIO_VAL
@@ -136,8 +136,8 @@ Managed register access is provided at offset 0x8000.
       - None
       - Bits 0-3 determine the value of GPIO 0-3. For each bit:
 
-          * 0b0: Low
-          * 0b1: High
+        * 0b0: Low
+        * 0b1: High
 
     * - 0x8009
       - GPIO_VAL
@@ -148,8 +148,8 @@ Managed register access is provided at offset 0x8000.
       - Access the DS90UBX LOCK and PASS pin state to determine if the SERDES
         is operating normally.
 
-          * Bit 0: DS90UBX LOCK pin state
-          * Bit 1: DS90UBX PASS pin state
+        * Bit 0: DS90UBX LOCK pin state
+        * Bit 1: DS90UBX PASS pin state
 
 
 Unmanaged Registers

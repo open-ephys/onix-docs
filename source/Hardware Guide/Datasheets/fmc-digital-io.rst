@@ -182,8 +182,8 @@ Register Programming
       - None
       - The LSB is used to enable or disable the device data stream:
 
-            * 0x0: data output disabled
-            * 0x1: data output enabled
+        * 0x0: data output disabled
+        * 0x1: data output enabled
 
     * - 0x01
       - LEDMODE
@@ -193,10 +193,10 @@ Register Programming
       - None
       - The two LSBs determine the breakout board's LED display mode:
 
-            * 0b00: All off
-            * 0b01: Power/running only
-            * 0b10: Power, running, HARP, and Lock
-            * 0b11: Normal
+        * 0b00: All off
+        * 0b01: Power/running only
+        * 0b10: Power, running, HARP, and Lock
+        * 0b11: Normal
 
     * - 0x02
       - LEDLVL
