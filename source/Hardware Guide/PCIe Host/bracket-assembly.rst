@@ -17,7 +17,7 @@ Materials
       - Part No.
       - Notes
     * - 3D printed bracket
-      - 2
+      - 1
       - `STL file <https://github.com/open-ephys/onix-fmc-host/blob/main/mechanical/pcie-bracket/stl/pcie-bracket-1p27mm.STL>`__
       - Sintered Nylon. Glass-bead reinforced is even better
     * - 3mm light pipe
@@ -31,7 +31,7 @@ Materials
     * - Ribbon cable
       - 0.5
       - A08SUR08SUR32W203A
-      - Cut into two, 8-mm pieces
+      - Cut into two 8mm long pieces
     * - Heat shrink
       -
       -
