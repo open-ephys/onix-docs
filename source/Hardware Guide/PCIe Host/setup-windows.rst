@@ -27,6 +27,14 @@ Insert the PCIe Host Module
         - Yellow: Acquisition stopped.
         - Pink: Acquisition running.
 
+Disable Secure Boot
+---------------------------------------
+
+#. Navigate to your BIOS
+
+#. Turn off Secure Boot (Under 'Boot' change OS type to 'Other OS')
+
+
 Put Windows In Testing Mode
 ---------------------------------------
 
@@ -116,5 +124,12 @@ Install ONIX Bonsai Library
 #. Search for **Bonsai.ONIX**.
 #. Install **Bonsai.ONIX.Design**. This packages will install both the core
    library and visualization tools.
-#. Have a look at the :ref:`bonsai_onixref` for usage instructions
-   and example scripts.
+
+Using Bonsai
+----------------------------------------
+
+#. New to Bonsai? The :ref:`bonsai_gettingstarted` page lists resources for learning Bonsai.
+
+#. Navigate to :ref:`bonsai_onixref` for a high-level overview and list of compatible devices. Click on any listed device in the left-hand navigation menu to view an example workflow using that device.
+
+#. :ref:`bonsai_onixexamples` demonstrate specific ONIX use cases, such as tuning closed-loop latency or acquiring from headstages.
