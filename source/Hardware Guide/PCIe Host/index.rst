@@ -15,6 +15,7 @@ equipment.
 
     overview
     setup-windows
+    programming-with-jtag
     gateware-drivers
     multi-board-sync
     bracket-assembly
