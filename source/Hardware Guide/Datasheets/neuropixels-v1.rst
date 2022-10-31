@@ -305,19 +305,18 @@ sample blocks. Each one of these blocks is organized as follows:
 
 Definitions for each of these fields are as follows:
 
-    Sync Type
-      Fixed word indicating the frame type
+Sync Type
+    Fixed word indicating the frame type
+    -  207: Normal frame. Frame contains AP data.
+    -  816: Super frame start. Frame contains LFP data.
 
-      -  207: Normal frame. Frame contains AP data.
-      -  816: Super frame start. Frame contains LFP data.
+ADC Voltage
+    Unsigned integer. Only the 10 LSBs are valid.
 
-    ADC Voltage
-      Unsigned integer. Only the 10 LSBs are valid.
-
-    Frame Counter
-      A looping 24-bit frame counter produced by the probe to detect dropped
-      frames and to ensure proper reset sequence that results in a count of 0
-      at the start of transmission.
+Frame Counter
+    A looping 24-bit frame counter produced by the probe to detect dropped
+    frames and to ensure proper reset sequence that results in a count of 0 at
+    the start of transmission.
 
 Host To Device Data Frames
 ******************************************

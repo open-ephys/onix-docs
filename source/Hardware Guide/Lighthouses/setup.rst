@@ -19,7 +19,9 @@ Setup
    .. image:: ../../_static/images/lighthouses/vive_back.jpg
        :width: 48%
 
-4. Set one base station to 'A' and one to 'b' using the channel button (illustration below is from the `Vive manual <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
+4. Set one base station to 'A' and one to 'b' using the channel button
+   (illustration below is from the `Vive manual
+   <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
 
    .. raw:: html
 
