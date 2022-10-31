@@ -1,6 +1,6 @@
 .. _riffa:
 
-RIFFA 
+riffa
 #######################################
 `RIFFA <https://github.com/KastnerRG/riffa>`__ is an open-source FPGA core and
 kernel driver that abstracts PCIe communication and allows easy integration

@@ -149,7 +149,7 @@ corresponding context option type used during calls to these functions.
 
         =================== ==================================================
         Option value type   :type:`oni_reg_val_t`
-        Option description  1: reset clock counter, 2: reset clock counter and set :macro:ONI_OPT_RUNNING to 1
+        Option description  1: reset clock counter, 2: reset clock counter and set :macro:`ONI_OPT_RUNNING` to 1
         Default value       0 (Untriggered)
         Access              Write
         Required run state  IDLE or RUNNING

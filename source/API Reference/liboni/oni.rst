@@ -75,6 +75,7 @@ Acquisition Context
     the :macro:`ONI_OPT_RUNNING` option can then be used to start acquisition
     uy transitioning the context run state to ``RUNNING``.
 
+.. _oni_h_device:
 
 Device
 ---------------------------------------
@@ -119,6 +120,8 @@ Device
     A device table is read from hardware and stored in the current context via
     a call to :func:`oni_init_ctx`. This table can be examined via calls to
     :func:`oni_get_opt` using the :macro:`ONI_OPT_DEVICETABLE` option.
+
+.. _oni_h_frame:
 
 Frame
 ---------------------------------------

@@ -9,6 +9,7 @@
 .. toctree::
     :hidden:
 
+    ONI REPL/index
     Bonsai.ONIX/index
     Bonsai Examples/index
 

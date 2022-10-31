@@ -28,4 +28,5 @@ automatic access to our API and software.
 
     test
     riffa
+    ft600
     xillybus
