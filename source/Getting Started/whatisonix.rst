@@ -3,11 +3,9 @@
 What is ONIX?
 ==========================================
 
-ONIX is an acquisition system for neuroscience, composed of various pieces of
-hardware that are ONI-compliant, i.e. they follow the Open Neuro Interface
-Specification for communication.
-
-ONIX differs from classic acquisition systems in three major points:
+ONIX is an acquisition system for neuroscience, composed of various
+pieces of hardware. ONIX differs from classic acquisition systems in
+three major points:
 
 1. Standards
 --------------------------------

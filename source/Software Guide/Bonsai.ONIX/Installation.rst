@@ -5,7 +5,7 @@ Installation
 **Bonsai.ONIX** is a `Bonsai <https://bonsai-rx.org/>`__ library for ONIX
 hardware and can be installed using its package manager.
 
-#. First you will need to `install Bonsai <https://bonsai-rx.org/docs/installation/>`__
+#. First you will need to `install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__
 
 #. Open Bonsai. When you are greeted by the start menu, click "Manage
    Packages."

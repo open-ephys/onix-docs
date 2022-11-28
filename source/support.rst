@@ -25,7 +25,7 @@ the appropriate repository:
 You can also **ask questions** on the Open Ephys Google Group or Slack channel
 
 - `Open Ephys Google Group <https://groups.google.com/forum/#!forum/open-ephys>`_
-- `Open Ephys Slack Channel <https://open-ephys.slack.com/>`_ (suggested for immediate feedback)
+- `Open Ephys Discord <https://discord.gg/bCCeuCnd5J>`_ (suggested for immediate feedback)
 
 For general information on **ephys techniques**, have a look at the the following resources:
 

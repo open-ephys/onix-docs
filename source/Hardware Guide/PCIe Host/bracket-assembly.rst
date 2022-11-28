@@ -1,4 +1,4 @@
-.. _pcie_host_setup_windows:
+.. _pcie_host_bracket_assembly:
 
 PCIe Bracket Assembly
 ########################################

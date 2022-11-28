@@ -1,9 +1,16 @@
 /* Variable overrides */
-:root {
-  --pst-color-link: #a30008;
+html {
+  --pst-color-primary: #005282;
+  --pst-color-link: #005282;
   --pst-color-link-hover: #da714a;
   --onix-bar-color: rgba(27, 27, 27, 0.2);
   --onix-txt-color: #1b1b1b;
+}
+
+.bd-content {
+  flex-grow: 1; !important
+  max-width: 100%; !important
+
 }
 
 /* import fonts */
@@ -45,6 +52,10 @@
 .editthispage a {
   color: var(--onix-text-color)
 }
+
+.sourcelink a {
+  color: var(--onix-text-color)
+} 
 
 /* Navigation bar colors*/
 .navbar-light {
@@ -96,20 +107,17 @@
 /* right side links */
 .toc-entry > .nav-link.active {
   font-weight: 600;
-  color: var(--onix-txt-color);
+  color: var(--onix-txt-color) !important;
   background-color: transparent;
   border-left: 2px solid #da714a;
 }
 
-.section-nav {
-  border-left: 1px solid var(--onix-bar-color) !important;
-}
-
-.tocsection {
-   border-left: 1px solid var(--onix-bar-color) !important;
-}
 
 /* Main text links (internal & external) */
+a {
+  color: var(--onix-txt-color);
+}
+
 a.reference.internal {
   color: #005282;
 }
@@ -120,14 +128,12 @@ a.reference.internal:hover {
 
 main a.reference.internal, a.reference.external {
   color: #005282;
-  text-decoration: underline !important;
 }
 
 main a.reference.internal:hover, a.reference.external:hover {
   color: #005282;
-  text-decoration: none !important;
+  text-decoration: underline !important;
 }
-
 
 /* Main text links (external) */
 main a.reference.external:after {
@@ -157,15 +163,11 @@ a.headerlink:hover {
 
 /* text fonts and colors */
 
-main a {
-    color: red;
-}
-
 body {
   background-color: white;
   margin-bottom: 1.15rem;
   font-size: 1em;
-  padding-top: 100px;
+  padding-top: 50px;
   color: var(--onix-txt-color);
   font-family: "Source Sans", sans-serif;
 }
@@ -224,6 +226,7 @@ h6 {
   color: var(--onix-txt-color);
   font-size: 1em;
 }
+
 
 /* define admonition colors */
 .admonition.attention {
@@ -322,18 +325,6 @@ h6 {
   color: #519141 !important;
 }
 
-/* logo */
-.title-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navbar-brand {
-  position: relative;
-  height: 60px;
-  width: auto;
-}
 
 /* format search bar */
 .bd-search {
@@ -442,6 +433,10 @@ p {
   margin-bottom: 1em;
 }
 
+p.prev-next-title {
+  color: var(--onix-txt-color) !important;
+}
+
 /* ensure images stay within the column bounds*/
 img {
   max-width: 100%;
@@ -539,9 +534,4 @@ i.fa-twitter-square:before {
     padding-top: 10px;
     padding-bottom: 15px;
     border-radius: 4px 0px 4px 4px;
-}
-
-/* Prevent link targets from being covered by navbar */
-html {
-  scroll-padding-top: 80px;
 }

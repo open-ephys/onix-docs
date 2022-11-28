@@ -6,7 +6,7 @@ verify_ssl = true
 # NB: Currently the newest version of the sphinx breaks the layout because
 # basic.css is not used for formatting most pages. 
 [packages]
-sphinx = "==3.5.4"
+sphinx = "*" #"==3.5.4"
 sphinxcontrib-wavedrom = "*"
 pydata-sphinx-theme = "*"
 breathe = "*"

@@ -1,17 +1,15 @@
 .. _pcie_host_program_over_jtag:
 
-Programming a Blank PCIe Host
+Programming a Blank PCIe Host (Windows)
 ########################################
 
 #. If you have not done so already, follow the steps on the :ref:`pcie_host_setup_windows` page.
 
 #. Download and install Vivado Lab Edition here: https://www.xilinx.com/support/download.html.
 
-#. Download the bootloader bit file here: :download:`riffa_bootloader.bit <../../_static/downloads/riffa_bootloader.bit>`.
+#. Download :ref:`pcie_host_bootloader_download`.
 
-#. Download the most recent host firmware that is compatible with your hardware
-
-   - Revision 1.4 (beta-test hardware): :download:`riffa_host_1r4 <../../_static/downloads/riffa_host_1r4.bit>`
+#. Download the most recent :ref:`pcie_host_image_download` that is compatible with your hardware
 
 #. Open Vivado and click open Hardware manager on splash screen
 

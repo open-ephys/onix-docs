@@ -31,8 +31,8 @@ Setting up ONIX
    - Acquisition computer
    - :ref:`breakout`
    - ONI-compliant device (such as a :ref:`headstage <headstages>` or
-     :ref:`miniscope <miniscope>`)
-   - :ref:`Commutator <commutators`
+     :ref:`miniscopes`)
+   - :ref:`commutators`
    - 2x :ref:`lighthouse base stations <lighthouses>`
     
 

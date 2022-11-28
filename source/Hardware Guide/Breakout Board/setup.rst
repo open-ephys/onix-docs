@@ -8,6 +8,7 @@ Setup
     :width: 60%
 
 |
+
 1. Connect the Breakout Board Digital and Analog I/O to the PCIe host board.
 
    Use the SDR to SDR 26 POS cable to connect the Breakout Board to the PCIe
@@ -41,8 +42,8 @@ Setup
    marking.
 
    .. attention:: Some boards have a bug in the power on sequence that means a
-   reset is required before the board will work. This has been fixed in later
-   revisions.
+    reset is required before the board will work. This has been fixed in later
+    revisions.
 
 Operation
 -------------------------

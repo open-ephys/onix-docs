@@ -1,6 +1,5 @@
 Troubleshooting
 
-
 Reset breakout board using tiny hole
 
 Turn headstage off and on again

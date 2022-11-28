@@ -17,30 +17,16 @@ Bonsai.ONIX
 
     Installation
     GettingStarted
-    ONIContext
-    HeartbeatDevice
-    AnalogIODevice
-    DigitalIODevice
-    ClockOutputDevice
-    HeadstagePortControlDevice
-    BNO055Device
-    TS4231V1Device
-    RHD2164Device
-    ElectricalStimulationDevice
-    OpticalStimulationDevice
-    NeuropixelsV1Device
-    MiniscopeV3Device
-    MiniscopeV4Device
-    MiniscopeV4BNO055Device
-..     TS4231V2Device
+    Nodes/index
+    Bonsai Examples/index
 
 `Bonsai.ONIX <https://www.nuget.org/packages/Bonsai.ONIX/>`__ is a `Bonsai
 <https://bonsai-rx.org/>`__ library for ONIX hardware. This library contains
-`Bonsai Operators <https://bonsai-rx.org/docs/operators/>`__ for acquiring and
-sending data to ONIX hardware. An additional library, ``Bonsai.ONIX.Design``,
-contains GUI elements for the core library. Although it is possible to use
-``Bonsai.ONIX`` without the GUI library, it is not recommended. There are three
-major classes of operators in the library:
+`Bonsai Operators <https://bonsai-rx.org/docs/articles/operators.html>`__ for
+acquiring and sending data to ONIX hardware. An additional library,
+``Bonsai.ONIX.Design``, contains GUI elements for the core library. Although it
+is possible to use ``Bonsai.ONIX`` without the GUI library, it is not
+recommended. There are three major classes of operators in the library:
 
 #. :ref:`bonsai_onicontext` - This operator wraps an
    :ref:`oni_h_acquisition_context` and provides access to the device table for
