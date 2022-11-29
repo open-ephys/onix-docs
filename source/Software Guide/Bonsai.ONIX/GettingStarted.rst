@@ -8,10 +8,6 @@ Getting Started
 
 Bonsai Learning Resources
 --------------------------------
-.. note:: Unfortunately, Bonsai's documentation does not do it justice. It is an
-    extremely powerful tool for acquiring data and processing all sorts of data
-    streams, but documentation is quite scarce. This situation is changing. In
-    the meantime, have a look at the following resources.
 
 .. list-table::
     :widths: auto
@@ -66,14 +62,11 @@ Have a look at the following video shows how to use ONIX hardware with `Bonsai
       background-color: black;
       color: white; padding:20px;">
 
-    <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-    <iframe 
-    style="border: 1; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
-    src="https://www.youtube.com/embed/YVA170xJn9Q" 
-    autoplay="0"
-    allow="encrypted-media; accelerometer; gyroscope; picture-in-picture; clipboard-write; allowfullscreen">
-    </iframe>
+        <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+            <iframe style="border: 1; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" src="https://www.youtube.com/embed/YVA170xJn9Q" autoplay="0" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture; clipboard-write; allowfullscreen">
+            </iframe>
+        </div>
     </div>
-    </div>
+
 
 

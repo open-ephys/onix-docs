@@ -3,10 +3,14 @@
 Updating Firmware in Windows
 ########################################
 
-#. If you have not done so already, follow the steps on the :ref:`pcie_host_setup_windows` page.
+#. If you have not done so already, follow the steps on the
+   :ref:`pcie_host_setup_windows` page.
 
 #. Download the latest :ref:`oni_repl_download` and unzip it. Navigate to this
    location using a console (e.g. PowerShell).
+
+   .. note:: For a complete description of this program, have a look at its
+        :ref:`usage guide <oni_repl>`
 
 #. Verify your PCIe Host Hardware version by running `oni-repl` and typing `H`
    into the command prompt. This will print a list of all hubs in the current
@@ -15,6 +19,10 @@ Updating Firmware in Windows
    .. code-block:: console
 
         $ oni-repl.exe riffa 0
+        ...
+        ...
+        ...
+        >>> H
 
    .. figure:: /_static/images/pcie-host/oni-repl-host-hardware-version.png
         :align: center
@@ -28,11 +36,12 @@ Updating Firmware in Windows
 #. Download the :ref:`pcie_host_updater_download` utilities package and unzip
    it. Navigate to this folder using a console.
 
-#. Run `onix-pcie-host-change-mode` to put the PCIe host into bootloader mode.
+#. Run the `oni_pcie_mode_change` command to put the PCIe host into bootloader
+   mode.
 
    .. code-block:: console
 
-        $ onix-pcie-host-change-mode.exe
+        $ oni_pcie_mode_change.exe
    
    .. figure:: /_static/images/pcie-host/oni-pcie-change-mode-to-bl.png
         :align: center
@@ -52,29 +61,34 @@ Updating Firmware in Windows
         :width: 80%
 
    .. note::
-        If the devie has a smale yellow triangle icon next to it, you will need
-        to reboot your computer to finish the process.
+        If prompted to do so, or if the device has a small yellow triangle icon
+        next to it, you will need to reboot your computer to finish the
+        process.
 
-#. Return to the console and run the `onix-pcie-host-update` program using the
-   **.bin** file downloaded in step 4 and the index of the PCIe host device
-   you want to update.
+#. Return to the console and run the `oni_pcie_flash_image` program using the
+   **.bin** file downloaded in step 4 and the index of the PCIe host device you
+   want to update. If you only have a single PCIe Host board, index can be
+   specified as 0 or omitted.
 
    .. code-block:: console
 
-        $ onix-pcie-host-update.exe <path to image.bin> [index]
+        $ oni_pcie_flash_image.exe <path to image.bin> [index]
 
    .. figure:: /_static/images/pcie-host/oni-pcie-flash-image.png
         :align: center
 
-#. When the program completes, `onix-pcie-host-change-mode` to put the PCIe
+#. When the program completes, run `oni_pcie_mode_change` to put the PCIe
    host into normal mode.
 
    .. code-block:: console
 
-        $ onix-pcie-host-change-mode.exe
+        $ oni_pcie_mode_change.exe
    
    .. figure:: /_static/images/pcie-host/oni-pcie-change-mode-to-normal.png
         :align: center
 
 #. Repeat steps 7 and 8 to reactivate the PCIe Host with the updated
    firmware.  
+
+#. To verify the firmware update, repeat step 3. The firmware version of the
+   PCIe Host should now match the one downloaded in step 4.

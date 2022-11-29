@@ -79,7 +79,6 @@ breathe_projects = { 'clroni': './API Reference/clroni/doxygen-xml' }
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
 html_theme = 'pydata_sphinx_theme'
 html_logo = '_static/onix_open_ephys_logo.svg'
 html_scaled_image_link = False
@@ -94,41 +93,6 @@ html_sidebars = {
     "**": ["search-field.html", "sidebar-nav-bs.html"]
 }
 
-
-# -- Options for HTMLHelp output ---------------------------------------------
-
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'ONIX2doc'
-
-# -- Options for LaTeX output ------------------------------------------------
-
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (main_doc, 'onix-docs.tex', 'ONIX Documentation', 'Open Ephys', 'manual'),
-]
-
-# -- Options for manual page output ------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [(main_doc, 'onix-docs', 'ONIX Documentation', [author], 1)]
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -153,9 +117,9 @@ texinfo_documents = [
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
+    'use_edit_page_button': True,
     'external_links': [{'name': 'Open Ephys', 'url': 'https://open-ephys.org'},],
     'navigation_with_keys': True,
-    'use_edit_page_button': True,
     'show_toc_level': 1,
     'twitter_url': 'https://twitter.com/openephys',
     'github_url': 'https://github.com/open-ephys/onix-docs',
@@ -171,13 +135,12 @@ html_context = {
     'github_repo': 'onix-docs',
     'github_version': 'main',
     'doc_path': 'source',
-    #'css_files': ['_static/theme_overrides2.css'],
     'default_mode': 'light',
 }
 
-html_css_files = {
+html_css_files = [
     'theme_overrides.css',
-}
+]
 
 # Option for linkcheck
 linkcheck_anchors = False
