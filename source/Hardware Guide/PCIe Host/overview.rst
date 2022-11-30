@@ -2,10 +2,8 @@
 
 Overview
 #########################
-The **ONIX PCIe Host** combines the `ONIX FMC Host
-Module
-<https://github.com/open-ephys/onix-fmc-host>`__
-with the PCIe-connectivity and bulk-FPGA power
+The **ONIX PCIe Host** combines the `ONIX FMC Host Module
+<https://github.com/open-ephys/onix-fmc-host>`__ and the PCIe-connectivity
 provided by the `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 carrier board.

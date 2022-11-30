@@ -3,7 +3,7 @@
 
 .. _getting_started:
 
-|hw_logo| Getting Started
+Getting Started
 ==========================================
 
 .. toctree::
@@ -12,7 +12,7 @@
 
     whatisonix
 
-Understanding the system
+Understanding the System
 --------------------------------
 - Read :ref:`'What is ONIX?' <what_is_onix>` for a high-level introduction to
   this hardware and how it differs from classic neuroscience acquisition
@@ -25,7 +25,7 @@ Setting up ONIX
 
 #. Check that you have all the necessary hardware. A full ONIX setup consists of:
     
-   **Devices**
+   **Hardware**
     
    - :ref:`pcie_host`
    - Acquisition computer

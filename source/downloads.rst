@@ -66,7 +66,7 @@ ______________________________________________
      - Release Notes
    * - :download:`6.0.1.3 <./_static/downloads/onix-driver-releases/riffa/riffa-x64_v6.0.1.3.zip>`
      - 2022.11.29
-     - Fix race condition in the riffa kernel driver for windows.
+     - Fix race condition in the RIFFA kernel driver for windows.
 
 -----------------
 
@@ -77,7 +77,7 @@ ______________________________________________
 .. note:: Please see :ref:`Updating PCIe Host Firmware
     <pcie_host_firmware_update>` for instructions on how to use these files.
 
-Revision 1.4
+Hardware Revision 1.4
 ##############################################
 
 .. list-table:: PCIe Host Revision 1.4 firmware images
@@ -87,7 +87,7 @@ Revision 1.4
    * - Version
      - Release Date
      - Release Notes
-   * - :download:`0.7 <./_static/downloads/onix-gateware-images/pcie-host-1r4/onix-pcie-host-1r4_v0.7.zip>`
+   * - :download:`0.6 <./_static/downloads/onix-gateware-images/pcie-host-1r4/onix-pcie-host-1r4_v0.6.bin>`
      - 2022.11.27
      - Remove unessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
 

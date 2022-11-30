@@ -3,32 +3,34 @@
 What is ONIX?
 ==========================================
 
-ONIX is an acquisition system for neuroscience, composed of various
-pieces of hardware. ONIX differs from classic acquisition systems in
-three major points:
+ONIX is a data acquisition system for neuroscience, composed of various pieces
+of hardware. ONIX differs from other acquisition systems in three major points:
 
 1. Standards
 --------------------------------
 All acquisition systems follow specific sets of rules that outline how data is
-structured and communicated between parts of the system. For instance, Intan
-headstages and the classic Open Ephys Board use the Serial Peripheral Interface
-(SPI) for communication. Many different and non-interchangeable interfaces and
-protocols are in use, which is why each type of probe or camera usually comes
-with its own specific acquisition board.
+structured and transmitted between parts of the system. For instance, Intan
+headstages and the `classic Open Ephys Board
+<https://open-ephys.org/acq-board>`__ use a `Serial Peripheral Interface (SPI)
+for communication
+<https://en.wikipedia.org/wiki/Serial_Peripheral_Interface>`__. Many different
+and non-interchangeable interfaces and protocols are in use, which is why each
+type of probe or camera usually comes with its own specific acquisition board.
 
-ONI is an open standard that was designed as a unified protocol to communicate
-with a wide variety of instruments. By specifying how data should be organised
-but remaining agnostic to the type of data, this one interface can be used to
-acquire from, for instance, extracellular probes, cameras, and tracking
+The `Open Neuro Interface (ONI) <https://github.com/open-ephys/ONI>`__ is an
+open standard that was designed as a unified protocol to communicate with a
+wide variety of instruments. By specifying how data should be organised but
+remaining agnostic to the type of data, a single acquisition system can be used
+to acquire from, for instance, extracellular probes, cameras, and tracking
 systems.
 
-This means that the same acquisition software and hardware can now be used for
-a wide range of different devices, so that labs do not have to spend time and
-money acquiring separate acquisition systems for each extra tool they wish to
-add to their experiment. For those who want to develop new devices for
-neuroscience, using this standard means that rather than spending their time
-trying to get different interfaces to communicate with each other, they can
-focus on the specifics of the device they wish to build.
+This means that the same software and hardware can now be used for a wide range
+of different recording instruments, so that labs do not have to spend time and
+money purchasing separate acquisition systems for each extra tool they wish to
+add to their experiment. Additionally, for those who want to develop new tools
+to study the brain, ONIX provides a powerful hardware backend and software
+infrastructure that can be reused to control almost any type of recoding
+instrument.  
 
 2. Tethers
 --------------------------------

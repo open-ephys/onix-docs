@@ -1,6 +1,6 @@
 .. _ft600:
 
-ft600 
+ft600
 #######################################
 FT600 is a closed source USB3.0 core and kernel driver made by FTDI. It is
 currently being used as the USB backend for the `Open Ephys Acquisition
@@ -23,7 +23,3 @@ Windows
 =======================================
 Run the project in Visual Studio. It can be included as a dependency in other
 projects.
-
-Obtaining Host Device Driver
----------------------------------------
-.. todo:: Document

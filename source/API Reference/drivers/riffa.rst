@@ -1,6 +1,6 @@
 .. _riffa:
 
-riffa
+RIFFA
 #######################################
 `RIFFA <https://github.com/KastnerRG/riffa>`__ is an open-source FPGA core and
 kernel driver that abstracts PCIe communication and allows easy integration
@@ -26,4 +26,7 @@ Linux
 Windows
 =======================================
 Run the project in Visual Studio. It can be included as a dependency in other
-projects.
+projects. 
+
+.. note:: The :ref:`downloads` page contains :ref:`pre-compiled versions of RIFFA
+    driver <riffa_driver_download>`
