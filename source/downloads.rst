@@ -80,17 +80,21 @@ ______________________________________________
 Hardware Revision 1.4
 ##############################################
 
-.. list-table:: PCIe Host Revision 1.4 firmware images
-   :widths: 15 25 60
-   :header-rows: 1
+.. important:: Please :ref:`get in touch <support>` so that we can provide the latest firmware
+    for your board. 
 
-   * - Version
-     - Release Date
-     - Release Notes
-   * - :download:`0.6 <./_static/downloads/onix-gateware-images/pcie-host-1r4/onix-pcie-host-1r4_v0.6.bin>`
-     - 2022.11.27
-     - Remove unessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
 
+.. .. list-table:: PCIe Host Revision 1.4 firmware images
+..    :widths: 15 25 60
+..    :header-rows: 1
+.. 
+..    * - Version
+..      - Release Date
+..      - Release Notes
+..    * - :download:`0.6 <./_static/downloads/onix-gateware-images/pcie-host-1r4/onix-pcie-host-1r4_v0.6.bin>`
+..      - 2022.11.27
+..      - Remove unessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
+ 
 .. _pcie_host_bootloader_download:
 
 PCIe Host Bootloader Firmware
