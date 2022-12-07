@@ -7,7 +7,7 @@ JSON commands in bonsai.
 
 .. raw:: html
 
-    {% with static_path = '../../_static', name = 'CommutatorManual' %}
+    {% with static_path = '../../../_static', name = 'CommutatorManual' %}
         {% include 'workflow.html' %}
     {% endwith %}
 

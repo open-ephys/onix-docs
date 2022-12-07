@@ -7,7 +7,7 @@ parameters to optimize closed-loop performance.
 
 .. raw:: html
 
-    {% with static_path = '../../_static', name = 'LatencyTest' %}
+    {% with static_path = '../../../_static', name = 'LatencyTest' %}
         {% include 'workflow.html' %}
     {% endwith %}
 

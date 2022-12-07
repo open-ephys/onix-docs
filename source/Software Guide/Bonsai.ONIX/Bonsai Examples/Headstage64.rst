@@ -3,18 +3,35 @@
 Headstage-64 Workflow
 ===============================
 This example workflow shows how the data streams produced by
-:ref:`headstage_64` can be acquired and saved. Example Python and MATLAB
-scripts are provided to load the data produced by the workflow. 
+:ref:`headstage_64` can be acquired and saved. Each group workflow at the top
+level contains acquisition code for a different sensor on the headstage. Example
+Python and MATLAB scripts are provided to load the data produced by the
+workflow. 
 
 .. raw:: html
 
-    {% with static_path = '../../_static', name = 'Headstage64' %}
+    {% with static_path = '../../../_static', name = 'Headstage64' %}
         {% include 'workflow.html' %}
     {% endwith %}
 
-Usage 
---------------------------
-.. todo:: Document
+
+BNO055 9-Axis IMU
+    Absolute orientation measurement of the headstage along with a lot of other
+    information
+
+RHD2164 Ephys Chip
+    64-channels of extracellular electrophysiology input
+
+TS4231 Lighthouse Receivers
+    3D position of the headstage in space when used with approriate lighthouse setup. 
+    
+Headstage Port Control
+    Control over the headstage port and connectivity status logging 
+
+.. note:: 
+    This workflow does not demonstrate stimulation capabilites of the
+    headstage. See :ref:`bonsai_estimdev` and :ref:`bonsai_ostimdev` for
+    examples of how to control onboard stimulation.
 
 Loading Scripts
 --------------------------
