@@ -32,11 +32,20 @@ function downloadText(name, text) {
 }
 
 function downloadZip(name, text) {
-    var bb = new Blob([text], { type: 'application/zip' });
+    //var bb = new Blob([text], { type: 'application/zip' });
+    var bb = new Blob([str2bytes(text)], {type: "application/zip"});
     var a = document.createElement('a');
     a.download = name;
     a.href = window.URL.createObjectURL(bb);
     a.click();
+}
+
+function str2bytes(str) {
+   var bytes = new Uint8Array(str.length);
+   for (var i=0; i<str.length; i++) {
+      bytes[i] = str.charCodeAt(i);
+    }
+    return bytes;
 }
 
 function getTextFromURL(url, download = false, zip = false) {
@@ -54,7 +63,7 @@ function getTextFromURL(url, download = false, zip = false) {
                     if (!zip) {
                         downloadText(name, http.responseText);
                     } else {
-                        downloadZip(name, http.responseText);
+                        downloadZip(name, http.response);
                     }
                 }
             }
