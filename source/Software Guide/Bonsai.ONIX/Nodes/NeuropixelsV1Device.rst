@@ -155,10 +155,10 @@ are orange. Groups of electrodes can be selected by left clicking and dragging.
 Once highlighted, their properties can be changed using right click to open the
 configuration context menu.
 
-    .. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_adjust-electrode-parameters-with-gui.png
-       :alt: Probe GUI with right click to edit electrode parameters
-       :align: center
-       :scale: 62%
+.. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_adjust-electrode-parameters-with-gui.png
+    :alt: Probe GUI with right click to edit electrode parameters
+    :align: center
+    :scale: 62%
 
 Aside form the Probe tab, the **Channels** tab can be used to examine and tune
 the probe parameters. If you want to apply a from one electrode to the entire
@@ -221,11 +221,11 @@ active electrodes.
 #. Select **Import** from the **File** menu:
 
     .. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_import_cropped.png
-       :alt: The configuraiton GUI with import selected
-       :align: left
+        :alt: The configuraiton GUI with import selected
+        :align: left
 
 #. Select a previously exported configuration file:
 
     .. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_import-select-file.png
-       :alt: File dialog to find configuration to load
-       :align: left
+        :alt: File dialog to find configuration to load
+        :align: left

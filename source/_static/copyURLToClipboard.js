@@ -31,24 +31,20 @@ function downloadText(name, text) {
     a.click();
 }
 
-function downloadZip(name, text) {
-    //var bb = new Blob([text], { type: 'application/zip' });
-    var bb = new Blob([str2bytes(text)], {type: "application/zip"});
-    var a = document.createElement('a');
-    a.download = name;
-    a.href = window.URL.createObjectURL(bb);
-    a.click();
+function getFileFromURL(url)
+{
+    fetch(url)
+        .then((res) => { return res.blob(); })
+        .then((data) => {
+          var a = document.createElement("a");
+          var name = url.substring(url.lastIndexOf('/')+1)
+          a.href = window.URL.createObjectURL(data);
+          a.download = name;
+          a.click();
+        });
 }
 
-function str2bytes(str) {
-   var bytes = new Uint8Array(str.length);
-   for (var i=0; i<str.length; i++) {
-      bytes[i] = str.charCodeAt(i);
-    }
-    return bytes;
-}
-
-function getTextFromURL(url, download = false, zip = false) {
+function getTextFromURL(url) {
     http = new XMLHttpRequest();
     http.open("GET", url, true);
     http.onreadystatechange = function () {
@@ -56,16 +52,7 @@ function getTextFromURL(url, download = false, zip = false) {
         if (http.readyState === XMLHttpRequest.DONE) {
             var status = http.status;
             if (status === 0 || (status >= 200 && status < 400)) {
-                if (!download) {
-                    copyTextToClipboard(http.responseText);
-                } else { 
-                    var name = url.substring(url.lastIndexOf('/')+1) 
-                    if (!zip) {
-                        downloadText(name, http.responseText);
-                    } else {
-                        downloadZip(name, http.response);
-                    }
-                }
+                copyTextToClipboard(http.responseText);
             }
         }
     }
