@@ -52,8 +52,8 @@ templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-#
-source_suffix = ['.rst']
+# If you add .md, you will need the myst_parser package
+source_suffix = ['.rst'] 
 
 # The master toctree document.
 main_doc = 'index'
@@ -93,7 +93,6 @@ html_sidebars = {
     "**": ["search-field.html", "sidebar-nav-bs.html"]
 }
 
-
 # -- Options for Texinfo output ----------------------------------------------
 
 # Grouping the document tree into Texinfo files. List of tuples
@@ -110,7 +109,6 @@ texinfo_documents = [
         'Miscellaneous',
     ),
 ]
-
 
 # -- Extension configuration -------------------------------------------------
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -147,7 +145,7 @@ linkcheck_anchors = False
 
 def rstjinja(app, docname, source):
     '''
-    Render our pages as a jinja template for fancy templating goodness.
+    Render pages as a jinja template. 
     '''
     # Make sure we're outputting HTML
     if app.builder.format != 'html':
@@ -161,5 +159,3 @@ def rstjinja(app, docname, source):
 def setup(app):
     app.connect('source-read', rstjinja)
     app.add_js_file('copyURLToClipboard.js')
-
-# For copying bonsai scripts

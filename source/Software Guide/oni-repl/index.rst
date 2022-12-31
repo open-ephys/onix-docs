@@ -7,7 +7,6 @@ oni-repl
     :maxdepth: 3
     :hidden:
 
-    installation
     usage
 
 ``oni-repl`` is a simple `read-eval-print loop (REPL)
@@ -16,6 +15,7 @@ oni-repl
 
 :Code: https://github.com/open-ephys/liboni/tree/main/api/liboni/liboni-test
 :Compatibility: Any ONI-compliant hardware
+:Download: :ref:`Latest Version <oni_repl_download>`
 
 This program provides low-level control over a single
 :ref:`oni_h_acquisition_context` and can be used to control ONI-compliant

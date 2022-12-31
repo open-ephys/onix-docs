@@ -471,10 +471,10 @@
 //  border: 1px !important;
 //}
 //
-///* Quick links */
-//.quicklinks {
-//  color: var(--onix-txt-color) !important;
-//}
+/* Quick links */
+.quicklinks {
+  color: var(--onix-txt-color) !important;
+}
 //
 ///* override table width restrictions */
 //@media screen and (min-width: 767px) {
@@ -488,37 +488,41 @@
 //    overflow: visible !important;
 //  }
 //}
-//
-///* Landing page cards */
-//.card-title {
-//  margin: 1rem;
-//}
-//
-//.intro-card .card-text {
-//  margin:20px 0px;
-//  color: var(--onix-txt-color) !important;
-//}
-//
-//.card-img-top {
-//  margin-top: 2em;
-//}
-//
-//.card {
-//  border: 0;
-//}
-//
-//.intro-card {
-//  transition: transform 0.2s ease;
-//  border: 0;
-//}
-//
-//.intro-card:hover {
-//  transform: scale(1.05);
-//}
-//
-//.col-lg-6 {
-//  margin-top: 2em;
-//}
+
+/* Landing page cards */
+.card-columns {
+  column-count: 4 !important;
+}
+
+.card-title {
+  margin: 1rem;
+}
+
+.intro-card .card-text {
+  margin:20px 0px;
+  color: var(--onix-txt-color) !important;
+}
+
+.card-img-top {
+  margin-top: 2em;
+}
+
+.card {
+  border: 0;
+}
+
+.intro-card {
+  transition: transform 0.2s ease;
+  border: 0;
+}
+
+.intro-card:hover {
+  transform: scale(1.05);
+}
+
+.col-lg-6 {
+  margin-top: 2em;
+}
 
 /* Gallery cards */
 
@@ -556,13 +560,15 @@
 //  color: var(--onix-txt-color) !important;
 //}
 //
+
 /* ensure images stay within the column bounds*/
 img {
   max-width: 100%;
 }
+
 //
 ///* change color of Twitter logo */
 //i.fa-twitter-square:before {
 //  color: #333;
 //}
-//
+

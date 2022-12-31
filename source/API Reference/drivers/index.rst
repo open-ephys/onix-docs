@@ -2,6 +2,9 @@
 
 Driver Translators
 #######################################
+
+:Code: https://github.com/open-ephys/liboni/tree/main/api/liboni/drivers
+
 There are a many existing `device drivers
 <https://en.wikipedia.org/wiki/Device_driver>`_ that support hardware for data
 acquisition. Some of these drivers can be used as a backend for ONI-compliant
@@ -16,10 +19,10 @@ into a user space library that can be consumed by ONI-compliant APIs. These are
 loaded by the API at runtime and therefore are separate from the API both in
 terms of development and licensing requirements.
 
-ONIX driver translator implementations are documented here. Have a
-look at the following links for more information on each. :ref:`Get in touch
-<support>` if you want to write a driver translator to give your hardware
-automatic access to our API and software.
+ONIX driver translator implementations are documented here. Have a look at the
+following links for more information on each. :ref:`Get in touch <support>` if
+you want to write a driver translator to give your hardware automatic access to
+our API and software.
 
 .. toctree::
     :maxdepth: 1

@@ -2,7 +2,6 @@
 
 What is ONIX?
 ==========================================
-
 ONIX is a data acquisition system for neuroscience, composed of various pieces
 of hardware. ONIX differs from other acquisition systems in three major points:
 

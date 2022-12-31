@@ -15,7 +15,7 @@ Getting Started
 Understanding the System
 --------------------------------
 - Read :ref:`'What is ONIX?' <what_is_onix>` for a high-level introduction to
-  this hardware and how it differs from classic neuroscience acquisition
+  this hardware and how it differs from other neuroscience acquisition
   systems.
 - Our :ref:`faq` contains answers to general questions about the system.
 - See the :ref:`hardware_guide` for a description of each ONIX hardware component and decide which you will need.
