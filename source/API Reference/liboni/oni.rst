@@ -162,6 +162,8 @@ Frame
             Free a frame and underlying resources allocated by
             :func:`oni_create_frame` or :func:`oni_read_frame`.
 
+.. _oni_h_functions:
+
 Functions
 --------------------------------------------
 The functions in :ref:`oni.h` form the basis of the API and are all that is
@@ -195,7 +197,7 @@ needed during the development of user-facing software.
     :param drv_name: A string specifying the device driver used by
         the context to control hardware. This string corresponds a compiled
         implementation of :ref:`onidriver.h` that has the name
-        ``onidriver_<drv_name>.<so/dll>``. If this library is not on the
+        ``libonidriver_<drv_name>.<so/dll>``. If this library is not on the
         dynamic library search path, the function will error.
     :return: An opaque handle to the newly created context if
         successful. Otherwise it shall return ``NULL`` and set ``errno`` to
@@ -414,7 +416,7 @@ needed during the development of user-facing software.
 
 .. function:: void oni_version(int *major, int *minor, int *patch)
 
-    Report the oepcie library version. This library uses `Semantic Versioning
+    Report the liboni library version. This library uses `Semantic Versioning
     <https://semver.org/>`_. Briefly, the major revision is for incompatible API
     changes. Minor version is for backwards compatible changes. The patch
     number is for backwards-compatible bug fixes. When this function returns,
@@ -423,6 +425,16 @@ needed during the development of user-facing software.
     :param major: major library version for incompatible API changes
     :param minor: minor library version for backwards compatible changes.
     :param patch: patch number for backwards-compatible bug fixes.
+
+.. function:: oni_driver_info_t* oni_get_driver_info(const oni_ctx ctx)
+    
+    Reports a :ref:`oni_driver_info_t` structure containing the name of the 
+    driver translator loaded for a given context as well as its semantic versioning
+    version.
+
+    :param ctx: :type:`oni_ctx` context of which the loaded driver translator information
+        will be reported
+    :return: A pointer to a constant structure containing the driver translator information
 
 .. function:: const char *oni_error_str(int err)
 
