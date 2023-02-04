@@ -384,31 +384,97 @@ Return codes for functions in the API.
 Hardware Registers
 ---------------------------------------
 These constants are used by :ref:`drivers` to implement the ONI-specified
-register programming interface.
-
-.. todo:: Document
+register programming interface. These correspond to the hardware registers
+described in the specification and are used by the driver translators
+as the underlying hardware endpoint for functions such as :func:`oni_get_opt`, 
+:func:`oni_set_opt`, :func:`oni_read_reg` and :func:`oni_write_reg`
 
 .. enum:: oni_config_t
 
-.. macro:: ONI_CONFIG_DEV_IDX
+    .. macro:: ONI_CONFIG_DEV_IDX
 
-.. macro:: ONI_CONFIG_REG_ADDR
+        ( ``0``)
+        Device register access: Target device index
 
-.. macro:: ONI_CONFIG_REG_VALUE
+    .. macro:: ONI_CONFIG_REG_ADDR
 
-.. macro:: ONI_CONFIG_RW
+        ( ``1``)
+        Device register access: Target adress
 
-.. macro:: ONI_CONFIG_TRIG
+    .. macro:: ONI_CONFIG_REG_VALUE
 
-.. macro:: ONI_CONFIG_RUNNING
+        ( ``2``)
+        Device register access: Register value
 
-.. macro:: ONI_CONFIG_RESET
+    .. macro:: ONI_CONFIG_RW
 
-.. macro:: ONI_CONFIG_SYSCLKHZ
+        ( ``3``)
+        Device register access: Select read ``0`` or write ``1`` operation
 
-.. macro:: ONI_CONFIG_ACQCLKHZ
+    .. macro:: ONI_CONFIG_TRIG
 
-.. macro:: ONI_CONFIG_RESETACQCOUNTER
+        ( ``4``)
+        Device register access: Operation start trigger (Write-only)
 
-.. macro:: ONI_CONFIG_HWADDRESS
+    .. macro:: ONI_CONFIG_RUNNING
+
+        ( ``5``)
+        Select acquisition running state. Accessed through :macro:`ONI_OPT_RUNNING`
+    .. macro:: ONI_CONFIG_RESET
+
+        ( ``6``)
+        Reset operation and refresh device map trigger. Accessed through :macro:`ONI_OPT_RESET` (Write-only)
+
+    .. macro:: ONI_CONFIG_SYSCLKHZ
+
+        ( ``7``)
+        ONI Host system clock speed, reported to :macro:`ONI_OPT_SYSCLKHZ` (Read-only)
+
+    .. macro:: ONI_CONFIG_ACQCLKHZ
+
+        ( ``8``)
+        ONI Host acquisition clock speed, reported to :macro:`ONI_OPT_ACQCLKHZ` (Read-only)
+
+    .. macro:: ONI_CONFIG_RESETACQCOUNTER
+
+        ( ``9``)
+        Trigger a reset of the acquisition counter. Accessed through :macro:`ONI_OPT_RESETACQCOUNTER` (Write-only)
+
+    .. macro:: ONI_CONFIG_HWADDRESS
+
+        ( ``10``)
+        The address of the host hardware within the acqusition computer. Accessed through :macro:`ONI_OPT_HWADDRESS`
+
+.. _oni_driver_info_t:
+
+Driver information
+--------------------------------
+.. struct:: oni_driver_info_t
+
+    This structure contains information about the loaded :ref:`driver translator <drivers>`.
+
+    .. member:: const char* name
+
+        Name of the driver translator
+
+    .. member:: const int major
+
+        Major version component, according to `Semantic versioning <https://semver.org/>`_.
+
+    .. member:: const int minor
+
+        Minor version component
+
+    .. member:: const int patch
+
+        Patch version component
+
+    .. member:: const char* pre_release
+
+        Pre-release optional string. Can be ``NULL``.
+
+
+
+
+
 
