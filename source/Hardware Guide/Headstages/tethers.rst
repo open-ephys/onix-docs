@@ -69,7 +69,7 @@ Headstage Side
 __________________________
 
 Required Tools and Materials
-    - Solder jig: A copper-clad board with X.FL connectors soldered to it
+    - Solder jig: A copper-clad board with X.FL connectors (`X.FL-R-SMT-1(80) <https://www.hirose.com/en/product/p/CL0331-0701-8-80>`__) soldered to it
       to that hold X.FL sockets in place during soldering.
     - 5-minute epoxy
     - Small and sharp wire cutters
@@ -82,7 +82,7 @@ Required Tools and Materials
 
 Cable Components
     - Coaxial cable segment (these instructions uses Axon Cable PCX40K10AK)
-    - Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket
+    - Hirose `X.FL-PR-SMT1-2(80) <https://www.hirose.com/product/p/CL0331-0713-7-80>`__ X.FL coaxial socket
     - 2 mm segment of 1.5 mm OD, 0.5 mm ID silicone tubing for strain relief. The
       easiest and cheapest way to get this is by striping the silicon jacket
       from a 24 AWG flexible hookup wire.
