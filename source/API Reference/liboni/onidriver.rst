@@ -7,17 +7,17 @@ Definitions and function prototypes for implementing :ref:`drivers`.
 
 .. _onidriver_types:
 
-Constants and types
+Constants and Types
 -------------------------
 
 .. enum:: oni_read_stream_t
 
-    Represent the available data streams from device to computer
+    Represent the available data streams from the device to the host
 
     .. macro:: ONI_READ_STREAM_DATA
 
         (``0``)
-        High-speed data stream to computer
+        High-speed data stream to host
 
     .. macro:: ONI_READ_STREAM_SIGNAL
 
@@ -26,26 +26,28 @@ Constants and types
 
 .. enum:: oni_write_stream_t
 
-    Represent the available data streams from computer to device
+    Represent the available data streams from the host to the device
 
     .. macro:: ONI_WRITE_STREAM_DATA
 
         (``0``)
-        High-speed data stream from computer
+        High-speed data stream from host
 
 .. type:: void* oni_driver_ctx
 
-    A handle to a driver translator context. Each driver creates its own context
-    storing all state variables required for its functionality. This common type
-    is used to interchange this context between the common API, which does not needed
-    to know its contents, and the driver translator implementation.
+    A handle to a driver translator context. Each driver creates its own
+    context storing all state variables required for its functionality. This
+    common type is used to interchange this context between the common API,
+    which does not needed to know its contents, and the driver translator
+    implementation.
 
 .. _onidriver_h_functions:
 
 Functions
 ------------------------
-All driver translators must implement these functions. They are called internally by the 
-public interface decribed in :ref:`oni.h` and perform direct hardware access as needed.
+All driver translators must implement these functions. They are called
+internally by the public interface decribed in :ref:`oni.h` and perform direct
+hardware access as needed.
 
 .. alias::  oni_driver_create_ctx
             oni_driver_destroy_ctx

@@ -2,6 +2,9 @@
 
 clroni
 ########################
+:Source Code:   `github.com/open-ephys/liboni/api/clroni <https://github.com/open-ephys/liboni/tree/main/api/clroni>`_
+:License:       `MIT <https://en.wikipedia.org/wiki/MIT_License>`__
+
 CLR/.NET bindings for :ref:`liboni`. Documentation for the public interface is
 provided below:
 
