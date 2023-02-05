@@ -246,137 +246,137 @@ Return codes for functions in the API.
 .. enum:: @oni_error_enum
 
     .. macro:: ONI_ESUCCESS
-    
+
         (``0``)
         Success
-    
+
     .. macro:: ONI_EPATHINVALID
-    
+
         (``-1``)
         Invalid stream path, fail on open
-    
+
     .. macro:: ONI_EDEVID
-    
+
         (``-2``)
         Invalid device ID
-    
+
     .. macro:: ONI_EDEVIDX
-    
+
         (``-3``)
         Invalid device index
-    
+
     .. macro:: ONI_EWRITESIZE
-    
+
         (``-4``)
         Data size is not an integer multiple of the write size for the designated device
-    
+
     .. macro:: ONI_EREADFAILURE
-    
+
         (``-5``)
         Failure to read from a stream/register
-    
+
     .. macro:: ONI_EWRITEFAILURE
-    
+
         (``-6``)
         Failure to write to a stream/register
-    
+
     .. macro:: ONI_ENULLCTX
-    
+
         (``-7``)
         Attempt to use a NULL context
-    
+
     .. macro:: ONI_ESEEKFAILURE
-    
+
         (``-8``)
         Failure to seek on stream
-    
+
     .. macro:: ONI_EINVALSTATE
-    
+
         (``-9``)
         Invalid operation for the current context run state
-    
+
     .. macro:: ONI_EINVALOPT
-    
+
         (``-10``)
         Invalid context option
-    
+
     .. macro:: ONI_EINVALARG
-    
+
         (``-11``)
         Invalid function arguments
-    
+
     .. macro:: ONI_ECOBSPACK
-    
+
         (``-12``)
         Invalid COBS packet
-    
+
     .. macro:: ONI_ERETRIG
-    
+
         (``-13``)
         Attempt to trigger an already triggered operation
-    
+
     .. macro:: ONI_EBUFFERSIZE
-    
+
         (``-14``)
         Supplied buffer is too small
-    
+
     .. macro:: ONI_EBADDEVTABLE
-    
+
         (``-15``)
         Badly formatted device table supplied by firmware
-    
+
     .. macro:: ONI_EBADALLOC
-    
+
         (``-16``)
         Bad dynamic memory allocation
-    
+
     .. macro:: ONI_ECLOSEFAIL
-    
+
         (``-17``)
         File descriptor close failure (check errno)
-    
+
     .. macro:: ONI_EREADONLY
-    
+
         (``-18``)
         Attempted write to read only object (register, context option, etc)
-    
+
     .. macro:: ONI_EUNIMPL
-    
+
         (``-19``)
         Specified, but unimplemented, feature
-    
+
     .. macro:: ONI_EINVALREADSIZE
-    
+
         (``-20``)
         Block read size is smaller than the maximal read frame size
-    
+
     .. macro:: ONI_ENOREADDEV
-    
+
         (``-21``)
         Frame read attempted when there are no readable devices in the device table
-    
+
     .. macro:: ONI_EINIT
-    
+
         (``-22``)
         Hardware initialization failed
-    
+
     .. macro:: ONI_EWRITEONLY
-    
+
         (``-23``)
         Attempted to read from a write only object (register, context option, etc)
-    
+
     .. macro:: ONI_EINVALWRITESIZE
-    
+
         (``-24``)
         Write buffer pre-allocation size is smaller than the maximal write frame size
-    
+
     .. macro:: ONI_ENOTWRITEDEV
-    
+
         (``-25``)
         Frame allocation attempted for a non-writable device
-    
+
     .. macro:: ONI_EDEVIDXREPEAT
-    
+
         (``-26``)
         Device table contains repeated device indices
 
@@ -384,31 +384,91 @@ Return codes for functions in the API.
 Hardware Registers
 ---------------------------------------
 These constants are used by :ref:`drivers` to implement the ONI-specified
-register programming interface.
-
-.. todo:: Document
+register programming interface. These correspond to the hardware registers
+described in the specification and are used by the driver translators
+as the underlying hardware endpoint for functions such as :func:`oni_get_opt`,
+:func:`oni_set_opt`, :func:`oni_read_reg` and :func:`oni_write_reg`
 
 .. enum:: oni_config_t
 
-.. macro:: ONI_CONFIG_DEV_IDX
+    .. macro:: ONI_CONFIG_DEV_IDX
 
-.. macro:: ONI_CONFIG_REG_ADDR
+        ( ``0``)
+        Device register access: Target device index
 
-.. macro:: ONI_CONFIG_REG_VALUE
+    .. macro:: ONI_CONFIG_REG_ADDR
 
-.. macro:: ONI_CONFIG_RW
+        ( ``1``)
+        Device register access: Target adress
 
-.. macro:: ONI_CONFIG_TRIG
+    .. macro:: ONI_CONFIG_REG_VALUE
 
-.. macro:: ONI_CONFIG_RUNNING
+        ( ``2``)
+        Device register access: Register value
 
-.. macro:: ONI_CONFIG_RESET
+    .. macro:: ONI_CONFIG_RW
 
-.. macro:: ONI_CONFIG_SYSCLKHZ
+        ( ``3``)
+        Device register access: Select read ``0`` or write ``1`` operation
 
-.. macro:: ONI_CONFIG_ACQCLKHZ
+    .. macro:: ONI_CONFIG_TRIG
 
-.. macro:: ONI_CONFIG_RESETACQCOUNTER
+        ( ``4``)
+        Device register access: Operation start trigger (Write-only)
 
-.. macro:: ONI_CONFIG_HWADDRESS
+    .. macro:: ONI_CONFIG_RUNNING
 
+        ( ``5``)
+        Select acquisition running state. Accessed through :macro:`ONI_OPT_RUNNING`
+    .. macro:: ONI_CONFIG_RESET
+
+        ( ``6``)
+        Reset operation and refresh device map trigger. Accessed through :macro:`ONI_OPT_RESET` (Write-only)
+
+    .. macro:: ONI_CONFIG_SYSCLKHZ
+
+        ( ``7``)
+        ONI Host system clock speed, reported to :macro:`ONI_OPT_SYSCLKHZ` (Read-only)
+
+    .. macro:: ONI_CONFIG_ACQCLKHZ
+
+        ( ``8``)
+        ONI Host acquisition clock speed, reported to :macro:`ONI_OPT_ACQCLKHZ` (Read-only)
+
+    .. macro:: ONI_CONFIG_RESETACQCOUNTER
+
+        ( ``9``)
+        Trigger a reset of the acquisition counter. Accessed through :macro:`ONI_OPT_RESETACQCOUNTER` (Write-only)
+
+    .. macro:: ONI_CONFIG_HWADDRESS
+
+        ( ``10``)
+        The address of the host hardware within the acqusition computer. Accessed through :macro:`ONI_OPT_HWADDRESS`
+
+.. _oni_driver_info_t:
+
+Driver Information
+--------------------------------
+.. struct:: oni_driver_info_t
+
+    This structure contains information about the loaded :ref:`driver translator <drivers>`.
+
+    .. member:: const char* name
+
+        Name of the driver translator
+
+    .. member:: const int major
+
+        Major version component, according to `Semantic versioning <https://semver.org/>`_.
+
+    .. member:: const int minor
+
+        Minor version component, according to `Semantic versioning <https://semver.org/>`_.
+
+    .. member:: const int patch
+
+        Patch version component, according to `Semantic versioning <https://semver.org/>`_.
+
+    .. member:: const char* pre_release
+
+        Pre-release optional string. Can be ``NULL``.

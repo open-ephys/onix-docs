@@ -12,17 +12,21 @@ APIs if they provide some means to support the required ONI communication
 channels. Have a look at the `ONI Spec <https://github.com/open-ephys/ONI>`_
 for specifications of these channels.
 
-An ONI hardware driver translator implements `onidriver.h
-<https://github.com/open-ephys/liboni/blob/main/api/liboni/onidriver.h>`_ to
-convert, potentially proprietary, device drivers (and corresponding hardware)
-into a user space library that can be consumed by ONI-compliant APIs. These are
-loaded by the API at runtime and therefore are separate from the API both in
-terms of development and licensing requirements.
+An ONI hardware driver translator implements :ref:`onidriver.h` to convert,
+potentially proprietary, device drivers (and corresponding hardware) into a
+user space library that can be consumed by ONI-compliant APIs. These are loaded
+by the API at runtime and therefore are separate from the API both in terms of
+development and licensing requirements.
 
-ONIX driver translator implementations are documented here. Have a look at the
-following links for more information on each. :ref:`Get in touch <support>` if
-you want to write a driver translator to give your hardware automatic access to
-our API and software.
+.. tip:: See the :ref:`making_drivers` page for detailed information on creating your
+    own driver translator to allow hardware to work with
+    :ref:`liboni` and existing :ref:`ONIX software <software>`. Feel
+    free to :ref:`get in touch <support>` if you want to write a
+    driver translator to give your hardware automatic access to our
+    API and software.
+
+ONIX driver translator implementations are documented here. Have a
+look at the following links for more information on each.
 
 .. toctree::
     :maxdepth: 1

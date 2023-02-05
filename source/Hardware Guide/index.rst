@@ -5,6 +5,7 @@
 
 |hw_logo| Hardware Guide
 ==========================================
+ONIX consists of several hardware devices:
 
 .. attention:: ONIX hardware version compatibility
     is documented on `this google sheet
@@ -23,9 +24,6 @@
     Adapters & EIBs/index
     Datasheets/index
     Connections & Cables/index
-
-
-ONIX consists of several hardware devices:
 
 :ref:`pcie_host`
 -----------------------------------------
