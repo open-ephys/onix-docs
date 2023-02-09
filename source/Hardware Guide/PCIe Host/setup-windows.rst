@@ -13,9 +13,10 @@ Insert the PCIe Host Module
        :align: center
        :width: 60%
 
-   .. note:: You do not need to plug the ATX power supply into connector on
-        the board (although doing so won't hurt). The PCIe slot itself provides
-        adequate power to operate the host board.
+   .. important:: Although the board will power on without it, 
+        you must plug a single PCIe power output from the 
+        computer's ATX power supply into the board to ensure 
+        stable operation.
 
 #. Boot the computer.
 
