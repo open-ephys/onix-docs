@@ -23,7 +23,7 @@ Overview
 The **ONIX Breakout Board** allows bench access to the IO provided by the
 :ref:`pcie_host`.
 
-.. figure:: /_static/images/breakout/breadboard_annotated.jpg
+.. figure:: /_static/images/breakout/breakout_edited_callouts.png
     :align: center
 
     ONIX Breakout Board v1.5.
@@ -43,7 +43,7 @@ The Breakout Board provides access to the following IO:
 Additionally, it has the following features:
 
 - Lots of indication LEDs
-- 6 buttons for marking experimental events for communication and programming.
+- 6 buttons for marking experimental events for or triggering software actions.
 - Rugged M6 and 1/4-20 mounting holes for both metric and imperial optical
   tables
 - 19" rack compatibility
