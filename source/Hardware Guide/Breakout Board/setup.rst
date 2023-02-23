@@ -5,14 +5,22 @@ Breakout Board Guide
 
 Setup
 -------------------------
-The Breakout Board provides easy access to signals to and from the PCIe host.
-Each PCIe host can be connected to its own breakout board through  the
-following connections:
+The Breakout Board provides access to signals to and from the PCIe host. Each
+PCIe host is connected to a breakout board using the following connections:
 
-#. Digital and Analog I/O: A single shrunk delta ribbon (SDR) cable is used for
-   all auxliary IO and providew power to the Breakout Board.
-#. Headstage links: A single MMCX coaxial cable is used for each headstage port.
-#. High speed Clock A single MMCX caoxial cable is used for each clock signal.
+#. Digital and analog I/O (Required for breakout board operation): A single
+   shrunk delta ribbon (SDR) cable is used for all auxiliary IO and provide
+   power to the Breakout Board.
+#. Headstage links (Required for headstages): A single MMCX coaxial cable is
+   used for each headstage port.
+#. High speed clocks (Optional): A single MMCX caoxial cable is used for each
+   clock signal
+#. HARP (Optional): A 3.5mm audio jack
+#. Configuration (Optional): Micro USB used to update the breakout gateware.
+
+.. image:: /_static/images/breakout/breakout_host_connections_callouts.png
+    :align: center
+    :width: 60%
 
 .. image:: /_static/images/breakout/bb_cables.jpg
     :align: center
@@ -25,6 +33,7 @@ each of these signal lines are acquired.
     on a particular host board. For instance, :ref:`pcie_host` has two coaxial
     links, but the breakout board provides four. This is is by design. The breakout
     is designed to be compatible with future host hardware.
+
 
 SDR Cable
 ________________________
@@ -46,10 +55,6 @@ Plug in the SDR cable for analog and digital I/O.
      revisions. If the RGB LEDs remain off after plugging in the SDR cable,
      reset the Breakout Board by inserting a thin wire or screw driver into the
      small hole just below the 'Digital Out' marking to reset the onboard FPGA.
-
-     .. image:: /_static/images/breakout/reset_button.png
-        :width: 50%
-        :align: center
 
 MMCX Cables
 ________________________
@@ -89,8 +94,27 @@ LED color on the breakout board.
 
 Buttons
 _________________________
+Buttons can be used to log various experimental events and turn on and off the
+indication LEDs. The button state is sent with digital data to the PCIe Host.
+Pressing a button sends a single event per change in button state. Holding a
+button will not result in repeat presses as a keyboard would. Each button sets
+one bit in a 6-bit word. For exampled
 
-.. todo:: Document
+:000001:    Button 0 pressed (integer value 1)
+:100001:    Button 0 and button 5 pressed (integer value 33)
+:111111:    All buttons pressed (integer value 63)
+
+Additional, pressing button 0  will toggle indication LED power. This allows
+all LEDs to be completely turned off for light-sensitive experiments.
+
+.. figure:: /_static/images/breakout/buttons_labelled.png
+    :width: 60%
+    :align: center
+
+
+    Numbers show integer value transmitted to host from pressing each. The
+    first button also controls the illumination state of the indication LEDs on
+    the breakout board.
 
 Gateware
 -------------------------
