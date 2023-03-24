@@ -10,7 +10,7 @@ RHS2116
 Description
 *******************************************
 The **RHS2116** device acquires data and controls stimulation for an Intan
-`RHD2116 bioamplifier and stimulator chip
+`RHS2116 bioamplifier and stimulator chip
 <https://intantech.com/files/Intan_RHS2116_datasheet.pdf>`__.
 
 - Fixed sampling rate: 30193.236714975847 kHz/channel
@@ -144,7 +144,7 @@ Unmanaged Registers
 ------------------------------------------
 Direct, unmanaged read and write access is provided to the registers detailed
 in the `RHS2116 series datasheet
-<https://intantech.com/files/Intan_RHD2116_series_datasheet.pdf>`__.
+<https://intantech.com/files/Intan_RHS2116_series_datasheet.pdf>`__.
 
 - Registers are 32-bits wide
 - Addresses and functions are determined by the RHS2116 datasheet
