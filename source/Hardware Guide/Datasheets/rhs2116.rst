@@ -1,0 +1,251 @@
+.. _onidatasheet_rhs2116:
+
+RHS2116
+###########################################
+:Authors: Jonathan P. Newman
+:Version: 1
+:IO: Frame Source, Register Access
+:ONIX ID: 31
+
+Description
+*******************************************
+The **RHS2116** device acquires data and controls stimulation for an Intan
+`RHD2116 bioamplifier and stimulator chip
+<https://intantech.com/files/Intan_RHS2116_datasheet.pdf>`__.
+
+- Fixed sampling rate: 30193.236714975847 kHz/channel
+- Real-time control of stimulation sequences
+- Real-time control of many acqusition registers (e.g. filter settings,
+  artifact recovery parameters, etc.)
+
+Register Programming
+*******************************************
+
+Managed Registers
+------------------------------------------
+Managed register access is provided at offset 0x10000.
+
+.. list-table:: Managed Registers
+    :widths: auto
+    :header-rows: 1
+
+    * - Address
+      - Name
+      - Access
+      - Time of Effect
+      - POR Value
+      - Reset Action
+      - Description
+
+    * - 0x10000
+      - ENABLE
+      - R/W
+      - On Reset
+      - Implementation dependent, see hub documentation
+      - None
+      - The LSB is used to enable or disable the device data stream:
+
+        * 0x0: data output disabled
+        * 0x1: data output enabled
+
+    * - 0x10001
+      - MAXDELTAS
+      - R
+      - N/A
+      - Implementation dependent, see hub documentation
+      - None
+      - Maximum number of deltas in the delta table
+
+    * - 0x10002
+      - NUMDELTAS                   
+      - R/W
+      - Immediate
+      - 0
+      - None
+      - Number of deltas in the delta table. Valid values are 0-MAXDELTAS.
+
+    * - 0x10003
+      - DELTAIDXTIME
+      - W
+      - Immediate
+      - 0 
+      - None
+      - The delta table index and corresponding application delta application
+        time. Time value should increase monontonically with Index value.
+        SEQERROR will be set to '1' and headstage reset will be required, along
+        with corrected stimulus defintion, in order to apply stimuli.
+
+        * 32-bits: [index_9, index_8, ..., index_0, time_21, time_20, ..., time_0]
+        * index_x: The index of the delta table to program with Time and
+          DELTAPOLEN values.
+        * time_x: Time in units of stim_seq_clk_i cycles, following a trigger,
+          at which the DELTAPOLEN value[Index] is applied.
+
+    * - 0x10004
+      - DELTAPOLEN
+      - W
+      - Immediate
+      - 0
+      - None
+      - The polarity and enable vectors applied at time DELTATIMESAMPLES at
+        DELTAIDXANDTIME[index]
+
+        * 32 bits: [pol_15, pol_14, ..., pol_o, en_15, en_14, ..., en_0]
+        * pol_x = '0': channel x is negative, pol_x = '1': channel x is
+          positive
+        * en_x = '0': channel x is disabled, pol_x = '1': channel x is enabled
+
+    * - 0x10005
+      - SEQERROR
+      - R
+      - N/A
+      - 0
+      - 0
+      - Invalid sequence encountered, the device requires a reset with an
+        updated sequence definition.  Stimulation on all channels in disabled
+        until this occurs.
+
+
+    * - 0x10006
+      - TRIGGER
+      - W
+      - Immediate
+      - 0
+      - 0
+      - Writing 1 to this register will trigger a stimulation sequence for this
+        device.
+
+    * - 0x10007
+      - FASTSETTLESAMPLES
+      - R/W
+      - Immediate
+      - 10
+      - None
+      - Number of round-robbin samples to apply charge balance following the
+        conclusion of a stimulus pulse. 30 (1 msec) is the maximum. Typically
+        set the 2.5/f_{h} where f_{h} is upper analog bandwidth of setting.
+
+    * - 0x10008
+      - RESPECTSTIMACTIVE
+      - W
+      - Immediate
+      - 1
+      - None
+      - Determines when artifact recovery sequence is applied to this chip.
+
+        * 0x00: This device only cares about recovering from stimuli that it
+          itself creates.
+        * 0x01: This device will apply the LPB version of the low pass filter
+          if stim_active_i goes high, regardless of whether this device created
+          the stimulus.
+
+
+Unmanaged Registers
+------------------------------------------
+Direct, unmanaged read and write access is provided to the registers detailed
+in the `RHS2116 series datasheet
+<https://intantech.com/files/Intan_RHD2116_series_datasheet.pdf>`__.
+
+- Registers are 32-bits wide
+- Addresses and functions are determined by the RHS2116 datasheet
+- Registers have various designations indicating when the are applied. The
+  table below uses the following labels to define when a register change takes
+  effect.
+
+  RESET 
+    Register value is applied after a full reset
+  
+  RT (Real-time)
+    Register value can be changed during operation. There is worst-case
+    delay of 2 SPI cycles for the application to occur.
+  
+  SEQ (Sequence) 
+    Register programming is handled by the internal stimulus sequencer,
+    which itself is configured using managed registers.  These should not be
+    manipulated externally.
+
+.. csv-table:: Unmanaged Registers
+   :file: ./rhs2116_config_defaults.csv
+   :header-rows: 1
+
+.. _onidatasheet_rhs2116_d2h:
+
+Device To Host Data Frames
+******************************************
+Each frame transmitted to the host consists of a 16 low-noise AC ephys samples
+and 16 high-voltage DC samples for monitoring compliance and stimulation
+waveforms.
+
+.. wavedrom::
+
+    {
+        reg: [
+          {bits: 64, name: "Acquisition Clock Counter", type: 0},
+          {bits: 32, name: "Device Address", type: 0},
+          {bits: 32, name: "Data Size", type: 0, attr: 74},
+
+          {bits: 64, name: "Hub Clock Counter", type: 3},
+
+          {bits: 16, name: "Channel 0 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 1 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 2 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 3 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 4 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 5 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 6 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 7 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 8 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 9 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 10 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 11 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 12 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 13 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 14 AC Voltage", type: 4},
+          {bits: 16, name: "Channel 15 AC Voltage", type: 4},
+
+          {bits: 6},
+          {bits: 10, name: "Channel 0 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 1 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 2 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 3 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 4 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 5 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 6 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 7 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 8 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 9 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 10 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 11 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 12 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 13 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 14 DC Voltage", type: 5},
+          {bits: 6},
+          {bits: 10, name: "Channel 15 DC Voltage", type: 5},
+
+          {bits: 16},
+
+        ],
+        config: {bits: 720, lanes: 23, vflip: true, hflip: true, fontsize: 11}
+    }
+
+.. _onidatasheet_rhs2116_h2d:
+
+Host To Device Data Frames
+******************************************
+This device does not accept input frames. All write attempts will fail with an
+error.
+

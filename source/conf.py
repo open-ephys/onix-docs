@@ -121,7 +121,7 @@ html_theme_options = {
     'show_toc_level': 1,
     'twitter_url': 'https://twitter.com/openephys',
     'github_url': 'https://github.com/open-ephys/onix-docs',
-    'footer_items': ['copyright', 'sphinx-version'],
+    'footer_end': ['copyright', 'sphinx-version'],
     'navbar_end': ['navbar-icon-links'],
     #'announcement': 'These docs are a work in progress.',
 }
@@ -159,3 +159,5 @@ def rstjinja(app, docname, source):
 def setup(app):
     app.connect('source-read', rstjinja)
     app.add_js_file('copyURLToClipboard.js')
+
+panels_add_bootstrap_css = False

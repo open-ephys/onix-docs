@@ -3,6 +3,7 @@
 Load Test Device
 ###########################################
 :Authors: Jonathan P. Newman
+:Version: 1
 :IO: Frame Source, Register Access
 :ONIX ID: 27
 :ONIX Hubs: This device is used for real-world bandwidth and latency testing.

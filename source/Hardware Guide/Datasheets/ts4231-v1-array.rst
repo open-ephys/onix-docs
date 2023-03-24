@@ -1,8 +1,9 @@
 .. _onidatasheet_ts4231_v1_array:
 
-TS4231 Array for V1 Base Stations
+TS4231 Array for Vive V1 Base Stations
 ###########################################
 :Authors: Jonathan P. Newman
+:Version: 1
 :IO: Frame Source, Register Access
 :ONIX ID: 25
 :ONIX Hubs: :ref:`headstage_64`, :ref:`headstage_neuropix1`
@@ -12,7 +13,7 @@ Description
 The **TS4231 Array for V1 Base Stations**  ONIX device is a localization unit
 that provides 3D position information. At is core, this device comprises an
 array of optical to digital converters that work with both V1 and V2 ("Index")
-and Steam/HTC base stations:
+and Steam/HTC/Vive base stations:
 
 - `TS4231 <https://triadsemi.com/product/ts4231/>`__ Optical to digital converter
 

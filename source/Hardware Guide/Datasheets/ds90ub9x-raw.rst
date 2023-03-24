@@ -3,6 +3,7 @@
 DS90UB9X Raw Device
 ###########################################
 :Authors: Aarón Cuevas López
+:Version: 1
 :IO: Frame Source, Register Access
 :ONIX ID: 24
 :ONIX Hubs: :ref:`pcie_host`

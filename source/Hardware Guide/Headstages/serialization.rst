@@ -78,7 +78,7 @@ The `DS90UB933 <https://www.ti.com/product/DS90UB933-Q1>`_/`DS90UB934
 <https://www.ti.com/product/DS90UB934-Q1>`_ are a coaxial SERDES pair used on
 several ONIX headstages and host modules:
 
-- :ref:`headstage_64` (DS90UB933 Serilizer)
+- :ref:`headstage_64` (DS90UB933 Serializer)
 - :ref:`headstage_neuropix1` (DS90UB933 Serilizer)
 - :ref:`pcie_host` (DS90UB934 Deserilizer)
 
@@ -291,26 +291,6 @@ along with a status register for reporting the validity of read and write operat
         text:'Wishbone over backchannel status register',
         }
 
-The coarse-grained state machine for this translation is as follows:
-
-.. graphviz::
-
-    digraph {
-        rankdir=LR;
-        size="8,5"
-        "IDLE" -> "WRITE" [label = "cyc,we"] ;
-        "IDLE" -> "RDREQ" [label = "cyc,!we"];
-        "WRITE" -> "WRITE" [label = "n < 4"];
-        "WRITE" -> "STAT0";
-        "RDREQ" -> "STAT0";
-        "STAT0" -> "WAIT" [label = "we"];
-        "STAT0" -> "READ" [label = "!we, !err"];
-        "STAT0" -> "WAIT" [label = "!we, err"];
-        "READ" -> "READ" [label = "n < 4"];
-        "READ" -> "STAT1" ;
-        "STAT1" -> "WAIT" ;
-        "WAIT" -> "IDLE" [label = "!cyc"];
-       }
 
 An example write sequence on this bus is given below. The wishbone bus drives
 an I2C sequence that is interpreted on the headstage and used to recreate the
@@ -472,3 +452,24 @@ wishbone signals locally.
 ..             - reg_rx_o.err <= '0';
 ..             - if reg_tx.cyc = 0
 ..                 goto IDLE
+.. 
+.. The coarse-grained state machine for this translation is as follows:
+.. 
+.. .. graphviz::
+.. 
+..     digraph {
+..         rankdir=LR;
+..         size="8,5"
+..         "IDLE" -> "WRITE" [label = "cyc,we"] ;
+..         "IDLE" -> "RDREQ" [label = "cyc,!we"];
+..         "WRITE" -> "WRITE" [label = "n < 4"];
+..         "WRITE" -> "STAT0";
+..         "RDREQ" -> "STAT0";
+..         "STAT0" -> "WAIT" [label = "we"];
+..         "STAT0" -> "READ" [label = "!we, !err"];
+..         "STAT0" -> "WAIT" [label = "!we, err"];
+..         "READ" -> "READ" [label = "n < 4"];
+..         "READ" -> "STAT1" ;
+..         "STAT1" -> "WAIT" ;
+..         "WAIT" -> "IDLE" [label = "!cyc"];
+..        }

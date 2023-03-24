@@ -3,6 +3,7 @@
 FMC Host Clock Output Device
 ###########################################
 :Authors: Jonathan P. Newman
+:Version: 1
 :IO: Register Access
 :ONIX ID: 22
 :ONIX Hubs: :ref:`pcie_host`

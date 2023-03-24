@@ -3,6 +3,7 @@
 HS64 Optical Stimulator
 ###########################################
 :Authors: Jie (Jack) Zhang & Jonathan P. Newman
+:Version: 1
 :IO: Register Access
 :ONIX ID: 5
 :ONIX Hubs: :ref:`headstage_64`

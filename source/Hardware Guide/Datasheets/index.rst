@@ -19,11 +19,13 @@ available in the ONIX system.
     fmc-link-control
     bno055
     rhd2164
+    rhs2116
     estim-hs64
     ostim-hs64
     ts4231-v1-array
     neuropixels-v1
     ds90ub9x-raw
+    test-a
 ..
     TODO:
     ts4231-v2-array    = 21

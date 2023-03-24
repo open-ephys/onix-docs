@@ -3,6 +3,7 @@
 FMC Host Analog IO Device
 ###########################################
 :Authors: Jonathan P. Newman
+:Version: 1
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 22
 :ONIX Hubs: :ref:`pcie_host`

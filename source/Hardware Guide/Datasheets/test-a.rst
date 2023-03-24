@@ -1,20 +1,21 @@
-.. _onidatasheet_memory-usage:
+.. _onidatasheet_testa:
 
-Memory Usage Monitor
+Test A
 ###########################################
-:Authors: Aarón Cuevas López
-:Version: 1
+:Authors: Jonathan P. Newman
+:Version: 2
 :IO: Frame Source, Register Access
-:ONIX ID: 28
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX ID: 10
 
 Description
 *******************************************
-The **Memory Usage Monitor** produces periodic samples that contain information
-about data buffer memory status. This device is useful for monitoring
-if frames are being cleared fast enough by the host PC to prevent real-time
-delays or overflows. Ideally, buffering should never be used and the memory
-usage should remain at 0.
+**Test A** is a simple device that is used for testing during development.
+
+- Fixed frame rate
+- Fixed frame size
+- Register-defined frame data payload
+
+.. _onidatasheet_testa_reg:
 
 Register Programming
 *******************************************
@@ -43,28 +44,34 @@ Register Programming
         * 0x1: data output enabled
 
     * - 0x01
-      - CLK_DIV
+      - MESSAGE
       - R/W
-      - On Reset
-      - CLK_HZ / HB_HZ where HB_HZ is a implementation dependent default rate
+      - Immediate
+      - 42
       - None
-      - Read frequency clock divider ratio. Minimum value is CLK_HZ / 10e6
+      - The first 16-bits of the MESSAGE word appears in the device to host frame
 
     * - 0x02
-      - CLK_HZ
+      - NUMTESTWORDS
       - R
       - N/A
-      - N/A
+      - Implementation dependent, see hub documentation
       - None
-      - The frequency parameter, CLK_HZ, used in the calculation of CLK_DIV.
+      - Read-only register indicating number of 16-bit words following MESSAGE
+        in each frame
 
     * - 0x03
-      - MEM_WORDS
+      - FRAMERATE
       - R
       - N/A
-      - N/A
+      - Implementation dependent, see hub documentation
       - None
-      - The total number of 32-bit words in memory.
+      - Read-only register indicating the fixed frame rate in Hz. 0 indicates
+        that the frame rate is unspecified (variable or upstream controlled).
+
+--
+
+.. _onidatasheet_testa_d2h:
 
 Device To Host Data Frames
 ******************************************
@@ -76,14 +83,20 @@ Each frame transmitted to the host is structured as follows:
         reg: [
           {bits: 64, name: "Acquisition Clock Counter", type: 0},
           {bits: 32, name: "Device Address", type: 0},
-          {bits: 32, name: "Data Size", type: 0, attr: 12},
+          {bits: 32, name: "Data Size", type: 0, attr: 36},
 
           {bits: 64, name: "Hub Clock Counter", type: 3},
 
-          {bits: 32, name: "Number of 32-bit Memory Words Used", type: 4}
+          {bits: 16, name: "MESSAGE", type: 4},
+
+          {bits: 16, name: "0", type: 4},
+          {bits: 16, name: "1", type: 4},
+          {bits: 16, name: "2", type: 4},
+          {bits: 16, name: "...", type: 4},
+          {bits: 16, name: "NUMTESTWORDS - 1", type: 4},
 
         ],
-        config: {bits: 224, lanes: 7, vflip: true, hflip: true, fontsize: 11}
+        config: {bits: 288, lanes: 9, vflip: true, hflip: true, fontsize: 11}
     }
 
 Host To Device Data Frames

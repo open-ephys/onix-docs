@@ -1,0 +1,129 @@
+Value,Name,Description,Application
+0000000011000100,BIAS,ADC buffer bias = 3 and MUX bias = 4 for >440 kS/s.,RESET
+0000010110001111,FORMAT,Conversion format,RESET
+0000000000000000,ZCHECK,Disable impedance check,RESET
+0000000000000000,DAC,Disable impedance check DAC,RESET
+0000000000010001,BW0,RH1: sel2: 0;  sel1: 17 -> upper cutoff 10KHz,RT
+0000000000010000,BW1,RH2: sel2: 0; sel1: 16 -> upper cutoff 10KHz,RT
+0011111000010000,BW2,RL_A: sel3: 1; sel2: 60; sel1: 16 -> lower cutoff 0.1 Hz,RT
+0000000000010001,BW3,RL_B: sel3: 0; sel2: 0; sel1L: 17 -> lower cutoff 250 Hz,RT
+1111111111111111,PWR,All on,RESET
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,SETTLE,No fast settle,SEQ
+0000000000000000,Reserved,N/A,v
+1111111111111111,LOWAB,Select between RL_A and RL_B for each amplifier. Default to RL_A.,SEQ
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+1010101010101010,STIMENA,Stim enable magic word A. Enabled.,RESET
+0000000011111111,STIMENB,Stim enable magic word B. Enabled.,RESET
+0000000010100110,STEPSZ,sel3: 0; sel2: 0; sel1: 38 -> 5 uA step,RESET
+0000000011101110,STIMBIAS,Pbias: 14; Nbias: 14 -> optimal for 5uA step,RESET
+0000000000000000,RECVOLT,Charge recovery target voltage,RESET
+0000000000001001,RECCUR,Charge recovery current limit. sel3: 0; sel2: 0; se11: 9 -> 1uA,RESET
+1111111111111111,DCPWR,All on,RESET
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,COMPLI,Compliance monitor; read-only,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,STIMON,Stimulation on/off. All off.,SEQ
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,STIMPOL,Stimulation polarity. All negative.,SEQ
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,RECOV,Charge recovery switch state. Open.,SEQ
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,LIMREC,Current-lmited charge recovery switch state. Open.,SEQ
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,FAULT,Fault current detector; read-only,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,NEG00,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG01,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG02,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG03,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG04,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG05,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG06,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG07,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG08,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG09,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG10,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG11,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG12,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG13,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG14,Negative Stimulation Current Magnitude,RT
+0000000000000000,NEG15,Negative Stimulation Current Magnitude,RT
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,POS00,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS01,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS02,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS03,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS04,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS05,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS06,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS07,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS08,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS09,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS10,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS11,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS12,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS13,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS14,Positive Stimulation Current Magnitude,RT
+0000000000000000,POS15,Positive Stimulation Current Magnitude,RT
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A
+0000000000000000,Reserved,N/A,N/A

@@ -3,6 +3,7 @@
 FMC Host Digital IO Device
 ###########################################
 :Authors: Jonathan P. Newman
+:Version: 1
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 18
 :ONIX Hubs: :ref:`pcie_host`
@@ -255,14 +256,14 @@ current digital input and user input state.
 
 |
 
-    Input Port State
-      8-bit input port state
+Input Port State
+    8-bit input port state
 
-    Link State
-      On/off state of each headstage link.
+Link State
+    On/off state of each headstage link.
 
-    Button State
-      Press state of each button.
+Button State
+    Press state of each button.
 
 .. _onidatasheet_fmc_digital_io_h2d:
 

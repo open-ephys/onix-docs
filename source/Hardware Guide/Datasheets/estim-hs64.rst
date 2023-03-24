@@ -3,6 +3,7 @@
 HS64 Electrical Stimulator
 ###########################################
 :Authors: Jie (Jack) Zhang & Jonathan P. Newman
+:Version: 1
 :IO: Register Access
 :ONIX ID: 4
 :ONIX Hubs: :ref:`headstage_64`
