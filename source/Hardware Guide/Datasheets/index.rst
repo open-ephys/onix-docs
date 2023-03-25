@@ -20,12 +20,13 @@ available in the ONIX system.
     bno055
     rhd2164
     rhs2116
+    rhs2116-trigger
     estim-hs64
     ostim-hs64
     ts4231-v1-array
     neuropixels-v1
     ds90ub9x-raw
-    test-a
+    test-0
 ..
     TODO:
     ts4231-v2-array    = 21

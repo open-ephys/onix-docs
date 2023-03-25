@@ -57,7 +57,7 @@ Managed register access is provided at offset 0x10000.
       - Maximum number of deltas in the delta table
 
     * - 0x10002
-      - NUMDELTAS                   
+      - NUMDELTAS
       - R/W
       - Immediate
       - 0
@@ -68,7 +68,7 @@ Managed register access is provided at offset 0x10000.
       - DELTAIDXTIME
       - W
       - Immediate
-      - 0 
+      - 0
       - None
       - The delta table index and corresponding application delta application
         time. Time value should increase monontonically with Index value.
@@ -104,7 +104,6 @@ Managed register access is provided at offset 0x10000.
       - Invalid sequence encountered, the device requires a reset with an
         updated sequence definition.  Stimulation on all channels in disabled
         until this occurs.
-
 
     * - 0x10006
       - TRIGGER
@@ -142,24 +141,28 @@ Managed register access is provided at offset 0x10000.
 
 Unmanaged Registers
 ------------------------------------------
-Direct, unmanaged read and write access is provided to the registers detailed
-in the `RHS2116 series datasheet
+Read and write access is provided to the registers detailed in the `RHS2116
+series datasheet
 <https://intantech.com/files/Intan_RHS2116_series_datasheet.pdf>`__.
 
 - Registers are 32-bits wide
 - Addresses and functions are determined by the RHS2116 datasheet
-- Registers have various designations indicating when the are applied. The
+- Reading and writing is not direct. Register values are stored in RAM and
+  applied when the SPI controller encounters them.
+- Registers have various designations indicating when they are applied. The
   table below uses the following labels to define when a register change takes
   effect.
 
-  RESET 
-    Register value is applied after a full reset
-  
+  RESET
+    Register value is applied after a reset.
+
   RT (Real-time)
-    Register value can be changed during operation. There is worst-case
-    delay of 2 SPI cycles for the application to occur.
-  
-  SEQ (Sequence) 
+    Register value can be changed during operation. There is worst-case delay
+    of ~400 usec for the application to occur. This occurs if there is
+    concurrent SEQ register applications, which take precidence. Typically, the
+    delay is ~170 usec.
+
+  SEQ (Sequence)
     Register programming is handled by the internal stimulus sequencer,
     which itself is configured using managed registers.  These should not be
     manipulated externally.

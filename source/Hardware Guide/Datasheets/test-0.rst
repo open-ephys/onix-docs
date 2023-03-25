@@ -1,6 +1,6 @@
-.. _onidatasheet_testa:
+.. _onidatasheet_test0:
 
-Test A
+Test0 Device
 ###########################################
 :Authors: Jonathan P. Newman
 :Version: 2
@@ -9,13 +9,13 @@ Test A
 
 Description
 *******************************************
-**Test A** is a simple device that is used for testing during development.
+The **Test0** device is  used for testing during development.
 
-- Fixed frame rate
-- Fixed frame size
-- Register-defined frame data payload
+- Fixed, hardware-defined frame rate
+- Fixed, hardware-defined frame size
+- Register-defined frame data 
 
-.. _onidatasheet_testa_reg:
+.. _onidatasheet_test0_reg:
 
 Register Programming
 *******************************************
@@ -71,7 +71,7 @@ Register Programming
 
 --
 
-.. _onidatasheet_testa_d2h:
+.. _onidatasheet_test0_d2h:
 
 Device To Host Data Frames
 ******************************************
