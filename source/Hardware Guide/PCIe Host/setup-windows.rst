@@ -35,7 +35,6 @@ Disable Secure Boot
 
 #. Turn off Secure Boot (Under 'Boot' change OS type to 'Other OS')
 
-
 Put Windows In Testing Mode
 ---------------------------------------
 
@@ -44,11 +43,12 @@ Put Windows In Testing Mode
     beta-test period, we will complete this process and the following steps
     will not be required.
 
-#. Download the :download:`OpenEphysTestDriver.cer
-   <../../_static/downloads/onix-driver-releases/riffa/OpenEphysTestDriver.cer>` testing certificate and double
-   click it.
 
-#. On the dialog, select **Install Certificate**.
+#. Download the :download:`OpenEphysTestDriver.cer
+   <../../_static/downloads/onix-driver-releases/riffa/OpenEphysTestDriver.cer>`
+   testing certificate and double click it.
+
+#. On the resulting dialog, select **Install Certificate**.
 
    .. figure:: /_static/images/pcie-host-windows/install-certificate.png
         :align: center
@@ -102,9 +102,10 @@ Install Device Driver
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
     need to be compiled from source.
 
-#. Download the :ref:`latest riffa driver <riffa_driver_download>` and unzip the archive.
-#. Open the folder and right right click the **riffa.inf** file.
-   Select **install** from the context menu.
+#. Download the :ref:`latest riffa driver <riffa_driver_download>` and unzip
+   the archive.
+#. In the extracted folder, right click the **riffa.inf** file.  Select
+   **install** from the context menu.
 #. Open the start menu and type **device manager** and click to open. You shoul
    see **RIFFA** in the device tree.
 
