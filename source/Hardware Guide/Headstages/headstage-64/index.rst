@@ -13,10 +13,10 @@ using :ref:`omnetics_adapter_64` or similar.
     :height: 200px
     :alt: ONIX Headstage-64 v1.3
 
-.. warning:: There are multiple headstage hardware revisions. The revision number is printed
-        on the PCB. You can use the `compatibility matrix
-        <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__
-        to find host hardware for your headstage.
+.. warning:: There are multiple headstage hardware revisions. The revision
+   number is printed on the PCB. You can use the `compatibility matrix
+   <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__
+   to find host hardware for your headstage.
 
 .. toctree::
     :maxdepth: 1
@@ -40,7 +40,7 @@ Features
     :alt: ONIX Headstage-64 v1.1.
 
 Data Link Serializaiton
-
+**********************************
 For details on data serialiation and headstage gateware, have a look at the
 :ref:`serialization` page, which describes how coax headstages operatate in
 general terms. Headstage-64 has the following coaxial link properties:
@@ -70,31 +70,34 @@ general terms. Headstage-64 has the following coaxial link properties:
 .. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
     headstage tethers
 
-Electrophysiology
-*******************
-headstage-64 v1.3 uses a 64-channel, BGA-packaged `Intan RHD2164
-<https://intantech.com/>`_ bioamplifier chip. This chip provides:
+Electrophysiology & Auxiliary Analog Inputs
+********************************************************
+headstage-64 uses a 64-channel, BGA-packaged `Intan RHD2164
+<https://intantech.com/>`_ bioamplifier chip. The chip is operated at a fixed
+sampling rate of 30 kHz/channel (including auxiliary channels). Specifically,
+it provides:
 
-- 64 high-bandwidth electrode channels which are exposed via a mezzanine
-  connector on the bottom of the headstage and can be used to record from most
-  types of passive probes (e.g. tetrodes, silicon probe arrays, tungsten
-  microwires, steel EEG wires, etc)
-- 3 auxiliary channels
+- 64x ephys channels  which are exposed via a mezzanine connector on the bottom
+  of the headstage and can be used to record from most passive probes (e.g.
+  tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc) -
+  3 auxiliary channels
+- 2x auxiliary channels (0.1-2.45V input range) are pinned out on the bottom of
+  the headstage to an unpopulated mezzanine connector and solder-able test
+  points
+- A 3rd auxilary analog channel is tied to the electrical stimulator's current
+  measurement circuit via a selectable solder jumper on the bottom of the
+  board. This jumper can be desoldered and instead a series resistor added to
+  allow low-frequency LFP recordings as per pg. 26 of the RHD2000 datasheet.
 
-  - AUX 1 and 2 are pinned out on the bottom of the headstage to an unpopulated
-    mezzanine connector and solder-able test points
-  - Channel 3 is tied to the electrical stimulator's current measurement
-    circuit via a selectable solder jumper on the bottom of the board. This
-    jumper can be desoldered and instead a series resistor added to allow
-    low-frequency LFP recordings as per pg. 26 of the RHD2000 datasheet.
-
-Each of these channels is sampled at 30 kHz.
+.. attention:: The headstage connector pinout (ADC input mapping, stimulation
+   connections, etc) is located on `this Google sheet
+   <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__.
 
 3D Position Tracking
 **********************
-.. warning:: TODO: Move this into its own page
+.. todo::  Move this into its own page
 
-headstage-64 v1.3 has four `SteamVR <https://store.steampowered.com/steamvr>`_
+headstage-64 has four `SteamVR <https://store.steampowered.com/steamvr>`_
 receivers for 3D position tracking.
 
 .. warning:: These receivers are compatible with both V1 and V2 ("index" branded)
@@ -131,7 +134,7 @@ to set up tracking,
 
 3D Orientation Tracking
 *************************
-headstage-64 v1.3 has a `BNO055
+headstage-64 has a `BNO055
 <https://www.bosch-sensortec.com/products/smart-sensors/bno055.html>`_ 9-axis
 inertial measurement unit that provides the absolute orientation of the
 headstage. This device produces orientation (and other) measurements are 100
@@ -152,14 +155,11 @@ Optical Stimulation
 ~~~~~~~~~~~~~~~~~~~~
 Optical stimulation is provided by a dual-channel, high-current LED driver.
 This driver can be used for LEDs or laser diodes. It provides 800-mA per
-channel.
-
-    :Q: Can I parallel the Cathode connections to increase max current?
-
-    :A: Yes. The maximum peak current in 1.6 Amps. However, if you deliver this
-        current for a significant amount of time, the headstage will shutdown due
-        to an over-temperture condition. The optical stimulator is only appropriate
-        for low duty-cycle pulse-type stimulation.
+channel. The cathodic connections can be paralleled to increase max current.
+The maximum peak current in 1.6 Amps. However, if you deliver this current for
+a significant amount of time, the headstage will shutdown due to an
+over-temperture condition. The optical stimulator is only appropriate for low
+duty-cycle pulse-type stimulation.
 
 Electical Stimulation
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -183,30 +183,10 @@ rails and can supply up to +/- 2.5 mA. The output current is defined as:
     ISTIM = 2.5mA  -> IMEAS = 2.25V
     ISTIM = -2.5mA -> IMEAS = 0.25V
 
-Schematic
-****************************
-.. image:: /_static/images/headstage-64_schematic.png
-   :align: center
-
-Gerber Files
-****************************
-.. image:: /_static/images/headstage-64_gerbers.png
-    :class: img-fluid
-
 Bill of Materials
 ****************************
-
 - The interactive BOM is `here <../../../_static/boms/headstage-64_1r3_bom.html>`__
 - The complete BOM (including vendor part numbers) is located on `this google
   sheet
   <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
 
-FPGA & Bottom Connector Pinouts
-************************************
-
-- The FPGA pinout is located on `this Google sheet
-  <https://docs.google.com/spreadsheets/d/1oJoQ89dJNL9LIiTrRnwJ_9KGiLzJ53Tju5Lfchuvsb0/edit#gid=2100166621>`__
-
-- The headstage connector pinout (ADC input mapping, stimulation connections,
-  etc) is located on `this Google sheet
-  <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__ the :ref:`support` page.
