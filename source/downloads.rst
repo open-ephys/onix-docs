@@ -95,20 +95,3 @@ Hardware Revision 1.4
 ..      - 2022.11.27
 ..      - Remove unessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
  
-.. _pcie_host_bootloader_download:
-
-PCIe Host Bootloader Firmware
-______________________________________________
-.. note:: Please see :ref:pcie_host_program_over_jtag for instructions on how
-    to use these files.
-
-.. list-table:: PCIe Host bootloader firmware images
-   :widths: 15 25 60
-   :header-rows: 1
-
-   * - Version
-     - Release Date
-     - Release Notes
-   * - :download:`0.2 <./_static/downloads/onix-gateware-images/pcie-host-bootloader/onix-pcie-host-bootloader_v0.2.zip>`
-     - 2022.11.27
-     - Initial release.
