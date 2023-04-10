@@ -5,12 +5,10 @@ OpticalStimulationDevice
 A `Bonsai sink <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 dual-channel :ref:`onidatasheet_ostim_hs64` device.
 
-:Inputs:    A ``boolean`` that triggers stimulus delivery
+:Input:    A ``boolean`` that triggers stimulus delivery
 
-            - True: deliver stimulus
-            - False: Do nothing
-
-:Outputs:   None
+           - True: deliver stimulus
+           - False: Do nothing
 
 .. raw:: html
 

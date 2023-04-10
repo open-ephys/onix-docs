@@ -9,13 +9,13 @@ RHS2116
 
 Description
 *******************************************
-The **RHS2116** device acquires data and controls stimulation for an Intan
+The **RHS2116** device acquires data and controls stimulation from an Intan
 `RHS2116 bioamplifier and stimulator chip
 <https://intantech.com/files/Intan_RHS2116_datasheet.pdf>`__.
 
 - Fixed sampling rate: 30193.236714975847 kHz/channel
 - Real-time control of stimulation sequences
-- Real-time control of many acqusition registers (e.g. filter settings,
+- Real-time control of many acquisition registers (e.g. filter settings,
   artifact recovery parameters, etc.)
 
 Register Programming
@@ -158,8 +158,8 @@ series datasheet
 
   RT (Real-time)
     Register value can be changed during operation. There is worst-case delay
-    of ~400 usec for the application to occur. This occurs if there is
-    concurrent SEQ register applications, which take precidence. Typically, the
+    of ~400 usec for the application to occur. This occurs if there are
+    concurrent SEQ register applications, which take precedence. Typically, the
     delay is ~170 usec.
 
   SEQ (Sequence)
@@ -175,8 +175,8 @@ series datasheet
 
 Device To Host Data Frames
 ******************************************
-Each frame transmitted to the host consists of a 16 low-noise AC ephys samples
-and 16 high-voltage DC samples for monitoring compliance and stimulation
+Each frame transmitted to the host consists of a 16x AC ephys samples
+and 16x high-voltage DC samples for monitoring compliance and stimulation
 waveforms.
 
 .. wavedrom::

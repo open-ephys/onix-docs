@@ -36,7 +36,7 @@ options.
 
     * - EnableStream
       - boolean
-      - The numbEnable the device data stream
+      - Enable the device data stream
 
     * - BlockSize
       - integer

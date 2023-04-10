@@ -155,6 +155,10 @@
  width: 20%;
 }
 
+strong {
+ font-weight: bold;
+}
+
 /* Variable overrides */
 //html {
 //  --pst-color-primary: #005282;

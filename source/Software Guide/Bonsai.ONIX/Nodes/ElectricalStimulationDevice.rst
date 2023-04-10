@@ -10,8 +10,6 @@ A `Bonsai sink <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
             - True: deliver stimulus
             - False: Do nothing
 
-:Outputs:   None
-
 .. raw:: html
 
     {% with static_path = '../../../_static', name = 'ElectricalStimulator' %}
