@@ -36,8 +36,9 @@ Configuration is performed using a combination of the property pane.
         chips on the headstage 
 
         * Local: Local trigger source is respected (GPIO input to the headstage
-          or writing true into the input of this node), In this case, the
+          or writing true into the input of this node). In this case, the
           trigger signal will be sent out on the synchronizaiton cable with
           this device acting as a controller.
-        * Exteral: trigger is provided by the synchronizaiton cable from
-          another headstage and this device is a receiver. 
+        * External: Trigger is provided by the synchronization cable from
+          another headstage and this device is a receiver that will distribute the
+          externally generated trigger to RHS2116 chips on its headstage.
