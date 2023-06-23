@@ -46,9 +46,11 @@ hardware, so even after a reboot, it will be set to the latest value.
 Measuring headstage voltage
 ----------------------------
 Use a multimeter to probe the headstage at the two points marked below: the
-ground pin and either terminal of the large inductor on the headstage-64.
+ground pin and either terminal of the large inductor on the headstage.
 
 .. image:: ../../_static/images/tether-voltage/measure-voltage-64.png
+
+.. image:: ../../_static/images/tether-voltage/measure-voltage-npix.png
 
 Rebooting
 --------------------------
