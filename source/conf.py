@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 # sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
-project = 'Open Ephys ONIX'
+project = 'ONIX Docs'
 copyright = '2010-{}, Open Ephys & Contributors'.format(datetime.now(timezone.utc).year)
 author = 'Open Ephys & Contributors'
 language = 'en'
@@ -42,8 +42,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
-    'sphinxcontrib.wavedrom',
-    'breathe',
     'sphinx_csharp',
 ]
 
@@ -81,7 +79,8 @@ breathe_projects = { 'clroni': './API Reference/clroni/doxygen-xml' }
 # a list of builtin themes.
 html_theme = 'pydata_sphinx_theme'
 html_logo = '_static/onix_open_ephys_logo.svg'
-html_scaled_image_link = False
+html_scaled_image_link = True
+html_title = project
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -89,8 +88,8 @@ html_scaled_image_link = False
 html_static_path = ['_static']
 
 html_sidebars = {
-    'index': ['search-field.html', 'sidebar-quicklinks.html'],
-    "**": ["search-field.html", "sidebar-nav-bs.html"]
+    'index': ['search-field.html'],
+    "**": [ "sidebar-nav-bs.html"]
 }
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -116,13 +115,21 @@ texinfo_documents = [
 # documentation.
 html_theme_options = {
     'use_edit_page_button': True,
-    'external_links': [{'name': 'Open Ephys', 'url': 'https://open-ephys.org'},],
-    'navigation_with_keys': True,
-    'show_toc_level': 1,
-    'twitter_url': 'https://twitter.com/openephys',
-    'github_url': 'https://github.com/open-ephys/onix-docs',
-    'footer_end': ['copyright', 'sphinx-version'],
-    'navbar_end': ['navbar-icon-links'],
+    "navigation_with_keys": True,
+    "navbar_end": ["navbar-icon-links"],
+    "navbar_align": "content",
+    "footer_start": ["copyright"],
+    'icon_links': [
+        dict(name='GitHub',
+             url='https://github.com/open-ephys/commutator-docs',
+             icon='fab fa-github'),
+        dict(name='Twitter',
+             url='https://twitter.com/openephys',
+             icon='fab fa-twitter'),
+        dict(name='Discord',
+             url='https://discord.gg/WXAx2URNQU',
+             icon='fab fa-discord')
+    ]
     #'announcement': 'These docs are a work in progress.',
 }
 
