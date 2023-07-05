@@ -167,6 +167,11 @@ The electrical stimulation cicuit is an improved Howland current pump followed b
 an precision current measurement circuit. The current pump is supplied by +/-15V
 rails and can supply up to +/- 2.5 mA. The output current is defined as:
 
+.. warning:: The headstage must be supplied by 5.5V, :ref:`measured at the DC couping 
+   inductor <measure_voltage>`, to use electrical stimulation. If the voltage is less 
+   than this, stimulus pulses will fail to acheive target currents and this will result 
+   in charge imblance, which can damage neural tissue.
+
 .. code-block:: none
 
     ISTIM = (VDAC  - 2.5)/1000.
