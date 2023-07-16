@@ -300,6 +300,26 @@ strong {
  font-weight: bold;
 }
 
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: 0.7em;
+}
+
+/* List items in main area, but not in side bars */
+body > li,
+p {
+  line-height: 1.5;
+  margin: 0.7rem 0;
+}
+
+
 /* ensure images stay within the column bounds*/
 img {
   max-width: 100%;
