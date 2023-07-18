@@ -54,7 +54,11 @@ Managed register access is provided at offset 0x8000.
       - On Reset
       - 1280
       - None
-      - Frame data size in samples
+      - Amount of data to read into a frame
+     
+        * Bits 0-15: In parallel mode: frame data size in samples. 
+          In serial mode: Number of words per frame in each line.
+        * Bits 16-31: Number of frames to aggregate. 0 = do not perform aggregation
 
     * - 0x8002
       - TRIGGER
@@ -103,7 +107,7 @@ Managed register access is provided at offset 0x8000.
         * 0x1: included
 
     * - 0x8006
-      - SYNCBITS
+      - MARK
       - R/W
       - On Reset
       - 0
@@ -116,12 +120,74 @@ Managed register access is provided at offset 0x8000.
         * Bit 0: not included
         * Bit 1: '0' = HSYNC, '1' = VSYNC
         * Bit 2: '0' = Rising edge, '1' = Falling edge
-
+        * Bit 3: When using aggregation, use mark settings to select the first frame
 
     * - 0x8007
-      - GPIO_DIR
+      - MAGIC_MASK
       - R/W
       - On Reset
+      - 0
+      - None
+      - Bitmask for magic word detection and related options.
+       
+        * Bits 0-15: Bitmask. If all 0, magic word detection is disabled. 
+        * Bit 31: Also check for bit-inverse mask. 
+        * Bit 30: When aggregation is enabled, wait for the first non-inverted magic word
+    
+    * - 0x8008
+      - MAGIC
+      - R/W
+      - On Reset
+      - 0
+      - None
+      - After trigger, if magic_mask is not 0, wait until a specific word in the stream to start a frame. (Bits 0-15)
+
+    * - 0x8009
+      - MAGIC_WAIT
+      - R/W
+      - On Reset 
+      - 0
+      - None
+      - Max number of samples to wait from trigger to mask detection before canceling and going back to trigger detection. 0 means wait indefinitely
+      
+    * - 0x800A
+      - DATAMODE
+      - R/W
+      - On Reset
+      - 0
+      - None
+      - Data operation mode
+        
+        * Bit 0: '0' = Normal parallel mode. '1' = Serial mode 
+        * Bit 1: '1' = Include "index" field in parallel mode, '0'= Do not include it in parallel mode. 
+        * Bit 2: Number of serial streams '0' = 1 stream, '1' = 2 streams.
+        * Bit 3: reserved. 
+        * Bits 7-4: Number of bits per word - 1 (i.e.: '0x0' = 1bit, '0xF' = 16bits). 
+        * Bits 9-8 number of lines per stream '00' = 1, '01' = 2. '10' = 4, '11' = 8. 
+        * Bit 10: data order in serial mode '0' = MSB first, '1' = LSB first
+    
+    * - 0x800B
+      - DATALINES0
+      - R/W 
+      - On Reset
+      - 0
+      - None
+      - Input lines for serial stream 0. Each 4 bits specify the input: 
+        0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input
+
+    * - 0x800C
+      - DATALINES0
+      - R/W 
+      - On Reset
+      - 0
+      - None
+      - Input lines for serial stream 1. Each 4 bits specify the input: 
+        0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input
+
+    * - 0x8010
+      - GPIO_DIR
+      - R/W
+      - Immediate
       - 0 
       - None
       - Bits 0-3 determine the direction of GPIO 0-3. For each bit:
@@ -129,10 +195,10 @@ Managed register access is provided at offset 0x8000.
         * 0b0: Output
         * 0b1: Input
 
-    * - 0x8008
+    * - 0x8011
       - GPIO_VAL
       - R/W
-      - On Reset
+      - Immediate
       - 0
       - None
       - Bits 0-3 determine the value of GPIO 0-3. For each bit:
@@ -140,8 +206,8 @@ Managed register access is provided at offset 0x8000.
         * 0b0: Low
         * 0b1: High
 
-    * - 0x8009
-      - GPIO_VAL
+    * - 0x8012
+      - LINK_STATUS
       - R
       - On DS90UBX LOCK or PASS pin state change
       - N/A

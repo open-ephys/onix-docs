@@ -45,7 +45,7 @@ Register Programming
     * - 0x01
       - CLK_DIV
       - R/W
-      - On Reset
+      - Immediate
       - CLK_HZ / HB_HZ where HB_HZ is a implementation dependent default rate
       - None
       - Heartbeat clock divider ratio. Minimum value is CLK_HZ / 10e6
