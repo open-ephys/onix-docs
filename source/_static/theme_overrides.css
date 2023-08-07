@@ -1,12 +1,151 @@
+/* import fonts */
+@font-face {
+  font-family: "Source Sans";
+  src: url("fonts/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans";
+  font-style: italic;
+  src: url("fonts/SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans";
+  font-weight: bold;
+  src: url("fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Bold.ttf");
+  font-weight: bold;
+}
+
+/* logo */
+.navbar-brand {
+  position: relative;
+  height: 70px;
+  width: auto;
+}
+
+
+/* text fonts and colors */
+body {
+  background-color: white;
+  margin-bottom: 1.15rem;
+  font-size: 1em;
+  color: #242c16;
+  font-family: "Source Sans", sans-serif;
+}
+
+h1 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-top: 0;
+  color: #242c16;
+  font-size: 2.2em;
+}
+
+h2 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin: 1.5rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.3em;
+}
+
+h4 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.1em;
+}
+
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.1em;
+}
+
+h6 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1em;
+}
+
+
+/* navigation bar colors*/
+.navbar {
+  background: white !important;
+  font-size: 1em;
+}
+
+.navbar-nav>.active>.nav-link {
+  background-color: white !important;
+  color: #344b39 !important;
+  font-weight: normal !important;
+  transition-duration: 0.4s;
+}
+
+.navbar-nav>.active>.nav-link:hover {
+  color: #519141 !important;
+  transition-duration: 0.4s;
+}
+
+.navbar a {
+  color: grey !important;
+  font-family: "Bitter", sans-serif;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+}
+
+.search-button {
+  color: grey !important;
+  margin-right: 30px;
+}
+
+
+.navbar a:hover {
+  color: grey !important;
+  transition-duration: 0.4s;
+}
+
 /* Remove skip link from top of page */
 .skip-link {
     display: none
 }
-
-/* Make top level nav bar links a bit bigger */
-.navbar {
-    font-size: 1.1em;
-}   
 
 /* Bonsai workflows & copy button */
 .copy-img
@@ -132,6 +271,8 @@
   margin-top: 2em;
 }
 
+
+
 /* Gallery cards */
 
 .gallery-card .card-header {
@@ -159,408 +300,125 @@ strong {
  font-weight: bold;
 }
 
-/* Variable overrides */
-//html {
-//  --pst-color-primary: #005282;
-//  --pst-color-link: #005282;
-//  --pst-color-link-hover: #da714a;
-//  --onix-bar-color: rgba(27, 27, 27, 0.2);
-//  --onix-txt-color: #1b1b1b;
-//}
-//
-//
-///* import fonts */
-//@font-face {
-//  font-family: "Source Sans";
-//  src: url("fonts/SourceSansPro-Regular.ttf");
-//}
-//
-//@font-face {
-//  font-family: "Source Sans";
-//  font-style: italic;
-//  src: url("fonts/SourceSansPro-Italic.ttf");
-//}
-//
-//@font-face {
-//  font-family: "Source Sans";
-//  font-weight: bold;
-//  src: url("fonts/SourceSansPro-Bold.ttf");
-//}
-//
-//@font-face {
-//  font-family: "Bitter";
-//  src: url("fonts/Bitter-Regular.ttf");
-//}
-//
-//@font-face {
-//  font-family: "Bitter";
-//  src: url("fonts/Bitter-Italic.ttf");
-//  font-style: italic;
-//}
-//
-//@font-face {
-//  font-family: "Bitter";
-//  src: url("fonts/Bitter-Bold.ttf");
-//  font-weight: bold;
-//}
-//
-///* Edit this page */
-//.editthispage a {
-//  color: var(--onix-text-color)
-//}
-//
-//.sourcelink a {
-//  color: var(--onix-text-color)
-//} 
-//
-///* Navigation bar colors*/
-//.navbar-light {
-//  border-bottom: 1px solid var(--onix-bar-color) !important;
-//  box-shadow: none !important;
-//}
-//
-//.navbar {
-//  background: #FFFFFF !important;
-//  font-size: 1.1em;
-//}
-//
-//.navbar-nav > .active > .nav-link {
-//  background-color: var(--onix-txt-color) !important;
-//  color: #FFFFFF !important;
-//  font-weight: normal !important;
-//  transition-duration: 0.3s;
-//  text-decoration: none !important;
-//}
-//
-//.navbar a {
-//  color: var(--onix-txt-color) !important;
-//  font-family: "Bitter", sans-serif;
-//  transition-duration: 0.3s;
-//  margin-right: 10px;
-//}
-//
-//.navbar a:hover {
-//  text-decoration: underline !important;
-//  transition-duration: 0.3s !important;
-//}
-//
-///* left side links */
-//.bd-links > .active a {
-//  color: #005282 !important; /*#3c81be */
-//  transition-duration: 0.3s;
-//}
-//
-//.bd-links > .active a:hover {
-//  color: #5fb5dc !important;
-//  transition-duration: 0.3s;
-//  transform: translate(2px, 0px);
-//}
-//
-//.bd-sidebar {
-//  border-right: 1px solid var(--onix-bar-color) !important;
-//}
-//
-///* right side links */
-//.toc-entry > .nav-link.active {
-//  font-weight: 600;
-//  color: var(--onix-txt-color) !important;
-//  background-color: transparent;
-//  border-left: 2px solid #da714a;
-//}
-//
-//
-///* Main text links (internal & external) */
-//a {
-//  color: var(--onix-txt-color);
-//}
-//
-//a.reference.internal {
-//  color: #005282;
-//}
-//
-//a.reference.internal:hover {
-//  color: #005282;
-//}
-//
-//main a.reference.internal, a.reference.external {
-//  color: #005282;
-//}
-//
-//main a.reference.internal:hover, a.reference.external:hover {
-//  color: #005282;
-//  text-decoration: underline !important;
-//}
-//
-///* Main text links (external) */
-//main a.reference.external:after {
-//    background: transparent url(external.svg) 0 0 no-repeat !important;
-//    background-size: 14px;
-//    content: "";
-//    height: 13px;
-//    margin-left: 2px;
-//    width: 13.5px;
-//}
-//
-//main a.external:after {
-//    display: inline-block;
-//}
-//
-///* Header links */
-//a.headerlink {
-//  color: white;
-//  transition-duration:0.3s
-//}
-//
-//a.headerlink:hover {
-//  color: #ceacca;
-//  background-color: white;
-//  transition-duration:0.3s
-//}
-//
-///* text fonts and colors */
-//
-//body {
-//  background-color: white;
-//  margin-bottom: 1.15rem;
-//  font-size: 1em;
-//  padding-top: 50px;
-//  color: var(--onix-txt-color);
-//  font-family: "Source Sans", sans-serif;
-//}
-//
-//h1 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Bitter", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  margin-top: 0;
-//  color: var(--onix-txt-color);
-//  font-size: 2.2em;
-//}
-//
-//h2 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Bitter", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  color: var(--onix-txt-color);
-//  font-size: 1.5em;
-//}
-//
-//h3 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Bitter", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  color: var(--onix-txt-color);
-//  font-size: 1.3em;
-//}
-//
-//h4 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Bitter", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  color: var(--onix-txt-color);
-//  font-size: 1.1em;
-//}
-//
-//h5 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Source Sans", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  color: var(--onix-txt-color);
-//  font-size: 1.1em;
-//}
-//
-//h6 {
-//  margin: 2.75rem 0 1.05rem;
-//  font-family: "Source Sans", sans-serif;
-//  font-weight: 400;
-//  line-height: 1.15;
-//  color: var(--onix-txt-color);
-//  font-size: 1em;
-//}
-//
-//
-///* define admonition colors */
-//.admonition.attention {
-//  border-color: #927a90;
-//}
-//
-//.attention > .admonition-title {
-//  background-color: #efe8ef !important;
-//}
-//
-//.attention > .admonition-title:before {
-//  color: #927a90 !important;
-//}
-//
-//.admonition.note {
-//  border-color: #5fb5dc;
-//}
-//
-//.note > .admonition-title {
-//  background-color: #d9e7f3 !important;
-//}
-//
-//.note > .admonition-title:before {
-//  color: #5fb5dc !important;
-//}
-//
-//.admonition.error {
-//  border-color: #da714a;
-//}
-//
-//.error > .admonition-title {
-//  background-color: #f1d7c7 !important;
-//}
-//
-//.error > .admonition-title:before {
-//  color: #da714a !important;
-//}
-//
-//.admonition.warning {
-//  border-color: #da714a;
-//}
-//
-//.warning > .admonition-title {
-//  background-color: #f1d7c7 !important;
-//}
-//
-//.warning > .admonition-title:before {
-//  color: #da714a !important;
-//}
-//
-//.admonition.danger {
-//  border-color: #da714a;
-//}
-//
-//.danger > .admonition-title {
-//  background-color: #f1d7c7 !important;
-//}
-//
-//.danger > .admonition-title:before {
-//  color: #da714a !important;
-//}
-//
-//.admonition.caution {
-//  border-color: #f4d050;
-//}
-//
-//.caution > .admonition-title {
-//  background-color: #f9f2d5 !important;
-//}
-//
-//.caution > .admonition-title:before {
-//  color: #f4d050 !important;
-//}
-//
-//.admonition.tip {
-//  border-color: #519141;
-//}
-//
-//.tip > .admonition-title {
-//  background-color: #d1dac5 !important;
-//}
-//
-//.tip > .admonition-title:before {
-//  color: #519141 !important;
-//}
-//
-//.admonition.hint {
-//  border-color: #519141;
-//}
-//
-//.hint > .admonition-title {
-//  background-color: #d1dac5 !important;
-//}
-//
-//.hint > .admonition-title:before {
-//  color: #519141 !important;
-//}
-//
-//
-///* format search bar */
-//.bd-search {
-//  position: relative;
-//  padding: 1rem 15px;
-//  margin-right: -15px;
-//  margin-left: -15px;
-//}
-//
-//.form-control {
-//  outline: none !important;
-//  box-shadow: none !important;
-//  border: none !important;
-//}
-//
-//.form-control:focus {
-//  outline: black !important;
-//  box-shadow: none !important;
-//  border: 1px !important;
-//}
-//
-//form:focus {
-//  outline: black !important;
-//  box-shadow: none !important;
-//  border: 1px !important;
-//}
-//
-/* Quick links */
-.quicklinks {
-  color: var(--onix-txt-color) !important;
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: 0.7em;
 }
-//
-///* override table width restrictions */
-//@media screen and (min-width: 767px) {
-//  .wy-table-responsive table td {
-//    /* !important prevents the common CSS stylesheets from overriding
-//          this as on RTD they are loaded after this stylesheet */
-//    white-space: normal !important;
-//  }
-//
-//  .wy-table-responsive {
-//    overflow: visible !important;
-//  }
-//}
 
+/* List items in main area, but not in side bars */
+body > li,
+p {
+  line-height: 1.5;
+  margin: 0.7rem 0;
+}
 
-///* list line spacing */
-//ul,
-//ol,
-//h1,
-//h2,
-//h3,
-//h4,
-//h5,
-//h6 {
-//  line-height: 1.5;
-//  margin-bottom: 1em;
-//}
-//
-///* List items in main area, but not in side bars */
-//body > li,
-//p {
-//  line-height: 1.5;
-//  margin: 0.3em 0;
-//  margin-bottom: 1em;
-//}
-//
-//p.prev-next-title {
-//  color: var(--onix-txt-color) !important;
-//}
-//
 
 /* ensure images stay within the column bounds*/
 img {
   max-width: 100%;
 }
 
-//
-///* change color of Twitter logo */
-//i.fa-twitter-square:before {
-//  color: #333;
-//}
 
+/* define admonition colors */
+.admonition.attention {
+  border-color: #927a90;
+}
+
+.attention>.admonition-title {
+  background-color: #efe8ef !important;
+}
+
+.attention>.admonition-title:before {
+  color: #927a90 !important;
+}
+
+.admonition.note {
+  border-color: #5fb5dc;
+}
+
+.note>.admonition-title {
+  background-color: #d9e7f3 !important;
+}
+
+.note>.admonition-title:before {
+  color: #5fb5dc !important;
+}
+
+.admonition.error {
+  border-color: #da714a;
+}
+
+.error>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.error>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.warning {
+  border-color: #da714a;
+}
+
+.warning>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.warning>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.danger {
+  border-color: #da714a;
+}
+
+.danger>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.danger>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.caution {
+  border-color: #f4d050;
+}
+
+.caution>.admonition-title {
+  background-color: #f9f2d5 !important;
+}
+
+.caution>.admonition-title:before {
+  color: #f4d050 !important;
+}
+
+.admonition.tip {
+  border-color: #519141;
+}
+
+.tip>.admonition-title {
+  background-color: #d1dac5 !important;
+}
+
+.tip>.admonition-title:before {
+  color: #519141 !important;
+}
+
+.admonition.hint {
+  border-color: #519141;
+}
+
+.hint>.admonition-title {
+  background-color: #d1dac5 !important;
+}
+
+.hint>.admonition-title:before {
+  color: #519141 !important;
+}
