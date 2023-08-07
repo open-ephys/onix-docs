@@ -8,7 +8,6 @@ sphinx = "*"
 pydata-sphinx-theme = "0.13.3"
 make = "*"
 pytz = "*"
-
-[packages.sphinx-csharp]
-git = "https://github.com/rogerbarton/sphinx-csharp.git"
-ref = "master"
+sphinxcontrib-wavedrom = "*"
+sphinx-csharp = {git = "https://github.com/rogerbarton/sphinx-csharp.git", ref = "master"}
+breathe = "*"

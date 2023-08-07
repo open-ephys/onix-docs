@@ -42,6 +42,8 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
+    'sphinxcontrib.wavedrom',
+    'breathe',
     'sphinx_csharp',
 ]
 
