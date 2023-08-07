@@ -1,6 +1,6 @@
 :notoc:
 
-.. title:: Home
+.. title:: ONIX
 
 .. image:: /_static/onix_logo.svg
     :width: 280px
@@ -10,7 +10,9 @@
 .. figure:: /_static/images/onix-hw-summary.jpg
     :class: with-border
 
-**ONIX** is a collection of `Open Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
+This site provides documentation for ONIX, the second-generation `Open Ephys
+<https://open-ephys.org/>`_ acquisition system. ONIX is a collection of `Open
+Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
 software for performing neuroscience experiments with freely moving animals. It
 is the successor to the original `Open Ephys <https://open-ephys.org>`__
 `Acquisition System <https://open-ephys.org/acquisition-system>`_ and

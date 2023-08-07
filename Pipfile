@@ -3,11 +3,16 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
+# NB: Currently the newest version of the sphinx breaks the layout because
+# basic.css is not used for formatting most pages. 
 [packages]
-sphinx = "*"
-pydata-sphinx-theme = "0.13.3"
-make = "*"
-pytz = "*"
+sphinx = "*" #"==3.5.4"
+sphinxcontrib-wavedrom = "*"
+pydata-sphinx-theme = "*"
+breathe = "*"
+
+[dev-packages]
+"doc8" = "*"
 
 [packages.sphinx-csharp]
 git = "https://github.com/rogerbarton/sphinx-csharp.git"

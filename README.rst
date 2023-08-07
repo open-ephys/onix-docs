@@ -1,18 +1,19 @@
 =========
-Documentation for ONIX
+ONIX Documentation
 =========
 
-This documentation's source template was taken from the `Spinal HDL <https://github.com/SpinalHDL/SpinalDoc-RTD>`_ project.
+*Note*: This documentation's source template was taken from the `Spinal HDL <https://github.com/SpinalHDL/SpinalDoc-RTD>`_ project.
 
 The theme is based on the `PyData Sphinx Theme <https://pydata-sphinx-theme.readthedocs.io/en/latest/>`_
-
-For more detailed usage instructions, see the `Open Ephys Doc Template <https://github.com/open-ephys/doc-template>`_
 
 How to build this documentation
 ===============================
 
-With pipenv (recommended)
+With pipenv
 -----------
+Requirements (system)
+
+* make
 
 Requirements (Python 3):
 
@@ -30,7 +31,7 @@ then you can build the documentation
 
    pipenv run make html
 
-if you want run ``make`` multiple times, prepend ``pipenv run`` on each command can be annoying,
+if you want run ``make`` multiple times, prepone ``pipenv run`` on each command can be annoying,
 you can spawn a subshell with
 
 .. code:: shell
@@ -57,7 +58,8 @@ Requirements (system):
 Requirements (Python 3):
 
 * sphinx
-* pydata-sphinx-theme=="0.13.3"
+* sphinx-rtd-theme
+* sphinxcontrib-wavedrom
 
 After installing the requirements you can run
 
@@ -67,4 +69,3 @@ After installing the requirements you can run
    make latex    # for latex
    make latexpdf # for latex (will require latexpdf installed)
    make          # list all the available output format
-
