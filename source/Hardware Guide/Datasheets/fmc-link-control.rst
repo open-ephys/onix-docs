@@ -104,6 +104,22 @@ Register Programming
       - Save link voltage to non-volatile EEPROM if greater than 0. This
         voltage will be applied after POR.
 
+    * - 0x05
+      - LINKSTATE
+      - Register
+      - Immediate
+      - 0
+      - None
+      - Link state (bits 31 downto 2: ignore, bit 1: pass, bit 0: lock)
+
+    * - 0x06
+      - LINKOPTS
+      - R/W 
+      - Immediate
+      - 0
+      - None
+      - Port options. Bit 0: '0' Port auto-shutdown disabled '1' Port auto-shutdown enabled
+
 .. _onidatasheet_fmc_link_control_d2h:
 
 Device To Host Data Frames
