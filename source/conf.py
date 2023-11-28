@@ -124,7 +124,7 @@ html_theme_options = {
     "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
     'icon_links': [
         dict(name='GitHub',
-             url='https://github.com/open-ephys/onix-fmc-host',
+             url='https://github.com/open-ephys/onix-docs',
              icon='fab fa-github'),
         dict(name='Twitter',
              url='https://twitter.com/openephys',
