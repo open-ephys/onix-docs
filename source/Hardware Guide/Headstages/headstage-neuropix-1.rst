@@ -44,5 +44,5 @@ properties:
     present headstage. If the headstage is not turning on, make sure that the
     voltage at the headstage itself is within the valid range
 
-.. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
+.. note:: Have a look at the :ref:`tethers` page for more details on mirco-coax
     headstage tethers

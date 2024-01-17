@@ -11,7 +11,8 @@ Here you will find information on **ONIX headstages**.
     serialization
     tethers
     headstage-64/index
-    headstage-neuropix
+    headstage-neuropix-1
+    headstage-neuropix-1e
     tether-voltage
 
 .. important:: ONIX expands the concept of a headstage compared to what you

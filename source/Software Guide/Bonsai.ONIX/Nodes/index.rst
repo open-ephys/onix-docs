@@ -29,6 +29,7 @@ Nodes
     ElectricalStimulationDevice
     OpticalStimulationDevice
     NeuropixelsV1Device
+    NeuropixelsV1eDevice
     MiniscopeV3Device
     MiniscopeV4Device
     MiniscopeV4BNO055Device
