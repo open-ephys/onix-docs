@@ -34,4 +34,4 @@ properties:
 
 .. note:: Have a look at the :doc:`tethers` page for more details on mirco-coax headstage tethers
 
-.. note:: Have a look at the :doc:`tether-voltage` page for more details on probing and verifying headstage power voltages 
+.. important:: \*If your headstage is misbehaving, have a look at the :doc:`tether-voltage` page to confirm headstage power voltages 
