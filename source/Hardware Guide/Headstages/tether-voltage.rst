@@ -52,6 +52,8 @@ ground pin and either terminal of the large inductor on the headstage.
 
 .. image:: ../../_static/images/tether-voltage/measure-voltage-npix.png
 
+.. image:: ../../_static/images/tether-voltage/measure-voltage-np1e.webp
+
 Rebooting
 --------------------------
 If you have slowly increased the voltage supplied to a headstage, but it does
