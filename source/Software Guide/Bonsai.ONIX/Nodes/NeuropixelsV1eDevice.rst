@@ -76,7 +76,7 @@ NeuropixelsV1eDevice node when editing the workflow or clicking the ellipsis
 next to the ``NeuropixelsV1Configuration`` parameter option in the property
 pane.
 
-.. figure:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_configuration-gui-callouts.png
+.. figure:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_configuration-gui-callouts.png
     :align: left
     :alt: The Neuropixels 1.0e configuration GUI.
 
@@ -106,14 +106,14 @@ To load the IMEC calibration files for your probe, follow these steps:
 
 #. Select **Load Calibration** from the **File** menu.
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_load-calibration_cropped.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_load-calibration_cropped.png
        :alt: Load IMEC calibration selected
        :align: left
 
 #. On the file selection dialog, navigate to the folder containing the
    calibration files with serial numbers matching the currently attached probe.
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_select-calibration_annotated.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_select-calibration_annotated.png
        :alt: Navigate to IMEC calibration files with matching serial numbers
        :align: left
        :scale: 70%
@@ -121,7 +121,7 @@ To load the IMEC calibration files for your probe, follow these steps:
 #. The **Channels** and **ADCs** tabs will now show proper calibration
    parameters.
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_adcs-tab.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_adcs-tab.png
        :alt: The ADC tab with the correct IMEC calibration parameters populated
        :align: left
 
@@ -158,7 +158,7 @@ are orange. Groups of electrodes can be selected by left clicking and dragging.
 Once highlighted, their properties can be changed using right click to open the
 configuration context menu.
 
-.. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_adjust-electrode-parameters-with-gui.png
+.. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_adjust-electrode-parameters-with-gui.png
     :alt: Probe GUI with right click to edit electrode parameters
     :align: center
     :scale: 62%
@@ -174,14 +174,14 @@ Uploading to the Probe
 To upload your configuration to the probe, click the **Upload** button in the
 bottom left of the GUI. A progress bar will indicate the upload progress.
 
-.. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_upload-process.png
+.. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_upload-process.png
    :alt: Uploading the configuration to the probe
    :align: center
 
 .. note:: To ensure that this process has occurred correctly, the **Perform Read
     Check** option can be selected from the **Settings** menu:
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_read-check_cropped.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_read-check_cropped.png
        :alt: Selecting the perform read check option
        :align: center
        
@@ -201,13 +201,13 @@ etc, and therefore can be useful metadata during analysis.
 
 #. Select **Export...** from the **File** menu;
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_export_cropped.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_export_cropped.png
        :alt: The configuraiton GUI with export selected
        :align: left
 
 #. Choose if JSON or XML should be used in the file selection dialog and save:
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_export-select-format_cropped.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_export-select-format_cropped.png
        :alt: File dialog to indicate where configuration should be saved.
        :align: left
 
@@ -223,12 +223,12 @@ active electrodes.
 
 #. Select **Import** from the **File** menu:
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_import_cropped.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_import_cropped.png
         :alt: The configuraiton GUI with import selected
         :align: left
 
 #. Select a previously exported configuration file:
 
-    .. image:: /_static/bonsai/NeuropixelsV1/NeuropixelsV1_import-select-file.png
+    .. image:: /_static/bonsai/neuropixelsv1/NeuropixelsV1_import-select-file.png
         :alt: File dialog to find configuration to load
         :align: left
