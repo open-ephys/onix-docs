@@ -55,12 +55,13 @@ Parameters available through the property pane are as follows:
 
     * - RequireSNMatch
       - boolean
-      - If true, then require configuration and probe serial numbers to match
-        to start acqusition. Keeping this parameter set to True is good
+      - If True, the configuration and probe serial numbers must match
+        to start acquisition. Keeping this parameter set to True is good
         practice because the correct calibration files must be loaded in order
         for the probe to function properly.
+        Error message if set to True and not properly configured: Probe and configuration serial numbers do not match.
 
-    * - NueuropixelsV1Configuration
+    * - NeuropixelsV1Configuration
       - N/A
       - Editing this parameter will open the Configuration GUI, just like
         double clicking on the node.

@@ -1,4 +1,4 @@
-.. _headstage_neuropix1:
+.. _headstage_neuropix1e:
 
 Neuropixels-1.0e Headstage
 ##############################
@@ -15,8 +15,8 @@ targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/probe>`__.
 
 Coaxial Link
 ***********************************
-For details on data serialiation and headstage gateware, have a look at the
-:doc:`serialization` page, which describes how coax headstages operatate in
+For details on data serialization and headstage gateware, have a look at the
+:doc:`serialization` page, which describes how coax headstages operate in
 general terms. The Neuropixels-1.0e Headstage has the following coaxial link
 properties:
 
@@ -32,6 +32,6 @@ properties:
     | Coax Voltage           | 5.0*               | 3.0      | 5.5      | Volts    |
     +------------------------+--------------------+----------+----------+----------+
 
-.. note:: Have a look at the :doc:`tethers` page for more details on mirco-coax headstage tethers
+.. note:: Have a look at the :doc:`tethers` page for more details on micro-coax headstage tethers
 
 .. important:: \*If your headstage is misbehaving, have a look at the :doc:`tether-voltage` page to confirm headstage power voltages 

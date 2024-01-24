@@ -2,6 +2,8 @@
 
 HeadstagePortControlDevice
 ===============================
+.. warning:: This node configures hardware parameters when it is placed in a workflow, even if the workflow is not running. Always check voltage configurations before connecting headstages to the system.
+
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that wraps a
 :ref:`onidatasheet_fmc_link_control` device.
 

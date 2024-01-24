@@ -3,7 +3,7 @@
 Breakout Board Guide
 #########################
 
-.. warning:: always make sure the PC is powered off before connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Host..
+.. warning:: Always make sure the PC is powered off **before** connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Host.
 
 Setup
 -------------------------

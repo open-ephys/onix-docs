@@ -3,7 +3,7 @@
 Headstage-64 Workflow
 ===============================
 This example workflow shows how the data streams produced by
-:ref:`headstage_64` can be acquired and saved. Each group workflow at the top
+:ref:`headstage_64` can be acquired and saved, as well as used for commutation. Each group workflow at the top
 level contains acquisition code for a different sensor on the headstage. Example
 Python and MATLAB scripts are provided to load the data produced by the
 workflow. 
