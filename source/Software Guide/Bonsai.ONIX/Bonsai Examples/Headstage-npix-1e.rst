@@ -1,7 +1,7 @@
 .. _bonsai_headstage_neuropix1e:
 
 Headstage Neuropixels 1.0e Workflow
-===============================
+============================================
 This example workflow shows how the data streams produced by
 :ref:`headstage_neuropix1e` can be acquired and saved, as well as used for commutation. Each group workflow at the top
 level contains acquisition code for a different sensor on the headstage. A probe visualizer is included. Example Python and MATLAB scripts are not yet available. 
