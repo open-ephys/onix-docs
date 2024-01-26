@@ -54,10 +54,10 @@ options.
       - Select a low-frequency cutoff from allowable options. This filtering is
         performed prior to analog to digital conversion.
 
-    * - DSPCuttoff
+    * - DSPCutoff
       - enum
-      - Select the low-frequency cutoff for the integrated digtial offset
-        removal filter. This fitering is performed following analog to digital
+      - Select the low-frequency cutoff for the integrated digital offset
+        removal filter. This filtering is performed following analog to digital
         conversion.
 
     * - EphysDataFormat

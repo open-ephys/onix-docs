@@ -3,6 +3,8 @@
 Breakout Board Guide
 #########################
 
+.. warning:: Always make sure the PC is powered off **before** connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Host.
+
 Setup
 -------------------------
 The Breakout Board provides access to signals to and from the PCIe host. Each

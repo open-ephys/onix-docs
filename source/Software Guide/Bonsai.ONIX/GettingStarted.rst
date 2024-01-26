@@ -21,10 +21,10 @@ Bonsai Learning Resources
 
     * - `Bonsai's learn page <https://bonsai-rx.org/learn/>`__
       - Videos and links for understanding how Bonsai can be used to process
-        data streams ranging from beginer to advanced use.
+        data streams ranging from beginner to advanced use.
 
     * - `Bonsai's docs page <https://bonsai-rx.org/docs>`__
-      - Installation, package managment, use guide. These pages also contain an
+      - Installation, package management, use guide. These pages also contain an
         overview of the reactive architecture at the core of Bonsai, and why
         it's useful and powerful. It concludes with a guide on how to use the
         editor to create Bonsai workflows.

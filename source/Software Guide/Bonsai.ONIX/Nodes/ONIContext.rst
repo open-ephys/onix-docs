@@ -5,6 +5,9 @@
 
 ONIContext
 ===============================
+
+.. warning:: This node configures hardware parameters when it is placed in a workflow, even if the workflow is not running. Always check voltage configurations before connecting headstages to the system.
+
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages a
 :ref:`oni_h_acquisition_context` and allows basic acquisition parameterization.
 There must be at least one of these in every workflow that uses ONIX hardware.
@@ -128,7 +131,7 @@ with a synchronization cable.
     selected *Sync Channel*. Any number of listeners can be assigned to a
     single *Sync Channel*.
 
-.. important:: Only the aquisition start trigger is shared from Sources to
+.. important:: Only the acquisition start trigger is shared from Sources to
     Listeners. The acquisition clock may or may not be shared depending on the
     type of host hardware being used. For example, if all hardware consists of
     :ref:`PCIe Hosts <pcie_host>` on the same motherboard, then both start

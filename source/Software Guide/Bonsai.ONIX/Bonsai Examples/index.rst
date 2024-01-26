@@ -10,6 +10,7 @@ third-party tools at the software level.
     :maxdepth: 1
 
     Headstage64
+    HeadstageNP1e
     LatencyTest
     CameraSync
     Commutator

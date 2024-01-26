@@ -4,7 +4,9 @@ NeuropixelsV1eDevice
 ===============================
 
 .. important:: To use this device with ONIX hardware, you must first use the :ref:`bonsai_onicontext` configuration GUI to set the headstage port to :ref:`"Passthrough Mode" <bonsai_onicontext_hubsettings>`
-
+.. important:: Bonsai workflows that contain this node will not
+    open/load unless the headstage is on - Error message: There was an error opening the workflow. Make sure to configure the headstage port voltage and mode correctly using the :ref:`bonsai_onicontext` node with the parameters for the :ref:`headstage_neuropix1e` before connecting the headstage.
+    
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 Neuropixels 1.0e device.
 
@@ -58,10 +60,12 @@ Parameters available through the property pane are as follows:
 
     * - RequireSNMatch
       - boolean
-      - If true, then require configuration and probe serial numbers to match
-        to start acqusition. Keeping this parameter set to True is good
+        If True, the configuration and probe serial numbers must match
+        to start acquisition. Keeping this parameter set to True is good
         practice because the correct calibration files must be loaded in order
         for the probe to function properly.
+        Error message if set to True and not properly configured: Probe and configuration serial numbers do not match.
+
 
     * - NeuropixelsV1Configuration
       - N/A
@@ -195,14 +199,14 @@ bottom left of the GUI. A progress bar will indicate the upload progress.
 Saving Configurations
 **********************************
 Complete probe configurations can be saved in easy to parse JSON or XML
-formats. These fikes contain complete information about the state of a given
+formats. These files contain complete information about the state of a given
 probe. This includes all calibration file information, active electrodes, gains
 etc, and therefore can be useful metadata during analysis.
 
 #. Select **Export...** from the **File** menu;
 
     .. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_export_cropped.png
-       :alt: The configuraiton GUI with export selected
+       :alt: The configuration GUI with export selected
        :align: left
 
 #. Choose if JSON or XML should be used in the file selection dialog and save:
@@ -224,7 +228,7 @@ active electrodes.
 #. Select **Import** from the **File** menu:
 
     .. image:: /_static/bonsai/neuropixelsv1/neuropixelsv1_import_cropped.png
-        :alt: The configuraiton GUI with import selected
+        :alt: The configuration GUI with import selected
         :align: left
 
 #. Select a previously exported configuration file:

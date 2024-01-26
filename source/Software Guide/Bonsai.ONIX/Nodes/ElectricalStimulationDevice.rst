@@ -49,7 +49,7 @@ Parameters available through the property pane are as follows:
 
     * - PowerOn
       - boolean
-      - If true, the stimulator power circutiry is turned on. When not in
+      - If true, the stimulator power circuitry is turned on. When not in
         use, its a good idea to keep this false to reduce headstage power
         consumption and possible increased noise.
 
@@ -67,7 +67,7 @@ Parameters available through the property pane are as follows:
 
     * - PhaseOneDuration
       - double
-      - Phase 1 pulse duration (msec). This value can be 0 for monophasic stimuluation.
+      - Phase 1 pulse duration (msec). This value can be 0 for monophasic stimulation.
 
     * - InterPhaseDuration
       - double
@@ -76,7 +76,7 @@ Parameters available through the property pane are as follows:
 
     * - PhaseTwoDuration
       - double
-      - Phase 2 pulse duration (msec). This value can be 0 for monophasic stimuluation.
+      - Phase 2 pulse duration (msec). This value can be 0 for monophasic stimulation.
 
     * - PulsePeriod
       - double

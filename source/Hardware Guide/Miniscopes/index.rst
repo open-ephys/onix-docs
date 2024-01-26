@@ -29,8 +29,8 @@ UCLA Miniscope V4
 
 NINScope
 ------------------------------------------
-.. todo:: Comming soon.
+.. todo:: Coming soon.
 
 FeatherScope & Kiloscope
 ------------------------------------------
-.. todo:: Comming soon.
+.. todo:: Coming soon.

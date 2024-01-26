@@ -18,8 +18,8 @@ targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/probe>`__.
 
 Coaxial Link
 ***********************************
-For details on data serialiation and headstage gateware, have a look at the
-:ref:`serialization` page, which describes how coax headstages operatate in
+For details on data serialization and headstage gateware, have a look at the
+:ref:`serialization` page, which describes how coax headstages operate in
 general terms. The Neuropixels-1.0 Headstage has the following coaxial link
 properties:
 
@@ -39,10 +39,5 @@ properties:
     | PCLK Frequency         | 42                 |          |          | MHz      |
     +------------------------+--------------------+----------+----------+----------+
 
-.. important:: \*The headstage includes an undervoltage and overvoltage lockout
-    circuit that will only allow it to turn on when the proper link voltage is
-    present headstage. If the headstage is not turning on, make sure that the
-    voltage at the headstage itself is within the valid range
-
-.. note:: Have a look at the :ref:`tethers` page for more details on mirco-coax
+.. note:: Have a look at the :ref:`tethers` page for more details on micro-coax
     headstage tethers

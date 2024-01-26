@@ -37,7 +37,7 @@ board , it provides host PC communication.
 
     The ONIX FMC Host module.
 
-- Two deserailizers for any multifunction headstage conforming to the ONIX
+- Two deserializers for any multifunction headstage conforming to the ONIX
   serialization protocol
 - 12x ±10V analog outputs or inputs. Direction selected via analog switch
   controllable over the FMC connector. 

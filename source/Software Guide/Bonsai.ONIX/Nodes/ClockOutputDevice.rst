@@ -44,11 +44,11 @@ options.
 
     * - Delay
       - double
-      - If SyncToRun is true, this determins the delay from the start of the
+      - If SyncToRun is true, this determines the delay from the start of the
         hardware running state to the start of the clock output in seconds. 
 
     * - SyncToRun
       - bool
       - If true, then the clock output will remain low until hardware
-        aquisition starts. Otherwise it will free run independent of acqusition
+        acquisition starts. Otherwise it will free run independent of acquisition
         state. 

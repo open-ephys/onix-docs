@@ -25,7 +25,7 @@ hardware and can be installed using its package manager.
    install both the base **Bonsai.ONIX** library and its visualization tools.
 
    .. tip:: It is recommended to also install **Bonsai.ONIX.Design** because
-       it provides a substantial set of data visualation and graphical hardare
+       it provides a substantial set of data visualization and graphical hardware
        configuration elements.
 
    .. image:: /_static/bonsai/package-manager-search-onix.png
