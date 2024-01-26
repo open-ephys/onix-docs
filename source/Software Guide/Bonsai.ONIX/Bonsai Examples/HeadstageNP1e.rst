@@ -4,7 +4,7 @@ Headstage Neuropixels 1.0e Workflow
 ============================================
 This example workflow shows how the data streams produced by
 :ref:`headstage_neuropix1e` can be acquired and saved, as well as used for commutation. Each group workflow at the top
-level contains acquisition code for a different sensor on the headstage. A probe visualizer is included. Example Python and MATLAB scripts are not yet available. 
+level contains acquisition code for a different sensor on the headstage. A probe visualizer is included.
 
 .. important:: \Bonsai workflows that contain the :ref:`bonsai_NeuropixelsV1edev` node such as this one will not
     open/load unless the headstage is on. Make sure to configure the headstage port voltage and mode correctly using the :ref:`bonsai_onicontext` node with the parameters for the :ref:`headstage_neuropix1e` before connecting the headstage.
@@ -26,4 +26,6 @@ Neuropixels V1.0e Device
     
 Loading Scripts
 --------------------------
-.. todo:: Document.
+The following script can be used to load the data produce by this workflow in Python (using Numpy):
+
+- Python: :download:`load_headstage64.py <../../../_static/bonsai/workflows/load_neuropixelsv1e.py>` 
