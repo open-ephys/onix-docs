@@ -93,5 +93,5 @@ Hardware Revision 1.4
 ..      - Release Notes
 ..    * - :download:`0.6 <./_static/downloads/onix-gateware-images/pcie-host-1r4/onix-pcie-host-1r4_v0.6.bin>`
 ..      - 2022.11.27
-..      - Remove unessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
+..      - Remove unnecessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
  

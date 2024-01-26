@@ -6,7 +6,7 @@ A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that wraps a
 :ref:`onidatasheet_heartbeat` device.
 
 :Inputs:  None
-:Outputs: A single ``HearbeatDataFrame`` that is produced periodically by
+:Outputs: A single ``HeartbeatDataFrame`` that is produced periodically by
           hardware. This type is a wrapper around the :ref:`Device To Host Data
           Frame <onidatasheet_heartbeat_d2h>` specified on the
           :ref:`onidatasheet_heartbeat` device datasheet.

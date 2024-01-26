@@ -56,10 +56,10 @@ Parameters available through the property pane are as follows:
         - TwosCompliment: raw 16-bit signed integer conversion results.
         - MicroVolts: 32-bit floating-point voltages (EphysData in uV; DCData in Volts)
 
-    * - DSPCuttoff
+    * - DSPCutoff
       - enum
-      - Select the low-frequency cutoff for the integrated digtial offset
-        removal filter. This fitering is performed following analog to digital
+      - Select the low-frequency cutoff for the integrated digital offset
+        removal filter. This filtering is performed following analog to digital
         conversion.
 
     * - AnalogHighCutoff
@@ -86,7 +86,7 @@ Parameters available through the property pane are as follows:
 
     * - StimulusSequence
       - RHS2116StimulusSequence
-      - The stimulus sequence defintion for this device. Editing this parameter
+      - The stimulus sequence definition for this device. Editing this parameter
         will open the configuration GUI, just like double clicking the node.
 
     * - Trigger

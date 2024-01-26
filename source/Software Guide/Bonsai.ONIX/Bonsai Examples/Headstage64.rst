@@ -23,19 +23,19 @@ RHD2164 Ephys Chip
     64-channels of extracellular electrophysiology input
 
 TS4231 Lighthouse Receivers
-    3D position of the headstage in space when used with approriate lighthouse setup. 
+    3D position of the headstage in space when used with appropriate lighthouse setup. 
     
 Headstage Port Control
     Control over the headstage port and connectivity status logging 
 
 .. note:: 
-    This workflow does not demonstrate stimulation capabilites of the
+    This workflow does not demonstrate stimulation capabilities of the
     headstage. See :ref:`bonsai_estimdev` and :ref:`bonsai_ostimdev` for
     examples of how to control onboard stimulation.
 
 Loading Scripts
 --------------------------
-The following scripts can be used to load the data produce by this workflow in Python (using Numpy) or MATLAB:
+The following scripts can be used to load the data produced by this workflow in Python (using Numpy) or MATLAB:
 
 - Python: :download:`load_headstage64.py <../../../_static/bonsai/workflows/load_headstage64.py>` 
 - MATLAB: :download:`load_headstage64.m <../../../_static/bonsai/workflows/load_headstage64.m>` 

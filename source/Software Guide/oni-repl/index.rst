@@ -24,7 +24,7 @@ hardware to perform the following:
 - Parameterize and initialize an :ref:`oni_h_acquisition_context`
 - Examine the :ref:`oni_h_device` table
 - Examine device hub information
-- Interact with inidividual devices
+- Interact with individual devices
   
   - Read device registers
   - Write device registers

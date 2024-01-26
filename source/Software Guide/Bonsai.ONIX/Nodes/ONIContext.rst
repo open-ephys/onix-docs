@@ -131,7 +131,7 @@ with a synchronization cable.
     selected *Sync Channel*. Any number of listeners can be assigned to a
     single *Sync Channel*.
 
-.. important:: Only the aquisition start trigger is shared from Sources to
+.. important:: Only the acquisition start trigger is shared from Sources to
     Listeners. The acquisition clock may or may not be shared depending on the
     type of host hardware being used. For example, if all hardware consists of
     :ref:`PCIe Hosts <pcie_host>` on the same motherboard, then both start

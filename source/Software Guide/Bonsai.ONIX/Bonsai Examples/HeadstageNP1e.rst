@@ -26,6 +26,6 @@ Neuropixels V1.0e Device
     
 Loading Scripts
 --------------------------
-The following script can be used to load the data produce by this workflow in Python (using Numpy):
+The following script can be used to load the data produced by this workflow in Python (using Numpy):
 
 - Python: :download:`load_headstage64.py <../../../_static/bonsai/workflows/load_neuropixelsv1e.py>` 

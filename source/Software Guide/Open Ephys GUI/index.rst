@@ -27,7 +27,7 @@ reason, we have dedicated the majority of our development effort toward the
 Using the Open Ephys GUI for ONIX Data Visualization
 --------------------------------------------------------------
 Bonsai provides advanced access to GPU visualization capabilities, but has to
-be manually programmed to generate high performance real-time plotting. Thiscan
+be manually programmed to generate high performance real-time plotting. This can
 be a hurdle for those that just want to see if they have their probe in the
 right spot. In the future, we aim to change this situation, and eventually
 provide first-class native ephys visualization capabilities in the Bonsai
