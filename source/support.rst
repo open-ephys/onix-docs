@@ -18,7 +18,8 @@ the appropriate repository:
 - `ONIX Bonsai Package Repo <https://github.com/jonnew/Bonsai.ONIX>`__
 - ONIX Hardware Repositories
     - `Headstage-64 <https://github.com/open-ephys/onix-headstage-64>`__
-    - `Headstage Neuropix1 <https://github.com/open-ephys/onix-headstage-neuropix1>`__
+    - `Headstage Neuropixels-1.0 <https://github.com/open-ephys/onix-headstage-neuropix1>`__
+    - `Headstage Neuropixels-1.0e <https://github.com/open-ephys/onix-headstage-neuropix1e>`__
     - `PCIe Host Board <https://github.com/open-ephys/onix-fmc-host>`__
     - `Breakout <https://github.com/open-ephys/onix-breakout>`__
 
@@ -29,5 +30,5 @@ You can also **ask questions** on the Open Ephys Google Group or Slack channel
 
 For general information on **ephys techniques**, have a look at the the following resources:
 
-- `Open Ephys Extracelluar Ephys Course <https://ahleighton.github.io/OE-ephys-course/>`_
-- `Open Ephys Wiki <https://open-ephys.atlassian.net/wiki/spaces/OEW/overview?mode=global>`_
+- `Open Ephys Extracellular Ephys Course <https://github.com/open-ephys/ephys-course/>`_
+- `Open Ephys Wiki <https://open-ephys.atlassian.net/wiki/spaces/OEW/overview?mode=global>`_ (legacy)
