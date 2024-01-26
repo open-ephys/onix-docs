@@ -20,6 +20,10 @@ Understanding the System
 - Our :ref:`faq` contains answers to general questions about the system.
 - See the :ref:`hardware_guide` for a description of each ONIX hardware component and decide which you will need.
 
+Usage warnings
+--------------------------------
+- Read :ref:`warnings` before starting to work with the system to avoid causing damage to system components.
+
 Setting up ONIX
 --------------------------------
 
