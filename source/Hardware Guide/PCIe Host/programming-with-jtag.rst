@@ -1,9 +1,12 @@
 .. _pcie_host_program_over_jtag:
 
+.. toctree::
+    :hidden:
+    
 Programming a Blank PCIe Host (Windows)
 ########################################
 
-#. If you have not done so already, follow the steps on the :ref:`pcie_host_setup_windows` page.
+#. If you have not done so already, follow the steps on the :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
 
 #. Download and install Vivado Lab Edition here: https://www.xilinx.com/support/download.html.
 
