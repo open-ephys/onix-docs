@@ -1,5 +1,8 @@
 .. _warnings:
 
+.. toctree::
+    :hidden:
+
 Usage Warnings
 ==========================================
 .. warning::  Improper setup and usage can cause damage to system components.

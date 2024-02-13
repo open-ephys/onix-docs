@@ -3,14 +3,16 @@
 
 .. _getting_started:
 
-Getting Started
-==========================================
-
 .. toctree::
     :maxdepth: 1
     :hidden:
 
     whatisonix
+    warnings
+    troubleshooting
+
+Getting Started
+==========================================
 
 Understanding the System
 --------------------------------
@@ -19,10 +21,12 @@ Understanding the System
   systems.
 - Our :ref:`faq` contains answers to general questions about the system.
 - See the :ref:`hardware_guide` for a description of each ONIX hardware component and decide which you will need.
+- To understand the underlying hardware specifications, check out the `ONI Hardware Specification <https://open-ephys.github.io/ONI/hw-spec/index.html>`_.
+- For developers who want to dig into the API, check out the `ONI API Documentation <https://open-ephys.github.io/ONI/api/index.html>`_.
 
-Usage warnings
+Usage Warnings
 --------------------------------
-- Read :ref:`warnings` before starting to work with the system to avoid causing damage to system components.
+- Read :ref:`Usage Warnings<warnings>` before starting to work with the system to avoid causing damage to system components.
 
 Setting up ONIX
 --------------------------------
@@ -51,7 +55,7 @@ Setting up ONIX
    - Lighthouse synchronization cable (3.5 mm Stereo Jack Plug to Plug)
 
 #. Install the PCIe host board and configure the acquisition computer by
-   following the :ref:`pcie_host_setup_windows`.
+   following the :ref:`Setup Guide for Windows<pcie_host_setup_windows>`.
 #. :ref:`Mount and connect the 3D-Tracking Lighthouses <lighthouse_setup>`
 #. :ref:`Mount and connect the commutator <commutator_setup>`
 #. :ref:`Connect the Breakout Board to the PCIe host board <breakout_setup>`.
