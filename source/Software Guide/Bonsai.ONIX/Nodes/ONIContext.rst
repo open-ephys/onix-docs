@@ -8,8 +8,8 @@ ONIContext
 
 .. warning:: This node configures hardware parameters when it is placed in a workflow, even if the workflow is not running. Always check voltage configurations before connecting headstages to the system.
 
-A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages a
-:ref:`oni_h_acquisition_context` and allows basic acquisition parameterization.
+A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages the underlying
+**Acquisition Context** and allows basic acquisition parameterization.
 There must be at least one of these in every workflow that uses ONIX hardware.
 
 :Inputs:  None
