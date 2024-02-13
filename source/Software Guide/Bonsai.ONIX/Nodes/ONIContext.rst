@@ -14,7 +14,7 @@ There must be at least one of these in every workflow that uses ONIX hardware.
 
 :Inputs:  None
 :Outputs: A single ``ONIContextTask`` followed by `Never
-          <http://reactivex.io/documentation/operators/empty-never-throw.html>`__.
+          <https://reactivex.io/documentation/operators/empty-never-throw.html>`__.
 
 .. raw:: html
 

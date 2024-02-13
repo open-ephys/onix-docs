@@ -12,7 +12,7 @@ freely moving recordings with headstages and/or miniscopes.
     setup
     usage
 
-:Design Repository: https://github.com/open-ephys/onix-commutator
+:Design Repository: https://github.com/open-ephys/commutators
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`
 

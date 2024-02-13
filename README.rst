@@ -30,8 +30,8 @@ then you can build the documentation
 
    pipenv run make html
 
-if you want run ``make`` multiple times, prepend ``pipenv run`` on each command can be annoying,
-you can spawn a subshell with
+if you want to run ``make`` multiple times, prepending ``pipenv run`` on each command can be annoying.
+You can spawn a subshell with
 
 .. code:: shell
 

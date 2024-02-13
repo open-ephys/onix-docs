@@ -60,7 +60,7 @@ Parameters available through the property pane are as follows:
 
     * - RequireSNMatch
       - boolean
-        If True, the configuration and probe serial numbers must match
+      - If True, the configuration and probe serial numbers must match
         to start acquisition. Keeping this parameter set to True is good
         practice because the correct calibration files must be loaded in order
         for the probe to function properly.

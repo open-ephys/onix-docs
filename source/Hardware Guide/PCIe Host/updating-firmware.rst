@@ -1,10 +1,13 @@
 .. _pcie_host_firmware_update:
 
+.. toctree::
+    :hidden:
+    
 Updating Firmware in Windows
 ########################################
 
 #. If you have not done so already, follow the steps on the
-   :ref:`pcie_host_setup_windows` page.
+   :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
 
 #. Download the latest :ref:`oni_repl_download` and unzip it. Navigate to this
    location using a console (e.g. PowerShell).

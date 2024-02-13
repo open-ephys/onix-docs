@@ -1,5 +1,8 @@
 .. _pcie_host_overview:
 
+.. toctree::
+    :hidden:
+    
 Overview
 #########################
 The **ONIX PCIe Host** combines the `ONIX FMC Host Module

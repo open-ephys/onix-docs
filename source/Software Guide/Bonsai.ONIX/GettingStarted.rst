@@ -33,7 +33,7 @@ Bonsai Learning Resources
       - Bonsai's Q/A forum with **lots** of useful examples and solutions for
         various common (and uncommon) acquisition scenarios.
 
-    * - `ReactiveX operator definitions  <http://reactivex.io/documentation/operators.html>`__
+    * - `ReactiveX operator definitions  <https://reactivex.io/documentation/operators.html>`__
       - Detailed information on many of the reactive operators you will find in
         Bonsai's Reactive library, especially in the "Combinators" grouping
 

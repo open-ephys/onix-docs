@@ -95,13 +95,13 @@ The controller firmware runs on a `Teensy
 3.2 <https://www.pjrc.com/store/teensy32.html>`__. To compile this firmware and
 program the microcontroller, you need the following dependencies:
 
-- `Arduino IDE <https://www.arduino.cc/en/Main/Software>`__
+- `Arduino IDE <https://www.arduino.cc/en/software/>`__
 - `Teensyduino add-on <https://www.pjrc.com/teensy/td_download.html>`__
 - `AccelStepper <https://www.airspayce.com/mikem/arduino/AccelStepper/>`__
 - `Arduino JSON <https://arduinojson.org/>`__
 
 The firmware can be uploaded to the device using the `Arduino
-IDE <https://www.arduino.cc/en/Main/Software>`__. 
+IDE <https://www.arduino.cc/en/software/>`__. 
 
 .. note:: You will need to add the `Teensyduino add-on
    <https://www.pjrc.com/teensy/teensyduino.html>`__ to the Arduino IDE to program
