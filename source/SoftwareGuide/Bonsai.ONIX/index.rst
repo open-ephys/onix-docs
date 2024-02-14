@@ -18,7 +18,7 @@ Bonsai.ONIX
     Installation
     GettingStarted
     Nodes/index
-    Bonsai Examples/index
+    BonsaiExamples/index
 
 `Bonsai.ONIX <https://www.nuget.org/packages/Bonsai.ONIX/>`__ is a `Bonsai
 <https://bonsai-rx.org/>`__ library for ONIX hardware. This library contains
