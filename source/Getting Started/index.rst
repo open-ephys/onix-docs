@@ -57,7 +57,7 @@ Setting up ONIX
 #. Install the PCIe host board and configure the acquisition computer by
    following the :ref:`Setup Guide for Windows<pcie_host_setup_windows>`.
 #. :ref:`Mount and connect the 3D-Tracking Lighthouses <lighthouse_setup>`
-#. :ref:`Mount and connect the commutator <commutator_setup>`
+#. :ref:`Mount and connect the commutator <commutators>`
 #. :ref:`Connect the Breakout Board to the PCIe host board <breakout_setup>`.
 #. Connect a headstage, Miniscope V4 or other ONI compliant recording device by
    :ref:`following these steps <headstage_setup>`. Be sure to read :ref:`this
