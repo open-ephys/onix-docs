@@ -3,9 +3,9 @@
     :maxdepth: 2
     :titlesonly:
 
-    Getting Started/index
-    Hardware Guide/index
-    Software Guide/index
+    GettingStarted/index
+    HardwareGuide/index
+    SoftwareGuide/index
     Resources/index
 
 .. title:: Home
@@ -29,7 +29,7 @@ tools.
 
     <br>
     <div class="card-columns">
-        <a class="reference internal" href="Getting%20Started/index.html#getting-started"><span class="std std-ref custom-card">
+        <a class="reference internal" href="GettingStarted/index.html#getting-started"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/running.svg" class="card-img-top hover-zoom" alt="hardware user guide" height="100">
             <div class="card-body flex-fill">
@@ -38,7 +38,7 @@ tools.
                 high-level overview of the system.</p>
             </div>
         </div>
-        <a class="reference internal" href="Hardware%20Guide/index.html#hardware-guide"><span class="std std-ref custom-card">
+        <a class="reference internal" href="HardwareGuide/index.html#hardware-guide"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/noun_pcb.svg" class="card-img-top hover-zoom" alt="hardware user guide" height="100">
             <div class="card-body flex-fill">
@@ -46,7 +46,7 @@ tools.
                 <p class="card-text">Explore the details of ONIX hardware.</p>
             </div>
         </div>
-        <a class="reference internal" href="Software%20Guide/index.html#software"><span class="std std-ref custom-card">
+        <a class="reference internal" href="SoftwareGuide/index.html#software"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="100">
             <div class="card-body flex-fill">

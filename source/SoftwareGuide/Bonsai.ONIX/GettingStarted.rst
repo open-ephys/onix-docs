@@ -3,9 +3,6 @@
 Getting Started
 ================================
 
-.. toctree::
-    :maxdepth: 1
-
 Bonsai Learning Resources
 --------------------------------
 
@@ -58,6 +55,7 @@ Have a look at the following video shows how to use ONIX hardware with `Bonsai
 <https://bonsai-rx.org/>`__.
 
 .. raw:: html
+
     <div style="text-align: center;
       background-color: black;
       color: white; padding:20px;">

@@ -4,8 +4,7 @@ oni-repl
 ===================================
 
 .. toctree::
-    :maxdepth: 3
-    :hidden:
+    :maxdepth: 1
 
     usage
 

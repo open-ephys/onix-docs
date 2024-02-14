@@ -8,7 +8,7 @@
 
     oni-repl/index
     Bonsai.ONIX/index
-    Open Ephys GUI/index
+    OpenEphysGUI/index
 
 |software_logo| Software Guide
 ===================================

@@ -2,9 +2,6 @@
 
 Usage
 ====================================
-.. toctree::
-    :maxdepth: 3
-    :hidden:
 
 .. code-block:: console
 
