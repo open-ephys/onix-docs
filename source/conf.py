@@ -64,6 +64,7 @@ main_doc = 'index'
 exclude_patterns = [
     'Hardware Guide/PCIe Host/programming-with-jtag.rst',
     'Hardware Guide/PCIe Host/bracket-assembly.rst'
+    'Getting Started/troubleshooting.rst'
     ]
 
 # The name of the Pygments (syntax highlighting) style to use.

@@ -9,7 +9,6 @@
 
     whatisonix
     warnings
-    troubleshooting
 
 Getting Started
 ==========================================
