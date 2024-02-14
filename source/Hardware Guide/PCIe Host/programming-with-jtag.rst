@@ -75,7 +75,7 @@ Programming a Blank PCIe Host (Windows)
 
 #. Power off the computer and then restart.
 
-#. Open the Device Manager from the Windows Search Bar and you should you
+#. Open the Device Manager from the Windows Search Bar and you
    should see a RIFFA in there.
 
 #. After this, you will be able to quickly upgrade your PCIe Host over PCIe by
