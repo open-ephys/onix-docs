@@ -1,5 +1,7 @@
 .. _troubleshooting:
 
+:orphan:
+
 .. toctree::
     :hidden:
 

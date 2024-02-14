@@ -61,11 +61,7 @@ main_doc = 'index'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
-    'Hardware Guide/PCIe Host/programming-with-jtag.rst',
-    'Hardware Guide/PCIe Host/bracket-assembly.rst'
-    'Getting Started/troubleshooting.rst'
-    ]
+exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None

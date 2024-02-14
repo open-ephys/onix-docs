@@ -1,5 +1,7 @@
 .. _pcie_host_program_over_jtag:
 
+:orphan:
+
 .. toctree::
     :hidden:
     
@@ -10,7 +12,7 @@ Programming a Blank PCIe Host (Windows)
 
 #. Download and install Vivado Lab Edition here: https://www.xilinx.com/support/download.html.
 
-#. Download :ref:`pcie_host_bootloader_download`.
+#. Download **PCIe Host Bootloader**.
 
 #. Download the most recent :ref:`pcie_host_image_download` that is compatible with your hardware
 
@@ -79,4 +81,4 @@ Programming a Blank PCIe Host (Windows)
    should see a RIFFA in there.
 
 #. After this, you will be able to quickly upgrade your PCIe Host over PCIe by
-   following the steps on the :ref:`pcie_host_gateware_drivers` page.
+   following the steps on the **pcie_host_gateware_drivers** page.
