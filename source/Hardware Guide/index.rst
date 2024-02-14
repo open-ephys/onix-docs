@@ -15,15 +15,15 @@ ONIX consists of several hardware devices:
     :maxdepth: 1
     :hidden:
 
-    PCIeHost/index
-    BreakoutBoard/index
+    PCIe Host/index
+    Breakout Board/index
     Headstages/index
     Miniscopes/index
     Commutators/index
     Lighthouses/index
-    Adapters&EIBs/index
+    Adapters & EIBs/index
     Datasheets/index
-    Connections&Cables/index
+    Connections & Cables/index
 
 :ref:`PCIe Host<pcie_host>`
 -----------------------------------------
