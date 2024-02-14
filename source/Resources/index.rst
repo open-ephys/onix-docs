@@ -19,15 +19,16 @@ List of resources that might be useful for using ONIX.
 :ref:`Downloads<downloads>`
 ---------------------------------
 
-test
+Browse a list of applications, drivers, and updaters related to ONIX.
 
 :ref:`FAQ<faq>`
 -------------------
 
-test
+Check out some commonly asked questions.
 
 :ref:`Support<support>`
 -------------------------------
 
-test
+Need to contact us? There are a number of methods available for questions,
+comments, and concerns.
 
