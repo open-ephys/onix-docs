@@ -13,6 +13,11 @@ targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/probe>`__.
 - One Neuropixels 1.0 probe
 - A BNO055 9-axis IMU for real-time, 3D orientation tracking
 
+.. csv-table::
+   :widths: 18, 80
+
+   "*PCIe host firmware compatibility*", "v 1.0 and above"
+
 Coaxial Link
 ***********************************
 For details on data serialization and headstage gateware, have a look at the
