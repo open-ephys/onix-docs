@@ -1,4 +1,12 @@
+.. _troubleshooting:
+
+:orphan:
+
+.. toctree::
+    :hidden:
+
 Troubleshooting
+===============
 
 Reset breakout board using tiny hole
 

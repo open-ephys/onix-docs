@@ -1,5 +1,8 @@
 .. _what_is_onix:
 
+.. toctree::
+    :hidden:
+
 What is ONIX?
 ==========================================
 ONIX is a data acquisition system for neuroscience, composed of various pieces

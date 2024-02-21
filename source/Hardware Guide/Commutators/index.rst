@@ -4,15 +4,10 @@ Coaxial Commutators
 ===================================
 Active, near-zero torque commutators to prevent tether twisting during
 freely moving recordings with headstages and/or miniscopes.
+This page provides a very brief overview of the commutators; for a more extensive
+walkthrough, please follow the documentation link for `Commutators <https://open-ephys.github.io/commutator-docs/index.html>`__.
 
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    setup
-    usage
-
-:Design Repository: https://github.com/open-ephys/onix-commutator
+:Design Repository: https://github.com/open-ephys/commutators
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`
 
@@ -30,7 +25,7 @@ ONIX uses an active commutator to prevents tether twisting during freely moving
 recordings.  A inertial measurement unit (IMU) on the headstage or miniscope
 sends orientation data to the host computer. Because the real-time orientation
 of the animal is known, software (e.g. Bonsai) can be used to send commands to
-the commutator via its USB interface, and the motor in the commutator willturn
+the commutator via its USB interface, and the motor in the commutator will turn
 when the animal does. A high-quality radio-frequency rotary joint inside the
 commutator maintains electrical connectivity for both power and high-frequency
 data signals between the tether leading to the headstage and the coaxial cable

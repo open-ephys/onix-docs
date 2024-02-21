@@ -72,8 +72,6 @@ pygments_style = None
 todo_include_todos = True
 
 # Breathe Configuration
-breathe_default_project = 'clroni'
-breathe_projects = { 'clroni': './API Reference/clroni/doxygen-xml' }
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -152,6 +150,18 @@ html_css_files = [
 
 # Option for linkcheck
 linkcheck_anchors = False
+linkcheck_timeout = 4
+
+# NB: Ignore these sites, they throw 403 errors during linkcheck, but are accessible for end-users
+linkcheck_ignore = [
+    'https://multimedia.3m.com/mws/media/*', 
+    'https://www.intel.com/*'
+]
+
+# NB: Allow this permanent redirect for a Visual Studio package
+linkcheck_allowed_redirects = {
+    'https://aka.ms/vs/16/release/vc_redist.x64.exe': 'https://download.visualstudio.microsoft.com/download/pr/9613cb5b-2786-49cd-8d90-73abd90aa50a/CEE28F29F904524B7F645BCEC3DFDFE38F8269B001144CD909F5D9232890D33B/VC_redist.x64.exe'
+}
 
 def rstjinja(app, docname, source):
     '''

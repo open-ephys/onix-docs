@@ -48,12 +48,13 @@ FAQ
 
     I have existing acquisition hardware. Can I can use your API and software to acquire data from it?
         Yes. We tried to design our API so that it decouples hardware details
-        from software in a generic way. Have a look at the :ref:`drivers` page
-        for more information on how to using the ONIX API with your hardware.
+        from software in a generic way. Have a look at the 
+        `Driver Translators <https://open-ephys.github.io/ONI/api/liboni/driver-translators/index.html>`_ page
+        for more information on how to use the ONIX API with your hardware.
         Depending on how your device communicates with the computer it may only
         take 10's of lines of C.
 
     I have existing acquisition software. Can I integrate support for ONIX hardware using your API?
-        Yes. Have a look at the :ref:`api_ref` to get started. Also let us know
-        if you want help.
+        Yes. Have a look at the `ONI API Documentation <https://open-ephys.github.io/ONI/api/index.html>`_ 
+        to get started. Also let us know if you want help.
 

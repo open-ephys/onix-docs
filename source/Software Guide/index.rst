@@ -3,15 +3,15 @@
 
 .. _software:
 
-|software_logo| Software Guide
-===================================
-
 .. toctree::
     :hidden:
 
     oni-repl/index
     Bonsai.ONIX/index
     Open Ephys GUI/index
+
+|software_logo| Software Guide
+===================================
 
 Although ONIX is software agnostic, we have focused our development efforts on `Bonsai <https://bonsai-rx.org/>`__ for data acquisition. Bonsai is
 very good at dealing with the asynchronous and heterogeneous data that ONIX

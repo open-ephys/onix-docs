@@ -17,7 +17,6 @@ equipment.
     setup-windows
     updating-firmware
     multi-board-sync
-    bracket-assembly
 
 :Design Repository: https://github.com/open-ephys/onix-fmc-host
 :Compatibility: :ref:`headstage_64`,

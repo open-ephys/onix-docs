@@ -15,7 +15,7 @@ streams.
 This is fine when the data being processed is synchronized ephys and auxiliary
 data. However, by design, ONIX hardware makes no such guarantees about the
 nature of the data it produces. On the contrary, an
-:ref:`oni_h_acquisition_context` manages a table of devices that are
+**Acquisition Context** manages a table of devices that are
 potentially all asynchronous from one another. Even though each sample from
 these devices is individually time-stamped in hardware, there is no guarantee
 of when they will arrive or in what order. This necessitates the use of

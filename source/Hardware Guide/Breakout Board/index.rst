@@ -48,5 +48,5 @@ Additionally, it has the following features:
   tables
 - 19" rack compatibility
 - Fully open-source gateware and made using an open-source FPGA toolchain
-  (`yosys <http://www.clifford.at/yosys/>`__ & `nextpnr
+  (`yosys <https://yosyshq.net/yosys/>`__ & `nextpnr
   <https://github.com/YosysHQ/nextpnr>`__)

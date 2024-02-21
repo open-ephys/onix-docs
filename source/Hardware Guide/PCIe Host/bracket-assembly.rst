@@ -1,5 +1,10 @@
 .. _pcie_host_bracket_assembly:
 
+:orphan:
+
+.. toctree::
+    :hidden:
+    
 PCIe Bracket Assembly
 ########################################
 
@@ -18,7 +23,7 @@ Materials
       - Notes
     * - 3D printed bracket
       - 1
-      - `STL file <https://github.com/open-ephys/onix-fmc-host/blob/main/mechanical/pcie-bracket/stl/pcie-bracket-1p27mm.STL>`__
+      - `STL file <https://github.com/open-ephys/onix-fmc-host/blob/main/mechanical/pcie-bracket-3dprint/stl/pcie-bracket-1p27mm.STL>`__
       - Sintered Nylon. Glass-bead reinforced is even better
     * - 3mm light pipe
       - 2

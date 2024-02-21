@@ -28,10 +28,9 @@ acquiring and sending data to ONIX hardware. An additional library,
 is possible to use ``Bonsai.ONIX`` without the GUI library, it is not
 recommended. There are three major classes of operators in the library:
 
-#. :ref:`bonsai_onicontext` - This operator wraps an
-   :ref:`oni_h_acquisition_context` and provides access to the device table for
-   a hardware slot. At least one of these operators is required in every
-   workflow.
+#. :ref:`bonsai_onicontext` - This operator wraps the underlying **Acquisition Context**
+   and provides access to the device table for a hardware slot. At least one of these 
+   operators is required in every workflow.
 #. ``<Some>Device`` - These operators wrap individual :ref:`ONI Device
    <onidatasheets>`'s and provide access to their data IO and configuration
    registers.

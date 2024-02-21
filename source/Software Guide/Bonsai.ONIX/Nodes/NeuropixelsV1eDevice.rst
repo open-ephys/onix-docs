@@ -60,7 +60,7 @@ Parameters available through the property pane are as follows:
 
     * - RequireSNMatch
       - boolean
-        If True, the configuration and probe serial numbers must match
+      - If True, the configuration and probe serial numbers must match
         to start acquisition. Keeping this parameter set to True is good
         practice because the correct calibration files must be loaded in order
         for the probe to function properly.
@@ -92,8 +92,8 @@ Neuropixels 1.0 probes are shipped with two calibration files that must be
 uploaded to the probe for proper operation. For example, the calibration files
 for probe 19051023592 are:
 
-- :download:`19051023592_ADCCalibration.csv <../../../_static/bonsai/NeuropixelsV1e/19051023592_ADCCalibration.csv>`
-- :download:`19051023592_gainCalValues.csv <../../../_static/bonsai/NeuropixelsV1e/19051023592_gainCalValues.csv>`
+- :download:`19051023592_ADCCalibration.csv <../../../_static/bonsai/neuropixelsv1/19051023592_ADCCalibration.csv>`
+- :download:`19051023592_gainCalValues.csv <../../../_static/bonsai/neuropixelsv1/19051023592_gainCalValues.csv>`
 
 The calibration files for your probe will have "19051023592" replaced with your
 probe's serial number. These files contain parameters that are used to correct

@@ -126,7 +126,7 @@ digital input serialization, digital output deserialization, interpreting user
 input, and driving indication LEDs. The `breakout board gateware
 <https://github.com/open-ephys/onix-breakout/tree/main/gateware>`__ is
 impelemented using an open-source toolchain (`Yosys
-<http://www.clifford.at/yosys/>`__ and `NextPnR
+<https://yosyshq.net/yosys/>`__ and `NextPnR
 <https://github.com/YosysHQ/nextpnr>`__).
 
 

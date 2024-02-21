@@ -15,10 +15,10 @@ that provides 3D position information. At is core, this device comprises an
 array of optical to digital converters that work with both V1 and V2 ("Index")
 and Steam/HTC/Vive base stations:
 
-- `TS4231 <https://triadsemi.com/product/ts4231/>`__ Optical to digital converter
+- **TS4231**: Optical to digital converter
 
 This device transmits data every time one of the sensors in the array receives
-and optical signal. The host computer must perform the mathematics in order to
+an optical signal. The host computer must perform the mathematics in order to
 calculate positional information using these data.
 
 .. _onidatasheet_ts4231_v1_array_reg:

@@ -14,7 +14,7 @@ The **BNO055** is a 9-axis inertial measurement unit (IMU) that provides
 orientation and acceleration information. At is core, this device corresponds
 to a single chip:
 
-- `BNO055 <https://www.bosch-sensortec.com/products/smart-sensors/bno055.html>`__
+- `BNO055 <https://www.bosch-sensortec.com/products/smart-sensors/bno055/>`__
   9-Axis IMU
 
 This device implementation has hard-coded all of the configuration required to

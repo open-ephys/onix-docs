@@ -3,7 +3,7 @@
 Neuropixels-1.0e Headstage
 ##############################
 The ONIX **Neuropixels-1.0e Headstage** is a serialized, multifunction headstage
-targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/probe>`__.
+targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/>`__.
 
 .. image:: /_static/images/headstage-neuropix1e/headstage-np1e-with-probe.webp
     :align: center

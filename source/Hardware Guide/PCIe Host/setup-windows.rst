@@ -1,5 +1,8 @@
 .. _pcie_host_setup_windows:
 
+.. toctree::
+    :hidden:
+    
 Setup Guide for Windows
 ########################################
 
