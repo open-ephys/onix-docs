@@ -9,5 +9,3 @@ pydata-sphinx-theme = "0.13.3"
 make = "*"
 pytz = "*"
 sphinxcontrib-wavedrom = "*"
-sphinx-csharp = {git = "https://github.com/rogerbarton/sphinx-csharp.git", ref = "master"}
-breathe = "*"
