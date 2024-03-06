@@ -34,6 +34,16 @@ Register Programming
       - Description
 
     * - 0x00
+      - ENABLE
+      - R/W
+      - N/A
+      - N/A
+      - N/A
+      - ONI required enable register
+
+        * This register has no effect. Writes will be ignored without error.
+
+    * - 0x01
       - TRIGGERSOURCE
       - R/W
       - Immediate
@@ -48,7 +58,7 @@ Register Programming
           TRIGGERSOURCE = 0x1 (receiver).
         * 0x1: Receiver. Only resepct triggers received from sync pin.
 
-    * - 0x01
+    * - 0x02
       - TRIGGER
       - W
       - Immediate
