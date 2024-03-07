@@ -11,7 +11,7 @@ level contains acquisition code for a different sensor on the headstage. A probe
     
 .. raw:: html
 
-    {% with static_path = '../../../_static', name = 'HeadstageNeuropixelsV1e' %}
+    {% with static_path = '../../../_static/bonsai/workflows', name = 'HeadstageNeuropixelsV1e' %}
         {% include 'workflow.html' %}
     {% endwith %}
 
