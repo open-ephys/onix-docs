@@ -7,7 +7,7 @@ This example workflow shows how the data streams produced by
 level contains acquisition code for a different sensor on the headstage. A probe visualizer is included.
 
 .. important:: \Bonsai workflows that contain the :ref:`bonsai_NeuropixelsV1edev` node such as this one will not
-    open/load unless the headstage is on. Make sure to configure the headstage port voltage and mode correctly using the :ref:`bonsai_onicontext` node with the parameters for the :ref:`headstage_neuropix1e` before connecting the headstage.
+    open/load unless the headstage is on. Make sure to configure the headstage port voltage and mode correctly using the :ref:`bonsai_onicontext` node with the parameters for the :ref:`headstage_neuropix1e` before connecting the headstage. This example is programmed to use a headstage on Port A, so it will only work in that configuration.
     
 .. raw:: html
 
