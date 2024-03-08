@@ -12,7 +12,7 @@ level contains acquisition code for a different sensor on the headstage. A probe
 .. raw:: html
 
     {% with static_path = '../../../_static', name = 'HeadstageNeuropixelsV1e' %}
-        {% include 'workflow.html' %}
+        {% include 'workflow-zip.html' %}
     {% endwith %}
 
 
