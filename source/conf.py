@@ -43,8 +43,6 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
-    'breathe',
-    'sphinx_csharp',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,8 +68,6 @@ pygments_style = None
 
 # todo configuration
 todo_include_todos = True
-
-# Breathe Configuration
 
 # -- Options for HTML output -------------------------------------------------
 
