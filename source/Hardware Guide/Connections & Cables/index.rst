@@ -31,6 +31,7 @@ Connectors used for headstage link:
 * Commutator: SMA connectors to link to both breakout board and headstage.
 * The :ref:`headstage_64` & :ref:`headstage_neuropix1`:  Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket connector.
 
+
 Digital and Analog I/O
 --------------------------------
 .. image:: ../../_static/images/connections/IO.png
@@ -123,9 +124,9 @@ Cable List
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-flex">
         <div class="gallery-card">
-            <img src="../../_static/images/connections/tether.jpg" alt="Headstage tether">
+            <img src="../../_static/images/connections/tether.jpg" alt="Micro-coax headstage tether">
             <div class="card-body flex-fill">
-                <h5 class="card-header">Headstage Link: Headstage Tether</h5>
+                <h5 class="card-header">Headstage Link: Micro-Coax Headstage Tether</h5>
                 <p>- SMA to Hirose X.FL, Coaxial, 0.38 mm OD</p>
                 <p>- Breakout Board to Headstage, PCIe to Headstage (with adaptor)</p>
             </div>
@@ -158,3 +159,14 @@ The MMCX connectors at the end of these cables can easily break off if used inco
     </div>
   </div>
   </details>
+
+Connecting Micro-Coax Headstage Tethers
+-----------------------------------------
+
+The micro-coax tether is attached to the headstage via a Hirose X.FL coaxial connector and we use a red piece of tubing as a grip sleeve to secure the tether to the tether anchor tab present on the headstage so as to provide strain relief. 
+
+.. image:: ../../_static/images/connections/connect_microcoax_tether.png
+  :align: center
+  :width: 70%
+
+It is possible to remove the tether, but since it is made to have a snug fit we don't recommend doing this often - only for replacing the tether.
