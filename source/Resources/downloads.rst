@@ -64,8 +64,8 @@ RIFFA Device Driver
    * - Version
      - Release Date
      - Release Notes
-   * - :download:`6.0.1.3 <../_static/downloads/onix-driver-releases/riffa/riffa-x64_v6.0.1.3.zip>`
-     - 2022.11.29
+   * - :download:`6.1.0.2 <../_static/downloads/onix-driver-releases/riffa/riffa-x64_v6.1.0.2.zip>`
+     - 2024.03.14
      - Fix race condition in the RIFFA kernel driver for windows.
 
 -----------------
