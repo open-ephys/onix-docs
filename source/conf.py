@@ -152,7 +152,8 @@ linkcheck_timeout = 4
 linkcheck_ignore = [
     'https://multimedia.3m.com/mws/media/*', 
     'https://www.intel.com/*',
-    'https://www.analog.com/*'
+    'https://www.analog.com/*',
+    'https://www.xilinx.com/*'
 ]
 
 # NB: Allow this permanent redirect for a Visual Studio package
