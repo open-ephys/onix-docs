@@ -120,8 +120,7 @@ all LEDs to be completely turned off for light-sensitive experiments.
 
 Gateware
 -------------------------
-The breakout board contains a `TinyFPGA BX
-<https://tinyfpga.com/bx/guide.html>`__ (Lattice ICE40 breakout board) for
+The breakout board contains a `TinyFPGA BX <https://github.com/tinyfpga/TinyFPGA-BX>`__ (Lattice ICE40 breakout board) for
 digital input serialization, digital output deserialization, interpreting user
 input, and driving indication LEDs. The `breakout board gateware
 <https://github.com/open-ephys/onix-breakout/tree/main/gateware>`__ is
