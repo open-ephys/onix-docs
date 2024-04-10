@@ -19,6 +19,3 @@ source/_build/*
 
 # macOS specific
 .DS_Store
-
-# make.bat
-make.bat
