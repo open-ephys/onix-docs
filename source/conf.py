@@ -151,7 +151,9 @@ linkcheck_timeout = 4
 # NB: Ignore these sites, they throw 403 errors during linkcheck, but are accessible for end-users
 linkcheck_ignore = [
     'https://multimedia.3m.com/mws/media/*', 
-    'https://www.intel.com/*'
+    'https://www.intel.com/*',
+    'https://www.analog.com/*',
+    'https://www.xilinx.com/*'
 ]
 
 # NB: Allow this permanent redirect for a Visual Studio package
