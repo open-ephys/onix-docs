@@ -694,13 +694,6 @@
                 "sha256:b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"
             ],
             "version": "==0.5.1"
-        },
-        "xcffib": {
-            "hashes": [
-                "sha256:a95c9465f2f97b4fcede606bd1e08407a32df71cb760fd57bfe53677db691acc"
-            ],
-            "markers": "python_version >= '3.3'",
-            "version": "==1.5.0"
         }
     },
     "develop": {}
