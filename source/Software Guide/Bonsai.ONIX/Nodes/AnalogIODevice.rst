@@ -73,3 +73,8 @@ options.
       - The direction of the channel. If set to Output, the measured voltage is
         automatically looped back through the analog input.
 
+Loading Scripts
+--------------------------
+The following scripts can be used to load the data produced by this workflow in Python (using Numpy):
+
+- :download:`load-analog-data.py <../../../_static/bonsai/workflows/load-analog-data.py>` 
