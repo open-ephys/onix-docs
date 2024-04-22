@@ -74,6 +74,8 @@ Register Programming
       - None
       - Number of 32-bit words stored in memory, same value as what the frames generate
 
+.. _onidatasheet_memory-usage_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host is structured as follows:
