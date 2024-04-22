@@ -64,6 +64,8 @@ to use it.
     present in a single computer, then each will need its own
     :ref:`bonsai_onicontext` to manage it.
 
+.. _bonsai_onicontext_configuration:
+
 Configuration GUI
 --------------------------
 :ref:`bonsai_onicontext` configuration is performed using a GUI provided in the
@@ -80,10 +82,10 @@ using the **Properties Pane** on the right side of the form.
 #. **Settings**: Drop down menu that provides several hardware configuration options
 #. **Driver**: The device driver used to control the host hardware.
 #. **Slot**: The physical slot of the Host hardware in the computer.
-#. **Read Block Size**: The number of bytes read per call to the kernel driver.
+#. **Block Read Size**: The number of bytes read per call to the kernel driver.
    Larger numbers *will generally* increase overall bandwidth and decrease
    response latency.
-#. **Write Block Size**: The number of bytes pre-allocated to make output for output
+#. **Block Write Size**: The number of bytes pre-allocated to make output for output
    data frames. Larger numbers *may* increase overall bandwidth and decrease
    response latency.
 #. |refresh_icon| **<status>**: Shows the current host hardware connection status.

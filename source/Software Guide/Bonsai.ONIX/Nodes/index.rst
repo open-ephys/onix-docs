@@ -17,6 +17,7 @@ Nodes
 
     ONIContext
     HeartbeatDevice
+    MemoryUsageDevice
     AnalogIODevice
     DigitalIODevice
     ClockOutputDevice
