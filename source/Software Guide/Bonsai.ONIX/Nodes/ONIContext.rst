@@ -112,6 +112,8 @@ ONIX-specific hub options such as access to raw deserializer data streams:
 :Passthrough: The hub port is configured to work with compatible
     3rd-party devices, such as UCLA Miniscopes.
 
+.. tip:: Known issue: When the Passthrough radio button is selected for Hub B, no selector appears on either option making it seem nothing is selected, but the hub is actually in Passthrough mode.
+
 .. _bonsai_onicontext_syncsettings:
 
 Settings ➞  Host Sync...
