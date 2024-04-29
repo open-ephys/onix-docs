@@ -34,8 +34,8 @@ Updating Firmware in Windows
    version. 
 
    .. warning::
-        Make sure that the host firmware images matches the hardware version
-        from the last step or the update will not work properly.
+         Make sure that the host firmware image you download matches the PCIe Host Hardware version
+         you verified in the previous step. An incorrect firmware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`pcie_host_updater_download` utilities package and unzip
    it. Navigate to this folder using a console.
