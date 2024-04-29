@@ -77,11 +77,23 @@ PCIe Host Firmware
 .. note:: Please see :ref:`Updating PCIe Host Firmware
     <pcie_host_firmware_update>` for instructions on how to use these files.
 
-Hardware Revision 1.4
-----------------------------------------------
+.. warning::
+      Make sure that the host firmware image you download matches the PCIe Host Hardware version you have
+      as shown in the table below. An incorrect firmware version will not report any error while updating but will cause failures during operation.
 
-.. important:: Please :ref:`get in touch <support>` so that we can provide the latest firmware
-    for your board. 
+.. table::
+    :widths: 50 50
+
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    |            PCIe Host Hardware version                 |                            PCIe Host Firmware latest version                                                |
+    |               as reported by `oni-repl`               |                                   to download and update                                                    |
+    +=======================================================+=============================================================================================================+
+    | Hardware Revision 1.4                                 | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                      |
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.5                                 | :download:`Firmware version 1.1D <../_static/downloads/onix-gateware-images/onix-host-v1.1-update-revD.bin>`|
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6                                 | :download:`Firmware version 1.1F <../_static/downloads/onix-gateware-images/onix-host-v1.1-update-revF.bin>`|
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 .. .. list-table:: PCIe Host Revision 1.4 firmware images
