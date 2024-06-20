@@ -75,9 +75,9 @@ The pinout of the RHS2116 is as follows:
 ..  todo::
     We still have to photoshop this image, but I want to make sure that this is the way we want to map the channels 0->32 (ignoring GNDs and refs):
 
-    15<---------------------------------------0
+    15<-----------------------------------------------0
 
-    16--------------------------------------->31
+    16----------------------------------------------->31
 
     (IS THIS TRUE?)
 
