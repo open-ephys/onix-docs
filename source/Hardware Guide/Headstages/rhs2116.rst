@@ -17,7 +17,7 @@ Features
 
 *   Two RHS2116 ICs for a combined 32 reconfigurable i/o ephys channels
 
-*   Stimulator max current: 2.55mA (IS TIS RIGHT?)
+*   Stimulator max current: 2.55mA
 
 *   30193.236714975847 sample rate
 
@@ -65,14 +65,28 @@ RHS2116 headstage uses two 16-channel, BGA-packaged `Intan RHS2116
 sampling rate of 30 kHz/channel. The RHS2116 provides 32 ephys channels which are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ on the bottom of the headstage and can be used to record from most passive probes (e.g. 
 tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.)
 
+The pinout of the RHS2116 is as follows:
+
+..  image:: /_static/images/rhs2116/rhs2116-omnetics.webp
+    :align: center
+    :height: 400px
+    :alt: ONIX rhs2116 omnetics
+
+..  todo::
+    We still have to photoshop this image, but I want to make sure that this is the way we want to map the channels 0->32 (ignoring GNDs and refs):
+
+    15<---------------------------------------0
+
+    16--------------------------------------->31
+
+    (IS THIS TRUE?)
+
 Stimulation
 ===========
 
-Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal.
+Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. (IS THIS TRUE?)
 
-The electrical stimulation circuit is an improved Howland current pump followed by
-an precision current measurement circuit. The current pump is supplied by +/-15V
-rails and can supply up to +/- 2.5 mA. The output current is defined as:
+The stimulator can supply up to +/- 2.55 mA. The compliance voltage is 10V (IS THIS TRUE?)
 
 *****************
 Bill of Materials
