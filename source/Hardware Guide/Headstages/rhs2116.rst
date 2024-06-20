@@ -2,7 +2,7 @@
 RHS2116 Headstage
 #################
 
-The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics Adapter or similar 
+The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB.
 
 .. image:: /_static/images/rhs2116/rhs2116.png
     :align: center
@@ -17,9 +17,9 @@ Features
 
 *   Two RHS2116 ICs for a combined 32 reconfigurable i/o ephys channels
 
-*   Stimulator max current: 2.55mA
+*   Max stimulator current: 2.55mA
 
-*   30193.236714975847 sample rate
+*   Sample rate: 30193.2367 Hz 
 
 *   Stimulus active and stimulus trigger pins
 
@@ -73,7 +73,7 @@ The pinout of the RHS2116 is as follows:
     :alt: ONIX rhs2116 omnetics
 
 ..  todo::
-    We still have to photoshop this image, but I want to make sure that this is the way we want to map the channels 0->32 (ignoring GNDs and refs):
+    We still have to photoshop this image, but I want to make sure that this is the way we want to map the channels 0->31 (ignoring GNDs and refs):
 
     15<-------------------------------------------------------0
 
@@ -86,7 +86,7 @@ Stimulation
 
 Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. (IS THIS TRUE?)
 
-The stimulator can supply up to +/- 2.55 mA. The compliance voltage is 10V (IS THIS TRUE?)
+The stimulator can supply up to +/- 2.55 mA. The compliance voltage is 14V (IS THIS TRUE?)
 
 *****************
 Bill of Materials
