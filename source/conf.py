@@ -162,9 +162,7 @@ linkcheck_allowed_redirects = {
 }
 
 rst_prolog = """
-..  attention:: 
-    ..  warning::
-        ..  important:: This is a forked, **unofficial**, work-in-progress version of the onix-docs
+..  important:: This is a forked, **unofficial**, work-in-progress version of the onix-docs
 """
 
 def rstjinja(app, docname, source):
