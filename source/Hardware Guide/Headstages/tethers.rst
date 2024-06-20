@@ -22,7 +22,7 @@ RF Loss in the 1 GHz regime.
 .. note:: Although the actual quantities matter, and **smaller values are
     better**, the major hurdle is simply finding a supplier that will clearly
     characterize them as this an indication of quality. We have used cables
-    from Axon Cable and `cooner wire <https://www.coonerwire.com/mini-coax/>`__
+    from Axon Cable and `cooner wire <https://www.coonerwire.com/micro-coax/>`__
     with good results.
 
 :DC Resistance: For DC signals, resistance is proportional to the inner

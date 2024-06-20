@@ -93,6 +93,6 @@ Bill of Materials
 *****************
 
 - `Interactive BOM <../../_static/boms/headstage-rhs2116_bom.html>`__
-- `Downloadable CSV BOM <https://github.com/open-ephys/onix-headstage-rhs2116/blob/main/pcb/manufacturing/bom/headstage-rhs2116.csv>`__
+- :download:`Downloadable CSV BOM <../../_static/boms/headstage-rhs2116.csv>`
 
 .. note:: Have a look at the :ref:`tether_voltage` page for more details on probing and verifying headstage power voltages 
