@@ -1,6 +1,6 @@
-.. _pcie_host_bracket_assembly:
-
 :orphan:
+
+.. _pcie_host_bracket_assembly:
 
 .. toctree::
     :hidden:
