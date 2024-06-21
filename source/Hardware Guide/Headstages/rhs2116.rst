@@ -98,7 +98,11 @@ Getting Started
 
     #.  Set the ONIX headstage switch on
 
-#.  Configure the RHS2116 properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` page
+#.  Either:
+
+    *   Configure the RHS2116Device node properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` page if you want to collect data
+
+    *   Configure the RHS2116TriggerDevice node properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116TriggerDevice` page if you want to trigger stimulus
 
 Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. Refer to the :ref:`stimulator_configurator` section of the documentation for more info.
 
