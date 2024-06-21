@@ -190,9 +190,8 @@ rails and can supply up to +/- 2.5 mA. The output current is defined as:
 
 Bill of Materials
 ****************************
-- The interactive BOM is `here <../../../_static/boms/headstage-64_1r3_bom.html>`__
-- The complete BOM (including vendor part numbers) is located on `this google
-  sheet
+- `Interactive BoM <../../../_static/boms/headstage-64_1r3_bom.html>`__
+- The complete BOM (including vendor part numbers) is located on `this google sheet
   <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
 
 .. note:: Have a look at the :ref:`tether_voltage` page for more details on probing and verifying headstage power voltages 
