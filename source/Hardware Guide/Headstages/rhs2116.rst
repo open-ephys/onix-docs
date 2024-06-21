@@ -2,9 +2,9 @@
 RHS2116 Headstage
 #################
 
-The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB.
+The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB. To learn how to use the RHS2116 headstage in software, refer to the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` software guide. For technical information, refer to the :doc:`/Hardware Guide/Datasheets/rhs2116` datasheet.
 
-.. image:: /_static/images/rhs2116/rhs2116.png
+.. image:: /_static/images/rhs2116/rhs2116.webp
     :align: center
     :height: 400px
     :alt: ONIX rhs2116
@@ -61,38 +61,26 @@ Electrophysiology
 *****************
 
 RHS2116 headstage uses two 16-channel, BGA-packaged `Intan RHS2116
-<https://intantech.com/>`_ bioamplifier chip. The chip is operated at a fixed
-sampling rate of 30 kHz/channel. The RHS2116 provides 32 ephys channels which are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ on the bottom of the headstage and can be used to record from most passive probes (e.g. 
-tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.)
+<https://intantech.com/>`__ bioamplifier chip. The chip is operated at a fixed
+sampling rate of 30 kHz/channel. The RHS2116 provides 32 ephys channels which are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ at the edge of the headstage and can record from most passive probes (e.g. tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.).
 
-The pinout of the RHS2116 is as follows:
+RHS2116 Pinout
+==============
 
-..  image:: /_static/images/rhs2116/rhs2116-omnetics.webp
+..  image:: /_static/images/rhs2116/rhs2116-omnetics-pinout.webp
     :align: center
-    :height: 400px
+    :height: 300px
     :alt: ONIX rhs2116 omnetics
-
-..  todo::
-    We still have to photoshop this image, but I want to make sure that this is the way we want to map the channels 0->31 (ignoring GNDs and refs):
-
-    15<-------------------------------------------------------0
-
-    16------------------------------------------------------->31
-
-    (IS THIS TRUE?)
 
 Stimulation
 ===========
 
-Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. (IS THIS TRUE?)
-
-The stimulator can supply up to +/- 2.55 mA. The compliance voltage is 14V (IS THIS TRUE?)
+Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. For more information on this, refer to the :ref:`stimulator_configurator` section of the documentation.
 
 *****************
 Bill of Materials
 *****************
 
-- `Interactive BOM <../../_static/boms/headstage-rhs2116_bom.html>`__
-- :download:`Downloadable CSV BOM <../../_static/boms/headstage-rhs2116.csv>`
+- `Interactive BoM <../../_static/boms/headstage-rhs2116_bom.html>`__ (a csv BoM can be downloaded from this page)
 
 .. note:: Have a look at the :ref:`tether_voltage` page for more details on probing and verifying headstage power voltages 

@@ -95,6 +95,8 @@ Parameters available through the property pane are as follows:
         the sequence on this device. To synchronize stimulation across
         RHS2116 chips, use :ref:`bonsai_rhs2116triggerdev`
 
+.. _stimulator_configurator:
+
 Configuration GUI
 _________________________
 The **RHS2116 Configuration GUI**, which is a part of the
