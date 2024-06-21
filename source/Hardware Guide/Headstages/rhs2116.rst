@@ -2,12 +2,12 @@
 RHS2116 Headstage
 #################
 
-The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB. To learn how to use the RHS2116 headstage in software, refer to the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` software guide. For technical information, refer to the :doc:`/Hardware Guide/Datasheets/rhs2116` datasheet.
-
 .. image:: /_static/images/rhs2116/rhs2116.webp
     :align: center
-    :height: 400px
+    :height: 300px
     :alt: ONIX rhs2116
+
+The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB. To learn how to use the RHS2116 headstage in software, refer to the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` software guide. For technical information, refer to the :doc:`/Hardware Guide/Datasheets/rhs2116` datasheet.
 
 .. warning:: There are multiple headstage hardware revisions. The revision number is printed on the PCB. You can use the `compatibility matrix <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__ to find host hardware for your headstage.
 
@@ -24,6 +24,8 @@ Features
 *   Stimulus active and stimulus trigger pins
 
 *   On-board Lattice Crosslink™ FPGA for real-time data arbitration
+
+..  _rhs2116_data_link_serialization:
 
 ***********************
 Data Link Serialization
@@ -60,9 +62,43 @@ general terms. The RHS2116 headstage has the following coaxial link properties:
 Electrophysiology
 *****************
 
-RHS2116 headstage uses two 16-channel, BGA-packaged `Intan RHS2116
+RHS2116 headstage uses two 16-channel `Intan RHS2116
 <https://intantech.com/>`__ bioamplifier chip. The chip is operated at a fixed
-sampling rate of 30 kHz/channel. The RHS2116 provides 32 ephys channels which are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ at the edge of the headstage and can record from most passive probes (e.g. tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.).
+sampling rate of 30 kHz/channel. These 32 ephys channels are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ at the edge of the headstage and can record from most passive probes (e.g. tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.) as well as stimulate.
+
+Getting Started
+===============
+
+
+#.  `Install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__ and :doc:`Install Bonsai.ONIX </Software Guide/Bonsai.ONIX/Installation>`
+
+#.  :doc:`Get Started with Bonsai </Software Guide/Bonsai.ONIX/GettingStarted>`
+
+#.  Establish hardware connections
+
+    #.  Gather Materials
+
+        *   RHS2116 headstage
+
+        *   ONIX acquisition system
+
+        *   Coaxial tether
+
+    #.  Set the ONIX headstage switch off
+
+    #.  Connect RHS2116 headstage using the coaxial tether
+
+        #.  Gently thread on the SMA connector into the ONIX headstage port 
+
+        #.  Gently press the x.fl coax connector onto the RHS2116 headstage
+
+    #.  Set the correct voltage according to the table in the :ref:`rhs2116_data_link_serialization` section
+
+    #.  Set the ONIX headstage switch on
+
+#.  Run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` page
+
+Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. For more information on this, refer to the :ref:`stimulator_configurator` section of the documentation.
 
 RHS2116 Pinout
 ==============
@@ -72,10 +108,7 @@ RHS2116 Pinout
     :height: 300px
     :alt: ONIX rhs2116 omnetics
 
-Stimulation
-===========
 
-Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. For more information on this, refer to the :ref:`stimulator_configurator` section of the documentation.
 
 *****************
 Bill of Materials
