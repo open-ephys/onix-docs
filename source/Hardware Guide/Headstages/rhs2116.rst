@@ -7,6 +7,8 @@ RHS2116 Headstage
     :height: 300px
     :alt: ONIX rhs2116
 
+|
+
 The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB. To learn how to use the RHS2116 headstage in software, refer to the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` software guide. For technical information, refer to the :doc:`/Hardware Guide/Datasheets/rhs2116` datasheet.
 
 .. warning:: There are multiple headstage hardware revisions. The revision number is printed on the PCB. You can use the `compatibility matrix <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__ to find host hardware for your headstage.
@@ -98,7 +100,7 @@ Getting Started
 
 #.  Run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` page
 
-Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. For more information on this, refer to the :ref:`stimulator_configurator` section of the documentation.
+Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. Refer to the :ref:`stimulator_configurator` section of the documentation for more info.
 
 RHS2116 Pinout
 ==============
@@ -108,7 +110,12 @@ RHS2116 Pinout
     :height: 300px
     :alt: ONIX rhs2116 omnetics
 
+|
 
+..  image:: /_static/images/rhs2116/rhs2116-bottom-pinout.webp
+    :align: center
+    :height: 300px
+    :alt: ONIX rhs2116 bottom pinout
 
 *****************
 Bill of Materials
