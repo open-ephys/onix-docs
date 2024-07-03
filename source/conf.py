@@ -161,10 +161,6 @@ linkcheck_allowed_redirects = {
     'https://aka.ms/vs/16/release/vc_redist.x64.exe': 'https://download.visualstudio.microsoft.com/download/pr/9613cb5b-2786-49cd-8d90-73abd90aa50a/CEE28F29F904524B7F645BCEC3DFDFE38F8269B001144CD909F5D9232890D33B/VC_redist.x64.exe'
 }
 
-rst_prolog = """
-..  important:: This is a forked, **unofficial**, work-in-progress version of the onix-docs
-"""
-
 def rstjinja(app, docname, source):
     '''
     Render pages as a jinja template. 
