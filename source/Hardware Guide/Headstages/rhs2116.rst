@@ -71,7 +71,6 @@ sampling rate of 30 kHz/channel. These 32 ephys channels are exposed via a 36 pi
 Getting Started
 ===============
 
-
 #.  `Install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__ and :doc:`Install Bonsai.ONIX </Software Guide/Bonsai.ONIX/Installation>`
 
 #.  :doc:`Get Started with Bonsai </Software Guide/Bonsai.ONIX/GettingStarted>`
@@ -104,22 +103,22 @@ Getting Started
 
     *   Configure the RHS2116TriggerDevice node properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116TriggerDevice` page if you want to trigger stimulus
 
-Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. Refer to the :ref:`stimulator_configurator` section of the documentation for more info.
+        *   Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. Refer to the :ref:`stimulator_configurator` section of the documentation for more info.
+.. 
+    RHS2116 Pinout
+    ==============
 
-RHS2116 Pinout
-==============
+    ..  image:: /_static/images/rhs2116/rhs2116-omnetics-pinout.webp
+        :align: center
+        :height: 300px
+        :alt: ONIX rhs2116 omnetics
 
-..  image:: /_static/images/rhs2116/rhs2116-omnetics-pinout.webp
-    :align: center
-    :height: 300px
-    :alt: ONIX rhs2116 omnetics
+    |
 
-|
-
-..  image:: /_static/images/rhs2116/rhs2116-bottom-pinout.webp
-    :align: center
-    :height: 300px
-    :alt: ONIX rhs2116 bottom pinout
+    ..  image:: /_static/images/rhs2116/rhs2116-bottom-pinout.webp
+        :align: center
+        :height: 300px
+        :alt: ONIX rhs2116 bottom pinout
 
 *****************
 Bill of Materials
