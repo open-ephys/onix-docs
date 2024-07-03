@@ -1,0 +1,130 @@
+#################
+RHS2116 Headstage
+#################
+
+.. image:: /_static/images/rhs2116/rhs2116.webp
+    :align: center
+    :height: 300px
+    :alt: ONIX rhs2116
+
+|
+
+The RHS2116 Headstage is a serialized headstage for small animals with 32 channels which can independently be configured as stimulator outputs or amplifier inputs. The RHS2116 can be used with passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc) using a 36-Channel Omnetics EIB. To learn how to use the RHS2116 headstage in software, refer to the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` software guide. For technical information, refer to the :doc:`/Hardware Guide/Datasheets/rhs2116` datasheet.
+
+.. warning:: There are multiple headstage hardware revisions. The revision number is printed on the PCB. You can use the `compatibility matrix <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__ to find host hardware for your headstage.
+
+********
+Features
+********
+
+*   Two RHS2116 ICs for a combined 32 reconfigurable i/o ephys channels
+
+*   Max stimulator current: 2.55mA
+
+*   Sample rate: 30193.2367 Hz 
+
+*   Stimulus active and stimulus trigger pins
+
+*   On-board Lattice Crosslink™ FPGA for real-time data arbitration
+
+..  _rhs2116_data_link_serialization:
+
+***********************
+Data Link Serialization
+***********************
+
+For details on data serialization and headstage gateware, have a look at the
+:ref:`serialization` page, which describes how coax headstages operate in
+general terms. The RHS2116 headstage has the following coaxial link properties:
+
+.. table::
+    :widths: 50 80 50 50 50
+
+    +------------------------+--------------------+----------+----------+----------+
+    | Parameter              | Value              | Min      | Max      | Unit/    |
+    |                        |                    |          |          | Type     |
+    +========================+====================+==========+==========+==========+
+    | FPGA                   | LIF-MD6000-6UMG64I |          |          |          |
+    +------------------------+--------------------+----------+----------+----------+
+    | Serializer             | TI DS90UB933       |          |          | Coaxial  |
+    +------------------------+--------------------+----------+----------+----------+
+    | Supply Voltage         | 4.0                | 3.4      | 4.35*    | Volts    |
+    +------------------------+--------------------+----------+----------+----------+
+    | Hub Clock Frequency    | 50                 |          |          | MHz      |
+    +------------------------+--------------------+----------+----------+----------+
+
+.. warning:: \*Do not exceed 4.35 VDC at the coaxial input to the headstage. Make
+    sure you make this measurement at the headstage (see :ref:`measure_voltage`) to
+    account for a potential voltage drop in the tether. Exceeding this voltage can
+    permanently damage the headstage.
+
+.. note:: Have a look at the :ref:`tethers` page for more details on micro-coax headstage tethers
+
+*****************
+Electrophysiology
+*****************
+
+RHS2116 headstage uses two 16-channel `Intan RHS2116
+<https://intantech.com/>`__ bioamplifier chip. The chip is operated at a fixed
+sampling rate of 30 kHz/channel. These 32 ephys channels are exposed via a 36 pin `Omnetics connector <https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf>`__ at the edge of the headstage and can record from most passive probes (e.g. tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.) as well as stimulate.
+
+Getting Started
+===============
+
+#.  `Install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__ and :doc:`Install Bonsai.ONIX </Software Guide/Bonsai.ONIX/Installation>`
+
+#.  :doc:`Get Started with Bonsai </Software Guide/Bonsai.ONIX/GettingStarted>`
+
+#.  Establish hardware connections
+
+    #.  Gather Materials
+
+        *   RHS2116 headstage
+
+        *   ONIX acquisition system
+
+        *   Coaxial tether
+
+    #.  Set the ONIX headstage switch off
+
+    #.  Connect RHS2116 headstage using the coaxial tether
+
+        #.  Gently thread on the SMA connector into the ONIX headstage port 
+
+        #.  Gently press the x.fl coax connector onto the RHS2116 headstage
+
+    #.  Set the correct voltage according to the table in the :ref:`rhs2116_data_link_serialization` section
+
+    #.  Set the ONIX headstage switch on
+
+#.  Either:
+
+    *   Configure the RHS2116Device node properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116Device` page if you want to collect data
+
+    *   Configure the RHS2116TriggerDevice node properties and run the workflow on the :doc:`/Software Guide/Bonsai.ONIX/Nodes/RHS2116TriggerDevice` page if you want to trigger stimulus
+
+        *   Stimulus trains can be parameterized in a similar way to the master-8 or pulse pal. Refer to the :ref:`stimulator_configurator` section of the documentation for more info.
+
+.. 
+    RHS2116 Pinout
+    ==============
+
+    ..  image:: /_static/images/rhs2116/rhs2116-omnetics-pinout.webp
+        :align: center
+        :height: 300px
+        :alt: ONIX rhs2116 omnetics
+
+    |
+
+    ..  image:: /_static/images/rhs2116/rhs2116-bottom-pinout.webp
+        :align: center
+        :height: 300px
+        :alt: ONIX rhs2116 bottom pinout
+
+*****************
+Bill of Materials
+*****************
+
+- `Interactive BoM <../../_static/boms/headstage-rhs2116_bom.html>`__ (a csv BoM can be downloaded from this page)
+
+.. note:: Have a look at the :ref:`tether_voltage` page for more details on probing and verifying headstage power voltages 

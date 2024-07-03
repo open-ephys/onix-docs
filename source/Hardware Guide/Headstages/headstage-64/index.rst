@@ -39,10 +39,10 @@ Features
     :align: center
     :alt: ONIX Headstage-64 v1.1.
 
-Data Link Serializaiton
+Data Link Serialization
 **********************************
-For details on data serialiation and headstage gateware, have a look at the
-:ref:`serialization` page, which describes how coax headstages operatate in
+For details on data serialization and headstage gateware, have a look at the
+:ref:`serialization` page, which describes how coax headstages operate in
 general terms. Headstage-64 has the following coaxial link properties:
 
 .. table::
@@ -62,12 +62,11 @@ general terms. Headstage-64 has the following coaxial link properties:
     +------------------------+--------------------+----------+----------+----------+
 
 .. warning:: \*Do not exceed 6.3 VDC at the coaxial input to the headstage. Make
-    sure you make this measurement at the headstage (see: :ref: `Measuring headstage voltage`) to
+    sure you make this measurement at the headstage (see :ref:`measure_voltage`) to
     account for a potential voltage drop in the tether. Exceeding this voltage can
-    permanently damage the
-    headstage.
+    permanently damage the headstage.
 
-.. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
+.. note:: Have a look at the :ref:`tethers` page for more details on micro-coax
     headstage tethers
 
 Electrophysiology & Auxiliary Analog Inputs
@@ -77,21 +76,22 @@ headstage-64 uses a 64-channel, BGA-packaged `Intan RHD2164
 sampling rate of 30 kHz/channel (including auxiliary channels). Specifically,
 it provides:
 
-- 64x ephys channels  which are exposed via a mezzanine connector on the bottom
-  of the headstage and can be used to record from most passive probes (e.g.
-  tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc) -
-  3 auxiliary channels
-- 2x auxiliary channels (0.1-2.45V input range) are pinned out on the bottom of
-  the headstage to an unpopulated mezzanine connector and solder-able test
-  points
-- A 3rd auxilary analog channel is tied to the electrical stimulator's current
-  measurement circuit via a selectable solder jumper on the bottom of the
-  board. This jumper can be desoldered and instead a series resistor added to
-  allow low-frequency LFP recordings as per pg. 26 of the RHD2000 datasheet.
+-   64 ephys channels exposed via a mezzanine connector on the bottom
+    of the headstage and can be used to record from most passive probes (e.g.
+    tetrodes, silicon probe arrays, tungsten microwires, steel EEG wires, etc.) 
 
-.. attention:: The headstage connector pinout (ADC input mapping, stimulation
-   connections, etc) is located on `this Google sheet
-   <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__.
+-   3 auxiliary channels:
+
+    -   2x auxiliary channels (0.1-2.45V input range) are pinned out on the bottom of
+        the headstage to an unpopulated mezzanine connector and solder-able test
+        points
+
+    -   A 3rd auxiliary analog channel is tied to the electrical stimulator's current
+        measurement circuit via a selectable solder jumper on the bottom of the
+        board. This jumper can be desoldered and instead a series resistor added to
+        allow low-frequency LFP recordings as per pg. 26 of the RHD2000 datasheet.
+
+..  attention:: The headstage connector pinout (ADC input mapping, stimulation connections, etc) is located on `this Google sheet <https://docs.google.com/spreadsheets/d/11wRDYOqHN5lPb03yUdfXfK0zvaDYsVetplaNK-R90Gg/edit#gid=663991061>`__.
 
 3D Position Tracking
 **********************
@@ -116,13 +116,13 @@ to set up tracking,
    environments more than 2 basestations are required to get full coverage, any
    configuration is possible so long 2 basestations have a line of site to the
    headstage and are no more than 4 meters away. For this, there are lots of
-   options for ready-made, adjustable basestation mounts availble on Amazon and
+   options for ready-made, adjustable basestation mounts available on Amazon and
    elsewhere.
 #. Serial into each of the basestations using the USB connection on the back
    and set up a terminal connection using ``screen /dev/ttyACM0 115200`` or
    similar
 #. Once connected you can hit Tab to see commands
-#. Set the mode of of each base staiton to a different value using
+#. Set the mode of of each base station to a different value using
    ``mode n`` where ``n`` is the desired mode (1-16). The only requirement is
    that each basestation have a unique mode.
 
@@ -142,7 +142,7 @@ Hz.
 
 Neural Stimulation
 ****************************
-headstage-64 provides onboard electrical and optical stimulatus generators.
+headstage-64 provides onboard electrical and optical stimulus generators.
 Stimulus trains can be parameterized in a similar way to the master-8 or pulse
 pal.
 
@@ -158,19 +158,19 @@ This driver can be used for LEDs or laser diodes. It provides 800-mA per
 channel. The cathodic connections can be paralleled to increase max current.
 The maximum peak current in 1.6 Amps. However, if you deliver this current for
 a significant amount of time, the headstage will shutdown due to an
-over-temperture condition. The optical stimulator is only appropriate for low
+over-temperature condition. The optical stimulator is only appropriate for low
 duty-cycle pulse-type stimulation.
 
 Electical Stimulation
 ~~~~~~~~~~~~~~~~~~~~~~
-The electrical stimulation cicuit is an improved Howland current pump followed by
+The electrical stimulation circuit is an improved Howland current pump followed by
 an precision current measurement circuit. The current pump is supplied by +/-15V
 rails and can supply up to +/- 2.5 mA. The output current is defined as:
 
 .. warning:: The headstage must be supplied by 5.5V, :ref:`measured at the DC couping 
    inductor <measure_voltage>`, to use electrical stimulation. If the voltage is less 
-   than this, stimulus pulses will fail to acheive target currents and this will result 
-   in charge imblance, which can damage neural tissue.
+   than this, stimulus pulses will fail to achieve target currents and this will result 
+   in charge imbalance, which can damage neural tissue.
 
 .. code-block:: none
 
@@ -190,9 +190,8 @@ rails and can supply up to +/- 2.5 mA. The output current is defined as:
 
 Bill of Materials
 ****************************
-- The interactive BOM is `here <../../../_static/boms/headstage-64_1r3_bom.html>`__
-- The complete BOM (including vendor part numbers) is located on `this google
-  sheet
+- `Interactive BoM <../../../_static/boms/headstage-64_1r3_bom.html>`__
+- The complete BOM (including vendor part numbers) is located on `this google sheet
   <https://docs.google.com/spreadsheets/d/1F-KWcdvH_63iXjZf0cgCfDiFX6XXW3qw6rlR8DZrFpQ/edit#gid=138167638>`__
 
 .. note:: Have a look at the :ref:`tether_voltage` page for more details on probing and verifying headstage power voltages 

@@ -1,6 +1,6 @@
-.. _pcie_host_program_over_jtag:
-
 :orphan:
+
+.. _pcie_host_program_over_jtag:
 
 .. toctree::
     :hidden:

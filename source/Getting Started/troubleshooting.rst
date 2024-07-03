@@ -1,6 +1,6 @@
-.. _troubleshooting:
-
 :orphan:
+
+.. _troubleshooting:
 
 .. toctree::
     :hidden:
