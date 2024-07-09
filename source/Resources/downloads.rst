@@ -47,6 +47,27 @@ PCIe Host Updater
 
 -----------------
 
+.. _breakout_updater_download:
+
+Breakout Board Updater
+----------------------------------------------
+
+.. note:: Please see :ref:`Updating Breakout Board Firmware
+    <breakout_firmware_update>` for instructions on how to use these files.
+
+.. list-table:: Breakout Board update tools
+   :widths: 15 25 60
+   :header-rows: 1
+
+   * - Version
+     - Release Date
+     - Release Notes
+   * - :download:`1.0.0 <../_static/downloads/onix-software-releases/tinyprog.zip>`
+     - 2024.07.05
+     - Initial release.
+
+-----------------
+
 .. _riffa_driver_download:
 
 RIFFA Device Driver
@@ -107,3 +128,27 @@ PCIe Host Firmware
 ..      - 2022.11.27
 ..      - Remove unnecessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
  
+
+.. _breakout_image_download:
+
+Breakout Board Firmware
+----------------------------------------------
+.. note:: Please see :ref:`Updating Breakout Board Firmware
+    <breakout_firmware_update>` for instructions on how to use these files.
+
+.. warning::
+      Make sure that the breakout board firmware image you download matches the breakout board hardware version you have
+      as shown in the table below. An incorrect firmware version will not report any error while updating but will cause failures during operation.
+
+.. table::
+    :widths: 50 50
+
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    |            Breakout Board Hardware version            |                             Breakout Board Firmware latest version                                          |
+    |                 as per product specs                  |                                   to download and update                                                    |
+    +=======================================================+=============================================================================================================+
+    | Hardware Revision 1.5  (four headstage ports)         | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6  (two headstage ports)          | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
+    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+
