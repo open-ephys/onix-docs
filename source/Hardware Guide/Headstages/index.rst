@@ -13,6 +13,7 @@ Here you will find information on **ONIX headstages**.
     headstage-64/index
     headstage-neuropix-1
     headstage-neuropix-1e
+    headstage-neuropix-2e
     rhs2116.rst
     tether-voltage
 
