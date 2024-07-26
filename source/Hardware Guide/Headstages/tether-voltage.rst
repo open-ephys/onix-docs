@@ -48,13 +48,33 @@ Measuring headstage voltage
 Use a multimeter to probe the headstage at the two points marked below: the
 ground pin and either terminal of the large inductor on the headstage.
 
-.. image:: ../../_static/images/tether-voltage/measure-voltage-64.png
+.. list-table:: GND and Vcoax location
+   :class: borderless
+   :widths: 30 30 30
 
-.. image:: ../../_static/images/tether-voltage/measure-voltage-npix.png
+   * - .. figure :: ../../_static/images/tether-voltage/measure-voltage-64.png
 
-.. image:: ../../_static/images/tether-voltage/measure-voltage-np1e.webp
+          Headstage-64
 
-.. image:: ../../_static/images/tether-voltage/measure-voltage-rhs2116.webp
+     - .. figure :: ../../_static/images/tether-voltage/measure-voltage-npix.png
+
+          Neuropixels-1.0 Headstage
+
+     - .. figure :: ../../_static/images/tether-voltage/measure-voltage-rhs2116.webp
+
+          RHS2116 Headstage
+
+   * - .. figure :: ../../_static/images/tether-voltage/measure-voltage-np1e.webp
+
+          Neuropixels-1.0e Headstage
+
+     - .. figure :: ../../_static/images/tether-voltage/measure-voltage-np2e.png
+
+          Neuropixels-2.0e Headstage
+
+     - .. figure :: ../../_static/images/tether-voltage/measure-voltage-np2eBeta.png
+
+          Neuropixels-2.0eBeta Headstage
 
 Rebooting
 --------------------------
