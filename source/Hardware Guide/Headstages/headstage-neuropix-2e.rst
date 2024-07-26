@@ -12,6 +12,7 @@ targeting `Neuropixels 2.0 probes <https://www.neuropixels.org/>`__.
 
 - Two Neuropixels 2.0 probes
 - A BNO055 9-axis IMU for real-time, 3D orientation tracking
+- 0.640 g, 10.2 x 14.2 mm
 
 .. csv-table::
    :widths: 18, 80

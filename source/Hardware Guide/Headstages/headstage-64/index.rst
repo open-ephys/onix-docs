@@ -2,7 +2,7 @@
 
 Headstage-64
 ##############################
-**Headstage-64** is a 1.5g serialized, multifunction headstage for small
+**Headstage-64** is a serialized, multifunction headstage for small
 animals. This headstage is designed to function with :ref:`eib_64` for `tetrode
 microdrives <https://open-ephys.org/shuttledrive>`_. Alternatively it can be
 used with other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc)
@@ -34,6 +34,7 @@ Features
 - discharge)
 - Two optical stimulators (800 mA per channel)
 - An Intel MAX10 FPGA for real-time data arbitration
+- 1.5 g, 18.6 mm diam
 
 .. image:: /_static/images/headstage-64.png
     :align: center
