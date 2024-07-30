@@ -19,7 +19,7 @@ for communication
 and non-interchangeable interfaces and protocols are in use, which is why each
 type of probe or camera usually comes with its own specific acquisition board.
 
-The `Open Neuro Interface (ONI) <https://github.com/open-ephys/ONI>`__ is an
+The `Open Neuro Interface (ONI) <https://open-ephys.github.io/ONI>`__ is an
 open standard that was designed as a unified protocol to communicate with a
 wide variety of instruments. By specifying how data should be organised but
 remaining agnostic to the type of data, a single acquisition system can be used
