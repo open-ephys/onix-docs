@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_headstage_neuropix1e:
 
 Headstage Neuropixels 1.0e Workflow

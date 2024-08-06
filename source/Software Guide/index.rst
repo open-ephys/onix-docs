@@ -7,8 +7,9 @@
     :hidden:
 
     oni-repl/index
-    Bonsai.ONIX/index
+    Onix Bonsai Library <onix1>
     Open Ephys GUI/index
+    Bonsai.ONIX (DEPRECATED) <Bonsai.ONIX/index>
 
 |software_logo| Software Guide
 ===================================
@@ -20,10 +21,16 @@ hardware produces.
 - The :ref:`oni_repl` pages document a low-level C program that
   can be used for debugging and basic streaming IO with ONIX
   hardware.
-- The :ref:`bonsai_onixref` pages provide detailed information about the ONIX
-  Bonsai library. 
+- The `OpenEphys.Onix1 <https://open-ephys.github.io/onix1-bonsai-docs/index.html>`__ pages detail how to use the ONIX Bonsai library.
 - The :ref:`open_ephys_gui` page shows how ephys data can be streamed the Open
   Ephys GUI to take advantage of its excellent visualization capabilities.
+
+Deprecated
+-----------
+
+- The :ref:`bonsai_onixref` pages provide detailed information about the deprecated ONIX
+  Bonsai library. 
+
 
 .. tip:: If you want to use ONIX hardware with your acquisition software,
     please :ref:`get in touch <support>`. It's not as hard as you might think

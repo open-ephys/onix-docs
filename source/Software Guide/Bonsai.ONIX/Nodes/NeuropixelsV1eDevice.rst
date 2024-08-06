@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_NeuropixelsV1edev:
 
 NeuropixelsV1eDevice
