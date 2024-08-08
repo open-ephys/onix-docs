@@ -117,6 +117,9 @@ Install Device Driver
 
 Install ONIX Bonsai Library
 ---------------------------------------
+
+.. include:: ../../Software Guide/Bonsai.ONIX/deprecation-notice.rst
+
 #. If you don't have Bonsai on your computer, visit https://bonsai-rx.org/ and
    install the latest release.
 #. Open Bonsai. At the start menu, select **Manage Packages**.

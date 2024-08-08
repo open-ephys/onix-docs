@@ -7,6 +7,7 @@ headstage will not function reliably. If the voltage is too high sensitive
 components could be damaged. Many issues with the system can be traced back to
 inadequate headstage voltage supply.
 
+.. attention:: The `OpenEphys.Onix1 Bonsai library <https://open-ephys.github.io/onix1-bonsai-docs/articles/getting-started/getting_started.html>`__ automatically sets the headstage port voltage unless specified otherwise. Please use the updated library rather than the deprecated Bonsai.Onix Bonsai library which does not provide that feature.
 
 Setting headstage voltage
 --------------------------
