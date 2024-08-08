@@ -34,7 +34,7 @@ Usage Warnings
 
     Read :ref:`Usage Warnings<warnings>` before starting to work with the system to avoid causing damage to system components.
 
-Setting up ONIX
+Setting up your system
 --------------------------------
 
 #. Check that you have all the necessary hardware. A full ONIX setup consists of:
@@ -69,11 +69,8 @@ Setting up ONIX
    :ref:`following these steps <headstage_setup>`. Be sure to read :ref:`this
    page on the voltage supplied to the headstage <tether_voltage>` to prevent
    damaging your headstage.
-#. Test the installation.
-
-   .. todo:: Bonsai workflows for testing each component 
 
 Using ONIX
 --------------------------------
-ONIX uses Bonsai for data acquisition. See the :ref:`bonsai_gettingstarted`
-page to learn how to install Bonsai and use it to acquire from ONIX.
+Have a look at the :ref:`software_guide` page to explore
+software options and for intefacing with ONIX hardware.
