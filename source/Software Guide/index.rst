@@ -6,32 +6,35 @@
 .. toctree::
     :hidden:
 
-    oni-repl/index
-    Onix Bonsai Library <onix1>
+    OpenEphys.Onix1/index
     Open Ephys GUI/index
+    oni-repl/index
     Bonsai.ONIX (DEPRECATED) <Bonsai.ONIX/index>
 
 |software_logo| Software Guide
 ===================================
 
-Although ONIX is software agnostic, we have focused our development efforts on `Bonsai <https://bonsai-rx.org/>`__ for data acquisition. Bonsai is
-very good at dealing with the asynchronous and heterogeneous data that ONIX
-hardware produces.
+:ref:`Bonsai <openephys_onix1ref>` 
+    A `Bonsai <https://bonsai-rx.org/>`__ library for acquiring data from ONIX
+    hardware for real-time experiments. Bonsai is very good at processing the
+    heterogeneous data streams produced by ONIX hardware.
 
-- The :ref:`oni_repl` pages document a low-level C program that
-  can be used for debugging and basic streaming IO with ONIX
-  hardware.
-- The `OpenEphys.Onix1 <https://open-ephys.github.io/onix1-bonsai-docs/index.html>`__ pages detail how to use the ONIX Bonsai library.
-- The :ref:`open_ephys_gui` page shows how ephys data can be streamed the Open
-  Ephys GUI to take advantage of its excellent visualization capabilities.
+:ref:`Open Ephys GUI <open_ephys_gui>` 
+    The Open Ephys GUI can be used for ONIX data visualization.
 
-Deprecated
------------
+:ref:`oni-repl <oni_repl>` 
+    A simple command-line application that can be used for debugging and basic
+    streaming IO with ONIX hardware.
 
-- The :ref:`bonsai_onixref` pages provide detailed information about the deprecated ONIX
-  Bonsai library. 
+.. tip:: ONIX uses an `ONI-compliant API
+   <https://open-ephys.github.io/ONI/api/index.html>`__ that is software
+   agnostic.  There are several software options for acquiring data from ONIX
+   hardware If you want to use ONIX hardware with your acquisition software,
+   please :ref:`get in touch <support>`.
 
+Deprecated Software
+___________________________________
 
-.. tip:: If you want to use ONIX hardware with your acquisition software,
-    please :ref:`get in touch <support>`. It's not as hard as you might think
-    :).
+- The :ref:`bonsai_onixref` pages provide information about the original Bonsai
+  library, which has been superseded by :ref:`openephys_onix1ref`
+
