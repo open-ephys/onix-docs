@@ -12,8 +12,8 @@ Description
 *******************************************
 The **FMC Host Link Controller** is used to control and monitor DS90UB9x-based
 serialized connections to hubs connected to a host such as headstages and
-miniscopes. It can control power provided to those hubs and receives RF lock,
-CRC error, and other information.
+miniscopes. It can control the voltage provided to those hubs and receives RF
+lock, CRC error, and other diagnostic information.
 
 .. note::
 

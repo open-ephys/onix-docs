@@ -115,28 +115,9 @@ Install Device Driver
    .. figure:: /_static/images/pcie-host-windows/package-manager-riffa.png
        :align: center
 
-Install ONIX Bonsai Library
+Install Software
 ---------------------------------------
+Have a look at the :ref:`software_guide` page for open-source software options. We
+recommend using :ref:`openephys_onix1ref` because it provides first class
+support for all ONIX hardware features. 
 
-.. include:: ../../Software Guide/Bonsai.ONIX/deprecation-notice.rst
-
-#. If you don't have Bonsai on your computer, visit https://bonsai-rx.org/ and
-   install the latest release.
-#. Open Bonsai. At the start menu, select **Manage Packages**.
-
-   .. figure:: /_static/images/pcie-host-windows/bonsai-start-menu.png
-       :align: center
-
-#. Select **Community Packages** as the package source.
-#. Search for **Bonsai.ONIX**.
-#. Install **Bonsai.ONIX.Design**. This packages will install both the core
-   library and visualization tools.
-
-Using Bonsai
-----------------------------------------
-
-#. New to Bonsai? The :ref:`bonsai_gettingstarted` page lists resources for learning Bonsai.
-
-#. Navigate to :ref:`bonsai_onixref` for a high-level overview and list of compatible devices. Click on any listed device in the left-hand navigation menu to view an example workflow using that device.
-
-#. :ref:`bonsai_onixexamples` demonstrate specific ONIX use cases, such as tuning closed-loop latency or acquiring from headstages.
