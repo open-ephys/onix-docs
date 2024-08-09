@@ -1,8 +1,10 @@
+.. include:: deprecation-notice.rst
+
 .. _bonsai_installation:
 
 Installation
 ===============================
-**Bonsai.ONIX** is a `Bonsai <https://bonsai-rx.org/>`__ library for ONIX
+**Bonsai.ONIX** is a `Bonsai <https://bonsai-rx.org/>`__ package for ONIX
 hardware and can be installed using its package manager.
 
 #. First you will need to `install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__
@@ -22,7 +24,7 @@ hardware and can be installed using its package manager.
        :align: center
 
 #. Search for "ONIX" and install. Installing **Bonsai.ONIX.Design** will
-   install both the base **Bonsai.ONIX** library and its visualization tools.
+   install both the base **Bonsai.ONIX** package and its visualization tools.
 
    .. tip:: It is recommended to also install **Bonsai.ONIX.Design** because
        it provides a substantial set of data visualization and graphical hardware

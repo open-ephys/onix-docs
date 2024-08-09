@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_rhs2116dev:
 
 RHS2116Device
@@ -100,7 +102,7 @@ Parameters available through the property pane are as follows:
 Configuration GUI
 _________________________
 The **RHS2116 Configuration GUI**, which is a part of the
-``Bonsai.ONIX.Design`` library, is opened by double clicking on the
+``Bonsai.ONIX.Design`` package, is opened by double clicking on the
 RHS2116Device node when editing the workflow or clicking the ellipsis next to
 the ``StimulusSequence`` parameter option in the property pane. It is used to
 define multichannel stimulus sequences. 

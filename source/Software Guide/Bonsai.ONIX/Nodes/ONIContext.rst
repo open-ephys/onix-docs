@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. |refresh_icon| image:: /_static/bonsai/onicontext/ONIContext_refresh-icon.png
     :height: 19
 
@@ -32,7 +34,7 @@ it manages (e.g. :ref:`bonsai_heartbeatdev`, :ref:`bonsai_analogiodev`, etc.). S
 facts about the :ref:`bonsai_onicontext` node are useful for understanding how
 to use it.
 
-.. figure:: /_static/bonsai/bonsai-library-architecture.jpg
+.. figure:: /_static/bonsai/bonsai-package-architecture.jpg
     :align: center
     :width: 500px
 
@@ -69,7 +71,7 @@ to use it.
 Configuration GUI
 --------------------------
 :ref:`bonsai_onicontext` configuration is performed using a GUI provided in the
-Bonsai.ONIX.Design library. It can be opened by double clicking on the
+Bonsai.ONIX.Design package. It can be opened by double clicking on the
 :ref:`bonsai_onicontext` node if Bonsai.ONIX.Design has been installed.
 
 .. image:: /_static/bonsai/onicontext/ONIContext_configuration.png

@@ -1,30 +1,39 @@
 .. |software_logo| image:: /_static/noun_macbook.svg
   :height: 60
 
-.. _software:
-
-.. toctree::
-    :hidden:
-
-    oni-repl/index
-    Bonsai.ONIX/index
-    Open Ephys GUI/index
+.. _software_guide:
 
 |software_logo| Software Guide
 ===================================
 
-Although ONIX is software agnostic, we have focused our development efforts on `Bonsai <https://bonsai-rx.org/>`__ for data acquisition. Bonsai is
-very good at dealing with the asynchronous and heterogeneous data that ONIX
-hardware produces.
+.. toctree::
+    :hidden:
 
-- The :ref:`oni_repl` pages document a low-level C program that
-  can be used for debugging and basic streaming IO with ONIX
-  hardware.
-- The :ref:`bonsai_onixref` pages provide detailed information about the ONIX
-  Bonsai library. 
-- The :ref:`open_ephys_gui` page shows how ephys data can be streamed the Open
-  Ephys GUI to take advantage of its excellent visualization capabilities.
+    OpenEphys.Onix1/index
+    Open Ephys GUI/index
+    oni-repl/index
+    Bonsai.ONIX (DEPRECATED) <Bonsai.ONIX/index>
 
-.. tip:: If you want to use ONIX hardware with your acquisition software,
-    please :ref:`get in touch <support>`. It's not as hard as you might think
-    :).
+:ref:`Bonsai <bonsairef>`
+    :ref:`openephys_onix1ref` is a :ref:`bonsairef` package for acquiring data from ONIX
+    hardware for real-time experiments. Bonsai is very good at processing the
+    heterogeneous data streams produced by ONIX hardware.
+
+:ref:`Open Ephys GUI <open_ephys_gui>`
+    The Open Ephys GUI can be used for ONIX data visualization.
+
+:ref:`oni-repl <oni_repl>`
+    A simple command-line application that can be used for debugging and basic
+    streaming IO with ONIX hardware.
+
+.. tip:: ONIX uses an `ONI-compliant API
+   <https://open-ephys.github.io/ONI/api/index.html>`__ that is software
+   agnostic. If you want to use ONIX hardware with your acquisition software,
+   please :ref:`get in touch <support>`.
+
+Deprecated Software
+___________________________________
+
+- The :ref:`bonsai_onixref` pages provide information about the original Bonsai
+  package, which has been superseded by :ref:`openephys_onix1ref`
+

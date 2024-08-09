@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_miniscopev3dev:
 
 MiniscopeV3Device

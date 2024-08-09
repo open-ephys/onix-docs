@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_heartbeatdev:
 
 HeartbeatDevice

@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_headstage64:
 
 Headstage-64 Workflow
