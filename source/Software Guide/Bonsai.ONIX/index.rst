@@ -1,3 +1,5 @@
+.. include:: deprecation-notice.rst
+
 .. |download_image| image:: /_static/download.svg
   :height: 18
 .. |copy_image| image:: /_static/copy.svg

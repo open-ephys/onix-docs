@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. |refresh_icon| image:: /_static/bonsai/onicontext/ONIContext_refresh-icon.png
     :height: 19
 

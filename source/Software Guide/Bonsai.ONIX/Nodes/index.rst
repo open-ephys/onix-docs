@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 ..
     Important: The names of pages for nodes must match their Bonsai.ONIX class
     names so that documentation can be opened from the Bonsai Editor!

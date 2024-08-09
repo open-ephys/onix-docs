@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_ts4231v1dev:
 
 TS4231V1Device

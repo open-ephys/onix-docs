@@ -35,11 +35,6 @@ general purpose analog and digital IO. It is a VITA-57.1 compliant mezzanine
 board that uses high pin-count FMC connector. In combination with a base FPGA
 board , it provides host PC communication.
 
-.. figure:: /_static/images/todo.jpg
-    :align: center
-
-    The ONIX FMC Host module.
-
 - Two deserializers for any multifunction headstage conforming to the ONIX
   serialization protocol
 - 12x ±10V analog outputs or inputs. Direction selected via analog switch
@@ -68,11 +63,10 @@ when its not needed for maximum close-loop performance.
 
 PCIe Stack
 -------------------------
-We are using a slightly modified `version
-<https://github.com/aacuevas/riffa>`__ of the excellent, open-source `RIFFA
-<https://github.com/KastnerRG/riffa>`__ project to orchestrate data
-transmission over the PCIe bus. The PCIe protocol implementation and physical
-interface is provided by a `hard block
+We are using a modified `version <https://github.com/aacuevas/riffa>`__ of the
+excellent, open-source `RIFFA <https://github.com/KastnerRG/riffa>`__ project
+to orchestrate data transmission over the PCIe bus. The PCIe protocol
+implementation and physical interface is provided by a `hard block
 <https://www.xilinx.com/products/intellectual-property/7_series_pci_express_block.html>`_
 in the Kintex-7 FPGA.
 
