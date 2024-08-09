@@ -1,3 +1,5 @@
+.. include:: deprecation-notice.rst
+
 .. _bonsai_gettingstarted:
 
 Getting Started
@@ -32,7 +34,7 @@ Bonsai Learning Resources
 
     * - `ReactiveX operator definitions  <https://reactivex.io/documentation/operators.html>`__
       - Detailed information on many of the reactive operators you will find in
-        Bonsai's Reactive library, especially in the "Combinators" grouping
+        Bonsai's Reactive package, especially in the "Combinators" grouping
 
 Accessing Bonsai.ONIX Documentation
 ----------------------------------------

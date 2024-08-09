@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -46,8 +46,8 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Resources" href="../../Resources/index.html" />
-    <link rel="prev" title="Manual Commutator Workflow" href="../Bonsai.ONIX/Bonsai%20Examples/Commutator.html" />
+    <link rel="next" title="oni-repl" href="../oni-repl/index.html" />
+    <link rel="prev" title="Bonsai" href="../OpenEphys.Onix1/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -365,11 +365,13 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../OpenEphys.Onix1/index.html">Bonsai</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Open Ephys GUI</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../oni-repl/index.html">oni-repl</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../oni-repl/usage.html">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Bonsai.ONIX/index.html">Bonsai.ONIX</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Bonsai.ONIX/index.html">Bonsai.ONIX (DEPRECATED)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Bonsai.ONIX/Installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Bonsai.ONIX/GettingStarted.html">Getting Started</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Bonsai.ONIX/Nodes/index.html">Nodes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -404,8 +406,6 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Open Ephys GUI</a></li>
-
 </ul>
 </div>
 </nav></div>
@@ -465,43 +465,19 @@ document.write(`
                   
   <section id="open-ephys-gui">
 <span id="id1"></span><h1>Open Ephys GUI<a class="headerlink" href="#open-ephys-gui" title="Link to this heading">#</a></h1>
-<p>There is currently no dedicated ONIX plugin available for the <a class="reference external" href="https://open-ephys.github.io/gui-docs/index.html">Open Ephys GUI</a>.  The Open Ephys GUI is
-built primarily for multichannel electrophysiology using an audio processing
-library that makes it difficult to deal with multiple asynchronous data
-streams.</p>
+<p>The <a class="reference external" href="https://open-ephys.github.io/gui-docs/index.html">Open Ephys GUI</a> is an
+open-source, plugin-based application for acquiring extracellular
+electrophysiology data. It was designed by neuroscientists to make their
+experiments more flexible and enjoyable. It works equally well on macOS, Linux,
+and Windows.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Have a look at the <a class="reference external" href="https://open-ephys.github.io/gui-docs/User-Manual/Before-you-begin.html">Open Ephys GUI documentation</a>
-for information on the GUI’s design.</p>
+<p>An ONIX plugin for the Open Ephys is in development. To access all of
+ONIX’s capabilities right now, have a look at the <a class="reference internal" href="../OpenEphys.Onix1/index.html#openephys-onix1ref"><span class="std std-ref">OpenEphys.Onix1</span></a> Bonsai package.
+<strong>You can still take advantage of the GUI’s excellent
+ephys visualizaiton tools by streaming data from Bonsai to the GUI using
+the</strong> <a class="reference external" href="https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Ephys-Socket.html">Ephys Socket Plugin</a>.</p>
 </div>
-<p>This is fine when the data being processed is synchronized ephys and auxiliary
-data. However, by design, ONIX hardware makes no such guarantees about the
-nature of the data it produces. On the contrary, an
-<strong>Acquisition Context</strong> manages a table of devices that are
-potentially all asynchronous from one another. Even though each sample from
-these devices is individually time-stamped in hardware, there is no guarantee
-of when they will arrive or in what order. This necessitates the use of
-event-driven acquisition software that only propagates data when its received,
-and this is where <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> really shines. For this
-reason, we have dedicated the majority of our development effort toward the
-<a class="reference internal" href="../Bonsai.ONIX/index.html#bonsai-onixref"><span class="std std-ref">Bonsai.ONIX</span></a> library.</p>
-</section>
-<section id="using-the-open-ephys-gui-for-onix-data-visualization">
-<h1>Using the Open Ephys GUI for ONIX Data Visualization<a class="headerlink" href="#using-the-open-ephys-gui-for-onix-data-visualization" title="Link to this heading">#</a></h1>
-<p>Bonsai provides advanced access to GPU visualization capabilities, but has to
-be manually programmed to generate high performance real-time plotting. This can
-be a hurdle for those that just want to see if they have their probe in the
-right spot. In the future, we aim to change this situation, and eventually
-provide first-class native ephys visualization capabilities in the Bonsai
-Editor.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to help improve Bonsai’s Ephys visualization capabilites,
-<a class="reference internal" href="../../Resources/support.html#support"><span class="std std-ref">get in touch</span></a>.</p>
-</div>
-<p>In the meantime we can take advantage of the Ephys GUI’s visualization and
-audio streaming by the <a class="reference external" href="https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Ephys-Socket.html">Ephys Socket Plugin</a>
-to receive data from Bonsai.</p>
 </section>
 
     <script type="text/javascript">
@@ -522,20 +498,20 @@ to receive data from Bonsai.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../Bonsai.ONIX/Bonsai%20Examples/Commutator.html"
+       href="../OpenEphys.Onix1/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Manual Commutator Workflow</p>
+        <p class="prev-next-title">Bonsai</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../Resources/index.html"
+       href="../oni-repl/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"> Resources</p>
+        <p class="prev-next-title">oni-repl</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -550,18 +526,6 @@ to receive data from Bonsai.</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Open Ephys GUI</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-open-ephys-gui-for-onix-data-visualization">Using the Open Ephys GUI for ONIX Data Visualization</a></li>
-</ul>
-
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   

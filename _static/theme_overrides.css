@@ -254,24 +254,38 @@ h6 {
   margin-top: 2em;
 }
 
-.card {
-  border: 0;
-}
-
 .intro-card {
   transition: transform 0.2s ease;
   border: 0;
 }
 
+
 .intro-card:hover {
   transform: scale(1.05);
 }
-
 .col-lg-6 {
   margin-top: 2em;
 }
 
+.page-card {
+  transition: transform 0.2s ease;
+  background-color: #FFFFFF;
+  border-color: #000000;
+  padding: 20px;
+  color: var(--onix-txt-color) !important;
+  transform: scale(0.9);
+}
 
+.page-card:hover {
+  transform: scale(1.00);
+}
+
+.page-card-img-marg {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: 5em;
+  margin-left: 5em;
+}
 
 /* Gallery cards */
 

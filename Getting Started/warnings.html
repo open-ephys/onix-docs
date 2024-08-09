@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -431,96 +431,33 @@ document.write(`
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Improper setup and usage can cause damage to system components.</p>
+<ul class="simple">
+<li><p>Read the following warnings before starting to work with your system. These
+are crucial aspects to consider during setup and usage that are included in
+the documentation but are listed here for your convenience.</p></li>
+<li><p>Read the complete documentation carefully to understand how the system works
+and refer back to these warnings before using it.</p></li>
+</ul>
 </div>
-<ul class="simple">
-<li><p>Read the following warnings before starting to work with your system. These are crucial
-aspects to consider during setup and usage that are included in the documentation but
-are listed here for your convenience.</p></li>
-<li><p>Read the complete documentation carefully to understand how the system works and refer
-back to these warnings before using it.</p></li>
-</ul>
-<section id="hardware">
-<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Connecting or disconnecting the breakout board while the PC is on causes damage to the
-FMChost. For more details, see <a class="reference internal" href="../Hardware%20Guide/Breakout%20Board/setup.html#breakout-setup"><span class="std std-ref">Breakout Board Guide</span></a>.</p></li>
-</ul>
+<section id="breakout-board">
+<h2>Breakout Board<a class="headerlink" href="#breakout-board" title="Link to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Power off the PC before connecting/disconnecting the breakout board.</strong></p>
-</div>
-<ul class="simple">
-<li><p>Headstage voltage must be configured correctly for operation. The voltage that works
-for one headstage can damage another, and depends on your hardware configuration such
-as tether length. For more details, see <a class="reference internal" href="../Hardware%20Guide/Headstages/tether-voltage.html#tether-voltage"><span class="std std-ref">Tethered Headstage Voltages</span></a>.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Ensure each headstage is configured with the correct voltage according to its
-specification before connecting and switching on the headstage port switch.</strong></p>
+<p>Connecting or disconnecting the <a class="reference internal" href="../Hardware%20Guide/Breakout%20Board/index.html#breakout"><span class="std std-ref">Breakout Board</span></a> while the PC is on
+can damage to the <a class="reference internal" href="../Hardware%20Guide/PCIe%20Host/index.html#pcie-host"><span class="std std-ref">PCIe Host</span></a>. For more details, see
+<a class="reference internal" href="../Hardware%20Guide/Breakout%20Board/setup.html#breakout-setup"><span class="std std-ref">Breakout Board Guide</span></a>. <strong>Power off the PC before connecting/disconnecting the
+breakout board.</strong></p>
 </div>
 </section>
-<section id="software">
-<h2>Software<a class="headerlink" href="#software" title="Link to this heading">#</a></h2>
-<p><em>For the current Bonsai.ONIX library which is being revised to improve usability</em></p>
-<ul class="simple">
-<li><p>Headstage port voltage configuration is managed via the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a> node
-or the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/HeadstagePortControlDevice.html#bonsai-headstageportcontroldev"><span class="std std-ref">HeadstagePortControlDevice</span></a> node. The changes you make using these
-nodes apply immediately and persist in hardware even if the Bonsai workflow is not
-running. Headstage port voltage is reset to the default 4.9V only on a power cycle
-(power off and on — not reboot).</p></li>
-</ul>
+<section id="headstage-voltages">
+<h2>Headstage Voltages<a class="headerlink" href="#headstage-voltages" title="Link to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Keep the headstage port switches off until you have configured each port correctly.</strong></p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Remember to set the headstage voltage to the desired value after a power cycle.</strong></p>
-</div>
-<ul class="simple">
-<li><p>The <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a> provides a dynamic window to read and write to hardware,
-but parameters such as device voltage are not saved in the node when the workflow is
-saved. The <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/HeadstagePortControlDevice.html#bonsai-headstageportcontroldev"><span class="std std-ref">HeadstagePortControlDevice</span></a> node also reads and writes to hardware,
-but parameters are saved with the workflow. On loading a workflow, Bonsai writes the
-parameter values set when the workflow was last saved.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When you configure the voltage, the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a> node shows that value
-and when you save the workflow this value is not saved. Therefore, that value will
-not be set to hardware when you load the workflow again. On loading the workflow,
-the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a> node will be reading the voltage that is already set
-on the hardware and showing this  in the <code class="docutils literal notranslate"><span class="pre">LinkVoltage</span></code> field.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When you configure the voltage, the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/HeadstagePortControlDevice.html#bonsai-headstageportcontroldev"><span class="std std-ref">HeadstagePortControlDevice</span></a> node shows
-that value and when you save the workflow this value is saved. Therefore, that value
-will be set to hardware when you load the workflow again. If you make changes to the
-voltage value (with any node) and save the workflow, they will be saved in the
-<code class="docutils literal notranslate"><span class="pre">LinkVoltage</span></code> property of the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/HeadstagePortControlDevice.html#bonsai-headstageportcontroldev"><span class="std std-ref">HeadstagePortControlDevice</span></a> node.</p>
-</div>
-<ul class="simple">
-<li><p>Any workflows containing the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/NeuropixelsV1eDevice.html#bonsai-neuropixelsv1edev"><span class="std std-ref">NeuropixelsV1eDevice</span></a> node require the
-<a class="reference internal" href="../Hardware%20Guide/Headstages/headstage-neuropix-1e.html#headstage-neuropix1e"><span class="std std-ref">Neuropixels-1.0e Headstage</span></a> to be connected before the workflows can be opened or
-loaded into Bonsai.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Check that the voltage set to the headstage port is correct for the
-<a class="reference internal" href="../Hardware%20Guide/Headstages/headstage-neuropix-1e.html#headstage-neuropix1e"><span class="std std-ref">Neuropixels-1.0e Headstage</span></a> by using a workflow of a single <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a>
-node to configure it before connecting the headstage in order to open a workflow that
-contains the <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/NeuropixelsV1eDevice.html#bonsai-neuropixelsv1edev"><span class="std std-ref">NeuropixelsV1eDevice</span></a> node.</p>
-</div>
-<ul class="simple">
-<li><p>An <a class="reference internal" href="../Software%20Guide/Bonsai.ONIX/Nodes/ONIContext.html#bonsai-onicontext"><span class="std std-ref">ONIContext</span></a> node or any device node in a workflow can override device
-settings in another workflow if device addresses are not distinct, because these nodes
-read/write directly to hardware.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Only have one workflow open at a time.</strong></p>
+<p><strong>Ensure each headstage is configured with the correct voltage.</strong> Although
+headstages are quite tolerate of over-voltage and under-voltage conditions,
+they are only guaranteed to function within a specified range.  When using
+long and/or thin tethers, the voltage drop across the cable can become
+significant. For more details, see <a class="reference internal" href="../Hardware%20Guide/Headstages/tether-voltage.html#tether-voltage"><span class="std std-ref">Headstage Voltages</span></a>.</p>
 </div>
 </section>
 </section>
@@ -578,8 +515,8 @@ read/write directly to hardware.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware">Hardware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software">Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breakout-board">Breakout Board</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headstage-voltages">Headstage Voltages</a></li>
 </ul>
   </nav></div>
 

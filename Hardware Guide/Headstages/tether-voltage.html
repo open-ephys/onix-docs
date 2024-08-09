@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tethered Headstage Voltages &#8212; ONIX Docs</title>
+    <title>Headstage Voltages &#8212; ONIX Docs</title>
   
   
   
@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -46,8 +46,8 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Miniscopes" href="../Miniscopes/index.html" />
-    <link rel="prev" title="RHS2116 Headstage" href="rhs2116.html" />
+    <link rel="next" title="Headstage-64" href="headstage-64/index.html" />
+    <link rel="prev" title="Making Coaxial Tethers" href="tethers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -381,6 +381,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="serialization.html">Coaxial Data Serialization &amp; Power</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tethers.html">Making Coaxial Tethers</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Headstage Voltages</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="headstage-64/index.html">Headstage-64</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="headstage-64/test-board-64.html">Test Board for Headstage-64</a></li>
 </ul>
@@ -389,8 +390,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="headstage-neuropix-1e.html">Neuropixels-1.0e Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headstage-neuropix-2e-beta.html">Neuropixels-2.0eBeta Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headstage-neuropix-2e.html">Neuropixels-2.0e Headstage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rhs2116.html">RHS2116 Headstage</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tethered Headstage Voltages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headstage-rhs2116.html">RHS2116 Headstage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Miniscopes/index.html">Miniscopes</a></li>
@@ -470,7 +470,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Headstages</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Tethered Headstage Voltages</li>
+    <li class="breadcrumb-item active" aria-current="page">Headstage Voltages</li>
   </ul>
 </nav>
 </div>
@@ -487,42 +487,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="tethered-headstage-voltages">
-<span id="tether-voltage"></span><h1>Tethered Headstage Voltages<a class="headerlink" href="#tethered-headstage-voltages" title="Link to this heading">#</a></h1>
-<p>The voltage on the headstage must be carefully regulated: if its too low the
-headstage will not function reliably. If the voltage is too high sensitive
-components could be damaged. Many issues with the system can be traced back to
-inadequate headstage voltage supply.</p>
+  <section id="headstage-voltages">
+<span id="tether-voltage"></span><h1>Headstage Voltages<a class="headerlink" href="#headstage-voltages" title="Link to this heading">#</a></h1>
+<p>Each ONIX headstage has a required operating voltage that is specified on its
+documentation page. Because ONIX hardware supports headstages that have
+different voltage requirements, it must be changed to match the requirements
+of the headstage that is plugged into a port. If the headstage voltage is too
+low, it will not function reliably. If the voltage is too high, the headstage
+will dissipate excess heat and it may be damaged.</p>
 <section id="setting-headstage-voltage">
-<h2>Setting headstage voltage<a class="headerlink" href="#setting-headstage-voltage" title="Link to this heading">#</a></h2>
-<p>Each headstage has a minimum and maximum voltage requirement (e.g. 5.3 to  5.7
-Volts for <a class="reference internal" href="headstage-64/index.html#headstage-64"><span class="std std-ref">Headstage-64</span></a>) circuits on the board to function properly. If
-the voltage is far too low, the green LED on the headstage will be dim and
-Bonsai will not detect the headstage. Even if the LED is bright, a borderline
+<h2>Setting Headstage Voltage<a class="headerlink" href="#setting-headstage-voltage" title="Link to this heading">#</a></h2>
+<p>The headstage voltage is set using <a class="reference internal" href="../Datasheets/fmc-link-control.html#onidatasheet-fmc-link-control"><span class="std std-ref">FMC Link Controller</span></a> devices
+on the <a class="reference internal" href="../PCIe%20Host/index.html#pcie-host"><span class="std std-ref">PCIe Host</span></a>.  Each headstage has a minimum and maximum voltage
+requirement (e.g. 5.3 to  5.7 Volts for <a class="reference internal" href="headstage-64/index.html#headstage-64"><span class="std std-ref">Headstage-64</span></a>) in order for
+circuits on the board to function properly. If the voltage is far too low, the
+host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
-beneath the power it needs to function properly.</p>
-<div class="container">
-<p>The voltage output at the FMC-host can be set in Bonsai:</p>
-<div class="figure align-default" id="id1">
-  <a class="reference internal" href="../../_static/images/tether-voltage/setting_hs_voltage_default.png"><img src="../../_static/images/tether-voltage/setting_hs_voltage_default_low.png" /></a>
-  <p class="caption"><span class="caption-text">Default headstage voltage is 4.9 V</span></p>
+below the level it needs to function properly.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The <a class="reference internal" href="../../Software%20Guide/OpenEphys.Onix1/index.html#openephys-onix1ref"><span class="std std-ref">OpenEphys.Onix1</span></a> Bonsai package automatically sets the
+headstage port voltage by default, but allows the user to override the
+voltage setting as well. The documentation linked shows how to use this
+functionality and what valid voltage ranges are for each headstage. This
+functionality has been been tuned for the tethers that are shipped with each
+headstage. The voltage override is available when custom tethers are used
+(see <a class="reference internal" href="#measure-voltage"><span class="std std-ref">Measuring Headstage Voltage</span></a>).</p>
 </div>
-<div class="figure align-default" id="id2">
-  <a class="reference internal" href="../../_static/images/tether-voltage/second_headstage.png"><img src="../../_static/images/tether-voltage/second_headstage_low.png" /></a>
-  <p class="caption"><span class="caption-text">Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.</span></p>
-</div>
-</div><p>The voltage set in Bonsai is not identical to the voltage supplied to the
-headstage, as some voltage drop will occur over the coaxial cable tether that
-connects them. The amount of voltage drop will depend on the cable properties
-(e.g. thickness) and even the temperature of the cable. These very thin tethers
-can cause large voltage drops, so that even when the voltage setting in Bonsai
-seems high, the headstage is only seeing 3 or 4 Volts and becomes unreliable.
-Voltage should therefore always be measured on the headstage itself. The
-voltage setting is persistent until computer power off. It gets stored in the
-hardware, so even after a reboot, it will be set to the latest value.</p>
+<p>The voltage set in software is not identical to the voltage supplied to the
+headstage, as some voltage drop will occur over the tether that connects them. The
+amount of voltage drop is proportional to the current draw of the headstage and
+inversely proportional to the thickness of the tether. The thin tethers used
+with ONIX headstages can result in significant voltage drops that need to be
+compensated for. For very long (5 to 10m) and thin (diameter of 0.2mm) coaxial
+tethers, the voltage drop can be on the order of 2 volts. For this reason, the
+headstage voltage must be measured on the headstage itself.</p>
 </section>
 <section id="measuring-headstage-voltage">
-<span id="measure-voltage"></span><h2>Measuring headstage voltage<a class="headerlink" href="#measuring-headstage-voltage" title="Link to this heading">#</a></h2>
+<span id="measure-voltage"></span><h2>Measuring Headstage Voltage<a class="headerlink" href="#measuring-headstage-voltage" title="Link to this heading">#</a></h2>
 <p>Use a multimeter to probe the headstage at the two points marked below: the
 ground pin and either terminal of the large inductor on the headstage.</p>
 <table class="borderless table" id="id1">
@@ -580,12 +582,6 @@ ground pin and either terminal of the large inductor on the headstage.</p>
 </tbody>
 </table>
 </section>
-<section id="rebooting">
-<h2>Rebooting<a class="headerlink" href="#rebooting" title="Link to this heading">#</a></h2>
-<p>If you have slowly increased the voltage supplied to a headstage, but it does
-not appear as a tab in the ONI-Context, try turning the voltage supply to 0 and
-back to the higher value before refreshing the ONI-Context.</p>
-</section>
 </section>
 
     <script type="text/javascript">
@@ -606,20 +602,20 @@ back to the higher value before refreshing the ONI-Context.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rhs2116.html"
+       href="tethers.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">RHS2116 Headstage</p>
+        <p class="prev-next-title">Making Coaxial Tethers</p>
       </div>
     </a>
     <a class="right-next"
-       href="../Miniscopes/index.html"
+       href="headstage-64/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Miniscopes</p>
+        <p class="prev-next-title">Headstage-64</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -641,9 +637,8 @@ back to the higher value before refreshing the ONI-Context.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-headstage-voltage">Setting headstage voltage</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-headstage-voltage">Measuring headstage voltage</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rebooting">Rebooting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-headstage-voltage">Setting Headstage Voltage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-headstage-voltage">Measuring Headstage Voltage</a></li>
 </ul>
   </nav></div>
 

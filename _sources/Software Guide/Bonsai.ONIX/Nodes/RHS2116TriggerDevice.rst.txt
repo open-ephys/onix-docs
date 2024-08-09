@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_rhs2116triggerdev:
 
 RHS2116TriggerDevice

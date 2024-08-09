@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -365,11 +365,13 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../OpenEphys.Onix1/index.html">Bonsai</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../oni-repl/index.html">oni-repl</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../oni-repl/usage.html">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Bonsai.ONIX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Bonsai.ONIX (DEPRECATED)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="Nodes/index.html">Nodes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -404,8 +406,6 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
-
 </ul>
 </div>
 </nav></div>
@@ -466,9 +466,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="installation">
+  <div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 1.2.13: </span>Bonsai.ONIX is deprecated.</p>
+<p>To use ONIX with Bonsai, refer to the documentation for <a class="reference external" href="https://cjsha.github.io/onix-bonsai-docs/">OpenEphys.Onix1</a>.</p>
+</div>
+<section id="installation">
 <span id="bonsai-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
-<p><strong>Bonsai.ONIX</strong> is a <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> library for ONIX
+<p><strong>Bonsai.ONIX</strong> is a <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> package for ONIX
 hardware and can be installed using its package manager.</p>
 <ol class="arabic">
 <li><p>First you will need to <a class="reference external" href="https://bonsai-rx.org/docs/articles/installation.html">install Bonsai</a></p></li>
@@ -480,7 +484,7 @@ Packages.”</p>
 <img alt="Bonsai package manager with community packages selected as package source" class="align-center" src="../../_images/package-manager-community-packages.png" />
 </li>
 <li><p>Search for “ONIX” and install. Installing <strong>Bonsai.ONIX.Design</strong> will
-install both the base <strong>Bonsai.ONIX</strong> library and its visualization tools.</p>
+install both the base <strong>Bonsai.ONIX</strong> package and its visualization tools.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>It is recommended to also install <strong>Bonsai.ONIX.Design</strong> because

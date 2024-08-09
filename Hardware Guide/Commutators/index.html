@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -381,6 +381,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/setup.html">Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/serialization.html">Coaxial Data Serialization &amp; Power</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/tethers.html">Making Coaxial Tethers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Headstages/tether-voltage.html">Headstage Voltages</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Headstages/headstage-64/index.html">Headstage-64</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Headstages/headstage-64/test-board-64.html">Test Board for Headstage-64</a></li>
 </ul>
@@ -389,8 +390,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-1e.html">Neuropixels-1.0e Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-2e-beta.html">Neuropixels-2.0eBeta Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-2e.html">Neuropixels-2.0e Headstage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Headstages/rhs2116.html">RHS2116 Headstage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Headstages/tether-voltage.html">Tethered Headstage Voltages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-rhs2116.html">RHS2116 Headstage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Miniscopes/index.html">Miniscopes</a></li>
@@ -486,17 +486,20 @@ document.write(`
                   
   <section id="coaxial-commutators">
 <span id="commutators"></span><h1>Coaxial Commutators<a class="headerlink" href="#coaxial-commutators" title="Link to this heading">#</a></h1>
-<p>Active, near-zero torque commutators to prevent tether twisting during
-freely moving recordings with headstages and/or miniscopes.
-This page provides a very brief overview of the commutators; for a more extensive
-walkthrough, please follow the documentation link for <a class="reference external" href="https://open-ephys.github.io/commutator-docs/index.html">Commutators</a>.</p>
+<p>Active, near-zero torque commutators prevent tether twisting during freely
+moving recordings with headstages and/or miniscopes.  This page provides a very
+brief overview of the commutators; for a more extensive walkthrough, please
+follow the documentation link for <a class="reference external" href="https://open-ephys.github.io/commutator-docs/index.html">Commutators</a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Design Repository<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="github reference external" href="https://github.com/open-ephys/commutators">open-ephys/commutators</a></p>
 </dd>
 <dt class="field-even">Compatibility<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="../PCIe%20Host/index.html#pcie-host"><span class="std std-ref">PCIe Host</span></a>, <a class="reference internal" href="../Headstages/headstage-64/index.html#headstage-64"><span class="std std-ref">Headstage-64</span></a>,
-<a class="reference internal" href="../Headstages/headstage-neuropix-1.html#headstage-neuropix1"><span class="std std-ref">Neuropixels-1.0 Headstage</span></a>, <a class="reference internal" href="../Miniscopes/index.html#miniscopes"><span class="std std-ref">Miniscopes</span></a></p>
+<dd class="field-even"><p>All coaxial headstags (e.g. <a class="reference internal" href="../Headstages/headstage-64/index.html#headstage-64"><span class="std std-ref">Headstage-64</span></a>,
+<a class="reference internal" href="../Headstages/headstage-neuropix-2e.html#headstage-neuropix2e"><span class="std std-ref">Neuropixels-2.0e Headstage</span></a>, <a class="reference internal" href="../Miniscopes/index.html#miniscopes"><span class="std std-ref">Miniscopes</span></a>)</p>
+</dd>
+<dt class="field-odd">Documentation<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://open-ephys.github.io/commutator-docs/index.html">https://open-ephys.github.io/commutator-docs/index.html</a></p>
 </dd>
 </dl>
 <section id="overview">
@@ -510,11 +513,11 @@ walkthrough, please follow the documentation link for <a class="reference extern
 <p>ONIX uses an active commutator to prevents tether twisting during freely moving
 recordings.  A inertial measurement unit (IMU) on the headstage or miniscope
 sends orientation data to the host computer. Because the real-time orientation
-of the animal is known, software (e.g. Bonsai) can be used to send commands to
-the commutator via its USB interface, and the motor in the commutator will turn
-when the animal does. A high-quality radio-frequency rotary joint inside the
-commutator maintains electrical connectivity for both power and high-frequency
-data signals between the tether leading to the headstage and the coaxial cable
+of the animal is known, software can be used to send commands to the commutator
+via its USB interface, and the motor in the commutator will turn when the
+animal does. A high-quality radio-frequency rotary joint inside the commutator
+maintains electrical connectivity for both power and high-frequency data
+signals between the tether leading to the headstage and the coaxial cable
 leading to the PCIe host board while turning.</p>
 <section id="features">
 <h3>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h3>

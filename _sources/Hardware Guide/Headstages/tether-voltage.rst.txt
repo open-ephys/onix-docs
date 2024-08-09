@@ -1,50 +1,46 @@
 .. _tether_voltage:
 
-Tethered Headstage Voltages
+Headstage Voltages
 ==============================
-The voltage on the headstage must be carefully regulated: if its too low the
-headstage will not function reliably. If the voltage is too high sensitive
-components could be damaged. Many issues with the system can be traced back to
-inadequate headstage voltage supply.
+Each ONIX headstage has a required operating voltage that is specified on its
+documentation page. Because ONIX hardware supports headstages that have
+different voltage requirements, it must be changed to match the requirements
+of the headstage that is plugged into a port. If the headstage voltage is too
+low, it will not function reliably. If the voltage is too high, the headstage 
+will dissipate excess heat and it may be damaged.
 
 
-Setting headstage voltage
+Setting Headstage Voltage
 --------------------------
-Each headstage has a minimum and maximum voltage requirement (e.g. 5.3 to  5.7
-Volts for :ref:`headstage_64`) circuits on the board to function properly. If
-the voltage is far too low, the green LED on the headstage will be dim and
-Bonsai will not detect the headstage. Even if the LED is bright, a borderline
+The headstage voltage is set using :ref:`onidatasheet_fmc_link_control` devices
+on the :ref:`pcie_host`.  Each headstage has a minimum and maximum voltage
+requirement (e.g. 5.3 to  5.7 Volts for :ref:`headstage_64`) in order for
+circuits on the board to function properly. If the voltage is far too low, the
+host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
-beneath the power it needs to function properly.
+below the level it needs to function properly.
 
-.. raw:: html
+.. attention:: The :ref:`openephys_onix1ref` Bonsai package automatically sets the
+   headstage port voltage by default, but allows the user to override the
+   voltage setting as well. The documentation linked shows how to use this
+   functionality and what valid voltage ranges are for each headstage. This
+   functionality has been been tuned for the tethers that are shipped with each
+   headstage. The voltage override is available when custom tethers are used
+   (see :ref:`measure_voltage`).
 
-    <div class="container">
-    <p>The voltage output at the FMC-host can be set in Bonsai:</p>
-    <div class="figure align-default" id="id1">
-      <a class="reference internal" href="../../_static/images/tether-voltage/setting_hs_voltage_default.png"><img src="../../_static/images/tether-voltage/setting_hs_voltage_default_low.png" /></a>
-      <p class="caption"><span class="caption-text">Default headstage voltage is 4.9 V</span></p>
-    </div>
-    <div class="figure align-default" id="id2">
-      <a class="reference internal" href="../../_static/images/tether-voltage/second_headstage.png"><img src="../../_static/images/tether-voltage/second_headstage_low.png" /></a>
-      <p class="caption"><span class="caption-text">Increasing the voltage to 7V in Bonsai (measured as 5V at the headstage) allows the second headstage to connect.</span></p>
-    </div>
-    </div>
-
-The voltage set in Bonsai is not identical to the voltage supplied to the
-headstage, as some voltage drop will occur over the coaxial cable tether that
-connects them. The amount of voltage drop will depend on the cable properties
-(e.g. thickness) and even the temperature of the cable. These very thin tethers
-can cause large voltage drops, so that even when the voltage setting in Bonsai
-seems high, the headstage is only seeing 3 or 4 Volts and becomes unreliable.
-Voltage should therefore always be measured on the headstage itself. The
-voltage setting is persistent until computer power off. It gets stored in the
-hardware, so even after a reboot, it will be set to the latest value.
+The voltage set in software is not identical to the voltage supplied to the
+headstage, as some voltage drop will occur over the tether that connects them. The
+amount of voltage drop is proportional to the current draw of the headstage and
+inversely proportional to the thickness of the tether. The thin tethers used
+with ONIX headstages can result in significant voltage drops that need to be
+compensated for. For very long (5 to 10m) and thin (diameter of 0.2mm) coaxial
+tethers, the voltage drop can be on the order of 2 volts. For this reason, the
+headstage voltage must be measured on the headstage itself.
 
 .. _measure_voltage:
 
-Measuring headstage voltage
-----------------------------
+Measuring Headstage Voltage
+-------------------------------
 Use a multimeter to probe the headstage at the two points marked below: the
 ground pin and either terminal of the large inductor on the headstage.
 
@@ -75,9 +71,3 @@ ground pin and either terminal of the large inductor on the headstage.
      - .. figure :: ../../_static/images/tether-voltage/measure-voltage-np2eBeta.png
 
           Neuropixels-2.0eBeta Headstage
-
-Rebooting
---------------------------
-If you have slowly increased the voltage supplied to a headstage, but it does
-not appear as a tab in the ONI-Context, try turning the voltage supply to 0 and
-back to the higher value before refreshing the ONI-Context.

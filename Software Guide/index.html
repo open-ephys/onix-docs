@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -46,7 +46,7 @@
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="oni-repl" href="oni-repl/index.html" />
+    <link rel="next" title="Bonsai" href="OpenEphys.Onix1/index.html" />
     <link rel="prev" title="Connections and Cables" href="../Hardware%20Guide/Connections%20%26%20Cables/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -365,11 +365,13 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="OpenEphys.Onix1/index.html">Bonsai</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="oni-repl/index.html">oni-repl</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="oni-repl/usage.html">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Bonsai.ONIX/index.html">Bonsai.ONIX</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Bonsai.ONIX/index.html">Bonsai.ONIX (DEPRECATED)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Bonsai.ONIX/Installation.html">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Bonsai.ONIX/GettingStarted.html">Getting Started</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="Bonsai.ONIX/Nodes/index.html">Nodes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -404,8 +406,6 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
-
 </ul>
 </div>
 </nav></div>
@@ -460,28 +460,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="toctree-wrapper compound" id="software">
+  <section id="software-logo-software-guide">
+<span id="software-guide"></span><h1><a class="reference internal" href="../_images/noun_macbook.svg"><img alt="software_logo" height="60" src="../_images/noun_macbook.svg" /></a> Software Guide<a class="headerlink" href="#software-logo-software-guide" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
 </div>
-<section id="software-logo-software-guide">
-<h1><a class="reference internal" href="../_images/noun_macbook.svg"><img alt="software_logo" height="60" src="../_images/noun_macbook.svg" /></a> Software Guide<a class="headerlink" href="#software-logo-software-guide" title="Link to this heading">#</a></h1>
-<p>Although ONIX is software agnostic, we have focused our development efforts on <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> for data acquisition. Bonsai is
-very good at dealing with the asynchronous and heterogeneous data that ONIX
-hardware produces.</p>
-<ul class="simple">
-<li><p>The <a class="reference internal" href="oni-repl/index.html#oni-repl"><span class="std std-ref">oni-repl</span></a> pages document a low-level C program that
-can be used for debugging and basic streaming IO with ONIX
-hardware.</p></li>
-<li><p>The <a class="reference internal" href="Bonsai.ONIX/index.html#bonsai-onixref"><span class="std std-ref">Bonsai.ONIX</span></a> pages provide detailed information about the ONIX
-Bonsai library.</p></li>
-<li><p>The <a class="reference internal" href="Open%20Ephys%20GUI/index.html#open-ephys-gui"><span class="std std-ref">Open Ephys GUI</span></a> page shows how ephys data can be streamed the Open
-Ephys GUI to take advantage of its excellent visualization capabilities.</p></li>
-</ul>
+<dl class="simple">
+<dt><a class="reference internal" href="OpenEphys.Onix1/index.html#bonsairef"><span class="std std-ref">Bonsai</span></a></dt><dd><p><a class="reference internal" href="OpenEphys.Onix1/index.html#openephys-onix1ref"><span class="std std-ref">OpenEphys.Onix1</span></a> is a <a class="reference internal" href="OpenEphys.Onix1/index.html#bonsairef"><span class="std std-ref">Bonsai</span></a> package for acquiring data from ONIX
+hardware for real-time experiments. Bonsai is very good at processing the
+heterogeneous data streams produced by ONIX hardware.</p>
+</dd>
+<dt><a class="reference internal" href="Open%20Ephys%20GUI/index.html#open-ephys-gui"><span class="std std-ref">Open Ephys GUI</span></a></dt><dd><p>The Open Ephys GUI can be used for ONIX data visualization.</p>
+</dd>
+<dt><a class="reference internal" href="oni-repl/index.html#oni-repl"><span class="std std-ref">oni-repl</span></a></dt><dd><p>A simple command-line application that can be used for debugging and basic
+streaming IO with ONIX hardware.</p>
+</dd>
+</dl>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you want to use ONIX hardware with your acquisition software,
-please <a class="reference internal" href="../Resources/support.html#support"><span class="std std-ref">get in touch</span></a>. It’s not as hard as you might think
-:).</p>
+<p>ONIX uses an <a class="reference external" href="https://open-ephys.github.io/ONI/api/index.html">ONI-compliant API</a> that is software
+agnostic. If you want to use ONIX hardware with your acquisition software,
+please <a class="reference internal" href="../Resources/support.html#support"><span class="std std-ref">get in touch</span></a>.</p>
 </div>
+<section id="deprecated-software">
+<h2>Deprecated Software<a class="headerlink" href="#deprecated-software" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="Bonsai.ONIX/index.html#bonsai-onixref"><span class="std std-ref">Bonsai.ONIX</span></a> pages provide information about the original Bonsai
+package, which has been superseded by <a class="reference internal" href="OpenEphys.Onix1/index.html#openephys-onix1ref"><span class="std std-ref">OpenEphys.Onix1</span></a></p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/javascript">
@@ -511,11 +517,11 @@ please <a class="reference internal" href="../Resources/support.html#support"><s
       </div>
     </a>
     <a class="right-next"
-       href="oni-repl/index.html"
+       href="OpenEphys.Onix1/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">oni-repl</p>
+        <p class="prev-next-title">Bonsai</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -530,6 +536,16 @@ please <a class="reference internal" href="../Resources/support.html#support"><s
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deprecated-software">Deprecated Software</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   

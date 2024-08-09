@@ -1,3 +1,6 @@
+.. include:: ../deprecation-notice.rst
+
+
 .. _bonsai_latencytest:
 
 Latency Test Workflow

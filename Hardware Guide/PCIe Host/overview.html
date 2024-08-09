@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=5fb06fa6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=ec846bb3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -381,6 +381,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/setup.html">Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/serialization.html">Coaxial Data Serialization &amp; Power</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/tethers.html">Making Coaxial Tethers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Headstages/tether-voltage.html">Headstage Voltages</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Headstages/headstage-64/index.html">Headstage-64</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Headstages/headstage-64/test-board-64.html">Test Board for Headstage-64</a></li>
 </ul>
@@ -389,8 +390,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-1e.html">Neuropixels-1.0e Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-2e-beta.html">Neuropixels-2.0eBeta Headstage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-neuropix-2e.html">Neuropixels-2.0e Headstage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Headstages/rhs2116.html">RHS2116 Headstage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Headstages/tether-voltage.html">Tethered Headstage Voltages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Headstages/headstage-rhs2116.html">RHS2116 Headstage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Miniscopes/index.html">Miniscopes</a></li>
@@ -517,13 +517,7 @@ typically &lt; 100 µs)</p></li>
 provides a host interface for serialized headstages and miniscopes, as well as
 general purpose analog and digital IO. It is a VITA-57.1 compliant mezzanine
 board that uses high pin-count FMC connector. In combination with a base FPGA
-board , it provides host PC communication.</p>
-<figure class="align-center" id="id1">
-<img alt="../../_images/todo.jpg" src="../../_images/todo.jpg" />
-<figcaption>
-<p><span class="caption-text">The ONIX FMC Host module.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+board, it provides host PC communication.</p>
 <ul class="simple">
 <li><p>Two deserializers for any multifunction headstage conforming to the ONIX
 serialization protocol</p></li>
@@ -544,18 +538,19 @@ is a VITA-57 compliant high-density FMC carrier module, which is compatible
 with the ONIX FMC Host Board. It has a Kintex-7 FPGA, PCIe bus (Gen2 4x), and 4
 GB of RAM for PC-independent data buffering. Our gateware bypasses this RAM
 when its not needed for maximum close-loop performance.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <img alt="../../_images/nereid-callouts.png" src="../../_images/nereid-callouts.png" />
 <figcaption>
-<p><span class="caption-text">The Numato Nereid Kintex-7 PCIe/FMC carrier module (<a class="reference external" href="https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/">image source</a>).</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">The Numato Nereid Kintex-7 PCIe/FMC carrier module (<a class="reference external" href="https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/">image source</a>).</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="pcie-stack">
 <h2>PCIe Stack<a class="headerlink" href="#pcie-stack" title="Link to this heading">#</a></h2>
-<p>We are using a slightly modified <a class="reference external" href="https://github.com/aacuevas/riffa">version</a> of the excellent, open-source <a class="reference external" href="https://github.com/KastnerRG/riffa">RIFFA</a> project to orchestrate data
-transmission over the PCIe bus. The PCIe protocol implementation and physical
-interface is provided by a <a class="reference external" href="https://www.xilinx.com/products/intellectual-property/7_series_pci_express_block.html">hard block</a>
+<p>We are using a modified <a class="reference external" href="https://github.com/aacuevas/riffa">version</a> of the
+excellent, open-source <a class="reference external" href="https://github.com/KastnerRG/riffa">RIFFA</a> project
+to orchestrate data transmission over the PCIe bus. The PCIe protocol
+implementation and physical interface is provided by a <a class="reference external" href="https://www.xilinx.com/products/intellectual-property/7_series_pci_express_block.html">hard block</a>
 in the Kintex-7 FPGA.</p>
 <p class="centered">
 <strong>Riffa License</strong></p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2016</span><span class="p">,</span> <span class="n">The</span> <span class="n">Regents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">University</span> <span class="n">of</span> <span class="n">California</span> <span class="n">All</span>
