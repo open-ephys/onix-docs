@@ -26,7 +26,7 @@ FAQ
         comprehensive overview of our mission and projects.
 
     Is ONIX hardware available for purchase?
-        Yes, its available on the `Open Ephys Store <https://open-ephys.org/store/onix>`_.
+        Yes, its available on the `Open Ephys Store <https://open-ephys.org/onix>`_.
 
     Where do I get help when using the system?
         Have a look at the :ref:`support` page.

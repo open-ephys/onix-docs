@@ -4,9 +4,20 @@ Bonsai
 ========================
 
 `Bonsai <https://bonsai-rx.org/>`__ is a visual programming language (think
-LabView) for reactive programming. It is lightweight and easy to use with a
-variety of packages and modules for interfacing with hardware and for real-time
-processing and manipulation of data streams. `OpenEphys.Onix1
+LabView) for `reactive programming
+<https://en.wikipedia.org/wiki/Reactive_programming>`__. Its simple looks are
+deceiving. Bonsai is a very advanced piece of software with features such as 
+
+- Real-time compilation of workflows to machine code as they are edited
+  (zero-overhead).
+- A large array of operators for combining and sychronizing asynchronous data
+  streams, which is a major issue in other software.
+- Lots of support for all sorts of hardware outside of ONIX.
+
+Bonsai is ideal for accessing the full power of ONIX hardware and combining it
+with third-party data sources (e.g. machine visiion cameras,
+behavioral hardware, etc.), and for real-time processing and manipulation of
+data streams.  `OpenEphys.Onix1
 <https://open-ephys.github.io/onix1-bonsai-docs/index.html>`__ is a Bonsai
 library for ONIX hardware. This library contains `Bonsai Operators
 <https://bonsai-rx.org/docs/articles/operators.html>`__ for acquiring and

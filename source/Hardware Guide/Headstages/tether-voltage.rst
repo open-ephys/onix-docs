@@ -20,14 +20,13 @@ host computer will not be able to detect detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
 below the level it needs to function properly.
 
-.. attention:: The `OpenEphys.Onix1 Bonsai library
-   <https://open-ephys.github.io/onix1-bonsai-docs/articles/getting-started/getting_started.html>`__
-   automatically sets the headstage port voltage by default, but allows the
-   user to override the voltage setting as well. The documentation linked shows
-   how to use this functionality and what valid voltage ranges are for each
-   headstage. This functionality has been been tuned for the tethers that are
-   shipped with each headstage. The override voltage is available when custom
-   tethers are used (see :ref:`measure_voltage`).
+.. attention:: The :ref:`openephys_onix1ref` library automatically sets the
+   headstage port voltage by default, but allows the user to override the
+   voltage setting as well. The documentation linked shows how to use this
+   functionality and what valid voltage ranges are for each headstage. This
+   functionality has been been tuned for the tethers that are shipped with each
+   headstage. The override voltage is available when custom tethers are used
+   (see :ref:`measure_voltage`).
 
 The voltage set in software is not identical to the voltage supplied to the
 headstage, as some voltage drop will occur over the tether connects them. The

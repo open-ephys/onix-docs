@@ -10,13 +10,13 @@ Here you will find information on **ONIX headstages**.
     setup
     serialization
     tethers
+    tether-voltage
     headstage-64/index
     headstage-neuropix-1
     headstage-neuropix-1e
     headstage-neuropix-2e-beta
     headstage-neuropix-2e
-    rhs2116.rst
-    tether-voltage
+    headstage-rhs2116.rst
 
 .. important:: ONIX expands the concept of a headstage compared to what you
     might be used to. ONIX headstages are head-borne systems of sensors and
