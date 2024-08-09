@@ -33,7 +33,7 @@ The `ONIX FMC Host <https://github.com/open-ephys/onix-fmc-host>`__ module
 provides a host interface for serialized headstages and miniscopes, as well as
 general purpose analog and digital IO. It is a VITA-57.1 compliant mezzanine
 board that uses high pin-count FMC connector. In combination with a base FPGA
-board , it provides host PC communication.
+board, it provides host PC communication.
 
 - Two deserializers for any multifunction headstage conforming to the ONIX
   serialization protocol

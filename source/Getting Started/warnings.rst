@@ -28,8 +28,8 @@ Headstage Voltages
 .. warning::
    **Ensure each headstage is configured with the correct voltage.** Although
    headstages are quite tolerate of over-voltage and under-voltage conditions,
-   they are only gaurenteed to function wihtin a specified range.  When using
+   they are only guaranteed to function within a specified range.  When using
    long and/or thin tethers, the voltage drop across the cable can become
-   signficant. For more details, see :ref:`tether_voltage`.
+   significant. For more details, see :ref:`tether_voltage`.
 
 

@@ -71,7 +71,7 @@ Parameters available through the property pane are as follows:
 Configuration GUI
 _________________________
 The **Neuropixels 1.0 Configuration GUI**, which is a part of the
-``Bonsai.ONIX.Design`` library, is opened by double clicking on the
+``Bonsai.ONIX.Design`` package, is opened by double clicking on the
 NeuropixelsV1Device node when editing the workflow or clicking the ellipsis
 next to the ``NeuropixelsV1Configuration`` parameter option in the property
 pane.

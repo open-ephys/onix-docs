@@ -2,7 +2,7 @@
 
 Coaxial Commutators
 ===================================
-Active, near-zero torque commutators to prevent tether twisting during freely
+Active, near-zero torque commutators prevent tether twisting during freely
 moving recordings with headstages and/or miniscopes.  This page provides a very
 brief overview of the commutators; for a more extensive walkthrough, please
 follow the documentation link for `Commutators

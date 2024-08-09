@@ -14,8 +14,8 @@
     oni-repl/index
     Bonsai.ONIX (DEPRECATED) <Bonsai.ONIX/index>
 
-:ref:`Bonsai <openephys_onix1ref>`
-    A `Bonsai <https://bonsai-rx.org/>`__ library for acquiring data from ONIX
+:ref:`Bonsai <bonsairef>`
+    :ref:`openephys_onix1ref` is a :ref:`bonsairef` package for acquiring data from ONIX
     hardware for real-time experiments. Bonsai is very good at processing the
     heterogeneous data streams produced by ONIX hardware.
 
@@ -35,5 +35,5 @@ Deprecated Software
 ___________________________________
 
 - The :ref:`bonsai_onixref` pages provide information about the original Bonsai
-  library, which has been superseded by :ref:`openephys_onix1ref`
+  package, which has been superseded by :ref:`openephys_onix1ref`
 

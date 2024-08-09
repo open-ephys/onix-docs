@@ -4,10 +4,10 @@ Headstage Voltages
 ==============================
 Each ONIX headstage has a required operating voltage that is specified on its
 documentation page. Because ONIX hardware supports headstages that have
-different voltage requirements, it must be changed to to match the requirements
+different voltage requirements, it must be changed to match the requirements
 of the headstage that is plugged into a port. If the headstage voltage is too
-low, it will not function reliably. If the voltage is too high, it
-there will be excess heat dissipation and the headstage may be damaged.
+low, it will not function reliably. If the voltage is too high, the headstage 
+will dissipate excess heat and it may be damaged.
 
 
 Setting Headstage Voltage
@@ -16,20 +16,20 @@ The headstage voltage is set using :ref:`onidatasheet_fmc_link_control` devices
 on the :ref:`pcie_host`.  Each headstage has a minimum and maximum voltage
 requirement (e.g. 5.3 to  5.7 Volts for :ref:`headstage_64`) in order for
 circuits on the board to function properly. If the voltage is far too low, the
-host computer will not be able to detect detect the headstage. A borderline
+host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
 below the level it needs to function properly.
 
-.. attention:: The :ref:`openephys_onix1ref` library automatically sets the
+.. attention:: The :ref:`openephys_onix1ref` Bonsai package automatically sets the
    headstage port voltage by default, but allows the user to override the
    voltage setting as well. The documentation linked shows how to use this
    functionality and what valid voltage ranges are for each headstage. This
    functionality has been been tuned for the tethers that are shipped with each
-   headstage. The override voltage is available when custom tethers are used
+   headstage. The voltage override is available when custom tethers are used
    (see :ref:`measure_voltage`).
 
 The voltage set in software is not identical to the voltage supplied to the
-headstage, as some voltage drop will occur over the tether connects them. The
+headstage, as some voltage drop will occur over the tether that connects them. The
 amount of voltage drop is proportional to the current draw of the headstage and
 inversely proportional to the thickness of the tether. The thin tethers used
 with ONIX headstages can result in significant voltage drops that need to be
