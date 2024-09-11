@@ -5,7 +5,7 @@ FMC Host Clock Output Device
 :Authors: Jonathan P. Newman
 :Version: 1
 :IO: Register Access
-:ONIX ID: 22
+:ONIX ID: 20
 :ONIX Hubs: :ref:`pcie_host`
 
 Description
@@ -47,7 +47,7 @@ Register Programming
       - Immediate
       - 0
       - None
-      - Output enable. Bit 0 = 0 is disabled, Bit 0 = 1 is enabled.
+      - Output enable. Bit 0 = 0 is disabled (output driven low), Bit 0 = 1 is enabled.
 
     * - 0x02
       - H
