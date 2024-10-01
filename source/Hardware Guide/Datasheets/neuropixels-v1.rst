@@ -229,8 +229,6 @@ Each ONIX frame is organized as follows:
           {bits: 32, name: "Device Address", type: 0},
           {bits: 32, name: "Data Size", type: 0, attr: 944},
 
-          {bits: 64, name: "Hub Clock Counter", type: 3},
-
           {bits: 32, name: "LFP Frame N", type: 4},
 
           {bits: 32, name: "AP Frame 0", type: 6},
@@ -244,7 +242,9 @@ Each ONIX frame is organized as follows:
           {bits: 32, name: "AP Frame 8", type: 6},
           {bits: 32, name: "AP Frame 9", type: 6},
           {bits: 32, name: "AP Frame 10", type: 6},
-          {bits: 32, name: "AP Frame 11", type: 6}
+          {bits: 32, name: "AP Frame 11", type: 6},
+
+          {bits: 64, name: "Hub Clock Counter", type: 3}
         ],
         config: {bits: 608, lanes: 19, vflip: true, hflip: true, fontsize: 11}
     }
