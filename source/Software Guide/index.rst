@@ -14,13 +14,15 @@
     oni-repl/index
     Bonsai.ONIX (DEPRECATED) <Bonsai.ONIX/index>
 
-:ref:`Bonsai <bonsairef>`
-    :ref:`openephys_onix1ref` is a :ref:`bonsairef` package for acquiring data from ONIX
-    hardware for real-time experiments. Bonsai is very good at processing the
+:ref:`Bonsai ONIX Package <openephys_onix1ref>`
+    :ref:`OpenEphys.Onix1 <openephys_onix1ref>` is a `Bonsai
+    <https://bonsai-rx.org/>`__ package for acquiring data from ONIX hardware
+    for real-time experiments. Bonsai is very good at processing the
     heterogeneous data streams produced by ONIX hardware.
 
-:ref:`Open Ephys GUI <open_ephys_gui>`
-    The Open Ephys GUI can be used for ONIX data visualization.
+:ref:`Open Ephys GUI ONIX Plugin<open_ephys_gui>`
+    The `Open Ephys GUI <https://open-ephys.github.io/gui-docs/> excels at
+    electrophysiology data visualization and recording.
 
 :ref:`oni-repl <oni_repl>`
     A simple command-line application that can be used for debugging and basic
@@ -35,5 +37,5 @@ Deprecated Software
 ___________________________________
 
 - The :ref:`bonsai_onixref` pages provide information about the original Bonsai
-  package, which has been superseded by :ref:`openephys_onix1ref`
+  package, which has been superseded by :ref:`OpenEphys.Onix1 <openephys_onix1ref>`.
 
