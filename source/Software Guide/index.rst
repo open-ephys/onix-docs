@@ -20,13 +20,13 @@
     for real-time experiments. Bonsai is very good at processing the
     heterogeneous data streams produced by ONIX hardware.
 
-:ref:`Open Ephys GUI ONIX Plugin<open_ephys_gui>`
-    The `Open Ephys GUI <https://open-ephys.github.io/gui-docs/> excels at
+:ref:`Open Ephys GUI ONIX Plugin <open_ephys_gui>`
+    The `Open Ephys GUI <https://open-ephys.github.io/gui-docs/>` excels at
     electrophysiology data visualization and recording.
 
-:ref:`oni-repl <oni_repl>`
-    A simple command-line application that can be used for debugging and basic
-    streaming IO with ONIX hardware.
+:ref:`Command line application <oni_repl>`
+    `oni-repl` is a simple command-line application that can be used for
+    debugging and basic streaming IO with ONIX hardware.
 
 .. tip:: ONIX uses an `ONI-compliant API
    <https://open-ephys.github.io/ONI/api/index.html>`__ that is software

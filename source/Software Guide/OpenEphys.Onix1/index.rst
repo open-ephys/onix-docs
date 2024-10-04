@@ -3,13 +3,12 @@
 Bonsai ONIX Package
 =================================
 
-`OpenEphys.Onix1
-<https://open-ephys.github.io/onix1-bonsai-docs/index.html>`__ is the `Bonsai <https://bonsai-rx.org/>`__
-package for ONIX hardware. This package contains `Bonsai Operators
+``OpenEphys.Onix1`` is a `Bonsai <https://bonsai-rx.org/>`__ package for ONIX
+hardware. This package contains `Bonsai Operators
 <https://bonsai-rx.org/docs/articles/operators.html>`__ for acquiring and
 sending data to ONIX hardware.
 
-:Code: https://github.com/open-ephys/bonsai-onix1 
+:Code: https://github.com/open-ephys/bonsai-onix1
 :Compatibility: All ONIX hardware, Neuropixels, UCLA miniscopes & variants
 :Documentation: https://open-ephys.github.io/bonsai-onix1-docs/index.html
 
@@ -18,7 +17,7 @@ sending data to ONIX hardware.
         <a href="https://open-ephys.github.io/bonsai-onix1-docs/index.html"><span class="std std-ref custom-card">
         <div class="card text-center page-card">
 
-            <header> 
+            <header>
                 <h1>Go to the OpenEphys.Onix1 Docs <i class="fas fa-external-link"></i></h1>
             </header>
             <img src="../../_static/images/bonsai-lettering.svg"
