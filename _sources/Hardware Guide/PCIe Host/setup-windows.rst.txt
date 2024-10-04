@@ -117,7 +117,5 @@ Install Device Driver
 
 Install Software
 ---------------------------------------
-Have a look at the :ref:`software_guide` page for open-source software options. We
-recommend using :ref:`bonsairef` and the :ref:`openephys_onix1ref` Bonsai package because it provides first class
-support for all ONIX hardware features. 
+Have a look at the :ref:`software_guide` page for software options.
 

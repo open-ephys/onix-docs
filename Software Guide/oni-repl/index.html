@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>oni-repl &#8212; ONIX Docs</title>
+    <title>Command Line Application &#8212; ONIX Docs</title>
   
   
   
@@ -46,8 +46,8 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Usage" href="usage.html" />
-    <link rel="prev" title="Open Ephys GUI" href="../Open%20Ephys%20GUI/index.html" />
+    <link rel="next" title="oni-repl Usage" href="usage.html" />
+    <link rel="prev" title="Open Ephys GUI ONIX Plugin" href="../Open%20Ephys%20GUI/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -365,10 +365,10 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../OpenEphys.Onix1/index.html">Bonsai</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">oni-repl</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OpenEphys.Onix1/index.html">Bonsai ONIX Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI ONIX Plugin</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Command Line Application</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html"><code class="docutils literal notranslate"><span class="pre">oni-repl</span></code> Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Bonsai.ONIX/index.html">Bonsai.ONIX (DEPRECATED)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -446,7 +446,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link"> Software Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">oni-repl</li>
+    <li class="breadcrumb-item active" aria-current="page">Command Line Application</li>
   </ul>
 </nav>
 </div>
@@ -463,12 +463,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="oni-repl">
-<span id="id1"></span><h1>oni-repl<a class="headerlink" href="#oni-repl" title="Link to this heading">#</a></h1>
+  <section id="command-line-application">
+<span id="oni-repl"></span><h1>Command Line Application<a class="headerlink" href="#command-line-application" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-</ul>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">oni-repl</span></code> is a simple <a class="reference external" href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">read-eval-print loop (REPL)</a> for
 <a class="reference external" href="https://open-ephys.github.io/ONI/api/liboni/index.html">liboni</a>.</p>
@@ -505,9 +502,8 @@ hardware to perform the following:</p>
 <p><code class="docutils literal notranslate"><span class="pre">oni-repl</span></code> was created for hardware debugging and as a test program
 for <a class="reference external" href="https://open-ephys.github.io/ONI/api/liboni/index.html">liboni</a>.
 However, its simplicity and lack of abstraction compared to
-<a class="reference internal" href="../Bonsai.ONIX/index.html#bonsai-onixref"><span class="std std-ref">Bonsai.ONIX</span></a> make it useful as an example of how to use
-<a class="reference external" href="https://open-ephys.github.io/ONI/api/liboni/index.html">liboni</a> and
-for quickly examining hardware state and hub firmware versions.</p>
+<a class="reference internal" href="../Bonsai.ONIX/index.html#bonsai-onixref"><span class="std std-ref">Bonsai.ONIX</span></a> make it useful as an example of how to use <a class="reference external" href="https://open-ephys.github.io/ONI/api/liboni/index.html">liboni</a> and for quickly
+examining hardware state and hub firmware versions.</p>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   Jon Newman @ MIT                     **
    Jie Zhang @ MIT                     ////
@@ -571,7 +567,7 @@ for quickly examining hardware state and hub firmware versions.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Open Ephys GUI</p>
+        <p class="prev-next-title">Open Ephys GUI ONIX Plugin</p>
       </div>
     </a>
     <a class="right-next"
@@ -579,7 +575,7 @@ for quickly examining hardware state and hub firmware versions.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Usage</p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">oni-repl</span></code> Usage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bonsai &#8212; ONIX Docs</title>
+    <title>Bonsai ONIX Package &#8212; ONIX Docs</title>
   
   
   
@@ -46,7 +46,7 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Open Ephys GUI" href="../Open%20Ephys%20GUI/index.html" />
+    <link rel="next" title="Open Ephys GUI ONIX Plugin" href="../Open%20Ephys%20GUI/index.html" />
     <link rel="prev" title="Software Guide" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -365,10 +365,10 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bonsai</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../oni-repl/index.html">oni-repl</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../oni-repl/usage.html">Usage</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bonsai ONIX Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Open%20Ephys%20GUI/index.html">Open Ephys GUI ONIX Plugin</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../oni-repl/index.html">Command Line Application</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../oni-repl/usage.html"><code class="docutils literal notranslate"><span class="pre">oni-repl</span></code> Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Bonsai.ONIX/index.html">Bonsai.ONIX (DEPRECATED)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -446,7 +446,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link"> Software Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Bonsai</li>
+    <li class="breadcrumb-item active" aria-current="page">Bonsai ONIX Package</li>
   </ul>
 </nav>
 </div>
@@ -463,38 +463,23 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="bonsai">
-<span id="bonsairef"></span><h1>Bonsai<a class="headerlink" href="#bonsai" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> is a visual programming language (think
-LabView) for <a class="reference external" href="https://en.wikipedia.org/wiki/Reactive_programming">reactive programming</a> with features such as:</p>
-<ul class="simple">
-<li><p>Real-time compilation of workflows to machine code as they are edited
-(zero-overhead).</p></li>
-<li><p>A large array of operators for combining and sychronizing asynchronous data
-streams, which is a major issue in other software.</p></li>
-<li><p>Lots of support for all sorts of hardware outside of ONIX.</p></li>
-</ul>
-<p>Bonsai is ideal for accessing the full power of ONIX hardware and combining it
-with third-party data sources (e.g. machine vision cameras,
-behavioral hardware, etc.), and for real-time processing and manipulation of
-data streams.</p>
-<section id="openephys-onix1">
-<span id="openephys-onix1ref"></span><h2>OpenEphys.Onix1<a class="headerlink" href="#openephys-onix1" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://open-ephys.github.io/onix1-bonsai-docs/index.html">OpenEphys.Onix1</a> is the Bonsai
-package for ONIX hardware. This package contains <a class="reference external" href="https://bonsai-rx.org/docs/articles/operators.html">Bonsai Operators</a> for acquiring and
+  <section id="bonsai-onix-package">
+<span id="openephys-onix1ref"></span><h1>Bonsai ONIX Package<a class="headerlink" href="#bonsai-onix-package" title="Link to this heading">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">OpenEphys.Onix1</span></code> is a <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> package for ONIX
+hardware. This package contains <a class="reference external" href="https://bonsai-rx.org/docs/articles/operators.html">Bonsai Operators</a> for acquiring and
 sending data to ONIX hardware.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Code<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="github reference external" href="https://github.com/open-ephys/onix-bonsai-onix1">open-ephys/onix-bonsai-onix1</a></p>
+<dd class="field-odd"><p><a class="github reference external" href="https://github.com/open-ephys/bonsai-onix1">open-ephys/bonsai-onix1</a></p>
 </dd>
 <dt class="field-even">Compatibility<span class="colon">:</span></dt>
-<dd class="field-even"><p>ONIX Hardware, UCLA miniscopes &amp; variants</p>
+<dd class="field-even"><p>All ONIX hardware, Neuropixels, UCLA miniscopes &amp; variants</p>
 </dd>
 <dt class="field-odd">Documentation<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://open-ephys.github.io/onix1-bonsai-docs/index.html">https://open-ephys.github.io/onix1-bonsai-docs/index.html</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://open-ephys.github.io/bonsai-onix1-docs/index.html">https://open-ephys.github.io/bonsai-onix1-docs/index.html</a></p>
 </dd>
 </dl>
-<a href="https://open-ephys.github.io/onix1-bonsai-docs/index.html"><span class="std std-ref custom-card">
+<a href="https://open-ephys.github.io/bonsai-onix1-docs/index.html"><span class="std std-ref custom-card">
 <div class="card text-center page-card">
 
     <header>
@@ -504,7 +489,24 @@ sending data to ONIX hardware.</p>
     class="page-card-img-marg hover-zoom" alt="OpenEphys.Onix1 bonsai
     package documentation">
 
-</div></section>
+</div><section id="what-is-bonsai">
+<h2>What is Bonsai?<a class="headerlink" href="#what-is-bonsai" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> is a visual programming language (think
+LabView) for <a class="reference external" href="https://en.wikipedia.org/wiki/Reactive_programming">reactive programming</a> with features such as:</p>
+<ul class="simple">
+<li><p>Real-time compilation of workflows to machine code as they are edited
+(zero-overhead).</p></li>
+<li><p>A large array of operators for combining and sychronizing asynchronous data
+streams, which is a major issue in other software.</p></li>
+<li><p>Lots of support for all sorts of hardware outside of ONIX.</p></li>
+</ul>
+<p>Bonsai is A good choice for accessing the full power of ONIX hardware and
+combining it with third-party data sources (e.g. machine vision cameras,
+behavioral hardware, etc.), and for real-time processing and manipulation of
+data streams. The documentation linked above contains detailed instructions on
+how to use Bonsai with ONIX hardware along with fully useable example workflows,
+data loading scripts, etc.</p>
+</section>
 </section>
 
     <script type="text/javascript">
@@ -538,7 +540,7 @@ sending data to ONIX hardware.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Open Ephys GUI</p>
+        <p class="prev-next-title">Open Ephys GUI ONIX Plugin</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -560,7 +562,7 @@ sending data to ONIX hardware.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openephys-onix1">OpenEphys.Onix1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-bonsai">What is Bonsai?</a></li>
 </ul>
   </nav></div>
 
