@@ -97,7 +97,7 @@ Install C++ Runtime
 ---------------------------------------
 Windows does not ship with a C++ runtime. Before using ONIX on windows, you
 will need to install `Microsoft Visual C++ Redistributable for Visual Studio
-2015, 2017 and 2019 <https://aka.ms/vs/16/release/vc_redist.x64.exe>`__.
+2015, 2017 and 2019 <https://download.visualstudio.microsoft.com/download/pr/453680ea-b88a-411f-80fd-5db37fdc9dbb/5D9999036F2B3A930F83B7FE3E2186B12E79AE7C007D538F52E3582E986A37C3/VC_redist.x64.exe>`__.
 
 Install Device Driver
 ---------------------------------------
