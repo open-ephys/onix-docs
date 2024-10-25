@@ -1,19 +1,19 @@
 .. _oni_repl_usage:
 
-Usage
+``oni-repl`` Usage
 ====================================
 
 .. code-block:: console
 
-    oni-repl <driver> [slot] [-d] [-D <value>] [-n <value>] [-i <device index>] 
-    [--rbytes=<bytes>] [--wbytes=<bytes>] [--dumppath=<path>] [-h,--help] [-v,--version] 
+    oni-repl <driver> [slot] [-d] [-D <value>] [-n <value>] [-i <device index>]
+    [--rbytes=<bytes>] [--wbytes=<bytes>] [--dumppath=<path>] [-h,--help] [-v,--version]
 
 Required Arguments
 -----------------------------------
-<driver>        
+<driver>
     Hardware driver to dynamically link (e.g. **riffa**,
     **ft600**, **test_driver**, etc.)
-[slot]           
+[slot]
     Index specifying the physical slot occupied by hardware being controlled.
     If none is provided, the driver-defined default will be used.
 
@@ -58,33 +58,33 @@ index 0) and a single headstage (starting at device index 256).
 
 .. code-block:: console
 
-   $ ./liboni-test riffa 0 
+   $ ./liboni-test riffa 0
 
-       Jon Newman @ MIT                     **                
-       Jie Zhang @ MIT                     ////               
-       Aarón Cuevas López @ UPV             ///.              
-       Josh Seigle @ Allen                  ///,.             
-       Jakob Voigts @ MIT                   *///,             
-                         *.                  ///,,            
-                       ,####/                ///,,,           
-                     ,,,,/####//             *///,,.          
-                   ,,,,,   //##////           ///,,,          
-                 ,,,,,      ,///#/////        ///.,,,         
-               ,,,,,          //// //////     *///,,,,        
-             ,,,,,             ,////  /////,   /// ,,,,       
-            ,,,,                 ////   ,/////.///  ,,,       
-         .,,,,                    .////    ,///##//  ,,,      
-       .,,,,                        ////      */###/ .,,,     
-      ,///***,,..........,,,...      ,////      /##(///,,,    
-         .,,,,,,**,,..................,((((,..../(((((((((.   
-              .,......,                .*(((/...,(((,,,(###   
-                   .........              ////   ///.  ///,   
-                        ........,          ,///* */// ////    
-       Open Ephys Org.       .,......,       //// ///.///     
-                                  ........,   *///(/////      
-       Supporting open science         .,......,//((((//      
-       since 2010.                          ....,/(##(/       
-                                                 .,###.       
+       Jon Newman @ MIT                     **
+       Jie Zhang @ MIT                     ////
+       Aarón Cuevas López @ UPV             ///.
+       Josh Seigle @ Allen                  ///,.
+       Jakob Voigts @ MIT                   *///,
+                         *.                  ///,,
+                       ,####/                ///,,,
+                     ,,,,/####//             *///,,.
+                   ,,,,,   //##////           ///,,,
+                 ,,,,,      ,///#/////        ///.,,,
+               ,,,,,          //// //////     *///,,,,
+             ,,,,,             ,////  /////,   /// ,,,,
+            ,,,,                 ////   ,/////.///  ,,,
+         .,,,,                    .////    ,///##//  ,,,
+       .,,,,                        ////      */###/ .,,,
+      ,///***,,..........,,,...      ,////      /##(///,,,
+         .,,,,,,**,,..................,((((,..../(((((((((.
+              .,......,                .*(((/...,(((,,,(###
+                   .........              ////   ///.  ///,
+                        ........,          ,///* */// ////
+       Open Ephys Org.       .,......,       //// ///.///
+                                  ........,   *///(/////
+       Supporting open science         .,......,//((((//
+       since 2010.                          ....,/(##(/
+                                                 .,###.
 
           +--------------------+-------+-------+-------+-------+---------------------
           |                    |       |Firm.  |Read   |Wrt.   |
@@ -150,4 +150,4 @@ index 0) and a single headstage (starting at device index 256).
                a - reset the acquisition clock counter
                x - issue a hardware reset
                q - quit
-       >>> 
+       >>>

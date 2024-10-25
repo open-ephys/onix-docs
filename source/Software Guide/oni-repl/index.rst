@@ -1,9 +1,10 @@
 .. _oni_repl:
 
-oni-repl
+Command Line Application
 ===================================
 
 .. toctree::
+    :hidden:
     :maxdepth: 1
 
     usage
@@ -33,11 +34,11 @@ hardware to perform the following:
 - Bulk initialize device register state
 
 .. note:: ``oni-repl`` was created for hardware debugging and as a test program
-    for `liboni <https://open-ephys.github.io/ONI/api/liboni/index.html>`__. 
-    However, its simplicity and lack of abstraction compared to
-    :ref:`bonsai_onixref` make it useful as an example of how to use 
-    `liboni <https://open-ephys.github.io/ONI/api/liboni/index.html>`__ and
-    for quickly examining hardware state and hub firmware versions.
+   for `liboni <https://open-ephys.github.io/ONI/api/liboni/index.html>`__.
+   However, its simplicity and lack of abstraction compared to
+   :ref:`bonsai_onixref` make it useful as an example of how to use `liboni
+   <https://open-ephys.github.io/ONI/api/liboni/index.html>`__ and for quickly
+   examining hardware state and hub firmware versions.
 
 .. code-block:: none
 

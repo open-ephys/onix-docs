@@ -20,7 +20,7 @@ host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
 below the level it needs to function properly.
 
-.. attention:: The :ref:`openephys_onix1ref` Bonsai package automatically sets the
+.. attention:: The :ref:`Bonsai package <openephys_onix1ref>` automatically sets the
    headstage port voltage by default, but allows the user to override the
    voltage setting as well. The documentation linked shows how to use this
    functionality and what valid voltage ranges are for each headstage. This
