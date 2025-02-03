@@ -14,12 +14,17 @@
     oni-repl/index
     Bonsai.ONIX/index
 
-..  grid::
+There are various software to acquire data from the ONIX system:  
+
+..  grid:: 3
 
     ..  grid-item-card:: OpenEphys.Onix1 (Bonsai Package)
         :link-type: url
         :link: https://open-ephys.github.io/bonsai-onix1-docs/
         :class-card: intro-card
+        :img-top: /_static/images/bonsai-logo.svg
+        :img-alt: bonsai logo
+        :class-img-top: software-card-img
 
         Acquire data from ONIX in Bonsai, a visual programming language for more extensive data
         processing and low-latency (<1 ms latencies) feedback.
@@ -28,6 +33,9 @@
         :link-type: ref
         :link: open_ephys_gui
         :class-card: intro-card
+        :img-top: /_static/images/oe-gui-logo.svg
+        :img-alt: open ephys gui logo
+        :class-img-top: software-card-img
 
         Acquire data from ONIX in the Open Ephys GUI, a turnkey solution for acquiring and
         visualizing electrophysiology data.  
