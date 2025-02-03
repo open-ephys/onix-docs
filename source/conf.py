@@ -43,6 +43,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
+    'sphinx_design'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
