@@ -1,6 +1,9 @@
 .. |software_logo| image:: /_static/noun_macbook.svg
   :height: 60
 
+.. |_| unicode:: 0xA0 
+   :trim:
+
 .. _software_guide:
 
 |software_logo| Software Guide
@@ -18,7 +21,7 @@ There are various software to acquire data from the ONIX system:
 
 ..  grid:: 3
 
-    ..  grid-item-card:: OpenEphys.Onix1 (Bonsai Package)
+    ..  grid-item-card:: Bonsai Package OpenEphys.Onix1
         :link-type: url
         :link: https://open-ephys.github.io/bonsai-onix1-docs/
         :class-card: intro-card
@@ -29,7 +32,7 @@ There are various software to acquire data from the ONIX system:
         Acquire data from ONIX in Bonsai, a visual programming language for more extensive data
         processing and low-latency (<1 ms latencies) feedback.
 
-    ..  grid-item-card:: ONIX Source (Open Ephys GUI Plugin)
+    ..  grid-item-card:: Open Ephys GUI plugin ONIX |_| Source 
         :link-type: ref
         :link: open_ephys_gui
         :class-card: intro-card
