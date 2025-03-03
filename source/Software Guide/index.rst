@@ -15,7 +15,7 @@
     Bonsai Package Docs <https://open-ephys.github.io/bonsai-onix1-docs/>
     Open Ephys GUI/index
     oni-repl/index
-    Bonsai.ONIX/index
+    Deprecated Software<Bonsai.ONIX/index>
 
 There are various software to acquire data from the ONIX system:  
 
