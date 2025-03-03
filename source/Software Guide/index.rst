@@ -30,9 +30,9 @@ There are various software to acquire data from the ONIX system:
         :class-img-top: software-card-img
 
         Acquire data from ONIX in Bonsai, a visual programming language for more extensive data
-        processing and low-latency (<1 ms latencies) feedback.
+        processing and sub-ms latency feedback.
 
-    ..  grid-item-card:: Open Ephys GUI plugin ONIX |_| Source 
+    ..  grid-item-card:: Open Ephys GUI Plugin ONIX |_| Source 
         :link-type: ref
         :link: open_ephys_gui
         :class-card: intro-card
