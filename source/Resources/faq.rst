@@ -54,6 +54,6 @@ FAQ
         take 10's of lines of C.
 
     I have existing acquisition software. Can I integrate support for ONIX hardware using your API?
-        Yes. Have a look at the `ONI API Documentation <https://open-ephys.github.io/ONI/api/index.html>`_
+        Yes. Have a look at the `ONI API Documentation <https://open-ephys.github.io/ONI/v1.0/api/index.html>`_
         to get started. Also let us know if you want help.
 
