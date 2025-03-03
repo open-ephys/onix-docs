@@ -12,7 +12,7 @@
 .. toctree::
     :hidden:
 
-    OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>
+    Bonsai Package Docs <https://open-ephys.github.io/bonsai-onix1-docs/>
     Open Ephys GUI/index
     oni-repl/index
     Bonsai.ONIX/index

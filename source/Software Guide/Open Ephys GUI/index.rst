@@ -1,6 +1,9 @@
+.. |_| unicode:: 0xA0 
+   :trim:
+
 .. _open_ephys_gui:
 
-Open Ephys GUI ONIX Plugin
+Open Ephys GUI Plugin
 --------------------------------------------
 
 The `Open Ephys GUI <https://open-ephys.github.io/gui-docs/index.html>`__ is an
