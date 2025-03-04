@@ -108,13 +108,13 @@ h6 {
 
 /* navigation bar colors*/
 .navbar {
-  background: white !important;
+  background: #404258 !important;
   font-size: 1em;
 }
 
 .navbar-nav>.active>.nav-link {
-  background-color: white !important;
-  color: #344b39 !important;
+  background-color: #e6eddf !important;
+  color: #2f401f !important;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
@@ -125,20 +125,20 @@ h6 {
 }
 
 .navbar a {
-  color: grey !important;
+  color: white !important;
   font-family: "Bitter", sans-serif;
   transition-duration: 0.4s;
   margin-right: 10px;
 }
 
 .search-button {
-  color: grey !important;
+  color: white !important;
   margin-right: 30px;
 }
 
 
 .navbar a:hover {
-  color: grey !important;
+  color: #c6eca1 !important;
   transition-duration: 0.4s;
 }
 
