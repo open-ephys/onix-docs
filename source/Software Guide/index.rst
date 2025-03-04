@@ -29,7 +29,7 @@
     debugging and basic streaming IO with ONIX hardware.
 
 .. tip:: ONIX uses an `ONI-compliant API
-   <https://open-ephys.github.io/ONI/api/index.html>`__ that is software
+   <https://open-ephys.github.io/ONI/v1.0/api/index.html>`__ that is software
    agnostic. If you want to use ONIX hardware with your acquisition software,
    please :ref:`get in touch <support>`.
 
