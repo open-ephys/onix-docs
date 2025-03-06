@@ -36,7 +36,7 @@ There are various software to acquire data from the ONIX system:
         :link-type: ref
         :link: open_ephys_gui
         :class-card: intro-card
-        :img-top: /_static/images/oe-gui-logo.svg
+        :img-top: /_static/images/oe-gui-logo.png
         :img-alt: open ephys gui logo
         :class-img-top: software-card-img
 
