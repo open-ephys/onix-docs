@@ -1,9 +1,6 @@
 .. |software_logo| image:: /_static/noun_macbook.svg
   :height: 60
 
-.. |_| unicode:: 0xA0 
-   :trim:
-
 .. _software_guide:
 
 |software_logo| Software Guide
@@ -17,9 +14,9 @@
     oni-repl/index
     Deprecated Software<Bonsai.ONIX/index>
 
-There are various software to acquire data from the ONIX system:  
+There are two recommended software programs to acquire data from the ONIX system:  
 
-..  grid:: 3
+..  grid::
 
     ..  grid-item-card:: Bonsai Package OpenEphys.Onix1
         :link-type: url
@@ -28,17 +25,19 @@ There are various software to acquire data from the ONIX system:
         :img-top: /_static/images/bonsai-logo.svg
         :img-alt: bonsai logo
         :class-img-top: software-card-img
+        :columns: 5
 
         Acquire data from ONIX in Bonsai, a visual programming language for more extensive data
         processing and sub-ms latency feedback.
 
-    ..  grid-item-card:: Open Ephys GUI Plugin ONIX |_| Source 
+    ..  grid-item-card:: Open Ephys GUI Plugin ONIX Source 
         :link-type: ref
         :link: open_ephys_gui
         :class-card: intro-card
         :img-top: /_static/images/oe-gui-logo.png
         :img-alt: open ephys gui logo
         :class-img-top: software-card-img
+        :columns: 5
 
         Acquire data from ONIX in the Open Ephys GUI, a turnkey solution for acquiring and
         visualizing electrophysiology data.  
@@ -58,6 +57,6 @@ debugging and basic streaming IO with ONIX hardware.
 Deprecated Software
 ___________________________________
 
--   :doc:`Bonsai.ONIX <Bonsai.ONIX/index>` is the deprecated Bonsai ONIX
-    package which has been superseded by `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>`__.
+:doc:`Bonsai.ONIX <Bonsai.ONIX/index>` is the deprecated Bonsai ONIX
+package which has been superseded by `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>`__.
 
