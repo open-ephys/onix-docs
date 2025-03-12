@@ -11,7 +11,7 @@ Command Line Application
 
 ``oni-repl`` is a simple `read-eval-print loop (REPL)
 <https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop>`__ for
-`liboni <https://open-ephys.github.io/ONI/api/liboni/index.html>`__. 
+`liboni <https://open-ephys.github.io/ONI/v1.0/api/liboni/index.html>`__. 
 
 :Code: https://github.com/open-ephys/liboni/tree/main/api/liboni/oni-repl
 :Compatibility: Any ONI-compliant hardware
@@ -34,10 +34,10 @@ hardware to perform the following:
 - Bulk initialize device register state
 
 .. note:: ``oni-repl`` was created for hardware debugging and as a test program
-   for `liboni <https://open-ephys.github.io/ONI/api/liboni/index.html>`__.
+   for `liboni <https://open-ephys.github.io/ONI/v1.0/api/liboni/index.html>`__.
    However, its simplicity and lack of abstraction compared to
    :ref:`bonsai_onixref` make it useful as an example of how to use `liboni
-   <https://open-ephys.github.io/ONI/api/liboni/index.html>`__ and for quickly
+   <https://open-ephys.github.io/ONI/v1.0/api/liboni/index.html>`__ and for quickly
    examining hardware state and hub firmware versions.
 
 .. code-block:: none

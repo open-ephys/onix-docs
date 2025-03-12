@@ -22,10 +22,10 @@ Understanding the System
 - See the :ref:`hardware_guide` for a description of each ONIX hardware component and decide which you will need.
 
 .. note::
-    To understand the underlying hardware specifications, check out the `ONI Hardware Specification <https://open-ephys.github.io/ONI/hw-spec/index.html>`_.
+    To understand the underlying hardware specifications, check out the `ONI Hardware Specification <https://open-ephys.github.io/ONI/v1.0/hw-spec/index.html>`_.
 
 .. note::
-    For developers who want to dig into the API, check out the `ONI API Documentation <https://open-ephys.github.io/ONI/api/index.html>`_.
+    For developers who want to dig into the API, check out the `ONI API Documentation <https://open-ephys.github.io/ONI/v1.0/api/index.html>`_.
 
 Usage Warnings
 --------------------------------
