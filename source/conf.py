@@ -153,7 +153,8 @@ linkcheck_ignore = [
     'https://multimedia.3m.com/mws/media/*', 
     'https://www.intel.com/*',
     'https://www.analog.com/*',
-    'https://www.xilinx.com/*'
+    'https://www.xilinx.com/*',
+    'https://white-matter.com/*'
 ]
 
 # NB: Allow this permanent redirect for a Visual Studio package
