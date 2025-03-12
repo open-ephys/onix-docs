@@ -9,3 +9,6 @@ pydata-sphinx-theme = "0.13.3"
 make = "*"
 pytz = "*"
 sphinxcontrib-wavedrom = "*"
+jinja2 = "*"
+
+[dev-packages]
