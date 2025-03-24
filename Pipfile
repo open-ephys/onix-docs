@@ -10,5 +10,6 @@ make = "*"
 pytz = "*"
 sphinxcontrib-wavedrom = "*"
 jinja2 = "*"
+sphinx-design = "*"
 
 [dev-packages]

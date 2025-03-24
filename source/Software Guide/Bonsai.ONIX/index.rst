@@ -7,7 +7,7 @@
 
 .. _bonsai_onixref:
 
-Bonsai.ONIX
+Bonsai.ONIX (DEPRECATED)
 ===================================
 ..
     Important: The names of pages for nodes must match their Bonsai.ONIX class
