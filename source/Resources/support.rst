@@ -18,7 +18,7 @@ the appropriate repository:
 - `Bonsai.ONIX Package Repo <https://github.com/open-ephys/Bonsai.ONIX>`__
 - ONIX Hardware Repositories
     - `Headstage-64 <https://github.com/open-ephys/onix-headstage-64>`__
-    - `Headstage Neuropixels-1.0 <https://github.com/open-ephys/onix-headstage-neuropix1>`__
+    - `Headstage Neuropixels-1.0f <https://github.com/open-ephys/onix-headstage-neuropix1>`__
     - `Headstage Neuropixels-1.0e <https://github.com/open-ephys/onix-headstage-neuropix1e>`__
     - `PCIe Host Board <https://github.com/open-ephys/onix-fmc-host>`__
     - `Breakout <https://github.com/open-ephys/onix-breakout>`__

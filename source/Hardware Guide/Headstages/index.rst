@@ -12,7 +12,7 @@ Here you will find information on **ONIX headstages**.
     tethers
     tether-voltage
     headstage-64/index
-    headstage-neuropix-1
+    headstage-neuropix-1f
     headstage-neuropix-1e
     headstage-neuropix-2e-beta
     headstage-neuropix-2e

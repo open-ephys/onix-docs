@@ -1,13 +1,13 @@
 .. _headstage_neuropix1:
 
-Neuropixels-1.0 Headstage
+Neuropixels-1.0f Headstage
 ##############################
-The ONIX **Neuropixels-1.0 Headstage** is a serialized, multifunction headstage
+The ONIX **Neuropixels-1.0f Headstage** is a serialized, multifunction headstage
 targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/>`__.
 
 .. image:: /_static/images/headstage-neuropix1/headstage-neuropix1_1r2_side-with-probes.jpg
     :align: center
-    :alt: ONIX Headstage-Neuropixels-1.0 v1.2.
+    :alt: ONIX Headstage-Neuropixels-1.0f v1.2.
 
 - Two Neuropixels 1.0 probes
 - A BNO055 9-axis IMU for real-time, 3D orientation tracking
@@ -20,7 +20,7 @@ Coaxial Link
 ***********************************
 For details on data serialization and headstage gateware, have a look at the
 :ref:`serialization` page, which describes how coax headstages operate in
-general terms. The Neuropixels-1.0 Headstage has the following coaxial link
+general terms. The Neuropixels-1.0f Headstage has the following coaxial link
 properties:
 
 .. table::
