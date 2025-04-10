@@ -55,7 +55,7 @@ ground pin and either terminal of the large inductor on the headstage.
 
      - .. figure :: ../../_static/images/tether-voltage/measure-voltage-npix.png
 
-          Neuropixels-1.0 Headstage
+          Neuropixels-1.0f Headstage
 
      - .. figure :: ../../_static/images/tether-voltage/measure-voltage-rhs2116.webp
 
