@@ -20,13 +20,14 @@ host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
 below the level it needs to function properly.
 
-.. attention:: The :ref:`Bonsai package <openephys_onix1ref>` automatically sets the
-   headstage port voltage by default, but allows the user to override the
-   voltage setting as well. The documentation linked shows how to use this
-   functionality and what valid voltage ranges are for each headstage. This
-   functionality has been been tuned for the tethers that are shipped with each
-   headstage. The voltage override is available when custom tethers are used
-   (see :ref:`measure_voltage`).
+..  attention:: 
+    The `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/index.html>`__ 
+    Bonsai package automatically sets the headstage port voltage by default, but allows 
+    the user to override the voltage setting as well. The documentation linked shows how 
+    to use this functionality and what valid voltage ranges are for each headstage. This
+    functionality has been been tuned for the tethers that are shipped with each
+    headstage. The voltage override is available when custom tethers are used
+    (see :ref:`measure_voltage`).
 
 The voltage set in software is not identical to the voltage supplied to the
 headstage, as some voltage drop will occur over the tether that connects them. The
@@ -54,7 +55,7 @@ ground pin and either terminal of the large inductor on the headstage.
 
      - .. figure :: ../../_static/images/tether-voltage/measure-voltage-npix.png
 
-          Neuropixels-1.0 Headstage
+          Neuropixels-1.0f Headstage
 
      - .. figure :: ../../_static/images/tether-voltage/measure-voltage-rhs2116.webp
 

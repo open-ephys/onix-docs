@@ -436,3 +436,9 @@ img {
 .hint>.admonition-title:before {
   color: #519141 !important;
 }
+
+.software-card-img {
+  width: 50%;
+  margin: auto;
+  margin-top: 1rem;
+}
