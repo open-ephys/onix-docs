@@ -3,7 +3,7 @@
 DS90UB9X Raw Device
 ###########################################
 :Authors: Aarón Cuevas López
-:Version: 1
+:Version: 3
 :IO: Frame Source, Register Access
 :ONIX ID: 24
 :ONIX Hubs: :ref:`pcie_host`
@@ -54,9 +54,12 @@ Managed register access is provided at offset 0x8000.
       - On Reset
       - 1280
       - None
-      - Frame size register
-        * Bits(15:0): In parallel mode: frame data size in samples. In serial mode: Number of words per frame in each line (total frame size= this x num streams x num lines per stream). 
-        * Bit(31:15); number of frames to aggregate. 0 = do not perform aggregation
+      - Amount of data to read into a frame
+     
+        * Bits 0-15: In parallel mode: frame data size in samples. 
+          In serial mode: Number of words per frame in each line.
+        * Bits 16-31: Number of frames to aggregate. 0 = do not perform aggregation
+
 
     * - 0x8002
       - TRIGGER
@@ -118,72 +121,79 @@ Managed register access is provided at offset 0x8000.
         * Bit 0: not included
         * Bit 1: '0' = HSYNC, '1' = VSYNC
         * Bit 2: '0' = Rising edge, '1' = Falling edge
-        * Bit 3: If '1', when aggregate, use mark settings to select the first frame
+        * Bit 3: When using aggregation, use mark settings to select the first frame
 
     * - 0x8007
       - MAGIC_MASK
-      - R/W 
-      - On Reset 
+      - R/W
+      - On Reset
       - 0
       - None
-      - Controls Magic word detection and its masking
-        
-        * Bits 15-0: Bitmask for magic word detection. If all 0, magic word detection is disabled. 
-        * Bit 31: also check inverse mask. 
-        * Bit 30: When aggregate, wait for the first non-inverted magic word
-
+      - Bitmask for magic word detection and related options.
+       
+        * Bits 0-15: Bitmask. If all 0, magic word detection is disabled. 
+        * Bit 31: Also check for bit-inverse mask. 
+        * Bit 30: When aggregation is enabled, wait for the first non-inverted magic word
+    
     * - 0x8008
       - MAGIC
-      - R/W 
-      - On Reset 
+      - R/W
+      - On Reset
       - 0
       - None
-      - 16 bit magic word. After trigger, if magic_mask is not 0, wait for this word in the stream before starting a frame
+      - After trigger, if magic_mask is not 0, wait until a specific word in the stream to start a frame. (Bits 0-15)
 
     * - 0x8009
       - MAGIC_WAIT
-      - R/W 
+      - R/W
       - On Reset 
       - 0
       - None
-      - Max number of samples to wait from trigger to magic word detection before canceling and going back to trigger detection. 0 means wait indefinitely 
-
+      - Max number of samples to wait from trigger to mask detection before canceling and going back to trigger detection. 0 means wait indefinitely
+      
     * - 0x800A
       - DATAMODE
-      - R/W 
-      - On Reset 
+      - R/W
+      - On Reset
       - 0
       - None
-      - Parallel/Serial data mode selection and options
-
+      - Data operation mode
+        
         * Bit 0: '0' = Normal parallel mode. '1' = Serial mode 
-        * Bit 1: '1' = Include "index" field in normal mode, '0'= Do not include it in normal mode
-        * Bit 2: Number of serial streams '0' = 1 stream, '1' = 2 streams
-        * Bit 3: reserved
-        * Bits 7-4: Number of bits per word - 1 (i.e.: '0x0' = 1bit, '0xF' = 16bits)
-        * Bits 9-8 number of lines per stream '00' = 1, '01' = 2. '10' = 4, '11' = 8
-        * Bit 10: data order in serial mode '0' = MSB first, '1' = LSB first 
-
+        * Bit 1: '1' = Include "index" field in parallel mode, '0'= Do not include it in parallel mode. 
+        * Bit 2: Number of serial streams '0' = 1 stream, '1' = 2 streams.
+        * Bit 3: reserved. 
+        * Bits 7-4: Number of bits per word - 1 (i.e.: '0x0' = 1bit, '0xF' = 16bits). 
+        * Bits 9-8 number of lines per stream '00' = 1, '01' = 2. '10' = 4, '11' = 8. 
+        * Bit 10: data order in serial mode '0' = MSB first, '1' = LSB first
+    
     * - 0x800B
       - DATALINES0
       - R/W 
-      - On Reset 
+      - On Reset
       - 0
       - None
-      - Input lines for stream 0. Each 4 bits specify the input: 0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input     
+      - Input lines for serial stream 0. Each 4 bits specify the input:
+      
+        * 0x0-0xB: Data lines 0-11
+        * 0xC: Hsync
+        * 0xD: Vsync
+        * 0xE: Reserved
+        * 0xF: zero-input
 
     * - 0x800C
       - DATALINES1
       - R/W 
-      - On Reset 
+      - On Reset
       - 0
       - None
-      - Input lines for stream 1. Each 4 bits specify the input: 0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input     
+      - Input lines for serial stream 1. Each 4 bits specify the input: 
+        0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input
 
     * - 0x8010
       - GPIO_DIR
       - R/W
-      - On Reset
+      - Immediate
       - 0 
       - None
       - Bits 0-3 determine the direction of GPIO 0-3. For each bit:
@@ -194,7 +204,7 @@ Managed register access is provided at offset 0x8000.
     * - 0x8011
       - GPIO_VAL
       - R/W
-      - On Reset
+      - Immediate
       - 0
       - None
       - Bits 0-3 determine the value of GPIO 0-3. For each bit:
@@ -203,7 +213,7 @@ Managed register access is provided at offset 0x8000.
         * 0b1: High
 
     * - 0x8012
-      - GPIO_VAL
+      - LINK_STATUS
       - R
       - On DS90UBX LOCK or PASS pin state change
       - N/A
@@ -213,6 +223,22 @@ Managed register access is provided at offset 0x8000.
 
         * Bit 0: DS90UBX LOCK pin state
         * Bit 1: DS90UBX PASS pin state
+    
+    * - 0x8013
+      - DS90UBX_I2C_LAST_L
+      - R
+      - On I2C access
+      - N/A
+      - None
+      - Acquisition clock counter value of last i2c raw access (low 32 bits)
+      
+    * - 0x8014
+      - DS90UBX_I2C_LAST_H
+      - R
+      - On I2C access
+      - N/A
+      - None
+      - Acquisition clock counter value of last i2c raw access (high 32 bits)
 
 
 Unmanaged Registers
