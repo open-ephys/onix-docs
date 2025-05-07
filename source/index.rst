@@ -1,6 +1,14 @@
-:notoc:
+.. toctree::
+    :hidden:
+    :maxdepth: 2
+    :titlesonly:
 
-.. title:: ONIX
+    Getting Started/index
+    Hardware Guide/index
+    Software Guide/index
+    Resources/index
+
+.. title:: Home
 
 .. image:: /_static/onix_logo.svg
     :width: 280px
@@ -10,9 +18,7 @@
 .. figure:: /_static/images/onix-hw-summary.jpg
     :class: with-border
 
-This site provides documentation for ONIX, the second-generation `Open Ephys
-<https://open-ephys.org/>`_ acquisition system. ONIX is a collection of `Open
-Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
+**ONIX** is a collection of `Open Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
 software for performing neuroscience experiments with freely moving animals. It
 is the successor to the original `Open Ephys <https://open-ephys.org>`__
 `Acquisition System <https://open-ephys.org/acquisition-system>`_ and
@@ -40,14 +46,6 @@ tools.
                 <p class="card-text">Explore the details of ONIX hardware.</p>
             </div>
         </div>
-        <a class="reference internal" href="API%20Reference/index.html#api-ref"><span class="std std-ref custom-card">
-        <div class="card text-center intro-card ">
-            <img src="_static/noun_books.svg" class="card-img-top" alt="onix api references" height="100">
-            <div class="card-body flex-fill">
-                <h5 class="card-title">API Reference</h5>
-                <p class="card-text">Learn how to use the API to create software for ONI hardware.</p>
-            </div>
-        </div>
         <a class="reference internal" href="Software%20Guide/index.html#software"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="100">
@@ -56,14 +54,12 @@ tools.
                 <p class="card-text">Learn about existing software tools for acquiring from ONI hardware.</p>
             </div>
         </div>
+        <a class="reference internal" href="Resources/index.html"><span class="std std-ref custom-card">
+        <div class="card text-center intro-card">
+            <img src="_static/noun_books.svg" class="card-img-top" alt="onix resources" height="100">
+            <div class="card-body flex-fill">
+                <h5 class="card-title">Resources</h5>
+                <p class="card-text">Browse helpful resources.</p>
+            </div>
+        </div>
     </div>
-
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-    :titlesonly:
-
-    Getting Started/index
-    Hardware Guide/index
-    API Reference/index
-    Software Guide/index

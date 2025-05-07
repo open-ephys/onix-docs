@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_rhd2164dev:
 
 RHD2164Device
@@ -54,19 +56,29 @@ options.
       - Select a low-frequency cutoff from allowable options. This filtering is
         performed prior to analog to digital conversion.
 
-    * - DSPCuttoff
+    * - DSPCutoff
       - enum
-      - Select the low-frequency cutoff for the integrated digtial offset
-        removal filter. This fitering is performed following analog to digital
+      - Select the low-frequency cutoff for the integrated digital offset
+        removal filter. This filtering is performed following analog to digital
         conversion.
 
     * - EphysDataFormat
       - enum
       - The format of the ephys samples within the  RHD2164DataFrame.
 
-        - Unsigned: raw 16-bit unsigned integer conversion results.
-        - TwosCompliment: raw 16-bit signed integer conversion results.
-        - MicroVolts: 32-bit floating-point voltages.
+        - Unsigned: raw 16-bit unsigned integer conversion results in offset binary.
+
+          .. math::
+
+              \mu V = 0.195 \mu V/LSB * (Sample - 32768.0)
+
+        - TwosCompliment: raw 16-bit signed integer conversion results in two's complement.
+
+          .. math::
+
+              \mu V = 0.195 \mu V/LSB * Sample
+
+        - MicroVolts: 32-bit floating-point sample values in microvolts.
 
     * - AuxDataFormat
       - enum

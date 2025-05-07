@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 ..
     Important: The names of pages for nodes must match their Bonsai.ONIX class
     names so that documentation can be opened from the Bonsai Editor!
@@ -17,6 +19,7 @@ Nodes
 
     ONIContext
     HeartbeatDevice
+    MemoryUsageDevice
     AnalogIODevice
     DigitalIODevice
     ClockOutputDevice
@@ -29,6 +32,7 @@ Nodes
     ElectricalStimulationDevice
     OpticalStimulationDevice
     NeuropixelsV1Device
+    NeuropixelsV1eDevice
     MiniscopeV3Device
     MiniscopeV4Device
     MiniscopeV4BNO055Device

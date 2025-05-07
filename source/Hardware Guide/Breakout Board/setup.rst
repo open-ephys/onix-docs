@@ -3,6 +3,8 @@
 Breakout Board Guide
 #########################
 
+.. warning:: Always make sure the PC is powered off **before** connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Host.
+
 Setup
 -------------------------
 The Breakout Board provides access to signals to and from the PCIe host. Each
@@ -34,6 +36,17 @@ each of these signal lines are acquired.
     links, but the breakout board provides four. This is is by design. The breakout
     is designed to be compatible with future host hardware.
 
+Reset Button
+________________________
+
+There are two holes on the breakout board that allow access to the onboard FPGA reset button and status LED.
+The reset hole is located just below the 'Digital Out' marking, and can be used to access the reset button on the onboard FPGA by inserting a thin wire or pin.
+The onboard FPGA status can be inspected by looking into the status LED hole.
+
+.. image:: /_static/images/breakout/breakout_reset.png
+    :width: 50%
+    :align: center
+
 
 SDR Cable
 ________________________
@@ -53,8 +66,7 @@ Plug in the SDR cable for analog and digital I/O.
   .. attention:: Some boards have a bug in the power on sequence that means a
      reset is required before the board will work. This has been fixed in later
      revisions. If the RGB LEDs remain off after plugging in the SDR cable,
-     reset the Breakout Board by inserting a thin wire or screw driver into the
-     small hole just below the 'Digital Out' marking to reset the onboard FPGA.
+     reset the Breakout Board by pressing the onboard FPGA reset button (see above).
 
 MMCX Cables
 ________________________
@@ -118,20 +130,12 @@ all LEDs to be completely turned off for light-sensitive experiments.
 
 Gateware
 -------------------------
-The breakout board contains a `TinyFPGA BX
-<https://tinyfpga.com/bx/guide.html>`__ (Lattice ICE40 breakout board) for
+The breakout board contains a `TinyFPGA BX <https://github.com/tinyfpga/TinyFPGA-BX>`__ (Lattice ICE40 breakout board) for
 digital input serialization, digital output deserialization, interpreting user
 input, and driving indication LEDs. The `breakout board gateware
 <https://github.com/open-ephys/onix-breakout/tree/main/gateware>`__ is
-impelemented using an open-source toolchain (`Yosys
-<http://www.clifford.at/yosys/>`__ and `NextPnR
+implemented using an open-source toolchain (`Yosys
+<https://yosyshq.net/yosys/>`__ and `NextPnR
 <https://github.com/YosysHQ/nextpnr>`__).
 
-
-Updating the Gateware
-_________________________
-If Open Ephys team have provided you with an updated firmware file for the
-Breakout Board, the micro-USB port on the Breakout Board (labelled 'config')
-can be used to update the firmware on the board.
-
-.. todo:: Link and instructions
+Follow the instructions in :ref:`Updating Breakout Board Firmware <breakout_firmware_update>` to update the breakout board firmware to the latest version.

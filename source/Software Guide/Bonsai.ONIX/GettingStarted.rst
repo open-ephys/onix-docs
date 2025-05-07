@@ -1,10 +1,9 @@
+.. include:: deprecation-notice.rst
+
 .. _bonsai_gettingstarted:
 
 Getting Started
 ================================
-
-.. toctree::
-    :maxdepth: 1
 
 Bonsai Learning Resources
 --------------------------------
@@ -21,10 +20,10 @@ Bonsai Learning Resources
 
     * - `Bonsai's learn page <https://bonsai-rx.org/learn/>`__
       - Videos and links for understanding how Bonsai can be used to process
-        data streams ranging from beginer to advanced use.
+        data streams ranging from beginner to advanced use.
 
     * - `Bonsai's docs page <https://bonsai-rx.org/docs>`__
-      - Installation, package managment, use guide. These pages also contain an
+      - Installation, package management, use guide. These pages also contain an
         overview of the reactive architecture at the core of Bonsai, and why
         it's useful and powerful. It concludes with a guide on how to use the
         editor to create Bonsai workflows.
@@ -33,9 +32,9 @@ Bonsai Learning Resources
       - Bonsai's Q/A forum with **lots** of useful examples and solutions for
         various common (and uncommon) acquisition scenarios.
 
-    * - `ReactiveX operator definitions  <http://reactivex.io/documentation/operators.html>`__
+    * - `ReactiveX operator definitions  <https://reactivex.io/documentation/operators.html>`__
       - Detailed information on many of the reactive operators you will find in
-        Bonsai's Reactive library, especially in the "Combinators" grouping
+        Bonsai's Reactive package, especially in the "Combinators" grouping
 
 Accessing Bonsai.ONIX Documentation
 ----------------------------------------
@@ -58,6 +57,7 @@ Have a look at the following video shows how to use ONIX hardware with `Bonsai
 <https://bonsai-rx.org/>`__.
 
 .. raw:: html
+
     <div style="text-align: center;
       background-color: black;
       color: white; padding:20px;">

@@ -3,7 +3,7 @@
 DS90UB9X Raw Device
 ###########################################
 :Authors: Aarón Cuevas López
-:Version: 1
+:Version: 3
 :IO: Frame Source, Register Access
 :ONIX ID: 24
 :ONIX Hubs: :ref:`pcie_host`
@@ -59,6 +59,7 @@ Managed register access is provided at offset 0x8000.
         * Bits 0-15: In parallel mode: frame data size in samples. 
           In serial mode: Number of words per frame in each line.
         * Bits 16-31: Number of frames to aggregate. 0 = do not perform aggregation
+
 
     * - 0x8002
       - TRIGGER
@@ -172,11 +173,16 @@ Managed register access is provided at offset 0x8000.
       - On Reset
       - 0
       - None
-      - Input lines for serial stream 0. Each 4 bits specify the input: 
-        0x0-0xB: Data lines 0-11. 0xC: Hsync, 0xD: Vsync, 0xE: Reserved 0xF: zero-input
+      - Input lines for serial stream 0. Each 4 bits specify the input:
+      
+        * 0x0-0xB: Data lines 0-11
+        * 0xC: Hsync
+        * 0xD: Vsync
+        * 0xE: Reserved
+        * 0xF: zero-input
 
     * - 0x800C
-      - DATALINES0
+      - DATALINES1
       - R/W 
       - On Reset
       - 0
@@ -217,6 +223,22 @@ Managed register access is provided at offset 0x8000.
 
         * Bit 0: DS90UBX LOCK pin state
         * Bit 1: DS90UBX PASS pin state
+    
+    * - 0x8013
+      - DS90UBX_I2C_LAST_L
+      - R
+      - On I2C access
+      - N/A
+      - None
+      - Acquisition clock counter value of last i2c raw access (low 32 bits)
+      
+    * - 0x8014
+      - DS90UBX_I2C_LAST_H
+      - R
+      - On I2C access
+      - N/A
+      - None
+      - Acquisition clock counter value of last i2c raw access (high 32 bits)
 
 
 Unmanaged Registers

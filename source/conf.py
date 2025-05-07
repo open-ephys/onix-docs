@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 # sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
-project = 'Open Ephys ONIX'
+project = 'ONIX Docs'
 copyright = '2010-{}, Open Ephys & Contributors'.format(datetime.now(timezone.utc).year)
 author = 'Open Ephys & Contributors'
 language = 'en'
@@ -43,8 +43,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
-    'breathe',
-    'sphinx_csharp',
+    'sphinx_design'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -71,17 +70,14 @@ pygments_style = None
 # todo configuration
 todo_include_todos = True
 
-# Breathe Configuration
-breathe_default_project = 'clroni'
-breathe_projects = { 'clroni': './API Reference/clroni/doxygen-xml' }
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'pydata_sphinx_theme'
 html_logo = '_static/onix_open_ephys_logo.svg'
-html_scaled_image_link = False
+html_scaled_image_link = True
+html_title = project
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -89,8 +85,8 @@ html_scaled_image_link = False
 html_static_path = ['_static']
 
 html_sidebars = {
-    'index': ['search-field.html', 'sidebar-quicklinks.html'],
-    "**": ["search-field.html", "sidebar-nav-bs.html"]
+    'index': ['search-field.html'],
+    "**": [ "sidebar-nav-bs.html"]
 }
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -116,13 +112,22 @@ texinfo_documents = [
 # documentation.
 html_theme_options = {
     'use_edit_page_button': True,
-    'external_links': [{'name': 'Open Ephys', 'url': 'https://open-ephys.org'},],
-    'navigation_with_keys': True,
-    'show_toc_level': 1,
-    'twitter_url': 'https://twitter.com/openephys',
-    'github_url': 'https://github.com/open-ephys/onix-docs',
-    'footer_end': ['copyright', 'sphinx-version'],
-    'navbar_end': ['navbar-icon-links'],
+    "navigation_with_keys": True,
+    "navbar_end": ["navbar-icon-links"],
+    "navbar_align": "content",
+    "footer_start": ["copyright"],
+    "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
+    'icon_links': [
+        dict(name='GitHub',
+             url='https://github.com/open-ephys/onix-docs',
+             icon='fab fa-github'),
+        dict(name='Twitter',
+             url='https://twitter.com/openephys',
+             icon='fab fa-twitter'),
+        dict(name='Discord',
+             url='https://discord.gg/WXAx2URNQU',
+             icon='fab fa-discord')
+    ]
     #'announcement': 'These docs are a work in progress.',
 }
 
@@ -142,6 +147,21 @@ html_css_files = [
 
 # Option for linkcheck
 linkcheck_anchors = False
+linkcheck_timeout = 4
+
+# NB: Ignore these sites, they throw 403 errors during linkcheck, but are accessible for end-users
+linkcheck_ignore = [
+    'https://multimedia.3m.com/mws/media/*', 
+    'https://www.intel.com/*',
+    'https://www.analog.com/*',
+    'https://www.xilinx.com/*',
+    'https://white-matter.com/*'
+]
+
+# NB: Allow this permanent redirect for a Visual Studio package
+linkcheck_allowed_redirects = {
+    'https://aka.ms/vs/16/release/vc_redist.x64.exe': 'https://download.visualstudio.microsoft.com/download/pr/9613cb5b-2786-49cd-8d90-73abd90aa50a/CEE28F29F904524B7F645BCEC3DFDFE38F8269B001144CD909F5D9232890D33B/VC_redist.x64.exe'
+}
 
 def rstjinja(app, docname, source):
     '''

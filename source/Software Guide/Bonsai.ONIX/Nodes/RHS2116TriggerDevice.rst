@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_rhs2116triggerdev:
 
 RHS2116TriggerDevice
@@ -37,7 +39,7 @@ Configuration is performed using a combination of the property pane.
 
         * Local: Local trigger source is respected (GPIO input to the headstage
           or writing true into the input of this node). In this case, the
-          trigger signal will be sent out on the synchronizaiton cable with
+          trigger signal will be sent out on the synchronization cable with
           this device acting as a controller.
         * External: Trigger is provided by the synchronization cable from
           another headstage and this device is a receiver that will distribute the

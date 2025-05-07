@@ -1,5 +1,6 @@
 # sphinx build folder
 docs/*
+source/_build/*
 
 # Compiled source #
 ###################
@@ -18,6 +19,3 @@ docs/*
 
 # macOS specific
 .DS_Store
-
-# make.bat
-make.bat

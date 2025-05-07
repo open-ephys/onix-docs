@@ -143,7 +143,7 @@ Unmanaged Registers
 ------------------------------------------
 Read and write access is provided to the registers detailed in the `RHS2116
 series datasheet
-<https://intantech.com/files/Intan_RHS2116_series_datasheet.pdf>`__.
+<https://intantech.com/files/Intan_RHS2116_datasheet.pdf>`__.
 
 - Registers are 32-bits wide
 - Addresses and functions are determined by the RHS2116 datasheet

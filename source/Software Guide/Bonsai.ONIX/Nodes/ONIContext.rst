@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. |refresh_icon| image:: /_static/bonsai/onicontext/ONIContext_refresh-icon.png
     :height: 19
 
@@ -5,13 +7,16 @@
 
 ONIContext
 ===============================
-A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages a
-:ref:`oni_h_acquisition_context` and allows basic acquisition parameterization.
+
+.. warning:: This node configures hardware parameters when it is placed in a workflow, even if the workflow is not running. Always check voltage configurations before connecting headstages to the system.
+
+A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__ that manages the underlying
+**Acquisition Context** and allows basic acquisition parameterization.
 There must be at least one of these in every workflow that uses ONIX hardware.
 
 :Inputs:  None
 :Outputs: A single ``ONIContextTask`` followed by `Never
-          <http://reactivex.io/documentation/operators/empty-never-throw.html>`__.
+          <https://reactivex.io/documentation/operators/empty-never-throw.html>`__.
 
 .. raw:: html
 
@@ -29,7 +34,7 @@ it manages (e.g. :ref:`bonsai_heartbeatdev`, :ref:`bonsai_analogiodev`, etc.). S
 facts about the :ref:`bonsai_onicontext` node are useful for understanding how
 to use it.
 
-.. figure:: /_static/bonsai/bonsai-library-architecture.jpg
+.. figure:: /_static/bonsai/bonsai-package-architecture.jpg
     :align: center
     :width: 500px
 
@@ -61,10 +66,12 @@ to use it.
     present in a single computer, then each will need its own
     :ref:`bonsai_onicontext` to manage it.
 
+.. _bonsai_onicontext_configuration:
+
 Configuration GUI
 --------------------------
 :ref:`bonsai_onicontext` configuration is performed using a GUI provided in the
-Bonsai.ONIX.Design library. It can be opened by double clicking on the
+Bonsai.ONIX.Design package. It can be opened by double clicking on the
 :ref:`bonsai_onicontext` node if Bonsai.ONIX.Design has been installed.
 
 .. image:: /_static/bonsai/onicontext/ONIContext_configuration.png
@@ -77,10 +84,10 @@ using the **Properties Pane** on the right side of the form.
 #. **Settings**: Drop down menu that provides several hardware configuration options
 #. **Driver**: The device driver used to control the host hardware.
 #. **Slot**: The physical slot of the Host hardware in the computer.
-#. **Read Block Size**: The number of bytes read per call to the kernel driver.
+#. **Block Read Size**: The number of bytes read per call to the kernel driver.
    Larger numbers *will generally* increase overall bandwidth and decrease
    response latency.
-#. **Write Block Size**: The number of bytes pre-allocated to make output for output
+#. **Block Write Size**: The number of bytes pre-allocated to make output for output
    data frames. Larger numbers *may* increase overall bandwidth and decrease
    response latency.
 #. |refresh_icon| **<status>**: Shows the current host hardware connection status.
@@ -109,6 +116,8 @@ ONIX-specific hub options such as access to raw deserializer data streams:
 :Passthrough: The hub port is configured to work with compatible
     3rd-party devices, such as UCLA Miniscopes.
 
+.. tip:: Known issue: When the Passthrough radio button is selected for Hub B, no selector appears on either option making it seem nothing is selected, but the hub is actually in Passthrough mode.
+
 .. _bonsai_onicontext_syncsettings:
 
 Settings ➞  Host Sync...
@@ -128,7 +137,7 @@ with a synchronization cable.
     selected *Sync Channel*. Any number of listeners can be assigned to a
     single *Sync Channel*.
 
-.. important:: Only the aquisition start trigger is shared from Sources to
+.. important:: Only the acquisition start trigger is shared from Sources to
     Listeners. The acquisition clock may or may not be shared depending on the
     type of host hardware being used. For example, if all hardware consists of
     :ref:`PCIe Hosts <pcie_host>` on the same motherboard, then both start

@@ -27,7 +27,7 @@ flexible. We generally use cables that are 150-300 μm in diameter.
 ONIX headstages use an FPGA to control peripheral devices and combine their
 data streams prior to serialization. For instance, :ref:`headstage_64` and
 :ref:`headstage_neuropix1` use an `Intel MAX10 FPGA
-<https://www.intel.com/content/www/us/en/products/programmable/fpga/max-10.html>`_.
+<https://www.intel.com/content/www/us/en/products/details/fpga/max/10.html>`_.
 The exact FPGA is not important because every ONI-compliant headstage is uses
 very similar gateware (FPGA-based firmware) that performs three major functions
 

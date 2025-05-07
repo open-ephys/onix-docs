@@ -1,10 +1,13 @@
 .. _pcie_host_firmware_update:
 
+.. toctree::
+    :hidden:
+    
 Updating Firmware in Windows
 ########################################
 
 #. If you have not done so already, follow the steps on the
-   :ref:`pcie_host_setup_windows` page.
+   :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
 
 #. Download the latest :ref:`oni_repl_download` and unzip it. Navigate to this
    location using a console (e.g. PowerShell).
@@ -31,8 +34,8 @@ Updating Firmware in Windows
    version. 
 
    .. warning::
-        Make sure that the host firmware images matches the hardware version
-        from the last step or the update will not work properly.
+         Make sure that the host firmware image you download matches the PCIe Host Hardware version
+         you verified in the previous step. An incorrect firmware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`pcie_host_updater_download` utilities package and unzip
    it. Navigate to this folder using a console.

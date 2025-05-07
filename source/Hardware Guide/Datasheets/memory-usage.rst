@@ -66,6 +66,16 @@ Register Programming
       - None
       - The total number of 32-bit words in memory.
 
+    * - 0x04
+      - MEM_USAGE
+      - R
+      - Continuous
+      - 0
+      - None
+      - Number of 32-bit words stored in memory, same value as what the frames generate
+
+.. _onidatasheet_memory-usage_d2h:
+
 Device To Host Data Frames
 ******************************************
 Each frame transmitted to the host is structured as follows:

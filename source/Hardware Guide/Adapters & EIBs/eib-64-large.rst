@@ -22,6 +22,7 @@ The EIB pinout (ADC input mapping, stimulation connections, etc) is located on
 Tetrode Connectorization
 ****************************
 This EIB uses `Neuralynx "large" gold pins
-<https://neuralynx.com/hardware/large-eib-pins>`_ to attach tetrode wires.
+<https://neuralynx.fh-co.com/research-hardware/animal-interfaces/microdrive-preparation/large-eib-pins/>`_ 
+to attach tetrode wires.
 Usage instructions are provided in the `Neuralynx EIB pin Manual
 <https://neuralynx.com/documents/EIB%20Pins%20Manual.pdf>`_.

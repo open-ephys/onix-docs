@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_miniscopev4bno055dev:
 
 MiniscopeV4BNO055Device

@@ -1,5 +1,8 @@
 .. _pcie_host_setup_windows:
 
+.. toctree::
+    :hidden:
+    
 Setup Guide for Windows
 ########################################
 
@@ -94,7 +97,7 @@ Install C++ Runtime
 ---------------------------------------
 Windows does not ship with a C++ runtime. Before using ONIX on windows, you
 will need to install `Microsoft Visual C++ Redistributable for Visual Studio
-2015, 2017 and 2019 <https://aka.ms/vs/16/release/vc_redist.x64.exe>`__.
+2015, 2017 and 2019 <https://download.visualstudio.microsoft.com/download/pr/453680ea-b88a-411f-80fd-5db37fdc9dbb/5D9999036F2B3A930F83B7FE3E2186B12E79AE7C007D538F52E3582E986A37C3/VC_redist.x64.exe>`__.
 
 Install Device Driver
 ---------------------------------------
@@ -112,25 +115,7 @@ Install Device Driver
    .. figure:: /_static/images/pcie-host-windows/package-manager-riffa.png
        :align: center
 
-Install ONIX Bonsai Library
+Install Software
 ---------------------------------------
-#. If you don't have Bonsai on your computer, visit https://bonsai-rx.org/ and
-   install the latest release.
-#. Open Bonsai. At the start menu, select **Manage Packages**.
+Have a look at the :ref:`software_guide` page for software options.
 
-   .. figure:: /_static/images/pcie-host-windows/bonsai-start-menu.png
-       :align: center
-
-#. Select **Community Packages** as the package source.
-#. Search for **Bonsai.ONIX**.
-#. Install **Bonsai.ONIX.Design**. This packages will install both the core
-   library and visualization tools.
-
-Using Bonsai
-----------------------------------------
-
-#. New to Bonsai? The :ref:`bonsai_gettingstarted` page lists resources for learning Bonsai.
-
-#. Navigate to :ref:`bonsai_onixref` for a high-level overview and list of compatible devices. Click on any listed device in the left-hand navigation menu to view an example workflow using that device.
-
-#. :ref:`bonsai_onixexamples` demonstrate specific ONIX use cases, such as tuning closed-loop latency or acquiring from headstages.

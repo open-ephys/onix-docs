@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_onixexamples:
 
 Example Workflows
@@ -10,6 +12,7 @@ third-party tools at the software level.
     :maxdepth: 1
 
     Headstage64
+    HeadstageNP1e
     LatencyTest
     CameraSync
     Commutator

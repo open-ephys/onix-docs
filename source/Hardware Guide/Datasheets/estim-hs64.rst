@@ -96,7 +96,7 @@ Register IO is detailed in the table below.
       - Phase 1 duration, microseconds
 
     * - 0x05
-      - IPI
+      - INTERPHASEINTERVAL
       - R/W
       - Immediate
       - 0
@@ -112,7 +112,7 @@ Register IO is detailed in the table below.
       - Phase 2 duration, microseconds
 
     * - 0x07
-      - PULSEPERIOD
+      - INTERPULSEINTERVAL
       - R/W
       - Immediate
       - 10000
@@ -128,7 +128,7 @@ Register IO is detailed in the table below.
       - Burst counts, number of pulses
 
     * - 0x09
-      - IBI
+      - INTERBURSTINTERVAL
       - R/W
       - Immediate
       - 0
@@ -203,10 +203,9 @@ Register IO is detailed in the table below.
 
 A graphical register definitions are provided in the following diagrams:
 
-.. figure:: /_static/images/device_hs64-estim/estim-hs64_parameters.png
+.. figure:: /_static/images/device_hs64-estim/estim-hs64_parameters.webp
     :alt: Headstage-64 electrical stimulator register definitions
     :align: center
-    :scale: 50%
 
     A diagram of the stimulus parameters presented in the
     :ref:`estim-hs64-regs` table.

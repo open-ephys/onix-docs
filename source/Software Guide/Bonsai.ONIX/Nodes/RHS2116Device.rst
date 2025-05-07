@@ -1,3 +1,5 @@
+.. include:: ../deprecation-notice.rst
+
 .. _bonsai_rhs2116dev:
 
 RHS2116Device
@@ -56,10 +58,10 @@ Parameters available through the property pane are as follows:
         - TwosCompliment: raw 16-bit signed integer conversion results.
         - MicroVolts: 32-bit floating-point voltages (EphysData in uV; DCData in Volts)
 
-    * - DSPCuttoff
+    * - DSPCutoff
       - enum
-      - Select the low-frequency cutoff for the integrated digtial offset
-        removal filter. This fitering is performed following analog to digital
+      - Select the low-frequency cutoff for the integrated digital offset
+        removal filter. This filtering is performed following analog to digital
         conversion.
 
     * - AnalogHighCutoff
@@ -86,7 +88,7 @@ Parameters available through the property pane are as follows:
 
     * - StimulusSequence
       - RHS2116StimulusSequence
-      - The stimulus sequence defintion for this device. Editing this parameter
+      - The stimulus sequence definition for this device. Editing this parameter
         will open the configuration GUI, just like double clicking the node.
 
     * - Trigger
@@ -95,10 +97,12 @@ Parameters available through the property pane are as follows:
         the sequence on this device. To synchronize stimulation across
         RHS2116 chips, use :ref:`bonsai_rhs2116triggerdev`
 
+.. _stimulator_configurator:
+
 Configuration GUI
 _________________________
 The **RHS2116 Configuration GUI**, which is a part of the
-``Bonsai.ONIX.Design`` library, is opened by double clicking on the
+``Bonsai.ONIX.Design`` package, is opened by double clicking on the
 RHS2116Device node when editing the workflow or clicking the ellipsis next to
 the ``StimulusSequence`` parameter option in the property pane. It is used to
 define multichannel stimulus sequences. 
