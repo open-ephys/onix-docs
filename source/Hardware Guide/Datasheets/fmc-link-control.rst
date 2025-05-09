@@ -3,7 +3,7 @@
 FMC Link Controller
 ###########################################
 :Authors: Jonathan P. Newman
-:Version: 1
+:Version: 2
 :IO: Frame Source, Register Access
 :ONIX ID: 23
 :ONIX Hubs: :ref:`pcie_host`
@@ -106,19 +106,24 @@ Register Programming
 
     * - 0x05
       - LINKSTATE
-      - Register
-      - Immediate
+      - R
+      - When LOCK or PASS change
       - 0
-      - None
-      - Link state (bits 31 downto 2: ignore, bit 1: pass, bit 0: lock)
+      - None 
+      - Link state
+
+        * Bit 0: LOCK
+        * Bit 1: PASS
 
     * - 0x06
       - LINKOPTS
-      - R/W 
-      - Immediate
+      - R/W
+      - Inmmediate
       - 0
       - None
-      - Port options. Bit 0: '0' Port auto-shutdown disabled '1' Port auto-shutdown enabled
+      - Misc. options for the link device
+
+        * Bit 0: `0` Port auto-shutdown disabled `1` Port auto-shutdown enabled   
 
 .. _onidatasheet_fmc_link_control_d2h:
 
