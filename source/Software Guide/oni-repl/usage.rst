@@ -5,8 +5,9 @@
 
 .. code-block:: console
 
-    oni-repl <driver> [slot] [-d] [-D <value>] [-n <value>] [-i <device index>]
-    [--rbytes=<bytes>] [--wbytes=<bytes>] [--dumppath=<path>] [-h,--help] [-v,--version]
+    oni-repl <driver> [slot] [-q] [-d] [-D <value>] [-n <value>] [-i <device
+    index>] [--rbytes=<bytes>] [--wbytes=<bytes>] [--dformat=<hex,dec>]
+    [--dumppath=<path>] [--regpath=<path>] [-h,--help] [-v,--version]
 
 Required Arguments
 -----------------------------------
@@ -19,12 +20,14 @@ Required Arguments
 
 Command Line Options
 -----------------------------------
+-q          Quit after intialization. If specified, quit before entering repl but after after establishing a connection with hardware, obtaining the device table, and writing to registers specified in --regpath.
 -d 			Display frames. If specified, frames produced by the oni hardware will be printed to the console.
 -D <percent> 		The percent of frames printed to the console if frames are displayed. Percent should be a value in (0, 100.0].
 -n <count> 		Display at most count frames. Reset only on program restart. Useful for examining the start of the data stream.
 -i <index> 		Only display frames from device with specified index value.
 --rbytes=<bytes>   Set block read size in bytes. This number determines the latency/bandwidth tradeoff. Large block read sizes will reuslt in less frequent data transfers from hardware that can increase overall streaming bandwith of the system. This number imposes a lower bound on real-time latency since the system will need to accumulate the entire read block before data is transmitted.
 --wbytes=<bytes>   Set write preallocation size in bytes. This number indicates the amount of memory is reserved for use by the write stream. Tuning my improve real-time performance depending on write frequency.
+--dformat=<hex,dec>     Set the format of frame data printed to the console to hexidecimal (default) or decimal.
 --dumppath=<path> 	Path to folder to dump raw device data. If not defined, no data will be written. A flat binary file with name <index>_idx-<id>_id-<datetime>.raw will be created for each device in the device table that produces streaming data. The bit-wise frame definition in the ONI device datasheet (as required by the ONI spec) will describe frame data is organized in each file.
 --regpath=<path>   Path to a text file containing a table of the form:
 
