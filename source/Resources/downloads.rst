@@ -33,8 +33,8 @@ Downloads
 RIFFA Device Driver
 ----------------------------------------------
 
-.. note:: Please see :ref:`Updating PCIe Host Firmware
-    <pcie_host_firmware_update>` for instructions on how to use these files. When
+.. note:: Please see :ref:`Install Device Driver <install_riffa>` 
+    for instructions on how to use this file. When
     using mac or linux, you will need to compile from `source
     <https://github.com/open-ephys/liboni>`__.
 
