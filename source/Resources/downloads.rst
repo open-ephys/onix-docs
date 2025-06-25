@@ -28,11 +28,6 @@ Downloads
      - Fixes to hardware reset behavior. Addition of several command line
        switches and options in the REPL.
 
-.. _pcie_host_updater_download:
-
------------------
-
-
 .. _riffa_driver_download:
 
 RIFFA Device Driver
@@ -54,7 +49,7 @@ RIFFA Device Driver
      - 2024.03.14
      - Fix race condition in the RIFFA kernel driver for windows.
 
------------------
+.. _pcie_host_updater_download:
 
 PCIe Host Firmware
 ----------------------------------------------
