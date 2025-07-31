@@ -88,18 +88,20 @@ ______________________________________________
    during operation.
 
 .. table::
-    :widths: 50 50
+    :widths: 30 70
 
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    |            PCIe Host Hardware version                 |                            PCIe Host Firmware latest version                                                |
-    |               as reported by `oni-repl`               |                                   to download and update                                                    |
-    +=======================================================+=============================================================================================================+
-    | Hardware Revision 1.4                                 | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                      |
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.5                                 | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>`|
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6                                 | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>`|
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    |            PCIe Host Hardware version                 |                            PCIe Host Firmware latest version                                                   |
+    |               as reported by `oni-repl`               |                                   to download and update                                                       |
+    +=======================================================+================================================================================================================+
+    | Hardware Revision 1.4                                 | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
+    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.5                                 | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
+    |                                                       | | Required for using OpenEphys.Onix1 v0.6 and Open Ephys GUI v1.0 and above                                    |
+    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6                                 | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
+    |                                                       | | Required for using OpenEphys.Onix1 v0.6 and Open Ephys GUI v1.0 and above                                    |
+    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
 .. .. list-table:: PCIe Host Revision 1.4 firmware images
@@ -153,7 +155,7 @@ ______________________________________________
    cause failures during operation.
 
 .. table::
-    :widths: 50 50
+    :widths: 40 60
 
     +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
     |            Breakout Board Hardware version            |                             Breakout Board Firmware latest version                                          |
