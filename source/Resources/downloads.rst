@@ -97,10 +97,10 @@ ______________________________________________
     | Hardware Revision 1.4                                 | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
     +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
     | Hardware Revision 1.5                                 | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
-    |                                                       | | Required for using OpenEphys.Onix1 v0.6 and Open Ephys GUI v1.0 and above                                    |
+    |                                                       | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
     +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
     | Hardware Revision 1.6                                 | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
-    |                                                       | | Required for using OpenEphys.Onix1 v0.6 and Open Ephys GUI v1.0 and above                                    |
+    |                                                       | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
     +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
