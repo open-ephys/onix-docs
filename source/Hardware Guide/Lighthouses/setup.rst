@@ -13,7 +13,7 @@ Setup
    Follow these guidelines to decide where to mount your two Lighthouse base stations:
 
    - They should be centered above and facing the area that will be occupied by the lighthouse receivers.   
-   - The distance between the receiver and the transmitters should not exceed 3 meters, and each base station 
+   - The distance between the receiver and the transmitters should not exceed 3 meters. Each base station 
      has a 120° field of view. However, position measurements are noisier when receivers are at the boundary 
      of the transmitters' range, so leave a safe margin. A receiver must be in range of both transmitters 
      in order to measure position. 
@@ -26,17 +26,17 @@ Setup
       `inspecting the TS4231V1PositionData position data visualizer <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/visualize-data.html>`_. 
       If the TS4231V1PositionData operator ceases to produce data (i.e. if the visualizer stops updating) 
       at a certain spot, the current base station configuration does not cover that spot. If you are unfamiliar with 
-      using Bonsai to acquire Onix data, visit the OpenEphys.Onix1 Bonsai package 
+      using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
 
 
-   The image below shows an example of what a lighthouse setup might look with a commutator as well. 
-   The overlapping green area represents the region where a TS4231 device is in range of both base stations 
-   and can measure position.
+   The image below shows a cartoon of what a lighthouse setup might look with a commutator as well mounted
+   on extruded aluminum rail. The overlapping green area represents the region where a TS4231 device is in 
+   range of both base stations and can measure position.
 
    .. image:: ../../_static/images/lighthouses/lighthouse_active-range.svg
 
-   The image below shows an example of how you can actually mount on extruded aluminum rail. 
+   The image below shows an photo of how the actual mounting hardware looks for mounting on extruded aluminum rail. 
 
    .. image:: ../../_static/images/lighthouses/lighthouse-mount-example.png
 
