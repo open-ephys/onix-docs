@@ -12,11 +12,15 @@ Setup
 
    Follow these guidelines to decide where to mount your two Lighthouse base stations:
 
-   - They should be centered above and facing the area that will be occupied by the lighthouse receivers.   
-   - The distance between the receiver and the transmitters should not exceed 3 meters. Each base station 
-     has a 120° field of view. However, position measurements are noisier when receivers are at the boundary 
-     of the transmitters' range, so leave a safe margin. A receiver must be in range of both transmitters 
-     in order to measure position. 
+   - They should be centered above and facing the area that will be occupied by the lighthouse receivers.
+   - The lighthouses should have the same orientation.
+   - The distance between the receiver and the transmitters should not exceed the maximum range. This depends 
+     on the sensitivity of the receiver's photodiode on the headstage and is best determined experimentally. Each 
+     base station has a 120° field of view. However, the photodiode has a larger chance of being obstructed from 
+     the transmitter by parts on the headstage at larger angles.
+   - Position measurements are noisier when receivers are at the boundary of the transmitters' range, so leave a 
+     safe margin. 
+   - A receiver must be in range of _both_ transmitters in order to measure position. 
    - Secure the base stations such that they can't be easily jostled or moved.
       
    .. tip::
@@ -28,7 +32,6 @@ Setup
       at a certain spot, the current base station configuration does not cover that spot. If you are unfamiliar with 
       using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
-
 
    The image below shows a cartoon of what a lighthouse setup might look with a commutator as well mounted
    on extruded aluminum rail. The overlapping green area represents the region where a TS4231 device is in 
