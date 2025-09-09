@@ -7,10 +7,6 @@
 ==========================================
 ONIX consists of several hardware devices:
 
-.. attention:: ONIX hardware version compatibility
-    is documented on `this google sheet
-    <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`_.
-
 .. toctree::
     :maxdepth: 1
     :hidden:
