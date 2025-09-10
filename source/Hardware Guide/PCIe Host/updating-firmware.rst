@@ -30,7 +30,7 @@ Updating Firmware in Windows
    .. figure:: /_static/images/pcie-host/oni-repl-host-hardware-version.png
         :align: center
 
-#. Download the latest :ref:`pcie_host_image_download` for your hardware
+#. Download the latest :ref:`PCIe Host Firmware Image <pcie_host_image_download>` for your hardware
    version. 
 
    .. warning::

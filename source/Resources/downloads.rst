@@ -49,7 +49,6 @@ RIFFA Device Driver
      - 2024.03.14
      - Fix race condition in the RIFFA kernel driver for windows.
 
-.. _pcie_host_updater_download:
 
 PCIe Host Firmware
 ----------------------------------------------
@@ -59,11 +58,11 @@ PCIe Host Firmware
    When using mac or linux, you will need to compile the Updater software from
    `source <https://github.com/open-ephys/onix-gateware-field-updaters>`__.
 
-.. _pcie_host_image_download:
+.. _pcie_host_updater_download:
 
 PCIe Host Upload Tool
 ______________________________________________
-Software for uploading bitfiles to hardware.
+Software for uploading PCIe Host firmware to PCIe Host hardware.
 
 .. list-table:: PCIe Host upload tool
    :widths: 15 25 60
@@ -76,9 +75,9 @@ Software for uploading bitfiles to hardware.
      - 2022.11.27
      - Initial release.
 
------------------
+.. _pcie_host_image_download:
 
-PCIe Controller Bitfiles
+PCIe Host Firmware Images
 ______________________________________________
 
 .. warning::
@@ -128,7 +127,7 @@ Breakout Board Firmware
 
 Breakout Board Upload Software
 ______________________________________________
-Software for uploading bitfiles to hardware.
+Software for uploading Breakout Board firmware to Breakout Board hardware.
 
 .. list-table:: Breakout Board firmware upload tool
    :widths: 15 25 60
