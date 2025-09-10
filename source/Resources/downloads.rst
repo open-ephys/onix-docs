@@ -140,8 +140,6 @@ Software for uploading Breakout Board firmware to Breakout Board hardware.
      - 2024.07.05
      - Initial release.
 
------------------
-
 .. _breakout_image_download:
 
 Breakout Board Bitfiles
