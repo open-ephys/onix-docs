@@ -51,14 +51,13 @@ Updating Firmware in Windows
         :align: center
 
 #. Open the Windows Device Manager by typing "device manager" into the windows
-   search bar.Find the RIFFA device you are going to update in the device tree.
-   Right click on the RIFFA device and select inactivate.
+   search bar. Find the RIFFA device you are going to update in the device tree. It is listed under "Open Ephys ONI PCIe Devices". Right click on the RIFFA device and select Disable device. Click Yes on the warning message.
 
    .. figure:: /_static/images/pcie-host/device-manager-disable-riffa.png
         :align: center
         :width: 80%
 
-#. Right click again and click activate
+#. Right click again and click Enable device
 
    .. figure:: /_static/images/pcie-host/device-manager-enable-riffa.png
         :align: center
@@ -91,7 +90,7 @@ Updating Firmware in Windows
    .. figure:: /_static/images/pcie-host/oni-pcie-change-mode-to-normal.png
         :align: center
 
-#. Repeat steps 7 and 8 to reactivate the PCIe Host with the updated
+#. Repeat steps 7 and 8 to reenable the PCIe Host with the updated
    firmware.  
 
 #. To verify the firmware update, repeat step 3. The firmware version of the
