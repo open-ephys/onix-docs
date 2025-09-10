@@ -57,7 +57,7 @@ Updating Firmware in Windows
         :align: center
         :width: 80%
 
-#. Right click again and click Enable device
+#. Right click again and click Enable device.
 
    .. figure:: /_static/images/pcie-host/device-manager-enable-riffa.png
         :align: center
