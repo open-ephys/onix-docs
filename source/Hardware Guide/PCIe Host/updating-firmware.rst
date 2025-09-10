@@ -15,6 +15,8 @@ Updating Firmware in Windows
    .. note:: For a complete description of this program, have a look at its
         :ref:`usage guide <oni_repl>`
 
+..  _controller_version_difference:
+
 #. Verify your PCIe Host Hardware version by running ``oni-repl`` and typing "H"
    into the command prompt. This will print a list of all hubs in the current
    ONI context, one of which will be the PCIe Host.

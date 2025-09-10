@@ -89,18 +89,18 @@ ______________________________________________
 .. table::
     :widths: 30 70
 
-    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    |            PCIe Host Hardware version                 |                            PCIe Host Firmware latest version                                                   |
-    |               as reported by `oni-repl`               |                                   to download and update                                                       |
-    +=======================================================+================================================================================================================+
-    | Hardware Revision 1.4                                 | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
-    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.5                                 | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
-    |                                                       | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
-    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6                                 | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
-    |                                                       | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
-    +-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    | | PCIe Host Hardware version                                      | | Latest PCIe Host                                                                                             |
+    | | :ref:`per oni-repl <controller_version_difference>`             | | firmware version                                                                                             |
+    +===================================================================+================================================================================================================+
+    | Hardware Revision 1.4                                             | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.5                                             | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
+    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6                                             | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
+    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
 .. .. list-table:: PCIe Host Revision 1.4 firmware images
@@ -125,7 +125,7 @@ Breakout Board Firmware
 
 .. _breakout_updater_download:
 
-Breakout Board Upload Software
+Breakout Board Upload Tool
 ______________________________________________
 Software for uploading Breakout Board firmware to Breakout Board hardware.
 
@@ -142,7 +142,7 @@ Software for uploading Breakout Board firmware to Breakout Board hardware.
 
 .. _breakout_image_download:
 
-Breakout Board Bitfiles
+Breakout Board Firmware Images
 ______________________________________________
 
 .. warning::
@@ -154,12 +154,12 @@ ______________________________________________
 .. table::
     :widths: 40 60
 
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    |            Breakout Board Hardware version            |                             Breakout Board Firmware latest version                                          |
-    |                 as per product specs                  |                                   to download and update                                                    |
-    +=======================================================+=============================================================================================================+
-    | Hardware Revision 1.5  (four headstage ports)         | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6  (two headstage ports)          | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
-    +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | | Breakout Board Hardware version                            | | Latest Breakout Board                                                                                     |
+    | | :ref:`per visual inspection <breakout_version_difference>` | | firmware version                                                                                          |
+    +==============================================================+=============================================================================================================+
+    | Hardware Revision 1.5  (four headstage ports)                | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
+    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6  (two headstage ports)                 | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
+    +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
