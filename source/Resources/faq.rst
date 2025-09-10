@@ -42,8 +42,8 @@ FAQ
         SPI-based headstages. Have a look at :ref:`serialization` for more
         information on why.
 
-    Why is there no Open Ephys GUI plugin for ONIX hardware?
-        Have a look at the :ref:`open_ephys_gui` page.
+    Is there an Open Ephys GUI plugin for ONIX hardware?
+        Yes, have a look at `ONIX Source plugin docs <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html>`_.
 
     I have existing acquisition hardware. Can I can use your API and software to acquire data from it?
         Yes. We tried to design our API so that it decouples hardware details
