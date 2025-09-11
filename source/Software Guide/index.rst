@@ -6,16 +6,18 @@
 |software_logo| Software Guide
 ===================================
 
+
 .. toctree::
     :hidden:
 
     Bonsai Package Docs <https://open-ephys.github.io/bonsai-onix1-docs/>
-    Open Ephys GUI <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html>
+    Open Ephys GUI Plugin ONIX Source <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html>
     oni-repl/index
     Deprecated Software<Bonsai.ONIX/index>
 
-There are two recommended software programs to acquire data from the ONIX system. Click on the cards below to navigate to their respective documentation sites.  
-
+There are two recommended software programs to acquire data from the ONIX
+system. Click on the cards below to navigate to their respective documentation
+sites.  
 
 ..  grid::
 
@@ -43,17 +45,116 @@ There are two recommended software programs to acquire data from the ONIX system
         Acquire data from ONIX in the Open Ephys GUI, a turnkey solution for acquiring and
         visualizing electrophysiology data.  
 
-Both are free and open-source and widely used. Some considerations to choose between them are:
- 
-- The Open Ephys GUI is an application while Bonsai is a programming language. In the OE GUI users configure a signal processing pipeline from modules that have standalone functionality while in Bonsai are performed step by step with individual nodes connected in sequence. The Open Ephys GUI has extensive visualizers for ephys data, pre-defined data formats and file management and error reporting.
+Both platforms are free, open-source, and widely adopted in the neuroscience
+community. There are a few important considerations when selecting which to use:
 
-- The Open Ephys GUI was developed to acquire, visualize and process extracellular electrophysiology data and analog and digital lines from a variety of acquisition devices. It can drive output to a few devices such as the Open Ephys Acquisition Board, PulsePal and Arduino boards. Bonsai can work extensively with ephys and image data, and can be used to build task logic and stimuli presentation. It interfaces with acquisition systems, industrial behavioral cameras, miniscopes, photometry systems, Arduino boards, Harp devices and many more.
-  
-- Both the Open Ephys GUI and Bonsai have many online data processing modules available (phase detection, spike sorting, centroid tracking, pose estimation, machine learning algorithms). Having Bonsai control all the experimental hardware makes it more flexible, easier to prototype and scale different experiments. For example, triggering ephys or miniscope recording to file based on the animal's location in space, or closed-loop applications.
+|   **User Experience**
+|   The Open Ephys GUI is a turnkey application where data acquisition and
+    signal processing pipelines are constructed by connecting processors.
+    Bonsai is a visual programming language where data acquisition and
+    signal processing pipelines are constructed by connecting operators. The
+    Open Ephys GUI is more user-friendly whereas expertise is helpful to
+    take full advantage of Bonsai. 
 
-- ONIX in Bonsai can achieve sub-ms closed-loop latencies while the Open Ephys GUI latencies are in the order of 20ms and more variable.
+..  grid::
+    :margin: 0
+    :padding: 0
+    
+    ..  grid-item::
+        :child-align: center
+        :margin: 0
+        :padding: 0
 
-- In addition to having numerous modules, both are extensible: you can write your own plug-ins/packages and you can interact with other applications via communication protocols such as OSC, ZMQ and TCP. Bonsai also supports C# and Python scripting within workflows. 
+        ..  image:: /_static/images/software/example-signal-chain.png
+            :alt: screenshot of example signal chain
+
+    ..  grid-item::
+        :child-align: center
+        :margin: 0
+        :padding: 0
+
+        ..  image:: /_static/images/software/example-workflow.png
+            :alt: screenshot of example workflow
+
+|   **ONIX Support**
+|   Bonsai has a greater degree of support for ONIX capabilities. As of
+    September 2025:
+
++-----------------+------------------------------------------------------------------------------+--------------------+
+|                 | Bonsai                                                                       | Open Ephys GUI     |
++=================+==============================================================================+====================+
+| Digital Inputs  | Adjustable sample rate (or one sample whenever digital input status changes) | 25 kHz sample rate |
++-----------------+------------------------------------------------------------------------------+--------------------+
+| Analog Inputs   | 100 kHz sample rate                                                          | 25 kHz sample rate |
++-----------------+------------------------------------------------------------------------------+--------------------+
+| Digital Outputs | Supported                                                                    | Not yet supported  |
++-----------------+------------------------------------------------------------------------------+--------------------+
+| Analog Outputs  | Supported                                                                    | Not yet supported  |
++-----------------+------------------------------------------------------------------------------+--------------------+
+
+|   **Performance/Closed-Loop Latency**
+|   Bonsai is capable of operating with sub-millisecond closed-loop
+    latencies. The Open Ephys GUI operates with ~20ms and more variable
+    latencies.
+
+|   **Data Visualization**
+|   The Open Ephys GUI provides visualization tools specialized for
+    presenting electrophysiology data (specifically, the LFP viewer). Bonsai
+    provides type visualizers which are more agnostic to the kind of data
+    that is being streamed.
+    
+..  grid::
+    :margin: 0
+    :padding: 0
+
+    ..  grid-item::
+        :child-align: center
+        :margin: 0
+        :padding: 0
+
+        ..  image:: /_static/images/software/lfp-viewer.png
+            :alt: screenshot of lfp viewer
+
+    ..  grid-item::
+        :child-align: center
+        :margin: 0
+        :padding: 0
+        
+        ..  image:: /_static/images/software/type-visualizer.png
+            :alt: screenshot of type visualizer
+
+..  note::
+
+    -   Open Ephys GUI visualization tools can be used to visualize data
+        acquired from Bonsai using sockets:
+        
+        ..  image:: /_static/images/software/sockets-end-result.webp
+            :alt: screenshot of sockets visualization
+
+    -   Bonsai visualization is improving with the integration of `Dear ImGUI
+        <https://github.com/ocornut/imgui>`_ in the Bonsai.Ephys package:
+
+        .. image:: /_static/images/software/imgui-visualizer.png
+            :alt: screenshot of imgui visualizer
+
+|   **Hardware/Software Compatibility and 3rd Party Integration**
+|   Bonsai offers broader compatibility with many more options such as
+    behavioral cameras, miniscopes, photometry systems, Arduino boards, Harp
+    devices, and numerous more instruments, as well as software such as
+    SLEAP/Deep Lab Cut for pose estimation. The Open Ephys GUI supports a subset
+    of the items that Bonsai supports. For more information on what the Open
+    Ephys GUI natively supports this, visit the `hardware compatibility page
+    <https://open-ephys.github.io/gui-docs/User-Manual/Compatible-hardware.html>`_
+    and `browse the plugins
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/index.html>`_.
+
+|   **Extensibility**
+|   Both options are open-source and provide options for extending functionality
+    by provided the capability for users to create 
+    `custom processors <https://open-ephys.github.io/gui-docs/Developer-Guide/index.html>`_ 
+    (in the OE GUI) or 
+    `custom operators <https://bonsai-rx.org/docs/articles/scripting-extensions.html>`_ 
+    (in Bonsai).
 
 Troubleshooting & Development
 ___________________________________
@@ -70,5 +171,5 @@ Deprecated Software
 ___________________________________
 
 :doc:`Bonsai.ONIX <Bonsai.ONIX/index>` is the deprecated Bonsai ONIX
-package which has been superseded by `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>`__.
+package which has been superseded by `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>`_.
 
