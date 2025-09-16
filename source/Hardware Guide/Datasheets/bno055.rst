@@ -99,38 +99,35 @@ All IMU data is signed with the exception of the calibration status bits (last
 byte in the frame). The unit conversions for each of these measurements are as
 follows:
 
-- Euler angle (Tait-Bryan formalism)
+Euler angle (Tait-Bryan formalism)
+    - Pitch: -180 to 180 degrees
+    - Roll: -90 to 90 degrees
+    - Yaw: 0 to 360 degrees
 
-  - Yaw: 0 to 360 degrees
-  - Roll: -180 to 180 degrees
-  - Pitch: -90 to 90 degrees
+    .. math::
 
-.. math::
+        1^{\circ} = 16\ LSB
 
-    1^{\circ} = 16\ LSB
+Quaternion
+    .. math::
 
-- Quaternion
+        1 = 2^{14}\  LSB
 
-.. math::
+Acceleration & Gravity Vector
+    .. math::
 
-    1 = 2^{14}\  LSB
+        1\ m/s^2 = 100\ LSB
 
-- Acceleration & Gravity Vector
+Temperature
+    .. math::
 
-.. math::
+        1^{\circ}C = 1\ LSB
 
-    1\ m/s^2 = 100\ LSB
-
-- Temperature
-
-.. math::
-
-    1^{\circ}C = 1\ LSB
-
-- Calibration Status
-
-  - 0: not calibrated
-  - 3: fully calibrated
+Calibration Status
+  - 0: Not calibrated
+  - 1: Poorly calibrated
+  - 2: Partially Calibrated
+  - 3: Fully calibrated
 
 Host To Device Data Frames
 ******************************************
