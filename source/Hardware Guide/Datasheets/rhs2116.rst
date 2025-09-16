@@ -255,7 +255,7 @@ DC Voltage
 
 Recovery State
     A 16-element bit mask indicating if a channel in stimulus recovery at the
-    time indicated by the Hub Clock Counter value in the frame. A value of 1b1
+    time indicated by the Hub Clock Counter value in the frame. A value of 0b1
     at index N indicates that channel N is currently in stimulus recovery mode.
 
 .. _onidatasheet_rhs2116_h2d:

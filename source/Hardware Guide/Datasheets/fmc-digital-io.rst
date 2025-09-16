@@ -280,32 +280,6 @@ current digital input and user input state.
         config: {bits: 224, lanes: 7, vflip: true, hflip: true, fontsize: 11}
     }
 
-.. wavedrom::
-
-    {
-        reg: [
-          {bits: 64, name: "Acquisition Clock Counter", type: 0},
-          {bits: 32, name: "Device Address", type: 0},
-          {bits: 32, name: "Data Size", type: 0, attr: 10},
-
-          {bits: 64, name: "Hub Clock Counter", type: 3},
-
-          {bits: 8, name: "Status Codeword", type: 4},
-
-          {bits: 5, name: "Reserved"},
-
-          {bits: 1, name: "CV", type: 2},
-          {bits: 1, name: "PP", type: 2},
-          {bits: 1, name: "SL", type: 2},
-
-          {bits: 16}
-
-        ],
-        config: {bits: 224, lanes: 7, vflip: true, hflip: true, fontsize: 11}
-    }
-
-|
-
 Input Port State
     8-bit input port state
 

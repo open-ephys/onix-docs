@@ -100,9 +100,9 @@ byte in the frame). The unit conversions for each of these measurements are as
 follows:
 
 Euler angle (Tait-Bryan formalism)
+    - Pitch: -180 to 180 degrees
+    - Roll: -90 to 90 degrees
     - Yaw: 0 to 360 degrees
-    - Roll: -180 to 180 degrees
-    - Pitch: -90 to 90 degrees
 
     .. math::
 
