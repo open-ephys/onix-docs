@@ -2,8 +2,8 @@
 
 FMC Host Digital IO Device
 ###########################################
-:Authors: Jonathan P. Newman
-:Version: 1
+:Authors: Jonathan P. Newman, Aarón Cuevas López
+:Version: 2
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 18
 :ONIX Hubs: :ref:`pcie_host`
@@ -46,26 +46,26 @@ The breakout to host serialization protocol is as follows:
 
 |
 
-    Buttons
-      Buttons press state. Each bit represents the press state of a single
-      button in the 6-buttons bank.
+Buttons
+    Buttons press state. Each bit represents the press state of a single
+    button in the 6-buttons bank.
 
-      -  0: Up
-      -  1: Down
+    -  0: Up
+    -  1: Down
 
-    Digital In
-      Digital input port. Each bit represents state of a signal line in the
-      8-bit port.
+Digital In
+    Digital input port. Each bit represents state of a signal line in the
+    8-bit port.
 
-      - 0: Low
-      - 1: High
+    - 0: Low
+    - 1: High
 
-    Pnn
-      Headstage port power state. Each bit represents the power state of one of
-      the four headstage ports.
+Pnn
+    Headstage port power state. Each bit represents the power state of one of
+    the four headstage ports.
 
-      - 0: Power off
-      - 1: Power on
+    - 0: Power off
+    - 1: Power on
 
 A clock recovery circuit is required at the receiver to generate ``clk`` from
 ``sclk`` in order to sample the ``dat`` lines.
@@ -93,67 +93,67 @@ The host to breakout serialization protocol is as follows:
 
 |
 
-    CMD
-      Two bit command word that determines what to do with SW.
+CMD
+    Two bit command word that determines what to do with SW.
 
-      - 0b00: Shift slow bits into slow shift register
-      - 0b01: Validate and move slow shift register to outputs and set initial
-        state to [0, ..., 0, slow1, slow0]. slow1 should be the desired MSB at
-        next command.
-      - 0b10: Reserved, same as 0b00 currently. Don't use.
-      - 0b11: Reset
+    - 0b00: Shift slow bits into slow shift register
+    - 0b01: Validate and move slow shift register to outputs and set initial
+      state to [0, ..., 0, slow1, slow0]. slow1 should be the desired MSB at
+      next command.
+    - 0b10: Reserved, same as 0b00 currently. Don't use.
+    - 0b11: Reset
 
-    SW
-      Two-bit "slow-word" part. These bits are accumulated over time in order
-      to control the display state and non-timing critical apsects of the
-      breakout board. For instance, LED colors and brightness, headstage lock
-      state, etc. As of this writing, for :ref:`breakout`, a complete
-      slow-word is as follows.
+SW
+    Two-bit "slow-word" part. These bits are accumulated over time in order
+    to control the display state and non-timing critical apsects of the
+    breakout board. For instance, LED colors and brightness, headstage lock
+    state, etc. As of this writing, for :ref:`breakout`, a complete
+    slow-word is as follows.
 
-      .. wavedrom::
+    .. wavedrom::
 
-          {
-              reg: [
-                {bits: 1, name: "Acq. Running" },
-                {bits: 1, name: "Acq. Reset Done" },
-                {bits: 2, name: "Reserved" },
-                {bits: 4, name: "LED Level" },
-                {bits: 2, name: "LED Mode" },
-                {bits: 2, name: "Port A Status" },
-                {bits: 2, name: "Port B Status" },
-                {bits: 2, name: "Port C Status" },
-                {bits: 2, name: "Port D Status" },
-                {bits: 12, name: "Analog IO Dir." },
-                {bits: 2, name: "HARP Conf." },
-                {bits: 16, name: "GPIO Dir." }
-              ],
-              config: {bits: 48, lanes: 8, vflip: true, hflip: true, fontsize: 11}
-          }
+        {
+            reg: [
+              {bits: 1, name: "Acq. Running" },
+              {bits: 1, name: "Acq. Reset Done" },
+              {bits: 2, name: "Reserved" },
+              {bits: 4, name: "LED Level" },
+              {bits: 2, name: "LED Mode" },
+              {bits: 2, name: "Port A Status" },
+              {bits: 2, name: "Port B Status" },
+              {bits: 2, name: "Port C Status" },
+              {bits: 2, name: "Port D Status" },
+              {bits: 12, name: "Analog IO Dir." },
+              {bits: 2, name: "HARP Conf." },
+              {bits: 16, name: "GPIO Dir." }
+            ],
+            config: {bits: 48, lanes: 8, vflip: true, hflip: true, fontsize: 11}
+        }
 
-      which are defined as follows:
+    which are defined as follows:
 
-       - Acq. Running: Host hardware run state. 0 = not running, 1 = running
-       - Acq. Reset Done: Host reset state. 0 = reset not complete, 1 = reset
-         complete
-       - Reserved: NA
-       - LED Level: 4 bit register for general LED brighness. 0 = dimmest, 16 =
-         brightest
-       - LED Mode: 2 bit register for LED mode. 0 = all off, 1 = only
-         power/running, 2 = power/running, pll, harp, 3 = all on
-       - Port X Status: 2 bit register describing the headstage port state. 00:
-         power off, 01: power on, 10: locked, 11: device map good.
-       - Analog IO Dir.: 12 bit register describing the direcitonality of each
-         of the analog inputs. 0 = input, 1 = output.
-       - HARP Config.: 2 bit register for possible future harp configuration.
-       - GPIO Dir.: 16 bit register for possible future digital io
-         directionality configuration.
+    - Acq. Running: Host hardware run state. 0 = not running, 1 = running
+    - Acq. Reset Done: Host reset state. 0 = reset not complete, 1 = reset
+      complete
+    - Reserved: NA
+    - LED Level: 4 bit register for general LED brighness. 0 = dimmest, 16 =
+      brightest
+    - LED Mode: 2 bit register for LED mode. 0 = all off, 1 = only
+      power/running, 2 = power/running, pll, harp, 3 = all on
+    - Port X Status: 2 bit register describing the headstage port state. 00:
+      power off, 01: power on, 10: locked, 11: device map good.
+    - Analog IO Dir.: 12 bit register describing the direcitonality of each
+      of the analog inputs. 0 = input, 1 = output.
+    - HARP Config.: 2 bit register for possible future harp configuration.
+    - GPIO Dir.: 16 bit register for possible future digital io
+      directionality configuration.
 
-    Digital Out
-      Digital output port state. Each bit represents state of an output signal
-      line in the 8-bit port.
+Digital Out
+    Digital output port state. Each bit represents state of an output signal
+    line in the 8-bit port.
 
-      - 0: Low
-      - 1: High
+    - 0: Low
+    - 1: High
 
 A clock recovery circuit is required at the receiver to generate ``clk`` from
 ``sclk`` in order to sample the ``dat`` line.
@@ -203,9 +203,9 @@ Register Programming
       - LEDLVL
       - R/W
       - On Reset
-      - 0x0007
+      - 0x0003
       - None
-      - The four LSBs dertermine the overall LED brightness. Brightness
+      - The four LSBs determine the overall LED brightness. Brightness
         increases linearly with this register's 0-15 value.
 
     * - 0x03
@@ -222,7 +222,33 @@ Register Programming
       - On Reset
       - 0x0000
       - None
-      - GPIO configuraiton. Reserved for future use.
+      - GPIO configuration. Reserved for future use.
+
+    * - 0x05
+      - CLKHZ
+      - R
+      - N/A
+      - N/A
+      - None
+      - The system clock frequency in Hz
+
+    * - 0x06
+      - SPACING
+      - R/W
+      - On Reset
+      - 0x0000
+      - None
+      - Minimum CLK_HZ cycles between samples. Can be used to debounce inputs.
+        Ignored if SAMPLING > 0.
+
+    * - 0x07
+      - SAMPLING
+      - R/W
+      - On Reset
+      - 0x0000
+      - None
+      - If > 0, produce one sample with each SAMPLING value of the CLK_HZ clock.
+        regardless of if there are changes in digital input state or not.
 
 .. _onidatasheet_fmc_digital_io_d2h:
 
@@ -250,6 +276,30 @@ current digital input and user input state.
           {bits: 6},
           {bits: 4, name: "Link State", type: 6},
           {bits: 6, name: "Button State", type: 5},
+        ],
+        config: {bits: 224, lanes: 7, vflip: true, hflip: true, fontsize: 11}
+    }
+
+.. wavedrom::
+
+    {
+        reg: [
+          {bits: 64, name: "Acquisition Clock Counter", type: 0},
+          {bits: 32, name: "Device Address", type: 0},
+          {bits: 32, name: "Data Size", type: 0, attr: 10},
+
+          {bits: 64, name: "Hub Clock Counter", type: 3},
+
+          {bits: 8, name: "Status Codeword", type: 4},
+
+          {bits: 5, name: "Reserved"},
+
+          {bits: 1, name: "CV", type: 2},
+          {bits: 1, name: "PP", type: 2},
+          {bits: 1, name: "SL", type: 2},
+
+          {bits: 16}
+
         ],
         config: {bits: 224, lanes: 7, vflip: true, hflip: true, fontsize: 11}
     }
@@ -287,5 +337,5 @@ output port state:
 
 |
 
-    Output Port State
-      8-bit output port state
+Output Port State
+    8-bit output port state
