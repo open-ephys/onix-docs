@@ -15,6 +15,8 @@ Updating Breakout Board Firmware in Windows
 
 #. Connect a USB-microUSB from the PC you will use to perform the firmware update to the Config port on the side of the breakout board.
 
+..  _breakout_version_difference:
+
 #. Verify the Breakout Board version by looking at the specifications on the product.
 
    .. figure:: /_static/images/breakout/breakout_1r5_fw.png
