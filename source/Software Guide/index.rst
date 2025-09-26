@@ -77,30 +77,20 @@ community. There are a few important considerations when selecting which to use:
             :alt: screenshot of example workflow
 
 |   **ONIX Support**
-|   Bonsai has a greater degree of support for ONIX capabilities. As of
-    September 2025:
-
-+-----------------+------------------------------------------------------------------------------+--------------------+
-|                 | Bonsai                                                                       | Open Ephys GUI     |
-+=================+==============================================================================+====================+
-| Digital Inputs  | Adjustable sample rate (or one sample whenever digital input status changes) | 25 kHz sample rate |
-+-----------------+------------------------------------------------------------------------------+--------------------+
-| Analog Inputs   | 100 kHz sample rate                                                          | 25 kHz sample rate |
-+-----------------+------------------------------------------------------------------------------+--------------------+
-| Digital Outputs | Supported                                                                    | Not yet supported  |
-+-----------------+------------------------------------------------------------------------------+--------------------+
-| Analog Outputs  | Supported                                                                    | Not yet supported  |
-+-----------------+------------------------------------------------------------------------------+--------------------+
+|   OpenEphys.Onix1 in Bonsai has a greater degree of support for ONIX
+    capabilities than ONIX Source in the Open Ephys GUI. For more information on
+    this, visit the `ONIX Source plugin page <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html#onix-support>`_.
 
 |   **Performance/Closed-Loop Latency**
-|   Bonsai is capable of operating with sub-millisecond closed-loop
-    latencies. The Open Ephys GUI operates with ~20ms and more variable
+|   Bonsai is capable of operating with sub-millisecond closed-loop latencies.
+    The Open Ephys GUI operates on the order of 20ms and more variable
     latencies.
 
 |   **Data Visualization**
-|   The Open Ephys GUI provides visualization tools specialized for
-    presenting electrophysiology data (specifically, the LFP viewer). Bonsai
-    provides type visualizers which are more agnostic to the kind of data
+|   The Open Ephys GUI provides visualization tools specialized for presenting
+    electrophysiology data (such as the `LFP viewer
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/LFP-Viewer.html#layout-selection>`_).
+    Bonsai provides type visualizers which are more agnostic to the kind of data
     that is being streamed.
     
 ..  grid::
@@ -140,10 +130,11 @@ community. There are a few important considerations when selecting which to use:
 |   **Hardware/Software Compatibility and 3rd Party Integration**
 |   Bonsai offers broader compatibility with many more options such as
     behavioral cameras, miniscopes, photometry systems, Arduino boards, Harp
-    devices, and numerous more instruments, as well as software such as
-    SLEAP/Deep Lab Cut for pose estimation. The Open Ephys GUI supports a subset
-    of the items that Bonsai supports. For more information on what the Open
-    Ephys GUI natively supports this, visit the `hardware compatibility page
+    devices, and numerous additional instruments, as well as 3rd party software
+    such as SLEAP/Deep Lab Cut for pose estimation. The Open Ephys GUI supports
+    a subset of the items that Bonsai supports. For more information on what the
+    Open Ephys GUI natively supports, visit the `hardware compatibility
+    page
     <https://open-ephys.github.io/gui-docs/User-Manual/Compatible-hardware.html>`_
     and `browse the plugins
     <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/index.html>`_.
