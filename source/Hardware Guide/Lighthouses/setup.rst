@@ -28,16 +28,24 @@ Setup
       position. 
     - Secure the base stations such that they can't be easily jostled or moved.
 
-    The image below shows a cartoon of what a lighthouse & commutator commutator
-    might look mounted on extruded aluminum rail. The overlapping green area
-    represents the region where a TS4231 device is in range of both base
-    stations and can measure position.
+    ..  figure:: ../../_static/images/lighthouses/lighthouse_active-range.svg
 
-    .. image:: ../../_static/images/lighthouses/lighthouse_active-range.svg
+        A cartoon of what a lighthouse & commutator commutator might look
+        mounted on extruded aluminum rail. The overlapping green area represents
+        the region where a TS4231 device is in range of both base stations and
+        can measure position.
 
-      
+    ..  figure:: ../../_static/images/lighthouses/lighthouse-onix-figures-cropped.webp
+
+        Crops of figures from `ONIX: a unified open-source platform for
+        multimodal neural recording and perturbation during naturalistic
+        behavior <https://www.nature.com/articles/s41592-024-02521-1>`_. The
+        lighthouse transmitters are mounted on the ceiling and their range cover
+        the entire ~2m range. The blue line represents a mouse's movement over
+        ~8 hours.
+
     .. tip::
-      To confirm if the base station configuration covers the entire desired range, slowly move 
+      To confirm if the base station configuration covers the entire behavioral arena, slowly move 
       the TS4231 device through the entire arena while running 
       `an example workflow <https://open-ephys.github.io/bonsai-onix1-docs/articles/hardware/hs64/workflow.html>`_ and
       `inspecting the TS4231V1PositionData position data visualizer <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/visualize-data.html>`_. 
@@ -46,9 +54,10 @@ Setup
       using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
 
-    The image below shows an photo of how the actual hardware could look for mounting on extruded aluminum rail. 
+    ..  figure:: ../../_static/images/lighthouses/lighthouse-mount-example.png
 
-    .. image:: ../../_static/images/lighthouses/lighthouse-mount-example.png
+        How the actual hardware could look for mounting on extruded aluminum
+        rail. 
 
 2. Connect one power adaptor to each base station.
 
