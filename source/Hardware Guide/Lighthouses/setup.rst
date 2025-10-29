@@ -26,7 +26,7 @@ Setup
       transmitters' range, so leave a safe margin. 
     - A receiver must be in range of *both* transmitters in order to measure
       position. 
-    - Secure the base stations such that they can't be easily jostled or moved.
+    - Secure the base stations such that they can't be easily jostled or moved. The lighthouses interrupt their emission during movement.
 
     ..  figure:: ../../_static/images/lighthouses/lighthouse_active-range.svg
 
