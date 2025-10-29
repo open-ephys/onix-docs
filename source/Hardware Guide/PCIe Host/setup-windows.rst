@@ -101,7 +101,7 @@ will need to install `Microsoft Visual C++ Redistributable for Visual Studio
 
 .. _install_riffa:
 
-Install Device Driver
+Install RIFFA PCIe Device Driver
 ---------------------------------------
 
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
