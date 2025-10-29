@@ -27,10 +27,10 @@ Downloads
 
 .. _riffa_driver_download:
 
-RIFFA PCIe Device Driver
+RIFFA PCIe Driver
 ----------------------------------------------
 
-.. note:: Please see :ref:`Install Device Driver <install_riffa>` 
+.. note:: Please see :ref:`Install RIFFA PCIe Driver <install_riffa>` 
     for instructions on how to use this file. When
     using mac or linux, you will need to compile from `source
     <https://github.com/open-ephys/liboni>`__.
