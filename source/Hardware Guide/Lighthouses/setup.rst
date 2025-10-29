@@ -14,8 +14,7 @@ Setup
  
     .. On the headstage64, the photodiodes allow can accommodate up to at least distance 3m between the lighthouse receivers and transmitters. THIS REQUIRES CONFIRMATION TO INCLUDE IN DOCS, OTHERWISE DELETE.
 
-    - They should be centered above and facing the area the behavioral arena
-    - The lighthouses should have the same orientation.
+    - They should be centered above the arena, with the front panel facing the arena and have the same orientation. Remove the thin film that covers the front panel.  
     - The distance between the receiver and the transmitters should not exceed
       the maximum range. This depends on the sensitivity of the receiver's
       photodiode on the headstage and is best determined experimentally. Each
@@ -54,19 +53,18 @@ Setup
         the entire ~2m range. The blue line represents a mouse's movement over
         ~8 hours.
 
-2. Connect one power adaptor to each lighthouse.
+1. Connect one power adaptor to each lighthouse.
 
-3. Using a 3.5 mm Stereo Jack Plug to Plug (audio) cable, connect the basestations to each other to
-   synchronise them.
+2. Using a 3.5 mm Stereo Jack Plug to Plug (audio) cable, connect the basestations to each other to synchronise them.
 
    .. image:: ../../_static/images/connections/audio_synch_cable.jpg
        :width: 48%
    .. image:: ../../_static/images/lighthouses/vive_back.jpg
        :width: 48%
 
-4. Manage the cables such that they don't occlude the TS4231 receivers from the lighthouse transmitters.
+3. Manage the cables such that they don't occlude the TS4231 receivers from the lighthouse transmitters.
 
-5. Set one lighthouse to 'A' and one to 'b' using the channel button
+4. Set one lighthouse to 'A' and one to 'b' using the channel button
    (illustration below is from the `Vive manual
    <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
 
