@@ -20,9 +20,6 @@ Downloads
    * - Version
      - Release Date
      - Release Notes
-   * - :download:`1.0.0 <../_static/downloads/onix-software-releases/oni-repl-x64_v1.0.0.zip>`
-     - 2022.11.27
-     - Initial release.
    * - :download:`1.1.0 <../_static/downloads/onix-software-releases/oni-repl-x64_v1.1.0.zip>`
      - 2025.06.25
      - Fixes to hardware reset behavior. Addition of several command line
