@@ -10,7 +10,7 @@ Setup
     .. image:: ../../_static/images/lighthouses/vive_front.jpg
       :width: 48 %
  
-    Follow these guidelines when deciding where to mount your Lighthouse base stations:
+    Follow these guidelines when deciding where to mount your lighthouses:
  
     .. On the headstage64, the photodiodes allow can accommodate up to at least distance 3m between the lighthouse receivers and transmitters. THIS REQUIRES CONFIRMATION TO INCLUDE IN DOCS, OTHERWISE DELETE.
 
@@ -19,20 +19,20 @@ Setup
     - The distance between the receiver and the transmitters should not exceed
       the maximum range. This depends on the sensitivity of the receiver's
       photodiode on the headstage and is best determined experimentally. Each
-      base station has a 120° field of view. However, the lighthouse receivers
+      lighthouse has a 120° field of view. However, the lighthouse receivers
       have a higher chance loosing line of sight of the transmitters at these
       larger angles if the headstage tilts. 
     - Position measurements are noisier when receivers are at the boundary of the
       transmitters' range, so leave a safe margin. 
     - A receiver must be in range of *both* transmitters in order to measure
       position. 
-    - Secure the base stations such that they can't be easily jostled or moved. The lighthouses interrupt their emission during movement.
+    - Secure the lighthouses such that they can't be easily jostled or moved. The lighthouses interrupt their emission during movement.
 
     ..  figure:: ../../_static/images/lighthouses/lighthouse_active-range.svg
 
         A cartoon of what a lighthouse & commutator commutator might look
         mounted on extruded aluminum rail. The overlapping green area represents
-        the region where a TS4231 device is in range of both base stations and
+        the region where a TS4231 device is in range of both lighthouses and
         can measure position.
 
     ..  figure:: ../../_static/images/lighthouses/lighthouse-onix-figures-cropped.webp
@@ -45,12 +45,12 @@ Setup
         ~8 hours.
 
     .. tip::
-      To confirm if the base station configuration covers the entire behavioral arena, slowly move 
+      To confirm if the lighthouse configuration covers the entire behavioral arena, slowly move 
       the TS4231 device through the entire arena while running 
       `an example workflow <https://open-ephys.github.io/bonsai-onix1-docs/articles/hardware/hs64/workflow.html>`_ and
       `inspecting the TS4231V1PositionData position data visualizer <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/visualize-data.html>`_. 
       If the TS4231V1PositionData operator ceases to produce data (i.e. if the visualizer stops updating) 
-      at a certain spot, the current base station configuration does not cover that spot. If you are unfamiliar with 
+      at a certain spot, the current lighthouse configuration does not cover that spot. If you are unfamiliar with 
       using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
 
@@ -59,7 +59,7 @@ Setup
         How the actual hardware could look for mounting on extruded aluminum
         rail. 
 
-2. Connect one power adaptor to each base station.
+2. Connect one power adaptor to each lighthouse.
 
 3. Using an audio to audio cable, connect the basestations to each other to
    synchronise them.
@@ -69,9 +69,9 @@ Setup
    .. image:: ../../_static/images/lighthouses/vive_back.jpg
        :width: 48%
 
-4. Manage the cables such that they don't occlude the TS4231 receivers from the Lighthouse base station transmitters.
+4. Manage the cables such that they don't occlude the TS4231 receivers from the lighthouse transmitters.
 
-5. Set one base station to 'A' and one to 'b' using the channel button
+5. Set one lighthouse to 'A' and one to 'b' using the channel button
    (illustration below is from the `Vive manual
    <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
 
