@@ -35,15 +35,6 @@ Setup
         the region where a TS4231 device is in range of both lighthouses and
         can measure position.
 
-    ..  figure:: ../../_static/images/lighthouses/lighthouse-onix-figures-cropped.webp
-
-        Crops of figures from `ONIX: a unified open-source platform for
-        multimodal neural recording and perturbation during naturalistic
-        behavior <https://www.nature.com/articles/s41592-024-02521-1>`_. The
-        lighthouse transmitters are mounted on the ceiling and their range cover
-        the entire ~2m range. The blue line represents a mouse's movement over
-        ~8 hours.
-
     .. tip::
       To confirm if the lighthouse configuration covers the entire behavioral arena, slowly move 
       the TS4231 device through the entire arena while running 
@@ -53,6 +44,15 @@ Setup
       at a certain spot, the current lighthouse configuration does not cover that spot. If you are unfamiliar with 
       using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
+
+    ..  figure:: ../../_static/images/lighthouses/lighthouse-onix-figures-cropped.webp
+
+        Crops of figures from `ONIX: a unified open-source platform for
+        multimodal neural recording and perturbation during naturalistic
+        behavior <https://www.nature.com/articles/s41592-024-02521-1>`_. The
+        lighthouse transmitters are mounted on the ceiling and their range cover
+        the entire ~2m range. The blue line represents a mouse's movement over
+        ~8 hours.
 
 2. Connect one power adaptor to each lighthouse.
 
