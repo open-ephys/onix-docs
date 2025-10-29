@@ -3,7 +3,7 @@
 Setup
 #########################
 
-1.  Mount 2 Vive Base Station Lighthouse over the behavioral arena.
+1.  Mount 2 HTC Vive Base Station v1.0 Lighthouses over the behavioral arena.
 
     .. image:: ../../_static/images/lighthouses/vive_front.jpg
       :width: 48 %
