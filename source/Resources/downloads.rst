@@ -13,7 +13,7 @@ Downloads
     from source. See compilation instructions in the `Makefile
     <https://github.com/open-ephys/liboni/blob/main/api/liboni/oni-repl/Makefile>`__.
 
-.. list-table:: oni-repl Windows downloads
+.. list-table::
    :widths: 15 25 60
    :header-rows: 1
 
@@ -30,7 +30,7 @@ Downloads
 
 .. _riffa_driver_download:
 
-RIFFA Device Driver
+RIFFA PCIe Device Driver
 ----------------------------------------------
 
 .. note:: Please see :ref:`Install Device Driver <install_riffa>` 
@@ -38,7 +38,7 @@ RIFFA Device Driver
     using mac or linux, you will need to compile from `source
     <https://github.com/open-ephys/liboni>`__.
 
-.. list-table:: RIFFA PCIe driver
+.. list-table::
    :widths: 15 25 60
    :header-rows: 1
 
@@ -64,7 +64,7 @@ PCIe Host Upload Tool
 ______________________________________________
 Software for uploading PCIe Host firmware to PCIe Host hardware.
 
-.. list-table:: PCIe Host upload tool
+.. list-table::
    :widths: 15 25 60
    :header-rows: 1
 
@@ -91,7 +91,7 @@ ______________________________________________
 
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
     | | PCIe Host Hardware version                                      | | Latest PCIe Host                                                                                             |
-    | | :ref:`per oni-repl <controller_version_difference>`             | | firmware version                                                                                             |
+    | | per :ref:`oni-repl <controller_version_difference>`             | | firmware version                                                                                             |
     +===================================================================+================================================================================================================+
     | Hardware Revision 1.4                                             | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -103,7 +103,7 @@ ______________________________________________
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
-.. .. list-table:: PCIe Host Revision 1.4 firmware images
+.. .. list-table::
 ..    :widths: 15 25 60
 ..    :header-rows: 1
 ..
@@ -129,7 +129,7 @@ Breakout Board Upload Tool
 ______________________________________________
 Software for uploading Breakout Board firmware to Breakout Board hardware.
 
-.. list-table:: Breakout Board firmware upload tool
+.. list-table::
    :widths: 15 25 60
    :header-rows: 1
 
@@ -156,7 +156,7 @@ ______________________________________________
 
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
     | | Breakout Board Hardware version                            | | Latest Breakout Board                                                                                     |
-    | | :ref:`per visual inspection <breakout_version_difference>` | | firmware version                                                                                          |
+    | | per :ref:`visual inspection <breakout_version_difference>` | | firmware version                                                                                          |
     +==============================================================+=============================================================================================================+
     | Hardware Revision 1.5  (four headstage ports)                | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
