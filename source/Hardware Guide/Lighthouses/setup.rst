@@ -5,10 +5,10 @@ Setup
 
 1.  Mount 2 HTC Vive Base Station v1.0 Lighthouses over the behavioral arena. Here we've used aluminum extrusion parts and made use of the 1/4"-20 mounting holes on the lighthouses.
 
-    .. image:: ../../_static/images/lighthouses/vive_front.jpg
-      :width: 48 %
-    .. image:: ../../_static/images/lighthouses/vive_front.jpg
-      :width: 48 %
+    ..  figure:: ../../_static/images/lighthouses/lighthouse-mount-example.png
+
+        How the actual hardware could look for mounting on extruded aluminum
+        rail. 
  
     Follow these guidelines when deciding where to mount your lighthouses:
  
@@ -53,11 +53,6 @@ Setup
       at a certain spot, the current lighthouse configuration does not cover that spot. If you are unfamiliar with 
       using Bonsai to acquire Onix data to do this, visit the OpenEphys.Onix1 Bonsai package 
       `Getting Started page <https://open-ephys.github.io/bonsai-onix1-docs/articles/getting-started/index.html>`_.
-
-    ..  figure:: ../../_static/images/lighthouses/lighthouse-mount-example.png
-
-        How the actual hardware could look for mounting on extruded aluminum
-        rail. 
 
 2. Connect one power adaptor to each lighthouse.
 
