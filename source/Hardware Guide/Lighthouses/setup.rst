@@ -3,7 +3,7 @@
 Setup
 #########################
 
-1.  Mount 2 HTC Vive Base Station v1.0 Lighthouses over the behavioral arena.
+1.  Mount 2 HTC Vive Base Station v1.0 Lighthouses over the behavioral arena. Here we've used aluminum extrusion parts and made use of the 1/4"-20 mounting holes on the lighthouses.
 
     .. image:: ../../_static/images/lighthouses/vive_front.jpg
       :width: 48 %
@@ -61,7 +61,7 @@ Setup
 
 2. Connect one power adaptor to each lighthouse.
 
-3. Using an audio to audio cable, connect the basestations to each other to
+3. Using a 3.5 mm Stereo Jack Plug to Plug (audio) cable, connect the basestations to each other to
    synchronise them.
 
    .. image:: ../../_static/images/connections/audio_synch_cable.jpg
