@@ -15,16 +15,16 @@ Setup
     .. On the headstage64, the photodiodes allow can accommodate up to at least distance 3m between the lighthouse receivers and transmitters. THIS REQUIRES CONFIRMATION TO INCLUDE IN DOCS, OTHERWISE DELETE.
 
     - They should be centered above the arena, with the front panel facing the arena and have the same orientation. Remove the thin film that covers the front panel.  
-    - The distance between the receiver and the transmitters should not exceed
+    - The distance between the receivers on the headstage and the transmitters in the lighthouses should not exceed
       the maximum range. This depends on the sensitivity of the receiver's
       photodiode on the headstage and is best determined experimentally. Each
-      lighthouse has a 120° field of view. However, the lighthouse receivers
+      lighthouse has a 120° field of view. However, the receivers
       have a higher chance loosing line of sight of the transmitters at these
       larger angles if the headstage tilts. 
-    - Position measurements are noisier when receivers are at the boundary of the
-      transmitters' range, so leave a safe margin. 
-    - A receiver must be in range of *both* transmitters in order to measure
-      position. 
+    - Position measurements are noisier when the headstage is at the boundary of the
+      lighthouses' range, so leave a safe margin. 
+    - The headstage must be in the range of *both* lighthouses in order to measure
+      position.
     - Secure the lighthouses such that they can't be easily jostled or moved. The lighthouses interrupt their emission during movement.
 
     ..  figure:: ../../_static/images/lighthouses/lighthouse_active-range.svg
