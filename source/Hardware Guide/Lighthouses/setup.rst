@@ -21,6 +21,7 @@ Setup
       lighthouse has a 120° field of view. However, the receivers
       have a higher chance loosing line of sight of the transmitters at these
       larger angles if the headstage tilts. 
+    - The distance between the receivers on the headstage and the transmitters in the lighthouses should be within the minimum range. In our tests this was determined to be ~30 cm vertically but it is best determined experimentally. If you don't see any readings, ensure the headstage excessively close to the lighthouses.
     - Position measurements are noisier when the headstage is at the boundary of the
       lighthouses' range, so leave a safe margin. 
     - The headstage must be in the range of *both* lighthouses in order to measure
@@ -53,18 +54,18 @@ Setup
         the entire ~2m range. The blue line represents a mouse's movement over
         ~8 hours.
 
-1. Connect one power adaptor to each lighthouse.
+2. Connect one power adaptor to each lighthouse.
 
-2. Using a 3.5 mm Stereo Jack Plug to Plug (audio) cable, connect the basestations to each other to synchronise them.
+3. Using a 3.5 mm Stereo Jack Plug to Plug (audio) cable, connect the basestations to each other to synchronise them.
 
    .. image:: ../../_static/images/connections/audio_synch_cable.jpg
        :width: 48%
    .. image:: ../../_static/images/lighthouses/vive_back.jpg
        :width: 48%
 
-3. Manage the cables such that they don't occlude the TS4231 receivers from the lighthouse transmitters.
+4. Manage the cables such that they don't occlude the TS4231 receivers from the lighthouse transmitters.
 
-4. Set one lighthouse to 'A' and one to 'b' using the channel button
+5. Set one lighthouse to 'A' and one to 'b' using the channel button
    (illustration below is from the `Vive manual
    <https://www.vive.com/eu/support/vive/category_howto/about-the-base-stations.html>`_)
 
