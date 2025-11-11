@@ -54,6 +54,7 @@ Updating Headstage Firmware
             ..  image:: /_static/images/hub-updater/mismatched-image&hardware.webp
 
             Confirm:
+            
             -   The headstage you want to update is connected to the selected port.
             -   The firmware image you selected is for the headstage you want to update.  
 
