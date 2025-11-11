@@ -160,3 +160,42 @@ ______________________________________________
     | Hardware Revision 1.6  (two headstage ports)                 | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
+Headstage Firmware
+----------------------------------------------
+
+.. note:: Please see :doc:`/Hardware Guide/Headstages/updating-firmware`
+    for instructions on how to use these files.
+
+.. _headstage_updater_download:
+
+Headstage Firmware Upload Tool
+______________________________________________
+Software for updating headstage firmware.
+
+.. list-table::
+   :widths: 15 25 60
+   :header-rows: 1
+
+   * - Version
+     - Release Date
+     - Release Notes
+   * - :download:`0.0.0 <../_static/downloads/onix-software-releases/hub-updater_v0.0.0.zip>`
+     - 2025.11.10
+     - Initial release.
+
+.. _headstage_image_download:
+
+Headstage Firmware Images
+______________________________________________
+
+.. warning::
+   Make sure you choose the right file for your hardware.
+
+.. table::
+
+    +------------------------------+-------------------------------------------------------------------------------------------------------------+
+    | Hardware                     | Latest Firmware                                                                                             |
+    +==============================+=============================================================================================================+
+    | Headstage 64                 | :download:`Firmware version 0.4.0 <../_static/downloads/onix-gateware-images/hs64-fw0.4.0.onix>`            |
+    +------------------------------+-------------------------------------------------------------------------------------------------------------+
+
