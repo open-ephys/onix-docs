@@ -24,32 +24,43 @@ Updating Headstage Firmware
 
     -   Select the firmware image by clicking on the :kbd:`...` button and
         navigating to where the firmware image was downloaded or entering its
-        directory directly into the "Firmware File" field.
+        directory directly into the "Firmware File" field. The image should have
+        a .onix file extension.
     -   Select the port where the headstage you want to update is connected.
 
     For example:
 
     .. image:: /_static/images/hub-updater/onix-hub-updater_fields-populated.webp
 
-#.  Click the :kbd:`program` button in the "ONIX Hub Updater" dialog to open the
-    "Update ready" dialog. This window provides information about the hardware
-    that the selected firmware image targets in the left column and the hardware
-    that is connected to the selected port in the right column. Make sure the
-    "Hub Name", "HW revision", and "FW Version" fields in the left column match
-    their respective fields in the right column before proceeding. If they
-    don't, click :kbd:`Cancel` and confirm the following:
-
-    -   The headstage you want to update is connected to the selected port.
-    -   The firmware image you selected is for the headstage you want to update.  
-
-    These fields must match before proceeding. For example:
+#.  Click the :kbd:`program` button in the "ONIX Hub Updater" dialog. This
+    should open the "Update ready" dialog. 
 
     .. image:: /_static/images/hub-updater/update-ready_matching-fields.webp
 
+    Confirm the "Hub Name", "HW revision", and "FW Version" match in both
+    columns.
+
+    ..  note:: 
+        
+        -   If you click :kbd:`program` and receive the following error message:
+
+            .. image:: /_static/images/hub-updater/no-onix-system.webp
+
+            Make sure your :ref:`PCIe Controller <pcie_host_firmware_update>` and
+            :ref:`Breakout Board <breakout_setup>` are properly setup.
+
+        -   If you click :kbd:`program` and receive the following error message:
+
+            ..  image:: /_static/images/hub-updater/mismatched-image&hardware.webp
+
+            Confirm:
+            -   The headstage you want to update is connected to the selected port.
+            -   The firmware image you selected is for the headstage you want to update.  
+
 #.  Click the :kbd:`program` button in the "Update ready" dialog to initiate the
     firmware flash process. The progress bar indicates that the flash process is
-    underway. Do not touch the headstage or its port while waiting for this
-    process is underway. 
+    underway. Do not touch the headstage, its port, or its port's power switch
+    while waiting for this headstage to finish being updated. 
     
     .. image:: /_static/images/hub-updater/update-ready_progress-bar.webp
     
