@@ -33,7 +33,7 @@ Features
 -------------------------
 The Breakout Board provides access to the following IO:
 
-- 4x headstage port feed-throughs, each with a power switch
+- 2x headstage port feed-throughs, each with a power switch
 - 3x, passive, high-speed clock feed-throughs
 - 12x passive, ESD-protected, analog feed-throughs.
 - BNC, ribbon, or direct wire access to 12 analog inputs or outputs
