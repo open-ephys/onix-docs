@@ -33,21 +33,21 @@ Features
 -------------------------
 The Breakout Board provides access to the following IO:
 
-- 2x headstage port feed-throughs, each with a power switch
-- 3x, passive, high-speed clock feed-throughs
+- 2x headstage port feed-throughs, each with a power switch.
+- 3x, passive, high-speed clock feed-throughs. Clk 0 and Clk 1 are clock inputs, Clk 2 is a clock output.
 - 12x passive, ESD-protected, analog feed-throughs.
-- BNC, ribbon, or direct wire access to 12 analog inputs or outputs
+- BNC, ribbon, or direct wire access to 12 analog inputs or outputs.
 - Ribbon cable or direct, wire-access to 8 digital outputs and 8 digital
   inputs. These are 5V compliant.
 - `HARP bus <https://www.cf-hw.org/harp>`__ controller
 
 Additionally, it has the following features:
 
-- Lots of indication LEDs
+- Lots of indication LEDs.
 - 6 buttons for marking experimental events for or triggering software actions.
 - Rugged M6 and 1/4-20 mounting holes for both metric and imperial optical
-  tables
-- 19" rack compatibility
+  tables.
+- 19" rack compatibility.
 - Fully open-source gateware and made using an open-source FPGA toolchain
   (`yosys <https://yosyshq.net/yosys/>`__ & `nextpnr
-  <https://github.com/YosysHQ/nextpnr>`__)
+  <https://github.com/YosysHQ/nextpnr>`__).
