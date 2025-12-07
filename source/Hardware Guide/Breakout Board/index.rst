@@ -14,7 +14,10 @@ data IO.
 
 :Design Repository: https://github.com/open-ephys/onix-breakout
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
-                :ref:`headstage_neuropix1`, :ref:`miniscopes`
+                :ref:`headstage_neuropix1`, :ref:`miniscopes`,
+                :doc:`../Headstages/headstage-neuropix-1e`, 
+                :doc:`../Headstages/headstage-neuropix-2e`,
+                :doc:`../Headstages/headstage-rhs2116`
 
 
 .. _breakout_overview:
@@ -34,7 +37,7 @@ Features
 The Breakout Board provides access to the following IO:
 
 - 2x headstage port feed-throughs, each with a power switch.
-- 3x, passive, high-speed clock feed-throughs. Clk 0 and Clk 1 are clock inputs, Clk 2 is a clock output.
+- 3x, passive, high-speed clock feed-throughs. 
 - 12x passive, ESD-protected, analog feed-throughs.
 - BNC, ribbon, or direct wire access to 12 analog inputs or outputs.
 - Ribbon cable or direct, wire-access to 8 digital outputs and 8 digital

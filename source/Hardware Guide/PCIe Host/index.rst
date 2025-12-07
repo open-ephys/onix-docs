@@ -21,6 +21,9 @@ equipment.
 :Design Repository: https://github.com/open-ephys/onix-fmc-host
 :Compatibility: :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`
-
+                :doc:`../Headstages/headstage-neuropix-1e`, 
+                :doc:`../Headstages/headstage-neuropix-2e`,
+                :doc:`../Headstages/headstage-rhs2116`
+                
 .. figure:: /_static/images/pcie-host/pcie-host_nereid_fmc-host-1r4.jpg
     :align: center
