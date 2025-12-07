@@ -46,20 +46,35 @@ sites.
         visualizing electrophysiology data.  
 
 Both platforms are free, open-source, and widely adopted in the neuroscience
-community. There are a few important considerations when selecting which to use, which you can read about below.
+community. There are a few important considerations when selecting which to use,
+which you can read about below.
 
 Software Comparison
 ___________________________________
 
-|   **User Experience and Types of Data**
-|   The Open Ephys GUI is a turnkey application specialized in electrophysiology voltage data acquisition and online processing. Data processing pipelines are made up of a sequence of processors, called a signal chain. Typically, each processor performs one signal processing step so it is straightforward to build signal chains by successively combining different functionalities. 
-    Bonsai is a visual programming language which can be used to acquire and process different types of data (analog and digital signals as well as images). It is designed to handle asynchronous datastreams, i.e. that are not sampled continuously, making it possible to flexibly coordinate, combine, and condition datastreams across time. Data acquisition and signal processing pipelines are constructed by connecting operators to make up each function. The Open Ephys GUI is more user-friendly whereas expertise is helpful to build upon the example workflows provided in our documentation and take full advantage of Bonsai. 
+|   **User Experience**
+|   Open Ephys GUI is a user-friendly application specialized for acquiring,
+    processing, and visualizing electrophysiology data by connecting processors
+    to form signal chains. Bonsai is a visual programming language for
+    acquiring, processing, and visualizing a variety of data types by connecting
+    nodes/operators to form workflows. The Open Ephys GUI is typically easier
+    for beginners, while Bonsai rewards expertise with greater flexibility such
+    as the integration of complex logic into the workflow for behavioral
+    experiments/stimulus delivery. 
 
-|   **Hardware and Software Scope**
-|   
-    The Open Ephys GUI can acquire headstage and analog and digital data from different neural data acquisition systems (see the `User Manual introduction page <https://open-ephys.github.io/gui-docs/User-Manual/index.html>`_), and actuation is limited to a few external device options (Arduino, PulsePal). Bonsai offers broader compatibility with more hardware options such as
-    behavioral cameras, miniscopes, photometry systems, Arduino boards, Harp
-    devices, stimulators and numerous other instruments. Bonsai programming elements can be used to structure experimental task logic and stimuli presentation. Additionally, Bonsai integrates third-party algorithms such as SLEAP and DeepLabCut for pose estimation and other machine learning packages for online data processing, and native packages for stimuli presentation such as BonVision, mathematical operations and much more.
+|   **3rd Party Hardware and Software Support**
+|   The Open Ephys GUI natively supports various neural data acquisition systems
+    (see the `User Manual introduction page
+    <https://open-ephys.github.io/gui-docs/User-Manual/index.html>`_) as well as
+    a few other 3rd party devices (view the list of plugins in the `table of
+    contents
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/index.html>`_).
+    Bonsai offers a larger array of 3rd party hardware options. Some families of
+    devices that are supported in Bonsai and not in the Open Ephys GUI include
+    cameras, miniscopes, Harp, and more. Additionally, Bonsai is capable of
+    integrating SLEAP and DeepLabCut for pose estimation or BonVision for the
+    presentation of virtual environments or visual stimuli. The Open Ephys GUI
+    does not have video capabities.
     
 ..  grid::
     :margin: 0
@@ -86,20 +101,24 @@ ___________________________________
             Example workflow in Bonsai
 
 |   **ONIX Support**
-|   The OpenEphys.Onix1 package in Bonsai has support for all ONIX
-    capabilities while the ONIX Source plugin in the Open Ephys GUI can only support a subset of them. For more information on this, visit the `ONIX Source plugin page <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html#onix-support>`_.
+|   The OpenEphys.Onix1 package in Bonsai supports the full set ONIX's features.
+    The ONIX Source plugin in the Open Ephys GUI supports a subset. For more
+    details, visit the `ONIX Source plugin page
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Onix-Source.html#onix-support>`_.
 
 |   **Performance/Closed-Loop Latency**
-|   Bonsai is capable of operating with sub-millisecond closed-loop latencies, with onboard stimulation devices.
-    The Open Ephys GUI operates on the order of 20ms and has more variable
-    latencies, using external devices for stimulation.
+|   The Open Ephys GUI operates on the order of 20ms closed-loop latencies.
+    Bonsai is capable of operating on the order of sub-millisecond closed-loop
+    latencies and with lower variability of latencies.
 
 |   **Data Visualization**
-|   The Open Ephys GUI provides visualization tools specialized for presenting electrophysiology voltage data such as the
-    `LFP viewer <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/LFP-Viewer.html>`_ with different waveform and raster views, and the
-    `Probe viewer <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Probe-Viewer.html>`_ for displaying high-density probe data.
-    Bonsai provides type visualizers which are more agnostic to the kind of data
-    that is being streamed.
+|   The Open Ephys GUI provides visualization tools specialized for presenting
+    electrophysiology voltage data such as the `LFP viewer
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/LFP-Viewer.html>`_
+    with different waveform and raster views, and the `Probe viewer
+    <https://open-ephys.github.io/gui-docs/User-Manual/Plugins/Probe-Viewer.html>`_
+    for displaying high-density probe data. Bonsai provides type visualizers
+    which are more agnostic to the kind of data that is being streamed.
         
 ..  grid::
     :margin: 0
@@ -125,8 +144,12 @@ ___________________________________
 
             Type visualizer in Bonsai
 
-Note, however, that the Open Ephys GUI visualization tools can be used to visualize data acquired from Bonsai using sockets, as explained in `this tutorial <https://open-ephys.github.io/bonsai-onix1-docs/articles/tutorials/ephys-socket.html>`_.
-Visualization of multichannel ephys voltage data in Bonsai is improving with the integration of `Dear ImGUI <https://github.com/ocornut/imgui>`_ in the Bonsai.Ephys package.
+Visualization of ephys data in Bonsai is undergoing improvement with the
+integration of `Dear ImGUI <https://github.com/ocornut/imgui>`_ in the
+Bonsai.Ephys package. Also, Open Ephys GUI visualization tools can be used to
+visualize data acquired from Bonsai using sockets, as explained in `this
+tutorial
+<https://open-ephys.github.io/bonsai-onix1-docs/articles/tutorials/ephys-socket.html>`_.
 
 ..  grid::
     :margin: 0
@@ -140,7 +163,7 @@ Visualization of multichannel ephys voltage data in Bonsai is improving with the
         ..  figure:: /_static/images/software/sockets-end-result_GUI.jpg
             :alt: Sockets to visualize Bonsai data in the Open Ephys GUI visualizers
 
-            Sockets to visualize Bonsai data in the Open Ephys GUI visualizers
+            Neuropixels Open Ephys GUI visualizer used for data acquired in Bonsai
 
     ..  grid-item::
         :child-align: center
@@ -154,11 +177,14 @@ Visualization of multichannel ephys voltage data in Bonsai is improving with the
 
 |   **Extensibility**
 |   Both options are open-source and provide options for extending functionality
-    by providing the capability for users to create 
-    `custom processors <https://open-ephys.github.io/gui-docs/Developer-Guide/index.html>`_ 
-    (in the Open Ephys GUI) or 
-    `custom operators <https://bonsai-rx.org/docs/articles/scripting-extensions.html>`_ and `packages <https://bonsai-rx.org/docs/articles/create-package.html>`_  
-    (in Bonsai). Scripting packages to include Python code in Bonsai workflows are also available, and both the Open Ephys GUI and Bonsai can stream data to external applications using sockets.
+    by providing the capability for users to create `custom processors
+    <https://open-ephys.github.io/gui-docs/Developer-Guide/index.html>`_ in the
+    Open Ephys GUI or `custom operators
+    <https://bonsai-rx.org/docs/articles/scripting-extensions.html>`_ and
+    `packages <https://bonsai-rx.org/docs/articles/create-package.html>`_ in
+    Bonsai. Both can also stream data to external applications using sockets.
+    Bonsai additionally provides packages for including Python code in Bonsai
+    workflows. 
 
 Troubleshooting & Development
 ___________________________________
@@ -174,6 +200,7 @@ debugging and basic streaming IO with ONIX hardware.
 Deprecated Software
 ___________________________________
 
-:doc:`Bonsai.ONIX <Bonsai.ONIX/index>` is the deprecated Bonsai ONIX
-package which has been superseded by `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/>`_.
+:doc:`Bonsai.ONIX <Bonsai.ONIX/index>` is the deprecated Bonsai ONIX package
+which has been superseded by `OpenEphys.Onix1
+<https://open-ephys.github.io/bonsai-onix1-docs/>`_.
 
