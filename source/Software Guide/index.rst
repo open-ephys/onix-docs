@@ -59,8 +59,8 @@ ___________________________________
     acquiring, processing, and visualizing a variety of data types by connecting
     nodes/operators to form workflows. The Open Ephys GUI is typically easier
     for beginners, while Bonsai rewards expertise with greater flexibility such
-    as the integration of complex logic into the workflow for behavioral
-    experiments/stimulus delivery. 
+    as being able to apply complex logic to asynchronous data streams for the
+    purpose of coordinating behavioral experiments and/or stimulus delivery. 
 
 |   **3rd Party Hardware and Software Support**
 |   The Open Ephys GUI natively supports various neural data acquisition systems
