@@ -12,21 +12,20 @@ Setup
  
     Follow these guidelines when deciding where to mount your lighthouses:
  
-    .. On the headstage64, the photodiodes allow can accommodate up to at least distance 3m between the lighthouse receivers and transmitters. THIS REQUIRES CONFIRMATION TO INCLUDE IN DOCS, OTHERWISE DELETE.
-
-    - They should be centered above the arena, with the front panel facing the arena and have the same orientation. Remove the thin film that covers the front panel.  
+    - They should be centered above the arena, with the front panel facing the arena and have the same orientation. Remove the thin transparent film that covers the front panel if you have not already.  
     - The distance between the receivers on the headstage and the transmitters in the lighthouses should not exceed
-      the maximum range. This depends on the sensitivity of the receiver's
+      the maximum range limit. This depends on the sensitivity of the receiver's
       photodiode on the headstage and is best determined experimentally. Each
       lighthouse has a 120° field of view. However, the receivers
       have a higher chance loosing line of sight of the transmitters at these
       larger angles if the headstage tilts. 
-    - The distance between the receivers on the headstage and the transmitters in the lighthouses should be within the minimum range. In our tests this was determined to be ~30 cm vertically but it is best determined experimentally. If you don't see any readings, ensure the headstage excessively close to the lighthouses.
+    - The distance between the receivers on the headstage and the transmitters in the lighthouses should exceed the minimum range limit, ~30 cm in front of the lighthouse. If you don't see any readings, ensure the headstage is not excessively close to the lighthouses.
     - Position measurements are noisier when the headstage is at the boundary of the
       lighthouses' range, so leave a safe margin. 
     - The headstage must be in the range of *both* lighthouses in order to measure
       position.
-    - Secure the lighthouses such that they can't be easily jostled or moved. The lighthouses interrupt their emission during movement.
+    - Secure the lighthouses such that they can't be easily jostled or moved because lighthouses emissions are interrupted during movement. Moreover, if the lighthouses are permanently displaced from the movement, previous calibrations become invalid.
+    - Lighthouse performance might improve in the absence of natural or other IR light.
 
     ..  figure:: ../../_static/images/lighthouses/lighthouse_active-range.svg
 
