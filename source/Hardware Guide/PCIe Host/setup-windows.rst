@@ -99,17 +99,19 @@ Windows does not ship with a C++ runtime. Before using ONIX on windows, you
 will need to install `Microsoft Visual C++ Redistributable for Visual Studio
 2015, 2017 and 2019 <https://download.visualstudio.microsoft.com/download/pr/453680ea-b88a-411f-80fd-5db37fdc9dbb/5D9999036F2B3A930F83B7FE3E2186B12E79AE7C007D538F52E3582E986A37C3/VC_redist.x64.exe>`__.
 
-Install Device Driver
+.. _install_riffa:
+
+Install RIFFA PCIe Driver
 ---------------------------------------
 
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
     need to be compiled from source.
 
-#. Download the :ref:`latest riffa driver <riffa_driver_download>` and unzip
+#. Download the :ref:`latest RIFFA PCIe driver <riffa_driver_download>` and unzip
    the archive.
 #. In the extracted folder, right click the **riffa.inf** file.  Select
    **install** from the context menu.
-#. Open the start menu and type **device manager** and click to open. You shoul
+#. Open the start menu and type **device manager** and click to open. You should
    see **RIFFA** in the device tree.
 
    .. figure:: /_static/images/pcie-host-windows/package-manager-riffa.png

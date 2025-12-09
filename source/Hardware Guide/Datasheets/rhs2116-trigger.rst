@@ -63,11 +63,29 @@ Register Programming
       - W
       - Immediate
       - 0
-      - 0
-      - Writing 0x1 to this register will trigger a stimulation sequence if the
-        TRIGGERSOURCE is set to 0x0 (transmitter). Otherwise it will do nothing.
+      - None
+      - A 32-bit value, ``[dly_19, dly_18, ..., dly_0, X, X, ..., X, trigger]``, that initiates a stimulus sequence if the
+        TRIGGERSOURCE is set to 0x0:
+
+        - ``dly_n`` : global delay for application of stimulus sequence in units
+          of sample periods.
+        - ``trigger``: When set to 0b1, trigger stimulation sequence
+          (subject to global delay). This bit is reset to 0 following application.
+
         Regardless, this register is automatically be reset to 0x0 immediately
         after writing to it.
+
+    * - 0x03
+      - TRIGGERARMED
+      - R/W
+      - Immediate
+      - 0x1
+      - None
+      - Writing 0x0 to this register will cause the device to ignore all trigger
+        inputs regardless of TRIGGERSOURCE. Writing 0x1 to this register will
+        cause the device to respect the trigger input specified by
+        TRIGGERSOURCE.
+
 
 Device To Host Data Frames
 ******************************************
