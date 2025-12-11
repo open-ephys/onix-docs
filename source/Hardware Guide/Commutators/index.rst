@@ -34,8 +34,8 @@ signals between the tether leading to the headstage and the coaxial cable
 leading to the PCIe host board while turning.
 
 In addition to untwisting the tether, the commutator can also play a role in
-managing the tether so it doesn't get in the animal's way and counterweight-ing
-the headstage. This is performed by hooking a thin elastic string to the hook on
+keeping the tether out of the animal's way and in counterweighing
+the headstage. This is done by hooking a thin elastic string to the hook on
 the bottom of the commutator gear. For more information on how to do this, visit
 the `Tether Management and Headstage Counterweight
 <https://open-ephys.github.io/commutator-docs/user-guide/tether-management_counterweight.html>`_
