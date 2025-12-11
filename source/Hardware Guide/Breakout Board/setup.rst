@@ -15,9 +15,8 @@ PCIe host is connected to a breakout board using the following connections:
    power to the Breakout Board.
 #. Headstage links (Required for headstages): A single MMCX coaxial cable is
    used for each headstage port.
-#. High speed clocks (Optional): A single MMCX caoxial cable is used for each
+#. High speed clocks (Optional): A single MMCX coaxial cable is used for each
    clock signal
-#. HARP (Optional): A 3.5mm audio jack
 #. Configuration (Optional): Micro USB used to update the breakout gateware.
 
 .. image:: /_static/images/breakout/breakout_host_connections_callouts.png
@@ -33,7 +32,7 @@ each of these signal lines are acquired.
 
 .. note:: There may be more IO present on the breakout board than is available
     on a particular host board. For instance, :ref:`pcie_host` has two coaxial
-    links, but the breakout board provides four. This is is by design. The breakout
+    links, but the v1.5beta breakout board provides four. This is is by design. The breakout
     is designed to be compatible with future host hardware.
 
 Reset Button
@@ -79,16 +78,13 @@ Plug in MMCX coaxial connections for headstage ports and clock signals.
 - Use the MMCX to MMCX cable to connect a headstage port on the
   :ref:`pcie_host` to the breakout board. A single cable is required for
   each headstage port.
-- Make sure that port letter (A, B, C, D) on the breakout matches the port
+- Make sure that port letter (A, B) on the breakout matches the port
   letter on the PCIe host.
 - If you are feeding the clock inputs/outputs from the controller through 
   the breakout board, make sure that the port number (0, 1, 2) on the breakout
-  board matches the port number on the PCIe host. Older 3D printed versions of 
+  board matches the port number on the PCIe host (0 In, 1 In, 2 Out). Older 3D printed versions of 
   the PCIe bracket label the clock ports as I\ :sub:`0`\, I\ :sub:`1`\, and O - 
-  these should connect to the breakout in the following respective order: 0, 1, 2.
-- Additional MMCX cables can be used to connect the optional clock IO ports
-  on the PCIe host board to the clock ports on the breakout board. These
-  are passive, 50-ohm transmission lines so the order does not matter.
+  these should connect to the breakout board ports 0, 1, 2, respectively.
 
 .. warning:: The MMCX connectors can be damaged if they are removed
   improperly. See :ref:`this link <mmcx_cable>` for information on how to
