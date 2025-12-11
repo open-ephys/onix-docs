@@ -109,7 +109,7 @@ Register Programming
       - R
       - When LOCK or PASS change
       - 0
-      - None 
+      - None
       - Link state
 
         * Bit 0: LOCK
@@ -123,7 +123,7 @@ Register Programming
       - None
       - Misc. options for the link device
 
-        * Bit 0: `0` Port auto-shutdown disabled `1` Port auto-shutdown enabled   
+        * Bit 0: `0` Port auto-shutdown disabled `1` Port auto-shutdown enabled
 
 .. _onidatasheet_fmc_link_control_d2h:
 
@@ -158,28 +158,28 @@ Each frame transmitted to the host is structured as follows:
 This device produces frames when triggered by the **CV**, **PP**, or **SL**
 bits. These are defined as follows:
 
-    CV
-      Codeword valid. Indicates that the Status Codeword field has valid data.
-      A frame is produced when this bit goes high. The codeword meaning is
-      hub-dependent. See hub documentation for definitions.
+CV
+    Codeword valid. Indicates that the Status Codeword field has valid data.
+    A frame is produced when this bit goes high. The codeword meaning is
+    hub-dependent. See hub documentation for definitions.
 
-    PP
-      Parity check pass. This bit reflects the state of the PASS pin on the
-      DS90UB9x4 deserializer.
+PP
+    Parity check pass. This bit reflects the state of the PASS pin on the
+    DS90UB9x4 deserializer.
 
-        - 0b0: One or more errors were detected in the received payload.
-        - 0b1: Error free transmission in forward channel operation.
+    - 0b0: One or more errors were detected in the received payload.
+    - 0b1: Error free transmission in forward channel operation.
 
-      A frame is produced whenever this bit changes state.
+    A frame is produced whenever this bit changes state.
 
-    SL
-      SERDES lock. This bit reflects the state of the LOCK pin on the DS90UB9x4
-      deserializer, which monitors the lock status of FPD-Link III channel.
+SL
+    SERDES lock. This bit reflects the state of the LOCK pin on the DS90UB9x4
+    deserializer, which monitors the lock status of FPD-Link III channel.
 
-        - 0b0: PLL is unlocked link is down.
-        - 0b1: PLL is locked, link is active.
+    - 0b0: PLL is unlocked link is down.
+    - 0b1: PLL is locked, link is active.
 
-      A frame is produced whenever this bit changes state.
+    A frame is produced whenever this bit changes state.
 
 Host To Device Data Frames
 ******************************************
