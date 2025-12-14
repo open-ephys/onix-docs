@@ -3,7 +3,7 @@
 RHS2116
 ###########################################
 :Authors: Jonathan P. Newman
-:Version: 1
+:Version: 3
 :IO: Frame Source, Register Access
 :ONIX ID: 31
 
@@ -239,11 +239,24 @@ waveforms.
           {bits: 6},
           {bits: 10, name: "Channel 15 DC Voltage", type: 5},
 
-          {bits: 16},
+          {bits: 16, name: "Recovery State", type: 6}
 
         ],
         config: {bits: 720, lanes: 23, vflip: true, hflip: true, fontsize: 11}
     }
+
+AC Voltage
+    AC-coupled, high-gain electrophysiology data array. Each ADC sample is an
+    16-bit, offset binary value
+
+DC Voltage
+    DC-coupled, low-gain amplifier data array for monitoring stimulation
+    waveforms. Each ADC sample is an 10-bit, offset binary value
+
+Recovery State
+    A 16-element bit mask indicating if a channel in stimulus recovery at the
+    time indicated by the Hub Clock Counter value in the frame. A value of 0b1
+    at index N indicates that channel N is currently in stimulus recovery mode.
 
 .. _onidatasheet_rhs2116_h2d:
 

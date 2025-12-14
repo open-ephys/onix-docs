@@ -101,17 +101,17 @@ will need to install `Microsoft Visual C++ Redistributable for Visual Studio
 
 .. _install_riffa:
 
-Install Device Driver
+Install RIFFA PCIe Driver
 ---------------------------------------
 
 .. warning:: Pre-built drivers target 64-bit Windows 10. Other targets will
     need to be compiled from source.
 
-#. Download the :ref:`latest riffa driver <riffa_driver_download>` and unzip
+#. Download the :ref:`latest RIFFA PCIe driver <riffa_driver_download>` and unzip
    the archive.
 #. In the extracted folder, right click the **riffa.inf** file.  Select
    **install** from the context menu.
-#. Open the start menu and type **device manager** and click to open. You shoul
+#. Open the start menu and type **device manager** and click to open. You should
    see **RIFFA** in the device tree.
 
    .. figure:: /_static/images/pcie-host-windows/package-manager-riffa.png
