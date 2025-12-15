@@ -28,7 +28,13 @@ Connectors used for headstage link:
 
 * PCIe host board: MMCX connectors
 * Breakout board: MMCX connectors (to link to PCIe host) & SMA connectors (to link to commutator or headstage).
-* Commutator: SMA connectors to link to both breakout board and headstage.
+* Commutator: SMA connectors to link to both breakout board and headstage. To
+  learn how to use an elastic string and the hook on the commutator gear to
+  counterweigh the headstage and keep the tether out of the
+  animal's way while it explores the behavioral arena, visit the `Tether
+  Management & Headstage Counterweight
+  <https://open-ephys.github.io/commutator-docs/user-guide/tether-management_counterweight.html>`_
+  page from the `Commutator Docs <https://open-ephys.github.io/commutator-docs/index.html>`_. 
 * The :ref:`headstage_64` & :ref:`headstage_neuropix1`:  Hirose X.FL-PR-SMT1-2(80) X.FL coaxial socket connector.
 
 
