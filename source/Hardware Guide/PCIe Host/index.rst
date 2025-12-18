@@ -25,5 +25,5 @@ equipment.
                 :doc:`../Headstages/headstage-neuropix-2e`,
                 :doc:`../Headstages/headstage-rhs2116`
                 
-.. figure:: /_static/images/pcie-host/pcie-host_nereid_fmc-host-1r4.jpg
+.. figure:: /_static/images/pcie-host/pcie-controller.jpg
     :align: center

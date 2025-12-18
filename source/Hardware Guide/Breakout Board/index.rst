@@ -27,10 +27,10 @@ Overview
 The **ONIX Breakout Board** allows bench access to the IO provided by the
 :ref:`pcie_host`.
 
-.. figure:: /_static/images/breakout/breakout_edited_callouts.png
+.. figure:: /_static/images/breakout/breakout_1r6_callouts.png
     :align: center
 
-    ONIX Breakout Board v1.5.
+    ONIX Breakout Board v1.6.
 
 Features
 -------------------------

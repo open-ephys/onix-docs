@@ -19,11 +19,7 @@ PCIe host is connected to a breakout board using the following connections:
    clock signal
 #. Configuration (Optional): Micro USB used to update the breakout gateware.
 
-.. image:: /_static/images/breakout/breakout_host_connections_callouts.png
-    :align: center
-    :width: 60%
-
-.. image:: /_static/images/breakout/bb_cables.jpg
+.. image:: /_static/images/breakout/bb_1r6_cables_callouts.png
     :align: center
     :width: 60%
 
@@ -32,8 +28,7 @@ each of these signal lines are acquired.
 
 .. note:: There may be more IO present on the breakout board than is available
     on a particular host board. For instance, :ref:`pcie_host` has two coaxial
-    links, but the v1.5beta breakout board provides four. This is is by design. The breakout
-    is designed to be compatible with future host hardware.
+    links, but the v1.5beta breakout board provides four.
 
 Reset Button
 ________________________

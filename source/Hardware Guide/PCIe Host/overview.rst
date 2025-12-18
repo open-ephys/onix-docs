@@ -11,7 +11,11 @@ provided by the `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 carrier board.
 
-.. figure:: /_static/images/pcie-host/host-board_edited_callouts.jpg   
+.. figure:: /_static/images/pcie-host/pcie-controller-callouts.png  
+    :align: center
+    :width: 500px
+
+.. figure:: /_static/images/pcie-host/pcie-controller_front_callouts.png
     :align: center
     :width: 500px
 
