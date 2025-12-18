@@ -21,7 +21,7 @@
 **ONIX** is a collection of `Open Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
 software for performing neuroscience experiments with freely moving animals. It
 is the successor to the original `Open Ephys <https://open-ephys.org>`__
-`Acquisition System <https://open-ephys.org/acquisition-system>`_ and
+`Acquisition Board <https://open-ephys.org/acq-board>`_ and
 significantly expands on its scope, performance, and compatibility with other
 tools.
 
