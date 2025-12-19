@@ -11,7 +11,11 @@ provided by the `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 carrier board.
 
-.. figure:: /_static/images/pcie-host/host-board_edited_callouts.jpg   
+.. figure:: /_static/images/pcie-host/pcie-controller-callouts.png  
+    :align: center
+    :width: 500px
+
+.. figure:: /_static/images/pcie-host/pcie-controller_front_callouts.png
     :align: center
     :width: 500px
 
@@ -21,6 +25,7 @@ carrier board.
   - 8x digital inputs
   - 8x digital outputs
   - 12x analog outputs or inputs (±10V)
+  - 2x clock inputs, 1x clock output
 
 - Multi-board synchronization and triggering to increase number of headstages
   and IO
