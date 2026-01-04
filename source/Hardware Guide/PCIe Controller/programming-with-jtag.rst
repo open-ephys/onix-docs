@@ -1,31 +1,31 @@
 :orphan:
 
-.. _pcie_host_program_over_jtag:
+.. _pcie_controller_program_over_jtag:
 
 .. toctree::
     :hidden:
     
-Programming a Blank PCIe Host (Windows)
-########################################
+Programming a Blank PCIe Controller (Windows)
+##############################################
 
-#. If you have not done so already, follow the steps on the :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
+#. If you have not done so already, follow the steps on the :ref:`Setup Guide for Windows <pcie_controller_setup_windows>` page.
 
 #. Download and install Vivado Lab Edition here: https://www.xilinx.com/support/download.html.
 
-#. Download **PCIe Host Bootloader**.
+#. Download **PCIe Controller Bootloader**.
 
-#. Download the most recent :ref:`pcie_host_image_download` that is compatible with your hardware
+#. Download the most recent :ref:`pcie_controller_image_download` that is compatible with your hardware
 
 #. Open Vivado and click open Hardware manager on splash screen
 
 #. Clock on "Tools" and select "Generate Memory Configuration File..."
 
-   .. figure:: /_static/images/pcie-host/vivado-generate-mem-config.PNG
+   .. figure:: /_static/images/pcie-controller/vivado-generate-mem-config.PNG
         :align: center
         :width: 50%
 
 #. Enter the following values into the form and click OK. This will generate an
-   .mcs file that can be flashed onto your PCIe host board.
+   .mcs file that can be flashed onto your PCIe Controller.
 
    - Format: MCS
    - Memory part: mt25ql128-spi-x1_x2_x4
@@ -35,7 +35,7 @@ Programming a Blank PCIe Host (Windows)
      normal image at address 0x0800000. Both with direction "up".
    - Every other option disabled
 
-   .. figure:: /_static/images/pcie-host/mcs-configuration.PNG
+   .. figure:: /_static/images/pcie-controller/mcs-configuration.PNG
         :align: center
 
    .. note:: To add the second, bit file, click the "plus" icon on the first
@@ -44,34 +44,34 @@ Programming a Blank PCIe Host (Windows)
 #. After generating the mcs file, plug in a `Xilinx Platform Cable
    II <https://www.xilinx.com/products/boards-and-kits/hw-usb-ii-g.html>`__ to a
    USB port on your computer. Then plug the other end into the JTAG connector
-   (red box in figure) on the PCIe host board.
+   (red box in figure) on the PCIe Controller.
 
-   .. figure:: /_static/images/pcie-host/nereid-jtag-programming.png
+   .. figure:: /_static/images/pcie-controller/nereid-jtag-programming.png
         :align: center
 
-   .. note:: If the host board is not already plugged into a PCIe slot, do so
+   .. note:: If the Controller is not already plugged into a PCIe slot, do so
       now and be sure to also be sure to plug in an ATX power connection (green
       box in figure).
 
 #. In the Hardware Manager, click Open Target and select "Auto Connect" to find
    the programmer and scan for the FPGA on the JTAG chain.
 
-   .. figure:: /_static/images/pcie-host/auto-connect.PNG
+   .. figure:: /_static/images/pcie-controller/auto-connect.PNG
         :align: center
         :width: 70%
 
 #. Once the FPGA is enumerated in the hardware manager, right click it and
    select "Add Configuration Memory Device..."
 
-   .. figure:: /_static/images/pcie-host/add-config-memory-device.PNG
+   .. figure:: /_static/images/pcie-controller/add-config-memory-device.PNG
         :align: center
         :width: 60%
 
 #. Search for "mt25ql128-spi-x1_x2_x4" in the "Memory Device" field and add it.
    Add the path to the .mcs file generated previously in the "Configuration
-   file" field. Click OK to flash the PCIe host board.
+   file" field. Click OK to flash the PCIe Controller.
 
-   .. figure:: /_static/images/pcie-host/program-with-mcs.PNG
+   .. figure:: /_static/images/pcie-controller/program-with-mcs.PNG
         :align: center
         :width: 50%
 
@@ -80,5 +80,5 @@ Programming a Blank PCIe Host (Windows)
 #. Open the Device Manager from the Windows Search Bar and you
    should see a RIFFA in there.
 
-#. After this, you will be able to quickly upgrade your PCIe Host over PCIe by
-   following the steps on the **pcie_host_gateware_drivers** page.
+#. After this, you will be able to quickly upgrade your PCIe Controller over PCIe by
+   following the steps on the **pcie_controller_gateware_drivers** page.

@@ -1,9 +1,9 @@
-.. _pcie_host_multiboard_sync:
+.. _pcie_controller_multiboard_sync:
 
 .. toctree::
     :hidden:
     
-Synchronizing Multiple PCIe Hosts
+Synchronizing Multiple PCIe Controllers
 ########################################
 
 .. todo:: Document

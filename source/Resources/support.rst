@@ -20,7 +20,7 @@ the appropriate repository:
     - `Headstage-64 <https://github.com/open-ephys/onix-headstage-64>`__
     - `Headstage Neuropixels-1.0f <https://github.com/open-ephys/onix-headstage-neuropix1>`__
     - `Headstage Neuropixels-1.0e <https://github.com/open-ephys/onix-headstage-neuropix1e>`__
-    - `PCIe Host Board <https://github.com/open-ephys/onix-fmc-host>`__
+    - `FMC Module <https://github.com/open-ephys/onix-fmc-host>`__
     - `Breakout <https://github.com/open-ephys/onix-breakout>`__
 
 You can also **ask questions** on the Open Ephys Google Group or Slack channel

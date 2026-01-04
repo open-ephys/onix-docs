@@ -80,7 +80,7 @@ to tens of milliseconds. This is a considerable duration for the brain, as it
 is notably longer than the average action potential duration of around 1 ms. On
 average, ONIX provides much shorter latencies, of around 150 microseconds, because:
 
-- ONIX is transfers data to the host computer without the CPU via DMA over PCIe.
+- ONIX transfers data to the host computer without the CPU via DMA over PCIe.
 - ONIX uses a custom device driver optimized for low latency.
 - The ONI API allows explicit control over a single parameter to governs the
   trade off between data latency and overall bandwidth.

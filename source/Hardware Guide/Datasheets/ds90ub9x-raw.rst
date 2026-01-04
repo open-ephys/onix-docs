@@ -6,7 +6,7 @@ DS90UB9X Raw Device
 :Version: 3
 :IO: Frame Source, Register Access
 :ONIX ID: 24
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
@@ -14,7 +14,7 @@ The **DS90UB9X Raw Device** can be used to receive raw data from and control
 `DS90UB9x <https://www.ti.com/product/DS90UB934-Q1>`__ SERDES pairs. This
 device is useful for acquiring data from instruments that use `DS90UB9x3
 <https://www.ti.com/product/DS90UB933-Q1>`__ serializers, which are physically
-compatible with ONIX host hardware, but do not implement :ref:`ONIX Serization
+compatible with ONIX Controller hardware, but do not implement :ref:`ONIX Serization
 protocol <serialization>`. For example, third party devices such as `UCLA
 Miniscope <http://miniscope.org/index.php/Main_Page>`__ and its derivatives.
 

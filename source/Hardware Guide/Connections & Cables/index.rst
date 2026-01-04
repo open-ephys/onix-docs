@@ -12,9 +12,9 @@ Connection types
 
 Headstage Link
 --------------------------------
-The headstage link allows fast data communication between an ONI compliant headstage and the PCIe host board. This connection is formed by a single coaxial cable for each attached headstage (or other ONI compliant hub, such as a UCLA Miniscope V4). This connection also provides power to the headstage from the PCIe host board.
+The headstage link allows fast data communication between an ONI compliant headstage and the PCIe Controller. This connection is formed by a single coaxial cable for each attached headstage (or other ONI compliant hub, such as a UCLA Miniscope V4). This connection also provides power to the headstage from the PCIe Controller.
 
-The headstage link can be formed directly between the host PCIe board and a headstage. Alternatively, a headstage link can include an active commutator and/or breakout board between the PCIe board and headstage.
+The headstage link can be formed directly between the PCIe Controller and a headstage. Alternatively, a headstage link can include an active commutator and/or breakout board between the PCIe board and headstage.
 
 .. image:: ../../_static/images/connections/headstage.png
   :align: center
@@ -26,9 +26,9 @@ Connectors used for headstage link:
   :align: center
   :width: 50%
 
-* PCIe host board: MMCX connectors
-* Breakout board: MMCX connectors (to link to PCIe host) & SMA connectors (to link to commutator or headstage).
-* Commutator: SMA connectors to link to both breakout board and headstage. To
+* PCIe Controller: MMCX connectors
+* Breakout Board: MMCX connectors (to link to PCIe Controller) & SMA connectors (to link to commutator or headstage).
+* Commutator: SMA connectors to link to both the Breakout Board and headstage. To
   learn how to use an elastic string and the hook on the commutator gear to
   counterweigh the headstage and keep the tether out of the
   animal's way while it explores the behavioral arena, visit the `Tether
@@ -46,7 +46,7 @@ Digital and Analog I/O
 
 * `High speed digital cable
   <https://multimedia.3m.com/mws/media/585365O/3mtm-shrunk-delta-ribbon-sdr-cable-assembly-ts2287.pdf>`_
-  to connect Host and Breakout Board.
+  to connect Controller and Breakout Board.
 
 Lighthouses
 --------------------------------
@@ -81,7 +81,7 @@ Cable List
           <div class="card-body flex-fill">
               <h5 class="gallery-card. card-header d-flex">Digital & Analog I/O Cable</h5>
               <p>- SDR to SDR 26 POS</p>
-              <p>- Breakout Board to PCIe Host, Digital and Analog I/O</p>
+              <p>- Breakout Board to PCIe Controller, Digital and Analog I/O</p>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ Cable List
             <div class="card-body flex-fill">
                 <h5 class="card-header">Headstage Link: Adaptor</h5>
                 <p>- SMA to MMCX</p>
-                <p>- Connects headstage tether to PCIe Host board</p>
+                <p>- Connects headstage tether to PCIe Controller</p>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ Cable List
             <div class="card-body flex-fill">
                 <h5 class="card-header">Headstage Link: MMCX cable</h5>
                 <p>- MMCX to MMCX </p>
-                <p>- PCIe Host to Breakout Board</p>
+                <p>- PCIe Controller to Breakout Board</p>
             </div>
           </div>
         </div>

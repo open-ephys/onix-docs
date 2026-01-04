@@ -11,7 +11,7 @@ ONIX consists of several hardware devices:
     :maxdepth: 1
     :hidden:
 
-    PCIe Host/index
+    PCIe Controller/index
     Breakout Board/index
     Headstages/index
     Miniscopes/index
@@ -21,33 +21,33 @@ ONIX consists of several hardware devices:
     Datasheets/index
     Connections & Cables/index
 
-:ref:`PCIe Host<pcie_host>`
+:ref:`ONIX Controller<pcie_controller>`
 -----------------------------------------
-The ONIX PCIe/FMC host device is the heart of ONIX. It provides the interface
+The ONIX Controller device is the heart of ONIX. It provides the interface
 between the acquisition computer and any attached headstages, as well as
 digital and analog in/outputs. Most acquisition systems communicate via USB,
 but this board sits directly in a PCIe slot in the acquisition computer. This
 greatly increases the speed of communication between ONIX and the computer,
 reducing closed-loop latencies.
 
-The host can also generate a very precise clock that is synchronized to its
+The controller can also generate a very precise clock that is synchronized to its
 hardware.
 
-:ref:`Breakout<breakout>`
+:ref:`ONIX Breakout<breakout>`
 -----------------------------------------
-The Breakout Board facilitates user access to the functionality of the host
-board. On the Breakout Board, the analog channels and digital lines of the host
-board are split out into individual connectors. This is where users can, for
-instance, connect external devices for acquisition and synchronisation. The
+The ONIX Breakout Board facilitates user access to the functionality of the
+controller. On the Breakout Board, the analog channels and digital lines of the
+controller are split out into individual connectors. This is where users can,
+for instance, connect external devices for acquisition and synchronization. The
 buttons can be user-configured to provide signals to ONIX when pressed.
 
-Headstages can be connected directly to the host, or with an SMA connection
-first to the Breakout Board and then to the host. The same can be done to
-access the host clock output.
+Headstages can be connected directly to the controller, or with an SMA
+connection first to the Breakout Board and then to the controller. The same can
+be done to access the controller's clock output.
 
 :ref:`Headstages<headstages>` & :ref:`Miniscopes<miniscopes>`
 --------------------------------------------------------------------
-ONIX headstages communicate with the host board through a coaxial cable, that
+ONIX headstages communicate with the controller through a coaxial cable, that
 can be kept very thin and light. Rather than just pre-amplifying data, ONIX
 headstages perform many tasks on the headstage itself. The 64-channel
 headstage, for instance, can locally drive an LED or provide current

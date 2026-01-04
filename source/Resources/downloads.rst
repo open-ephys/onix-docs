@@ -47,19 +47,19 @@ RIFFA PCIe Driver
      - Fix race condition in the RIFFA kernel driver for windows.
 
 
-PCIe Host Firmware
+PCIe Controller Firmware
 ----------------------------------------------
 
-.. note:: Please see :ref:`Updating PCIe Host Firmware
-   <pcie_host_firmware_update>` for instructions on how to use these files.
+.. note:: Please see :ref:`Updating PCIe Controller Firmware
+   <pcie_controller_firmware_update>` for instructions on how to use these files.
    When using mac or linux, you will need to compile the Updater software from
    `source <https://github.com/open-ephys/onix-gateware-field-updaters>`__.
 
-.. _pcie_host_updater_download:
+.. _pcie_controller_updater_download:
 
-PCIe Host Upload Tool
+PCIe Controller Upload Tool
 ______________________________________________
-Software for uploading PCIe Host firmware to PCIe Host hardware.
+Software for uploading PCIe Controller firmware to PCIe Controller hardware.
 
 .. list-table::
    :widths: 15 25 60
@@ -68,17 +68,17 @@ Software for uploading PCIe Host firmware to PCIe Host hardware.
    * - Version
      - Release Date
      - Release Notes
-   * - :download:`1.0.0 <../_static/downloads/onix-software-releases/onix-pcie-host-flash-tools-x64_v1.0.0.zip>`
+   * - :download:`1.0.0 <../_static/downloads/onix-software-releases/onix-pcie-controller-flash-tools-x64_v1.0.0.zip>`
      - 2022.11.27
      - Initial release.
 
-.. _pcie_host_image_download:
+.. _pcie_controller_image_download:
 
-PCIe Host Firmware Images
+PCIe Controller Firmware Images
 ______________________________________________
 
 .. warning::
-   Make sure that the host firmware image you download matches the PCIe Host
+   Make sure that the controller firmware image you download matches the PCIe Controller
    Hardware version you have as shown in the table below. An incorrect firmware
    version will not report any error while updating but will cause failures
    during operation.
@@ -86,18 +86,18 @@ ______________________________________________
 .. table::
     :widths: 30 70
 
-    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | | PCIe Host Hardware version                                      | | Latest PCIe Host                                                                                             |
-    | | per :ref:`oni-repl <controller_version_difference>`             | | firmware version                                                                                             |
-    +===================================================================+================================================================================================================+
-    | Hardware Revision 1.4                                             | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
-    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.5                                             | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
-    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
-    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6                                             | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
-    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
-    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+    | | PCIe Controller Hardware version                                | | Latest PCIe Controller                                                                                             |
+    | | per :ref:`oni-repl <controller_version_difference>`             | | firmware version                                                                                                   |
+    +===================================================================+======================================================================================================================+
+    | Hardware Revision 1.4                                             | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                               |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.5                                             | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-controller-v2.0-update-revD.bin>` |
+    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                             |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+    | Hardware Revision 1.6                                             | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-controller-v2.0-update-revF.bin>` |
+    |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                             |
+    +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 
 .. .. list-table::
@@ -143,8 +143,8 @@ Breakout Board Firmware Images
 ______________________________________________
 
 .. warning::
-   Make sure that the breakout board firmware image you download matches the
-   breakout board hardware version you have as shown in the table below. An
+   Make sure that the breakout firmware image you download matches the
+   breakout hardware version you have as shown in the table below. An
    incorrect firmware version will not report any error while updating but will
    cause failures during operation.
 

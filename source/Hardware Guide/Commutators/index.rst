@@ -31,7 +31,7 @@ via its USB interface, and the motor in the commutator will turn when the
 animal does. A high-quality radio-frequency rotary joint inside the commutator
 maintains electrical connectivity for both power and high-frequency data
 signals between the tether leading to the headstage and the coaxial cable
-leading to the PCIe host board while turning.
+leading to the PCIe Controller while turning.
 
 In addition to untwisting the tether, the commutator can also play a role in
 keeping the tether out of the animal's way and in counterweighing

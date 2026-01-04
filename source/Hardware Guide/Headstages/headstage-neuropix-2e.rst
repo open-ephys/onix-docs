@@ -17,7 +17,7 @@ targeting `Neuropixels 2.0 probes <https://www.neuropixels.org/>`__.
 .. csv-table::
    :widths: 18, 80
 
-   "*PCIe host firmware compatibility*", "v 1.0 and above"
+   "*PCIe Controller firmware compatibility*", "v 1.0 and above"
 
 Coaxial Link
 ***********************************

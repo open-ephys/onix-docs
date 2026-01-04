@@ -13,7 +13,7 @@ data IO.
     updating-breakout-firmware
 
 :Design Repository: https://github.com/open-ephys/onix-breakout
-:Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
+:Compatibility: :ref:`pcie_controller`, :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`,
                 :doc:`../Headstages/headstage-neuropix-1e`, 
                 :doc:`../Headstages/headstage-neuropix-2e`,
@@ -25,7 +25,7 @@ data IO.
 Overview
 #########################
 The **ONIX Breakout Board** allows bench access to the IO provided by the
-:ref:`pcie_host`.
+:ref:`pcie_controller`.
 
 .. figure:: /_static/images/breakout/breakout_1r6_callouts.png
     :align: center
@@ -37,7 +37,7 @@ Features
 The Breakout Board provides access to the following IO:
 
 - 2x headstage port feed-throughs, each with a power switch.
-- 3x, passive, high-speed clock feed-throughs. These can be used to connect to the two clock inputs and one clock output on the PCIe controller.
+- 3x, passive, high-speed clock feed-throughs. These can be used to connect to the two clock inputs and one clock output on the PCIe Controller.
 - 12x passive, ESD-protected, analog feed-throughs.
 - BNC, ribbon, or direct wire access to 12 analog inputs or outputs. These have a ±10V range and are sampled at 100 kHz.
 - Ribbon cable or direct, wire-access to 8 digital outputs and 8 digital

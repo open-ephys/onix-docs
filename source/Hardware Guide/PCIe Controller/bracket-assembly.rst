@@ -1,6 +1,6 @@
 :orphan:
 
-.. _pcie_host_bracket_assembly:
+.. _pcie_controller_bracket_assembly:
 
 .. toctree::
     :hidden:
@@ -8,8 +8,8 @@
 PCIe Bracket Assembly
 ########################################
 
-The :ref:`pcie_host` host has a 3D printed front panel/bracket. This exposes
-the PCIe Host IO and allows the device to be mounted in a standard PCIe slot.
+The :ref:`pcie_controller` has a 3D printed front panel/bracket. This exposes
+the PCIe Controller IO and allows the device to be mounted in a standard PCIe slot.
 
 Materials
 -----------------------------------------
@@ -47,7 +47,7 @@ Tools and consumables
    - Soldering iron
    - Heat gun
 
-Insert the PCIe Host Module
+Insert the PCIe Controller Module
 ---------------------------------------
 #. Get the required parts.
 

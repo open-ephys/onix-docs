@@ -13,7 +13,7 @@ will dissipate excess heat and it may be damaged.
 Setting Headstage Voltage
 --------------------------
 The headstage voltage is set using :ref:`onidatasheet_fmc_link_control` devices
-on the :ref:`pcie_host`.  Each headstage has a minimum and maximum voltage
+on the :ref:`pcie_controller`.  Each headstage has a minimum and maximum voltage
 requirement (e.g. 5.3 to  5.7 Volts for :ref:`headstage_64`) in order for
 circuits on the board to function properly. If the voltage is far too low, the
 host computer will not be able to detect the headstage. A borderline

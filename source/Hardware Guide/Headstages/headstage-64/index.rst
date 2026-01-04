@@ -16,7 +16,7 @@ using :ref:`omnetics_adapter_64` or similar.
 .. warning:: There are multiple headstage hardware revisions. The revision
    number is printed on the PCB. You can use the `compatibility matrix
    <https://docs.google.com/spreadsheets/d/1LwEOlOkL_HJKeTmNJFVIlItzVeCZDzOt_9Up_rA36Ic/edit?usp=sharing>`__
-   to find host hardware for your headstage.
+   to find compatible hardware for your headstage.
 
 .. toctree::
     :maxdepth: 1

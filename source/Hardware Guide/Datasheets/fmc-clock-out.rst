@@ -1,16 +1,16 @@
 .. _onidatasheet_fmc_clock_out:
 
-FMC Host Clock Output Device
+FMC Controller Clock Output Device
 ###########################################
 :Authors: Jonathan P. Newman
 :Version: 1
 :IO: Register Access
 :ONIX ID: 20
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
-The **FMC Host Clock Output** device generates a clock output that is
+The **FMC Controller Clock Output** device generates a clock output that is
 synchronized to a local hardware clock. It has very fast rising edges and a
 high-current output that can drive 50 ohm coaxial cable.
 

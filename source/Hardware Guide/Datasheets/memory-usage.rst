@@ -6,7 +6,7 @@ Memory Usage Monitor
 :Version: 1
 :IO: Frame Source, Register Access
 :ONIX ID: 28
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
