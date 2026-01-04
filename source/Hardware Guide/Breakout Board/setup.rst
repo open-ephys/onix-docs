@@ -75,11 +75,12 @@ Plug in MMCX coaxial connections for headstage ports and clock signals.
   each headstage port.
 - Make sure that port letter (A, B) on the breakout matches the port
   letter on the PCIe host.
-- If you are feeding the clock inputs/outputs from the controller through 
-  the breakout board, make sure that the port number (0, 1, 2) on the breakout
-  board matches the port number on the PCIe host (0 In, 1 In, 2 Out). Older 3D printed versions of 
-  the PCIe bracket label the clock ports as I\ :sub:`0`\, I\ :sub:`1`\, and O - 
-  these should connect to the breakout board ports 0, 1, 2, respectively.
+- If you are feeding the clock inputs/outputs from the controller through the
+  breakout board, make sure that the port number on the breakout board (0, 1, 2)
+  matches the port number on the PCIe host (0 In, 1 In, 2 Out). Older 3D printed
+  versions of the PCIe bracket label the clock ports as I\ :sub:`0`\, I\
+  :sub:`1`\, and O - these should connect to the breakout board ports 0, 1, 2,
+  respectively. Clock port 0 is unused. 
 
 .. warning:: The MMCX connectors can be damaged if they are removed
   improperly. See :ref:`this link <mmcx_cable>` for information on how to
