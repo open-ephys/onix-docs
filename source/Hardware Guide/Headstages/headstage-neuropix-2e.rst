@@ -5,6 +5,9 @@ Neuropixels-2.0e Headstage
 The ONIX **Neuropixels-2.0e Headstage** is a serialized, multifunction headstage
 targeting `Neuropixels 2.0 probes <https://www.neuropixels.org/>`__.
 
+:Design Repository: https://github.com/open-ephys/onix-neuropixels-2e
+:Compatibility: :doc:`../PCIe Host/index`, :doc:`../Breakout Board/index`
+
 .. image:: /_static/images/headstage-neuropix2e/headstage-np2e-with-probes.png
     :align: center
     :alt: ONIX Headstage-Neuropixels-2.0e

@@ -8,6 +8,9 @@ microdrives <https://open-ephys.org/shuttledrive>`_. Alternatively it can be
 used with other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc)
 using :ref:`omnetics_adapter_64` or similar.
 
+:Design Repository: https://github.com/open-ephys/onix-headtsage-64
+:Compatibility: :doc:`../../PCIe Host/index`, :doc:`../../Breakout Board/index`
+
 .. image:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
     :align: center
     :height: 200px

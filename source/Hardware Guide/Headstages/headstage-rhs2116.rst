@@ -2,12 +2,13 @@
 RHS2116 Headstage
 #################
 
+:Design Repository: https://github.com/open-ephys/onix-headstage-rhs2116
+:Compatibility: :doc:`../PCIe Host/index`, :doc:`../Breakout Board/index`
+
 .. image:: /_static/images/rhs2116/rhs2116.webp
     :align: center
     :height: 300px
     :alt: ONIX rhs2116
-
-|
 
 The RHS2116 Headstage is a serialized headstage for small animals with 32
 bi-direcional channels which each can be used to deliver electrical stimuli.
