@@ -15,7 +15,7 @@
     :alt: ONIX Logo
     :align: center
 
-.. figure:: /_static/images/onix-hw-summary.jpg
+.. figure:: /_static/images/onix-hw-main.jpg
     :class: with-border
 
 **ONIX** is a collection of `Open Neuro Interface <https://github.com/open-ephys/ONI>`_-compliant hardware and
