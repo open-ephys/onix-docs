@@ -4,7 +4,7 @@
     :hidden:
     
 Updating PCIe Controller Gateware in Windows
-########################################
+#############################################
 
 #. If you have not done so already, follow the steps on the
    :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
