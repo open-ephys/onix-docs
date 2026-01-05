@@ -102,7 +102,7 @@ headstage-64 has four `SteamVR <https://store.steampowered.com/steamvr>`_
 receivers for 3D position tracking.
 
 .. warning:: These receivers are compatible with both V1 and V2 ("index" branded)
-    basestations. Although the firmware we supply for the headstage can be used
+    basestations. Although the gateware we supply for the headstage can be used
     to obtain 3D position from kinds of basestation, we consider V1
     basestations deprecated and cannot guarantee future functionality.
 

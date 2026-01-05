@@ -38,7 +38,7 @@ hardware to perform the following:
    However, its simplicity and lack of abstraction compared to
    :ref:`bonsai_onixref` make it useful as an example of how to use `liboni
    <https://open-ephys.github.io/ONI/v1.0/api/liboni/index.html>`__ and for quickly
-   examining hardware state and hub firmware versions.
+   examining hardware state and hub gateware versions.
 
 .. code-block:: none
 
