@@ -3,7 +3,6 @@ RHS2116 Headstage
 #################
 
 :Design Repository: https://github.com/open-ephys/onix-headstage-rhs2116
-:Compatibility: :doc:`../PCIe Host/index`, :doc:`../Breakout Board/index`
 
 .. image:: /_static/images/rhs2116/rhs2116.webp
     :align: center

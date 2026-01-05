@@ -6,7 +6,6 @@ The ONIX **Neuropixels-1.0f Headstage** is a serialized, multifunction headstage
 targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/>`__.
 
 :Design Repository: https://github.com/open-ephys/onix-neuropixels-1f
-:Compatibility: :doc:`../PCIe Host/index`, :doc:`../Breakout Board/index`
 
 .. image:: /_static/images/headstage-neuropix1/headstage-neuropix1_1r2_side-with-probes.jpg
     :align: center
