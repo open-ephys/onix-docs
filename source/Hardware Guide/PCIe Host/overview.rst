@@ -25,7 +25,7 @@ carrier board.
   - 8x digital inputs
   - 8x digital outputs
   - 12x analog outputs or inputs (±10V)
-  - 2x clock inputs, 1x clock output
+  - 1x clock input, 1x clock output
 
 - Multi-board synchronization and triggering to increase number of headstages
   and IO
