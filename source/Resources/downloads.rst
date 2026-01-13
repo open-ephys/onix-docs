@@ -47,11 +47,11 @@ RIFFA PCIe Driver
      - Fix race condition in the RIFFA kernel driver for windows.
 
 
-PCIe Host Firmware
+PCIe Host Gateware
 ----------------------------------------------
 
-.. note:: Please see :ref:`Updating PCIe Host Firmware
-   <pcie_host_firmware_update>` for instructions on how to use these files.
+.. note:: Please see :ref:`Updating PCIe Host Gateware
+   <pcie_host_gateware_update>` for instructions on how to use these files.
    When using mac or linux, you will need to compile the Updater software from
    `source <https://github.com/open-ephys/onix-gateware-field-updaters>`__.
 
@@ -59,7 +59,7 @@ PCIe Host Firmware
 
 PCIe Host Upload Tool
 ______________________________________________
-Software for uploading PCIe Host firmware to PCIe Host hardware.
+Software for uploading PCIe Host gateware to PCIe Host hardware.
 
 .. list-table::
    :widths: 15 25 60
@@ -74,12 +74,12 @@ Software for uploading PCIe Host firmware to PCIe Host hardware.
 
 .. _pcie_host_image_download:
 
-PCIe Host Firmware Images
+PCIe Host Gateware Images
 ______________________________________________
 
 .. warning::
-   Make sure that the host firmware image you download matches the PCIe Host
-   Hardware version you have as shown in the table below. An incorrect firmware
+   Make sure that the host gateware image you download matches the PCIe Host
+   Hardware version you have as shown in the table below. An incorrect gateware
    version will not report any error while updating but will cause failures
    during operation.
 
@@ -88,14 +88,14 @@ ______________________________________________
 
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
     | | PCIe Host Hardware version                                      | | Latest PCIe Host                                                                                             |
-    | | per :ref:`oni-repl <controller_version_difference>`             | | firmware version                                                                                             |
+    | | per :ref:`oni-repl <controller_version_difference>`             | | gateware version                                                                                             |
     +===================================================================+================================================================================================================+
     | Hardware Revision 1.4                                             | Deprecated. Please :ref:`get in touch <support>` so we can assist you.                                         |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.5                                             | | :download:`Firmware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
+    | Hardware Revision 1.5                                             | | :download:`Gateware version 2.0D <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revD.bin>` |
     |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6                                             | | :download:`Firmware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
+    | Hardware Revision 1.6                                             | | :download:`Gateware version 2.0F <../_static/downloads/onix-gateware-images/onix-host-v2.0-update-revF.bin>` |
     |                                                                   | | Requires OpenEphys.Onix1 v0.6+ or Open Ephys GUI v1.0+                                                       |
     +-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
@@ -112,10 +112,10 @@ ______________________________________________
 ..      - Remove unnecessary breakout board PLL reset during context initialization which could cause LEDs to turn off.
 
 
-Breakout Board Firmware
+Breakout Board Gateware
 ----------------------------------------------
 
-.. note:: Please see :ref:`Updating Breakout Board Firmware <breakout_firmware_update>`
+.. note:: Please see :ref:`Updating Breakout Board Gateware <breakout_gateware_update>`
     for instructions on how to use these files. When
     using mac or linux, you will need to compile from `source
     <https://github.com/open-ephys/onix-gateware-field-updaters>`__.
@@ -124,7 +124,7 @@ Breakout Board Firmware
 
 Breakout Board Upload Tool
 ______________________________________________
-Software for uploading Breakout Board firmware to Breakout Board hardware.
+Software for uploading Breakout Board gateware to Breakout Board hardware.
 
 .. list-table::
    :widths: 15 25 60
@@ -139,13 +139,13 @@ Software for uploading Breakout Board firmware to Breakout Board hardware.
 
 .. _breakout_image_download:
 
-Breakout Board Firmware Images
+Breakout Board Gateware Images
 ______________________________________________
 
 .. warning::
-   Make sure that the breakout board firmware image you download matches the
+   Make sure that the breakout board gateware image you download matches the
    breakout board hardware version you have as shown in the table below. An
-   incorrect firmware version will not report any error while updating but will
+   incorrect gateware version will not report any error while updating but will
    cause failures during operation.
 
 .. table::
@@ -153,10 +153,10 @@ ______________________________________________
 
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
     | | Breakout Board Hardware version                            | | Latest Breakout Board                                                                                     |
-    | | per :ref:`visual inspection <breakout_version_difference>` | | firmware version                                                                                          |
+    | | per :ref:`visual inspection <breakout_version_difference>` | | gateware version                                                                                          |
     +==============================================================+=============================================================================================================+
-    | Hardware Revision 1.5  (four headstage ports)                | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
+    | Hardware Revision 1.5  (four headstage ports)                | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-gw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6  (two headstage ports)                 | :download:`Firmware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
+    | Hardware Revision 1.6  (two headstage ports)                 | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-gw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 

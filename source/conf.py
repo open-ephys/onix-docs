@@ -155,7 +155,8 @@ linkcheck_ignore = [
     'https://www.intel.com/*',
     'https://www.analog.com/*',
     'https://www.xilinx.com/*',
-    'https://white-matter.com/*'
+    'https://white-matter.com/*',
+    'https://www.omnetics.com/wp-content/uploads/2022/01/A79025-001.pdf'
 ]
 
 # NB: Allow this permanent redirect for a Visual Studio package

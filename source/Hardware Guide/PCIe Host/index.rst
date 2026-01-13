@@ -15,7 +15,7 @@ equipment.
 
     overview
     setup-windows
-    updating-firmware
+    updating-gateware
     multi-board-sync
 
 :Design Repository: https://github.com/open-ephys/onix-fmc-host

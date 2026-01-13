@@ -1,9 +1,9 @@
-.. _breakout_firmware_update:
+.. _breakout_gateware_update:
 
 .. toctree::
     :hidden:
     
-Updating Breakout Board Firmware in Windows
+Updating Breakout Board Gateware in Windows
 ###############################################
 
 .. warning::
@@ -13,7 +13,7 @@ Updating Breakout Board Firmware in Windows
 
 #. Disconnect the breakout board from the PC by disconnecting the digital and analog I/O grey SDR cable.
 
-#. Connect a USB-microUSB from the PC you will use to perform the firmware update to the Config port on the side of the breakout board.
+#. Connect a USB-microUSB from the PC you will use to perform the gateware update to the Config port on the side of the breakout board.
 
 ..  _breakout_version_difference:
 
@@ -31,14 +31,14 @@ Updating Breakout Board Firmware in Windows
 
         Breakout Board version 1.6 has two headstage ports.
 
-#. Download the latest :ref:`firmware image <breakout_image_download>` for your hardware version. 
+#. Download the latest :ref:`gateware image <breakout_image_download>` for your hardware version. 
 
    .. warning::
-         Make sure that the host firmware image you download matches the Breakout Board hardware version
-         you verified in the previous step. An incorrect firmware version will not report any error while updating but will cause failures during operation.
+         Make sure that the host gateware image you download matches the Breakout Board hardware version
+         you verified in the previous step. An incorrect gateware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`breakout_updater_download` utilities package and unzip
-   it. Navigate to this folder using a console. Place the firmware image you downloaded in the previous step in the same folder.
+   it. Navigate to this folder using a console. Place the gateware image you downloaded in the previous step in the same folder.
 
 #. Press the onboard FPGA reset button (using a thin tool that fits the reset hole) to put the device into bootloader mode. The onboard FPGA status LED will breathe to indicate it is ready to be programmed.
 
@@ -46,13 +46,13 @@ Updating Breakout Board Firmware in Windows
         :align: center
         :width: 40%
 
-#. From the console, use the following command with the correct name of the firmware image you downloaded to program the device: 
+#. From the console, use the following command with the correct name of the gateware image you downloaded to program the device: 
 
    .. code-block:: console
 
-        $ tinyprog.exe -p breakout_firmware_image_filename.bit
+        $ tinyprog.exe -p breakout_gateware_image_filename.bit
 
-#. Check that the breakout board firmware was programmed successfully
+#. Check that the breakout board gateware was programmed successfully
 
    .. figure:: /_static/images/breakout/tinyprog_success.jpg
         :align: center

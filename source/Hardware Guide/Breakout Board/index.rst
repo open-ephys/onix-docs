@@ -10,7 +10,7 @@ data IO.
     :hidden:
 
     setup
-    updating-breakout-firmware
+    updating-breakout-gateware
 
 :Design Repository: https://github.com/open-ephys/onix-breakout
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
@@ -37,7 +37,7 @@ Features
 The Breakout Board provides access to the following IO:
 
 - 2x headstage port feed-throughs, each with a power switch.
-- 3x, passive, high-speed clock feed-throughs. These can be used to connect to the two clock inputs and one clock output on the PCIe controller.
+- 2x passive, high-speed clock feed-throughs. These can be used to connect to the clock input and clock output on the PCIe controller.
 - 12x passive, ESD-protected, analog feed-throughs.
 - BNC, ribbon, or direct wire access to 12 analog inputs or outputs. These have a ±10V range and are sampled at 100 kHz.
 - Ribbon cable or direct, wire-access to 8 digital outputs and 8 digital
