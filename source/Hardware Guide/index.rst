@@ -33,17 +33,17 @@ reducing closed-loop latencies.
 The host can also generate a very precise clock that is synchronized to its
 hardware.
 
-:ref:`Breakout<breakout>`
+:ref:`Breakout Board<breakout>`
 -----------------------------------------
 The Breakout Board facilitates user access to the functionality of the host
 board. On the Breakout Board, the analog channels and digital lines of the host
 board are split out into individual connectors. This is where users can, for
-instance, connect external devices for acquisition and synchronisation. The
+instance, connect external devices for acquisition and synchronization. The
 buttons can be user-configured to provide signals to ONIX when pressed.
 
 Headstages can be connected directly to the host, or with an SMA connection
 first to the Breakout Board and then to the host. The same can be done to
-access the host clock output.
+access the host clock input or output.
 
 :ref:`Headstages<headstages>` & :ref:`Miniscopes<miniscopes>`
 --------------------------------------------------------------------
