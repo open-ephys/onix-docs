@@ -10,7 +10,7 @@ data IO.
     :hidden:
 
     setup
-    updating-breakout-firmware
+    updating-breakout-gateware
 
 :Design Repository: https://github.com/open-ephys/onix-breakout
 :Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,

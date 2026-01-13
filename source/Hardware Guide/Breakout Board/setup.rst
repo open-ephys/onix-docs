@@ -135,4 +135,4 @@ implemented using an open-source toolchain (`Yosys
 <https://yosyshq.net/yosys/>`__ and `NextPnR
 <https://github.com/YosysHQ/nextpnr>`__).
 
-Follow the instructions in :ref:`Updating Breakout Board Firmware <breakout_firmware_update>` to update the breakout board firmware to the latest version.
+Follow the instructions in :ref:`Updating Breakout Board Gateware <breakout_gateware_update>` to update the breakout board gateware to the latest version.

@@ -29,7 +29,7 @@ data streams prior to serialization. For instance, :ref:`headstage_64` and
 :ref:`headstage_neuropix1` use an `Intel MAX10 FPGA
 <https://www.intel.com/content/www/us/en/products/details/fpga/max/10.html>`_.
 The exact FPGA is not important because every ONI-compliant headstage is uses
-very similar gateware (FPGA-based firmware) that performs three major functions
+very similar gateware (FPGA-based gateware) that performs three major functions
 
 1. **Local Hardware Control** Provides hardware controllers (SPI, I2C, etc),
    timing, and control logic for each of the sensors and actuators on the
@@ -153,7 +153,7 @@ purposes in ONIX hardware.
 
 #. Device configuration via register writing and reading. e.g. setting and
    bandwidth of the filters on the Intan chip.
-#. Flashing the headstage FPGA's non-volatile memory with updated firmware.
+#. Flashing the headstage FPGA's non-volatile memory with updated gateware.
 
 The `ONI Specification <https://github.com/open-ephys/ONI>`__ describes a
 register programming protocol that can be implemented using a 32-bit `wishbone

@@ -1,10 +1,10 @@
-.. _pcie_host_firmware_update:
+.. _pcie_host_gateware_update:
 
 .. toctree::
     :hidden:
     
-Updating Firmware in Windows
-########################################
+Updating PCIe Controller Gateware in Windows
+#############################################
 
 #. If you have not done so already, follow the steps on the
    :ref:`Setup Guide for Windows <pcie_host_setup_windows>` page.
@@ -32,12 +32,12 @@ Updating Firmware in Windows
    .. figure:: /_static/images/pcie-host/oni-repl-host-hardware-version.png
         :align: center
 
-#. Download the latest :ref:`PCIe Host Firmware Image <pcie_host_image_download>` for your hardware
+#. Download the latest :ref:`PCIe Host gateware image <pcie_host_image_download>` for your hardware
    version. 
 
    .. warning::
-         Make sure that the host firmware image you download matches the PCIe Host Hardware version
-         you verified in the previous step. An incorrect firmware version will not report any error while updating but will cause failures during operation.
+         Make sure that the host gateware image you download matches the PCIe Host Hardware version
+         you verified in the previous step. An incorrect gateware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`pcie_host_updater_download` utilities package and unzip
    it. Navigate to this folder using a console.
@@ -93,7 +93,7 @@ Updating Firmware in Windows
         :align: center
 
 #. Repeat steps 7 and 8 to reenable the PCIe Host with the updated
-   firmware.  
+   gateware.  
 
-#. To verify the firmware update, repeat step 3. The firmware version of the
+#. To verify the gateware update, repeat step 3. The gateware version of the
    PCIe Host should now match the one downloaded in step 4.
