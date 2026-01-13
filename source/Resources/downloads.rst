@@ -155,8 +155,8 @@ ______________________________________________
     | | Breakout Board Hardware version                            | | Latest Breakout Board                                                                                     |
     | | per :ref:`visual inspection <breakout_version_difference>` | | gateware version                                                                                          |
     +==============================================================+=============================================================================================================+
-    | Hardware Revision 1.5  (four headstage ports)                | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-fw1.3.bin>`      |
+    | Hardware Revision 1.5  (four headstage ports)                | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.5-gw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-    | Hardware Revision 1.6  (two headstage ports)                 | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-fw1.3.bin>`      |
+    | Hardware Revision 1.6  (two headstage ports)                 | :download:`Gateware version 1.3 <../_static/downloads/onix-gateware-images/breakout-rev1.6-gw1.3.bin>`      |
     +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
