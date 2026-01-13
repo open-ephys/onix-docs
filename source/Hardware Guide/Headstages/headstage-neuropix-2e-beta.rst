@@ -5,6 +5,8 @@ Neuropixels-2.0eBeta Headstage
 The ONIX **Neuropixels-2.0eBeta Headstage** is a serialized, multifunction headstage
 targeting `Neuropixels 2.0 beta probes <https://www.neuropixels.org/>`__.
 
+:Design Repository: https://github.com/open-ephys/onix-headstage-neuropix2e-beta
+
 .. image:: /_static/images/headstage-neuropix2eBeta/headstage-np2eBeta.jpg
     :align: center
     :alt: ONIX Headstage-Neuropixels-2.0eBeta
