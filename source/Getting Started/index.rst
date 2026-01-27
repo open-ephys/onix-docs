@@ -60,7 +60,7 @@ Setting up your system
    - Breakout board to Commutator cable (headstage link; SMA to SMA)
    - Lighthouse synchronization cable (3.5 mm Stereo Jack Plug to Plug)
 
-#. Install the PCIe Controller and configure the Host PC by
+#. Install the PCIe Controller and configure the host computer by
    following the :ref:`Setup Guide for Windows<pcie_controller_setup_windows>`.
 #. :ref:`Mount and connect the 3D-Tracking Lighthouses <lighthouse_setup>`
 #. :ref:`Mount and connect the commutator <commutators>`

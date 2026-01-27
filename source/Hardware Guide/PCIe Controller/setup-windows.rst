@@ -6,7 +6,7 @@
 Setup Guide for Windows
 ########################################
 
-Insert the PCIe Controller Module
+Insert the PCIe Controller
 ---------------------------------------
 #. Power off the computer.
 
@@ -23,7 +23,7 @@ Insert the PCIe Controller Module
 
 #. Boot the computer.
 
-#. The RGB LED in the center of the module should be blue.
+#. The RGB LED in the center of the controller should be blue.
 
    .. note:: The RGB LED has three color states.
 

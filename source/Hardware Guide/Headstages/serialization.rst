@@ -7,9 +7,9 @@ logic for controlling and streaming from arbitrary configurations of head-borne
 devices using a unified, bidirectional data stream. In this way, data can be
 sent to the :ref:`pcie_controller` using modern serializer/deserializer
 (SERDES) chips that vastly reduce the amount of wiring required for
-communication.
+communication between the headstage and the controller.
 
-ONIX coaxial headstages use a coaxial serializer for communication. This chip
+ONIX headstages use a coaxial serializer for communication. This chip
 provides power and bidirectional data transmission to and from from the
 headstage using a single coaxial cable (one signal wire and an outer shield).
 The coaxial cable is the only external connection to the headstage. Power (DC),
