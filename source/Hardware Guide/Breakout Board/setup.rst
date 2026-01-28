@@ -3,12 +3,12 @@
 Breakout Board Guide
 #########################
 
-.. warning:: Always make sure the PC is powered off **before** connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Host.
+.. warning:: Always make sure the PC is powered off **before** connecting or disconnecting the Breakout Board. Neglecting to do this will damage the PCIe Controller.
 
 Setup
 -------------------------
-The Breakout Board provides access to signals to and from the PCIe host. Each
-PCIe host is connected to a breakout board using the following connections:
+The Breakout Board provides access to signals to and from the PCIe Controller. Each
+controller is connected to a breakout board using the following connections:
 
 #. Digital and analog I/O (Required for breakout board operation): A single
    shrunk delta ribbon (SDR) cable is used for all auxiliary IO and provide
@@ -23,11 +23,11 @@ PCIe host is connected to a breakout board using the following connections:
     :align: center
     :width: 60%
 
-Refer to the :ref:`pcie_host` documentation for a detailed description of how
+Refer to the :ref:`pcie_controller` documentation for a detailed description of how
 each of these signal lines are acquired.
 
-.. note:: There may be more IO present on the breakout board than is available
-    on a particular host board. For instance, :ref:`pcie_host` has two coaxial
+..  note:: There may be more headstage ports present on the breakout board than are available
+    on a particular controller. For instance, :ref:`pcie_controller` has two coaxial
     links, but the v1.5beta breakout board provides four.
 
 Reset Button
@@ -51,11 +51,10 @@ Plug in the SDR cable for analog and digital I/O.
     :align: center
 
 - Use the SDR to SDR 26 POS cable to connect the Breakout Board to the PCIe
-  host board.
+  Controller.
 - Though one end of this cable is marked with 'camera', the cable is
   symmetrical for our purposes, so it can be connected in either direction.
-- The Breakout Board will power on soon after the SDR cable connected to an
-  active host
+- The Breakout Board will power on soon after the host computer is powered.
 
   .. attention:: Some boards have a bug in the power on sequence that means a
      reset is required before the board will work. This has been fixed in later
@@ -71,16 +70,17 @@ Plug in MMCX coaxial connections for headstage ports and clock signals.
    :align: center
 
 - Use the MMCX to MMCX cable to connect a headstage port on the
-  :ref:`pcie_host` to the breakout board. A single cable is required for
+  :ref:`pcie_controller` to the breakout board. A single cable is required for
   each headstage port.
 - Make sure that port letter (A, B) on the breakout matches the port
-  letter on the PCIe host.
+  letter on the PCIe Controller.
 - If you are feeding the clock inputs/outputs from the controller through the
   breakout board, make sure that the port number on the breakout board (0, 1, 2)
-  matches the port number on the PCIe host (0 In, 1 In, 2 Out). Clock port 0 is unused so it is not necessary to connect it. Older 3D printed
-  versions of the PCIe bracket label the clock ports as I\ :sub:`0`\, I\
-  :sub:`1`\, and O - these are meant to connect to the breakout board ports 0, 1, 2,
-  respectively. 
+  matches the port number on the PCIe Controller (0 In, 1 In, 2 Out). Clock port 0 is unused so it is not necessary to connect it. Older 3D
+  printed versions of the PCIe bracket label the clock ports as I\ :sub:`0`\, I\
+  :sub:`1`\, and O - these should connect to the breakout board ports 0, 1, 2,
+  respectively.
+
 
 .. warning:: The MMCX connectors can be damaged if they are removed
   improperly. See :ref:`this link <mmcx_cable>` for information on how to
@@ -104,7 +104,7 @@ LED color on the breakout board.
 Buttons
 _________________________
 Buttons can be used to log various experimental events and turn on and off the
-indication LEDs. The button state is sent with digital data to the PCIe Host.
+indication LEDs. The button state is sent with digital data to the PCIe Controller.
 Pressing a button sends a single event per change in button state. Holding a
 button will not result in repeat presses as a keyboard would. Each button sets
 one bit in a 6-bit word. For exampled
@@ -113,7 +113,7 @@ one bit in a 6-bit word. For exampled
 :100001:    Button 0 and button 5 pressed (integer value 33)
 :111111:    All buttons pressed (integer value 63)
 
-Additional, pressing button 0  will toggle indication LED power. This allows
+Additionally, pressing button 0 will toggle indication LED power. This allows
 all LEDs to be completely turned off for light-sensitive experiments.
 
 .. figure:: /_static/images/breakout/buttons_labelled.png
@@ -121,7 +121,7 @@ all LEDs to be completely turned off for light-sensitive experiments.
     :align: center
 
 
-    Numbers show integer value transmitted to host from pressing each. The
+    Numbers show integer value transmitted to the controller from pressing each. The
     first button also controls the illumination state of the indication LEDs on
     the breakout board.
 

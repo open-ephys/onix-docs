@@ -6,11 +6,11 @@ FMC Link Controller
 :Version: 2
 :IO: Frame Source, Register Access
 :ONIX ID: 23
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
-The **FMC Host Link Controller** is used to control and monitor DS90UB9x-based
+The **FMC Link Controller** is used to control and monitor DS90UB9x-based
 serialized connections to hubs connected to a host such as headstages and
 miniscopes. It can control the voltage provided to those hubs and receives RF
 lock, CRC error, and other diagnostic information.

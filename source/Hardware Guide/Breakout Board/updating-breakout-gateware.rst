@@ -7,7 +7,7 @@ Updating Breakout Board Gateware in Windows
 ###############################################
 
 .. warning::
-     Connecting or disconnecting the breakout board while the PC is on causes damage to the FMChost.
+     Connecting or disconnecting the breakout board while the PC is on damages the Controller.
    
 #. Power off the PC to which the breakout board is connected.
 
@@ -34,7 +34,7 @@ Updating Breakout Board Gateware in Windows
 #. Download the latest :ref:`gateware image <breakout_image_download>` for your hardware version. 
 
    .. warning::
-         Make sure that the host gateware image you download matches the Breakout Board hardware version
+         Make sure that the Breakout Board gateware image you download matches the Breakout Board hardware version
          you verified in the previous step. An incorrect gateware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`breakout_updater_download` utilities package and unzip

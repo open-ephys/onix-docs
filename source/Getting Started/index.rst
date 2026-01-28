@@ -41,7 +41,7 @@ Setting up your system
     
    **Hardware**
     
-   - :ref:`pcie_host`
+   - :ref:`pcie_controller`
    - Acquisition computer
    - :ref:`breakout`
    - ONI-compliant device (such as a :ref:`headstage <headstages>` or
@@ -52,19 +52,19 @@ Setting up your system
 
    **Cables** :ref:`(All cables are listed here)<cable_list>`.
    
-   - PCIe host board to Breakout board (headstage link) cable (MMCX to MMCX)
-   - PCIe host board to Breakout board (Digital and Analog I/O link) cable (SDR to
+   - PCIe Controller to Breakout Board (headstage link) cable (MMCX to MMCX)
+   - PCIe Controller to Breakout Board (Digital and Analog I/O link) cable (SDR to
      SDR 26 POS)
    - Headstage Tethers, coaxial, 0.38 mm OD
    - Commutator power & data cable (USB A to Micro B)
    - Breakout board to Commutator cable (headstage link; SMA to SMA)
    - Lighthouse synchronization cable (3.5 mm Stereo Jack Plug to Plug)
 
-#. Install the PCIe host board and configure the acquisition computer by
-   following the :ref:`Setup Guide for Windows<pcie_host_setup_windows>`.
+#. Install the PCIe Controller and configure the host computer by
+   following the :ref:`Setup Guide for Windows<pcie_controller_setup_windows>`.
 #. :ref:`Mount and connect the 3D-Tracking Lighthouses <lighthouse_setup>`
 #. :ref:`Mount and connect the commutator <commutators>`
-#. :ref:`Connect the Breakout Board to the PCIe host board <breakout_setup>`.
+#. :ref:`Connect the Breakout Board to the PCIe Controller <breakout_setup>`.
 #. Connect a headstage, Miniscope V4 or other ONI compliant recording device by
    :ref:`following these steps <headstage_setup>`. Be sure to read :ref:`this
    page on the voltage supplied to the headstage <tether_voltage>` to prevent
@@ -73,4 +73,4 @@ Setting up your system
 Using ONIX
 --------------------------------
 Have a look at the :ref:`software_guide` page to explore
-software options and for intefacing with ONIX hardware.
+software options and for interfacing with ONIX hardware.

@@ -1,21 +1,21 @@
-.. _pcie_host_overview:
+.. _pcie_controller_overview:
 
 .. toctree::
     :hidden:
     
 Overview
 #########################
-The **ONIX PCIe Host** combines the `ONIX FMC Host Module
+The **ONIX PCIe Controller** combines the `ONIX FMC Module
 <https://github.com/open-ephys/onix-fmc-host>`__ and the PCIe-connectivity
 provided by the `Numato Nereid
 <https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
 carrier board.
 
-.. figure:: /_static/images/pcie-host/pcie-controller-callouts.png  
+.. figure:: /_static/images/pcie-controller/pcie-controller-callouts.png  
     :align: center
     :width: 500px
 
-.. figure:: /_static/images/pcie-host/pcie-controller_front_callouts.png
+.. figure:: /_static/images/pcie-controller/pcie-controller_front_callouts.png
     :align: center
     :width: 500px
 
@@ -32,10 +32,10 @@ carrier board.
 - Low-latency closed-loop capabilities (headstage dependent;
   typically < 100 µs)
 
-Host Module
+FMC Module
 -------------------------
-The `ONIX FMC Host <https://github.com/open-ephys/onix-fmc-host>`__ module
-provides a host interface for serialized headstages and miniscopes, as well as
+The `ONIX FMC Module` 
+provides an interface for serialized headstages and miniscopes, as well as
 general purpose analog and digital IO. It is a VITA-57.1 compliant mezzanine
 board that uses high pin-count FMC connector. In combination with a base FPGA
 board, it provides host PC communication.
@@ -53,14 +53,13 @@ board, it provides host PC communication.
 
 Numato Nereid
 -------------------------
-The `Numato Nereid
-<https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/>`__
+The `Numato Nereid`
 is a VITA-57 compliant high-density FMC carrier module, which is compatible
-with the ONIX FMC Host Board. It has a Kintex-7 FPGA, PCIe bus (Gen2 4x), and 4
+with the ONIX FMC board. It has a Kintex-7 FPGA, PCIe bus (Gen2 4x), and 4
 GB of RAM for PC-independent data buffering. Our gateware bypasses this RAM
 when its not needed for maximum close-loop performance.
 
-.. figure:: /_static/images/pcie-host/nereid-callouts.png
+.. figure:: /_static/images/pcie-controller/nereid-callouts.png
     :align: center
 
     The Numato Nereid Kintex-7 PCIe/FMC carrier module (`image source

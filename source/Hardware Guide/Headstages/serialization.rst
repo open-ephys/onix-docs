@@ -5,11 +5,11 @@ Coaxial Data Serialization & Power
 The major advantage of ONI-compliant headstages is that they contain onboard
 logic for controlling and streaming from arbitrary configurations of head-borne
 devices using a unified, bidirectional data stream. In this way, data can be
-sent to host hardware (see :ref:`pcie_host`) using modern serializer/deserialzer
+sent to the :ref:`pcie_controller` using modern serializer/deserializer
 (SERDES) chips that vastly reduce the amount of wiring required for
-communication.
+communication between the headstage and the controller.
 
-ONIX coaxial headstages use a coaxial serializer for host communication. This chip
+ONIX headstages use a coaxial serializer for communication. This chip
 provides power and bidirectional data transmission to and from from the
 headstage using a single coaxial cable (one signal wire and an outer shield).
 The coaxial cable is the only external connection to the headstage. Power (DC),
@@ -21,15 +21,16 @@ with low loss in the GHz frequency range can be used to make this connection
 accomplished using specialized micro-coax cable that is extremely thin and
 flexible. We generally use cables that are 150-300 μm in diameter.
 
-.. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
+.. note:: Have a look at the :ref:`tethers` page for more details on micro-coax
     headstage tethers
 
-ONIX headstages use an FPGA to control peripheral devices and combine their
-data streams prior to serialization. For instance, :ref:`headstage_64` and
+ONIX headstages use an FPGA to control peripheral devices and combine their data
+streams prior to serialization. For instance, :ref:`headstage_64` and
 :ref:`headstage_neuropix1` use an `Intel MAX10 FPGA
 <https://www.intel.com/content/www/us/en/products/details/fpga/max/10.html>`_.
-The exact FPGA is not important because every ONI-compliant headstage is uses
-very similar gateware (FPGA-based gateware) that performs three major functions
+The exact FPGA is not important because every ONI-compliant headstage uses very
+similar gateware (gateware is FPGAs as firmware is to microcontrollers) that
+performs three major functions
 
 1. **Local Hardware Control** Provides hardware controllers (SPI, I2C, etc),
    timing, and control logic for each of the sensors and actuators on the
@@ -44,7 +45,7 @@ very similar gateware (FPGA-based gateware) that performs three major functions
 Power
 =======================
 As mentioned in the previous section, power is DC-coupled into the coaxial link
-at the host and recovered at the headstage via a second, inductive DC path.
+at the controller and recovered at the headstage via a second, inductive DC path.
 This "T-network" provides a low impedance path for the DC portion of the signal
 (power) and rejects the RF components so that they are preserved for
 communication between the SERDES pair.
@@ -55,10 +56,10 @@ communication between the SERDES pair.
     LC-network for combining power and data on the coaxial cable.
 
 Its important to note that this circuit is completely passive. Therefore
-whatever voltage is supplied at the host side will end up at the input to the
+whatever voltage is supplied at the controller side will end up at the input to the
 headstage. Care must be taken to make sure this voltage is appropriate.
 
-.. warning:: Do not exceed the maximaum voltage at the coaxial input to the
+.. warning:: Do not exceed the maximum voltage at the coaxial input to the
     headstage. Make sure you make this measurement at the headstage to account for
     a potential voltage drop in the tether. Exceeding this voltage can permanently
     damage some headstages (:ref:`headstage_64` in particular because it
@@ -69,18 +70,18 @@ wire can accumulate, resulting in a significant voltage drop across the cable.
 
 .. note:: Long, thin tethers can have a significant series resistance that
     results in a voltage drop across the length of the tether. This may have to be
-    compensated for by tuning the host input voltage to account for the drop. ONIX
-    host boards have this ability (e.g. see :ref:`pcie_host`).
+    compensated for by tuning the controller input voltage to account for the drop. ONIX
+    controllers have this ability (e.g. see :ref:`pcie_controller`).
 
 DS90UB933/4 Communication Protocols
 ========================================================
 The `DS90UB933 <https://www.ti.com/product/DS90UB933-Q1>`_/`DS90UB934
 <https://www.ti.com/product/DS90UB934-Q1>`_ are a coaxial SERDES pair used on
-several ONIX headstages and host modules:
+several ONIX headstages and controller modules:
 
 - :ref:`headstage_64` (DS90UB933 Serializer)
-- :ref:`headstage_neuropix1` (DS90UB933 Serilizer)
-- :ref:`pcie_host` (DS90UB934 Deserilizer)
+- :ref:`headstage_neuropix1` (DS90UB933 Serializer)
+- :ref:`pcie_controller` (DS90UB934 Deserializer)
 
 along with the UCLA Miniscope and its derivatives. This section describes how this
 SERDES pair is used for control of and communication with headstages.
@@ -123,7 +124,7 @@ where the signal lines are defined as follows:
 :``data``: The 12-bit data bus containing device ID, CRC value, or device data
            depending on the states of ``hsync`` and ``vsync``
 
-The ``ID`` is the device index within the host device table, ``frame`` is a
+The ``ID`` is the device index within the device table, ``frame`` is a
 device's frame data, and ``CRC`` is a `CRC-12
 <https://en.wikipedia.org/wiki/Cyclic_redundancy_check>`__ of the ``ID`` and
 ``frame`` elements.  See the  `ONI Specification
@@ -131,10 +132,10 @@ device's frame data, and ``CRC`` is a `CRC-12
 elements meaning.
 
 These signal lines are present on the FPGA-side of both the serializer and
-deserializer, prior to headstage serialization and after host deserialization,
+deserializer, prior to headstage serialization and after deserialization,
 respectively. This means that the serializer link is effectively "invisible"
-from the host's perspective, and the headstage can be treated as if it was just
-a module on the host itself.
+from the controller's perspective, and the headstage can be treated as if it was just
+a module connected to the controller itself.
 
 During serialization, data are transmitted over the coaxial cable
 using an RF-encoding scheme called `FDP Link III

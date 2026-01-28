@@ -17,8 +17,8 @@ Usage Warnings
 Breakout Board
 --------------------------------
 
-.. warning:: Connecting or disconnecting the :ref:`breakout` while the PC is on
-    can damage to the :ref:`pcie_host`. For more details, see
+..  warning:: Connecting or disconnecting the :ref:`breakout` while the PC is on
+    can damage the :ref:`pcie_controller`. For more details, see
     :ref:`breakout_setup`. **Power off the PC before connecting/disconnecting the
     breakout board.**
 

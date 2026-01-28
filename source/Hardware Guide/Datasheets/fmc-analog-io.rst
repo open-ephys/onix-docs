@@ -1,16 +1,16 @@
 .. _onidatasheet_fmc_analog_io:
 
-FMC Host Analog IO Device
+FMC Controller Analog IO Device
 ###########################################
 :Authors: Jonathan P. Newman
 :Version: 1
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 22
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
-The **FMC Host Analog IO** device sends and receives data to/from 12 analog
+The **FMC Controller Analog IO** device sends and receives data to/from 12 analog
 IOs. It is based on three chips:
 
 - `AD7617 <https://www.analog.com/en/products/ad7617.html>`__ 14-bit ADC/DAS

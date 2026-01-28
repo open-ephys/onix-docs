@@ -9,7 +9,7 @@ MiniscopeV4BNO055Device
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 :ref:`onidatasheet_ds90ub9x_raw` device and configures it to allow control over
 `UCLA Miniscope V4
-<http://miniscope.org/index.php/Overview_of_System_Components>`__'s onboard BNO055 inertial measurement unit.
+<https://oldwiki.miniscope.org/index.php/Overview_of_System_Components>`__'s onboard BNO055 inertial measurement unit.
 
 :Inputs:    None
 :Outputs:   A single ``MiniscopeV4BNO055DataFrame`` that is polled by software

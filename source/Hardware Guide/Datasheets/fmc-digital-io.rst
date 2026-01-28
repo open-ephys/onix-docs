@@ -1,16 +1,16 @@
 .. _onidatasheet_fmc_digital_io:
 
-FMC Host Digital IO Device
+FMC Controller Digital IO Device
 ###########################################
 :Authors: Jonathan P. Newman, Aarón Cuevas López
 :Version: 2
 :IO: Frame Source, Frame Sink, Register Access
 :ONIX ID: 18
-:ONIX Hubs: :ref:`pcie_host`
+:ONIX Hubs: :ref:`pcie_controller`
 
 Description
 *******************************************
-The **FMC Host Digital IO** device sends and receives digital data to and from
+The **FMC Controller Digital IO** device sends and receives digital data to and from
 :ref:`breakout` and allows control over its display state. This includes:
 
 - 8x 5-volt tolerate digital inputs sampled at 10 MHz
@@ -22,9 +22,9 @@ The **FMC Host Digital IO** device sends and receives digital data to and from
 Digital communication with the :ref:`breakout` occurs using a simple
 serialization protocol.
 
-Breakout to Host Serialization
+Breakout to Controller Serialization
 ------------------------------------------
-The breakout to host serialization protocol is as follows:
+The breakout to Controller serialization protocol is as follows:
 
 .. wavedrom::
 
@@ -39,7 +39,7 @@ The breakout to host serialization protocol is as follows:
     ],
     config: { hscale: 1},
     head: {
-        text:'Breakout to Host Serialization Protocol',
+        text:'Breakout to Controller Serialization Protocol',
         tick:0,
     },
     }
@@ -70,9 +70,9 @@ Pnn
 A clock recovery circuit is required at the receiver to generate ``clk`` from
 ``sclk`` in order to sample the ``dat`` lines.
 
-Host to Breakout Serialization
+Controller to Breakout Serialization
 ------------------------------------------
-The host to breakout serialization protocol is as follows:
+The Controller to breakout serialization protocol is as follows:
 
 .. wavedrom::
 
@@ -86,7 +86,7 @@ The host to breakout serialization protocol is as follows:
     ],
     config: { hscale: 1},
     head: {
-        text:'Host to Breakout Serialization Protocol',
+        text:'Controller to Breakout Serialization Protocol',
         tick:0,
     },
     }
@@ -132,17 +132,17 @@ SW
 
     which are defined as follows:
 
-    - Acq. Running: Host hardware run state. 0 = not running, 1 = running
-    - Acq. Reset Done: Host reset state. 0 = reset not complete, 1 = reset
+    - Acq. Running: Controller hardware run state. 0 = not running, 1 = running
+    - Acq. Reset Done: Controller reset state. 0 = reset not complete, 1 = reset
       complete
     - Reserved: NA
-    - LED Level: 4 bit register for general LED brighness. 0 = dimmest, 16 =
+    - LED Level: 4 bit register for general LED brightness. 0 = dimmest, 16 =
       brightest
     - LED Mode: 2 bit register for LED mode. 0 = all off, 1 = only
       power/running, 2 = power/running, pll, harp, 3 = all on
     - Port X Status: 2 bit register describing the headstage port state. 00:
       power off, 01: power on, 10: locked, 11: device map good.
-    - Analog IO Dir.: 12 bit register describing the direcitonality of each
+    - Analog IO Dir.: 12 bit register describing the directionality of each
       of the analog inputs. 0 = input, 1 = output.
     - HARP Config.: 2 bit register for possible future harp configuration.
     - GPIO Dir.: 16 bit register for possible future digital io

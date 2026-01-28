@@ -1,10 +1,10 @@
-.. _pcie_host:
+.. _pcie_controller:
 
-PCIe Host
+PCIe Controller
 =========================================
 This device provides `PCIe
 <https://en.wikipedia.org/wiki/PCI_Express>`__-based communication
-with a single `ONIX FMC Host Module
+with a single `ONIX FMC Module
 <https://github.com/open-ephys/onix-fmc-host>`__ and allows
 sub-millisecond closed-loop IO with the brain and auxiliary lab
 equipment.
@@ -25,5 +25,5 @@ equipment.
                 :doc:`../Headstages/headstage-neuropix-2e`,
                 :doc:`../Headstages/headstage-rhs2116`
                 
-.. figure:: /_static/images/pcie-host/pcie-controller.jpg
+.. figure:: /_static/images/pcie-controller/pcie-controller.jpg
     :align: center

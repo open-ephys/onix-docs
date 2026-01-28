@@ -62,7 +62,7 @@ to use it.
 
 .. important:: Every Bonsai workflow must include at least a single
     :ref:`bonsai_onicontext` which manages a single device table. If multiple
-    pieces of host acquisition hardware (e.g. multiple :ref:`pcie_host`) are
+    pieces of host acquisition hardware (e.g. multiple :ref:`pcie_controller`) are
     present in a single computer, then each will need its own
     :ref:`bonsai_onicontext` to manage it.
 
@@ -140,7 +140,7 @@ with a synchronization cable.
 .. important:: Only the acquisition start trigger is shared from Sources to
     Listeners. The acquisition clock may or may not be shared depending on the
     type of host hardware being used. For example, if all hardware consists of
-    :ref:`PCIe Hosts <pcie_host>` on the same motherboard, then both start
+    :ref:`PCIe Hosts <pcie_controller>` on the same motherboard, then both start
     trigger and acquisition clocks will be shared and synchronization ed.
     Multiple USB hosts will only share a start trigger and the acquisition
     clocks will drift over time.

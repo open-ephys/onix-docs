@@ -94,12 +94,12 @@ index 0) and a single headstage (starting at device index 256).
           |Dev. idx            |ID     |ver.   |size   |size   |Desc.
           +--------------------+-------+-------+-------+-------+---------------------
        00 |00000: 0x00.0x00    |12     |1      |8      |0      |Heartbeat
-       01 |00001: 0x00.0x01    |23     |1      |10     |0      |Open Ephys FMC Host Board coaxial headstage link control circuit
-       02 |00002: 0x00.0x02    |23     |1      |10     |0      |Open Ephys FMC Host Board coaxial headstage link control circuit
+       01 |00001: 0x00.0x01    |23     |1      |10     |0      |Open Ephys FMC Controller coaxial headstage link control circuit
+       02 |00002: 0x00.0x02    |23     |1      |10     |0      |Open Ephys FMC Controller coaxial headstage link control circuit
        03 |00003: 0x00.0x03    |7      |1      |12     |0      |32-bit digital input port
        04 |00004: 0x00.0x04    |0      |0      |0      |0      |Placeholder device: neither generates or accepts data
-       05 |00005: 0x00.0x05    |20     |1      |0      |0      |Open Ephys FMC Host Board rev. 1.3 clock output subcircuit
-       06 |00006: 0x00.0x06    |22     |1      |32     |24     |Open Ephys FMC Host Board rev. 1.3 analog IO subcircuit
+       05 |00005: 0x00.0x05    |20     |1      |0      |0      |Open Ephys FMC Controller rev. 1.3 clock output subcircuit
+       06 |00006: 0x00.0x06    |22     |1      |32     |24     |Open Ephys FMC Controller rev. 1.3 analog IO subcircuit
        07 |00007: 0x00.0x07    |18     |1      |12     |4      |Open Ephys Breakout Board rev. 1.3 digital and user IO
        08 |00008: 0x00.0x08    |0      |0      |0      |0      |Placeholder device: neither generates or accepts data
        09 |00009: 0x00.0x09    |0      |0      |0      |0      |Placeholder device: neither generates or accepts data

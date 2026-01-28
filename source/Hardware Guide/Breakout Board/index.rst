@@ -13,7 +13,7 @@ data IO.
     updating-breakout-gateware
 
 :Design Repository: https://github.com/open-ephys/onix-breakout
-:Compatibility: :ref:`pcie_host`, :ref:`headstage_64`,
+:Compatibility: :ref:`pcie_controller`, :ref:`headstage_64`,
                 :ref:`headstage_neuropix1`, :ref:`miniscopes`,
                 :doc:`../Headstages/headstage-neuropix-1e`, 
                 :doc:`../Headstages/headstage-neuropix-2e`,
@@ -25,7 +25,7 @@ data IO.
 Overview
 #########################
 The **ONIX Breakout Board** allows bench access to the IO provided by the
-:ref:`pcie_host`.
+:ref:`pcie_controller`.
 
 .. figure:: /_static/images/breakout/breakout_1r6_callouts.png
     :align: center
