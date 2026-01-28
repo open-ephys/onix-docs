@@ -21,15 +21,16 @@ with low loss in the GHz frequency range can be used to make this connection
 accomplished using specialized micro-coax cable that is extremely thin and
 flexible. We generally use cables that are 150-300 μm in diameter.
 
-.. note:: Have a look at the :ref:`tethers` page for more detials on mirco-coax
+.. note:: Have a look at the :ref:`tethers` page for more details on micro-coax
     headstage tethers
 
-ONIX headstages use an FPGA to control peripheral devices and combine their
-data streams prior to serialization. For instance, :ref:`headstage_64` and
+ONIX headstages use an FPGA to control peripheral devices and combine their data
+streams prior to serialization. For instance, :ref:`headstage_64` and
 :ref:`headstage_neuropix1` use an `Intel MAX10 FPGA
 <https://www.intel.com/content/www/us/en/products/details/fpga/max/10.html>`_.
-The exact FPGA is not important because every ONI-compliant headstage is uses
-very similar gateware (FPGA-based firmware) that performs three major functions
+The exact FPGA is not important because every ONI-compliant headstage uses very
+similar gateware (gateware is FPGAs as firmware is to microcontrollers) that
+performs three major functions
 
 1. **Local Hardware Control** Provides hardware controllers (SPI, I2C, etc),
    timing, and control logic for each of the sensors and actuators on the
@@ -153,7 +154,7 @@ purposes in ONIX hardware.
 
 #. Device configuration via register writing and reading. e.g. setting and
    bandwidth of the filters on the Intan chip.
-#. Flashing the headstage FPGA's non-volatile memory with updated firmware.
+#. Flashing the headstage FPGA's non-volatile memory with updated gateware.
 
 The `ONI Specification <https://github.com/open-ephys/ONI>`__ describes a
 register programming protocol that can be implemented using a 32-bit `wishbone

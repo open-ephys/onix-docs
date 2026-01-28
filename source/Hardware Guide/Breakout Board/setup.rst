@@ -54,7 +54,7 @@ Plug in the SDR cable for analog and digital I/O.
   Controller.
 - Though one end of this cable is marked with 'camera', the cable is
   symmetrical for our purposes, so it can be connected in either direction.
-- The Breakout Board will power on soon after the host PC is powered.
+- The Breakout Board will power on soon after the host computer is powered.
 
   .. attention:: Some boards have a bug in the power on sequence that means a
      reset is required before the board will work. This has been fixed in later
@@ -74,11 +74,13 @@ Plug in MMCX coaxial connections for headstage ports and clock signals.
   each headstage port.
 - Make sure that port letter (A, B) on the breakout matches the port
   letter on the PCIe Controller.
-- If you are feeding the clock inputs/outputs from the controller through 
-  the breakout board, make sure that the port number (0, 1, 2) on the breakout
-  board matches the port number on the PCIe Controller (0 In, 1 In, 2 Out). Older 3D printed versions of 
-  the PCIe bracket label the clock ports as I\ :sub:`0`\, I\ :sub:`1`\, and O - 
-  these should connect to the breakout board ports 0, 1, 2, respectively.
+- If you are feeding the clock inputs/outputs from the controller through the
+  breakout board, make sure that the port number on the breakout board (0, 1, 2)
+  matches the port number on the PCIe Controller (0 In, 1 In, 2 Out). Clock port 0 is unused so it is not necessary to connect it. Older 3D
+  printed versions of the PCIe bracket label the clock ports as I\ :sub:`0`\, I\
+  :sub:`1`\, and O - these should connect to the breakout board ports 0, 1, 2,
+  respectively.
+
 
 .. warning:: The MMCX connectors can be damaged if they are removed
   improperly. See :ref:`this link <mmcx_cable>` for information on how to
@@ -133,4 +135,4 @@ implemented using an open-source toolchain (`Yosys
 <https://yosyshq.net/yosys/>`__ and `NextPnR
 <https://github.com/YosysHQ/nextpnr>`__).
 
-Follow the instructions in :ref:`Updating Breakout Board Firmware <breakout_firmware_update>` to update the breakout board firmware to the latest version.
+Follow the instructions in :ref:`Updating Breakout Board Gateware <breakout_gateware_update>` to update the breakout board gateware to the latest version.

@@ -8,6 +8,8 @@ microdrives <https://open-ephys.org/shuttledrive>`_. Alternatively it can be
 used with other passive probes (e.g. silicon arrays, EEG/ECOG arrays, etc)
 using :ref:`omnetics_adapter_64` or similar.
 
+:Design Repository: https://github.com/open-ephys/onix-headstage-64
+
 .. image:: /_static/images/headstage-64/headstage-64_1r3_tether_short.jpg
     :align: center
     :height: 200px
@@ -102,7 +104,7 @@ headstage-64 has four `SteamVR <https://store.steampowered.com/steamvr>`_
 receivers for 3D position tracking.
 
 .. warning:: These receivers are compatible with both V1 and V2 ("index" branded)
-    basestations. Although the firmware we supply for the headstage can be used
+    basestations. Although the gateware we supply for the headstage can be used
     to obtain 3D position from kinds of basestation, we consider V1
     basestations deprecated and cannot guarantee future functionality.
 

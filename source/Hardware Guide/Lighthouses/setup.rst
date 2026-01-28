@@ -85,7 +85,7 @@ Setup
               <p>4.	Power port</p>
               <p>5.	Channel button</p>
               <p>6.	Sync cable port (optional)</p>
-              <p>7.	Micro-USB port (for firmware updates)</p>
+              <p>7.	Micro-USB port (for gateware updates)</p>
               </ul>
         </div>
       </div>

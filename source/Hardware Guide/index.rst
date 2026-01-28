@@ -33,7 +33,7 @@ reducing closed-loop latencies.
 The controller can also generate a very precise clock that is synchronized to its
 hardware.
 
-:ref:`ONIX Breakout<breakout>`
+:ref:`ONIX Breakout Board<breakout>`
 -----------------------------------------
 The ONIX Breakout Board facilitates user access to the functionality of the
 controller. On the Breakout Board, the analog channels and digital lines of the
@@ -41,9 +41,9 @@ controller are split out into individual connectors. This is where users can,
 for instance, connect external devices for acquisition and synchronization. The
 buttons can be user-configured to provide signals to ONIX when pressed.
 
-Headstages can be connected directly to the controller, or with an SMA
-connection first to the Breakout Board and then to the controller. The same can
-be done to access the controller's clock output.
+Headstages can be connected directly to the controller, or with an SMA connection
+first to the Breakout Board and then to the controller. The same can be done to
+access the controller's clock input or clock output.
 
 :ref:`Headstages<headstages>` & :ref:`Miniscopes<miniscopes>`
 --------------------------------------------------------------------

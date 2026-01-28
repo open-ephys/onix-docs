@@ -5,6 +5,8 @@ Neuropixels-1.0e Headstage
 The ONIX **Neuropixels-1.0e Headstage** is a serialized, multifunction headstage
 targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/>`__.
 
+:Design Repository: https://github.com/open-ephys/onix-headstage-neuropix1e
+
 .. image:: /_static/images/headstage-neuropix1e/headstage-np1e-with-probe.webp
     :align: center
     :alt: ONIX Headstage-Neuropixels-1.0e
@@ -17,7 +19,7 @@ targeting `Neuropixels 1.0 probes <https://www.neuropixels.org/>`__.
 .. csv-table::
    :widths: 18, 80
 
-   "*PCIe Controller firmware compatibility*", "v 1.0 and above"
+   "*PCIe Controller gateware compatibility*", "v 1.0 and above"
 
 Coaxial Link
 ***********************************
