@@ -21,9 +21,9 @@ ONIX consists of several hardware devices:
     Datasheets/index
     Connections & Cables/index
 
-:ref:`ONIX Controller<pcie_controller>`
+:ref:`ONIX PCIe Controller<pcie_controller>`
 -----------------------------------------
-The ONIX Controller is the heart of ONIX. It provides the interface
+The ONIX PCIe Controller is the heart of ONIX. It provides the interface
 between the acquisition computer and any attached headstages, as well as
 digital and analog in/outputs. Most acquisition systems communicate via USB,
 but this board sits directly in a PCIe slot in the acquisition computer. This
