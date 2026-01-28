@@ -16,7 +16,7 @@ device is useful for acquiring data from instruments that use `DS90UB9x3
 <https://www.ti.com/product/DS90UB933-Q1>`__ serializers, which are physically
 compatible with ONIX Controller hardware, but do not implement :ref:`ONIX Serization
 protocol <serialization>`. For example, third party devices such as `UCLA
-Miniscope <http://miniscope.org/index.php/Main_Page>`__ and its derivatives.
+Miniscope <https://oldwiki.miniscope.org/index.php/Main_Page>`__ and its derivatives.
 
 Register Programming
 *******************************************

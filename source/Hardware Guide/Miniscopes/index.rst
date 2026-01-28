@@ -8,7 +8,7 @@ calcium imaging:
 UCLA Miniscope V3
 ------------------------------------------
 :Design Repository: https://github.com/daharoni/Miniscope_CMOS_Imaging_Sensor_PCB
-:Documentation: http://miniscope.org/index.php/Guides_and_Tutorials
+:Documentation: https://oldwiki.miniscope.org/index.php/Guides_and_Tutorials
 :Compatibility: :ref:`pcie_controller`, :ref:`breakout`
 :Software: `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/index.html>`__ Bonsai package
 
