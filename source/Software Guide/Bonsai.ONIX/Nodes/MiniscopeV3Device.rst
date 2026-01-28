@@ -9,7 +9,7 @@ MiniscopeV3Device
 A `Bonsai source <https://bonsai-rx.org/docs/editor/#toolbox>`__  that wraps a
 :ref:`onidatasheet_ds90ub9x_raw` device and configures it to allow control over
 `UCLA Miniscope V3
-<http://miniscope.org/index.php/Overview_of_System_Components>`__.
+<https://oldwiki.miniscope.org/index.php/Overview_of_System_Components>`__.
 
 :Inputs:    None
 :Outputs:   A single ``MiniscopeV3DataFrame`` that is produced periodically
