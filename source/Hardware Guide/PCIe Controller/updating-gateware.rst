@@ -6,20 +6,22 @@
 Updating PCIe Controller Gateware in Windows
 #############################################
 
-#. If you have not done so already, follow the steps on the
+.. important:: We ship the ONIX PCIe controller with the latest version of the gateware and we don’t make changes to the gateware often, so you will typically not need to update it. Verify the gatware version as explained below and only proceed with the update if necessary.
+
+#. If your PC has not yet been set up for use with the ONIX PCIe controller, follow the steps on the
    :ref:`Setup Guide for Windows <pcie_controller_setup_windows>` page.
 
 #. Download the latest :ref:`oni_repl_download` and unzip it. Navigate to this
    location using a console (e.g. PowerShell).
 
    .. note:: For a complete description of this program, have a look at its
-        :ref:`usage guide <oni_repl>`
+      :ref:`usage guide <oni_repl>`
 
-..  _controller_version_difference:
+#. .. _controller_version_difference:
 
-#. Verify your PCIe Controller Hardware version by running ``oni-repl`` and typing "H"
+   Verify your PCIe Controller Hardware version by running ``oni-repl`` and typing "H"
    into the command prompt. This will print a list of all hubs in the current
-   ONI context, one of which will be the PCIe Controller.
+   ONI context, one of which will be the PCIe Controller. The hardware revision and version of the gateware currently on the system will be listed. 
 
    .. code-block:: console
 
@@ -32,11 +34,10 @@ Updating PCIe Controller Gateware in Windows
    .. figure:: /_static/images/pcie-controller/oni-repl-controller-hardware-version.png
         :align: center
 
-#. Download the latest :ref:`PCIe Controller gateware image <pcie_controller_image_download>` for your hardware
-   version. 
+#. Check the :ref:`PCIe Controller gateware image download page <pcie_controller_image_download>`. If a more recent version of the gateware than that listed by the oni-repl application exists, download the lastest gateware that corresponds to your hardware revision. If the latest gateware listed is already the same version as the current one on your hardware, you do not need to update it.
 
    .. warning::
-         Make sure that the controller gateware image you download matches the PCIe Controller Hardware version
+         Make sure that the controller gateware image you download matches the PCIe Controller Hardware revision
          you verified in the previous step. An incorrect gateware version will not report any error while updating but will cause failures during operation.
 
 #. Download the :ref:`pcie_controller_updater_download` utilities package and unzip
