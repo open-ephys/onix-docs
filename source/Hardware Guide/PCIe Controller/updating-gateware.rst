@@ -6,7 +6,7 @@
 Updating PCIe Controller Gateware in Windows
 #############################################
 
-.. important:: We ship the ONIX PCIe controller with the latest version of the gateware and we don’t make changes to the gateware often, so you will typically not need to update it. Verify the gatware version as explained below and only proceed with the update if necessary.
+.. important:: ONIX PCIe controllers acquired from the Open Ephys Store are flashed with the latest version of the gateware. Gateware updates do not occur often, so you will typically not need to update it. Verify the gateware version as explained below and only proceed with the update if necessary.
 
 #. If your PC has not yet been set up for use with the ONIX PCIe controller, follow the steps on the
    :ref:`Setup Guide for Windows <pcie_controller_setup_windows>` page.

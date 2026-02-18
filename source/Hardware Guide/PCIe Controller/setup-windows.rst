@@ -6,8 +6,8 @@
 Setup Guide for Windows
 ########################################
 
-.. important:: PCs acquired from the Open Ephys Store do not require setup. They come pre-installed and ready to use. On occasion, they might need an update to the the latest gateware. Follow the
-   :ref:`gateware update guide <pcie_controller_gateware_update>` if needed.
+.. important:: ONIX PCs acquired from the Open Ephys Store are ready-to-use and do not require additional setup. On occasion, pre-programmed ONIX PCs might need an update to the latest gateware. Follow the
+   :ref:`gateware update guide <pcie_controller_gateware_update>` only if needed.
 
 Insert the PCIe Controller
 ---------------------------------------
