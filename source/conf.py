@@ -43,8 +43,13 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
-    'sphinx_design'
+    'sphinx_design',
+    'sphinx_reredirects'
 ]
+
+redirects = {
+    "../Hardware-Guide/PCIe Host/index": "../Hardware-Guide/PCIe%20Controller.html"
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
