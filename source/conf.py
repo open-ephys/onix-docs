@@ -48,7 +48,7 @@ extensions = [
 ]
 
 redirects = {
-    "../Hardware-Guide/PCIe Host/index": "../Hardware-Guide/PCIe%20Controller.html"
+    "Hardware Guide/PCIe Host/": "Hardware Guide/PCIe Controller/",
 }
 
 # Add any paths that contain templates here, relative to this directory.
