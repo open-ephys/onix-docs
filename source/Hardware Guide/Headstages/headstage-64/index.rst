@@ -138,7 +138,7 @@ to set up tracking,
 3D Orientation Tracking
 *************************
 headstage-64 has a `BNO055
-<https://www.bosch-sensortec.com/products/smart-sensors/bno055/>`_ 9-axis
+<https://www.bosch-sensortec.com/en/products/smart-sensor-systems/bno055>`_ 9-axis
 inertial measurement unit that provides the absolute orientation of the
 headstage. This device produces orientation (and other) measurements are 100
 Hz.

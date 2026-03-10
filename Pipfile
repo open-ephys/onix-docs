@@ -11,6 +11,6 @@ pytz = "*"
 sphinxcontrib-wavedrom = "*"
 jinja2 = "*"
 sphinx-design = "*"
-sphinx-reredirects = "*"
+sphinxext-rediraffe = "*"
 
 [dev-packages]

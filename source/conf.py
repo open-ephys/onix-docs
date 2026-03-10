@@ -44,13 +44,12 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.wavedrom',
     'sphinx_design',
-    'sphinx_reredirects'
+    'sphinxext.rediraffe'
 ]
 
-redirects = {
-    "Hardware Guide/PCIe Host/index": "/Hardware Guide/PCIe Controller/index.html"
+rediraffe_redirects = {
+    'Hardware Guide/PCIe Host/index': 'Hardware Guide/PCIe Controller/index'
 }
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
