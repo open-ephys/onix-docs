@@ -14,7 +14,7 @@ Setting Headstage Voltage
 --------------------------
 The headstage voltage is set using :ref:`onidatasheet_fmc_link_control` devices
 on the :ref:`pcie_controller`.  Each headstage has a minimum and maximum voltage
-requirement (e.g. 5.3 to  5.7 Volts for :ref:`headstage_64`) in order for
+requirement listed under the Data Link Serialization/Coaxial Link section on its own hardware page (e.g. :ref:`headstage_64`) in order for
 circuits on the board to function properly. If the voltage is far too low, the
 host computer will not be able to detect the headstage. A borderline
 voltage can still cause connectivity issues as the headstage occasionally dips
