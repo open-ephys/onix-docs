@@ -12,5 +12,6 @@ sphinxcontrib-wavedrom = "*"
 jinja2 = "*"
 sphinx-design = "*"
 sphinxext-rediraffe = "*"
+cairosvg = "*"
 
 [dev-packages]
