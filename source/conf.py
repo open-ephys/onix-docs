@@ -47,9 +47,8 @@ extensions = [
     'sphinxext.rediraffe'
 ]
 
-rediraffe_redirects = {
-    'Hardware Guide/PCIe Host/index': 'Hardware Guide/PCIe Controller/index'
-}
+rediraffe_redirects = 'redirects.txt'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

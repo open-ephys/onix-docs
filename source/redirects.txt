@@ -1,0 +1,7 @@
+'Hardware Guide/PCIe Host/index' 'Hardware Guide/PCIe Controller/index'
+'Hardware Guide/PCIe Host/bracket-assembly' 'Hardware Guide/PCIe Controller/bracket-assembly'
+'Hardware Guide/PCIe Host/multi-board-sync' 'Hardware Guide/PCIe Controller/multi-board-sync'
+'Hardware Guide/PCIe Host/overview' 'Hardware Guide/PCIe Controller/overview'
+'Hardware Guide/PCIe Host/programming-with-jtag' 'Hardware Guide/PCIe Controller/programming-with-jtag'
+'Hardware Guide/PCIe Host/setup-windows' 'Hardware Guide/PCIe Controller/setup-windows'
+'Hardware Guide/PCIe Host/updating-gateware' 'Hardware Guide/PCIe Controller/updating-gateware'
