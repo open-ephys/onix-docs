@@ -13,12 +13,13 @@ will dissipate excess heat and it may be damaged.
 Setting Headstage Voltage
 --------------------------
 The headstage voltage is set using :ref:`onidatasheet_fmc_link_control` devices
-on the :ref:`pcie_controller`.  Each headstage has a minimum and maximum voltage
-requirement (e.g. 5.3 to  5.7 Volts for :ref:`headstage_64`) in order for
-circuits on the board to function properly. If the voltage is far too low, the
-host computer will not be able to detect the headstage. A borderline
-voltage can still cause connectivity issues as the headstage occasionally dips
-below the level it needs to function properly.
+on the :ref:`pcie_controller`. In order for a headstage's circuitry to function
+properly, its supply voltage must satisfy minimum and maximum voltage
+requirements listed under the Data Link Serialization/Coaxial Link section on
+its respective hardware page (e.g. :ref:`headstage_64`). If the voltage is far
+too low, the host computer will not be able to detect the headstage. A
+borderline voltage can still cause connectivity issues as the headstage might
+dips below the level it needs to function properly.
 
 ..  attention:: 
     The `OpenEphys.Onix1 <https://open-ephys.github.io/bonsai-onix1-docs/index.html>`__ 
